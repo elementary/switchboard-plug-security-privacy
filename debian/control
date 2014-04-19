@@ -1,0 +1,27 @@
+Source: switchboard-plug-security-policy
+Section: x11
+Priority: optional
+Maintainer: Corentin Noël <tintou@mailoo.org>
+Build-Depends: cmake,
+               debhelper (>= 9),
+               libswitchboard-2.0-dev
+Standards-Version: 3.9.2
+Homepage: https://launchpad.net/pantheon-plugs
+
+Package: switchboard-plug-security-policy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Enhances: switchboard
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: switchboard-plug-security-policy-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends: switchboard-plug-security-policy (= ${binary:Version}), ${misc:Depends}
+Enhances: switchboard-plug-security-policy
+Description: <insert up to 60 chars description> (debugging symbols)
+ <insert long description, indented with spaces>
+ .
+ This package contains debugging symbols for switchboard-plug-template.
