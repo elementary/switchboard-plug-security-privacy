@@ -1,0 +1,54 @@
+#!/bin/bash
+ 
+# Execute getopt on the arguments passed to this program, identified by the special character $@
+PARSED_OPTIONS=$(getopt -n "$0"  -o hs12re: --long "help,status,on,off,rules,other:"  -- "$@")
+ 
+#Bad arguments, something has gone wrong with the getopt command.
+if [ $? -ne 0 ];
+then
+  exit 1
+fi
+ 
+# A little magic, necessary when using getopt.
+eval set -- "$PARSED_OPTIONS"
+ 
+ 
+# Now goes through all the options with a case and using shift to analyse 1 argument at a time.
+#$1 identifies the first argument, and when we use shift we discard the first argument, so $2 becomes $1 and goes again through the case.
+while true;
+do
+  case "$1" in
+ 
+    -h|--help)
+        echo "usage $0 -h -1 -2 -3 or $0 --help --one --two --three"
+        shift;;
+ 
+    -s|--status)
+        LANGUAGE=C
+        export LANGUAGE
+        ufw status
+        break
+        shift;;
+ 
+    -1|--on)
+        ufw --force enable
+        break
+        shift;;
+ 
+    -2|--off)
+        ufw disable
+        break
+        shift;;
+ 
+    -r|--rules)
+        LANGUAGE=C
+        export LANGUAGE
+        ufw status numbered
+        break
+        shift;;
+ 
+    --)
+        shift
+        break;;
+  esac
+done

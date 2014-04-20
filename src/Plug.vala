@@ -22,7 +22,7 @@
 namespace SecurityPrivacy {
 
     public static Plug plug;
-    public static Permission permission;
+    public static Gtk.LockButton lock_button;
 
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
@@ -48,6 +48,32 @@ namespace SecurityPrivacy {
             if (main_grid.get_children ().length () > 0)
                 return;
 
+            try {
+                var permission = new Polkit.Permission.sync ("org.pantheon.security-privacy", Polkit.UnixProcess.new (Posix.getpid ()));
+                var infobar = new Gtk.InfoBar ();
+                infobar.message_type = Gtk.MessageType.INFO;
+                lock_button = new Gtk.LockButton (permission);
+                var area = infobar.get_action_area () as Gtk.Container;
+                var content = infobar.get_content_area () as Gtk.Container;
+                var label = new Gtk.Label (_("Some settings requires administration right to be changed"));
+                area.add (lock_button);
+                content.add (label);
+                main_grid.attach (infobar, 0, 0, 1, 1);
+                if (permission.allowed == true) {
+                    infobar.no_show_all = true;
+                }
+                permission.notify["allowed"].connect (() => {
+                    if (permission.allowed == true) {
+                        infobar.hide ();
+                    } else {
+                        infobar.no_show_all = false;
+                        infobar.show_all ();
+                    }
+                });
+            } catch (Error e) {
+                critical (e.message);
+            }
+
             var stack = new Gtk.Stack ();
             stack.expand = true;
 
@@ -63,23 +89,6 @@ namespace SecurityPrivacy {
             var firewall = new FirewallPanel ();
             stack.add_titled (firewall, "firewall", _("Firewall"));
 
-            try {
-                permission = new Polkit.Permission.sync ("org.pantheon.security-privacy", Polkit.UnixProcess.new (Posix.getpid ()));
-                var infobar = new Gtk.InfoBar ();
-                infobar.message_type = Gtk.MessageType.INFO;
-                var lock_button = new Gtk.LockButton (permission);
-                var area = infobar.get_action_area () as Gtk.Container;
-                var content = infobar.get_content_area () as Gtk.Container;
-                var label = new Gtk.Label (_("Some settings requires administration right to be changed"));
-                area.add (lock_button);
-                content.add (label);
-                main_grid.attach (infobar, 0, 0, 1, 1);
-                if (permission.allowed == true) {
-                    infobar.no_show_all = true;
-                }
-            } catch (Error e) {
-                critical (e.message);
-            }
             main_grid.attach (stack_switcher, 0, 1, 1, 1);
             main_grid.attach (stack, 0, 2, 1, 1);
             main_grid.show_all ();
