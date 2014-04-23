@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-21 01:19+0200\n"
-"PO-Revision-Date: 2014-04-21 01:21+0100\n"
+"POT-Creation-Date: 2014-04-21 20:06+0200\n"
+"PO-Revision-Date: 2014-04-21 20:08+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -41,84 +41,84 @@ msgstr "Traçage"
 msgid "Firewall"
 msgstr "Pare-feu"
 
-#: ../src/FirewallPanel.vala:47
+#: ../src/FirewallPanel.vala:48
 msgid "Firewall Status:"
 msgstr "Status du pare-feu :"
 
-#: ../src/FirewallPanel.vala:85 ../src/FirewallPanel.vala:95
-#: ../src/FirewallPanel.vala:101
+#: ../src/FirewallPanel.vala:96 ../src/FirewallPanel.vala:106
+#: ../src/FirewallPanel.vala:112
 msgid "Unknown"
 msgstr "Inconnu"
 
-#: ../src/FirewallPanel.vala:87 ../src/FirewallPanel.vala:143
+#: ../src/FirewallPanel.vala:98 ../src/FirewallPanel.vala:154
 msgid "Allow"
 msgstr "Autoriser"
 
-#: ../src/FirewallPanel.vala:89 ../src/FirewallPanel.vala:144
+#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:155
 msgid "Deny"
 msgstr "Refuser"
 
-#: ../src/FirewallPanel.vala:91 ../src/FirewallPanel.vala:145
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:156
 msgid "Reject"
 msgstr "Rejeter"
 
-#: ../src/FirewallPanel.vala:93 ../src/FirewallPanel.vala:146
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:157
 msgid "Limit"
 msgstr "Limiter"
 
-#: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:158
+#: ../src/FirewallPanel.vala:114 ../src/FirewallPanel.vala:169
 msgid "In"
 msgstr "Entrant"
 
-#: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:159
+#: ../src/FirewallPanel.vala:116 ../src/FirewallPanel.vala:170
 msgid "Out"
 msgstr "Sortant"
 
-#: ../src/FirewallPanel.vala:123
+#: ../src/FirewallPanel.vala:134
 msgid "Action"
 msgstr "Action"
 
-#: ../src/FirewallPanel.vala:124
+#: ../src/FirewallPanel.vala:135
 msgid "Protocol"
 msgstr "Protocole"
 
-#: ../src/FirewallPanel.vala:125
+#: ../src/FirewallPanel.vala:136
 msgid "Direction"
 msgstr "Direction"
 
-#: ../src/FirewallPanel.vala:126
+#: ../src/FirewallPanel.vala:137
 msgid "Ports"
 msgstr "Ports"
 
-#: ../src/FirewallPanel.vala:127 ../src/FirewallPanel.vala:167
+#: ../src/FirewallPanel.vala:138 ../src/FirewallPanel.vala:178
 msgid "IPv6"
 msgstr "IPv6"
 
-#: ../src/FirewallPanel.vala:141
+#: ../src/FirewallPanel.vala:152
 msgid "Action:"
 msgstr "Action :"
 
-#: ../src/FirewallPanel.vala:149
+#: ../src/FirewallPanel.vala:160
 msgid "Protocol:"
 msgstr "Protocole :"
 
-#: ../src/FirewallPanel.vala:151
+#: ../src/FirewallPanel.vala:162
 msgid "Both"
 msgstr "Les deux"
 
-#: ../src/FirewallPanel.vala:156
+#: ../src/FirewallPanel.vala:167
 msgid "Direction:"
 msgstr "Direction :"
 
-#: ../src/FirewallPanel.vala:162
+#: ../src/FirewallPanel.vala:173
 msgid "Ports:"
 msgstr "Ports :"
 
-#: ../src/FirewallPanel.vala:165
+#: ../src/FirewallPanel.vala:176
 msgid "%d or %d-%d"
 msgstr "%d ou %d-%d"
 
-#: ../src/FirewallPanel.vala:169
+#: ../src/FirewallPanel.vala:180
 msgid "Add Rule"
 msgstr "Ajouter une règle"
 
@@ -170,11 +170,11 @@ msgstr "Demander le mot de passe à la sortie de la veille"
 msgid "Show notifications on lockscreen"
 msgstr "Afficher les notification sur l'écran de verrouillage"
 
-#: ../src/TrackPanel.vala:34
+#: ../src/TrackPanel.vala:47
 msgid "Record file and application usage:"
 msgstr "Enregistrer l'utilisation des fichiers et des applications :"
 
-#: ../src/TrackPanel.vala:56
+#: ../src/TrackPanel.vala:69
 msgid ""
 "This operation system track of Files and Applications you've used to provide "
 "extra functionality. If other proples can see or access your account, you "
@@ -185,39 +185,83 @@ msgstr ""
 "personnes peuvent voir ou accéder à votre système, vous désirerez sûrement "
 "limiter cette fonction."
 
-#: ../src/TrackPanel.vala:97
+#: ../src/TrackPanel.vala:110
 msgid "Delete records of which files and applications were used:"
 msgstr ""
 "Supprimer les données enregistrées issues de fichiers et applications "
 "utilisés :"
 
-#: ../src/TrackPanel.vala:99
+#: ../src/TrackPanel.vala:112
 msgid "Clear Data"
 msgstr "Effacer les données"
 
-#: ../src/TrackPanel.vala:108
+#: ../src/TrackPanel.vala:121
 msgid "In the past hour"
 msgstr "Durant l'heure passée"
 
-#: ../src/TrackPanel.vala:109
+#: ../src/TrackPanel.vala:122
 msgid "In the past day"
 msgstr "Durant la journée passée"
 
-#: ../src/TrackPanel.vala:110
+#: ../src/TrackPanel.vala:123
 msgid "In the past week"
 msgstr "Durant la semaine passée"
 
-#: ../src/TrackPanel.vala:111
+#: ../src/TrackPanel.vala:124
 msgid "From:"
 msgstr "Du :"
 
-#: ../src/TrackPanel.vala:112
+#: ../src/TrackPanel.vala:125
 msgid "From all time"
 msgstr "Depuis toujours"
 
-#: ../src/TrackPanel.vala:115
+#: ../src/TrackPanel.vala:128
 msgid "To:"
 msgstr "Au :"
+
+#: ../src/TrackPanel.vala:187
+msgid "Record:"
+msgstr "Enregistrer :"
+
+#: ../src/TrackPanel.vala:199 ../src/TrackPanel.vala:295
+msgid "Documents"
+msgstr "Documents"
+
+#: ../src/TrackPanel.vala:203
+msgid "Music"
+msgstr "Musique"
+
+#: ../src/TrackPanel.vala:207
+msgid "Pictures"
+msgstr "Images"
+
+#: ../src/TrackPanel.vala:211
+msgid "Presentations"
+msgstr "Présentations"
+
+#: ../src/TrackPanel.vala:215
+msgid "Spreadsheets"
+msgstr "Feuilles de calcul"
+
+#: ../src/TrackPanel.vala:219
+msgid "Videos"
+msgstr "Vidéos"
+
+#: ../src/TrackPanel.vala:223
+msgid "Chat Logs"
+msgstr "Historique des conversations"
+
+#: ../src/TrackPanel.vala:255
+msgid "Add Application…"
+msgstr "Ajouter une application…"
+
+#: ../src/TrackPanel.vala:256
+msgid "Add Folder…"
+msgstr "Ajouter un dossier…"
+
+#: ../src/TrackPanel.vala:279
+msgid "Do not record:"
+msgstr "Ne pas enregistrer :"
 
 #: ../src/ufw-helpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"

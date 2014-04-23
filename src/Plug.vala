@@ -23,6 +23,7 @@ namespace SecurityPrivacy {
 
     public static Plug plug;
     public static Gtk.LockButton lock_button;
+    public static Blacklist blacklist;
 
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
@@ -39,6 +40,10 @@ namespace SecurityPrivacy {
         public override Gtk.Widget get_widget () {
             if (main_grid == null) {
                 main_grid = new Gtk.Grid ();
+            }
+
+            if (blacklist == null) {
+                blacklist = new Blacklist ();
             }
 
             return main_grid;

@@ -25,17 +25,17 @@
 #endif
 
 namespace SecurityPrivacy.UFWHelpers {
+
+    public int last_rule = 0;
+
     private string get_helper_path () {
         return "%s/security-privacy-plug-helper".printf (Build.PKGDATADIR);
-    }
-    public void get_permission () {
-    
     }
 
     public bool get_status () {
         try {
             string standard_output;
-            Process.spawn_command_line_sync ("pkexec %s --status".printf (get_helper_path ()), out standard_output);
+            Process.spawn_command_line_sync ("pkexec %s -4".printf (get_helper_path ()), out standard_output);
             return (standard_output.contains ("inactive") == false);
         } catch (Error e) {
             warning (e.message);
@@ -46,9 +46,9 @@ namespace SecurityPrivacy.UFWHelpers {
     public void set_status (bool status) {
         try {
             if (status == true)
-                Process.spawn_command_line_sync ("pkexec %s --on".printf (get_helper_path ()));
+                Process.spawn_command_line_sync ("pkexec %s -2".printf (get_helper_path ()));
             else
-                Process.spawn_command_line_sync ("pkexec %s --off".printf (get_helper_path ()));
+                Process.spawn_command_line_sync ("pkexec %s -3".printf (get_helper_path ()));
         } catch (Error e) {
             warning (e.message);
         }
@@ -58,11 +58,13 @@ namespace SecurityPrivacy.UFWHelpers {
         var rules = new Gee.LinkedList<Rule> ();
         try {
             string standard_output;
-            Process.spawn_command_line_sync ("pkexec %s --rules".printf (get_helper_path ()), out standard_output);
+            Process.spawn_command_line_sync ("pkexec %s -4".printf (get_helper_path ()), out standard_output);
             var lines = standard_output.split("\n");
             foreach (var line in lines) {
                 if ("ALLOW" in line || "DENY" in line || "LIMIT" in line || "REJECT" in line) {
                     var rule = new Rule.from_line (line);
+                    if (rule.number > last_rule)
+                        last_rule = rule.number;
                     rules.add (rule);
                 }
             }
@@ -72,14 +74,56 @@ namespace SecurityPrivacy.UFWHelpers {
         return rules;
     }
 
-    public void get_input_default_policy () {
-    
+    public void remove_rule (Rule rule) {
+        try {
+            Process.spawn_command_line_sync ("pkexec %s -6 \"%d\"".printf (get_helper_path (), rule.number));
+        } catch (Error e) {
+            warning (e.message);
+        }
     }
 
-    public void get_output_default_policy () {
-    
+    public void add_rule (Rule rule) {
+        try {
+            string rule_str = "%d".printf (last_rule);
+            switch (rule.action) {
+                case Rule.Action.DENY:
+                    rule_str = "%s deny".printf (rule_str);
+                    break;
+                case Rule.Action.REJECT:
+                    rule_str = "%s reject".printf (rule_str);
+                    break;
+                case Rule.Action.LIMIT:
+                    rule_str = "%s limit".printf (rule_str);
+                    break;
+                default:
+                    rule_str = "%s allow".printf (rule_str);
+                    break;
+            }
+
+            switch (rule.direction) {
+                case Rule.Direction.OUT:
+                    rule_str = "%s out".printf (rule_str);
+                    break;
+                default:
+                    rule_str = "%s in".printf (rule_str);
+                    break;
+            }
+
+            switch (rule.protocol) {
+                case Rule.Protocol.UDP:
+                    rule_str = "%s %s/udp".printf (rule_str, rule.ports);
+                    break;
+                default:
+                    rule_str = "%s %s/tcp".printf (rule_str, rule.ports);
+                    break;
+            }
+
+            Process.spawn_command_line_sync ("pkexec %s -5 \"%s\"".printf (get_helper_path (), rule_str));
+        } catch (Error e) {
+            warning (e.message);
+        }
     }
-    
+
     public class Rule : GLib.Object {
         public enum Action {
             ALLOW,
@@ -103,6 +147,7 @@ namespace SecurityPrivacy.UFWHelpers {
         public Direction direction;
         public string ports;
         public bool is_v6 = false;
+        public int number;
 
         public Rule () {
             
@@ -111,7 +156,9 @@ namespace SecurityPrivacy.UFWHelpers {
         public Rule.from_line (string line) {
             if (line.contains ("(v6)"))
                 is_v6 = true;
-            var second = line.replace ("(v6)", "").split ("] ")[1];
+            var first = line.replace ("(v6)", "").split ("] ");
+            number = int.parse (first[0].replace ("[", ""));
+            var second = first[1];
             var third = second.split ("/");
             ports = third[0];
             string current = "";

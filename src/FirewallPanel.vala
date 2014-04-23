@@ -26,6 +26,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     private Gtk.Toolbar list_toolbar;
     private bool loading = false;
     private Gtk.Popover add_popover;
+    private Gtk.ToolButton remove_button;
 
     private enum Columns {
         ACTION,
@@ -33,6 +34,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         DIRECTION,
         PORTS,
         V6,
+        RULE,
         N_COLUMNS
     }
 
@@ -49,8 +51,10 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         var status_switch = new Gtk.Switch ();
         status_switch.notify["active"].connect (() => {
             if (loading == false) {
+                view.sensitive = status_switch.active;
                 UFWHelpers.set_status (status_switch.active);
             }
+            show_rules ();
         });
 
         var fake_grid_left = new Gtk.Grid ();
@@ -69,15 +73,27 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             sensitive = lock_button.get_permission ().allowed;
             status_switch.active = UFWHelpers.get_status ();
             list_store.clear ();
+            remove_button.sensitive = false;
             if (status_switch.active == true) {
+                view.sensitive = true;
                 foreach (var rule in UFWHelpers.get_rules ()) {
                     add_rule (rule);
                 }
+            } else {
+                view.sensitive = false;
             }
             loading = false;
         });
 
         create_treeview ();
+    }
+
+    private void show_rules () {
+        list_store.clear ();
+        remove_button.sensitive = false;
+        foreach (var rule in UFWHelpers.get_rules ()) {
+            add_rule (rule);
+        }
     }
 
     public void add_rule (UFWHelpers.Rule rule) {
@@ -107,12 +123,12 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
                 Columns.DIRECTION, direction, Columns.PORTS, rule.ports.replace (":", "-"),
-                Columns.V6, rule.is_v6);
+                Columns.V6, rule.is_v6, Columns.RULE, rule);
     }
 
     private void create_treeview () {
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (string),
-                typeof (string), typeof (string), typeof (string), typeof (bool));
+                typeof (string), typeof (string), typeof (string), typeof (bool), typeof (UFWHelpers.Rule));
 
         // The View:
         view = new Gtk.TreeView.with_model (list_store);
@@ -148,7 +164,6 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
 
             var protocol_label = new Gtk.Label (_("Protocol:"));
             var protocol_combobox = new Gtk.ComboBoxText ();
-            protocol_combobox.append_text (_("Both"));
             protocol_combobox.append_text ("TCP");
             protocol_combobox.append_text ("UDP");
             protocol_combobox.active = 0;
@@ -164,10 +179,35 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             ports_entry.input_purpose = Gtk.InputPurpose.NUMBER;
             ports_entry.placeholder_text = _("%d or %d-%d").printf (80, 80, 85);
 
-            var ip_checkbutton = new Gtk.CheckButton.with_label (_("IPv6"));
-
             var do_add_button = new Gtk.Button.with_label (_("Add Rule"));
             do_add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            do_add_button.clicked.connect (() => {
+                var rule = new UFWHelpers.Rule ();
+                if (direction_combobox.active == 0)
+                    rule.direction = UFWHelpers.Rule.Direction.IN;
+                else
+                    rule.direction = UFWHelpers.Rule.Direction.OUT;
+
+                if (protocol_combobox.active == 0)
+                    rule.protocol = UFWHelpers.Rule.Protocol.TCP;
+                else
+                    rule.protocol = UFWHelpers.Rule.Protocol.UDP;
+
+                if (policy_combobox.active == 0)
+                    rule.action = UFWHelpers.Rule.Action.ALLOW;
+                else if (policy_combobox.active == 1)
+                    rule.action = UFWHelpers.Rule.Action.DENY;
+                else if (policy_combobox.active == 2)
+                    rule.action = UFWHelpers.Rule.Action.REJECT;
+                else
+                    rule.action = UFWHelpers.Rule.Action.LIMIT;
+
+                rule.ports = ports_entry.text.replace ("-", ":");
+                UFWHelpers.add_rule (rule);
+                add_popover.hide ();
+                show_rules ();
+            });
+
             var add_button_grid = new Gtk.Grid ();
             add_button_grid.add (do_add_button);
             add_button_grid.halign = Gtk.Align.END;
@@ -180,15 +220,30 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             popover_grid.attach (direction_combobox, 1, 2, 1, 1);
             popover_grid.attach (ports_label, 0, 3, 1, 1);
             popover_grid.attach (ports_entry, 1, 3, 1, 1);
-            popover_grid.attach (ip_checkbutton, 1, 4, 1, 1);
-            popover_grid.attach (add_button_grid, 0, 5, 2, 1);
+            popover_grid.attach (add_button_grid, 0, 4, 2, 1);
 
             add_popover.show_all ();
         });
 
         list_toolbar.insert (add_button, -1);
-        var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        remove_button.sensitive = false;
+        remove_button.clicked.connect (() => {
+            Gtk.TreePath path;
+            Gtk.TreeViewColumn column;
+            view.get_cursor (out path, out column);
+            Gtk.TreeIter iter;
+            list_store.get_iter (out iter, path);
+            Value val;
+            list_store.get_value (iter, Columns.RULE, out val);
+            UFWHelpers.remove_rule ((UFWHelpers.Rule) val.get_object ());
+            show_rules ();
+        });
         list_toolbar.insert (remove_button, -1);
+
+        view.cursor_changed.connect (() => {
+            remove_button.sensitive = true;
+        });
 
         var view_grid = new Gtk.Grid ();
         var frame = new Gtk.Frame (null);

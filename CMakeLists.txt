@@ -45,4 +45,7 @@ install(FILES ${CMAKE_SOURCE_DIR}/data/security-privacy-plug-helper PERMISSIONS 
 # Traslation stuff
 add_subdirectory (po)
 
+# Comment this out to enable C compiler warnings
+add_definitions (-w)
+
 add_subdirectory(src)
