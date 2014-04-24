@@ -1,4 +1,4 @@
 usr/lib/*/switchboard/personal/
-usr/share/polkit-1/actions/
-usr/share/locale
 usr/share/applications
+usr/share/locale
+usr/share/polkit-1/actions/
