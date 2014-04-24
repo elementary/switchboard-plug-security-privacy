@@ -132,7 +132,7 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
         attach (switch_grid, 2, 0, 1, 1);
         attach (screen_lock_combobox, 3, 0, 1, 1);
         attach (ask_checkbutton, 2, 1, 2, 1);
-        attach (notification_checkbutton, 2, 2, 2, 1);
+        //attach (notification_checkbutton, 2, 2, 2, 1);
         attach (fake_grid_right, 4, 0, 1, 1);
     }
 }
