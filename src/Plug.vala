@@ -64,7 +64,7 @@ namespace SecurityPrivacy {
                 lock_button = new Gtk.LockButton (permission);
                 var area = infobar.get_action_area () as Gtk.Container;
                 var content = infobar.get_content_area () as Gtk.Container;
-                var label = new Gtk.Label (_("Some settings requires administration right to be changed"));
+                var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
                 area.add (lock_button);
                 content.add (label);
                 main_grid.attach (infobar, 0, 0, 1, 1);
