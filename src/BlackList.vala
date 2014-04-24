@@ -188,11 +188,20 @@ namespace SecurityPrivacy {
         public static string interpretation_prefix = "interpretation-";
 
         private Blacklist blacklist_interface;
-        private Gee.HashMap<string, Gtk.CheckButton> checkboxes;
+        private Gee.HashSet<string> all_blocked_filetypes;
 
-        public FileTypeBlacklist (Blacklist blacklist_inter, Gee.HashMap<string, Gtk.CheckButton> all_checkboxes) {
+        public Gee.HashSet<string> all_filetypes {
+            get {
+                return all_blocked_filetypes;
+            }
+        }
+
+        public FileTypeBlacklist (Blacklist blacklist_inter) {
             blacklist_interface = blacklist_inter;
-            checkboxes = all_checkboxes;
+            this.blacklist_interface.template_added.connect (on_blacklist_added);
+            this.blacklist_interface.template_removed.connect (on_blacklist_removed);
+            all_blocked_filetypes = new Gee.HashSet<string> ();
+            populate_file_types ();
         }
 
         private string get_name (string interpretation) {
@@ -201,11 +210,11 @@ namespace SecurityPrivacy {
             return "%s%s".printf (interpretation_prefix, name);
         }
 
-        public void populate_file_types () {
+        private void populate_file_types () {
             foreach (string key in blacklist_interface.all_templates.get_keys ()) {
                 if (key.has_prefix (interpretation_prefix)) {
                     var inter = blacklist_interface.all_templates[key].get_subject (0).interpretation;
-                    checkboxes.get (inter).active = checkboxes.has_key (inter) ? false: true;
+                    all_blocked_filetypes.add (inter);
                 }
             }
         }
@@ -220,6 +229,21 @@ namespace SecurityPrivacy {
 
         public void unblock (string interpretation) {
             blacklist_interface.remove_template (this.get_name(interpretation));
+        }
+
+        private void on_blacklist_added (string blacklist_id, Zeitgeist.Event ev) {
+            if (blacklist_id.has_prefix (interpretation_prefix)) {
+                all_blocked_filetypes.add (ev.get_subject (0).interpretation);
+            }
+        }
+
+        private void on_blacklist_removed (string blacklist_id, Zeitgeist.Event ev) {
+            if (blacklist_id.has_prefix (interpretation_prefix)) {
+                var inter = ev.get_subject (0).interpretation;
+                if (all_blocked_filetypes.contains (inter) == true) {
+                    all_blocked_filetypes.remove (ev.get_subject (0).interpretation);
+                }
+            }
         }
     }
 
