@@ -41,10 +41,15 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     public FirewallPanel () {
         column_spacing = 12;
         row_spacing = 6;
-        margin_bottom = 12;
+        margin = 12;
+        margin_top = 0;
+        orientation = Gtk.Orientation.VERTICAL;
 
         var status_grid = new Gtk.Grid ();
+        status_grid.orientation = Gtk.Orientation.HORIZONTAL;
         status_grid.column_spacing = 12;
+        status_grid.halign = Gtk.Align.CENTER;
+
         var status_label = new Gtk.Label ("");
         status_label.set_markup ("<b>%s</b>".printf (_("Firewall Status:")));
 
@@ -57,16 +62,10 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             show_rules ();
         });
 
-        var fake_grid_left = new Gtk.Grid ();
-        fake_grid_left.hexpand = true;
-        var fake_grid_right = new Gtk.Grid ();
-        fake_grid_right.hexpand = true;
-        status_grid.attach (status_label, 0, 0, 1, 1);
-        status_grid.attach (status_switch, 1, 0, 1, 1);
+        status_grid.add (status_label);
+        status_grid.add (status_switch);
 
-        attach (fake_grid_left, 0, 0, 1, 1);
-        attach (status_grid, 1, 0, 1, 1);
-        attach (fake_grid_right, 2, 0, 1, 1);
+        add (status_grid);
         sensitive = false;
         lock_button.get_permission ().notify["allowed"].connect (() => {
             loading = true;
@@ -136,11 +135,11 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
 
         var celltoggle = new Gtk.CellRendererToggle ();
         var cell = new Gtk.CellRendererText ();
+        view.insert_column_with_attributes (-1, _("IPv6"), celltoggle, "active", Columns.V6);
         view.insert_column_with_attributes (-1, _("Action"), cell, "text", Columns.ACTION);
         view.insert_column_with_attributes (-1, _("Protocol"), cell, "text", Columns.PROTOCOL);
         view.insert_column_with_attributes (-1, _("Direction"), cell, "text", Columns.DIRECTION);
         view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.PORTS);
-        view.insert_column_with_attributes (-1, _("IPv6"), celltoggle, "active", Columns.V6);
 
         list_toolbar = new Gtk.Toolbar ();
         list_toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
@@ -246,10 +245,14 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         });
 
         var view_grid = new Gtk.Grid ();
-        var frame = new Gtk.Frame (null);
-        frame.add (view);
-        view_grid.attach (frame, 0, 0, 1, 1);
+
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.shadow_type = Gtk.ShadowType.IN;
+        scrolled.expand = true;
+        scrolled.add (view);
+
+        view_grid.attach (scrolled, 0, 0, 1, 1);
         view_grid.attach (list_toolbar, 0, 1, 1, 1);
-        attach (view_grid, 1, 1, 1, 1);
+        add (view_grid);
     }
 }

@@ -27,6 +27,7 @@ namespace SecurityPrivacy {
 
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
+        Gtk.Stack stack;
 
         public Plug () {
             Object (category: Category.PERSONAL,
@@ -53,6 +54,9 @@ namespace SecurityPrivacy {
             if (main_grid.get_children ().length () > 0)
                 return;
 
+            stack = new Gtk.Stack ();
+            stack.expand = true;
+
             try {
                 var permission = new Polkit.Permission.sync ("org.pantheon.security-privacy", Polkit.UnixProcess.new (Posix.getpid ()));
                 var infobar = new Gtk.InfoBar ();
@@ -64,23 +68,28 @@ namespace SecurityPrivacy {
                 area.add (lock_button);
                 content.add (label);
                 main_grid.attach (infobar, 0, 0, 1, 1);
-                if (permission.allowed == true) {
-                    infobar.no_show_all = true;
-                }
-                permission.notify["allowed"].connect (() => {
-                    if (permission.allowed == true) {
-                        infobar.hide ();
-                    } else {
+                infobar.no_show_all = true;
+                stack.notify["visible-child-name"].connect (() => {
+                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
                         infobar.no_show_all = false;
                         infobar.show_all ();
+                    } else {
+                        infobar.no_show_all = true;
+                        infobar.hide ();
+                    }
+                });
+                permission.notify["allowed"].connect (() => {
+                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
+                        infobar.no_show_all = false;
+                        infobar.show_all ();
+                    } else {
+                        infobar.no_show_all = true;
+                        infobar.hide ();
                     }
                 });
             } catch (Error e) {
                 critical (e.message);
             }
-
-            var stack = new Gtk.Stack ();
-            stack.expand = true;
 
             var stack_switcher = new Gtk.StackSwitcher ();
             stack_switcher.set_stack (stack);
@@ -90,7 +99,7 @@ namespace SecurityPrivacy {
             var locking = new LockPanel ();
             stack.add_titled (locking, "locking", _("Locking"));
             var tracking = new TrackPanel ();
-            stack.add_titled (tracking, "tracking", _("Tracking"));
+            stack.add_titled (tracking, "tracking", _("Privacy"));
             var firewall = new FirewallPanel ();
             stack.add_titled (firewall, "firewall", _("Firewall"));
 

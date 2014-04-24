@@ -33,7 +33,7 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
         screensaver = new Settings ("org.gnome.desktop.screensaver");
 
         var screen_lock_label = new Gtk.Label ("");
-        screen_lock_label.set_markup ("<b>%s</b>".printf (_("Screen lock:")));
+        screen_lock_label.set_markup ("<b>%s</b>".printf (_("Lock screen:")));
 
         var screen_lock_switch = new Gtk.Switch ();
         screen_lock_switch.active = true;

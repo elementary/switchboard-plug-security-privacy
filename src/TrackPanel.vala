@@ -59,7 +59,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         margin_top = 0;
 
         var record_label = new Gtk.Label ("");
-        record_label.set_markup ("<b>%s</b>".printf (_("Record file and application usage:")));
+        record_label.set_markup ("<b>%s</b>".printf (_("Gather statistics:")));
 
         var record_switch = new Gtk.Switch ();
         record_switch.active = true;
@@ -75,10 +75,12 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         });
 
         var switch_grid = new Gtk.Grid ();
+        switch_grid.orientation = Gtk.Orientation.HORIZONTAL;
         switch_grid.valign = Gtk.Align.CENTER;
         switch_grid.add (record_switch);
 
         var info_button = new Gtk.ToggleButton ();
+        info_button.tooltip_text = _("Read more…");
         info_button.image = new Gtk.Image.from_icon_name ("help-info-symbolic", Gtk.IconSize.MENU);
         info_button.relief = Gtk.ReliefStyle.NONE;
         info_button.notify["active"].connect (() => {
@@ -92,7 +94,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         /* Info Popover */
 
-        var explain_label = new Gtk.Label (_("This operation system track of Files and Applications you've used to provide extra functionality. If other proples can see or access your account, you may wish to limit which items are recorded"));
+        var explain_label = new Gtk.Label (_("This operating system can gather useful statistics about file and app usage to provide extra functionality. If other people can see or access your account, you may wish to limit which items are recorded."));
         explain_label.wrap = true;
         explain_label.max_width_chars = 60;
         
@@ -110,6 +112,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         /* Remove Popover */
 
         var remove_button = new Gtk.ToggleButton ();
+        remove_button.tooltip_text = _("Clear Usage Data…");
         remove_button.image = new Gtk.Image.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU);
         remove_button.relief = Gtk.ReliefStyle.NONE;
         remove_button.notify["active"].connect (() => {
@@ -217,9 +220,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         var fake_grid_right = new Gtk.Grid ();
         fake_grid_right.hexpand = true;
 
-        attach (fake_grid_left, 0, 0, 1, 1);
         attach (record_grid, 1, 0, 2, 1);
-        attach (fake_grid_right, 3, 0, 1, 1);
         create_include_treeview ();
         create_exclude_treeview ();
 
@@ -278,13 +279,15 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         });
         var cell = new Gtk.CellRendererText ();
         var cellpixbuf = new Gtk.CellRendererPixbuf ();
+        cellpixbuf.stock_size = Gtk.IconSize.LARGE_TOOLBAR;
         view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.ACTIVE);
         view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
         view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
 
-        var frame = new Gtk.Frame (null);
-        frame.expand = true;
-        frame.add (view);
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.shadow_type = Gtk.ShadowType.IN;
+        scrolled.expand = true;
+        scrolled.add (view);
 
         var record_label = new Gtk.Label (_("Record:"));
         record_label.xalign = 0;
@@ -292,7 +295,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         record_grid = new Gtk.Grid ();
         record_grid.row_spacing = 6;
         record_grid.attach (record_label, 0, 0, 1, 1);
-        record_grid.attach (frame, 0, 1, 1, 1);
+        record_grid.attach (scrolled, 0, 1, 1, 1);
         attach (record_grid, 1, 1, 1, 1);
 
         set_inclue_iter_to_liststore (list_store, _("Documents"), "x-office-document", Zeitgeist.NFO.DOCUMENT);
@@ -322,12 +325,14 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         var cell = new Gtk.CellRendererText ();
         var cellpixbuf = new Gtk.CellRendererPixbuf ();
+        cellpixbuf.stock_size = Gtk.IconSize.LARGE_TOOLBAR;
         view.insert_column_with_attributes (-1, "", cellpixbuf, "gicon", NotColumns.ICON);
         view.insert_column_with_attributes (-1, "", cell, "markup", NotColumns.NAME);
 
-        var frame = new Gtk.Frame (null);
-        frame.expand = true;
-        frame.add (view);
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.shadow_type = Gtk.ShadowType.IN;
+        scrolled.expand = true;
+        scrolled.add (view);
 
         var add_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
         add_button.clicked.connect (() => {
@@ -395,7 +400,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         var frame_grid = new Gtk.Grid ();
         frame_grid.orientation = Gtk.Orientation.VERTICAL;
-        frame_grid.add (frame);
+        frame_grid.add (scrolled);
         frame_grid.add (list_toolbar);
 
         var record_label = new Gtk.Label (_("Do not record:"));
