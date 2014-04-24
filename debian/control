@@ -1,27 +1,31 @@
-Source: switchboard-plug-security-policy
+Source: switchboard-plug-security-privacy
 Section: x11
 Priority: optional
 Maintainer: Corentin Noël <tintou@mailoo.org>
 Build-Depends: cmake,
                debhelper (>= 9),
-               libswitchboard-2.0-dev
-Standards-Version: 3.9.2
+               libswitchboard-2.0-dev,
+               libgtk-3-dev,
+               libgranite-dev,
+               libpolkit-gobject-1-dev,
+               libzeitgeist-2.0-dev
+Standards-Version: 3.9.5
 Homepage: https://launchpad.net/pantheon-plugs
 
-Package: switchboard-plug-security-policy
+Package: switchboard-plug-security-privacy
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Enhances: switchboard
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Manage security and privacy
+ Switchboard plug for managing the security and privacy of your system.
 
-Package: switchboard-plug-security-policy-dbg
+Package: switchboard-plug-security-privacy-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends: switchboard-plug-security-policy (= ${binary:Version}), ${misc:Depends}
-Enhances: switchboard-plug-security-policy
-Description: <insert up to 60 chars description> (debugging symbols)
- <insert long description, indented with spaces>
+Depends: switchboard-plug-security-privacy (= ${binary:Version}), ${misc:Depends}
+Enhances: switchboard-plug-security-privacy
+Description: Manage security and privacy (debugging symbols)
+ Switchboard plug for managing the security and privacy of your system.
  .
  This package contains debugging symbols for switchboard-plug-template.

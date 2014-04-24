@@ -13,4 +13,4 @@
 	dh $@ 
 
 override_dh_strip:
-	dh_strip --dbg-package=switchboard-plug-security-policy-dbg
+	dh_strip --dbg-package=switchboard-plug-security-privacy-dbg
