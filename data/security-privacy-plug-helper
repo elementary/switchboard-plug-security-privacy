@@ -15,7 +15,7 @@
                 export LANGUAGE
                 ufw status numbered;;
             5)
-                ufw insert $2;;
+                ufw $2;;
             6)
                 ufw --force delete $OPTARG;;
             \?)

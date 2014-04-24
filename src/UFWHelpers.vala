@@ -26,8 +26,6 @@
 
 namespace SecurityPrivacy.UFWHelpers {
 
-    public int last_rule = 0;
-
     private string get_helper_path () {
         return "%s/security-privacy-plug-helper".printf (Build.PKGDATADIR);
     }
@@ -63,8 +61,6 @@ namespace SecurityPrivacy.UFWHelpers {
             foreach (var line in lines) {
                 if ("ALLOW" in line || "DENY" in line || "LIMIT" in line || "REJECT" in line) {
                     var rule = new Rule.from_line (line);
-                    if (rule.number > last_rule)
-                        last_rule = rule.number;
                     rules.add (rule);
                 }
             }
@@ -83,20 +79,20 @@ namespace SecurityPrivacy.UFWHelpers {
     }
 
     public void add_rule (Rule rule) {
+        string rule_str = "";
         try {
-            string rule_str = "%d".printf (last_rule);
             switch (rule.action) {
                 case Rule.Action.DENY:
-                    rule_str = "%s deny".printf (rule_str);
+                    rule_str = "deny";
                     break;
                 case Rule.Action.REJECT:
-                    rule_str = "%s reject".printf (rule_str);
+                    rule_str = "reject";
                     break;
                 case Rule.Action.LIMIT:
-                    rule_str = "%s limit".printf (rule_str);
+                    rule_str = "limit";
                     break;
                 default:
-                    rule_str = "%s allow".printf (rule_str);
+                    rule_str = "allow";
                     break;
             }
 
