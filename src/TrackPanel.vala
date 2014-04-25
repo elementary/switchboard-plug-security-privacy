@@ -86,8 +86,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         info_button.notify["active"].connect (() => {
             if (info_button.active == false) {
                 info_popover.hide ();
-            }
-            if (info_button.active == true) {
+            } else {
                 info_popover.show_all ();
             }
         });
@@ -111,15 +110,11 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         /* Remove Popover */
 
-        var remove_button = new Gtk.ToggleButton ();
-        remove_button.tooltip_text = _("Clear Usage Data…");
-        remove_button.image = new Gtk.Image.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU);
-        remove_button.relief = Gtk.ReliefStyle.NONE;
+        var remove_button = new Gtk.ToggleButton.with_label (_("Clear Usage Data…"));
         remove_button.notify["active"].connect (() => {
             if (remove_button.active == false) {
                 remove_popover.hide ();
-            }
-            if (remove_button.active == true) {
+            } else {
                 remove_popover.show_all ();
             }
         });
@@ -187,6 +182,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
             }
             remove_popover.hide ();
         });
+
         var clear_button_grid = new Gtk.Grid ();
         clear_button_grid.halign = Gtk.Align.END;
         clear_button_grid.add (clear_button);
