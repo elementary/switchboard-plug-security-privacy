@@ -230,8 +230,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         events.add (new Zeitgeist.Event ());
         var zg_log = new Zeitgeist.Log ();
         try {
-            uint32[] ids = yield zg_log.find_event_ids (tr, events,
-                    Zeitgeist.StorageState.ANY, 0, 0, null);
+            uint32[] ids = yield zg_log.find_event_ids (tr, events, Zeitgeist.StorageState.ANY, 0, 0, null);
             Array<int> del_ids = new Array<int> ();
             del_ids.append_vals (ids, ids.length);
             delete_history.begin (zg_log, del_ids);
@@ -257,13 +256,15 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         var view = new Gtk.TreeView.with_model (list_store);
         view.vexpand = true;
         view.headers_visible = false;
+        view.activate_on_single_click = true;
 
         var celltoggle = new Gtk.CellRendererToggle ();
-        celltoggle.toggled.connect ((toggle, path) => {
-            var is_active = !toggle.active;
-            Gtk.TreePath tree_path = new Gtk.TreePath.from_string (path);
+        view.row_activated.connect ((path, column) => {
+            Value active;
             Gtk.TreeIter iter;
-            list_store.get_iter (out iter, tree_path);
+            list_store.get_iter (out iter, path);
+            list_store.get_value (iter, Columns.ACTIVE, out active);
+            var is_active = !active.get_boolean ();
             list_store.set (iter, Columns.ACTIVE, is_active);
             Value name;
             list_store.get_value (iter, Columns.FILE_TYPE, out name);
@@ -273,6 +274,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                 filetype_blacklist.block (name.get_string ());
             }
         });
+
         var cell = new Gtk.CellRendererText ();
         var cellpixbuf = new Gtk.CellRendererPixbuf ();
         cellpixbuf.stock_size = Gtk.IconSize.LARGE_TOOLBAR;
