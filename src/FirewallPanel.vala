@@ -154,6 +154,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             add_popover.add (popover_grid);
 
             var policy_label = new Gtk.Label (_("Action:"));
+            policy_label.xalign = 1;
             var policy_combobox = new Gtk.ComboBoxText ();
             policy_combobox.append_text (_("Allow"));
             policy_combobox.append_text (_("Deny"));
@@ -162,18 +163,21 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             policy_combobox.active = 0;
 
             var protocol_label = new Gtk.Label (_("Protocol:"));
+            protocol_label.xalign = 1;
             var protocol_combobox = new Gtk.ComboBoxText ();
             protocol_combobox.append_text ("TCP");
             protocol_combobox.append_text ("UDP");
             protocol_combobox.active = 0;
 
             var direction_label = new Gtk.Label (_("Direction:"));
+            direction_label.xalign = 1;
             var direction_combobox = new Gtk.ComboBoxText ();
             direction_combobox.append_text (_("In"));
             direction_combobox.append_text (_("Out"));
             direction_combobox.active = 0;
 
             var ports_label = new Gtk.Label (_("Ports:"));
+            ports_label.xalign = 1;
             var ports_entry = new Gtk.Entry ();
             ports_entry.input_purpose = Gtk.InputPurpose.NUMBER;
             ports_entry.placeholder_text = _("%d or %d-%d").printf (80, 80, 85);
