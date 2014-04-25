@@ -1,608 +1,274 @@
-# Finnish translation for maya
-# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the maya package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+# Finnish translation for switchboard-plug-security-privacy
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the switchboard-plug-security-privacy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: maya\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-15 23:40+0200\n"
-"PO-Revision-Date: 2014-04-16 19:26+0000\n"
+"Project-Id-Version: switchboard-plug-security-privacy\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-04-24 14:11+0200\n"
+"PO-Revision-Date: 2014-04-24 18:53+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-17 06:04+0000\n"
+"X-Launchpad-Export-Date: 2014-04-25 07:43+0000\n"
 "X-Generator: Launchpad (build 16985)\n"
-"Language: fi\n"
-
-#: ../src/EventEdition/GuestsPanel.vala:44
-msgid "Participants:"
-msgstr "Osanottajat:"
-
-#: ../src/EventEdition/GuestsPanel.vala:47
-msgid "Invite…"
-msgstr "Kutsu…"
-
-#: ../src/EventEdition/GuestsPanel.vala:151
-#: ../src/EventEdition/GuestsPanel.vala:162
-msgid "Pending"
-msgstr "Odottaa"
-
-#: ../src/EventEdition/GuestsPanel.vala:156
-msgid "Accepted"
-msgstr "Hyväksynyt"
-
-#: ../src/EventEdition/GuestsPanel.vala:159
-msgid "Declined"
-msgstr "Hylännyt"
-
-#: ../src/EventEdition/InfoPanel.vala:59
-msgid "From:"
-msgstr "Alkaen:"
-
-#: ../src/EventEdition/InfoPanel.vala:65
-msgid "All day:"
-msgstr "Koko päivä:"
-
-#: ../src/EventEdition/InfoPanel.vala:70
-msgid "To:"
-msgstr "Päättyen:"
-
-#: ../src/EventEdition/InfoPanel.vala:89
-msgid "Title:"
-msgstr "Otsikko:"
-
-#: ../src/EventEdition/InfoPanel.vala:91
-msgid "Name of Event"
-msgstr "Tapahtuman nimi"
-
-#: ../src/EventEdition/InfoPanel.vala:94
-msgid "Calendar:"
-msgstr "Kalenteri:"
-
-#: ../src/EventEdition/InfoPanel.vala:112
-msgid "Comments:"
-msgstr "Kommentit:"
-
-#: ../src/EventEdition/EventDialog.vala:61
-msgid "Add Event"
-msgstr "Lisää tapahtuma"
-
-#: ../src/EventEdition/EventDialog.vala:64
-msgid "Edit Event"
-msgstr "Muokkaa tapahtumaa"
-
-#: ../src/EventEdition/EventDialog.vala:92
-msgid "General Informations"
-msgstr "Yleiset tiedot"
-
-#: ../src/EventEdition/EventDialog.vala:95
-msgid "Location"
-msgstr "Paikka"
-
-#: ../src/EventEdition/EventDialog.vala:98
-msgid "Guests"
-msgstr "Vieraat"
-
-#: ../src/EventEdition/EventDialog.vala:101
-msgid "Reminders"
-msgstr "Muistutukset"
-
-#: ../src/EventEdition/EventDialog.vala:104
-#: ../src/EventEdition/RepeatPanel.vala:162
-msgid "Repeat"
-msgstr "Toista"
-
-#: ../src/EventEdition/EventDialog.vala:134
-msgid "Create Event"
-msgstr "Luo tapahtuma"
-
-#: ../src/EventEdition/EventDialog.vala:136
-msgid "Save Changes"
-msgstr "Tallenna muutokset"
-
-#: ../src/EventEdition/RepeatPanel.vala:49
-msgid "Repeat:"
-msgstr "Toisto:"
-
-#: ../src/EventEdition/RepeatPanel.vala:54
-msgid "Daily"
-msgstr "Päivittäin"
-
-#: ../src/EventEdition/RepeatPanel.vala:55
-msgid "Weekly"
-msgstr "Viikoittain"
-
-#: ../src/EventEdition/RepeatPanel.vala:56
-msgid "Monthly"
-msgstr "Kuukausittain"
-
-#: ../src/EventEdition/RepeatPanel.vala:57
-msgid "Yearly"
-msgstr "Vuosittain"
-
-#: ../src/EventEdition/RepeatPanel.vala:96
-msgid "Every:"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:103
-msgid "Day"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:103
-msgid "Days"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:106
-#: ../src/EventEdition/RepeatPanel.vala:117
-msgid "Week"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:106
-msgid "Weeks"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:109
-msgid "Month"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:109
-msgid "Months"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:112
-msgid "Year"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:112
-msgid "Years"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:127
-msgid "Ends:"
-msgstr "Päättyy:"
-
-#: ../src/EventEdition/RepeatPanel.vala:129
-#: ../src/EventEdition/RepeatPanel.vala:162
-msgid "Repeats"
-msgstr "Toistuu"
-
-#: ../src/EventEdition/RepeatPanel.vala:133
-msgid "Never"
-msgstr "Ei koskaan"
-
-#: ../src/EventEdition/RepeatPanel.vala:134
-msgid "Until"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:135
-msgid "After"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:181
-msgid "The same day every month"
-msgstr "Samana päivänä joka kuussa"
-
-#: ../src/EventEdition/RepeatPanel.vala:299
-msgid "Sunday"
-msgstr "sunnuntai"
-
-#: ../src/EventEdition/RepeatPanel.vala:302
-msgid "Monday"
-msgstr "maanantai"
-
-#: ../src/EventEdition/RepeatPanel.vala:305
-msgid "Tuesday"
-msgstr "tiistai"
-
-#: ../src/EventEdition/RepeatPanel.vala:308
-msgid "Wednesday"
-msgstr "keskiviikko"
-
-#: ../src/EventEdition/RepeatPanel.vala:311
-msgid "Thursday"
-msgstr "torstai"
-
-#: ../src/EventEdition/RepeatPanel.vala:314
-msgid "Friday"
-msgstr "perjantai"
-
-#: ../src/EventEdition/RepeatPanel.vala:317
-msgid "Saturday"
-msgstr "lauantai"
-
-#: ../src/EventEdition/RepeatPanel.vala:323
-msgid "Every last %s"
-msgstr "Joka viimeinen %s"
-
-#: ../src/EventEdition/RepeatPanel.vala:326
-msgid "Every first %s"
-msgstr "Joka ensimmäinen %s"
-
-#: ../src/EventEdition/RepeatPanel.vala:329
-msgid "Every second %s"
-msgstr "Joka toinen %s"
-
-#: ../src/EventEdition/RepeatPanel.vala:332
-msgid "Every third %s"
-msgstr "Joka kolmas %s"
-
-#: ../src/EventEdition/RepeatPanel.vala:335
-msgid "Every fourth %s"
-msgstr "Joka neljäs %s"
-
-#: ../src/EventEdition/RepeatPanel.vala:338
-msgid "Every fifth %s"
-msgstr "Joka viides %s"
-
-#: ../src/EventEdition/RepeatPanel.vala:346
-msgid "Mon"
-msgstr "Ma"
-
-#: ../src/EventEdition/RepeatPanel.vala:347
-msgid "Tue"
-msgstr "Ti"
-
-#: ../src/EventEdition/RepeatPanel.vala:348
-msgid "Wed"
-msgstr "Ke"
-
-#: ../src/EventEdition/RepeatPanel.vala:349
-msgid "Thu"
-msgstr "To"
-
-#: ../src/EventEdition/RepeatPanel.vala:350
-msgid "Fri"
-msgstr "Pe"
-
-#: ../src/EventEdition/RepeatPanel.vala:351
-msgid "Sat"
-msgstr "La"
-
-#: ../src/EventEdition/RepeatPanel.vala:352
-msgid "Sun"
-msgstr "Su"
-
-#: ../src/EventEdition/ReminderPanel.vala:32
-msgid "Reminders:"
-msgstr "Muistutukset:"
-
-#: ../src/EventEdition/ReminderPanel.vala:35
-msgid "No Reminders."
-msgstr "Ei muistutuksia."
-
-#: ../src/EventEdition/ReminderPanel.vala:47
-msgid "Add Reminder"
-msgstr "Lisää muistutus"
-
-#: ../src/EventEdition/ReminderPanel.vala:176
-msgid "0 minutes"
-msgstr "0 minuuttia"
-
-#: ../src/EventEdition/ReminderPanel.vala:177
-msgid "1 minutes"
-msgstr "1 minuutti"
-
-#: ../src/EventEdition/ReminderPanel.vala:178
-msgid "5 minutes"
-msgstr "5 minuuttia"
-
-#: ../src/EventEdition/ReminderPanel.vala:179
-msgid "10 minutes"
-msgstr "10 minuuttia"
-
-#: ../src/EventEdition/ReminderPanel.vala:180
-msgid "15 minutes"
-msgstr "15 minuuttia"
-
-#: ../src/EventEdition/ReminderPanel.vala:181
-msgid "20 minutes"
-msgstr "20 minuuttia"
-
-#: ../src/EventEdition/ReminderPanel.vala:182
-msgid "25 minutes"
-msgstr "25 minuuttia"
-
-#: ../src/EventEdition/ReminderPanel.vala:183
-msgid "30 minutes"
-msgstr "30 minuuttia"
-
-#: ../src/EventEdition/ReminderPanel.vala:184
-msgid "45 minutes"
-msgstr "45 minuuttia"
-
-#: ../src/EventEdition/ReminderPanel.vala:185
-msgid "1 hour"
-msgstr "1 tunti"
-
-#: ../src/EventEdition/ReminderPanel.vala:186
-msgid "2 hours"
-msgstr "2 tuntia"
-
-#: ../src/EventEdition/ReminderPanel.vala:187
-msgid "3 hours"
-msgstr "3 tuntia"
-
-#: ../src/EventEdition/ReminderPanel.vala:188
-msgid "12 hours"
-msgstr "12 tuntia"
-
-#: ../src/EventEdition/ReminderPanel.vala:189
-msgid "24 hours"
-msgstr "24 tuntia"
-
-#: ../src/EventEdition/ReminderPanel.vala:190
-msgid "2 days"
-msgstr "2 päivää"
-
-#: ../src/EventEdition/ReminderPanel.vala:191
-msgid "1 week"
-msgstr "1 viikko"
-
-#: ../src/EventEdition/ReminderPanel.vala:200
-msgid "Notification"
-msgstr "Ilmoitus"
-
-#: ../src/EventEdition/ReminderPanel.vala:201
-msgid "Email"
-msgstr "Sähköposti"
-
-#: ../src/EventEdition/LocationPanel.vala:37
-msgid "Location:"
-msgstr "Sijainti:"
-
-#: ../src/EventEdition/LocationPanel.vala:39
-msgid "John Smith OR Example St."
-msgstr "Matti Meikäläinen TAI Esimerkkikatu"
-
-#: ../src/Sidebar/Sidebar.vala:38
-msgid ""
-"Your upcoming events will be displayed here when you select a date with "
-"events."
-msgstr ""
-"Tulevat tapahtumat näytetään tässä, kun valitset tapahtumia sisältävän "
-"päivämäärän."
-
-#: ../src/Sidebar/EventWidget.vala:131 ../src/SourceItem.vala:98
-msgid "Edit…"
-msgstr "Muokkaa…"
-
-#: ../src/Sidebar/EventWidget.vala:132 ../src/SourceItem.vala:92
-msgid "Remove"
-msgstr "Poista"
-
-#: ../src/Sidebar/EventWidget.vala:212
-msgid "All day"
-msgstr "Koko päivä"
-
-#: ../src/SourceItem.vala:119
-msgid "Undo"
-msgstr "Kumoa"
-
-#: ../src/SourceItem.vala:137
-msgid "Calendar \"%s\" removed."
-msgstr "Kalenteri \"%s\" poistettiin."
-
-#: ../src/MayaToolbar.vala:41
-msgid "Create a new event"
-msgstr "Luo uusi tapahtuma"
-
-#: ../src/MayaToolbar.vala:45
-msgid "Manage Calendars"
-msgstr "Hallitse kalentereita"
-
-#: ../src/MayaToolbar.vala:53
-msgid "Search Events"
-msgstr "Etsi tapahtumia"
-
-#: ../src/MayaToolbar.vala:56
-msgid "Export or Share the default Calendar"
-msgstr "Vie tai jaa vakiokalenteri"
-
-#: ../src/MayaToolbar.vala:70
-msgid "Today"
-msgstr "Tänään"
-
-#: ../src/MayaToolbar.vala:71
-msgid "Show Week Numbers"
-msgstr "Näytä viikkonumerot"
-
-#: ../src/MayaToolbar.vala:73
-msgid "About"
-msgstr "Tietoja"
-
-#: ../src/SourceDialog.vala:54
+
+#: ../src/Plug.vala:34
+msgid "Security & Privacy"
+msgstr "Turvallisuus ja yksityisyys"
+
+#: ../src/Plug.vala:35
+msgid "Privacy and Activity Manager"
+msgstr "Yksityisyys- ja käyttötietojen hallinta"
+
+#: ../src/Plug.vala:63
+msgid "Some settings requires administration right to be changed"
+msgstr "Jotkin asetusmuutokset vaativat ylläpitäjän oikeuksia"
+
+#: ../src/Plug.vala:91
+msgid "Locking"
+msgstr "Lukitus"
+
+#: ../src/Plug.vala:93
+msgid "Tracking"
+msgstr "Seuranta"
+
+#: ../src/Plug.vala:95
+msgid "Firewall"
+msgstr "Palomuuri"
+
+#: ../src/FirewallPanel.vala:49
+msgid "Firewall Status:"
+msgstr "Palomuurin tila:"
+
+#: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
+#: ../src/FirewallPanel.vala:117
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
+msgid "Allow"
+msgstr "Salli"
+
+#: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
+msgid "Deny"
+msgstr "Estä"
+
+#: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
+msgid "Reject"
+msgstr "Hylkää"
+
+#: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
+msgid "Limit"
+msgstr "Rajoita"
+
+#: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
+msgid "In"
+msgstr "Sisään"
+
+#: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
+msgid "Out"
+msgstr "Ulos"
+
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
+msgstr "Toiminto"
+
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr "Protokolla"
+
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
+msgstr "Suunta"
+
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
+msgstr "Portit"
+
+#: ../src/FirewallPanel.vala:143
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/FirewallPanel.vala:157
+msgid "Action:"
+msgstr "Toiminto:"
+
+#: ../src/FirewallPanel.vala:165
+msgid "Protocol:"
+msgstr "Protokolla:"
+
+#: ../src/FirewallPanel.vala:171
+msgid "Direction:"
+msgstr "Suunta:"
+
+#: ../src/FirewallPanel.vala:177
+msgid "Ports:"
+msgstr "Portit:"
+
+#: ../src/FirewallPanel.vala:180
+msgid "%d or %d-%d"
+msgstr "%d tai %d-%d"
+
+#: ../src/FirewallPanel.vala:182
+msgid "Add Rule"
+msgstr "Lisää sääntö"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Palomuurin asetukset vaatii tunnistautumisen"
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Valitse sovellus"
+
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
 msgstr "Peru"
 
-#: ../src/SourceDialog.vala:55
-msgid "Create"
-msgstr "Luo"
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
+msgid "Add"
+msgstr "Lisää"
 
-#: ../src/SourceDialog.vala:64
-msgid "Name:"
-msgstr "Nimi:"
+#: ../src/LockPanel.vala:36
+msgid "Screen lock:"
+msgstr "Näytön lukitus:"
 
-#: ../src/SourceDialog.vala:67
-msgid "Calendar Name"
-msgstr "Kalenterin nimi"
+#: ../src/LockPanel.vala:45
+msgid "After display turns off"
+msgstr "Kun näyttö sammuu"
 
-#: ../src/SourceDialog.vala:90
-msgid "Type:"
-msgstr "Tyyppi:"
+#: ../src/LockPanel.vala:46
+msgid "30 seconds"
+msgstr "30 sekuntia"
 
-#: ../src/SourceDialog.vala:112
-msgid "Color:"
-msgstr "Väri:"
+#: ../src/LockPanel.vala:47
+msgid "1 minute"
+msgstr "1 minuutti"
 
-#: ../src/SourceDialog.vala:117
-msgid "Mark as default calendar"
-msgstr "Merkitse oletuskalenteriksi"
+#: ../src/LockPanel.vala:48
+msgid "2 minutes"
+msgstr "2 minuuttia"
 
-#: ../src/SourceDialog.vala:147
-msgid "Create Calendar"
-msgstr "Luo kalenteri"
+#: ../src/LockPanel.vala:49
+msgid "3 minutes"
+msgstr "3 minuuttia"
 
-#: ../src/SourceDialog.vala:154
-msgid "Save"
-msgstr "Tallenna"
+#: ../src/LockPanel.vala:50
+msgid "5 minutes"
+msgstr "5 minuuttia"
 
-#: ../src/SourceSelector.vala:68
-msgid "Add New Calendar…"
-msgstr "Lisää uusi kalenteri…"
+#: ../src/LockPanel.vala:51
+msgid "10 minutes"
+msgstr "10 minuuttia"
 
-#: ../src/Application.vala:30
-msgid "Calendar"
-msgstr "Kalenteri"
+#: ../src/LockPanel.vala:52
+msgid "30 minutes"
+msgstr "30 minuuttia"
 
-#: ../src/Grid/VAutoHider.vala:96
-msgid "%u more…"
-msgstr "%u lisää…"
+#: ../src/LockPanel.vala:53
+msgid "1 hour"
+msgstr "1 tunti"
 
-#: ../src/Widgets/ContractorButtonWithMenu.vala:64
-#: ../src/Widgets/ContractorButtonWithMenu.vala:73
-msgid "Export Calendar..."
-msgstr "Vie kalenteri..."
+#: ../src/LockPanel.vala:106
+msgid "Ask for my password to unlock"
+msgstr "Vaadi salasana avausta varten"
 
-#: ../src/Widgets/ContractorButtonWithMenu.vala:76
-msgid "calendar.ics"
-msgstr "kalenteri.ics"
+#: ../src/LockPanel.vala:111
+msgid "Show notifications on lockscreen"
+msgstr "Näytä ilmoitukset lukitusnäytöllä"
 
-#: ../plugins/CalDAV/CalDAVBackend.vala:39
-msgid "CalDAV"
-msgstr "CalDAV"
+#: ../src/TrackPanel.vala:62
+msgid "Record file and application usage:"
+msgstr "Tallenna tiedosto- ja sovelluskäyttö:"
 
-#: ../plugins/CalDAV/CalDAVBackend.vala:58
-msgid "URL:"
-msgstr "Osoite:"
-
-#: ../plugins/CalDAV/CalDAVBackend.vala:81
-msgid "Use a secure connection"
-msgstr "Käytä salattua yhteyttä"
-
-#: ../plugins/CalDAV/CalDAVBackend.vala:103
-msgid "Server handles meeting invitations"
-msgstr "Palvelin käsittelee kokouskutsut"
-
-#: ../plugins/Google/GoogleBackend.vala:38
-msgid "Google"
-msgstr "Google"
-
-#: ../plugins/Google/GoogleBackend.vala:61
-msgid "user.name or user.name@gmail.com"
+#: ../src/TrackPanel.vala:95
+msgid ""
+"This operation system track of Files and Applications you've used to provide "
+"extra functionality. If other proples can see or access your account, you "
+"may wish to limit which items are recorded"
 msgstr ""
 
-#: ../core/Settings/LanguagesFormat.vala:21
-msgid "%B %e, %Y"
-msgstr "%e. %Bta %Y"
+#: ../src/TrackPanel.vala:136
+msgid "Delete records of which files and applications were used:"
+msgstr "Poista tiedot käytetyistä tiedostoista ja sovelluksista ajalta:"
 
-#: ../core/Settings/LanguagesFormat.vala:25
-msgid "%A, %b %d"
-msgstr "%A, %d. %b"
+#: ../src/TrackPanel.vala:138
+msgid "In the past hour"
+msgstr "Kulunut tunti"
 
-#: ../core/Settings/LanguagesFormat.vala:33
-msgid "%l:%M %p"
-msgstr "%I.%M %p"
+#: ../src/TrackPanel.vala:139
+msgid "In the past day"
+msgstr "Kulunut päivä"
 
-#: ../core/Settings/LanguagesFormat.vala:36
-msgid "%H:%M"
-msgstr "%H.%M"
+#: ../src/TrackPanel.vala:140
+msgid "In the past week"
+msgstr "Kulunut viikko"
 
-#: ../core/Backends/PlacementWidget.vala:37
-msgid "User:"
-msgstr "Käyttäjä:"
+#: ../src/TrackPanel.vala:141
+msgid "From:"
+msgstr ""
 
-#: ../core/Backends/PlacementWidget.vala:46
-msgid "user.name"
-msgstr "käyttäjätunnus"
+#: ../src/TrackPanel.vala:142
+msgid "From all time"
+msgstr ""
 
-#: ../core/Backends/PlacementWidget.vala:59
-msgid "Email:"
-msgstr "Sähköposti:"
+#: ../src/TrackPanel.vala:145
+msgid "To:"
+msgstr ""
 
-#: ../core/Backends/PlacementWidget.vala:68
-msgid "john@doe.com"
-msgstr "nimi@osoite.fi"
+#: ../src/TrackPanel.vala:148
+msgid "Clear Data"
+msgstr "Tyhjennä tiedot"
 
-#: ../core/Backends/PlacementWidget.vala:80
-msgid "Keep a copy locally"
-msgstr "Säilytä paikallinen kopio"
+#: ../src/TrackPanel.vala:289
+msgid "Record:"
+msgstr "Tallenna:"
 
-#: ../core/Backends/LocalBackend.vala:26
-msgid "On this computer"
-msgstr "Tällä tietokoneella"
+#: ../src/TrackPanel.vala:298
+msgid "Documents"
+msgstr "Asiakirjat"
 
-#~ msgid "at"
-#~ msgstr "paikassa"
+#: ../src/TrackPanel.vala:299
+msgid "Music"
+msgstr "Musiikki"
 
-#~ msgid "Title"
-#~ msgstr "Otsikko"
+#: ../src/TrackPanel.vala:300
+msgid "Pictures"
+msgstr "Kuvat"
 
-#~ msgid "Comments"
-#~ msgstr "Huomautukset"
+#: ../src/TrackPanel.vala:301
+msgid "Presentations"
+msgstr "Esitykset"
 
-#~ msgid "Name or Email Address"
-#~ msgstr "Nimi tai sähköposti"
+#: ../src/TrackPanel.vala:302
+msgid "Spreadsheets"
+msgstr "Laskentataulukot"
 
-#~ msgid "Import..."
-#~ msgstr "Tuo..."
+#: ../src/TrackPanel.vala:303
+msgid "Videos"
+msgstr "Videot"
 
-#~ msgid "Select calendars to display"
-#~ msgstr "Valitse näytettävät kalenterit"
+#: ../src/TrackPanel.vala:304
+msgid "Chat Logs"
+msgstr "Keskustelulokit"
 
-#~ msgid "Edit the selected event"
-#~ msgstr "Muokkaa valittua tapahtumaa"
+#: ../src/TrackPanel.vala:340
+msgid "Add Application…"
+msgstr "Lisää sovellus…"
 
-#~ msgid "Delete the selected event"
-#~ msgstr "Poista valittu tapahtuma"
+#: ../src/TrackPanel.vala:348
+msgid "Add Folder…"
+msgstr "Lisää kansio…"
 
-#~ msgid "Sync..."
-#~ msgstr "Synkronoi..."
+#: ../src/TrackPanel.vala:350
+msgid "Select a folder to blacklist"
+msgstr "Valitse kansio pois jätettävien listalle"
 
-#~ msgid "_Add Event"
-#~ msgstr "_Lisää tapahtuma"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Katsele ja aikatauluta tapahtumia"
-
-#~ msgid "all day"
-#~ msgstr "koko päivä"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Alkaa: \t"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Tapahtumalle on annettava nimi sekä kelvollinen päivä"
-
-#~ msgid "Contacts"
-#~ msgstr "Yhteystiedot"
-
-#~ msgid "Personal"
-#~ msgstr "Henkilökohtaiset"
-
-#~ msgid "Add calendar"
-#~ msgstr "Lisää kalenteri"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Päättyy: \t"
-
-#~ msgid "Participants"
-#~ msgstr "Osallistujat"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Koko näyttö"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more lisää..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Planner;Dates;Days;Events;päivyri;kalenteri;tapahtumat;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Tätä tapahtumaa ei voi muokata"
+#: ../src/TrackPanel.vala:401
+msgid "Do not record:"
+msgstr "Älä tallenna:"
