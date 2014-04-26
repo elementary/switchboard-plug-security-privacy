@@ -7,528 +7,269 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-15 23:40+0200\n"
-"PO-Revision-Date: 2012-08-25 06:37+0000\n"
-"Last-Translator: kroq-gar78 <Unknown>\n"
+"POT-Creation-Date: 2014-04-24 14:11+0200\n"
+"PO-Revision-Date: 2014-04-25 09:52+0000\n"
+"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: Marathi <mr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-16 06:47+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-04-26 07:30+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 "Language: mr\n"
 
-#: ../src/EventEdition/GuestsPanel.vala:44
-msgid "Participants:"
+#: ../src/Plug.vala:34
+msgid "Security & Privacy"
 msgstr ""
 
-#: ../src/EventEdition/GuestsPanel.vala:47
-msgid "Invite…"
+#: ../src/Plug.vala:35
+msgid "Privacy and Activity Manager"
 msgstr ""
 
-#: ../src/EventEdition/GuestsPanel.vala:151
-#: ../src/EventEdition/GuestsPanel.vala:162
-msgid "Pending"
+#: ../src/Plug.vala:63
+msgid "Some settings requires administration right to be changed"
 msgstr ""
 
-#: ../src/EventEdition/GuestsPanel.vala:156
-msgid "Accepted"
+#: ../src/Plug.vala:91
+msgid "Locking"
 msgstr ""
 
-#: ../src/EventEdition/GuestsPanel.vala:159
-msgid "Declined"
+#: ../src/Plug.vala:93
+msgid "Tracking"
 msgstr ""
 
-#: ../src/EventEdition/InfoPanel.vala:59
-msgid "From:"
+#: ../src/Plug.vala:95
+msgid "Firewall"
 msgstr ""
 
-#: ../src/EventEdition/InfoPanel.vala:65
-msgid "All day:"
+#: ../src/FirewallPanel.vala:49
+msgid "Firewall Status:"
 msgstr ""
 
-#: ../src/EventEdition/InfoPanel.vala:70
-msgid "To:"
-msgstr "प्रति:"
-
-#: ../src/EventEdition/InfoPanel.vala:89
-msgid "Title:"
-msgstr ""
-
-#: ../src/EventEdition/InfoPanel.vala:91
-msgid "Name of Event"
-msgstr ""
-
-#: ../src/EventEdition/InfoPanel.vala:94
-msgid "Calendar:"
-msgstr ""
-
-#: ../src/EventEdition/InfoPanel.vala:112
-msgid "Comments:"
-msgstr ""
-
-#: ../src/EventEdition/EventDialog.vala:61
-msgid "Add Event"
-msgstr ""
-
-#: ../src/EventEdition/EventDialog.vala:64
-msgid "Edit Event"
-msgstr ""
-
-#: ../src/EventEdition/EventDialog.vala:92
-msgid "General Informations"
-msgstr ""
-
-#: ../src/EventEdition/EventDialog.vala:95
-msgid "Location"
-msgstr "स्थळ"
-
-#: ../src/EventEdition/EventDialog.vala:98
-msgid "Guests"
-msgstr ""
-
-#: ../src/EventEdition/EventDialog.vala:101
-msgid "Reminders"
-msgstr ""
-
-#: ../src/EventEdition/EventDialog.vala:104
-#: ../src/EventEdition/RepeatPanel.vala:162
-msgid "Repeat"
-msgstr ""
-
-#: ../src/EventEdition/EventDialog.vala:134
-msgid "Create Event"
-msgstr ""
-
-#: ../src/EventEdition/EventDialog.vala:136
-msgid "Save Changes"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:49
-msgid "Repeat:"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:54
-msgid "Daily"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:55
-msgid "Weekly"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:56
-msgid "Monthly"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:57
-msgid "Yearly"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:96
-msgid "Every:"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:103
-msgid "Day"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:103
-msgid "Days"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:106
-#: ../src/EventEdition/RepeatPanel.vala:117
-msgid "Week"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:106
-msgid "Weeks"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:109
-msgid "Month"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:109
-msgid "Months"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:112
-msgid "Year"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:112
-msgid "Years"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:127
-msgid "Ends:"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:129
-#: ../src/EventEdition/RepeatPanel.vala:162
-msgid "Repeats"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:133
-msgid "Never"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:134
-msgid "Until"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:135
-msgid "After"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:181
-msgid "The same day every month"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:299
-msgid "Sunday"
-msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:302
-msgid "Monday"
+#: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
+#: ../src/FirewallPanel.vala:117
+msgid "Unknown"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:305
-msgid "Tuesday"
+#: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
+msgid "Allow"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:308
-msgid "Wednesday"
+#: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
+msgid "Deny"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:311
-msgid "Thursday"
+#: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
+msgid "Reject"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:314
-msgid "Friday"
+#: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
+msgid "Limit"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:317
-msgid "Saturday"
+#: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
+msgid "In"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:323
-msgid "Every last %s"
+#: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
+msgid "Out"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:326
-msgid "Every first %s"
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:329
-msgid "Every second %s"
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:332
-msgid "Every third %s"
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:335
-msgid "Every fourth %s"
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:338
-msgid "Every fifth %s"
+#: ../src/FirewallPanel.vala:143
+msgid "IPv6"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:346
-msgid "Mon"
+#: ../src/FirewallPanel.vala:157
+msgid "Action:"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:347
-msgid "Tue"
+#: ../src/FirewallPanel.vala:165
+msgid "Protocol:"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:348
-msgid "Wed"
+#: ../src/FirewallPanel.vala:171
+msgid "Direction:"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:349
-msgid "Thu"
+#: ../src/FirewallPanel.vala:177
+msgid "Ports:"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:350
-msgid "Fri"
+#: ../src/FirewallPanel.vala:180
+msgid "%d or %d-%d"
 msgstr ""
 
-#: ../src/EventEdition/RepeatPanel.vala:351
-msgid "Sat"
+#: ../src/FirewallPanel.vala:182
+msgid "Add Rule"
 msgstr ""
-
-#: ../src/EventEdition/RepeatPanel.vala:352
-msgid "Sun"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:32
-msgid "Reminders:"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:35
-msgid "No Reminders."
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:47
-msgid "Add Reminder"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:176
-msgid "0 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:177
-msgid "1 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:178
-msgid "5 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:179
-msgid "10 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:180
-msgid "15 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:181
-msgid "20 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:182
-msgid "25 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:183
-msgid "30 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:184
-msgid "45 minutes"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:185
-msgid "1 hour"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:186
-msgid "2 hours"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:187
-msgid "3 hours"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:188
-msgid "12 hours"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:189
-msgid "24 hours"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:190
-msgid "2 days"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:191
-msgid "1 week"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:200
-msgid "Notification"
-msgstr ""
-
-#: ../src/EventEdition/ReminderPanel.vala:201
-msgid "Email"
-msgstr ""
-
-#: ../src/EventEdition/LocationPanel.vala:37
-msgid "Location:"
-msgstr ""
-
-#: ../src/EventEdition/LocationPanel.vala:39
-msgid "John Smith OR Example St."
-msgstr ""
-
-#: ../src/Sidebar/Sidebar.vala:38
-msgid ""
-"Your upcoming events will be displayed here when you select a date with "
-"events."
-msgstr ""
-
-#: ../src/Sidebar/EventWidget.vala:131 ../src/SourceItem.vala:98
-msgid "Edit…"
-msgstr ""
-
-#: ../src/Sidebar/EventWidget.vala:132 ../src/SourceItem.vala:92
-msgid "Remove"
-msgstr ""
-
-#: ../src/Sidebar/EventWidget.vala:212
-msgid "All day"
-msgstr ""
-
-#: ../src/SourceItem.vala:119
-msgid "Undo"
-msgstr ""
-
-#: ../src/SourceItem.vala:137
-msgid "Calendar \"%s\" removed."
-msgstr ""
-
-#: ../src/MayaToolbar.vala:41
-msgid "Create a new event"
-msgstr ""
-
-#: ../src/MayaToolbar.vala:45
-msgid "Manage Calendars"
-msgstr ""
-
-#: ../src/MayaToolbar.vala:53
-msgid "Search Events"
-msgstr ""
-
-#: ../src/MayaToolbar.vala:56
-msgid "Export or Share the default Calendar"
-msgstr ""
-
-#: ../src/MayaToolbar.vala:70
-msgid "Today"
-msgstr "आज"
 
-#: ../src/MayaToolbar.vala:71
-msgid "Show Week Numbers"
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 
-#: ../src/MayaToolbar.vala:73
-msgid "About"
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
 msgstr ""
 
-#: ../src/SourceDialog.vala:54
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
 msgstr ""
 
-#: ../src/SourceDialog.vala:55
-msgid "Create"
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
+msgid "Add"
 msgstr ""
 
-#: ../src/SourceDialog.vala:64
-msgid "Name:"
+#: ../src/LockPanel.vala:36
+msgid "Screen lock:"
 msgstr ""
 
-#: ../src/SourceDialog.vala:67
-msgid "Calendar Name"
+#: ../src/LockPanel.vala:45
+msgid "After display turns off"
 msgstr ""
 
-#: ../src/SourceDialog.vala:90
-msgid "Type:"
+#: ../src/LockPanel.vala:46
+msgid "30 seconds"
 msgstr ""
 
-#: ../src/SourceDialog.vala:112
-msgid "Color:"
+#: ../src/LockPanel.vala:47
+msgid "1 minute"
 msgstr ""
 
-#: ../src/SourceDialog.vala:117
-msgid "Mark as default calendar"
+#: ../src/LockPanel.vala:48
+msgid "2 minutes"
 msgstr ""
 
-#: ../src/SourceDialog.vala:147
-msgid "Create Calendar"
+#: ../src/LockPanel.vala:49
+msgid "3 minutes"
 msgstr ""
 
-#: ../src/SourceDialog.vala:154
-msgid "Save"
+#: ../src/LockPanel.vala:50
+msgid "5 minutes"
 msgstr ""
 
-#: ../src/SourceSelector.vala:68
-msgid "Add New Calendar…"
+#: ../src/LockPanel.vala:51
+msgid "10 minutes"
 msgstr ""
 
-#: ../src/Application.vala:30
-msgid "Calendar"
+#: ../src/LockPanel.vala:52
+msgid "30 minutes"
 msgstr ""
 
-#: ../src/Grid/VAutoHider.vala:96
-msgid "%u more…"
+#: ../src/LockPanel.vala:53
+msgid "1 hour"
 msgstr ""
 
-#: ../src/Widgets/ContractorButtonWithMenu.vala:64
-#: ../src/Widgets/ContractorButtonWithMenu.vala:73
-msgid "Export Calendar..."
+#: ../src/LockPanel.vala:106
+msgid "Ask for my password to unlock"
 msgstr ""
 
-#: ../src/Widgets/ContractorButtonWithMenu.vala:76
-msgid "calendar.ics"
+#: ../src/LockPanel.vala:111
+msgid "Show notifications on lockscreen"
 msgstr ""
 
-#: ../plugins/CalDAV/CalDAVBackend.vala:39
-msgid "CalDAV"
+#: ../src/TrackPanel.vala:62
+msgid "Record file and application usage:"
 msgstr ""
 
-#: ../plugins/CalDAV/CalDAVBackend.vala:58
-msgid "URL:"
+#: ../src/TrackPanel.vala:95
+msgid ""
+"This operation system track of Files and Applications you've used to provide "
+"extra functionality. If other proples can see or access your account, you "
+"may wish to limit which items are recorded"
 msgstr ""
 
-#: ../plugins/CalDAV/CalDAVBackend.vala:81
-msgid "Use a secure connection"
+#: ../src/TrackPanel.vala:136
+msgid "Delete records of which files and applications were used:"
 msgstr ""
 
-#: ../plugins/CalDAV/CalDAVBackend.vala:103
-msgid "Server handles meeting invitations"
+#: ../src/TrackPanel.vala:138
+msgid "In the past hour"
 msgstr ""
 
-#: ../plugins/Google/GoogleBackend.vala:38
-msgid "Google"
+#: ../src/TrackPanel.vala:139
+msgid "In the past day"
 msgstr ""
 
-#: ../plugins/Google/GoogleBackend.vala:61
-msgid "user.name or user.name@gmail.com"
+#: ../src/TrackPanel.vala:140
+msgid "In the past week"
 msgstr ""
 
-#: ../core/Settings/LanguagesFormat.vala:21
-msgid "%B %e, %Y"
+#: ../src/TrackPanel.vala:141
+msgid "From:"
 msgstr ""
 
-#: ../core/Settings/LanguagesFormat.vala:25
-msgid "%A, %b %d"
+#: ../src/TrackPanel.vala:142
+msgid "From all time"
 msgstr ""
 
-#: ../core/Settings/LanguagesFormat.vala:33
-msgid "%l:%M %p"
+#: ../src/TrackPanel.vala:145
+msgid "To:"
+msgstr "प्रति:"
+
+#: ../src/TrackPanel.vala:148
+msgid "Clear Data"
 msgstr ""
 
-#: ../core/Settings/LanguagesFormat.vala:36
-msgid "%H:%M"
+#: ../src/TrackPanel.vala:289
+msgid "Record:"
 msgstr ""
 
-#: ../core/Backends/PlacementWidget.vala:37
-msgid "User:"
+#: ../src/TrackPanel.vala:298
+msgid "Documents"
 msgstr ""
 
-#: ../core/Backends/PlacementWidget.vala:46
-msgid "user.name"
+#: ../src/TrackPanel.vala:299
+msgid "Music"
 msgstr ""
 
-#: ../core/Backends/PlacementWidget.vala:59
-msgid "Email:"
+#: ../src/TrackPanel.vala:300
+msgid "Pictures"
 msgstr ""
 
-#: ../core/Backends/PlacementWidget.vala:68
-msgid "john@doe.com"
+#: ../src/TrackPanel.vala:301
+msgid "Presentations"
 msgstr ""
 
-#: ../core/Backends/PlacementWidget.vala:80
-msgid "Keep a copy locally"
+#: ../src/TrackPanel.vala:302
+msgid "Spreadsheets"
 msgstr ""
 
-#: ../core/Backends/LocalBackend.vala:26
-msgid "On this computer"
+#: ../src/TrackPanel.vala:303
+msgid "Videos"
+msgstr ""
+
+#: ../src/TrackPanel.vala:304
+msgid "Chat Logs"
+msgstr ""
+
+#: ../src/TrackPanel.vala:340
+msgid "Add Application…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:348
+msgid "Add Folder…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:350
+msgid "Select a folder to blacklist"
+msgstr ""
+
+#: ../src/TrackPanel.vala:401
+msgid "Do not record:"
 msgstr ""

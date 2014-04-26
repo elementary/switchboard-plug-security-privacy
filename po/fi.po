@@ -1,21 +1,22 @@
-# Finnish translation for switchboard-plug-security-privacy
-# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
-# This file is distributed under the same license as the switchboard-plug-security-privacy package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+# Finnish translation for maya
+# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
+# This file is distributed under the same license as the maya package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: switchboard-plug-security-privacy\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Project-Id-Version: maya\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-24 18:53+0000\n"
+"PO-Revision-Date: 2014-04-25 18:12+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-25 07:43+0000\n"
+"X-Launchpad-Export-Date: 2014-04-26 07:29+0000\n"
 "X-Generator: Launchpad (build 16985)\n"
+"Language: fi\n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
@@ -211,15 +212,15 @@ msgstr "Kulunut viikko"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
-msgstr ""
+msgstr "Alkaen:"
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "Kaikki"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
-msgstr ""
+msgstr "Päättyen:"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
@@ -272,3 +273,75 @@ msgstr "Valitse kansio pois jätettävien listalle"
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
 msgstr "Älä tallenna:"
+
+#~ msgid "at"
+#~ msgstr "paikassa"
+
+#~ msgid "Title"
+#~ msgstr "Otsikko"
+
+#~ msgid "Comments"
+#~ msgstr "Huomautukset"
+
+#~ msgid "Name or Email Address"
+#~ msgstr "Nimi tai sähköposti"
+
+#~ msgid "Import..."
+#~ msgstr "Tuo..."
+
+#~ msgid "Select calendars to display"
+#~ msgstr "Valitse näytettävät kalenterit"
+
+#~ msgid "Edit the selected event"
+#~ msgstr "Muokkaa valittua tapahtumaa"
+
+#~ msgid "Delete the selected event"
+#~ msgstr "Poista valittu tapahtuma"
+
+#~ msgid "Sync..."
+#~ msgstr "Synkronoi..."
+
+#~ msgid "_Add Event"
+#~ msgstr "_Lisää tapahtuma"
+
+#~ msgid "Webcal"
+#~ msgstr "Webcal"
+
+#~ msgid "View and schedule events"
+#~ msgstr "Katsele ja aikatauluta tapahtumia"
+
+#~ msgid "all day"
+#~ msgstr "koko päivä"
+
+#~ msgid "Starts: \t"
+#~ msgstr "Alkaa: \t"
+
+#~ msgid "Your event has to be named and has to have a valid date"
+#~ msgstr "Tapahtumalle on annettava nimi sekä kelvollinen päivä"
+
+#~ msgid "Contacts"
+#~ msgstr "Yhteystiedot"
+
+#~ msgid "Personal"
+#~ msgstr "Henkilökohtaiset"
+
+#~ msgid "Add calendar"
+#~ msgstr "Lisää kalenteri"
+
+#~ msgid "Ends: \t"
+#~ msgstr "Päättyy: \t"
+
+#~ msgid "Participants"
+#~ msgstr "Osallistujat"
+
+#~ msgid "Fullscreen"
+#~ msgstr "Koko näyttö"
+
+#~ msgid "$more more ..."
+#~ msgstr "$more lisää..."
+
+#~ msgid "Maya;Planner;Dates;Days;Events;"
+#~ msgstr "Maya;Planner;Dates;Days;Events;päivyri;kalenteri;tapahtumat;"
+
+#~ msgid "This event can't be edited"
+#~ msgstr "Tätä tapahtumaa ei voi muokata"
