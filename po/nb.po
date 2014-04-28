@@ -8,124 +8,124 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:52+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2014-04-28 02:14+0000\n"
+"Last-Translator: kingu <comradekingu@gmail.com>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:30+0000\n"
+"X-Launchpad-Export-Date: 2014-04-28 06:39+0000\n"
 "X-Generator: Launchpad (build 16985)\n"
 "Language: nb\n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Sikkerhet og personvern"
 
 #: ../src/Plug.vala:35
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Personvern- og aktivitetsbehandler"
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "Noen innstillinger krever endringer av administrasjonsrettigheter"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
-msgstr ""
+msgstr "Låsing"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "Sporing"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "Brannmur"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Brannmurstatus:"
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "Ukjent"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Tillat"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Nekt"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Avslå"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Grense"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "I"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "Ute"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Tiltak"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Protokoll"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Retningsanvisning"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Porter"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "Tiltak:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Protokoll:"
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "Retningsanvisning:"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
-msgstr ""
+msgstr "Porter:"
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d eller %d-%d"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
-msgstr ""
+msgstr "Legg til regel"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Autentisering er nødvendig for å kjøre brannmurkonfigurasjon"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Velg program"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
@@ -133,59 +133,59 @@ msgstr "Avbryt"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "Legg til"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "Skjermlås:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Etter skjerm skrur seg av"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 sekunder"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "Ett minutt"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "To minutter"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "Tre minutter"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "Fem minutter"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "Ti minutter"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 minutter"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "Én time"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Etterspørr passord for opplåsing"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Vis varslinger ved låst skjerm"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
-msgstr ""
+msgstr "Oppfør bruk av filer og programmer:"
 
 #: ../src/TrackPanel.vala:95
 msgid ""
@@ -197,18 +197,19 @@ msgstr ""
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
 msgstr ""
+"Slett loggen som viser hvilke filer og programmer som har vært i bruk:"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "Den siste timen"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "Det siste døgnet"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "Den siste uka"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
@@ -216,7 +217,7 @@ msgstr "Fra:"
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "Siden tidenes morgen"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
@@ -224,124 +225,52 @@ msgstr "Til:"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "Nullstill data"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
-msgstr ""
+msgstr "Loggføring:"
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
-msgstr ""
+msgstr "Dokumenter"
 
 #: ../src/TrackPanel.vala:299
 msgid "Music"
-msgstr ""
+msgstr "Musikk"
 
 #: ../src/TrackPanel.vala:300
 msgid "Pictures"
-msgstr ""
+msgstr "Bilder"
 
 #: ../src/TrackPanel.vala:301
 msgid "Presentations"
-msgstr ""
+msgstr "Presentasjoner"
 
 #: ../src/TrackPanel.vala:302
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Regneark"
 
 #: ../src/TrackPanel.vala:303
 msgid "Videos"
-msgstr ""
+msgstr "Filmer"
 
 #: ../src/TrackPanel.vala:304
 msgid "Chat Logs"
-msgstr ""
+msgstr "Nettsludringslogg"
 
 #: ../src/TrackPanel.vala:340
 msgid "Add Application…"
-msgstr ""
+msgstr "Legg til applikasjon..."
 
 #: ../src/TrackPanel.vala:348
 msgid "Add Folder…"
-msgstr ""
+msgstr "Legg til mappe..."
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Velg en mappe som skal svartelistes"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
-msgstr ""
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Navn eller epost addresse"
-
-#~ msgid "at"
-#~ msgstr "på"
-
-#~ msgid "Title"
-#~ msgstr "Tittel"
-
-#~ msgid "Comments"
-#~ msgstr "Kommentarer"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Fullskjerm"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Velg en kalender som skal vises"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Rediger den valgte hendelsen"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Slett den valgte hendelsen"
-
-#~ msgid "Sync..."
-#~ msgstr "Synkroniser ..."
-
-#~ msgid "Import..."
-#~ msgstr "Importer …"
-
-#~ msgid "Contacts"
-#~ msgstr "Kontakter"
-
-#~ msgid "Personal"
-#~ msgstr "Privat"
-
-#~ msgid "Participants"
-#~ msgstr "Deltakere"
-
-#~ msgid "Webcal"
-#~ msgstr "Internettkalender"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Vis og planlegg hendingar"
-
-#~ msgid "Add calendar"
-#~ msgstr "Legg til kalender"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Arrangementet må være navngitt og må ha en gyldig dato"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Avslutter: \t"
-
-#~ msgid "all day"
-#~ msgstr "hele dagen"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Startar: \t"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Lag en ny hendelse"
-
-#~ msgid "$more more ..."
-#~ msgstr "$mer mer ..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;P"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Denne hendelsen kan ikke endres"
+msgstr "Ikke loggfør:"
