@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-05-01 12:11+0000\n"
+"PO-Revision-Date: 2014-05-09 19:42+0000\n"
 "Last-Translator: Phillip Sz <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-05-02 07:39+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-05-10 08:21+0000\n"
+"X-Generator: Launchpad (build 16996)\n"
 "Language: de\n"
 
 #: ../src/Plug.vala:34
@@ -142,7 +142,7 @@ msgstr ""
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Nach dem Ausschalten des Bildschirms"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
@@ -178,11 +178,11 @@ msgstr "1 Stunde"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Zum Entsperren nach dem Passwort fragen"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Benachrichtigungen bei gesperrtem Bildschirm anzeigen"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
@@ -194,6 +194,10 @@ msgid ""
 "extra functionality. If other proples can see or access your account, you "
 "may wish to limit which items are recorded"
 msgstr ""
+"Dieses Betriebssystem zeichnet Anwendungen und Dateien die Sie nutzen auf, "
+"um zusätzliche Funktionen zur Verfügung zu stellen. Wenn andere Personen "
+"Zugang zu Ihrem Konto haben wollen Sie die Aufzeichnung vielleicht "
+"einschränken."
 
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
@@ -261,11 +265,11 @@ msgstr "Chat-Protokolle"
 
 #: ../src/TrackPanel.vala:340
 msgid "Add Application…"
-msgstr ""
+msgstr "Anwendung hinzufügen …"
 
 #: ../src/TrackPanel.vala:348
 msgid "Add Folder…"
-msgstr ""
+msgstr "Ordner hinzufügen …"
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
