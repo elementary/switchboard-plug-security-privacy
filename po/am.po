@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:34+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2014-05-10 14:09+0000\n"
+"Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:29+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-05-11 07:39+0000\n"
+"X-Generator: Launchpad (build 16996)\n"
 "Language: am\n"
 
 #: ../src/Plug.vala:34
@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "አንዳንድ ማሰናጃዎችን ለመፈጸም የ አስተዳዳሪ መብት ያስፈልጋል"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
@@ -40,52 +40,52 @@ msgstr ""
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "ፋየርዎል"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "የ ፋየርዎል ሁኔታ:"
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "ያልታወቀ"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "መፍቀጃ"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "መከልከያ"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "አልቀበልም"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "መጠን"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "ውስጥ"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "ውጪ"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "ተግባር"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "የአሰራሩ ዘዴ"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "አቅጣጫ"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
@@ -97,15 +97,15 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "ተግባር:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "የ አሰራሩ ዘዴ"
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "አቅጣጫ:"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
@@ -113,11 +113,11 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d ወይንም %d-%d"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
-msgstr ""
+msgstr "ደንብ መጨመሪያ"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "መተግበሪያ ይምረጡ"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
@@ -133,31 +133,31 @@ msgstr "መሰረዣ"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "መጨመሪያ"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "መመልከቻውን መቆለፊያ:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "መመልከቻው ከተቆለፈ በኋላ"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "በ 30 ሰከንዶች"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "በ 1 ደቂቃ ውስጥ"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "በ 2 ደቂቆች ውስጥ"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "በ 3 ደቂቆች ውስጥ"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
@@ -177,7 +177,7 @@ msgstr "በ 1 ሰአት ውስጥ"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "ለመክፈት የመግቢያ ቃል ጠይቅ"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
@@ -200,15 +200,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "ባለፈው አንድ ሰአት"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "ባለፈው አንድ ቀን"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "ባለፈው አንድ ሳምንት"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
@@ -224,7 +224,7 @@ msgstr "ወደ :"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "ዳታ ማጽጃ"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
@@ -232,23 +232,23 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
-msgstr ""
+msgstr "ሰነዶች"
 
 #: ../src/TrackPanel.vala:299
 msgid "Music"
-msgstr ""
+msgstr "ሙዚቃ"
 
 #: ../src/TrackPanel.vala:300
 msgid "Pictures"
-msgstr ""
+msgstr "ስእሎች"
 
 #: ../src/TrackPanel.vala:301
 msgid "Presentations"
-msgstr ""
+msgstr "ማቅረቢያዎች"
 
 #: ../src/TrackPanel.vala:302
 msgid "Spreadsheets"
-msgstr ""
+msgstr "ሰንጠረዦች"
 
 #: ../src/TrackPanel.vala:303
 msgid "Videos"
@@ -273,75 +273,3 @@ msgstr ""
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
 msgstr ""
-
-#~ msgid "Contacts"
-#~ msgstr "ግንኙነቶች"
-
-#~ msgid "_Add Event"
-#~ msgstr "ሁኔታዎችን _መጨመሪያ"
-
-#~ msgid "Personal"
-#~ msgstr "የግል"
-
-#~ msgid "Title"
-#~ msgstr "አርእስት"
-
-#~ msgid "Participants"
-#~ msgstr "ተሳታፊዎች"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "የተመረጠውን ሁኔታ ማረሚያ"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "የተመረጠውን ሁኔታ ማጥፊያ"
-
-#~ msgid "Comments"
-#~ msgstr "አስተያየቶች"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "ስም ወይንም የኢሜይል አድራሻ"
-
-#~ msgid "Sync..."
-#~ msgstr "ማስማሚያ..."
-
-#~ msgid "Fullscreen"
-#~ msgstr "በሙሉ መመልከቻ ዘዴ"
-
-#~ msgid "Import..."
-#~ msgstr "ማምጫ..."
-
-#~ msgid "Add calendar"
-#~ msgstr "የቀን መቁጠሪያ መጨመሪያ"
-
-#~ msgid "Starts: \t"
-#~ msgstr "መጀመሪያ : [ንዑስ] \t"
-
-#~ msgid "at"
-#~ msgstr "በ"
-
-#~ msgid "Ends: \t"
-#~ msgstr "መጨረሻ : [ንዑስ] \t"
-
-#~ msgid "all day"
-#~ msgstr "ሙሉ ቀን"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "ላማሳየት ቀን መቁጠሪያ ይምረጡ"
-
-#~ msgid "View and schedule events"
-#~ msgstr "ሁኔታዎችን ማቀጃ እና መመልከቻ"
-
-#~ msgid "Webcal"
-#~ msgstr "የዌብ ቀን መቁጠሪያ"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "የእርስዎ ሁኔታዎች ስም እና ዋጋ ያለው ቀን ሊኖራቸው ይገባል"
-
-#~ msgid "$more more ..."
-#~ msgstr "$ተጨማሪ ተጨማሪ ..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "ማዓዓያ;ማቀጃ;ቀኖች;ቀኖች;ሁኔታዎች;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "ይህን ሁኔታ ማረም ይችላሉ"

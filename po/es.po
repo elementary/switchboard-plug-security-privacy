@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:53+0000\n"
+"PO-Revision-Date: 2014-05-11 01:20+0000\n"
 "Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:31+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-05-11 07:39+0000\n"
+"X-Generator: Launchpad (build 16996)\n"
 "Language: es\n"
 
 #: ../src/Plug.vala:34
@@ -185,7 +185,7 @@ msgstr "Mostrar notificaciones en la pantalla de bloqueo"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
-msgstr ""
+msgstr "Registrar uso de archivos y aplicaciones"
 
 #: ../src/TrackPanel.vala:95
 msgid ""
@@ -273,75 +273,3 @@ msgstr ""
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
 msgstr "No registrar:"
-
-#~ msgid "at"
-#~ msgstr "en"
-
-#~ msgid "Title"
-#~ msgstr "Título"
-
-#~ msgid "Comments"
-#~ msgstr "Comentarios"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Pantalla completa"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Editar el evento seleccionado"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Eliminar el evento seleccionado"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Nombre o dirección de correo electrónico"
-
-#~ msgid "Contacts"
-#~ msgstr "Contactos"
-
-#~ msgid "Personal"
-#~ msgstr "Personal"
-
-#~ msgid "all day"
-#~ msgstr "todo el día"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Añadir evento"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Vea y programe eventos"
-
-#~ msgid "Webcal"
-#~ msgstr "Calendario web"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Comienza: \t"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "El evento tiene que tener un nombre y una fecha válida"
-
-#~ msgid "Add calendar"
-#~ msgstr "Añadir calendario"
-
-#~ msgid "Participants"
-#~ msgstr "Participantes"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Acaba: \t"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Seleccionar los calendarios para mostrar"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more más …"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Planificador;Fechas;Días;Eventos;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "No se puede editar este evento"
-
-#~ msgid "Sync..."
-#~ msgstr "Sincronizar…"
-
-#~ msgid "Import..."
-#~ msgstr "Importar…"
