@@ -8,96 +8,96 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:38+0000\n"
-"Last-Translator: Ivan <i.kazandjiev@gmail.com>\n"
+"PO-Revision-Date: 2014-05-14 21:10+0000\n"
+"Last-Translator: radovid <radovid@vmail.me>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:29+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-05-15 06:34+0000\n"
+"X-Generator: Launchpad (build 17007)\n"
 "Language: bg\n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Сигурност и поверителност"
 
 #: ../src/Plug.vala:35
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Мениджър на поверителността и дейностите"
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "Някои настройки изискват админисраторски права за да бъдат променяни"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
-msgstr ""
+msgstr "Заключване"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "Проследяване"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "Защитна стена"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Статус на защитната стена"
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "Неизвестно"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Разрешаване"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Забраняване"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Отхвърляне"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Ограничаване"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "Входящи"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "Изходящи"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Действиe"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Протокол"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Посока"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Портове"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "Действие:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
@@ -273,69 +273,3 @@ msgstr ""
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
 msgstr ""
-
-#~ msgid "at"
-#~ msgstr "в"
-
-#~ msgid "Title"
-#~ msgstr "Заглавие"
-
-#~ msgid "Comments"
-#~ msgstr "Коментари"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Име или имейл адрес"
-
-#~ msgid "Sync..."
-#~ msgstr "Синхронизация..."
-
-#~ msgid "Import..."
-#~ msgstr "Импортиране..."
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Редактиране на избраното събитие"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Изтриване на избраното събитие"
-
-#~ msgid "Fullscreen"
-#~ msgstr "На цял екран"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Избор на календари за показване"
-
-#~ msgid "Personal"
-#~ msgstr "Лично"
-
-#~ msgid "Contacts"
-#~ msgstr "Контакти"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Свършва: \t"
-
-#~ msgid "all day"
-#~ msgstr "цял ден"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Започва: \t"
-
-#~ msgid "Webcal"
-#~ msgstr "Уебкалендар"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Вашето събитие трябва да има име и валидна дата"
-
-#~ msgid "Participants"
-#~ msgstr "Участници"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Разгледай и насрочи събитие"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Майя;Планер;Дати;Дни;Събития;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Това събитие не може да бъде редактирано"
-
-#~ msgid "Add calendar"
-#~ msgstr "Добавяне на календар"
