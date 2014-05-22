@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-24 14:28+0000\n"
-"Last-Translator: Corentin Noël <tintou@mailoo.org>\n"
+"PO-Revision-Date: 2014-05-21 23:40+0000\n"
+"Last-Translator: Nikos <Unknown>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-25 07:43+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-05-22 06:53+0000\n"
+"X-Generator: Launchpad (build 17017)\n"
 "Language: fr\n"
 
 #: ../src/Plug.vala:34
@@ -125,15 +125,15 @@ msgstr "Authentification requise pour configurer le pare-feu"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Choisir une application"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
-msgstr ""
+msgstr "Annuler"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
@@ -274,7 +274,7 @@ msgstr "Ajouter un dossier…"
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Ajouter un dossier à la liste noire"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
