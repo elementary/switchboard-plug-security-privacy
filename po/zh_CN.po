@@ -8,124 +8,124 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:55+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2014-06-03 16:43+0000\n"
+"Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:32+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-06-04 06:36+0000\n"
+"X-Generator: Launchpad (build 17031)\n"
 "Language: \n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
-msgstr ""
+msgstr "安全与隐私"
 
 #: ../src/Plug.vala:35
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "隐私和活动管理器"
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "一些设置需要管理员权限才能更改"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
-msgstr ""
+msgstr "锁定"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "跟踪"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "防火墙"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "防火墙状态："
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "未知"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "允许"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "拒绝"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "拒绝"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "限制"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "数据传入"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "数据传出"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "行动"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "协议"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "方向"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "端口"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "行为："
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "协议："
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "方向："
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
-msgstr ""
+msgstr "端口："
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d 或 %d-%d"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
-msgstr ""
+msgstr "添加规则"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "认证请求需要运行防火墙配置"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "选择应用程序"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
@@ -133,82 +133,82 @@ msgstr "取消"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "添加"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "锁住屏幕："
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "在屏幕关闭之后"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 秒"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 分钟"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2分钟"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 分钟"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 分钟"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 分钟"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 分钟"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 小时"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "解锁时需要密码"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "在锁屏界面显示通知"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
-msgstr ""
+msgstr "记录文件和程序的使用："
 
 #: ../src/TrackPanel.vala:95
 msgid ""
 "This operation system track of Files and Applications you've used to provide "
 "extra functionality. If other proples can see or access your account, you "
 "may wish to limit which items are recorded"
-msgstr ""
+msgstr "此操作系统记录您使用过的文件和程序以提供额外的功能。如果其他人对您的账户可见或拥有使用权，您可能需要限制需要记录的项目。"
 
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "删除文件和应用的使用记录："
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "过去一小时"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "过去一天"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "过去一周"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
@@ -216,7 +216,7 @@ msgstr "起始日期："
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "全部记录"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
@@ -224,124 +224,52 @@ msgstr "结束日期："
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "删除数据"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
-msgstr ""
+msgstr "记录："
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
-msgstr ""
+msgstr "文档"
 
 #: ../src/TrackPanel.vala:299
 msgid "Music"
-msgstr ""
+msgstr "音乐"
 
 #: ../src/TrackPanel.vala:300
 msgid "Pictures"
-msgstr ""
+msgstr "图片"
 
 #: ../src/TrackPanel.vala:301
 msgid "Presentations"
-msgstr ""
+msgstr "演示文稿"
 
 #: ../src/TrackPanel.vala:302
 msgid "Spreadsheets"
-msgstr ""
+msgstr "电子表格"
 
 #: ../src/TrackPanel.vala:303
 msgid "Videos"
-msgstr ""
+msgstr "视频"
 
 #: ../src/TrackPanel.vala:304
 msgid "Chat Logs"
-msgstr ""
+msgstr "聊天记录"
 
 #: ../src/TrackPanel.vala:340
 msgid "Add Application…"
-msgstr ""
+msgstr "添加应用..."
 
 #: ../src/TrackPanel.vala:348
 msgid "Add Folder…"
-msgstr ""
+msgstr "添加文件夹"
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "选择要加入黑名单的文件夹"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
-msgstr ""
-
-#~ msgid "Title"
-#~ msgstr "标题"
-
-#~ msgid "Comments"
-#~ msgstr "备注"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "姓名或邮件地址"
-
-#~ msgid "Fullscreen"
-#~ msgstr "全屏"
-
-#~ msgid "Import..."
-#~ msgstr "导入..."
-
-#~ msgid "Select calendars to display"
-#~ msgstr "选择要显示的日历"
-
-#~ msgid "Sync..."
-#~ msgstr "同步..."
-
-#~ msgid "at"
-#~ msgstr "于"
-
-#~ msgid "Contacts"
-#~ msgstr "联系人"
-
-#~ msgid "Personal"
-#~ msgstr "个人"
-
-#~ msgid "all day"
-#~ msgstr "全天"
-
-#~ msgid "Starts: \t"
-#~ msgstr "开始： \t"
-
-#~ msgid "Webcal"
-#~ msgstr "在线日历"
-
-#~ msgid "Add calendar"
-#~ msgstr "添加日历"
-
-#~ msgid "_Add Event"
-#~ msgstr "添加活动(_A)"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "您的活动必须命名且具备一个有效日期"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "编辑选中的活动"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "删除选中的活动"
-
-#~ msgid "View and schedule events"
-#~ msgstr "查看并安排活动"
-
-#~ msgid "Ends: \t"
-#~ msgstr "结束： \t"
-
-#~ msgid "Participants"
-#~ msgstr "参与者"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more 更多..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Planner;Dates;Days;Events;规划;日期;活动;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "该活动无法编辑"
+msgstr "不要记录："
