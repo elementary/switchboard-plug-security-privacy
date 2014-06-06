@@ -8,180 +8,182 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:43+0000\n"
-"Last-Translator: Theodoros Kentistos <theokent@gmail.com>\n"
+"PO-Revision-Date: 2014-06-05 11:57+0000\n"
+"Last-Translator: James Spentzos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:29+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-06-06 06:38+0000\n"
+"X-Generator: Launchpad (build 17031)\n"
 "Language: el\n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Ασφάλεια & Απόρρητο"
 
 #: ../src/Plug.vala:35
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Διαχειριστής Απορρήτου και Δραστηριοτήτων"
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "Μερικές ρυθμίσεις απαιτούν δικαιώματα διαχειριστή για να αλλάξουν"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
-msgstr ""
+msgstr "Κλείδωμα"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "Παρακολούθηση"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "Τείχος Προστασίας"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Κατάσταση Τείχους Προστασίας:"
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "Άγνωστη"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Αποδοχή"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Άρνηση"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Απόρριψη"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Όριο"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "Μέσα"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "Έξω"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Ενέργεια"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Πρωτόκολλο"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Κατεύθυνση"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Θύρες"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "Ενέργεια:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Πρωτόκολλο:"
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "Κατεύθυνση:"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
-msgstr ""
+msgstr "Θύρες:"
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d ή %d-%d"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
-msgstr ""
+msgstr "Προσθήκη Κανόνα"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
+"Απαιτείται πιστοποίηση για να εκτελεστεί το Εργαλείο Παραμετροποίησης "
+"Τείχους Προστασίας"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Επιλέξτε Εφαρμογή"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
-msgstr ""
+msgstr "Ακύρωση"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "Προσθήκη"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "Κλείδωμα οθόνης:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Μετά την απενεργοποίηση της οθόνης"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 δευτερόλεπτα"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 λεπτό"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 λεπτά"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 λεπτά"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 λεπτά"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 λεπτά"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 λεπτά"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 ώρα"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Απαίτηση του κωδικού μου για ξεκλείδωμα"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Εμφάνιση ειδοποιήσεων στην οθόνη κλειδώματος"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
@@ -200,15 +202,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "Την περασμένη ώρα"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "Την περασμένη μέρα"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "Την περασμένη εβδομάδα"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
@@ -216,7 +218,7 @@ msgstr "Από:"
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "Από όλο το χρόνο"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
@@ -224,7 +226,7 @@ msgstr "Προς:"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "Εκκαθάριση Δεδομένων"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
@@ -273,69 +275,3 @@ msgstr ""
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
 msgstr ""
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Όνομα ή διεύθυνση ηλεκτρονικού ταχυδρομείου"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Επιλέξτε τα προς εμφάνιση ημερολόγια"
-
-#~ msgid "Contacts"
-#~ msgstr "Επαφές"
-
-#~ msgid "_Add Event"
-#~ msgstr "Προσθήκη γεγονότος"
-
-#~ msgid "Personal"
-#~ msgstr "Προσωπικά"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Προβολή και προγραμματισμός γεγονότων"
-
-#~ msgid "Title"
-#~ msgstr "Τίτλος"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Το γεγονός πρέπει να ονομαστεί και να του δωθεί σωστή ημερομηνία"
-
-#~ msgid "Comments"
-#~ msgstr "Σχόλια"
-
-#~ msgid "Sync..."
-#~ msgstr "Συγχρονισμός..."
-
-#~ msgid "Fullscreen"
-#~ msgstr "Πλήρης Οθόνη"
-
-#~ msgid "Import..."
-#~ msgstr "Εισαγωγή..."
-
-#~ msgid "Add calendar"
-#~ msgstr "Προσθήκη ημερολογίου"
-
-#~ msgid "all day"
-#~ msgstr "Ολή μέρα"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Έναρξη: \t"
-
-#~ msgid "Webcal"
-#~ msgstr "Κλήση μέσω διαδικτύου"
-
-#~ msgid "at"
-#~ msgstr "στο"
-
-#~ msgid "Participants"
-#~ msgstr "Συμμετέχοντες"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Τελειώνει: \t"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Επεξεργασία του επιλεγμένου γεγονότος"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Διαγραφή του επιλεγμένου γεγονότος"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Το γεγονός αυτό δεν γίνεται να επαξεργαστεί"
