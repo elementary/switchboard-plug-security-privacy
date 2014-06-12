@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-06-10 17:02+0000\n"
+"PO-Revision-Date: 2014-06-12 05:42+0000\n"
 "Last-Translator: harshi abeyratne <harshidbv@gmail.com>\n"
 "Language-Team: Sinhalese <si@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-06-11 06:39+0000\n"
-"X-Generator: Launchpad (build 17031)\n"
+"X-Launchpad-Export-Date: 2014-06-12 06:37+0000\n"
+"X-Generator: Launchpad (build 17041)\n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
@@ -88,7 +88,7 @@ msgstr "දිශාව"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "පේනු"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
@@ -108,7 +108,7 @@ msgstr "දිශාව"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
-msgstr ""
+msgstr "පේනු"
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
@@ -192,83 +192,86 @@ msgid ""
 "extra functionality. If other proples can see or access your account, you "
 "may wish to limit which items are recorded"
 msgstr ""
+"මෙම මෙහෙයුම් පද්ධතිය අමතර ශ්‍රිතීයතාව සැපයීම සඳහා යොදාගත් ගොනු සහ වැඩසටහන් "
+"වල වාර්තා තබා ගනී.වෙනත් පුද්ගලයෙකුට ඔබගේ ගිණුම දැකීමට හෝ පරිශීලනය කිරිමට "
+"හැකිනම්,ඔබ වාර්තා තබාගන්නා අයිතමයන් සීමා කිරිමට අපේක්ෂා කරනු ඇත"
 
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "ගොනු හා වැඩසටහන් වලදී භාවිතා කල සටහන් මකාදමන්න"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "ගතවූ පැය තුල"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "ගතවූ දිනය තුල"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "ගතවූ සතිය තුල"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
-msgstr ""
+msgstr "වෙතින්"
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "සෑම අවස්ථාවකදීම"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
-msgstr ""
+msgstr "වෙත"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "දත්ත ඉවත් කරන්න"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
-msgstr ""
+msgstr "වාර්තාව"
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
-msgstr ""
+msgstr "ලේඛන"
 
 #: ../src/TrackPanel.vala:299
 msgid "Music"
-msgstr ""
+msgstr "සංගීතය"
 
 #: ../src/TrackPanel.vala:300
 msgid "Pictures"
-msgstr ""
+msgstr "පින්තූර"
 
 #: ../src/TrackPanel.vala:301
 msgid "Presentations"
-msgstr ""
+msgstr "ඉදිරිපත් කිරීම"
 
 #: ../src/TrackPanel.vala:302
 msgid "Spreadsheets"
-msgstr ""
+msgstr "පැතුරුම් පත"
 
 #: ../src/TrackPanel.vala:303
 msgid "Videos"
-msgstr ""
+msgstr "වීඩියෝව"
 
 #: ../src/TrackPanel.vala:304
 msgid "Chat Logs"
-msgstr ""
+msgstr "පිළිසඳර වාර්තාව"
 
 #: ../src/TrackPanel.vala:340
 msgid "Add Application…"
-msgstr ""
+msgstr "වැඩසටහන් එකතු කිරීම"
 
 #: ../src/TrackPanel.vala:348
 msgid "Add Folder…"
-msgstr ""
+msgstr "ෆෝල්ඩරය එකතු කරන්න"
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "අපලේඛනය කිරීමට ෆෝල්ඩරයක් තොරන්න"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
-msgstr ""
+msgstr "වාර්තා නොකරන්න"
