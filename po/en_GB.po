@@ -8,108 +8,108 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:24+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2014-06-19 21:42+0000\n"
+"Last-Translator: Alfredo Hernández <Unknown>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:32+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-06-20 06:13+0000\n"
+"X-Generator: Launchpad (build 17058)\n"
 "Language: \n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Security & Privacy"
 
 #: ../src/Plug.vala:35
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Privacy and Activity Manager"
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "Some settings require administration right to be changed"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
-msgstr ""
+msgstr "Locking"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "Tracking"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "Firewall"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Firewall Status:"
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "Unknown"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Allow"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Deny"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Reject"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Limit"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "In"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "Out"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Protocol"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Direction"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Ports"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "Action:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Protocol:"
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "Direction:"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
-msgstr ""
+msgstr "Ports:"
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
@@ -117,15 +117,15 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
-msgstr ""
+msgstr "Add Rule"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Authentication is required to run the Firewall Configuration"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Select Application"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
@@ -133,59 +133,59 @@ msgstr "Cancel"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "Add"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "Screen lock:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "After display turns off"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 seconds"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 minute"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 minutes"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 minutes"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 minutes"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 minutes"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 minutes"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 hour"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Ask for my password to unlock"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Show notifications on lockscreen"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
-msgstr ""
+msgstr "Record file and application usage:"
 
 #: ../src/TrackPanel.vala:95
 msgid ""
@@ -193,22 +193,25 @@ msgid ""
 "extra functionality. If other proples can see or access your account, you "
 "may wish to limit which items are recorded"
 msgstr ""
+"This operation system track of Files and Applications you've used to provide "
+"extra functionality. If other people can see or access your account, you may "
+"wish to limit which items are recorded"
 
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Delete records of which files and applications were used:"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "In the past hour"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "In the past day"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "In the past week"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
@@ -216,7 +219,7 @@ msgstr "From:"
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "From all time"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
@@ -224,124 +227,52 @@ msgstr "To:"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "Clear Data"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
-msgstr ""
+msgstr "Record:"
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
-msgstr ""
+msgstr "Documents"
 
 #: ../src/TrackPanel.vala:299
 msgid "Music"
-msgstr ""
+msgstr "Music"
 
 #: ../src/TrackPanel.vala:300
 msgid "Pictures"
-msgstr ""
+msgstr "Pictures"
 
 #: ../src/TrackPanel.vala:301
 msgid "Presentations"
-msgstr ""
+msgstr "Presentations"
 
 #: ../src/TrackPanel.vala:302
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Spreadsheets"
 
 #: ../src/TrackPanel.vala:303
 msgid "Videos"
-msgstr ""
+msgstr "Videos"
 
 #: ../src/TrackPanel.vala:304
 msgid "Chat Logs"
-msgstr ""
+msgstr "Chat Logs"
 
 #: ../src/TrackPanel.vala:340
 msgid "Add Application…"
-msgstr ""
+msgstr "Add Application…"
 
 #: ../src/TrackPanel.vala:348
 msgid "Add Folder…"
-msgstr ""
+msgstr "Add Folder…"
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Select a folder to blacklist"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
-msgstr ""
-
-#~ msgid "at"
-#~ msgstr "at"
-
-#~ msgid "Title"
-#~ msgstr "Title"
-
-#~ msgid "Comments"
-#~ msgstr "Comments"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Name or E-mail Address"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Fullscreen"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Select calendars to display"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Edit the selected event"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Delete the selected event"
-
-#~ msgid "View and schedule events"
-#~ msgstr "View and schedule events"
-
-#~ msgid "Contacts"
-#~ msgstr "Contacts"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Add Event"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Your event has to be named and has to have a valid date"
-
-#~ msgid "Personal"
-#~ msgstr "Personal"
-
-#~ msgid "all day"
-#~ msgstr "all day"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Starts: \t"
-
-#~ msgid "Add calendar"
-#~ msgstr "Add calendar"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Ends: \t"
-
-#~ msgid "Participants"
-#~ msgstr "Participants"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Planner;Dates;Days;Events;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "This event can't be edited"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more more …"
-
-#~ msgid "Import..."
-#~ msgstr "Import…"
-
-#~ msgid "Sync..."
-#~ msgstr "Sync…"
+msgstr "Do not record:"
