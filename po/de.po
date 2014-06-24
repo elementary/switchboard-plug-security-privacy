@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-05-09 19:42+0000\n"
+"PO-Revision-Date: 2014-06-23 11:29+0000\n"
 "Last-Translator: Phillip Sz <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-05-10 08:21+0000\n"
-"X-Generator: Launchpad (build 16996)\n"
+"X-Launchpad-Export-Date: 2014-06-24 07:02+0000\n"
+"X-Generator: Launchpad (build 17065)\n"
 "Language: de\n"
 
 #: ../src/Plug.vala:34
@@ -37,7 +37,7 @@ msgstr "Sperren"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "Verfolgung"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
@@ -70,11 +70,11 @@ msgstr "Grenze"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr "Innen"
+msgstr "Eingehend"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr "Außen"
+msgstr "Ausgehend"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
@@ -86,7 +86,7 @@ msgstr "Protokoll"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Richtung"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
@@ -106,7 +106,7 @@ msgstr "Protokoll:"
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "Richtung:"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
@@ -114,7 +114,7 @@ msgstr "Ports:"
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d oder %d-%d"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
@@ -138,7 +138,7 @@ msgstr "Hinzufügen"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "Bildschirmsperre:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
@@ -186,7 +186,7 @@ msgstr "Benachrichtigungen bei gesperrtem Bildschirm anzeigen"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
-msgstr ""
+msgstr "Zeichne Datei- und Anwendungsnutzung auf:"
 
 #: ../src/TrackPanel.vala:95
 msgid ""
@@ -233,7 +233,7 @@ msgstr "Daten löschen"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
-msgstr ""
+msgstr "Aufzeichnung:"
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
@@ -277,4 +277,4 @@ msgstr "Wählen Sie einen auszuschließenden Ordner"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
-msgstr ""
+msgstr "Von Aufzeichnung ausnehmen:"
