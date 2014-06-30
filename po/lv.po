@@ -8,184 +8,184 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:52+0000\n"
+"PO-Revision-Date: 2014-06-29 18:04+0000\n"
 "Last-Translator: Matiss Roberts Treinis <matiss@marolind.com>\n"
 "Language-Team: Latvian <lv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:30+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-06-30 06:40+0000\n"
+"X-Generator: Launchpad (build 17077)\n"
 "Language: lv\n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Drošība un privātums"
 
 #: ../src/Plug.vala:35
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Privātuma un darbību pārvaldnieks"
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "Dažu iestatījumu maiņai nepieciešamas administratora privilēģijas"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
-msgstr ""
+msgstr "Slēgšana"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "Izsekošana"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "Ugunsmūris"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Ugunsmūra statuss:"
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "Nezināms"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Atļaut"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Aizliegt"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Noraidīt"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Ierobežot"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "Ievade"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "Izvade"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Darbība"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Protokols"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Virziens"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Porti"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "Darbība:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Protokols:"
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "Virziens:"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
-msgstr ""
+msgstr "Porti:"
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d vai %d-%d"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
-msgstr ""
+msgstr "Pievienot noteikumu"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Lai palaistu ugunsmūra konfigurāciju nepieciešams autentificēties"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Izvēlieties lietotni"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
-msgstr ""
+msgstr "Atcelt"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "Pievienot"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "Ekrāna aizslēgšana:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Pēc ekrāna izslēgšanās"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 sekundes"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 minūte"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 minūtes"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 minūtes"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 minūtes"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 minūtes"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 minūtes"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 stunda"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Jautāt manu paroli lai atslēgtu"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Radīt paziņojumus, kad ekrāns ir slēgts"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
-msgstr ""
+msgstr "Ierakstīt failu aplikāciju lietošanu:"
 
 #: ../src/TrackPanel.vala:95
 msgid ""
@@ -193,22 +193,25 @@ msgid ""
 "extra functionality. If other proples can see or access your account, you "
 "may wish to limit which items are recorded"
 msgstr ""
+"Šī operētājsistēma ieraksta failus un aplikācijas, kuras lietojat, lai "
+"nodrošinātu papildus funkcionalitāti. Ja citiem ir pieeja jūsu lietotāja "
+"kontam, iespējams vēlaties ierobežot kas no uzskaitītā tiek ierakstīts."
 
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Dzēst ierakstus par failiem un aplikācijām kuras tika lietotas:"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "Pēdējās stundas laikā"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "Pēdējās dienas laikā"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "Pēdējās nedēļas laikā"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
@@ -216,7 +219,7 @@ msgstr "No:"
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "Visā datora lietošanas laikā"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
@@ -224,124 +227,52 @@ msgstr "Līdz:"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "Notīrīt datus"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
-msgstr ""
+msgstr "Ierakstīt:"
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
-msgstr ""
+msgstr "Dokumentus"
 
 #: ../src/TrackPanel.vala:299
 msgid "Music"
-msgstr ""
+msgstr "Mūziku"
 
 #: ../src/TrackPanel.vala:300
 msgid "Pictures"
-msgstr ""
+msgstr "Attēlus"
 
 #: ../src/TrackPanel.vala:301
 msgid "Presentations"
-msgstr ""
+msgstr "Prezentācijas"
 
 #: ../src/TrackPanel.vala:302
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Izklājlapas"
 
 #: ../src/TrackPanel.vala:303
 msgid "Videos"
-msgstr ""
+msgstr "Video"
 
 #: ../src/TrackPanel.vala:304
 msgid "Chat Logs"
-msgstr ""
+msgstr "Tērzēšanas žurnālus"
 
 #: ../src/TrackPanel.vala:340
 msgid "Add Application…"
-msgstr ""
+msgstr "Pievienot aplikāciju"
 
 #: ../src/TrackPanel.vala:348
 msgid "Add Folder…"
-msgstr ""
+msgstr "Pievienot mapi..."
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Pievienot mapi melnajam sarakstam:"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
-msgstr ""
-
-#~ msgid "View and schedule events"
-#~ msgstr "Skatīt un plānot notikumus"
-
-#~ msgid "Contacts"
-#~ msgstr "Kontakti"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "Personal"
-#~ msgstr "Personiskie"
-
-#~ msgid "at"
-#~ msgstr ","
-
-#~ msgid "_Add Event"
-#~ msgstr "_Pievienot notikumu"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Beidzas: \t"
-
-#~ msgid "all day"
-#~ msgstr "visu dienu"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Sākas: \t"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more vairāk ..."
-
-#~ msgid "Title"
-#~ msgstr "Nosaukums"
-
-#~ msgid "Participants"
-#~ msgstr "Dalībnieki"
-
-#~ msgid "Comments"
-#~ msgstr "Piezīmes"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Vārds vai Epasta adrese"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Izvelties kalendārus, ko rādīt"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Notikumam jābūt ar nosaukumu un derīgu datumu"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Rediģēt izvēlēto notikumu"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Dzēst izvēlēto notikumu"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Šis notikums nevar tikt labots"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Pilnekrāna"
-
-#~ msgid "Import..."
-#~ msgstr "Importēt..."
-
-#~ msgid "Add calendar"
-#~ msgstr "Pievienot kalendāru"
-
-#~ msgid "Sync..."
-#~ msgstr "Sinhronizēt"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Plānotājs;Datumi;Dienas;Notikumi;"
+msgstr "Neierakstīt:"
