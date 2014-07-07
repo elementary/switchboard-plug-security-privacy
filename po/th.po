@@ -8,184 +8,184 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:54+0000\n"
+"PO-Revision-Date: 2014-07-06 10:22+0000\n"
 "Last-Translator: Jirayu Yingthawornsuk <me@jirayu.in.th>\n"
 "Language-Team: Thai <th@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:31+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-07-07 06:29+0000\n"
+"X-Generator: Launchpad (build 17086)\n"
 "Language: th\n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
-msgstr ""
+msgstr "ความปลอดภัยและความเป็นส่วนตัว"
 
 #: ../src/Plug.vala:35
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "ตัวจัดการควาามเป็นส่วนตัวและกิจกรรม"
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "การตั้งค่าบางอย่างต้องใช้สิทธิ์ผู้ดูแลระบบในการปรับค่า"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
-msgstr ""
+msgstr "การล็อค"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "การติดตาม"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "ไฟร์วอล"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "สถานะไฟร์วอล"
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "ไม่ทราบ"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "อนุญาต"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "ปฏิเสธ"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "ปฏิเสธ"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "จำกัด"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "ขาเข้า"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "ขาออก"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "การกระทำ"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "โปรโตคอล"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "ทิศทาง"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "พอร์ต"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "การกระทำ:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "โปรโตคอล:"
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "ทิศทาง:"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
-msgstr ""
+msgstr "พอร์ต:"
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d หรือ %d-%d"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
-msgstr ""
+msgstr "เพิ่มกฎ"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "ต้องการการยืนยันตนเพื่อเปิดการตั้งค่าไฟร์วอล"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "เลือกโปรแกรม"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
-msgstr ""
+msgstr "ยกเลิก"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "เพิ่ม"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "ล็อคหน้าจอ"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "เพื่อจอภาพถูกปิด"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 วินาที"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 นาที"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 นาที"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 นาที"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 นาที"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 นาที"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 นาที"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 ชั่วโมง"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "ถามรหัสผ่านเพื่อปลดล็อค"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "แสดงการแจ้งเตือนบนหน้าจอล็อค"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
-msgstr ""
+msgstr "บันทึกการใช้ไฟล์และแอพพลิเคชัน"
 
 #: ../src/TrackPanel.vala:95
 msgid ""
@@ -193,22 +193,25 @@ msgid ""
 "extra functionality. If other proples can see or access your account, you "
 "may wish to limit which items are recorded"
 msgstr ""
+"ตัวเลือกนี้จะติดตามการใช้งานไฟล์และแอพพลิเคชันของคุณเพื่อสนับสนุนการใช้ความสา"
+"มารถเพิ่มเติม  ถ้าหากผู้อื่นสามารถเห็นหรือเข้าใช้บัญชีของคุณได้  "
+"คุณอาจจะต้องการจำกัดว่าจะติดตามสิ่งใดบ้าง"
 
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "ลบบันทึกของการใช้งานไฟล์และแอพพลิเคชัน"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "ในชั่วโมงที่ผ่านมา"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "ในวันที่ผ่านมา"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "ในสัปดาห์ที่ผ่านมา"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
@@ -216,7 +219,7 @@ msgstr "จาก:"
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "จากทั้งหมด"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
@@ -224,118 +227,52 @@ msgstr "ถึง:"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "ลบข้อมูล"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
-msgstr ""
+msgstr "บันทึก"
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
-msgstr ""
+msgstr "เอกสาร"
 
 #: ../src/TrackPanel.vala:299
 msgid "Music"
-msgstr ""
+msgstr "เพลง"
 
 #: ../src/TrackPanel.vala:300
 msgid "Pictures"
-msgstr ""
+msgstr "รูปภาพ"
 
 #: ../src/TrackPanel.vala:301
 msgid "Presentations"
-msgstr ""
+msgstr "งานนำเสนอ"
 
 #: ../src/TrackPanel.vala:302
 msgid "Spreadsheets"
-msgstr ""
+msgstr "ตารางคำนวน"
 
 #: ../src/TrackPanel.vala:303
 msgid "Videos"
-msgstr ""
+msgstr "วีดีโอ"
 
 #: ../src/TrackPanel.vala:304
 msgid "Chat Logs"
-msgstr ""
+msgstr "บันทึกการสนทนา"
 
 #: ../src/TrackPanel.vala:340
 msgid "Add Application…"
-msgstr ""
+msgstr "เพิ่มแอพพลิเคชัน..."
 
 #: ../src/TrackPanel.vala:348
 msgid "Add Folder…"
-msgstr ""
+msgstr "เพิ่มโฟลเดอร์..."
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "เลือกโฟลเดอร์เพื่อคัดออก"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
-msgstr ""
-
-#~ msgid "at"
-#~ msgstr "ที่"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "ชื่อหรืออีเมล"
-
-#~ msgid "Sync..."
-#~ msgstr "ปรับข้อมูลให้ตรงกัน"
-
-#~ msgid "Fullscreen"
-#~ msgstr "เต็มจอ"
-
-#~ msgid "Import..."
-#~ msgstr "นำ...เข้่า"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "แก้ไขกิจกรรมที่เลือก"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "ลบกิจกรรมที่เลือก"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "เลือกปฏิทินที่จะแสดง"
-
-#~ msgid "Contacts"
-#~ msgstr "รายชื่อ"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "Personal"
-#~ msgstr "ส่วนตัว"
-
-#~ msgid "all day"
-#~ msgstr "ทั้งวัน"
-
-#~ msgid "Title"
-#~ msgstr "เรื่อง"
-
-#~ msgid "_Add Event"
-#~ msgstr "เพิ่มเหตุการณ์"
-
-#~ msgid "Participants"
-#~ msgstr "ผู้เข้าร่วม"
-
-#~ msgid "Ends: \t"
-#~ msgstr "สิ้นสุด: \t"
-
-#~ msgid "View and schedule events"
-#~ msgstr "ดูและลงเวลาเหตุการณ์"
-
-#~ msgid "Starts: \t"
-#~ msgstr "เริ่ม: \t"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "คุณจะต้องตั้งชื่อและลงเวลาให้เหตุการณ์นี้"
-
-#~ msgid "Add calendar"
-#~ msgstr "เพิ่มปฏิทิน"
-
-#~ msgid "Comments"
-#~ msgstr "ความคิดเห็น"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "เหตุการณ์นี้ไม่สามารถแก้ไขได้"
+msgstr "ไม่บันทึก"
