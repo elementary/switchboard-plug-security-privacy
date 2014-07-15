@@ -8,124 +8,124 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:52+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2014-07-15 05:13+0000\n"
+"Last-Translator: abuyop <Unknown>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:30+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-07-15 06:23+0000\n"
+"X-Generator: Launchpad (build 17111)\n"
 "Language: ms\n"
 
 #: ../src/Plug.vala:34
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Keselamatan & Persendirian"
 
 #: ../src/Plug.vala:35
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Pengurus Kerahsiaan dan Aktiviti"
 
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
-msgstr ""
+msgstr "Sesetengah tetapan memerlukan hak pentadbiran untuk diubah"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
-msgstr ""
+msgstr "Penguncian"
 
 #: ../src/Plug.vala:93
 msgid "Tracking"
-msgstr ""
+msgstr "Penjejakan"
 
 #: ../src/Plug.vala:95
 msgid "Firewall"
-msgstr ""
+msgstr "Dinding Api"
 
 #: ../src/FirewallPanel.vala:49
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Status Dinding Api:"
 
 #: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
 #: ../src/FirewallPanel.vala:117
 msgid "Unknown"
-msgstr ""
+msgstr "Tidak Diketahui"
 
 #: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Izin"
 
 #: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Nafi"
 
 #: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Tolak"
 
 #: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Had"
 
 #: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
 msgid "In"
-msgstr ""
+msgstr "Dalam"
 
 #: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
 msgid "Out"
-msgstr ""
+msgstr "Luar"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Tindakan"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Arah"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Port"
 
 #: ../src/FirewallPanel.vala:143
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:157
 msgid "Action:"
-msgstr ""
+msgstr "Tindakan:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Protokol:"
 
 #: ../src/FirewallPanel.vala:171
 msgid "Direction:"
-msgstr ""
+msgstr "Arah:"
 
 #: ../src/FirewallPanel.vala:177
 msgid "Ports:"
-msgstr ""
+msgstr "Port:"
 
 #: ../src/FirewallPanel.vala:180
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d atau %d-%d"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Add Rule"
-msgstr ""
+msgstr "Tambah Peraturan"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Pengesahihan diperlukan untuk menjalankan Konfigurasi Dinding Api"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Pilih Aplikasi"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Cancel"
@@ -133,31 +133,31 @@ msgstr "Batal"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
 msgid "Add"
-msgstr ""
+msgstr "Tambah"
 
 #: ../src/LockPanel.vala:36
 msgid "Screen lock:"
-msgstr ""
+msgstr "Kunci skrin:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Selepas paparan dimatikan"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 saat"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 minit"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 minit"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 minit"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
@@ -177,15 +177,15 @@ msgstr "1 Jam"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Tanya kata laluan ketika membuka"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Tunjuk pemberitahuan pada skrin kunci"
 
 #: ../src/TrackPanel.vala:62
 msgid "Record file and application usage:"
-msgstr ""
+msgstr "Rekod penggunaan fail dan aplikasi:"
 
 #: ../src/TrackPanel.vala:95
 msgid ""
@@ -193,22 +193,25 @@ msgid ""
 "extra functionality. If other proples can see or access your account, you "
 "may wish to limit which items are recorded"
 msgstr ""
+"Sistem operasi ini menjejak Fail dan Aplikasi yang anda guna untuk sediakan "
+"kefungsian ekstra. Jika orang lain boleh melihat dan mencapai akaun anda, "
+"anda boleh hadkan item yang manakah dapat direkod"
 
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Padam rekod yang mana fail dan aplikasi telah digunakan:"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
-msgstr ""
+msgstr "Dalam jam terdahulu"
 
 #: ../src/TrackPanel.vala:139
 msgid "In the past day"
-msgstr ""
+msgstr "Dalam hari terdahulu"
 
 #: ../src/TrackPanel.vala:140
 msgid "In the past week"
-msgstr ""
+msgstr "Dalam minggu terdahulu"
 
 #: ../src/TrackPanel.vala:141
 msgid "From:"
@@ -216,7 +219,7 @@ msgstr "Dari:"
 
 #: ../src/TrackPanel.vala:142
 msgid "From all time"
-msgstr ""
+msgstr "Dalam sepanjang masa"
 
 #: ../src/TrackPanel.vala:145
 msgid "To:"
@@ -224,124 +227,52 @@ msgstr "Hingga:"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "Koosngkan Data"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
-msgstr ""
+msgstr "Rekod:"
 
 #: ../src/TrackPanel.vala:298
 msgid "Documents"
-msgstr ""
+msgstr "Dokumen"
 
 #: ../src/TrackPanel.vala:299
 msgid "Music"
-msgstr ""
+msgstr "Muzik"
 
 #: ../src/TrackPanel.vala:300
 msgid "Pictures"
-msgstr ""
+msgstr "Gambar"
 
 #: ../src/TrackPanel.vala:301
 msgid "Presentations"
-msgstr ""
+msgstr "Persembahan"
 
 #: ../src/TrackPanel.vala:302
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Hamparan"
 
 #: ../src/TrackPanel.vala:303
 msgid "Videos"
-msgstr ""
+msgstr "Video"
 
 #: ../src/TrackPanel.vala:304
 msgid "Chat Logs"
-msgstr ""
+msgstr "Log Sembang"
 
 #: ../src/TrackPanel.vala:340
 msgid "Add Application…"
-msgstr ""
+msgstr "Tambah Aplikasi..."
 
 #: ../src/TrackPanel.vala:348
 msgid "Add Folder…"
-msgstr ""
+msgstr "Tambah Folder…"
 
 #: ../src/TrackPanel.vala:350
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Pilih folder untuk disenarai hitam"
 
 #: ../src/TrackPanel.vala:401
 msgid "Do not record:"
-msgstr ""
-
-#~ msgid "Contacts"
-#~ msgstr "Kenalan"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Tambah Peristiwa"
-
-#~ msgid "Personal"
-#~ msgstr "Peribadi"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Lihat dan jadualkan peristiwa"
-
-#~ msgid "Title"
-#~ msgstr "Tajuk"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Pilih kalendar untuk dipaparkan"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Sunting peristiwa terpilih"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Peristiwa anda telah dinamakan dan mempunyai tarikh yang sah"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Padam peristiwa terpilih"
-
-#~ msgid "Comments"
-#~ msgstr "Ulasan"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Nama atau Alamat E-mel"
-
-#~ msgid "Sync..."
-#~ msgstr "Segerak..."
-
-#~ msgid "Fullscreen"
-#~ msgstr "Skrin Penuh"
-
-#~ msgid "Import..."
-#~ msgstr "Import..."
-
-#~ msgid "at"
-#~ msgstr "pada"
-
-#~ msgid "all day"
-#~ msgstr "sepanjang hari"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Mula: \t"
-
-#~ msgid "Add calendar"
-#~ msgstr "Tambah kalendar"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Tamat: \t"
-
-#~ msgid "Participants"
-#~ msgstr "Peserta"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more lagi ..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Perancang;Tarikh;Hari;Peristiwa;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Peristiwa ini tidak boleh disunting"
+msgstr "Jangan rekod:"
