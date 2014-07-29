@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-05-11 16:17+0000\n"
-"Last-Translator: Christopher <Unknown>\n"
+"PO-Revision-Date: 2014-07-29 01:38+0000\n"
+"Last-Translator: Krzysztof Statkiewicz <Unknown>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-05-12 07:12+0000\n"
-"X-Generator: Launchpad (build 16996)\n"
+"X-Launchpad-Export-Date: 2014-07-29 06:58+0000\n"
+"X-Generator: Launchpad (build 17131)\n"
 "Language: es\n"
 
 #: ../src/Plug.vala:34
@@ -29,6 +29,7 @@ msgstr "Gestor de privacidad y actividades"
 #: ../src/Plug.vala:63
 msgid "Some settings requires administration right to be changed"
 msgstr ""
+"Para modificar la configuración se requieren privilegios de administrador"
 
 #: ../src/Plug.vala:91
 msgid "Locking"
@@ -141,7 +142,7 @@ msgstr "Bloqueo de pantalla:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Después de apagarse la pantalla"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
@@ -196,7 +197,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:136
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Eliminar registros de uso de archivos y aplicaciones de:"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past hour"
@@ -224,7 +225,7 @@ msgstr "Hasta:"
 
 #: ../src/TrackPanel.vala:148
 msgid "Clear Data"
-msgstr ""
+msgstr "Borrar datos"
 
 #: ../src/TrackPanel.vala:289
 msgid "Record:"
