@@ -96,10 +96,10 @@ namespace SecurityPrivacy {
             stack_switcher.halign = Gtk.Align.CENTER;
             stack_switcher.margin = 12;
 
-            var locking = new LockPanel ();
-            stack.add_titled (locking, "locking", _("Locking"));
             var tracking = new TrackPanel ();
             stack.add_titled (tracking, "tracking", _("Privacy"));
+            var locking = new LockPanel ();
+            stack.add_titled (locking, "locking", _("Locking"));
             var firewall = new FirewallPanel ();
             stack.add_titled (firewall, "firewall", _("Firewall"));
 
