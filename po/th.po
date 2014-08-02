@@ -7,137 +7,56 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-07-06 10:22+0000\n"
+"POT-Creation-Date: 2014-08-01 14:45-0500\n"
+"PO-Revision-Date: 2014-08-02 05:20+0000\n"
 "Last-Translator: Jirayu Yingthawornsuk <me@jirayu.in.th>\n"
 "Language-Team: Thai <th@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-07-07 06:29+0000\n"
-"X-Generator: Launchpad (build 17086)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 "Language: th\n"
-
-#: ../src/Plug.vala:34
-msgid "Security & Privacy"
-msgstr "ความปลอดภัยและความเป็นส่วนตัว"
-
-#: ../src/Plug.vala:35
-msgid "Privacy and Activity Manager"
-msgstr "ตัวจัดการควาามเป็นส่วนตัวและกิจกรรม"
-
-#: ../src/Plug.vala:63
-msgid "Some settings requires administration right to be changed"
-msgstr "การตั้งค่าบางอย่างต้องใช้สิทธิ์ผู้ดูแลระบบในการปรับค่า"
-
-#: ../src/Plug.vala:91
-msgid "Locking"
-msgstr "การล็อค"
-
-#: ../src/Plug.vala:93
-msgid "Tracking"
-msgstr "การติดตาม"
-
-#: ../src/Plug.vala:95
-msgid "Firewall"
-msgstr "ไฟร์วอล"
-
-#: ../src/FirewallPanel.vala:49
-msgid "Firewall Status:"
-msgstr "สถานะไฟร์วอล"
-
-#: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
-#: ../src/FirewallPanel.vala:117
-msgid "Unknown"
-msgstr "ไม่ทราบ"
-
-#: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
-msgid "Allow"
-msgstr "อนุญาต"
-
-#: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
-msgid "Deny"
-msgstr "ปฏิเสธ"
-
-#: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
-msgid "Reject"
-msgstr "ปฏิเสธ"
-
-#: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
-msgid "Limit"
-msgstr "จำกัด"
-
-#: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
-msgid "In"
-msgstr "ขาเข้า"
-
-#: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
-msgid "Out"
-msgstr "ขาออก"
-
-#: ../src/FirewallPanel.vala:139
-msgid "Action"
-msgstr "การกระทำ"
-
-#: ../src/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr "โปรโตคอล"
-
-#: ../src/FirewallPanel.vala:141
-msgid "Direction"
-msgstr "ทิศทาง"
-
-#: ../src/FirewallPanel.vala:142
-msgid "Ports"
-msgstr "พอร์ต"
-
-#: ../src/FirewallPanel.vala:143
-msgid "IPv6"
-msgstr "IPv6"
-
-#: ../src/FirewallPanel.vala:157
-msgid "Action:"
-msgstr "การกระทำ:"
-
-#: ../src/FirewallPanel.vala:165
-msgid "Protocol:"
-msgstr "โปรโตคอล:"
-
-#: ../src/FirewallPanel.vala:171
-msgid "Direction:"
-msgstr "ทิศทาง:"
-
-#: ../src/FirewallPanel.vala:177
-msgid "Ports:"
-msgstr "พอร์ต:"
-
-#: ../src/FirewallPanel.vala:180
-msgid "%d or %d-%d"
-msgstr "%d หรือ %d-%d"
-
-#: ../src/FirewallPanel.vala:182
-msgid "Add Rule"
-msgstr "เพิ่มกฎ"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "ต้องการการยืนยันตนเพื่อเปิดการตั้งค่าไฟร์วอล"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
 msgstr "เลือกโปรแกรม"
 
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
 msgid "Add"
 msgstr "เพิ่ม"
 
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "ความปลอดภัยและความเป็นส่วนตัว"
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr "ตัวจัดการควาามเป็นส่วนตัวและกิจกรรม"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr ""
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr ""
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "การล็อค"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "ไฟร์วอล"
+
 #: ../src/LockPanel.vala:36
-msgid "Screen lock:"
-msgstr "ล็อคหน้าจอ"
+msgid "Lock screen:"
+msgstr ""
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
@@ -184,95 +103,202 @@ msgid "Show notifications on lockscreen"
 msgstr "แสดงการแจ้งเตือนบนหน้าจอล็อค"
 
 #: ../src/TrackPanel.vala:62
-msgid "Record file and application usage:"
-msgstr "บันทึกการใช้ไฟล์และแอพพลิเคชัน"
-
-#: ../src/TrackPanel.vala:95
-msgid ""
-"This operation system track of Files and Applications you've used to provide "
-"extra functionality. If other proples can see or access your account, you "
-"may wish to limit which items are recorded"
+msgid "Gather statistics:"
 msgstr ""
-"ตัวเลือกนี้จะติดตามการใช้งานไฟล์และแอพพลิเคชันของคุณเพื่อสนับสนุนการใช้ความสา"
-"มารถเพิ่มเติม  ถ้าหากผู้อื่นสามารถเห็นหรือเข้าใช้บัญชีของคุณได้  "
-"คุณอาจจะต้องการจำกัดว่าจะติดตามสิ่งใดบ้าง"
 
-#: ../src/TrackPanel.vala:136
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:96
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:134
 msgid "Delete records of which files and applications were used:"
 msgstr "ลบบันทึกของการใช้งานไฟล์และแอพพลิเคชัน"
 
-#: ../src/TrackPanel.vala:138
+#: ../src/TrackPanel.vala:136
 msgid "In the past hour"
 msgstr "ในชั่วโมงที่ผ่านมา"
 
-#: ../src/TrackPanel.vala:139
+#: ../src/TrackPanel.vala:137
 msgid "In the past day"
 msgstr "ในวันที่ผ่านมา"
 
-#: ../src/TrackPanel.vala:140
+#: ../src/TrackPanel.vala:138
 msgid "In the past week"
 msgstr "ในสัปดาห์ที่ผ่านมา"
 
-#: ../src/TrackPanel.vala:141
+#: ../src/TrackPanel.vala:139
 msgid "From:"
 msgstr "จาก:"
 
-#: ../src/TrackPanel.vala:142
+#: ../src/TrackPanel.vala:140
 msgid "From all time"
 msgstr "จากทั้งหมด"
 
-#: ../src/TrackPanel.vala:145
+#: ../src/TrackPanel.vala:143
 msgid "To:"
 msgstr "ถึง:"
 
-#: ../src/TrackPanel.vala:148
+#: ../src/TrackPanel.vala:146
 msgid "Clear Data"
 msgstr "ลบข้อมูล"
 
-#: ../src/TrackPanel.vala:289
+#: ../src/TrackPanel.vala:290
 msgid "Record:"
 msgstr "บันทึก"
 
-#: ../src/TrackPanel.vala:298
+#: ../src/TrackPanel.vala:299
 msgid "Documents"
 msgstr "เอกสาร"
 
-#: ../src/TrackPanel.vala:299
+#: ../src/TrackPanel.vala:300
 msgid "Music"
 msgstr "เพลง"
 
-#: ../src/TrackPanel.vala:300
+#: ../src/TrackPanel.vala:301
 msgid "Pictures"
 msgstr "รูปภาพ"
 
-#: ../src/TrackPanel.vala:301
+#: ../src/TrackPanel.vala:302
 msgid "Presentations"
 msgstr "งานนำเสนอ"
 
-#: ../src/TrackPanel.vala:302
+#: ../src/TrackPanel.vala:303
 msgid "Spreadsheets"
 msgstr "ตารางคำนวน"
 
-#: ../src/TrackPanel.vala:303
+#: ../src/TrackPanel.vala:304
 msgid "Videos"
 msgstr "วีดีโอ"
 
-#: ../src/TrackPanel.vala:304
+#: ../src/TrackPanel.vala:305
 msgid "Chat Logs"
 msgstr "บันทึกการสนทนา"
 
-#: ../src/TrackPanel.vala:340
+#: ../src/TrackPanel.vala:343
 msgid "Add Application…"
 msgstr "เพิ่มแอพพลิเคชัน..."
 
-#: ../src/TrackPanel.vala:348
+#: ../src/TrackPanel.vala:351
 msgid "Add Folder…"
 msgstr "เพิ่มโฟลเดอร์..."
 
-#: ../src/TrackPanel.vala:350
+#: ../src/TrackPanel.vala:353
 msgid "Select a folder to blacklist"
 msgstr "เลือกโฟลเดอร์เพื่อคัดออก"
 
-#: ../src/TrackPanel.vala:401
+#: ../src/TrackPanel.vala:404
 msgid "Do not record:"
 msgstr "ไม่บันทึก"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "ต้องการการยืนยันตนเพื่อเปิดการตั้งค่าไฟร์วอล"
+
+#: ../src/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr "สถานะไฟร์วอล"
+
+#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
+#: ../src/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr "ไม่ทราบ"
+
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
+msgid "Allow"
+msgstr "อนุญาต"
+
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
+msgid "Deny"
+msgstr "ปฏิเสธ"
+
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
+msgid "Reject"
+msgstr "ปฏิเสธ"
+
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
+msgid "Limit"
+msgstr "จำกัด"
+
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
+msgid "In"
+msgstr "ขาเข้า"
+
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
+msgid "Out"
+msgstr "ขาออก"
+
+#: ../src/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
+msgstr "การกระทำ"
+
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr "โปรโตคอล"
+
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
+msgstr "ทิศทาง"
+
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
+msgstr "พอร์ต"
+
+#: ../src/FirewallPanel.vala:156
+msgid "Action:"
+msgstr "การกระทำ:"
+
+#: ../src/FirewallPanel.vala:165
+msgid "Protocol:"
+msgstr "โปรโตคอล:"
+
+#: ../src/FirewallPanel.vala:172
+msgid "Direction:"
+msgstr "ทิศทาง:"
+
+#: ../src/FirewallPanel.vala:179
+msgid "Ports:"
+msgstr "พอร์ต:"
+
+#: ../src/FirewallPanel.vala:183
+msgid "%d or %d-%d"
+msgstr "%d หรือ %d-%d"
+
+#: ../src/FirewallPanel.vala:185
+msgid "Add Rule"
+msgstr "เพิ่มกฎ"
+
+#~ msgid "Some settings requires administration right to be changed"
+#~ msgstr "การตั้งค่าบางอย่างต้องใช้สิทธิ์ผู้ดูแลระบบในการปรับค่า"
+
+#~ msgid "Tracking"
+#~ msgstr "การติดตาม"
+
+#~ msgid "Screen lock:"
+#~ msgstr "ล็อคหน้าจอ"
+
+#~ msgid "Record file and application usage:"
+#~ msgstr "บันทึกการใช้ไฟล์และแอพพลิเคชัน"
+
+#~ msgid ""
+#~ "This operation system track of Files and Applications you've used to provide "
+#~ "extra functionality. If other proples can see or access your account, you "
+#~ "may wish to limit which items are recorded"
+#~ msgstr ""
+#~ "ตัวเลือกนี้จะติดตามการใช้งานไฟล์และแอพพลิเคชันของคุณเพื่อสนับสนุนการใช้ความสา"
+#~ "มารถเพิ่มเติม  ถ้าหากผู้อื่นสามารถเห็นหรือเข้าใช้บัญชีของคุณได้  "
+#~ "คุณอาจจะต้องการจำกัดว่าจะติดตามสิ่งใดบ้าง"

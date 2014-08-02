@@ -7,136 +7,55 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 09:39+0000\n"
+"POT-Creation-Date: 2014-08-01 14:45-0500\n"
+"PO-Revision-Date: 2014-08-02 04:59+0000\n"
 "Last-Translator: Winston Churchhill <cwinston@riseup.net>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:29+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 "Language: bs\n"
-
-#: ../src/Plug.vala:34
-msgid "Security & Privacy"
-msgstr ""
-
-#: ../src/Plug.vala:35
-msgid "Privacy and Activity Manager"
-msgstr ""
-
-#: ../src/Plug.vala:63
-msgid "Some settings requires administration right to be changed"
-msgstr ""
-
-#: ../src/Plug.vala:91
-msgid "Locking"
-msgstr ""
-
-#: ../src/Plug.vala:93
-msgid "Tracking"
-msgstr ""
-
-#: ../src/Plug.vala:95
-msgid "Firewall"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:49
-msgid "Firewall Status:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
-#: ../src/FirewallPanel.vala:117
-msgid "Unknown"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
-msgid "Allow"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
-msgid "Deny"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
-msgid "Reject"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
-msgid "Limit"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
-msgid "In"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
-msgid "Out"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:139
-msgid "Action"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:141
-msgid "Direction"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:142
-msgid "Ports"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:143
-msgid "IPv6"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:157
-msgid "Action:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:165
-msgid "Protocol:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:171
-msgid "Direction:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:177
-msgid "Ports:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:180
-msgid "%d or %d-%d"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:182
-msgid "Add Rule"
-msgstr ""
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
 msgstr ""
 
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
 msgid "Cancel"
 msgstr ""
 
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
 msgid "Add"
 msgstr ""
 
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr ""
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr ""
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr ""
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr ""
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr ""
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr ""
+
 #: ../src/LockPanel.vala:36
-msgid "Screen lock:"
+msgid "Lock screen:"
 msgstr ""
 
 #: ../src/LockPanel.vala:45
@@ -184,94 +103,183 @@ msgid "Show notifications on lockscreen"
 msgstr ""
 
 #: ../src/TrackPanel.vala:62
-msgid "Record file and application usage:"
+msgid "Gather statistics:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:95
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:96
 msgid ""
-"This operation system track of Files and Applications you've used to provide "
-"extra functionality. If other proples can see or access your account, you "
-"may wish to limit which items are recorded"
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
 msgstr ""
 
-#: ../src/TrackPanel.vala:136
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:134
 msgid "Delete records of which files and applications were used:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:138
+#: ../src/TrackPanel.vala:136
 msgid "In the past hour"
 msgstr ""
 
-#: ../src/TrackPanel.vala:139
+#: ../src/TrackPanel.vala:137
 msgid "In the past day"
 msgstr ""
 
-#: ../src/TrackPanel.vala:140
+#: ../src/TrackPanel.vala:138
 msgid "In the past week"
 msgstr ""
 
-#: ../src/TrackPanel.vala:141
+#: ../src/TrackPanel.vala:139
 msgid "From:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:142
+#: ../src/TrackPanel.vala:140
 msgid "From all time"
 msgstr ""
 
-#: ../src/TrackPanel.vala:145
+#: ../src/TrackPanel.vala:143
 msgid "To:"
 msgstr "Za:"
 
-#: ../src/TrackPanel.vala:148
+#: ../src/TrackPanel.vala:146
 msgid "Clear Data"
 msgstr ""
 
-#: ../src/TrackPanel.vala:289
+#: ../src/TrackPanel.vala:290
 msgid "Record:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:298
+#: ../src/TrackPanel.vala:299
 msgid "Documents"
 msgstr ""
 
-#: ../src/TrackPanel.vala:299
+#: ../src/TrackPanel.vala:300
 msgid "Music"
 msgstr ""
 
-#: ../src/TrackPanel.vala:300
+#: ../src/TrackPanel.vala:301
 msgid "Pictures"
 msgstr ""
 
-#: ../src/TrackPanel.vala:301
+#: ../src/TrackPanel.vala:302
 msgid "Presentations"
 msgstr ""
 
-#: ../src/TrackPanel.vala:302
+#: ../src/TrackPanel.vala:303
 msgid "Spreadsheets"
 msgstr ""
 
-#: ../src/TrackPanel.vala:303
+#: ../src/TrackPanel.vala:304
 msgid "Videos"
 msgstr ""
 
-#: ../src/TrackPanel.vala:304
+#: ../src/TrackPanel.vala:305
 msgid "Chat Logs"
 msgstr ""
 
-#: ../src/TrackPanel.vala:340
+#: ../src/TrackPanel.vala:343
 msgid "Add Application…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:348
+#: ../src/TrackPanel.vala:351
 msgid "Add Folder…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:350
+#: ../src/TrackPanel.vala:353
 msgid "Select a folder to blacklist"
 msgstr ""
 
-#: ../src/TrackPanel.vala:401
+#: ../src/TrackPanel.vala:404
 msgid "Do not record:"
+msgstr ""
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
+#: ../src/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
+msgid "Allow"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
+msgid "Deny"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
+msgid "Reject"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
+msgid "Limit"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
+msgid "In"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
+msgid "Out"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:156
+msgid "Action:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:165
+msgid "Protocol:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:172
+msgid "Direction:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:179
+msgid "Ports:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:183
+msgid "%d or %d-%d"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:185
+msgid "Add Rule"
 msgstr ""
 
 #~ msgid "Contacts"

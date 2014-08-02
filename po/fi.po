@@ -7,137 +7,56 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-24 14:11+0200\n"
-"PO-Revision-Date: 2014-04-25 18:12+0000\n"
-"Last-Translator: Jiri Grönroos <Unknown>\n"
+"POT-Creation-Date: 2014-08-01 14:45-0500\n"
+"PO-Revision-Date: 2014-08-02 05:07+0000\n"
+"Last-Translator: Cody Garver <cody@elementaryos.org>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-26 07:29+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 "Language: fi\n"
-
-#: ../src/Plug.vala:34
-msgid "Security & Privacy"
-msgstr "Turvallisuus ja yksityisyys"
-
-#: ../src/Plug.vala:35
-msgid "Privacy and Activity Manager"
-msgstr "Yksityisyys- ja käyttötietojen hallinta"
-
-#: ../src/Plug.vala:63
-msgid "Some settings requires administration right to be changed"
-msgstr "Jotkin asetusmuutokset vaativat ylläpitäjän oikeuksia"
-
-#: ../src/Plug.vala:91
-msgid "Locking"
-msgstr "Lukitus"
-
-#: ../src/Plug.vala:93
-msgid "Tracking"
-msgstr "Seuranta"
-
-#: ../src/Plug.vala:95
-msgid "Firewall"
-msgstr "Palomuuri"
-
-#: ../src/FirewallPanel.vala:49
-msgid "Firewall Status:"
-msgstr "Palomuurin tila:"
-
-#: ../src/FirewallPanel.vala:101 ../src/FirewallPanel.vala:111
-#: ../src/FirewallPanel.vala:117
-msgid "Unknown"
-msgstr "Tuntematon"
-
-#: ../src/FirewallPanel.vala:103 ../src/FirewallPanel.vala:159
-msgid "Allow"
-msgstr "Salli"
-
-#: ../src/FirewallPanel.vala:105 ../src/FirewallPanel.vala:160
-msgid "Deny"
-msgstr "Estä"
-
-#: ../src/FirewallPanel.vala:107 ../src/FirewallPanel.vala:161
-msgid "Reject"
-msgstr "Hylkää"
-
-#: ../src/FirewallPanel.vala:109 ../src/FirewallPanel.vala:162
-msgid "Limit"
-msgstr "Rajoita"
-
-#: ../src/FirewallPanel.vala:119 ../src/FirewallPanel.vala:173
-msgid "In"
-msgstr "Sisään"
-
-#: ../src/FirewallPanel.vala:121 ../src/FirewallPanel.vala:174
-msgid "Out"
-msgstr "Ulos"
-
-#: ../src/FirewallPanel.vala:139
-msgid "Action"
-msgstr "Toiminto"
-
-#: ../src/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr "Protokolla"
-
-#: ../src/FirewallPanel.vala:141
-msgid "Direction"
-msgstr "Suunta"
-
-#: ../src/FirewallPanel.vala:142
-msgid "Ports"
-msgstr "Portit"
-
-#: ../src/FirewallPanel.vala:143
-msgid "IPv6"
-msgstr "IPv6"
-
-#: ../src/FirewallPanel.vala:157
-msgid "Action:"
-msgstr "Toiminto:"
-
-#: ../src/FirewallPanel.vala:165
-msgid "Protocol:"
-msgstr "Protokolla:"
-
-#: ../src/FirewallPanel.vala:171
-msgid "Direction:"
-msgstr "Suunta:"
-
-#: ../src/FirewallPanel.vala:177
-msgid "Ports:"
-msgstr "Portit:"
-
-#: ../src/FirewallPanel.vala:180
-msgid "%d or %d-%d"
-msgstr "%d tai %d-%d"
-
-#: ../src/FirewallPanel.vala:182
-msgid "Add Rule"
-msgstr "Lisää sääntö"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Palomuurin asetukset vaatii tunnistautumisen"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
 msgstr "Valitse sovellus"
 
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
 msgid "Cancel"
 msgstr "Peru"
 
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:351
+#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
 msgid "Add"
 msgstr "Lisää"
 
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Turvallisuus ja yksityisyys"
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr "Yksityisyys- ja käyttötietojen hallinta"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr ""
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr ""
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Lukitus"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Palomuuri"
+
 #: ../src/LockPanel.vala:36
-msgid "Screen lock:"
-msgstr "Näytön lukitus:"
+msgid "Lock screen:"
+msgstr ""
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
@@ -184,95 +103,196 @@ msgid "Show notifications on lockscreen"
 msgstr "Näytä ilmoitukset lukitusnäytöllä"
 
 #: ../src/TrackPanel.vala:62
-msgid "Record file and application usage:"
-msgstr "Tallenna tiedosto- ja sovelluskäyttö:"
-
-#: ../src/TrackPanel.vala:95
-msgid ""
-"This operation system track of Files and Applications you've used to provide "
-"extra functionality. If other proples can see or access your account, you "
-"may wish to limit which items are recorded"
+msgid "Gather statistics:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:136
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:96
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:134
 msgid "Delete records of which files and applications were used:"
 msgstr "Poista tiedot käytetyistä tiedostoista ja sovelluksista ajalta:"
 
-#: ../src/TrackPanel.vala:138
+#: ../src/TrackPanel.vala:136
 msgid "In the past hour"
 msgstr "Kulunut tunti"
 
-#: ../src/TrackPanel.vala:139
+#: ../src/TrackPanel.vala:137
 msgid "In the past day"
 msgstr "Kulunut päivä"
 
-#: ../src/TrackPanel.vala:140
+#: ../src/TrackPanel.vala:138
 msgid "In the past week"
 msgstr "Kulunut viikko"
 
-#: ../src/TrackPanel.vala:141
+#: ../src/TrackPanel.vala:139
 msgid "From:"
 msgstr "Alkaen:"
 
-#: ../src/TrackPanel.vala:142
+#: ../src/TrackPanel.vala:140
 msgid "From all time"
 msgstr "Kaikki"
 
-#: ../src/TrackPanel.vala:145
+#: ../src/TrackPanel.vala:143
 msgid "To:"
 msgstr "Päättyen:"
 
-#: ../src/TrackPanel.vala:148
+#: ../src/TrackPanel.vala:146
 msgid "Clear Data"
 msgstr "Tyhjennä tiedot"
 
-#: ../src/TrackPanel.vala:289
+#: ../src/TrackPanel.vala:290
 msgid "Record:"
 msgstr "Tallenna:"
 
-#: ../src/TrackPanel.vala:298
+#: ../src/TrackPanel.vala:299
 msgid "Documents"
 msgstr "Asiakirjat"
 
-#: ../src/TrackPanel.vala:299
+#: ../src/TrackPanel.vala:300
 msgid "Music"
 msgstr "Musiikki"
 
-#: ../src/TrackPanel.vala:300
+#: ../src/TrackPanel.vala:301
 msgid "Pictures"
 msgstr "Kuvat"
 
-#: ../src/TrackPanel.vala:301
+#: ../src/TrackPanel.vala:302
 msgid "Presentations"
 msgstr "Esitykset"
 
-#: ../src/TrackPanel.vala:302
+#: ../src/TrackPanel.vala:303
 msgid "Spreadsheets"
 msgstr "Laskentataulukot"
 
-#: ../src/TrackPanel.vala:303
+#: ../src/TrackPanel.vala:304
 msgid "Videos"
 msgstr "Videot"
 
-#: ../src/TrackPanel.vala:304
+#: ../src/TrackPanel.vala:305
 msgid "Chat Logs"
 msgstr "Keskustelulokit"
 
-#: ../src/TrackPanel.vala:340
+#: ../src/TrackPanel.vala:343
 msgid "Add Application…"
 msgstr "Lisää sovellus…"
 
-#: ../src/TrackPanel.vala:348
+#: ../src/TrackPanel.vala:351
 msgid "Add Folder…"
 msgstr "Lisää kansio…"
 
-#: ../src/TrackPanel.vala:350
+#: ../src/TrackPanel.vala:353
 msgid "Select a folder to blacklist"
 msgstr "Valitse kansio pois jätettävien listalle"
 
-#: ../src/TrackPanel.vala:401
+#: ../src/TrackPanel.vala:404
 msgid "Do not record:"
 msgstr "Älä tallenna:"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Palomuurin asetukset vaatii tunnistautumisen"
+
+#: ../src/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr "Palomuurin tila:"
+
+#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
+#: ../src/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
+msgid "Allow"
+msgstr "Salli"
+
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
+msgid "Deny"
+msgstr "Estä"
+
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
+msgid "Reject"
+msgstr "Hylkää"
+
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
+msgid "Limit"
+msgstr "Rajoita"
+
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
+msgid "In"
+msgstr "Sisään"
+
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
+msgid "Out"
+msgstr "Ulos"
+
+#: ../src/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
+msgstr "Toiminto"
+
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr "Protokolla"
+
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
+msgstr "Suunta"
+
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
+msgstr "Portit"
+
+#: ../src/FirewallPanel.vala:156
+msgid "Action:"
+msgstr "Toiminto:"
+
+#: ../src/FirewallPanel.vala:165
+msgid "Protocol:"
+msgstr "Protokolla:"
+
+#: ../src/FirewallPanel.vala:172
+msgid "Direction:"
+msgstr "Suunta:"
+
+#: ../src/FirewallPanel.vala:179
+msgid "Ports:"
+msgstr "Portit:"
+
+#: ../src/FirewallPanel.vala:183
+msgid "%d or %d-%d"
+msgstr "%d tai %d-%d"
+
+#: ../src/FirewallPanel.vala:185
+msgid "Add Rule"
+msgstr "Lisää sääntö"
+
+#~ msgid "Some settings requires administration right to be changed"
+#~ msgstr "Jotkin asetusmuutokset vaativat ylläpitäjän oikeuksia"
+
+#~ msgid "Tracking"
+#~ msgstr "Seuranta"
+
+#~ msgid "Screen lock:"
+#~ msgstr "Näytön lukitus:"
+
+#~ msgid "Record file and application usage:"
+#~ msgstr "Tallenna tiedosto- ja sovelluskäyttö:"
 
 #~ msgid "at"
 #~ msgstr "paikassa"
