@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: bs\n"
 
@@ -281,33 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Contacts"
-#~ msgstr "Kontakti"
-
-#~ msgid "Title"
-#~ msgstr "Naslov"
-
-#~ msgid "Participants"
-#~ msgstr "učesnik"
-
-#~ msgid "Comments"
-#~ msgstr "Komentari"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "imenovati ili imejl"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Preko cijelog ekrana"
-
-#~ msgid "Import..."
-#~ msgstr "Uvezi..."
-
-#~ msgid "Add calendar"
-#~ msgstr "formirati kalendar"
-
-#~ msgid "at"
-#~ msgstr "ka"
-
-#~ msgid "all day"
-#~ msgstr "Čitav dan"

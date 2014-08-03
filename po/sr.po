@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: sr\n"
 
@@ -281,75 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Comments"
-#~ msgstr "Коментари"
-
-#~ msgid "Title"
-#~ msgstr "Наслов"
-
-#~ msgid "Contacts"
-#~ msgstr "Контакти"
-
-#~ msgid "Webcal"
-#~ msgstr "Вебкал"
-
-#~ msgid "_Add Event"
-#~ msgstr "Додај Догађај"
-
-#~ msgid "Personal"
-#~ msgstr "Лично"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Прикажи и распореди догађаје"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Цео екран"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Изабери календаре за приказивање"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Догађај мора имати име и датум који је могућ"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Измени изабрани догађај"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Избриши изабрани догађај"
-
-#~ msgid "Participants"
-#~ msgstr "Учесници"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Име или Адреса Е-поште"
-
-#~ msgid "Sync..."
-#~ msgstr "Синхронизуј..."
-
-#~ msgid "Import..."
-#~ msgstr "Увези..."
-
-#~ msgid "at"
-#~ msgstr "у"
-
-#~ msgid "all day"
-#~ msgstr "цео дан"
-
-#~ msgid "Add calendar"
-#~ msgstr "Додај календар"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Завршава: \t"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Почиње: \t"
-
-#~ msgid "$more more ..."
-#~ msgstr "$још још ..."
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Овај догађај не може бити уређиван"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Маја;Планер;Датуми;Дани;Догађаји;"

@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 
 #: ../src/AppsDialog.vala:36
@@ -280,38 +280,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "at"
-#~ msgstr "அட்"
-
-#~ msgid "Ends: \t"
-#~ msgstr "முடிவடைகிறது: \t"
-
-#~ msgid "all day"
-#~ msgstr "எல்லா நாளும்"
-
-#~ msgid "Starts: \t"
-#~ msgstr "தொடங்கு: \t"
-
-#~ msgid "Title"
-#~ msgstr "தலைப்பு"
-
-#~ msgid "Comments"
-#~ msgstr "கருத்துரைகள்"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "இந்த நிகழ்வு திருத்த முடியாது"
-
-#~ msgid "Participants"
-#~ msgstr "பங்கேற்பாளர்கள்"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "பெயர் அல்லது மின்னஞ்சல் முகவரி"
-
-#~ msgid "Fullscreen"
-#~ msgstr "முழுத்திரை"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr ""
-#~ "உங்கள் நிகழ்வு பெயரிடப்பட்ட வேண்டும் மற்றும் ஒரு சரியான தேதி கொண்டிருக்க "
-#~ "வேண்டும்"

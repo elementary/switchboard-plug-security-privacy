@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: ko\n"
 
@@ -281,75 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Contacts"
-#~ msgstr "연락처"
-
-#~ msgid "Webcal"
-#~ msgstr "웹 캘린더"
-
-#~ msgid "_Add Event"
-#~ msgstr "이벤트 추가 (_A)"
-
-#~ msgid "Personal"
-#~ msgstr "개인"
-
-#~ msgid "View and schedule events"
-#~ msgstr "이벤트를 보고 설정합니다."
-
-#~ msgid "Title"
-#~ msgstr "제목"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "표시하고자 하는 캘린더를 선택하세요."
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "이벤트는 이름을 가지고, 실존하는 날짜를 가져야 합니다."
-
-#~ msgid "Edit the selected event"
-#~ msgstr "선택한 이벤트를 수정하기"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "선택한 이벤트를 삭제하기"
-
-#~ msgid "Participants"
-#~ msgstr "참가자"
-
-#~ msgid "Comments"
-#~ msgstr "설명"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "이름 또는 이메일 주소"
-
-#~ msgid "Sync..."
-#~ msgstr "동기화하기..."
-
-#~ msgid "Fullscreen"
-#~ msgstr "전체화면"
-
-#~ msgid "Import..."
-#~ msgstr "가져오기..."
-
-#~ msgid "Add calendar"
-#~ msgstr "달력 추가"
-
-#~ msgid "Starts: \t"
-#~ msgstr "시작 날짜: \t"
-
-#~ msgid "at"
-#~ msgstr "장소"
-
-#~ msgid "Ends: \t"
-#~ msgstr "종료 시간: \t"
-
-#~ msgid "all day"
-#~ msgstr "하루 종일"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "이 일정은 편집할 수 없습니다"
-
-#~ msgid "$more more ..."
-#~ msgstr "$더보기 더보기 ..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "마야;일정;날짜;요일;할 일;"

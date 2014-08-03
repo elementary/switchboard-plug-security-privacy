@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: hy\n"
 
@@ -281,66 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Contacts"
-#~ msgstr "Կապորդներ"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "_Add Event"
-#~ msgstr "Ավելացնել իրադարձություն"
-
-#~ msgid "Personal"
-#~ msgstr "Անձնական"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Դիտել և պլանավորել իրադարձություննեըը"
-
-#~ msgid "Title"
-#~ msgstr "Վերնագիր"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Նշեք օրացույցը ցուցադրելու համար"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Իրադարձությունը պետք է ունենա անուն և վավերական օր"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Փոփոխել նշված իրադարձությունը"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Ջնջել նշված իրադարձությունը"
-
-#~ msgid "Participants"
-#~ msgstr "Մասնակիցներ"
-
-#~ msgid "Comments"
-#~ msgstr "Մեկնաբանություններ"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Անուն կամ Էլ-հասցե"
-
-#~ msgid "Sync..."
-#~ msgstr "Sync..."
-
-#~ msgid "Fullscreen"
-#~ msgstr "Ամբողջ եկրանով"
-
-#~ msgid "Import..."
-#~ msgstr "Ներմուծել․․․"
-
-#~ msgid "Add calendar"
-#~ msgstr "Ավելացնել օրացույց"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Սկսվում է՝ \t"
-
-#~ msgid "at"
-#~ msgstr "տեղ"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Ավարտ՝ \t"
-
-#~ msgid "all day"
-#~ msgstr "Ողջ օրը"

@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-08-02 05:07+0000\n"
-"Last-Translator: Cody Garver <cody@elementaryos.org>\n"
+"PO-Revision-Date: 2014-08-02 19:23+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: fi\n"
 
@@ -40,11 +40,11 @@ msgstr "Yksityisyys- ja käyttötietojen hallinta"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Jotkin asetukset vaativat muutoksia varten ylläpitäjän oikeuksia"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Yksityisyys"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
@@ -56,7 +56,7 @@ msgstr "Palomuuri"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Lukitse näyttö:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
@@ -104,11 +104,11 @@ msgstr "Näytä ilmoitukset lukitusnäytöllä"
 
 #: ../src/TrackPanel.vala:62
 msgid "Gather statistics:"
-msgstr ""
+msgstr "Kerää tilastoja:"
 
 #: ../src/TrackPanel.vala:83
 msgid "Read more…"
-msgstr ""
+msgstr "Lue lisää…"
 
 #: ../src/TrackPanel.vala:96
 msgid ""
@@ -116,10 +116,14 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Tämä käyttöjärjestelmä voi kerätä hyödyllisiä tilastoja tiedostojen sekä "
+"sovellusten käytöstä ja siten tarjota lisätoiminnallisuuksia. Jos muut "
+"ihmiset voivat käyttää käyttäjätiliäsi, saatat haluta rajoittaa "
+"tallennettavia tietoja."
 
 #: ../src/TrackPanel.vala:113
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Tyhjennä käyttötiedot…"
 
 #: ../src/TrackPanel.vala:134
 msgid "Delete records of which files and applications were used:"
@@ -281,87 +285,3 @@ msgstr "%d tai %d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Lisää sääntö"
-
-#~ msgid "Some settings requires administration right to be changed"
-#~ msgstr "Jotkin asetusmuutokset vaativat ylläpitäjän oikeuksia"
-
-#~ msgid "Tracking"
-#~ msgstr "Seuranta"
-
-#~ msgid "Screen lock:"
-#~ msgstr "Näytön lukitus:"
-
-#~ msgid "Record file and application usage:"
-#~ msgstr "Tallenna tiedosto- ja sovelluskäyttö:"
-
-#~ msgid "at"
-#~ msgstr "paikassa"
-
-#~ msgid "Title"
-#~ msgstr "Otsikko"
-
-#~ msgid "Comments"
-#~ msgstr "Huomautukset"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Nimi tai sähköposti"
-
-#~ msgid "Import..."
-#~ msgstr "Tuo..."
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Valitse näytettävät kalenterit"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Muokkaa valittua tapahtumaa"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Poista valittu tapahtuma"
-
-#~ msgid "Sync..."
-#~ msgstr "Synkronoi..."
-
-#~ msgid "_Add Event"
-#~ msgstr "_Lisää tapahtuma"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Katsele ja aikatauluta tapahtumia"
-
-#~ msgid "all day"
-#~ msgstr "koko päivä"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Alkaa: \t"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Tapahtumalle on annettava nimi sekä kelvollinen päivä"
-
-#~ msgid "Contacts"
-#~ msgstr "Yhteystiedot"
-
-#~ msgid "Personal"
-#~ msgstr "Henkilökohtaiset"
-
-#~ msgid "Add calendar"
-#~ msgstr "Lisää kalenteri"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Päättyy: \t"
-
-#~ msgid "Participants"
-#~ msgstr "Osallistujat"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Koko näyttö"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more lisää..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Planner;Dates;Days;Events;päivyri;kalenteri;tapahtumat;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Tätä tapahtumaa ei voi muokata"

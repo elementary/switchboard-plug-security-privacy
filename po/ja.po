@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: ja\n"
 
@@ -281,66 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Title"
-#~ msgstr "タイトル"
-
-#~ msgid "Comments"
-#~ msgstr "備考"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "名前またはメールアドレス"
-
-#~ msgid "Fullscreen"
-#~ msgstr "全画面"
-
-#~ msgid "Import..."
-#~ msgstr "取り込む..."
-
-#~ msgid "Select calendars to display"
-#~ msgstr "表示するカレンダーを選択"
-
-#~ msgid "Sync..."
-#~ msgstr "同期..."
-
-#~ msgid "Edit the selected event"
-#~ msgstr "選択された予定を編集"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "選択された予定を削除"
-
-#~ msgid "Contacts"
-#~ msgstr "連絡先"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "_Add Event"
-#~ msgstr "_イベントを追加する"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "イベントを名付ける必要と有効な日にちに変える必要が有ります"
-
-#~ msgid "Personal"
-#~ msgstr "パーソナル"
-
-#~ msgid "View and schedule events"
-#~ msgstr "イベントを見てスケジュールする"
-
-#~ msgid "all day"
-#~ msgstr "日住"
-
-#~ msgid "Starts: \t"
-#~ msgstr "始まる時間: \t"
-
-#~ msgid "at"
-#~ msgstr "時刻"
-
-#~ msgid "Add calendar"
-#~ msgstr "カレンダーを追加"
-
-#~ msgid "Participants"
-#~ msgstr "参加者"
-
-#~ msgid "Ends: \t"
-#~ msgstr "終了時刻: \t"

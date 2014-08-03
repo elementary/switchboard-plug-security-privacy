@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: cs\n"
 
@@ -281,66 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "at"
-#~ msgstr "v"
-
-#~ msgid "Title"
-#~ msgstr "Název"
-
-#~ msgid "Comments"
-#~ msgstr "Komentáře"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Na celou obrazovku"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Vyberte kalendáře, které zobrazit"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Upravit vybranou událost"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Odstranit vybranou událost"
-
-#~ msgid "Contacts"
-#~ msgstr "Kontakty"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "_Add Event"
-#~ msgstr "Přidat událost"
-
-#~ msgid "Personal"
-#~ msgstr "Osobní"
-
-#~ msgid "Participants"
-#~ msgstr "Účastníci"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Prohlížet a plánovat události"
-
-#~ msgid "all day"
-#~ msgstr "celý den"
-
-#~ msgid "Add calendar"
-#~ msgstr "Přidat kalendář"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Konec: \t"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Začátek: \t"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Událost vyžaduje jméno a platné datum"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Jméno nebo e-mail"
-
-#~ msgid "Sync..."
-#~ msgstr "Synchronizovat…"
-
-#~ msgid "Import..."
-#~ msgstr "Import…"

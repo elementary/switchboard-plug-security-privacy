@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: et\n"
 
@@ -282,26 +282,3 @@ msgstr "%d või%d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Lisa reegel"
-
-#~ msgid "Some settings requires administration right to be changed"
-#~ msgstr "Mõningate seadete muutmiseks on vaja administraatori õiguseid"
-
-#~ msgid "Tracking"
-#~ msgstr "Jälgimine"
-
-#~ msgid "Screen lock:"
-#~ msgstr "Ekraani lukustamine:"
-
-#~ msgid "Record file and application usage:"
-#~ msgstr "Rakenduste ja failide kasutamise ajalugu:"
-
-#~ msgid ""
-#~ "This operation system track of Files and Applications you've used to provide "
-#~ "extra functionality. If other proples can see or access your account, you "
-#~ "may wish to limit which items are recorded"
-#~ msgstr ""
-#~ "Pakkumaks erinevaid lisavõimalusi, jägitakse sinu kasutatud faile ning "
-#~ "rakendusi.\r\n"
-#~ "Kui teistel on ligipääs sinu kontole, siis oleks mõistlik piirata või "
-#~ "üldsegi keelata failide ja rakenduste ajalugu, et teistel poleks võimalik "
-#~ "sinu tegevusi jälgida ning kuritarvitada."

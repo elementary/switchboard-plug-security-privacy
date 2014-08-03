@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: ca\n"
 
@@ -281,75 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "at"
-#~ msgstr "a"
-
-#~ msgid "Title"
-#~ msgstr "Títol"
-
-#~ msgid "Comments"
-#~ msgstr "Comentaris"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Pantalla completa"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Edita l'esdeveniment seleccionat"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Nom o adreça electrònica"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Afegeix un esdeveniment"
-
-#~ msgid "Contacts"
-#~ msgstr "Contactes"
-
-#~ msgid "Personal"
-#~ msgstr "Personal"
-
-#~ msgid "all day"
-#~ msgstr "tot el dia"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Visualitzeu i programeu esdeveniments"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Comença: \t"
-
-#~ msgid "Webcal"
-#~ msgstr "Calendari web"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "L'esdeveniment ha de tenir un nom i una data vàlida"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Suprimeix l'esdeveniment seleccionat"
-
-#~ msgid "Add calendar"
-#~ msgstr "Afegeix un calendari"
-
-#~ msgid "Participants"
-#~ msgstr "Participants"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Acaba: \t"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Seleccioneu els calendaris a mostrar"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more més …"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Planificador;Dates;Dies;Esdeveniments;"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "No es pot editar aquest esdeveniment"
-
-#~ msgid "Sync..."
-#~ msgstr "Sincronitza…"
-
-#~ msgid "Import..."
-#~ msgstr "Importa…"

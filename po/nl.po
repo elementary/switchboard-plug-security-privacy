@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: nl\n"
 
@@ -281,75 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "at"
-#~ msgstr "om"
-
-#~ msgid "Title"
-#~ msgstr "Titel"
-
-#~ msgid "Comments"
-#~ msgstr "Opmerkingen"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Naam of Emailadres"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Selecteer agenda's om weer te geven"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "De geselecteerde gebeurtenis bewerken"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "De geselecteerde gebeurtenis verwijderen"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Volledig Scherm"
-
-#~ msgid "Import..."
-#~ msgstr "Importeren..."
-
-#~ msgid "Sync..."
-#~ msgstr "Synchroniseren..."
-
-#~ msgid "View and schedule events"
-#~ msgstr "Bekijk en maak afspraken"
-
-#~ msgid "Contacts"
-#~ msgstr "Contactpersonen"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Nieuwe afspraak"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Je afspraak moemt een naam en een geldige datum hebben"
-
-#~ msgid "Personal"
-#~ msgstr "Persoonlijk"
-
-#~ msgid "all day"
-#~ msgstr "de hele dag"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Begint: \t"
-
-#~ msgid "Add calendar"
-#~ msgstr "Agenda toevoegen"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Eindigt: \t"
-
-#~ msgid "Participants"
-#~ msgstr "Deelnemers"
-
-#~ msgid "Webcal"
-#~ msgstr "Webkalender"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more meer ..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Planner;Datums;Dagen;Gebeurtenissen"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Deze gebeurtenis kan niet bewerkt worden"

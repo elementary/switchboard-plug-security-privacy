@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: ru\n"
 
@@ -281,75 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Title"
-#~ msgstr "Заголовок"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Редактировать выбранное событие"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Удалить выбранное событие"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Выберите календари для просмотра"
-
-#~ msgid "Comments"
-#~ msgstr "Комментарии"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Имя или адрес электронной почты"
-
-#~ msgid "Fullscreen"
-#~ msgstr "На весь экран"
-
-#~ msgid "at"
-#~ msgstr "в"
-
-#~ msgid "Sync..."
-#~ msgstr "Синхронизация"
-
-#~ msgid "Import..."
-#~ msgstr "Импортировать…"
-
-#~ msgid "Contacts"
-#~ msgstr "Контакты"
-
-#~ msgid "Webcal"
-#~ msgstr "Календарь в Интернете"
-
-#~ msgid "_Add Event"
-#~ msgstr "Добавить _событие"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Просмотр и создание событий"
-
-#~ msgid "Personal"
-#~ msgstr "Личное"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Событие должно иметь правильные название и дату"
-
-#~ msgid "all day"
-#~ msgstr "весь день"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Начало: \t"
-
-#~ msgid "Add calendar"
-#~ msgstr "Добавить календарь"
-
-#~ msgid "Participants"
-#~ msgstr "Участники"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Конец: \t"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Это событие нельзя изменить"
-
-#~ msgid "$more more ..."
-#~ msgstr "$еще еще ..."
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Планировщик;Даты; Дни;События;"

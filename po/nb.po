@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: nb\n"
 
@@ -282,25 +282,3 @@ msgstr "%d eller %d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Legg til regel"
-
-#~ msgid "Some settings requires administration right to be changed"
-#~ msgstr "Noen innstillinger krever endringer av administrasjonsrettigheter"
-
-#~ msgid "Tracking"
-#~ msgstr "Sporing"
-
-#~ msgid "Screen lock:"
-#~ msgstr "Skjermlås:"
-
-#~ msgid "Record file and application usage:"
-#~ msgstr "Oppfør bruk av filer og programmer:"
-
-#~ msgid ""
-#~ "This operation system track of Files and Applications you've used to provide "
-#~ "extra functionality. If other proples can see or access your account, you "
-#~ "may wish to limit which items are recorded"
-#~ msgstr ""
-#~ "Dette operativsystemet holder oversikt over Filer og Applikasjoner du har "
-#~ "brukt for å kunne tilby ekstra funksjonalitet. Om andre folk kan se eller "
-#~ "har tilgang til brukeren din, bør du vurdere om du vil slå av denne "
-#~ "funksjonaliteten."

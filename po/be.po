@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 
 #: ../src/AppsDialog.vala:36
@@ -280,45 +280,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Contacts"
-#~ msgstr "Кантакты"
-
-#~ msgid "Personal"
-#~ msgstr "Асабістая"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Прагляд і планаванне падзей"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Дадаць падзею"
-
-#~ msgid "all day"
-#~ msgstr "увесь дзень"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Пачатак: \t"
-
-#~ msgid "Title"
-#~ msgstr "Назва"
-
-#~ msgid "Participants"
-#~ msgstr "Удзельнікі"
-
-#~ msgid "Comments"
-#~ msgstr "Каментарыі"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Змяніць выбраную падзею"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Гэта падзея не можа быць зменена"
-
-#~ msgid "Sync..."
-#~ msgstr "Сінхранізаваць..."
-
-#~ msgid "Fullscreen"
-#~ msgstr "На ўвесь экран"
-
-#~ msgid "Import..."
-#~ msgstr "Імпартаваць..."

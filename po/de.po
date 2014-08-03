@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: de\n"
 
@@ -281,26 +281,3 @@ msgstr "%d oder %d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Regel hinzufügen"
-
-#~ msgid "Some settings requires administration right to be changed"
-#~ msgstr ""
-#~ "Einige Einstellungen können nur mit Administrator-Rechten geändert werden"
-
-#~ msgid "Tracking"
-#~ msgstr "Verfolgung"
-
-#~ msgid "Screen lock:"
-#~ msgstr "Bildschirmsperre:"
-
-#~ msgid "Record file and application usage:"
-#~ msgstr "Datei- und Anwendungsnutzung aufzeichnen:"
-
-#~ msgid ""
-#~ "This operation system track of Files and Applications you've used to provide "
-#~ "extra functionality. If other proples can see or access your account, you "
-#~ "may wish to limit which items are recorded"
-#~ msgstr ""
-#~ "Dieses Betriebssystem zeichnet Anwendungen und Dateien die Sie nutzen auf, "
-#~ "um zusätzliche Funktionen zur Verfügung zu stellen. Wenn andere Personen "
-#~ "Zugang zu Ihrem Konto haben wollen Sie die Aufzeichnung vielleicht "
-#~ "einschränken."

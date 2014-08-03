@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: uk\n"
 
@@ -281,76 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Contacts"
-#~ msgstr "Контакти"
-
-#~ msgid "Personal"
-#~ msgstr "Особисте"
-
-#~ msgid "Title"
-#~ msgstr "Назва"
-
-#~ msgid "Participants"
-#~ msgstr "Учасники"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Ваша подія повинна мати назву та коректний час"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Редагувати обрану подію"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Знищити обрану подію"
-
-#~ msgid "Comments"
-#~ msgstr "Коментарі"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Повноекранний режим"
-
-#~ msgid "Import..."
-#~ msgstr "Імпортувати..."
-
-#~ msgid "Add calendar"
-#~ msgstr "Додати календар"
-
-#~ msgid "Webcal"
-#~ msgstr "Календар в інтеренеті"
-
-#~ msgid "_Add Event"
-#~ msgstr "Додати подію"
-
-#~ msgid "at"
-#~ msgstr "в"
-
-#~ msgid "all day"
-#~ msgstr "весь день"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Ця подія не може бути змінена"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Виберіть календарі для показу"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Показати та скласти розклад подій"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr ""
-#~ "Maya;Планування;Планувальник;Planner;Дати;Дні;Dates;Days;Події;Events;"
-
-#~ msgid "$more more ..."
-#~ msgstr "$more більше ..."
-
-#~ msgid "Ends: \t"
-#~ msgstr "Закінчується: \t"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Починається: \t"
-
-#~ msgid "Sync..."
-#~ msgstr "Синхронізувати..."
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Ім'я або Електорнна Пошта"

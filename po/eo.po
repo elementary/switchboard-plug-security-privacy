@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: eo\n"
 
@@ -281,66 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "at"
-#~ msgstr "je"
-
-#~ msgid "Title"
-#~ msgstr "Titolo"
-
-#~ msgid "Comments"
-#~ msgstr "Komentoj"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Nomo aŭ retpoŝtadreso"
-
-#~ msgid "Sync..."
-#~ msgstr "Sinkronigi..."
-
-#~ msgid "Fullscreen"
-#~ msgstr "Tutekrane"
-
-#~ msgid "Import..."
-#~ msgstr "Importi..."
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Redakti la elektitan eventon"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Forigi la elektitan eventon"
-
-#~ msgid "Contacts"
-#~ msgstr "Kontaktoj"
-
-#~ msgid "Webcal"
-#~ msgstr "Retkalendaro"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Aldoni eventon"
-
-#~ msgid "Personal"
-#~ msgstr "Persona"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Vidi kaj plani eventojn"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Elekti montrendajn kalendarojn"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Via evento havu nomon kaj havu validan daton"
-
-#~ msgid "all day"
-#~ msgstr "tuttage"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Ĝi komencas: \t"
-
-#~ msgid "Participants"
-#~ msgstr "Partoprenantoj"
-
-#~ msgid "Add calendar"
-#~ msgstr "Aldoni kalendaron"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Ĝi finas: \t"

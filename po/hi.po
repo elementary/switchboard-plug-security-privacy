@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: hi\n"
 
@@ -281,33 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "at"
-#~ msgstr "पर"
-
-#~ msgid "Title"
-#~ msgstr "शीर्षक"
-
-#~ msgid "Comments"
-#~ msgstr "टिप्पणियाँ"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "नाम या ईमेल पता"
-
-#~ msgid "Fullscreen"
-#~ msgstr "पूरी स्क्रीन"
-
-#~ msgid "Import..."
-#~ msgstr "आयात करें..."
-
-#~ msgid "Select calendars to display"
-#~ msgstr "कैलेंडर देखने के लिए चयन करें"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "चयनित घटना संपादित करें"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "चयनित घटना का नष्ट करें"
-
-#~ msgid "Sync..."
-#~ msgstr "समकालित करें..."

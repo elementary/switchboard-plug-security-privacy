@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 
 #: ../src/AppsDialog.vala:36
@@ -280,24 +280,3 @@ msgstr "%d හෝ%d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "නීති ඇතුලත් කිරීම"
-
-#~ msgid "Some settings requires administration right to be changed"
-#~ msgstr "ඇතැම් සැකසුම් සඳහා පරිපාලන අයිතිය අවශ්‍ය වේ"
-
-#~ msgid "Tracking"
-#~ msgstr "ලුහුබැඳිම"
-
-#~ msgid "Screen lock:"
-#~ msgstr "තිර අඟුල"
-
-#~ msgid "Record file and application usage:"
-#~ msgstr "වාර්තා ගොනු හා  වැඩසටහන භාවිතය"
-
-#~ msgid ""
-#~ "This operation system track of Files and Applications you've used to provide "
-#~ "extra functionality. If other proples can see or access your account, you "
-#~ "may wish to limit which items are recorded"
-#~ msgstr ""
-#~ "මෙම මෙහෙයුම් පද්ධතිය අමතර ශ්‍රිතීයතාව සැපයීම සඳහා යොදාගත් ගොනු සහ වැඩසටහන් "
-#~ "වල වාර්තා තබා ගනී.වෙනත් පුද්ගලයෙකුට ඔබගේ ගිණුම දැකීමට හෝ පරිශීලනය කිරිමට "
-#~ "හැකිනම්,ඔබ වාර්තා තබාගන්නා අයිතමයන් සීමා කිරිමට අපේක්ෂා කරනු ඇත"

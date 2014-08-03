@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: hr\n"
 
@@ -281,75 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "_Add Event"
-#~ msgstr "_Dodaj događaj"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Vaš događaj mora biti imenovan i mora imati valjan datum"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Uredi odabrani događaj"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Izbriši odabrani događaj"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Ime ili email adresa"
-
-#~ msgid "Add calendar"
-#~ msgstr "Dodaj kalendar"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Završava: \t"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Počinje: \t"
-
-#~ msgid "Contacts"
-#~ msgstr "Kontakti"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "Personal"
-#~ msgstr "Osobno"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Pregledaj i zakaži događaje"
-
-#~ msgid "Title"
-#~ msgstr "Naslov"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Odaberite kalendare za prikaz"
-
-#~ msgid "Participants"
-#~ msgstr "Sudionici"
-
-#~ msgid "Comments"
-#~ msgstr "Komentari"
-
-#~ msgid "Sync..."
-#~ msgstr "Sinkroniziraj..."
-
-#~ msgid "Fullscreen"
-#~ msgstr "Puni zaslon"
-
-#~ msgid "Import..."
-#~ msgstr "Uvezi…"
-
-#~ msgid "at"
-#~ msgstr "na"
-
-#~ msgid "all day"
-#~ msgstr "cijeli dan"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Ovaj se događaj ne može urediti"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "Maya;Planer;Datumi;Dani;Događaji"
-
-#~ msgid "$more more ..."
-#~ msgstr "$više više ..."

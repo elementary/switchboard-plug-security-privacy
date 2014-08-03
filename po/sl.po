@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: sl\n"
 
@@ -281,69 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "at"
-#~ msgstr "ob"
-
-#~ msgid "Title"
-#~ msgstr "Naslov"
-
-#~ msgid "Comments"
-#~ msgstr "Opombe"
-
-#~ msgid "Fullscreen"
-#~ msgstr "Celozaslonski način"
-
-#~ msgid "Import..."
-#~ msgstr "Uvozi ..."
-
-#~ msgid "Select calendars to display"
-#~ msgstr "Izberite koledarje za prikaz"
-
-#~ msgid "Edit the selected event"
-#~ msgstr "Uredi izbrani dogodek"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "Izbriši izbrani dogodek"
-
-#~ msgid "View and schedule events"
-#~ msgstr "Preglej in načrtuj dogodke"
-
-#~ msgid "Contacts"
-#~ msgstr "Kontakti"
-
-#~ msgid "_Add Event"
-#~ msgstr "_Dodaj dogodek"
-
-#~ msgid "Personal"
-#~ msgstr "Osebno"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "Tvoj dogodek mora biti imenovan in mora imeti veljaven datum"
-
-#~ msgid "Participants"
-#~ msgstr "Udeleženci"
-
-#~ msgid "Sync..."
-#~ msgstr "Uskladi ..."
-
-#~ msgid "Add calendar"
-#~ msgstr "Dodaj koledar"
-
-#~ msgid "all day"
-#~ msgstr "ves dan"
-
-#~ msgid "Starts: \t"
-#~ msgstr "Začetek: \t"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Konec: \t"
-
-#~ msgid "Webcal"
-#~ msgstr "Webcal"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "Ime ali e-poštni naslov"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "Tega dogodka ni mogoče urediti."

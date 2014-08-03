@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:42+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: ar\n"
 
@@ -281,75 +281,3 @@ msgstr ""
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr ""
-
-#~ msgid "Title"
-#~ msgstr "العنوان"
-
-#~ msgid "Comments"
-#~ msgstr "التعليقات"
-
-#~ msgid "Name or Email Address"
-#~ msgstr "الإسم أو البريد الإلكتروني"
-
-#~ msgid "Fullscreen"
-#~ msgstr "عرض على كامل الشاشة"
-
-#~ msgid "Select calendars to display"
-#~ msgstr "إختار التقويمات التي تود عرضها"
-
-#~ msgid "Import..."
-#~ msgstr "إستيراد..."
-
-#~ msgid "Edit the selected event"
-#~ msgstr "تعديل الحدث المحدد"
-
-#~ msgid "Delete the selected event"
-#~ msgstr "إلغاء الحدث المحدد"
-
-#~ msgid "Sync..."
-#~ msgstr "تزامن..."
-
-#~ msgid "at"
-#~ msgstr "في"
-
-#~ msgid "Contacts"
-#~ msgstr "جهات الاتصال"
-
-#~ msgid "Webcal"
-#~ msgstr "كال الويب"
-
-#~ msgid "_Add Event"
-#~ msgstr "إضافة حدث"
-
-#~ msgid "Personal"
-#~ msgstr "خاص"
-
-#~ msgid "View and schedule events"
-#~ msgstr "عرض وجدولة الأحداث"
-
-#~ msgid "Your event has to be named and has to have a valid date"
-#~ msgstr "الحدث الخاص بك يجب أن يكون المسماة ويجب أن يكون لها تاريخا صالحا"
-
-#~ msgid "Participants"
-#~ msgstr "المشاركين"
-
-#~ msgid "Add calendar"
-#~ msgstr "تقويم جمع"
-
-#~ msgid "Starts: \t"
-#~ msgstr "يبدأ في: [TAB] \t"
-
-#~ msgid "all day"
-#~ msgstr "طوال النهار"
-
-#~ msgid "This event can't be edited"
-#~ msgstr "هذه المناسبة لا يمكن تعديلها"
-
-#~ msgid "Maya;Planner;Dates;Days;Events;"
-#~ msgstr "مايا؛ منظم؛ التواريخ؛ أيام؛ الأحداث؛"
-
-#~ msgid "Ends: \t"
-#~ msgstr "Ends: \t"
-
-#~ msgid "$more more ..."
-#~ msgstr "$المزيد المزيد ..."
