@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-08-02 05:14+0000\n"
-"Last-Translator: Cody Garver <cody@elementaryos.org>\n"
+"PO-Revision-Date: 2014-08-05 19:56+0000\n"
+"Last-Translator: Mathias Bynke <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
+"X-Launchpad-Export-Date: 2014-08-06 06:57+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 "Language: nb\n"
 
@@ -40,11 +40,11 @@ msgstr "Personvern- og aktivitetsbehandler"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Noen innstillinger krever administrasjonsrettigheter for å endres"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Personvern"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
@@ -56,7 +56,7 @@ msgstr "Brannmur"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Låseskjerm:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
@@ -104,11 +104,11 @@ msgstr "Vis varslinger ved låst skjerm"
 
 #: ../src/TrackPanel.vala:62
 msgid "Gather statistics:"
-msgstr ""
+msgstr "Samle statistikk:"
 
 #: ../src/TrackPanel.vala:83
 msgid "Read more…"
-msgstr ""
+msgstr "Les mer …"
 
 #: ../src/TrackPanel.vala:96
 msgid ""
@@ -116,10 +116,13 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Dette operativsystemet kan lagre nyttig statistikk om bruken av filer og "
+"apper for å gi ekstra funksjonalitet. Hvis andre personer kan se eller bruke "
+"kontoen din, ønsker du kanskje å begrense hva som blir lagret."
 
 #: ../src/TrackPanel.vala:113
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Slett bruksdata …"
 
 #: ../src/TrackPanel.vala:134
 msgid "Delete records of which files and applications were used:"
