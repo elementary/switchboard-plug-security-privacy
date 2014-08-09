@@ -34,7 +34,7 @@ namespace SecurityPrivacy {
                     code_name: Build.PLUGCODENAME,
                     display_name: _("Security & Privacy"),
                     description: _("Privacy and Activity Manager"),
-                    icon: "activity-log-manager");
+                    icon: "preferences-system-privacy");
             plug = this;
         }
 

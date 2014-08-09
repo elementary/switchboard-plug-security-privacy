@@ -2,7 +2,7 @@
 Name=Security & Privacy
 Comment=Privacy and Activity Manager
 Exec=switchboard -o pantheon-security-privacy
-Icon=activity-log-manager
+Icon=preferences-system-privacy
 Terminal=false
 Type=Application
 StartupNotify=true
