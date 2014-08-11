@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-08-02 05:11+0000\n"
-"Last-Translator: Fabio Gaudenzi <bafio.fruges@gmail.com>\n"
+"PO-Revision-Date: 2014-08-10 07:39+0000\n"
+"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-08-11 06:36+0000\n"
+"X-Generator: Launchpad (build 17156)\n"
 "Language: it\n"
 
 #: ../src/AppsDialog.vala:36
@@ -41,10 +41,11 @@ msgstr "Privacy e Gestione Attività"
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
+"Alcune impostazioni richiedono diritti di amministratore per modificare"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Privacy"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
@@ -56,7 +57,7 @@ msgstr "Firewall"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Blocco schermo:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
@@ -104,11 +105,11 @@ msgstr "Mostra notifiche nella schermata di blocco"
 
 #: ../src/TrackPanel.vala:62
 msgid "Gather statistics:"
-msgstr ""
+msgstr "Raccogliere le statistiche:"
 
 #: ../src/TrackPanel.vala:83
 msgid "Read more…"
-msgstr ""
+msgstr "Per saperne di più..."
 
 #: ../src/TrackPanel.vala:96
 msgid ""
@@ -116,10 +117,14 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Questo sistema operativo in grado di raccogliere statistiche utili sui file "
+"e utilizzo app per fornire funzionalità aggiuntive. Se altre persone possono "
+"vedere o accedere al tuo account, potresti desiderare di limitare gli "
+"elementi che sono registrati."
 
 #: ../src/TrackPanel.vala:113
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Pulisci i dati di utilizzo..."
 
 #: ../src/TrackPanel.vala:134
 msgid "Delete records of which files and applications were used:"
