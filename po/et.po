@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-08-02 05:06+0000\n"
+"PO-Revision-Date: 2014-08-13 01:31+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-08-13 06:58+0000\n"
+"X-Generator: Launchpad (build 17156)\n"
 "Language: et\n"
 
 #: ../src/AppsDialog.vala:36
@@ -40,11 +40,11 @@ msgstr "Privaatsuse- ja tegevuste haldur"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Mõningate seadete muutmiseks on vaja administraatori õigusi…"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Privaatsus"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
@@ -56,7 +56,7 @@ msgstr "Tulemüür"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Ekraani lukustamine:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
@@ -104,11 +104,11 @@ msgstr "Lukustamisekraanil teadete näitamine"
 
 #: ../src/TrackPanel.vala:62
 msgid "Gather statistics:"
-msgstr ""
+msgstr "Statistika kogumine:"
 
 #: ../src/TrackPanel.vala:83
 msgid "Read more…"
-msgstr ""
+msgstr "Loe täpsemalt, milliseid andmeid jälgitakse"
 
 #: ../src/TrackPanel.vala:96
 msgid ""
@@ -116,10 +116,14 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Failide ja rakenduste kasutamisi jälgitakse vaid selleks, et kohandada sinu "
+"süsteemi just sinu jaoks. Kogutud statistikat ei saadeta kuhugi, kuid "
+"teistel inimestel on ligipääs sellele kontole, oleks mõtekas statistika "
+"kogumine keelata."
 
 #: ../src/TrackPanel.vala:113
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Kustuta kogu kasutamise statistika…"
 
 #: ../src/TrackPanel.vala:134
 msgid "Delete records of which files and applications were used:"
