@@ -64,8 +64,8 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         var record_switch = new Gtk.Switch ();
         record_switch.active = false;
         record_switch.notify["active"].connect (() => {
-            record_grid.sensitive = record_switch.active;
-            exclude_grid.sensitive = record_switch.active;
+            record_grid.sensitive = !record_switch.active;
+            exclude_grid.sensitive = !zrecord_switch.active;
             var recording = !blacklist.get_incognito ();
             if (record_switch.active != recording) {
                 blacklist.set_incognito (recording);
@@ -287,7 +287,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         scrolled.expand = true;
         scrolled.add (view);
 
-        var record_label = new Gtk.Label (_("Data Sources"));
+        var record_label = new Gtk.Label (_("Data Sources:"));
         record_label.xalign = 0;
 
         record_grid = new Gtk.Grid ();
@@ -401,7 +401,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         frame_grid.add (scrolled);
         frame_grid.add (list_toolbar);
 
-        var record_label = new Gtk.Label (_("Do not collect data from the following"));
+        var record_label = new Gtk.Label (_("Do not collect data from the following:"));
         record_label.xalign = 0;
 
         exclude_grid = new Gtk.Grid ();
