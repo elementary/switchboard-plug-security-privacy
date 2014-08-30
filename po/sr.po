@@ -8,107 +8,107 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-08-02 05:19+0000\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"PO-Revision-Date: 2014-08-29 21:00+0000\n"
+"Last-Translator: Иван Благојевић <ivan_blagojevic@mail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-08-30 07:51+0000\n"
+"X-Generator: Launchpad (build 17176)\n"
 "Language: sr\n"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Изаберите апликацију"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
 msgid "Cancel"
-msgstr ""
+msgstr "Одустани"
 
 #: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
 msgid "Add"
-msgstr ""
+msgstr "Додај"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Безбедност и приватност"
 
 #: ../src/Plug.vala:36
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Управник приватности и активности"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Неке поставке захтевају администраторска права да би се мењале"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Приватност"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
-msgstr ""
+msgstr "Закључавање"
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
-msgstr ""
+msgstr "Ватробран"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Закључај екран:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Након гашења екрана"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 секунди"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 минут"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 минута"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 минута"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 минута"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 минута"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 минута"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 сат"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Упитај за моју лозинку ради откључавања"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Прикажи обавештења на екрану закључавања"
 
 #: ../src/TrackPanel.vala:62
 msgid "Gather statistics:"
-msgstr ""
+msgstr "Сакупи статистике:"
 
 #: ../src/TrackPanel.vala:83
 msgid "Read more…"
-msgstr ""
+msgstr "Прочитај више..."
 
 #: ../src/TrackPanel.vala:96
 msgid ""
@@ -116,26 +116,30 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Овај оперативни систем може сакупљати корисне статистике о употреби датотека "
+"и апликација ради боље функционалности. Ако други људи могу да виде или "
+"приступе вашем налогу, можда ћете желети да ограничите ставке које се "
+"снимају."
 
 #: ../src/TrackPanel.vala:113
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Очисти податке коришћења…"
 
 #: ../src/TrackPanel.vala:134
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Обриши записе о датотекама и апликацијама које су коришћене:"
 
 #: ../src/TrackPanel.vala:136
 msgid "In the past hour"
-msgstr ""
+msgstr "У току прошлог сата"
 
 #: ../src/TrackPanel.vala:137
 msgid "In the past day"
-msgstr ""
+msgstr "У току прошлог дана"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past week"
-msgstr ""
+msgstr "У току прошле недеље"
 
 #: ../src/TrackPanel.vala:139
 msgid "From:"
@@ -143,141 +147,141 @@ msgstr "Од:"
 
 #: ../src/TrackPanel.vala:140
 msgid "From all time"
-msgstr ""
+msgstr "Одувек"
 
 #: ../src/TrackPanel.vala:143
 msgid "To:"
-msgstr "За:"
+msgstr "До:"
 
 #: ../src/TrackPanel.vala:146
 msgid "Clear Data"
-msgstr ""
+msgstr "Очисти податке"
 
 #: ../src/TrackPanel.vala:290
 msgid "Record:"
-msgstr ""
+msgstr "Снимање:"
 
 #: ../src/TrackPanel.vala:299
 msgid "Documents"
-msgstr ""
+msgstr "Документа"
 
 #: ../src/TrackPanel.vala:300
 msgid "Music"
-msgstr ""
+msgstr "Музика"
 
 #: ../src/TrackPanel.vala:301
 msgid "Pictures"
-msgstr ""
+msgstr "Слике"
 
 #: ../src/TrackPanel.vala:302
 msgid "Presentations"
-msgstr ""
+msgstr "Презентације"
 
 #: ../src/TrackPanel.vala:303
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Табеле"
 
 #: ../src/TrackPanel.vala:304
 msgid "Videos"
-msgstr ""
+msgstr "Видео снимци"
 
 #: ../src/TrackPanel.vala:305
 msgid "Chat Logs"
-msgstr ""
+msgstr "Историја ћаскања"
 
 #: ../src/TrackPanel.vala:343
 msgid "Add Application…"
-msgstr ""
+msgstr "Додај апликацију..."
 
 #: ../src/TrackPanel.vala:351
 msgid "Add Folder…"
-msgstr ""
+msgstr "Додај фасциклу..."
 
 #: ../src/TrackPanel.vala:353
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Изабери директоријум за црну листу"
 
 #: ../src/TrackPanel.vala:404
 msgid "Do not record:"
-msgstr ""
+msgstr "Не снимај:"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Потврда је неопходна за покретање Ватробранских поставки"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Статус Ватробрана:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
 msgid "Unknown"
-msgstr ""
+msgstr "Непознато"
 
 #: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Допусти"
 
 #: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Одбиј"
 
 #: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Одбаци"
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Ограничење"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
 msgid "In"
-msgstr ""
+msgstr "У"
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
 msgid "Out"
-msgstr ""
+msgstr "Изван"
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
-msgstr ""
+msgstr "ИПв6"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Радња"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Протокол"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Смер"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Портови"
 
 #: ../src/FirewallPanel.vala:156
 msgid "Action:"
-msgstr ""
+msgstr "Акција:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Протокол:"
 
 #: ../src/FirewallPanel.vala:172
 msgid "Direction:"
-msgstr ""
+msgstr "Смер:"
 
 #: ../src/FirewallPanel.vala:179
 msgid "Ports:"
-msgstr ""
+msgstr "Портови:"
 
 #: ../src/FirewallPanel.vala:183
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d or %d-%d"
 
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
-msgstr ""
+msgstr "Додај правило"
