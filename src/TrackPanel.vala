@@ -65,7 +65,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         record_switch.active = false;
         record_switch.notify["active"].connect (() => {
             record_grid.sensitive = !record_switch.active;
-            exclude_grid.sensitive = !zrecord_switch.active;
+            exclude_grid.sensitive = !record_switch.active;
             var recording = !blacklist.get_incognito ();
             if (record_switch.active != recording) {
                 blacklist.set_incognito (recording);
