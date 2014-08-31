@@ -59,7 +59,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         margin_top = 0;
 
         var record_label = new Gtk.Label ("");
-        record_label.set_markup ("<b>%s</b>".printf (_("Privacy Mode")));
+        record_label.set_markup ("<b>%s</b>".printf (_("Privacy Mode:")));
 
         var record_switch = new Gtk.Switch ();
         record_switch.active = false;
