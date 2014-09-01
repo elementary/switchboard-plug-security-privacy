@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-08-02 05:17+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2014-08-31 19:57+0000\n"
+"Last-Translator: Artem Anufrij <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-09-01 08:06+0000\n"
+"X-Generator: Launchpad (build 17176)\n"
 "Language: ru\n"
 
 #: ../src/AppsDialog.vala:36
@@ -64,35 +64,35 @@ msgstr ""
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 секунд"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 минута"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 минуты"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 минуты"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 минут"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 минут"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 минут"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 час"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
@@ -127,15 +127,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:136
 msgid "In the past hour"
-msgstr ""
+msgstr "За последний час"
 
 #: ../src/TrackPanel.vala:137
 msgid "In the past day"
-msgstr ""
+msgstr "За последний день"
 
 #: ../src/TrackPanel.vala:138
 msgid "In the past week"
-msgstr ""
+msgstr "За последнюю неделю"
 
 #: ../src/TrackPanel.vala:139
 msgid "From:"
@@ -143,7 +143,7 @@ msgstr "От:"
 
 #: ../src/TrackPanel.vala:140
 msgid "From all time"
-msgstr ""
+msgstr "За всё время"
 
 #: ../src/TrackPanel.vala:143
 msgid "To:"
@@ -151,7 +151,7 @@ msgstr "До:"
 
 #: ../src/TrackPanel.vala:146
 msgid "Clear Data"
-msgstr ""
+msgstr "Очистить данные"
 
 #: ../src/TrackPanel.vala:290
 msgid "Record:"
@@ -240,7 +240,7 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
@@ -248,7 +248,7 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Протокол"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
@@ -264,7 +264,7 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Протокол:"
 
 #: ../src/FirewallPanel.vala:172
 msgid "Direction:"
