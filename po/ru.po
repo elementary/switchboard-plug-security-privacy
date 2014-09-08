@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-09-06 23:35+0000\n"
+"PO-Revision-Date: 2014-09-07 10:12+0000\n"
 "Last-Translator: Artem Anufrij <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-07 07:02+0000\n"
+"X-Launchpad-Export-Date: 2014-09-08 07:06+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: ru\n"
 
@@ -36,7 +36,7 @@ msgstr "Защита и приватность"
 
 #: ../src/Plug.vala:36
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Менеджер защиты и приватности"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
@@ -116,6 +116,10 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Эта операционная система может отслеживать полезную статистику о файлах и "
+"использования приложений для обеспечения дополнительной функциональности. "
+"Если другие люди могут увидеть или войти с вашим аккаунтом, вы можете "
+"ограничить элементы отслеживания."
 
 #: ../src/TrackPanel.vala:113
 msgid "Clear Usage Data…"
@@ -232,11 +236,11 @@ msgstr "Ограничить"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
 msgid "In"
-msgstr ""
+msgstr "Входящие"
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
 msgid "Out"
-msgstr ""
+msgstr "Исходящие"
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
