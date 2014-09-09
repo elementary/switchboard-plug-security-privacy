@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-09-07 10:12+0000\n"
+"PO-Revision-Date: 2014-09-08 17:23+0000\n"
 "Last-Translator: Artem Anufrij <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-08 07:06+0000\n"
+"X-Launchpad-Export-Date: 2014-09-09 08:06+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: ru\n"
 
@@ -40,7 +40,7 @@ msgstr "Менеджер защиты и приватности"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr "Для некоторых настроек требуются права администратора"
+msgstr "Для изменения некоторых настроек требуются права администратора"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
@@ -264,7 +264,7 @@ msgstr "Порты"
 
 #: ../src/FirewallPanel.vala:156
 msgid "Action:"
-msgstr ""
+msgstr "Действие:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
