@@ -7,207 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-01 14:45-0500\n"
+"POT-Creation-Date: 2014-10-04 21:11-0500\n"
 "PO-Revision-Date: 2014-09-24 06:47+0000\n"
 "Last-Translator: Laszlo Espadas <kw@kardiweb.org>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-25 06:53+0000\n"
+"X-Launchpad-Export-Date: 2014-10-05 07:03+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: hu\n"
-
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Válasszon alkalmazást"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Cancel"
-msgstr "Mégsem"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Add"
-msgstr "Hozzáadás"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Biztonság és magánszféra"
-
-#: ../src/Plug.vala:36
-msgid "Privacy and Activity Manager"
-msgstr "Magánszféra- és aktivitáskezelő"
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr "Néhány beállítás változtatásához adminisztrátor jog szükséges"
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr "Magánszféra"
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Zárolás"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Tűzfal"
-
-#: ../src/LockPanel.vala:36
-msgid "Lock screen:"
-msgstr "Zárolt képernyő"
-
-#: ../src/LockPanel.vala:45
-msgid "After display turns off"
-msgstr "Miután a képernyő kikapcsol"
-
-#: ../src/LockPanel.vala:46
-msgid "30 seconds"
-msgstr "30 másodperc"
-
-#: ../src/LockPanel.vala:47
-msgid "1 minute"
-msgstr "1 perc"
-
-#: ../src/LockPanel.vala:48
-msgid "2 minutes"
-msgstr "2 perc"
-
-#: ../src/LockPanel.vala:49
-msgid "3 minutes"
-msgstr "3 perc"
-
-#: ../src/LockPanel.vala:50
-msgid "5 minutes"
-msgstr "5 perc"
-
-#: ../src/LockPanel.vala:51
-msgid "10 minutes"
-msgstr "10 perc"
-
-#: ../src/LockPanel.vala:52
-msgid "30 minutes"
-msgstr "30 perc"
-
-#: ../src/LockPanel.vala:53
-msgid "1 hour"
-msgstr "1 óra"
-
-#: ../src/LockPanel.vala:106
-msgid "Ask for my password to unlock"
-msgstr "Kérje a jelszót a feloldáshoz"
-
-#: ../src/LockPanel.vala:111
-msgid "Show notifications on lockscreen"
-msgstr "Értesítések megjelenítése zároltképernyőn"
-
-#: ../src/TrackPanel.vala:62
-msgid "Gather statistics:"
-msgstr "Statisztika adatok gyüjtése:"
-
-#: ../src/TrackPanel.vala:83
-msgid "Read more…"
-msgstr "Bővebben..."
-
-#: ../src/TrackPanel.vala:96
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Az operációs rendszer képes statisztikai adatokat gyüjteni a fájlokról, "
-"alkalmazásokról és extra funkciókról. Ha más emberek is használják a fiókot "
-"vagy a számítógépet, akkor érdemes korlátozni ennek hozzáférhetőségét."
-
-#: ../src/TrackPanel.vala:113
-msgid "Clear Usage Data…"
-msgstr "Használati adatok törlése…"
-
-#: ../src/TrackPanel.vala:134
-msgid "Delete records of which files and applications were used:"
-msgstr ""
-"A használt fájlok és alkalmazások listájának törlése ebben az időszakban:"
-
-#: ../src/TrackPanel.vala:136
-msgid "In the past hour"
-msgstr "Elmúlt óra"
-
-#: ../src/TrackPanel.vala:137
-msgid "In the past day"
-msgstr "Elmúlt nap"
-
-#: ../src/TrackPanel.vala:138
-msgid "In the past week"
-msgstr "Elmúlt hét"
-
-#: ../src/TrackPanel.vala:139
-msgid "From:"
-msgstr "Ettől:"
-
-#: ../src/TrackPanel.vala:140
-msgid "From all time"
-msgstr "Összes törlése"
-
-#: ../src/TrackPanel.vala:143
-msgid "To:"
-msgstr "Eddig:"
-
-#: ../src/TrackPanel.vala:146
-msgid "Clear Data"
-msgstr "Adatok törlése"
-
-#: ../src/TrackPanel.vala:290
-msgid "Record:"
-msgstr "Rögzítse:"
-
-#: ../src/TrackPanel.vala:299
-msgid "Documents"
-msgstr "Dokumentumok"
-
-#: ../src/TrackPanel.vala:300
-msgid "Music"
-msgstr "Zene"
-
-#: ../src/TrackPanel.vala:301
-msgid "Pictures"
-msgstr "Képek"
-
-#: ../src/TrackPanel.vala:302
-msgid "Presentations"
-msgstr "Bemutatók"
-
-#: ../src/TrackPanel.vala:303
-msgid "Spreadsheets"
-msgstr "Táblázatok"
-
-#: ../src/TrackPanel.vala:304
-msgid "Videos"
-msgstr "Videók"
-
-#: ../src/TrackPanel.vala:305
-msgid "Chat Logs"
-msgstr "Csevegésnaplók"
-
-#: ../src/TrackPanel.vala:343
-msgid "Add Application…"
-msgstr "Alkalmazás hozzáadása"
-
-#: ../src/TrackPanel.vala:351
-msgid "Add Folder…"
-msgstr "Mappa hozzáadása"
-
-#: ../src/TrackPanel.vala:353
-msgid "Select a folder to blacklist"
-msgstr "Mappa hozzáadása a tiltólistához"
-
-#: ../src/TrackPanel.vala:404
-msgid "Do not record:"
-msgstr "Ne rögzítse:"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Hitelesítés szükséges a tűzfal beállításokhoz"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -285,3 +94,203 @@ msgstr "%d vagy %d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Szabály hozzáadása"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Hitelesítés szükséges a tűzfal beállításokhoz"
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Biztonság és magánszféra"
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr "Magánszféra- és aktivitáskezelő"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr "Néhány beállítás változtatásához adminisztrátor jog szükséges"
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr "Magánszféra"
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Zárolás"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Tűzfal"
+
+#: ../src/TrackPanel.vala:62
+msgid "Privacy Mode:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr "Bővebben..."
+
+#: ../src/TrackPanel.vala:96
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"Az operációs rendszer képes statisztikai adatokat gyüjteni a fájlokról, "
+"alkalmazásokról és extra funkciókról. Ha más emberek is használják a fiókot "
+"vagy a számítógépet, akkor érdemes korlátozni ennek hozzáférhetőségét."
+
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr "Használati adatok törlése…"
+
+#: ../src/TrackPanel.vala:134
+msgid "Delete records of which files and applications were used:"
+msgstr ""
+"A használt fájlok és alkalmazások listájának törlése ebben az időszakban:"
+
+#: ../src/TrackPanel.vala:136
+msgid "In the past hour"
+msgstr "Elmúlt óra"
+
+#: ../src/TrackPanel.vala:137
+msgid "In the past day"
+msgstr "Elmúlt nap"
+
+#: ../src/TrackPanel.vala:138
+msgid "In the past week"
+msgstr "Elmúlt hét"
+
+#: ../src/TrackPanel.vala:139
+msgid "From:"
+msgstr "Ettől:"
+
+#: ../src/TrackPanel.vala:140
+msgid "From all time"
+msgstr "Összes törlése"
+
+#: ../src/TrackPanel.vala:143
+msgid "To:"
+msgstr "Eddig:"
+
+#: ../src/TrackPanel.vala:146
+msgid "Clear Data"
+msgstr "Adatok törlése"
+
+#: ../src/TrackPanel.vala:290
+msgid "Data Sources:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:299
+msgid "Chat Logs"
+msgstr "Csevegésnaplók"
+
+#: ../src/TrackPanel.vala:300
+msgid "Documents"
+msgstr "Dokumentumok"
+
+#: ../src/TrackPanel.vala:301
+msgid "Music"
+msgstr "Zene"
+
+#: ../src/TrackPanel.vala:302
+msgid "Pictures"
+msgstr "Képek"
+
+#: ../src/TrackPanel.vala:303
+msgid "Presentations"
+msgstr "Bemutatók"
+
+#: ../src/TrackPanel.vala:304
+msgid "Spreadsheets"
+msgstr "Táblázatok"
+
+#: ../src/TrackPanel.vala:305
+msgid "Videos"
+msgstr "Videók"
+
+#: ../src/TrackPanel.vala:343
+msgid "Add Application…"
+msgstr "Alkalmazás hozzáadása"
+
+#: ../src/TrackPanel.vala:351
+msgid "Add Folder…"
+msgstr "Mappa hozzáadása"
+
+#: ../src/TrackPanel.vala:353
+msgid "Select a folder to blacklist"
+msgstr "Mappa hozzáadása a tiltólistához"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: ../src/TrackPanel.vala:404
+msgid "Do not collect data from the following:"
+msgstr ""
+
+#: ../src/LockPanel.vala:36
+msgid "Lock screen:"
+msgstr "Zárolt képernyő"
+
+#: ../src/LockPanel.vala:45
+msgid "After display turns off"
+msgstr "Miután a képernyő kikapcsol"
+
+#: ../src/LockPanel.vala:46
+msgid "30 seconds"
+msgstr "30 másodperc"
+
+#: ../src/LockPanel.vala:47
+msgid "1 minute"
+msgstr "1 perc"
+
+#: ../src/LockPanel.vala:48
+msgid "2 minutes"
+msgstr "2 perc"
+
+#: ../src/LockPanel.vala:49
+msgid "3 minutes"
+msgstr "3 perc"
+
+#: ../src/LockPanel.vala:50
+msgid "5 minutes"
+msgstr "5 perc"
+
+#: ../src/LockPanel.vala:51
+msgid "10 minutes"
+msgstr "10 perc"
+
+#: ../src/LockPanel.vala:52
+msgid "30 minutes"
+msgstr "30 perc"
+
+#: ../src/LockPanel.vala:53
+msgid "1 hour"
+msgstr "1 óra"
+
+#: ../src/LockPanel.vala:106
+msgid "Ask for my password to unlock"
+msgstr "Kérje a jelszót a feloldáshoz"
+
+#: ../src/LockPanel.vala:111
+msgid "Show notifications on lockscreen"
+msgstr "Értesítések megjelenítése zároltképernyőn"
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Válasszon alkalmazást"
+
+#~ msgid "Do not record:"
+#~ msgstr "Ne rögzítse:"
+
+#~ msgid "Record:"
+#~ msgstr "Rögzítse:"
+
+#~ msgid "Gather statistics:"
+#~ msgstr "Statisztika adatok gyüjtése:"

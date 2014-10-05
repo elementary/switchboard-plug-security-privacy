@@ -7,203 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-01 14:45-0500\n"
+"POT-Creation-Date: 2014-10-04 21:11-0500\n"
 "PO-Revision-Date: 2014-08-02 05:08+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-03 06:16+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-10-05 07:03+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
 "Language: gl\n"
-
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Seleccionar un aplicativo"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Add"
-msgstr "Engadir"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Seguranza e intimidade"
-
-#: ../src/Plug.vala:36
-msgid "Privacy and Activity Manager"
-msgstr "Xestor de intimidade e actividade"
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr ""
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr ""
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Bloqueo"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Devasa"
-
-#: ../src/LockPanel.vala:36
-msgid "Lock screen:"
-msgstr ""
-
-#: ../src/LockPanel.vala:45
-msgid "After display turns off"
-msgstr "Após o apagado da pantalla"
-
-#: ../src/LockPanel.vala:46
-msgid "30 seconds"
-msgstr "30 segundos"
-
-#: ../src/LockPanel.vala:47
-msgid "1 minute"
-msgstr "1 minuto"
-
-#: ../src/LockPanel.vala:48
-msgid "2 minutes"
-msgstr "2 minutos"
-
-#: ../src/LockPanel.vala:49
-msgid "3 minutes"
-msgstr "3 minutos"
-
-#: ../src/LockPanel.vala:50
-msgid "5 minutes"
-msgstr "5 minutos"
-
-#: ../src/LockPanel.vala:51
-msgid "10 minutes"
-msgstr "10 minutos"
-
-#: ../src/LockPanel.vala:52
-msgid "30 minutes"
-msgstr "30 minutos"
-
-#: ../src/LockPanel.vala:53
-msgid "1 hour"
-msgstr "1 hora"
-
-#: ../src/LockPanel.vala:106
-msgid "Ask for my password to unlock"
-msgstr "Solicitar o contrasinal para desbloquear"
-
-#: ../src/LockPanel.vala:111
-msgid "Show notifications on lockscreen"
-msgstr "Amosar as notificacións na pantalla de bloqueo"
-
-#: ../src/TrackPanel.vala:62
-msgid "Gather statistics:"
-msgstr ""
-
-#: ../src/TrackPanel.vala:83
-msgid "Read more…"
-msgstr ""
-
-#: ../src/TrackPanel.vala:96
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-
-#: ../src/TrackPanel.vala:113
-msgid "Clear Usage Data…"
-msgstr ""
-
-#: ../src/TrackPanel.vala:134
-msgid "Delete records of which files and applications were used:"
-msgstr "Eliminar os rexistros dos ficheiros e aplicativos usados:"
-
-#: ../src/TrackPanel.vala:136
-msgid "In the past hour"
-msgstr "Na hora anterior"
-
-#: ../src/TrackPanel.vala:137
-msgid "In the past day"
-msgstr "No día anterior"
-
-#: ../src/TrackPanel.vala:138
-msgid "In the past week"
-msgstr "Na semana anterior"
-
-#: ../src/TrackPanel.vala:139
-msgid "From:"
-msgstr "Desde:"
-
-#: ../src/TrackPanel.vala:140
-msgid "From all time"
-msgstr "Desde sempre"
-
-#: ../src/TrackPanel.vala:143
-msgid "To:"
-msgstr "Ata:"
-
-#: ../src/TrackPanel.vala:146
-msgid "Clear Data"
-msgstr "Limpar datos"
-
-#: ../src/TrackPanel.vala:290
-msgid "Record:"
-msgstr "Rexistro:"
-
-#: ../src/TrackPanel.vala:299
-msgid "Documents"
-msgstr "Documentos"
-
-#: ../src/TrackPanel.vala:300
-msgid "Music"
-msgstr "Música"
-
-#: ../src/TrackPanel.vala:301
-msgid "Pictures"
-msgstr "Imaxes"
-
-#: ../src/TrackPanel.vala:302
-msgid "Presentations"
-msgstr "Presentacións"
-
-#: ../src/TrackPanel.vala:303
-msgid "Spreadsheets"
-msgstr "Follas de cálculo"
-
-#: ../src/TrackPanel.vala:304
-msgid "Videos"
-msgstr "Vídeos"
-
-#: ../src/TrackPanel.vala:305
-msgid "Chat Logs"
-msgstr "Rexistros de conversas"
-
-#: ../src/TrackPanel.vala:343
-msgid "Add Application…"
-msgstr "Engadir aplicativo..."
-
-#: ../src/TrackPanel.vala:351
-msgid "Add Folder…"
-msgstr "Engadir un cartafol..."
-
-#: ../src/TrackPanel.vala:353
-msgid "Select a folder to blacklist"
-msgstr "Seleccione un cartafol para engadir á lista negra"
-
-#: ../src/TrackPanel.vala:404
-msgid "Do not record:"
-msgstr "Non rexistrar:"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Precísase autenticación para configurar a devasa"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -281,3 +94,196 @@ msgstr "%d ou %d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Engadir unha regra"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Precísase autenticación para configurar a devasa"
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Seguranza e intimidade"
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr "Xestor de intimidade e actividade"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr ""
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr ""
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Bloqueo"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Devasa"
+
+#: ../src/TrackPanel.vala:62
+msgid "Privacy Mode:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:96
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:134
+msgid "Delete records of which files and applications were used:"
+msgstr "Eliminar os rexistros dos ficheiros e aplicativos usados:"
+
+#: ../src/TrackPanel.vala:136
+msgid "In the past hour"
+msgstr "Na hora anterior"
+
+#: ../src/TrackPanel.vala:137
+msgid "In the past day"
+msgstr "No día anterior"
+
+#: ../src/TrackPanel.vala:138
+msgid "In the past week"
+msgstr "Na semana anterior"
+
+#: ../src/TrackPanel.vala:139
+msgid "From:"
+msgstr "Desde:"
+
+#: ../src/TrackPanel.vala:140
+msgid "From all time"
+msgstr "Desde sempre"
+
+#: ../src/TrackPanel.vala:143
+msgid "To:"
+msgstr "Ata:"
+
+#: ../src/TrackPanel.vala:146
+msgid "Clear Data"
+msgstr "Limpar datos"
+
+#: ../src/TrackPanel.vala:290
+msgid "Data Sources:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:299
+msgid "Chat Logs"
+msgstr "Rexistros de conversas"
+
+#: ../src/TrackPanel.vala:300
+msgid "Documents"
+msgstr "Documentos"
+
+#: ../src/TrackPanel.vala:301
+msgid "Music"
+msgstr "Música"
+
+#: ../src/TrackPanel.vala:302
+msgid "Pictures"
+msgstr "Imaxes"
+
+#: ../src/TrackPanel.vala:303
+msgid "Presentations"
+msgstr "Presentacións"
+
+#: ../src/TrackPanel.vala:304
+msgid "Spreadsheets"
+msgstr "Follas de cálculo"
+
+#: ../src/TrackPanel.vala:305
+msgid "Videos"
+msgstr "Vídeos"
+
+#: ../src/TrackPanel.vala:343
+msgid "Add Application…"
+msgstr "Engadir aplicativo..."
+
+#: ../src/TrackPanel.vala:351
+msgid "Add Folder…"
+msgstr "Engadir un cartafol..."
+
+#: ../src/TrackPanel.vala:353
+msgid "Select a folder to blacklist"
+msgstr "Seleccione un cartafol para engadir á lista negra"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Add"
+msgstr "Engadir"
+
+#: ../src/TrackPanel.vala:404
+msgid "Do not collect data from the following:"
+msgstr ""
+
+#: ../src/LockPanel.vala:36
+msgid "Lock screen:"
+msgstr ""
+
+#: ../src/LockPanel.vala:45
+msgid "After display turns off"
+msgstr "Após o apagado da pantalla"
+
+#: ../src/LockPanel.vala:46
+msgid "30 seconds"
+msgstr "30 segundos"
+
+#: ../src/LockPanel.vala:47
+msgid "1 minute"
+msgstr "1 minuto"
+
+#: ../src/LockPanel.vala:48
+msgid "2 minutes"
+msgstr "2 minutos"
+
+#: ../src/LockPanel.vala:49
+msgid "3 minutes"
+msgstr "3 minutos"
+
+#: ../src/LockPanel.vala:50
+msgid "5 minutes"
+msgstr "5 minutos"
+
+#: ../src/LockPanel.vala:51
+msgid "10 minutes"
+msgstr "10 minutos"
+
+#: ../src/LockPanel.vala:52
+msgid "30 minutes"
+msgstr "30 minutos"
+
+#: ../src/LockPanel.vala:53
+msgid "1 hour"
+msgstr "1 hora"
+
+#: ../src/LockPanel.vala:106
+msgid "Ask for my password to unlock"
+msgstr "Solicitar o contrasinal para desbloquear"
+
+#: ../src/LockPanel.vala:111
+msgid "Show notifications on lockscreen"
+msgstr "Amosar as notificacións na pantalla de bloqueo"
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Seleccionar un aplicativo"
+
+#~ msgid "Record:"
+#~ msgstr "Rexistro:"
+
+#~ msgid "Do not record:"
+#~ msgstr "Non rexistrar:"

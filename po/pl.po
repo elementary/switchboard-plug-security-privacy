@@ -7,208 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-01 14:45-0500\n"
+"POT-Creation-Date: 2014-10-04 21:11-0500\n"
 "PO-Revision-Date: 2014-08-04 09:28+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-05 06:47+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-10-05 07:04+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
 "Language: pl\n"
-
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Wybór programu"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Cancel"
-msgstr "Anuluj"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Add"
-msgstr "Dodaj"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Prywatność i bezpieczeństwo"
-
-#: ../src/Plug.vala:36
-msgid "Privacy and Activity Manager"
-msgstr "Menedżer prywatności i aktywności"
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr "Zmiana niektórych ustawień wymaga uprawnień administratora"
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr "Prywatność"
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Blokowanie"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Zapora sieciowa"
-
-#: ../src/LockPanel.vala:36
-msgid "Lock screen:"
-msgstr "Blokada ekranu:"
-
-#: ../src/LockPanel.vala:45
-msgid "After display turns off"
-msgstr "Po wyłączeniu wyświetlacza"
-
-#: ../src/LockPanel.vala:46
-msgid "30 seconds"
-msgstr "30 sekund"
-
-#: ../src/LockPanel.vala:47
-msgid "1 minute"
-msgstr "1 minuta"
-
-#: ../src/LockPanel.vala:48
-msgid "2 minutes"
-msgstr "2 minuty"
-
-#: ../src/LockPanel.vala:49
-msgid "3 minutes"
-msgstr "3 minuty"
-
-#: ../src/LockPanel.vala:50
-msgid "5 minutes"
-msgstr "5 minut"
-
-#: ../src/LockPanel.vala:51
-msgid "10 minutes"
-msgstr "10 minut"
-
-#: ../src/LockPanel.vala:52
-msgid "30 minutes"
-msgstr "30 minut"
-
-#: ../src/LockPanel.vala:53
-msgid "1 hour"
-msgstr "1 godzina"
-
-#: ../src/LockPanel.vala:106
-msgid "Ask for my password to unlock"
-msgstr "Pytaj o moje hasło, aby odblokować"
-
-#: ../src/LockPanel.vala:111
-msgid "Show notifications on lockscreen"
-msgstr "Pokazuj powiadomienia na ekranie blokady"
-
-#: ../src/TrackPanel.vala:62
-msgid "Gather statistics:"
-msgstr "Zebrane statystyki:"
-
-#: ../src/TrackPanel.vala:83
-msgid "Read more…"
-msgstr "Czytaj dalej..."
-
-#: ../src/TrackPanel.vala:96
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Ten system operacyjny może zbierać użyteczne dane o plikach i programach, "
-"aby zapewnić dodatkową funkcjonalność. Jeśli inne osoby mogą zobaczyć lub "
-"uzyskać dostęp do Twojego konta, możesz chcieć ograniczyć zakres "
-"rejestrowanych danych."
-
-#: ../src/TrackPanel.vala:113
-msgid "Clear Usage Data…"
-msgstr "Wyczyść dane o użytkowaniu..."
-
-#: ../src/TrackPanel.vala:134
-msgid "Delete records of which files and applications were used:"
-msgstr "Usuń informacje o używanych plikach i programach:"
-
-#: ../src/TrackPanel.vala:136
-msgid "In the past hour"
-msgstr "W ciągu ostatniej godziny"
-
-#: ../src/TrackPanel.vala:137
-msgid "In the past day"
-msgstr "W ciągu ostatniego dnia"
-
-#: ../src/TrackPanel.vala:138
-msgid "In the past week"
-msgstr "W ciągu ostatniego tygodnia"
-
-#: ../src/TrackPanel.vala:139
-msgid "From:"
-msgstr "Od:"
-
-#: ../src/TrackPanel.vala:140
-msgid "From all time"
-msgstr "Z całego okresu"
-
-#: ../src/TrackPanel.vala:143
-msgid "To:"
-msgstr "Do:"
-
-#: ../src/TrackPanel.vala:146
-msgid "Clear Data"
-msgstr "Wyczyść dane"
-
-#: ../src/TrackPanel.vala:290
-msgid "Record:"
-msgstr "Zapis:"
-
-#: ../src/TrackPanel.vala:299
-msgid "Documents"
-msgstr "Dokumenty"
-
-#: ../src/TrackPanel.vala:300
-msgid "Music"
-msgstr "Muzyka"
-
-#: ../src/TrackPanel.vala:301
-msgid "Pictures"
-msgstr "Obrazy"
-
-#: ../src/TrackPanel.vala:302
-msgid "Presentations"
-msgstr "Prezentacje"
-
-#: ../src/TrackPanel.vala:303
-msgid "Spreadsheets"
-msgstr "Arkusze kalkulacyjne"
-
-#: ../src/TrackPanel.vala:304
-msgid "Videos"
-msgstr "Wideo"
-
-#: ../src/TrackPanel.vala:305
-msgid "Chat Logs"
-msgstr "Dzienniki rozmów"
-
-#: ../src/TrackPanel.vala:343
-msgid "Add Application…"
-msgstr "Dodaj program..."
-
-#: ../src/TrackPanel.vala:351
-msgid "Add Folder…"
-msgstr "Dodaj katalog..."
-
-#: ../src/TrackPanel.vala:353
-msgid "Select a folder to blacklist"
-msgstr "Wybierz katalog, który powinien zostać dodany do czarnej listy."
-
-#: ../src/TrackPanel.vala:404
-msgid "Do not record:"
-msgstr "Nie zapisuj:"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
-"Aby uruchomić konfigurację zapory sieciowej konieczne jest uwierzytelnienie"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -286,3 +94,204 @@ msgstr "%d lub %d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Dodaj regułę"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr ""
+"Aby uruchomić konfigurację zapory sieciowej konieczne jest uwierzytelnienie"
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Prywatność i bezpieczeństwo"
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr "Menedżer prywatności i aktywności"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr "Zmiana niektórych ustawień wymaga uprawnień administratora"
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr "Prywatność"
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Blokowanie"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Zapora sieciowa"
+
+#: ../src/TrackPanel.vala:62
+msgid "Privacy Mode:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr "Czytaj dalej..."
+
+#: ../src/TrackPanel.vala:96
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"Ten system operacyjny może zbierać użyteczne dane o plikach i programach, "
+"aby zapewnić dodatkową funkcjonalność. Jeśli inne osoby mogą zobaczyć lub "
+"uzyskać dostęp do Twojego konta, możesz chcieć ograniczyć zakres "
+"rejestrowanych danych."
+
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr "Wyczyść dane o użytkowaniu..."
+
+#: ../src/TrackPanel.vala:134
+msgid "Delete records of which files and applications were used:"
+msgstr "Usuń informacje o używanych plikach i programach:"
+
+#: ../src/TrackPanel.vala:136
+msgid "In the past hour"
+msgstr "W ciągu ostatniej godziny"
+
+#: ../src/TrackPanel.vala:137
+msgid "In the past day"
+msgstr "W ciągu ostatniego dnia"
+
+#: ../src/TrackPanel.vala:138
+msgid "In the past week"
+msgstr "W ciągu ostatniego tygodnia"
+
+#: ../src/TrackPanel.vala:139
+msgid "From:"
+msgstr "Od:"
+
+#: ../src/TrackPanel.vala:140
+msgid "From all time"
+msgstr "Z całego okresu"
+
+#: ../src/TrackPanel.vala:143
+msgid "To:"
+msgstr "Do:"
+
+#: ../src/TrackPanel.vala:146
+msgid "Clear Data"
+msgstr "Wyczyść dane"
+
+#: ../src/TrackPanel.vala:290
+msgid "Data Sources:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:299
+msgid "Chat Logs"
+msgstr "Dzienniki rozmów"
+
+#: ../src/TrackPanel.vala:300
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: ../src/TrackPanel.vala:301
+msgid "Music"
+msgstr "Muzyka"
+
+#: ../src/TrackPanel.vala:302
+msgid "Pictures"
+msgstr "Obrazy"
+
+#: ../src/TrackPanel.vala:303
+msgid "Presentations"
+msgstr "Prezentacje"
+
+#: ../src/TrackPanel.vala:304
+msgid "Spreadsheets"
+msgstr "Arkusze kalkulacyjne"
+
+#: ../src/TrackPanel.vala:305
+msgid "Videos"
+msgstr "Wideo"
+
+#: ../src/TrackPanel.vala:343
+msgid "Add Application…"
+msgstr "Dodaj program..."
+
+#: ../src/TrackPanel.vala:351
+msgid "Add Folder…"
+msgstr "Dodaj katalog..."
+
+#: ../src/TrackPanel.vala:353
+msgid "Select a folder to blacklist"
+msgstr "Wybierz katalog, który powinien zostać dodany do czarnej listy."
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Add"
+msgstr "Dodaj"
+
+#: ../src/TrackPanel.vala:404
+msgid "Do not collect data from the following:"
+msgstr ""
+
+#: ../src/LockPanel.vala:36
+msgid "Lock screen:"
+msgstr "Blokada ekranu:"
+
+#: ../src/LockPanel.vala:45
+msgid "After display turns off"
+msgstr "Po wyłączeniu wyświetlacza"
+
+#: ../src/LockPanel.vala:46
+msgid "30 seconds"
+msgstr "30 sekund"
+
+#: ../src/LockPanel.vala:47
+msgid "1 minute"
+msgstr "1 minuta"
+
+#: ../src/LockPanel.vala:48
+msgid "2 minutes"
+msgstr "2 minuty"
+
+#: ../src/LockPanel.vala:49
+msgid "3 minutes"
+msgstr "3 minuty"
+
+#: ../src/LockPanel.vala:50
+msgid "5 minutes"
+msgstr "5 minut"
+
+#: ../src/LockPanel.vala:51
+msgid "10 minutes"
+msgstr "10 minut"
+
+#: ../src/LockPanel.vala:52
+msgid "30 minutes"
+msgstr "30 minut"
+
+#: ../src/LockPanel.vala:53
+msgid "1 hour"
+msgstr "1 godzina"
+
+#: ../src/LockPanel.vala:106
+msgid "Ask for my password to unlock"
+msgstr "Pytaj o moje hasło, aby odblokować"
+
+#: ../src/LockPanel.vala:111
+msgid "Show notifications on lockscreen"
+msgstr "Pokazuj powiadomienia na ekranie blokady"
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Wybór programu"
+
+#~ msgid "Record:"
+#~ msgstr "Zapis:"
+
+#~ msgid "Do not record:"
+#~ msgstr "Nie zapisuj:"
+
+#~ msgid "Gather statistics:"
+#~ msgstr "Zebrane statystyki:"

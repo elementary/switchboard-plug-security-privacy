@@ -7,208 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-01 14:45-0500\n"
+"POT-Creation-Date: 2014-10-04 21:11-0500\n"
 "PO-Revision-Date: 2014-08-13 18:11+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-14 07:40+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2014-10-05 07:02+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
 "Language: et\n"
-
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Rakenduse valimine"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Cancel"
-msgstr "Loobu"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Add"
-msgstr "Lisa"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Turvalisus ja privaatsus"
-
-#: ../src/Plug.vala:36
-msgid "Privacy and Activity Manager"
-msgstr "Privaatsuse- ja tegevuste haldur"
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr "Mõningate seadete muutmiseks on vaja administraatori õigusi…"
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr "Privaatsus"
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Lukustamine"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Tulemüür"
-
-#: ../src/LockPanel.vala:36
-msgid "Lock screen:"
-msgstr "Ekraani lukustamine:"
-
-#: ../src/LockPanel.vala:45
-msgid "After display turns off"
-msgstr "Ekraani väljalülitamisel"
-
-#: ../src/LockPanel.vala:46
-msgid "30 seconds"
-msgstr "30 sekundit"
-
-#: ../src/LockPanel.vala:47
-msgid "1 minute"
-msgstr "1 minut"
-
-#: ../src/LockPanel.vala:48
-msgid "2 minutes"
-msgstr "2 minutit"
-
-#: ../src/LockPanel.vala:49
-msgid "3 minutes"
-msgstr "3 minutit"
-
-#: ../src/LockPanel.vala:50
-msgid "5 minutes"
-msgstr "5 minutit"
-
-#: ../src/LockPanel.vala:51
-msgid "10 minutes"
-msgstr "10 minutit"
-
-#: ../src/LockPanel.vala:52
-msgid "30 minutes"
-msgstr "30 minutit"
-
-#: ../src/LockPanel.vala:53
-msgid "1 hour"
-msgstr "1 tund"
-
-#: ../src/LockPanel.vala:106
-msgid "Ask for my password to unlock"
-msgstr "Lukust lahti võtmiseks küsitakse parooli"
-
-#: ../src/LockPanel.vala:111
-msgid "Show notifications on lockscreen"
-msgstr "Lukustamisekraanil teadete näitamine"
-
-#: ../src/TrackPanel.vala:62
-msgid "Gather statistics:"
-msgstr "Statistika kogumine:"
-
-#: ../src/TrackPanel.vala:83
-msgid "Read more…"
-msgstr "Loe täpsemalt, milliseid andmeid jälgitakse"
-
-#: ../src/TrackPanel.vala:96
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Failide ja rakenduste kasutamisi jälgitakse vaid selleks, et kohandada sinu "
-"süsteemi just sinu jaoks. Kogutud statistikat ei saadeta kuhugi, kuid "
-"teistel inimestel on ligipääs sellele kontole, oleks mõtekas statistika "
-"kogumine keelata."
-
-#: ../src/TrackPanel.vala:113
-msgid "Clear Usage Data…"
-msgstr "Kustuta kogu kasutamise statistika…"
-
-#: ../src/TrackPanel.vala:134
-msgid "Delete records of which files and applications were used:"
-msgstr ""
-"Kusututakse kõikide rakenduste ja failide kasutamise ajalugu ajavahemikus:"
-
-#: ../src/TrackPanel.vala:136
-msgid "In the past hour"
-msgstr "1 tund"
-
-#: ../src/TrackPanel.vala:137
-msgid "In the past day"
-msgstr "1 päev"
-
-#: ../src/TrackPanel.vala:138
-msgid "In the past week"
-msgstr "1 nädal"
-
-#: ../src/TrackPanel.vala:139
-msgid "From:"
-msgstr "Alates:"
-
-#: ../src/TrackPanel.vala:140
-msgid "From all time"
-msgstr "Terve aeg"
-
-#: ../src/TrackPanel.vala:143
-msgid "To:"
-msgstr "Kuni:"
-
-#: ../src/TrackPanel.vala:146
-msgid "Clear Data"
-msgstr "Puhasta andmed"
-
-#: ../src/TrackPanel.vala:290
-msgid "Record:"
-msgstr "Jälgitakse:"
-
-#: ../src/TrackPanel.vala:299
-msgid "Documents"
-msgstr "Dokumendid"
-
-#: ../src/TrackPanel.vala:300
-msgid "Music"
-msgstr "Muusika"
-
-#: ../src/TrackPanel.vala:301
-msgid "Pictures"
-msgstr "Pildid"
-
-#: ../src/TrackPanel.vala:302
-msgid "Presentations"
-msgstr "Esitlused"
-
-#: ../src/TrackPanel.vala:303
-msgid "Spreadsheets"
-msgstr "Arvutustabelid"
-
-#: ../src/TrackPanel.vala:304
-msgid "Videos"
-msgstr "Videod"
-
-#: ../src/TrackPanel.vala:305
-msgid "Chat Logs"
-msgstr "Vestluste logid"
-
-#: ../src/TrackPanel.vala:343
-msgid "Add Application…"
-msgstr "Lisa rakendus..."
-
-#: ../src/TrackPanel.vala:351
-msgid "Add Folder…"
-msgstr "Lisa kaust..."
-
-#: ../src/TrackPanel.vala:353
-msgid "Select a folder to blacklist"
-msgstr "Kausta valimine"
-
-#: ../src/TrackPanel.vala:404
-msgid "Do not record:"
-msgstr "Ei jälgita:"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Tulemüüri seadistamiseks on vajalik autentimine"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -286,3 +94,204 @@ msgstr "%d või%d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Lisa reegel"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Tulemüüri seadistamiseks on vajalik autentimine"
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Turvalisus ja privaatsus"
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr "Privaatsuse- ja tegevuste haldur"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr "Mõningate seadete muutmiseks on vaja administraatori õigusi…"
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr "Privaatsus"
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Lukustamine"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Tulemüür"
+
+#: ../src/TrackPanel.vala:62
+msgid "Privacy Mode:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr "Loe täpsemalt, milliseid andmeid jälgitakse"
+
+#: ../src/TrackPanel.vala:96
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"Failide ja rakenduste kasutamisi jälgitakse vaid selleks, et kohandada sinu "
+"süsteemi just sinu jaoks. Kogutud statistikat ei saadeta kuhugi, kuid "
+"teistel inimestel on ligipääs sellele kontole, oleks mõtekas statistika "
+"kogumine keelata."
+
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr "Kustuta kogu kasutamise statistika…"
+
+#: ../src/TrackPanel.vala:134
+msgid "Delete records of which files and applications were used:"
+msgstr ""
+"Kusututakse kõikide rakenduste ja failide kasutamise ajalugu ajavahemikus:"
+
+#: ../src/TrackPanel.vala:136
+msgid "In the past hour"
+msgstr "1 tund"
+
+#: ../src/TrackPanel.vala:137
+msgid "In the past day"
+msgstr "1 päev"
+
+#: ../src/TrackPanel.vala:138
+msgid "In the past week"
+msgstr "1 nädal"
+
+#: ../src/TrackPanel.vala:139
+msgid "From:"
+msgstr "Alates:"
+
+#: ../src/TrackPanel.vala:140
+msgid "From all time"
+msgstr "Terve aeg"
+
+#: ../src/TrackPanel.vala:143
+msgid "To:"
+msgstr "Kuni:"
+
+#: ../src/TrackPanel.vala:146
+msgid "Clear Data"
+msgstr "Puhasta andmed"
+
+#: ../src/TrackPanel.vala:290
+msgid "Data Sources:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:299
+msgid "Chat Logs"
+msgstr "Vestluste logid"
+
+#: ../src/TrackPanel.vala:300
+msgid "Documents"
+msgstr "Dokumendid"
+
+#: ../src/TrackPanel.vala:301
+msgid "Music"
+msgstr "Muusika"
+
+#: ../src/TrackPanel.vala:302
+msgid "Pictures"
+msgstr "Pildid"
+
+#: ../src/TrackPanel.vala:303
+msgid "Presentations"
+msgstr "Esitlused"
+
+#: ../src/TrackPanel.vala:304
+msgid "Spreadsheets"
+msgstr "Arvutustabelid"
+
+#: ../src/TrackPanel.vala:305
+msgid "Videos"
+msgstr "Videod"
+
+#: ../src/TrackPanel.vala:343
+msgid "Add Application…"
+msgstr "Lisa rakendus..."
+
+#: ../src/TrackPanel.vala:351
+msgid "Add Folder…"
+msgstr "Lisa kaust..."
+
+#: ../src/TrackPanel.vala:353
+msgid "Select a folder to blacklist"
+msgstr "Kausta valimine"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Cancel"
+msgstr "Loobu"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Add"
+msgstr "Lisa"
+
+#: ../src/TrackPanel.vala:404
+msgid "Do not collect data from the following:"
+msgstr ""
+
+#: ../src/LockPanel.vala:36
+msgid "Lock screen:"
+msgstr "Ekraani lukustamine:"
+
+#: ../src/LockPanel.vala:45
+msgid "After display turns off"
+msgstr "Ekraani väljalülitamisel"
+
+#: ../src/LockPanel.vala:46
+msgid "30 seconds"
+msgstr "30 sekundit"
+
+#: ../src/LockPanel.vala:47
+msgid "1 minute"
+msgstr "1 minut"
+
+#: ../src/LockPanel.vala:48
+msgid "2 minutes"
+msgstr "2 minutit"
+
+#: ../src/LockPanel.vala:49
+msgid "3 minutes"
+msgstr "3 minutit"
+
+#: ../src/LockPanel.vala:50
+msgid "5 minutes"
+msgstr "5 minutit"
+
+#: ../src/LockPanel.vala:51
+msgid "10 minutes"
+msgstr "10 minutit"
+
+#: ../src/LockPanel.vala:52
+msgid "30 minutes"
+msgstr "30 minutit"
+
+#: ../src/LockPanel.vala:53
+msgid "1 hour"
+msgstr "1 tund"
+
+#: ../src/LockPanel.vala:106
+msgid "Ask for my password to unlock"
+msgstr "Lukust lahti võtmiseks küsitakse parooli"
+
+#: ../src/LockPanel.vala:111
+msgid "Show notifications on lockscreen"
+msgstr "Lukustamisekraanil teadete näitamine"
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Rakenduse valimine"
+
+#~ msgid "Record:"
+#~ msgstr "Jälgitakse:"
+
+#~ msgid "Gather statistics:"
+#~ msgstr "Statistika kogumine:"
+
+#~ msgid "Do not record:"
+#~ msgstr "Ei jälgita:"

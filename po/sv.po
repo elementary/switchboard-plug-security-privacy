@@ -7,203 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-01 14:45-0500\n"
+"POT-Creation-Date: 2014-10-04 21:11-0500\n"
 "PO-Revision-Date: 2014-09-05 07:12+0000\n"
 "Last-Translator: Joachim Johansson <Unknown>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-06 07:39+0000\n"
+"X-Launchpad-Export-Date: 2014-10-05 07:04+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: sv\n"
-
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Välj program"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Add"
-msgstr "Lägg till"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Säkerhet & Integritet"
-
-#: ../src/Plug.vala:36
-msgid "Privacy and Activity Manager"
-msgstr "Integritet- och aktivitetshanterare"
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr ""
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr "Integritet"
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Låsning"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Brandvägg"
-
-#: ../src/LockPanel.vala:36
-msgid "Lock screen:"
-msgstr ""
-
-#: ../src/LockPanel.vala:45
-msgid "After display turns off"
-msgstr "Efter att skärmen stängs av"
-
-#: ../src/LockPanel.vala:46
-msgid "30 seconds"
-msgstr "30 sekunder"
-
-#: ../src/LockPanel.vala:47
-msgid "1 minute"
-msgstr "1 minut"
-
-#: ../src/LockPanel.vala:48
-msgid "2 minutes"
-msgstr "2 minuter"
-
-#: ../src/LockPanel.vala:49
-msgid "3 minutes"
-msgstr "3 minuter"
-
-#: ../src/LockPanel.vala:50
-msgid "5 minutes"
-msgstr "5 minuter"
-
-#: ../src/LockPanel.vala:51
-msgid "10 minutes"
-msgstr "10 minuter"
-
-#: ../src/LockPanel.vala:52
-msgid "30 minutes"
-msgstr "30 minuter"
-
-#: ../src/LockPanel.vala:53
-msgid "1 hour"
-msgstr "1 timme"
-
-#: ../src/LockPanel.vala:106
-msgid "Ask for my password to unlock"
-msgstr "Be om mitt lösenord för att låsa upp"
-
-#: ../src/LockPanel.vala:111
-msgid "Show notifications on lockscreen"
-msgstr "Visa meddelanden på låsskärm"
-
-#: ../src/TrackPanel.vala:62
-msgid "Gather statistics:"
-msgstr ""
-
-#: ../src/TrackPanel.vala:83
-msgid "Read more…"
-msgstr ""
-
-#: ../src/TrackPanel.vala:96
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-
-#: ../src/TrackPanel.vala:113
-msgid "Clear Usage Data…"
-msgstr ""
-
-#: ../src/TrackPanel.vala:134
-msgid "Delete records of which files and applications were used:"
-msgstr "Radera uppgifter om vilka filer och program som använts:"
-
-#: ../src/TrackPanel.vala:136
-msgid "In the past hour"
-msgstr "Den senaste timmen"
-
-#: ../src/TrackPanel.vala:137
-msgid "In the past day"
-msgstr "Under den senaste dagen"
-
-#: ../src/TrackPanel.vala:138
-msgid "In the past week"
-msgstr "Den senaste veckan"
-
-#: ../src/TrackPanel.vala:139
-msgid "From:"
-msgstr "Från:"
-
-#: ../src/TrackPanel.vala:140
-msgid "From all time"
-msgstr "Sedan tidernas begynnelse"
-
-#: ../src/TrackPanel.vala:143
-msgid "To:"
-msgstr "Till:"
-
-#: ../src/TrackPanel.vala:146
-msgid "Clear Data"
-msgstr "Rensa data"
-
-#: ../src/TrackPanel.vala:290
-msgid "Record:"
-msgstr "Lagrad uppgift:"
-
-#: ../src/TrackPanel.vala:299
-msgid "Documents"
-msgstr "Dokument"
-
-#: ../src/TrackPanel.vala:300
-msgid "Music"
-msgstr "Musik"
-
-#: ../src/TrackPanel.vala:301
-msgid "Pictures"
-msgstr "Bilder"
-
-#: ../src/TrackPanel.vala:302
-msgid "Presentations"
-msgstr "Presentationer"
-
-#: ../src/TrackPanel.vala:303
-msgid "Spreadsheets"
-msgstr "Kalkylark"
-
-#: ../src/TrackPanel.vala:304
-msgid "Videos"
-msgstr "Filmer"
-
-#: ../src/TrackPanel.vala:305
-msgid "Chat Logs"
-msgstr "Chattloggar"
-
-#: ../src/TrackPanel.vala:343
-msgid "Add Application…"
-msgstr "Lägg till program..."
-
-#: ../src/TrackPanel.vala:351
-msgid "Add Folder…"
-msgstr "Lägg till mapp..."
-
-#: ../src/TrackPanel.vala:353
-msgid "Select a folder to blacklist"
-msgstr "Välj mapp att svartlista"
-
-#: ../src/TrackPanel.vala:404
-msgid "Do not record:"
-msgstr "Spara inte uppgifter om:"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Autentisering krävs för att köra Brandsväggskonfigureringen"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -281,3 +94,196 @@ msgstr "%d eller %d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Lägg till regel"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Autentisering krävs för att köra Brandsväggskonfigureringen"
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Säkerhet & Integritet"
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr "Integritet- och aktivitetshanterare"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr ""
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr "Integritet"
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Låsning"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Brandvägg"
+
+#: ../src/TrackPanel.vala:62
+msgid "Privacy Mode:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:96
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:134
+msgid "Delete records of which files and applications were used:"
+msgstr "Radera uppgifter om vilka filer och program som använts:"
+
+#: ../src/TrackPanel.vala:136
+msgid "In the past hour"
+msgstr "Den senaste timmen"
+
+#: ../src/TrackPanel.vala:137
+msgid "In the past day"
+msgstr "Under den senaste dagen"
+
+#: ../src/TrackPanel.vala:138
+msgid "In the past week"
+msgstr "Den senaste veckan"
+
+#: ../src/TrackPanel.vala:139
+msgid "From:"
+msgstr "Från:"
+
+#: ../src/TrackPanel.vala:140
+msgid "From all time"
+msgstr "Sedan tidernas begynnelse"
+
+#: ../src/TrackPanel.vala:143
+msgid "To:"
+msgstr "Till:"
+
+#: ../src/TrackPanel.vala:146
+msgid "Clear Data"
+msgstr "Rensa data"
+
+#: ../src/TrackPanel.vala:290
+msgid "Data Sources:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:299
+msgid "Chat Logs"
+msgstr "Chattloggar"
+
+#: ../src/TrackPanel.vala:300
+msgid "Documents"
+msgstr "Dokument"
+
+#: ../src/TrackPanel.vala:301
+msgid "Music"
+msgstr "Musik"
+
+#: ../src/TrackPanel.vala:302
+msgid "Pictures"
+msgstr "Bilder"
+
+#: ../src/TrackPanel.vala:303
+msgid "Presentations"
+msgstr "Presentationer"
+
+#: ../src/TrackPanel.vala:304
+msgid "Spreadsheets"
+msgstr "Kalkylark"
+
+#: ../src/TrackPanel.vala:305
+msgid "Videos"
+msgstr "Filmer"
+
+#: ../src/TrackPanel.vala:343
+msgid "Add Application…"
+msgstr "Lägg till program..."
+
+#: ../src/TrackPanel.vala:351
+msgid "Add Folder…"
+msgstr "Lägg till mapp..."
+
+#: ../src/TrackPanel.vala:353
+msgid "Select a folder to blacklist"
+msgstr "Välj mapp att svartlista"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Add"
+msgstr "Lägg till"
+
+#: ../src/TrackPanel.vala:404
+msgid "Do not collect data from the following:"
+msgstr ""
+
+#: ../src/LockPanel.vala:36
+msgid "Lock screen:"
+msgstr ""
+
+#: ../src/LockPanel.vala:45
+msgid "After display turns off"
+msgstr "Efter att skärmen stängs av"
+
+#: ../src/LockPanel.vala:46
+msgid "30 seconds"
+msgstr "30 sekunder"
+
+#: ../src/LockPanel.vala:47
+msgid "1 minute"
+msgstr "1 minut"
+
+#: ../src/LockPanel.vala:48
+msgid "2 minutes"
+msgstr "2 minuter"
+
+#: ../src/LockPanel.vala:49
+msgid "3 minutes"
+msgstr "3 minuter"
+
+#: ../src/LockPanel.vala:50
+msgid "5 minutes"
+msgstr "5 minuter"
+
+#: ../src/LockPanel.vala:51
+msgid "10 minutes"
+msgstr "10 minuter"
+
+#: ../src/LockPanel.vala:52
+msgid "30 minutes"
+msgstr "30 minuter"
+
+#: ../src/LockPanel.vala:53
+msgid "1 hour"
+msgstr "1 timme"
+
+#: ../src/LockPanel.vala:106
+msgid "Ask for my password to unlock"
+msgstr "Be om mitt lösenord för att låsa upp"
+
+#: ../src/LockPanel.vala:111
+msgid "Show notifications on lockscreen"
+msgstr "Visa meddelanden på låsskärm"
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Välj program"
+
+#~ msgid "Record:"
+#~ msgstr "Lagrad uppgift:"
+
+#~ msgid "Do not record:"
+#~ msgstr "Spara inte uppgifter om:"

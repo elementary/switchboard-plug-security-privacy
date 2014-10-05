@@ -7,207 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-01 14:45-0500\n"
-"PO-Revision-Date: 2014-08-05 19:56+0000\n"
-"Last-Translator: Mathias Bynke <Unknown>\n"
+"POT-Creation-Date: 2014-10-04 21:11-0500\n"
+"PO-Revision-Date: 2014-10-05 06:29+0000\n"
+"Last-Translator: ProsjektX <Unknown>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-06 06:57+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-10-05 07:04+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
 "Language: nb\n"
-
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Velg program"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: ../src/AppsDialog.vala:54 ../src/TrackPanel.vala:354
-msgid "Add"
-msgstr "Legg til"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Sikkerhet og personvern"
-
-#: ../src/Plug.vala:36
-msgid "Privacy and Activity Manager"
-msgstr "Personvern- og aktivitetsbehandler"
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr "Noen innstillinger krever administrasjonsrettigheter for å endres"
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr "Personvern"
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Låsing"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Brannmur"
-
-#: ../src/LockPanel.vala:36
-msgid "Lock screen:"
-msgstr "Låseskjerm:"
-
-#: ../src/LockPanel.vala:45
-msgid "After display turns off"
-msgstr "Etter skjerm skrur seg av"
-
-#: ../src/LockPanel.vala:46
-msgid "30 seconds"
-msgstr "30 sekunder"
-
-#: ../src/LockPanel.vala:47
-msgid "1 minute"
-msgstr "Ett minutt"
-
-#: ../src/LockPanel.vala:48
-msgid "2 minutes"
-msgstr "To minutter"
-
-#: ../src/LockPanel.vala:49
-msgid "3 minutes"
-msgstr "Tre minutter"
-
-#: ../src/LockPanel.vala:50
-msgid "5 minutes"
-msgstr "Fem minutter"
-
-#: ../src/LockPanel.vala:51
-msgid "10 minutes"
-msgstr "Ti minutter"
-
-#: ../src/LockPanel.vala:52
-msgid "30 minutes"
-msgstr "30 minutter"
-
-#: ../src/LockPanel.vala:53
-msgid "1 hour"
-msgstr "Én time"
-
-#: ../src/LockPanel.vala:106
-msgid "Ask for my password to unlock"
-msgstr "Etterspørr passord for opplåsing"
-
-#: ../src/LockPanel.vala:111
-msgid "Show notifications on lockscreen"
-msgstr "Vis varslinger ved låst skjerm"
-
-#: ../src/TrackPanel.vala:62
-msgid "Gather statistics:"
-msgstr "Samle statistikk:"
-
-#: ../src/TrackPanel.vala:83
-msgid "Read more…"
-msgstr "Les mer …"
-
-#: ../src/TrackPanel.vala:96
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Dette operativsystemet kan lagre nyttig statistikk om bruken av filer og "
-"apper for å gi ekstra funksjonalitet. Hvis andre personer kan se eller bruke "
-"kontoen din, ønsker du kanskje å begrense hva som blir lagret."
-
-#: ../src/TrackPanel.vala:113
-msgid "Clear Usage Data…"
-msgstr "Slett bruksdata …"
-
-#: ../src/TrackPanel.vala:134
-msgid "Delete records of which files and applications were used:"
-msgstr ""
-"Slett loggen som viser hvilke filer og programmer som har vært i bruk:"
-
-#: ../src/TrackPanel.vala:136
-msgid "In the past hour"
-msgstr "Den siste timen"
-
-#: ../src/TrackPanel.vala:137
-msgid "In the past day"
-msgstr "Det siste døgnet"
-
-#: ../src/TrackPanel.vala:138
-msgid "In the past week"
-msgstr "Den siste uka"
-
-#: ../src/TrackPanel.vala:139
-msgid "From:"
-msgstr "Fra:"
-
-#: ../src/TrackPanel.vala:140
-msgid "From all time"
-msgstr "Siden tidenes morgen"
-
-#: ../src/TrackPanel.vala:143
-msgid "To:"
-msgstr "Til:"
-
-#: ../src/TrackPanel.vala:146
-msgid "Clear Data"
-msgstr "Nullstill data"
-
-#: ../src/TrackPanel.vala:290
-msgid "Record:"
-msgstr "Loggføring:"
-
-#: ../src/TrackPanel.vala:299
-msgid "Documents"
-msgstr "Dokumenter"
-
-#: ../src/TrackPanel.vala:300
-msgid "Music"
-msgstr "Musikk"
-
-#: ../src/TrackPanel.vala:301
-msgid "Pictures"
-msgstr "Bilder"
-
-#: ../src/TrackPanel.vala:302
-msgid "Presentations"
-msgstr "Presentasjoner"
-
-#: ../src/TrackPanel.vala:303
-msgid "Spreadsheets"
-msgstr "Regneark"
-
-#: ../src/TrackPanel.vala:304
-msgid "Videos"
-msgstr "Filmer"
-
-#: ../src/TrackPanel.vala:305
-msgid "Chat Logs"
-msgstr "Nettsludringslogg"
-
-#: ../src/TrackPanel.vala:343
-msgid "Add Application…"
-msgstr "Legg til applikasjon..."
-
-#: ../src/TrackPanel.vala:351
-msgid "Add Folder…"
-msgstr "Legg til mappe..."
-
-#: ../src/TrackPanel.vala:353
-msgid "Select a folder to blacklist"
-msgstr "Velg en mappe som skal svartelistes"
-
-#: ../src/TrackPanel.vala:404
-msgid "Do not record:"
-msgstr "Ikke loggfør:"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Autentisering er nødvendig for å kjøre brannmurkonfigurasjon"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -285,3 +94,203 @@ msgstr "%d eller %d-%d"
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
 msgstr "Legg til regel"
+
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Autentisering er nødvendig for å kjøre brannmurkonfigurasjon"
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Sikkerhet og personvern"
+
+#: ../src/Plug.vala:36
+msgid "Privacy and Activity Manager"
+msgstr "Personvern- og aktivitetsbehandler"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr "Noen innstillinger krever administrasjonsrettigheter for å endres"
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr "Personvern"
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Låsing"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Brannmur"
+
+#: ../src/TrackPanel.vala:62
+msgid "Privacy Mode:"
+msgstr "Personvernmodus"
+
+#: ../src/TrackPanel.vala:83
+msgid "Read more…"
+msgstr "Les mer …"
+
+#: ../src/TrackPanel.vala:96
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"Dette operativsystemet kan lagre nyttig statistikk om bruken av filer og "
+"apper for å gi ekstra funksjonalitet. Hvis andre personer kan se eller bruke "
+"kontoen din, ønsker du kanskje å begrense hva som blir lagret."
+
+#: ../src/TrackPanel.vala:113
+msgid "Clear Usage Data…"
+msgstr "Slett bruksdata …"
+
+#: ../src/TrackPanel.vala:134
+msgid "Delete records of which files and applications were used:"
+msgstr ""
+"Slett loggen som viser hvilke filer og programmer som har vært i bruk:"
+
+#: ../src/TrackPanel.vala:136
+msgid "In the past hour"
+msgstr "Den siste timen"
+
+#: ../src/TrackPanel.vala:137
+msgid "In the past day"
+msgstr "Det siste døgnet"
+
+#: ../src/TrackPanel.vala:138
+msgid "In the past week"
+msgstr "Den siste uka"
+
+#: ../src/TrackPanel.vala:139
+msgid "From:"
+msgstr "Fra:"
+
+#: ../src/TrackPanel.vala:140
+msgid "From all time"
+msgstr "Siden tidenes morgen"
+
+#: ../src/TrackPanel.vala:143
+msgid "To:"
+msgstr "Til:"
+
+#: ../src/TrackPanel.vala:146
+msgid "Clear Data"
+msgstr "Nullstill data"
+
+#: ../src/TrackPanel.vala:290
+msgid "Data Sources:"
+msgstr "Datakilder:"
+
+#: ../src/TrackPanel.vala:299
+msgid "Chat Logs"
+msgstr "Nettsludringslogg"
+
+#: ../src/TrackPanel.vala:300
+msgid "Documents"
+msgstr "Dokumenter"
+
+#: ../src/TrackPanel.vala:301
+msgid "Music"
+msgstr "Musikk"
+
+#: ../src/TrackPanel.vala:302
+msgid "Pictures"
+msgstr "Bilder"
+
+#: ../src/TrackPanel.vala:303
+msgid "Presentations"
+msgstr "Presentasjoner"
+
+#: ../src/TrackPanel.vala:304
+msgid "Spreadsheets"
+msgstr "Regneark"
+
+#: ../src/TrackPanel.vala:305
+msgid "Videos"
+msgstr "Filmer"
+
+#: ../src/TrackPanel.vala:343
+msgid "Add Application…"
+msgstr "Legg til applikasjon..."
+
+#: ../src/TrackPanel.vala:351
+msgid "Add Folder…"
+msgstr "Legg til mappe..."
+
+#: ../src/TrackPanel.vala:353
+msgid "Select a folder to blacklist"
+msgstr "Velg en mappe som skal svartelistes"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
+msgid "Add"
+msgstr "Legg til"
+
+#: ../src/TrackPanel.vala:404
+msgid "Do not collect data from the following:"
+msgstr "Ikke samle data fra følgende:"
+
+#: ../src/LockPanel.vala:36
+msgid "Lock screen:"
+msgstr "Låseskjerm:"
+
+#: ../src/LockPanel.vala:45
+msgid "After display turns off"
+msgstr "Etter skjerm skrur seg av"
+
+#: ../src/LockPanel.vala:46
+msgid "30 seconds"
+msgstr "30 sekunder"
+
+#: ../src/LockPanel.vala:47
+msgid "1 minute"
+msgstr "Ett minutt"
+
+#: ../src/LockPanel.vala:48
+msgid "2 minutes"
+msgstr "To minutter"
+
+#: ../src/LockPanel.vala:49
+msgid "3 minutes"
+msgstr "Tre minutter"
+
+#: ../src/LockPanel.vala:50
+msgid "5 minutes"
+msgstr "Fem minutter"
+
+#: ../src/LockPanel.vala:51
+msgid "10 minutes"
+msgstr "Ti minutter"
+
+#: ../src/LockPanel.vala:52
+msgid "30 minutes"
+msgstr "30 minutter"
+
+#: ../src/LockPanel.vala:53
+msgid "1 hour"
+msgstr "Én time"
+
+#: ../src/LockPanel.vala:106
+msgid "Ask for my password to unlock"
+msgstr "Etterspørr passord for opplåsing"
+
+#: ../src/LockPanel.vala:111
+msgid "Show notifications on lockscreen"
+msgstr "Vis varslinger ved låst skjerm"
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Velg program"
+
+#~ msgid "Record:"
+#~ msgstr "Loggføring:"
+
+#~ msgid "Do not record:"
+#~ msgstr "Ikke loggfør:"
+
+#~ msgid "Gather statistics:"
+#~ msgstr "Samle statistikk:"
