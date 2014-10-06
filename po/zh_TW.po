@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-05 07:05+0000\n"
+"X-Launchpad-Export-Date: 2014-10-06 07:29+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 
 #: ../src/FirewallPanel.vala:54
@@ -280,9 +280,3 @@ msgstr "在鎖定畫面中顯示通知"
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
 msgstr "選取應用程式"
-
-#~ msgid "Record:"
-#~ msgstr "紀錄："
-
-#~ msgid "Do not record:"
-#~ msgstr "不要紀錄："

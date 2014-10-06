@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-05 07:05+0000\n"
+"X-Launchpad-Export-Date: 2014-10-06 07:28+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: th\n"
 
@@ -281,9 +281,3 @@ msgstr "แสดงการแจ้งเตือนบนหน้าจอ
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
 msgstr "เลือกโปรแกรม"
-
-#~ msgid "Record:"
-#~ msgstr "บันทึก"
-
-#~ msgid "Do not record:"
-#~ msgstr "ไม่บันทึก"

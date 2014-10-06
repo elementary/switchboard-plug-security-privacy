@@ -14,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-05 07:04+0000\n"
+"X-Launchpad-Export-Date: 2014-10-06 07:28+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: sv\n"
 
@@ -281,9 +281,3 @@ msgstr "Visa meddelanden på låsskärm"
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
 msgstr "Välj program"
-
-#~ msgid "Record:"
-#~ msgstr "Lagrad uppgift:"
-
-#~ msgid "Do not record:"
-#~ msgstr "Spara inte uppgifter om:"
