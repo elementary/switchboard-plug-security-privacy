@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-04 21:11-0500\n"
-"PO-Revision-Date: 2014-10-05 07:09+0000\n"
+"PO-Revision-Date: 2014-10-11 05:25+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 07:29+0000\n"
+"X-Launchpad-Export-Date: 2014-10-12 06:57+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 "Language: \n"
 
@@ -125,7 +125,7 @@ msgstr "防火墙"
 
 #: ../src/TrackPanel.vala:62
 msgid "Privacy Mode:"
-msgstr "保密模式："
+msgstr "私人模式："
 
 #: ../src/TrackPanel.vala:83
 msgid "Read more…"
