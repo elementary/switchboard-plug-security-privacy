@@ -22,24 +22,16 @@
 
 public class SecurityPrivacy.LockPanel : Gtk.Grid {
 
-    Settings notification;
-    Settings screensaver;
+    Settings locker;
 
     public LockPanel () {
         column_spacing = 12;
         row_spacing = 6;
 
-        notification = new Settings ("org.gnome.desktop.notifications");
-        screensaver = new Settings ("org.gnome.desktop.screensaver");
+        locker = new Settings ("apps.light-locker");
 
-        var screen_lock_label = new Gtk.Label ("");
-        screen_lock_label.set_markup ("<b>%s</b>".printf (_("Lock screen:")));
-
-        var screen_lock_switch = new Gtk.Switch ();
-        screen_lock_switch.active = true;
-        var switch_grid = new Gtk.Grid ();
-        switch_grid.valign = Gtk.Align.CENTER;
-        switch_grid.add (screen_lock_switch);
+/* TODO: figure out how to do inactivity timeouts on the light-locker side of things
+         (see https://github.com/the-cavalry/light-locker/issues/41)
 
         var screen_lock_combobox = new Gtk.ComboBoxText ();
         screen_lock_combobox.append_text (_("After display turns off"));
@@ -102,25 +94,17 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
                     break;
             }
         });
+*/
 
-        var ask_checkbutton = new Gtk.CheckButton.with_label (_("Ask for my password to unlock"));
-        ask_checkbutton.notify["active"].connect (() => {
-            screensaver.set_boolean ("ubuntu-lock-on-suspend", ask_checkbutton.active);
-        });
-        ask_checkbutton.active = screensaver.get_boolean ("ubuntu-lock-on-suspend");
-        var notification_checkbutton = new Gtk.CheckButton.with_label (_("Show notifications on lockscreen"));
-        notification_checkbutton.active = notification.get_boolean ("show-in-lock-screen");
-        notification_checkbutton.notify["active"].connect (() => {
-            notification.set_boolean ("show-in-lock-screen", notification_checkbutton.active);
-        });
+        var lock_suspend_switch = new Gtk.Switch ();
+        var lock_suspend_grid = new Gtk.Grid ();
+        lock_suspend_grid.valign = Gtk.Align.CENTER;
+        lock_suspend_grid.add (lock_suspend_switch);
+        var lock_suspend_label = new Gtk.Label ("Ask for my password to unlock:");
 
-        screen_lock_switch.notify["active"].connect (() => {
-            screen_lock_combobox.sensitive = screen_lock_switch.active;
-            ask_checkbutton.sensitive = screen_lock_switch.active;
-            notification_checkbutton.sensitive = screen_lock_switch.active;
-            screensaver.set_boolean ("lock-enabled", screen_lock_switch.active);
-        });
-        screen_lock_switch.active = screensaver.get_boolean ("lock-enabled");
+        /* Synchronize lock_suspend_switch and GSettings value */
+        lock_suspend_switch.active = locker.get_boolean ("lock-on-suspend");
+        locker.bind ("lock-on-suspend", lock_suspend_switch, "active", SettingsBindFlags.DEFAULT);
 
         var fake_grid_left = new Gtk.Grid ();
         fake_grid_left.hexpand = true;
@@ -128,11 +112,9 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
         fake_grid_right.hexpand = true;
 
         attach (fake_grid_left, 0, 0, 1, 1);
-        attach (screen_lock_label, 1, 0, 1, 1);
-        attach (switch_grid, 2, 0, 1, 1);
-        attach (screen_lock_combobox, 3, 0, 1, 1);
-        attach (ask_checkbutton, 2, 1, 2, 1);
-        //attach (notification_checkbutton, 2, 2, 2, 1);
+        //attach (screen_lock_combobox, 3, 0, 1, 1);
+        attach (lock_suspend_label, 1, 1, 1, 1);
+        attach (lock_suspend_grid, 2, 1, 3, 1);
         attach (fake_grid_right, 4, 0, 1, 1);
     }
 }
