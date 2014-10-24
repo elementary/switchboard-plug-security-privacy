@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-04 21:11-0500\n"
-"PO-Revision-Date: 2014-08-13 18:11+0000\n"
+"PO-Revision-Date: 2014-10-23 14:11+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 07:26+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-10-24 06:41+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
 "Language: et\n"
 
 #: ../src/FirewallPanel.vala:54
@@ -125,7 +125,7 @@ msgstr "Tulemüür"
 
 #: ../src/TrackPanel.vala:62
 msgid "Privacy Mode:"
-msgstr ""
+msgstr "Privaatsne režiim:"
 
 #: ../src/TrackPanel.vala:83
 msgid "Read more…"
@@ -181,7 +181,7 @@ msgstr "Puhasta andmed"
 
 #: ../src/TrackPanel.vala:290
 msgid "Data Sources:"
-msgstr ""
+msgstr "Andmete allikad:"
 
 #: ../src/TrackPanel.vala:299
 msgid "Chat Logs"
@@ -233,7 +233,7 @@ msgstr "Lisa"
 
 #: ../src/TrackPanel.vala:404
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "Andmeid ei koguta järgnevatest allikatest:"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
