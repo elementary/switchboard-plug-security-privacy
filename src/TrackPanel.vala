@@ -28,6 +28,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     private PathBlacklist path_blacklist;
     private FileTypeBlacklist filetype_blacklist;
     private Gtk.Grid record_grid;
+    private Gtk.Container description_grid;
     private Gtk.Grid exclude_grid;
 
     private enum Columns {
@@ -63,9 +64,11 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         var record_switch = new Gtk.Switch ();
         record_switch.active = false;
+
         record_switch.notify["active"].connect (() => {
-            record_grid.sensitive = !record_switch.active;
-            exclude_grid.sensitive = !record_switch.active;
+            record_grid.visible = !record_switch.active;
+            exclude_grid.visible = !record_switch.active;
+            description_grid.visible = record_switch.active;
             var recording = !blacklist.get_incognito ();
             if (record_switch.active != recording) {
                 blacklist.set_incognito (recording);
@@ -78,6 +81,9 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         switch_grid.orientation = Gtk.Orientation.HORIZONTAL;
         switch_grid.valign = Gtk.Align.CENTER;
         switch_grid.add (record_switch);
+        switch_grid.hexpand = true;
+
+        create_description_panel ();
 
         var info_button = new Gtk.ToggleButton ();
         info_button.tooltip_text = _("Read more…");
@@ -247,6 +253,51 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         } catch (Error e) {
             warning (e.message);
         }
+    }
+
+    private void create_description_panel () {
+
+        
+        description_grid = new Gtk.Frame (null);
+        description_grid.expand = true;
+        description_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        description_grid.no_show_all = true;
+
+        var inner_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
+        inner_grid.valign = Gtk.Align.CENTER;
+        
+        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
+        box.halign = Gtk.Align.CENTER;
+
+        var image = new Gtk.Image.from_icon_name ("locked", Gtk.IconSize.DIALOG);
+        var label = new Gtk.Label (null);
+        label.set_markup ("<span size='xx-large'>%s</span>".printf (_("elementary OS is in Privacy Mode")));
+
+        box.pack_start (image);
+        box.pack_start (label, true);
+        box.margin = 12;
+        inner_grid.pack_start (box);
+
+        label = new Gtk.Label (null);
+        label.set_markup (_("While in Privacy Mode, this operating system won't retain any further data\n and statistics about file and application usage."));
+
+        inner_grid.pack_start (label);
+
+        box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+        box.halign = Gtk.Align.CENTER;
+
+        image = new Gtk.Image.from_icon_name ("dialog-information", Gtk.IconSize.BUTTON);
+        label = new Gtk.Label (null);
+        label.set_markup (_("The additional functionality that this data provides will be affected."));
+
+        box.pack_start (image);
+        box.pack_start (label, true);
+        inner_grid.pack_start (box);
+        inner_grid.show_all ();
+        description_grid.add (inner_grid);
+
+        attach (description_grid, 1, 1, 2, 1);
+
     }
 
     private void create_include_treeview () {
