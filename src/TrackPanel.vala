@@ -277,40 +277,49 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         description_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         description_grid.no_show_all = true;
 
-        var inner_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
-        inner_grid.valign = Gtk.Align.CENTER;
-        
         var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
-        box.halign = Gtk.Align.CENTER;
+        box.vexpand = false;
+        box.valign = Gtk.Align.CENTER;
+        box.border_width = 24;
 
         var image = new Gtk.Image.from_icon_name ("locked", Gtk.IconSize.DIALOG);
+        image.valign = Gtk.Align.START;
+
+        box.pack_start (image);
+
+        var inner_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
+
+
         string system = get_operating_system_name ();
         var header = _("%s is in Privacy Mode").printf (system);
         var label = new Gtk.Label (header);
+        label.halign = Gtk.Align.START;
+        label.justify = Gtk.Justification.FILL;
         label.get_style_context ().add_class ("h2");
-
-        box.pack_start (image);
-        box.pack_start (label, true);
-        box.margin = 12;
-        inner_grid.pack_start (box);
-
-        label = new Gtk.Label (null);
-        label.set_markup (_("While in Privacy Mode, this operating system won't retain any further data\n and statistics about file and application usage."));
-
         inner_grid.pack_start (label);
 
-        box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        box.halign = Gtk.Align.CENTER;
+        label = new Gtk.Label (_("While in Privacy Mode, this operating system won't retain any further data or statistics about file and application usage."));
+        label.halign = Gtk.Align.START;
+        label.set_line_wrap (true);
+        label.justify = Gtk.Justification.FILL;
+        inner_grid.pack_start (label);
 
-        image = new Gtk.Image.from_icon_name ("dialog-information", Gtk.IconSize.BUTTON);
-        label = new Gtk.Label (null);
-        label.set_markup (_("The additional functionality that this data provides will be affected."));
+        label = new Gtk.Label (_("The additional functionality that this data provides will be affected."));
+        label.set_line_wrap (true);
+        label.justify = Gtk.Justification.FILL;
+        label.halign = Gtk.Align.START;
+        inner_grid.pack_start (label);
 
-        box.pack_start (image);
-        box.pack_start (label, true);
-        inner_grid.pack_start (box);
-        inner_grid.show_all ();
-        description_grid.add (inner_grid);
+        label = new Gtk.Label (_("This will not prevent apps from recording their own usage data like browser history."));
+        label.set_line_wrap (true);
+        label.justify = Gtk.Justification.FILL;
+        label.halign = Gtk.Align.START;
+        inner_grid.pack_start (label);
+
+        box.pack_start (inner_grid, true);
+        box.show_all ();
+
+        description_grid.add (box);
 
         attach (description_grid, 1, 1, 2, 1);
 
