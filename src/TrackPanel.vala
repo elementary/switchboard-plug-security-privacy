@@ -255,6 +255,20 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         }
     }
 
+    private string get_operating_system_name () {
+        string system = _("Your system");
+        try {
+            string contents = null;
+            if (FileUtils.get_contents ("/etc/os-release", out contents)) {
+                int start = contents.index_of ("NAME=") + "NAME=".length;
+                int end = contents.index_of_char ('\n');
+                system = contents.substring (start, end - start).replace ("\"", "");
+            }
+        } catch (FileError e) {
+        }
+        return system;
+    }
+
     private void create_description_panel () {
 
         
@@ -270,8 +284,10 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         box.halign = Gtk.Align.CENTER;
 
         var image = new Gtk.Image.from_icon_name ("locked", Gtk.IconSize.DIALOG);
-        var label = new Gtk.Label (null);
-        label.set_markup ("<span size='xx-large'>%s</span>".printf (_("elementary OS is in Privacy Mode")));
+        string system = get_operating_system_name ();
+        var header = _("%s is in Privacy Mode").printf (system);
+        var label = new Gtk.Label (header);
+        label.get_style_context ().add_class ("h2");
 
         box.pack_start (image);
         box.pack_start (label, true);
