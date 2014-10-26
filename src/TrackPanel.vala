@@ -270,8 +270,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     }
 
     private void create_description_panel () {
-
-        
         description_grid = new Gtk.Frame (null);
         description_grid.expand = true;
         description_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
@@ -284,11 +282,11 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         var image = new Gtk.Image.from_icon_name ("locked", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
+        image.halign = Gtk.Align.END;
 
         box.pack_start (image);
 
         var inner_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
-
 
         string system = get_operating_system_name ();
         var header = _("%s is in Privacy Mode").printf (system);
