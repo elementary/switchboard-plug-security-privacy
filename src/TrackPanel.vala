@@ -28,7 +28,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     private PathBlacklist path_blacklist;
     private FileTypeBlacklist filetype_blacklist;
     private Gtk.Grid record_grid;
-    private Gtk.Container description_grid;
+    private Gtk.Container description_frame;
     private Gtk.Grid exclude_grid;
 
     private enum Columns {
@@ -68,7 +68,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         record_switch.notify["active"].connect (() => {
             record_grid.visible = !record_switch.active;
             exclude_grid.visible = !record_switch.active;
-            description_grid.visible = record_switch.active;
+            description_frame.visible = record_switch.active;
             var recording = !blacklist.get_incognito ();
             if (record_switch.active != recording) {
                 blacklist.set_incognito (recording);
@@ -270,23 +270,24 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     }
 
     private void create_description_panel () {
-        description_grid = new Gtk.Frame (null);
-        description_grid.expand = true;
-        description_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        description_grid.no_show_all = true;
+        description_frame = new Gtk.Frame (null);
+        description_frame.expand = true;
+        description_frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        description_frame.no_show_all = true;
 
-        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12);
-        box.vexpand = false;
-        box.valign = Gtk.Align.CENTER;
-        box.border_width = 24;
+        var grid = new Gtk.Grid ();
+        grid.vexpand = false;
+        grid.valign = Gtk.Align.CENTER;
+        grid.halign = Gtk.Align.CENTER;
+        grid.border_width = 24;
+        grid.row_spacing = 12;
+        grid.column_spacing = 12;
 
         var image = new Gtk.Image.from_icon_name ("locked", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
         image.halign = Gtk.Align.END;
 
-        box.pack_start (image);
-
-        var inner_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 12);
+        grid.attach (image, 0, 0, 1, 4);
 
         string system = get_operating_system_name ();
         var header = _("%s is in Privacy Mode").printf (system);
@@ -294,32 +295,21 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         label.halign = Gtk.Align.START;
         label.justify = Gtk.Justification.FILL;
         label.get_style_context ().add_class ("h2");
-        inner_grid.pack_start (label);
+        grid.attach (label, 1, 0, 1, 1);
 
-        label = new Gtk.Label (_("While in Privacy Mode, this operating system won't retain any further data or statistics about file and application usage."));
+        label = new Gtk.Label (_("While in Privacy Mode, this operating system won't retain any further data or statistics about file and application usage.") + "\n\n" +
+                               _("The additional functionality that this data provides will be affected.") + "\n\n" +
+                               _("This will not prevent apps from recording their own usage data like browser history."));
         label.halign = Gtk.Align.START;
         label.set_line_wrap (true);
         label.justify = Gtk.Justification.FILL;
-        inner_grid.pack_start (label);
+        grid.attach (label, 1, 1, 1, 1);
 
-        label = new Gtk.Label (_("The additional functionality that this data provides will be affected."));
-        label.set_line_wrap (true);
-        label.justify = Gtk.Justification.FILL;
-        label.halign = Gtk.Align.START;
-        inner_grid.pack_start (label);
+        grid.show_all ();
 
-        label = new Gtk.Label (_("This will not prevent apps from recording their own usage data like browser history."));
-        label.set_line_wrap (true);
-        label.justify = Gtk.Justification.FILL;
-        label.halign = Gtk.Align.START;
-        inner_grid.pack_start (label);
+        description_frame.add (grid);
 
-        box.pack_start (inner_grid, true);
-        box.show_all ();
-
-        description_grid.add (box);
-
-        attach (description_grid, 1, 1, 2, 1);
+        attach (description_frame, 1, 1, 2, 1);
 
     }
 
