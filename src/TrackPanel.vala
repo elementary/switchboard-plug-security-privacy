@@ -287,7 +287,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         image.valign = Gtk.Align.START;
         image.halign = Gtk.Align.END;
 
-        grid.attach (image, 0, 0, 1, 4);
+        grid.attach (image, 0, 0, 1, 2);
 
         string system = get_operating_system_name ();
         var header = _("%s is in Privacy Mode").printf (system);
