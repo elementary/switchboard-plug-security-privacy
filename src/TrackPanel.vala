@@ -297,9 +297,10 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         label.get_style_context ().add_class ("h2");
         grid.attach (label, 1, 0, 1, 1);
 
-        label = new Gtk.Label (_("While in Privacy Mode, this operating system won't retain any further data or statistics about file and application usage.") + "\n\n" +
-                               _("The additional functionality that this data provides will be affected.") + "\n\n" +
-                               _("This will not prevent apps from recording their own usage data like browser history."));
+        label = new Gtk.Label ("%s\n\n%s\n\n%s".printf (
+                    _("While in Privacy Mode, this operating system won't retain any further data or statistics about file and application usage."),
+                    _("The additional functionality that this data provides will be affected."),
+                    _("This will not prevent apps from recording their own usage data like browser history.")));
         label.halign = Gtk.Align.START;
         label.set_line_wrap (true);
         label.justify = Gtk.Justification.FILL;
