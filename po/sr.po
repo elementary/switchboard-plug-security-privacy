@@ -7,16 +7,156 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-04 21:11-0500\n"
+"POT-Creation-Date: 2014-10-27 22:01+0100\n"
 "PO-Revision-Date: 2014-08-29 21:00+0000\n"
 "Last-Translator: Иван Благојевић <ivan_blagojevic@mail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 07:28+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-10-28 07:20+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
 "Language: sr\n"
+
+#: ../src/TrackPanel.vala:63
+msgid "Privacy Mode:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:89
+msgid "Read more…"
+msgstr "Прочитај више..."
+
+#: ../src/TrackPanel.vala:102
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"Овај оперативни систем може сакупљати корисне статистике о употреби датотека "
+"и апликација ради боље функционалности. Ако други људи могу да виде или "
+"приступе вашем налогу, можда ћете желети да ограничите ставке које се "
+"снимају."
+
+#: ../src/TrackPanel.vala:119
+msgid "Clear Usage Data…"
+msgstr "Очисти податке коришћења…"
+
+#: ../src/TrackPanel.vala:140
+msgid "Delete records of which files and applications were used:"
+msgstr "Обриши записе о датотекама и апликацијама које су коришћене:"
+
+#: ../src/TrackPanel.vala:142
+msgid "In the past hour"
+msgstr "У току прошлог сата"
+
+#: ../src/TrackPanel.vala:143
+msgid "In the past day"
+msgstr "У току прошлог дана"
+
+#: ../src/TrackPanel.vala:144
+msgid "In the past week"
+msgstr "У току прошле недеље"
+
+#: ../src/TrackPanel.vala:145
+msgid "From:"
+msgstr "Од:"
+
+#: ../src/TrackPanel.vala:146
+msgid "From all time"
+msgstr "Одувек"
+
+#: ../src/TrackPanel.vala:149
+msgid "To:"
+msgstr "До:"
+
+#: ../src/TrackPanel.vala:152
+msgid "Clear Data"
+msgstr "Очисти податке"
+
+#: ../src/TrackPanel.vala:259
+msgid "Your system"
+msgstr ""
+
+#: ../src/TrackPanel.vala:293
+msgid "%s is in Privacy Mode"
+msgstr ""
+
+#: ../src/TrackPanel.vala:301
+msgid ""
+"While in Privacy Mode, this operating system won't retain any further data "
+"or statistics about file and application usage."
+msgstr ""
+
+#: ../src/TrackPanel.vala:302
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr ""
+
+#: ../src/TrackPanel.vala:303
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr ""
+
+#: ../src/TrackPanel.vala:355
+msgid "Data Sources:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:364
+msgid "Chat Logs"
+msgstr "Историја ћаскања"
+
+#: ../src/TrackPanel.vala:365
+msgid "Documents"
+msgstr "Документа"
+
+#: ../src/TrackPanel.vala:366
+msgid "Music"
+msgstr "Музика"
+
+#: ../src/TrackPanel.vala:367
+msgid "Pictures"
+msgstr "Слике"
+
+#: ../src/TrackPanel.vala:368
+msgid "Presentations"
+msgstr "Презентације"
+
+#: ../src/TrackPanel.vala:369
+msgid "Spreadsheets"
+msgstr "Табеле"
+
+#: ../src/TrackPanel.vala:370
+msgid "Videos"
+msgstr "Видео снимци"
+
+#: ../src/TrackPanel.vala:408
+msgid "Add Application…"
+msgstr "Додај апликацију..."
+
+#: ../src/TrackPanel.vala:416
+msgid "Add Folder…"
+msgstr "Додај фасциклу..."
+
+#: ../src/TrackPanel.vala:418
+msgid "Select a folder to blacklist"
+msgstr "Изабери директоријум за црну листу"
+
+#: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
+msgid "Cancel"
+msgstr "Одустани"
+
+#: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
+msgid "Add"
+msgstr "Додај"
+
+#: ../src/TrackPanel.vala:469
+msgid "Do not collect data from the following:"
+msgstr ""
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Изаберите апликацију"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -95,10 +235,6 @@ msgstr "%d or %d-%d"
 msgid "Add Rule"
 msgstr "Додај правило"
 
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Потврда је неопходна за покретање Ватробранских поставки"
-
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
 msgstr "Безбедност и приватност"
@@ -122,117 +258,6 @@ msgstr "Закључавање"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Ватробран"
-
-#: ../src/TrackPanel.vala:62
-msgid "Privacy Mode:"
-msgstr ""
-
-#: ../src/TrackPanel.vala:83
-msgid "Read more…"
-msgstr "Прочитај више..."
-
-#: ../src/TrackPanel.vala:96
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Овај оперативни систем може сакупљати корисне статистике о употреби датотека "
-"и апликација ради боље функционалности. Ако други људи могу да виде или "
-"приступе вашем налогу, можда ћете желети да ограничите ставке које се "
-"снимају."
-
-#: ../src/TrackPanel.vala:113
-msgid "Clear Usage Data…"
-msgstr "Очисти податке коришћења…"
-
-#: ../src/TrackPanel.vala:134
-msgid "Delete records of which files and applications were used:"
-msgstr "Обриши записе о датотекама и апликацијама које су коришћене:"
-
-#: ../src/TrackPanel.vala:136
-msgid "In the past hour"
-msgstr "У току прошлог сата"
-
-#: ../src/TrackPanel.vala:137
-msgid "In the past day"
-msgstr "У току прошлог дана"
-
-#: ../src/TrackPanel.vala:138
-msgid "In the past week"
-msgstr "У току прошле недеље"
-
-#: ../src/TrackPanel.vala:139
-msgid "From:"
-msgstr "Од:"
-
-#: ../src/TrackPanel.vala:140
-msgid "From all time"
-msgstr "Одувек"
-
-#: ../src/TrackPanel.vala:143
-msgid "To:"
-msgstr "До:"
-
-#: ../src/TrackPanel.vala:146
-msgid "Clear Data"
-msgstr "Очисти податке"
-
-#: ../src/TrackPanel.vala:290
-msgid "Data Sources:"
-msgstr ""
-
-#: ../src/TrackPanel.vala:299
-msgid "Chat Logs"
-msgstr "Историја ћаскања"
-
-#: ../src/TrackPanel.vala:300
-msgid "Documents"
-msgstr "Документа"
-
-#: ../src/TrackPanel.vala:301
-msgid "Music"
-msgstr "Музика"
-
-#: ../src/TrackPanel.vala:302
-msgid "Pictures"
-msgstr "Слике"
-
-#: ../src/TrackPanel.vala:303
-msgid "Presentations"
-msgstr "Презентације"
-
-#: ../src/TrackPanel.vala:304
-msgid "Spreadsheets"
-msgstr "Табеле"
-
-#: ../src/TrackPanel.vala:305
-msgid "Videos"
-msgstr "Видео снимци"
-
-#: ../src/TrackPanel.vala:343
-msgid "Add Application…"
-msgstr "Додај апликацију..."
-
-#: ../src/TrackPanel.vala:351
-msgid "Add Folder…"
-msgstr "Додај фасциклу..."
-
-#: ../src/TrackPanel.vala:353
-msgid "Select a folder to blacklist"
-msgstr "Изабери директоријум за црну листу"
-
-#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
-msgid "Cancel"
-msgstr "Одустани"
-
-#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
-msgid "Add"
-msgstr "Додај"
-
-#: ../src/TrackPanel.vala:404
-msgid "Do not collect data from the following:"
-msgstr ""
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
@@ -282,6 +307,6 @@ msgstr "Упитај за моју лозинку ради откључавањ�
 msgid "Show notifications on lockscreen"
 msgstr "Прикажи обавештења на екрану закључавања"
 
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Изаберите апликацију"
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Потврда је неопходна за покретање Ватробранских поставки"
