@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-27 22:01+0100\n"
-"PO-Revision-Date: 2014-10-11 05:25+0000\n"
+"PO-Revision-Date: 2014-10-31 08:57+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-28 07:21+0000\n"
-"X-Generator: Launchpad (build 17203)\n"
+"X-Launchpad-Export-Date: 2014-11-01 06:36+0000\n"
+"X-Generator: Launchpad (build 17211)\n"
 "Language: \n"
 
 #: ../src/TrackPanel.vala:63
@@ -71,28 +71,28 @@ msgstr "清除数据"
 
 #: ../src/TrackPanel.vala:259
 msgid "Your system"
-msgstr ""
+msgstr "您的系统"
 
 #: ../src/TrackPanel.vala:293
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "%s 正处于私人模式中"
 
 #: ../src/TrackPanel.vala:301
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
-msgstr ""
+msgstr "处于私人模式时，操作系统不会记录任何文件和应用程序的数据统计和使用状况。"
 
 #: ../src/TrackPanel.vala:302
 msgid ""
 "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "提供此数据会影响到的附加功能。"
 
 #: ../src/TrackPanel.vala:303
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
-msgstr ""
+msgstr "此功能不会影响应用程序收集自身的使用数据如浏览历史等。"
 
 #: ../src/TrackPanel.vala:355
 msgid "Data Sources:"
