@@ -8,33 +8,33 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-27 22:01+0100\n"
-"PO-Revision-Date: 2014-08-02 05:21+0000\n"
+"PO-Revision-Date: 2014-11-13 13:28+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-28 07:21+0000\n"
-"X-Generator: Launchpad (build 17203)\n"
+"X-Launchpad-Export-Date: 2014-11-14 06:36+0000\n"
+"X-Generator: Launchpad (build 17241)\n"
 
 #: ../src/TrackPanel.vala:63
 msgid "Privacy Mode:"
-msgstr ""
+msgstr "隱私模式："
 
 #: ../src/TrackPanel.vala:89
 msgid "Read more…"
-msgstr ""
+msgstr "深入閱讀…"
 
 #: ../src/TrackPanel.vala:102
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
-msgstr ""
+msgstr "此作業系統可收集檔案與程式的使用方式等有用的統計數據以提供額外功能。若還有其他人能查看或存取您的帳號，您可能會希望限制紀錄的項目。"
 
 #: ../src/TrackPanel.vala:119
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "清除使用資料…"
 
 #: ../src/TrackPanel.vala:140
 msgid "Delete records of which files and applications were used:"
@@ -70,32 +70,32 @@ msgstr "清除資料"
 
 #: ../src/TrackPanel.vala:259
 msgid "Your system"
-msgstr ""
+msgstr "您的系統"
 
 #: ../src/TrackPanel.vala:293
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "%s 處於隱私模式"
 
 #: ../src/TrackPanel.vala:301
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
-msgstr ""
+msgstr "當處於隱私模式時，此作業系統不會保留任何檔案或應用程式使用方式的延伸資料或統計數據。"
 
 #: ../src/TrackPanel.vala:302
 msgid ""
 "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "由此資料提供的額外功能會受到影響。"
 
 #: ../src/TrackPanel.vala:303
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
-msgstr ""
+msgstr "這不會讓程式停止紀錄其自身的使用資料，例如瀏覽器歷史等。"
 
 #: ../src/TrackPanel.vala:355
 msgid "Data Sources:"
-msgstr ""
+msgstr "資料來源："
 
 #: ../src/TrackPanel.vala:364
 msgid "Chat Logs"
@@ -147,7 +147,7 @@ msgstr "加入"
 
 #: ../src/TrackPanel.vala:469
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "不要從下列項目中收集資料："
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
@@ -240,15 +240,15 @@ msgstr "隱私與活動管理員"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "有些設定值需要管理員權利才能修改"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "隱私"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
-msgstr "上鎖中"
+msgstr "鎖定"
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
@@ -256,7 +256,7 @@ msgstr "防火牆"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "鎖定畫面："
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"

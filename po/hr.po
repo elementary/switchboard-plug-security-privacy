@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-27 22:01+0100\n"
-"PO-Revision-Date: 2014-11-12 22:07+0000\n"
+"PO-Revision-Date: 2014-11-13 19:47+0000\n"
 "Last-Translator: Ivan Vrljić <vrlja92@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-13 07:00+0000\n"
+"X-Launchpad-Export-Date: 2014-11-14 06:36+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 "Language: hr\n"
 
@@ -32,6 +32,10 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Ovaj operativni sustav može sakupljati korisnu statistiku o datotekama i "
+"korištenju aplikacija kako bi se pružile dodatne funkcionalnosti. Ako drugi "
+"imaju pristup vašem računu preporuka je da se ograniče stavke koje se "
+"bilježe."
 
 #: ../src/TrackPanel.vala:119
 msgid "Clear Usage Data…"
@@ -55,7 +59,7 @@ msgstr "U proteklom tjednu"
 
 #: ../src/TrackPanel.vala:145
 msgid "From:"
-msgstr "Šalje:"
+msgstr "Od:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
@@ -63,7 +67,7 @@ msgstr "Od početka korištenja"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
-msgstr "Za:"
+msgstr "Do:"
 
 #: ../src/TrackPanel.vala:152
 msgid "Clear Data"
@@ -82,6 +86,8 @@ msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
+"Dok ste u privatnom načinu, ovaj operativni sustav neće voditi statistiku o "
+"datotekama i korištenju aplikacija."
 
 #: ../src/TrackPanel.vala:302
 msgid ""
@@ -93,6 +99,8 @@ msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
+"Ovo neće spriječiti aplikacija od vođenja vlastite povijesti korištenja kao "
+"što je povijest u internet pregledniku."
 
 #: ../src/TrackPanel.vala:355
 msgid "Data Sources:"
@@ -100,7 +108,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:364
 msgid "Chat Logs"
-msgstr ""
+msgstr "Čavrljanja"
 
 #: ../src/TrackPanel.vala:365
 msgid "Documents"
@@ -116,168 +124,168 @@ msgstr "Fotografije"
 
 #: ../src/TrackPanel.vala:368
 msgid "Presentations"
-msgstr ""
+msgstr "Prezentacije"
 
 #: ../src/TrackPanel.vala:369
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Proračunske tablice"
 
 #: ../src/TrackPanel.vala:370
 msgid "Videos"
-msgstr ""
+msgstr "Video"
 
 #: ../src/TrackPanel.vala:408
 msgid "Add Application…"
-msgstr ""
+msgstr "Dodaj aplikaciju..."
 
 #: ../src/TrackPanel.vala:416
 msgid "Add Folder…"
-msgstr ""
+msgstr "Dodaj mapu..."
 
 #: ../src/TrackPanel.vala:418
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Postavi mapu na crnu listu"
 
 #: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
 msgid "Cancel"
-msgstr "Poništi"
+msgstr "Otkaži"
 
 #: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
 msgid "Add"
-msgstr ""
+msgstr "Dodaj"
 
 #: ../src/TrackPanel.vala:469
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "Ne sakupljaj podatke iz:"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Odaberi aplikaciju"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Status vatrozida:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
 msgid "Unknown"
-msgstr ""
+msgstr "Nepoznato"
 
 #: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Dopusti"
 
 #: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Uskrati"
 
 #: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Odbij"
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Ograniči"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
 msgid "In"
-msgstr ""
+msgstr "Ulaz"
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
 msgid "Out"
-msgstr ""
+msgstr "Izlaz"
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Radnja"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Smjer"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Portovi"
 
 #: ../src/FirewallPanel.vala:156
 msgid "Action:"
-msgstr ""
+msgstr "Radnja:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Protokol:"
 
 #: ../src/FirewallPanel.vala:172
 msgid "Direction:"
-msgstr ""
+msgstr "Smjer:"
 
 #: ../src/FirewallPanel.vala:179
 msgid "Ports:"
-msgstr ""
+msgstr "Portovi:"
 
 #: ../src/FirewallPanel.vala:183
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d ili %d-%d"
 
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
-msgstr ""
+msgstr "Dodaj pravilo"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Sigurnost i privatnost"
 
 #: ../src/Plug.vala:36
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Upravitelj aktivnosti i privatnosti"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Neke postavke za promjenu zahtijevaju administratorska prava"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Privatnost"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
-msgstr ""
+msgstr "Zaključavanje"
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
-msgstr ""
+msgstr "Vatrozid"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Zaključaj zaslon:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Nakon gašenja ekrana"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 sekundi"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 minuta"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 minute"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 minute"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
@@ -297,12 +305,12 @@ msgstr "1 sat"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Traži lozinku za otključavanje"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Pokaži obavjesti na zaslonu zaključavanja"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Autentifikacija je potrebna za pokretanje postavki vatrozida"
