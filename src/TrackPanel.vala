@@ -283,7 +283,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         grid.row_spacing = 12;
         grid.column_spacing = 12;
 
-        var image = new Gtk.Image.from_icon_name ("locked", Gtk.IconSize.DIALOG);
+        var image = new Gtk.Image.from_icon_name ("view-private", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
         image.halign = Gtk.Align.END;
 
