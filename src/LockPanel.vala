@@ -88,14 +88,18 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
             }
 
             /* the set above races with the get in xautolock-elementary */
-            xautolock.sync ();
+            Settings.sync ();
 
-            /* Kill running xautolock processes, since it can not reload its configuration */
-            Process.spawn_sync (null, { "pkill", "xautolock*" },
-                                Environ.get (), SpawnFlags.SEARCH_PATH, null);
-            /* Launch a new one using the new timeout setting */
-            Process.spawn_async (null, { "xautolock-elementary" },
-                                 Environ.get (), SpawnFlags.SEARCH_PATH, null, null);
+            try {
+                /* Kill running xautolock processes, since it can not reload its configuration */
+                Process.spawn_sync (null, { "pkill", "xautolock*" },
+                                    Environ.get (), SpawnFlags.SEARCH_PATH, null);
+                /* Launch a new one using the new timeout setting */
+                Process.spawn_async (null, { "xautolock-elementary" },
+                                     Environ.get (), SpawnFlags.SEARCH_PATH, null, null);
+            } catch (SpawnError e) {
+                warning ("Failed to restart xautolock: %s", e.message);
+            }
         });
 
         var timeout_label = new Gtk.Label (_("Lock screen after:"));
