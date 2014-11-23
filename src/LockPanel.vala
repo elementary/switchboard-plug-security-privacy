@@ -98,9 +98,9 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
                                  Environ.get (), SpawnFlags.SEARCH_PATH, null, null);
         });
 
-        var timeout_label = new Gtk.Label ("Lock screen after:");
+        var timeout_label = new Gtk.Label (_("Lock screen after:"));
 
-        var lock_suspend_label = new Gtk.Label ("Lock on sleep:");
+        var lock_suspend_label = new Gtk.Label (_("Lock on sleep:"));
         var lock_suspend_switch = new Gtk.Switch ();
 
         /* Synchronize lock_suspend_switch and GSettings value */
