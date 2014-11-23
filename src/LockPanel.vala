@@ -60,7 +60,6 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
             screen_lock_combobox.active = 0;
         }
         screen_lock_combobox.notify["active"].connect (() => {
-            debug ("Combo box active: %i", screen_lock_combobox.active);
             switch (screen_lock_combobox.active) {
                 case 7:
                     xautolock.set_uint ("timeout", 60);
@@ -99,25 +98,40 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
                                  Environ.get (), SpawnFlags.SEARCH_PATH, null, null);
         });
 
+        var timeout_label = new Gtk.Label ("Lock screen after:");
+
+        var lock_suspend_label = new Gtk.Label ("Lock on sleep:");
         var lock_suspend_switch = new Gtk.Switch ();
-        var lock_suspend_grid = new Gtk.Grid ();
-        lock_suspend_grid.valign = Gtk.Align.CENTER;
-        lock_suspend_grid.add (lock_suspend_switch);
-        var lock_suspend_label = new Gtk.Label ("Ask for my password to unlock:");
 
         /* Synchronize lock_suspend_switch and GSettings value */
         lock_suspend_switch.active = locker.get_boolean ("lock-on-suspend");
         locker.bind ("lock-on-suspend", lock_suspend_switch, "active", SettingsBindFlags.DEFAULT);
 
-        var fake_grid_left = new Gtk.Grid ();
-        fake_grid_left.hexpand = true;
-        var fake_grid_right = new Gtk.Grid ();
-        fake_grid_right.hexpand = true;
+        timeout_label.margin_top = 15;
+        lock_suspend_label.margin_bottom = 15;
+        screen_lock_combobox.margin_top = 10;
+        lock_suspend_switch.margin_bottom = 10;
 
-        attach (fake_grid_left, 0, 0, 1, 1);
-        attach (screen_lock_combobox, 3, 0, 1, 1);
-        attach (lock_suspend_label, 1, 1, 1, 1);
-        attach (lock_suspend_grid, 2, 1, 3, 1);
-        attach (fake_grid_right, 4, 0, 1, 1);
+        lock_suspend_label.halign = Gtk.Align.END;
+        timeout_label.halign = Gtk.Align.END;
+        lock_suspend_switch.halign = Gtk.Align.START;
+        screen_lock_combobox.halign = Gtk.Align.START;
+
+        var grid_left = new Gtk.Grid ();
+        grid_left.expand = true;
+        grid_left.halign = Gtk.Align.END;
+        grid_left.valign = Gtk.Align.CENTER;
+        var grid_right = new Gtk.Grid ();
+        grid_right.expand = true;
+        grid_right.halign = Gtk.Align.START;
+        grid_right.valign = Gtk.Align.CENTER;
+
+        grid_left.attach (lock_suspend_label, 0, 0, 1, 1);
+        grid_left.attach (timeout_label, 0, 1, 1, 1);
+        grid_right.attach (lock_suspend_switch, 0, 0, 1, 1);
+        grid_right.attach (screen_lock_combobox, 0, 1, 1, 1);
+
+        attach (grid_left, 0, 0, 1, 1);
+        attach (grid_right, 1, 0, 1, 1);
     }
 }
