@@ -46,6 +46,9 @@ install(FILES ${CMAKE_SOURCE_DIR}/data/pantheon-security-privacy-plug.desktop PE
 # Traslation stuff
 add_subdirectory (po)
 
+# GSettings
+add_subdirectory (schemas)
+
 # Comment this out to enable C compiler warnings
 add_definitions (-w)
 
