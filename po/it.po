@@ -7,16 +7,161 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-04 21:11-0500\n"
-"PO-Revision-Date: 2014-10-07 12:59+0000\n"
+"POT-Creation-Date: 2014-10-27 22:01+0100\n"
+"PO-Revision-Date: 2014-11-15 08:17+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-08 08:25+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-11-16 06:16+0000\n"
+"X-Generator: Launchpad (build 17241)\n"
 "Language: it\n"
+
+#: ../src/TrackPanel.vala:63
+msgid "Privacy Mode:"
+msgstr "Modalità Privacy:"
+
+#: ../src/TrackPanel.vala:89
+msgid "Read more…"
+msgstr "Per saperne di più..."
+
+#: ../src/TrackPanel.vala:102
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"Questo sistema operativo è in grado di raccogliere statistiche utili "
+"sull'utilizzo di file e applicazioni per fornire funzionalità aggiuntive.\r\n"
+"Se altre persone possono vedere o accedere al tuo account, potresti voler "
+"limitare quali elementi sono registrati."
+
+#: ../src/TrackPanel.vala:119
+msgid "Clear Usage Data…"
+msgstr "Pulisci i dati di utilizzo..."
+
+#: ../src/TrackPanel.vala:140
+msgid "Delete records of which files and applications were used:"
+msgstr "Eliminare le registrazioni di file e applicazioni utilizzati:"
+
+#: ../src/TrackPanel.vala:142
+msgid "In the past hour"
+msgstr "Nell'ultima ora"
+
+#: ../src/TrackPanel.vala:143
+msgid "In the past day"
+msgstr "Nell'ultimo giorno"
+
+#: ../src/TrackPanel.vala:144
+msgid "In the past week"
+msgstr "Nell'ultima settimana"
+
+#: ../src/TrackPanel.vala:145
+msgid "From:"
+msgstr "Da:"
+
+#: ../src/TrackPanel.vala:146
+msgid "From all time"
+msgstr "Tutto"
+
+#: ../src/TrackPanel.vala:149
+msgid "To:"
+msgstr "a:"
+
+#: ../src/TrackPanel.vala:152
+msgid "Clear Data"
+msgstr "Pulisci Dati"
+
+#: ../src/TrackPanel.vala:259
+msgid "Your system"
+msgstr "Il tuo sistema"
+
+#: ../src/TrackPanel.vala:293
+msgid "%s is in Privacy Mode"
+msgstr "%s è in modalità Privacy"
+
+#: ../src/TrackPanel.vala:301
+msgid ""
+"While in Privacy Mode, this operating system won't retain any further data "
+"or statistics about file and application usage."
+msgstr ""
+"Mentre è in modalità Privacy, questo sistema operativo non manterrà "
+"ulteriori dati o statistiche circa l'utilizzo di file e applicazioni."
+
+#: ../src/TrackPanel.vala:302
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr ""
+"Le funzionalità aggiuntive che questi dati forniscono saranno interessate."
+
+#: ../src/TrackPanel.vala:303
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr ""
+"Questo non impedirà alle applicazioni di registrare i propri dati di "
+"utilizzo come la cronologia del browser."
+
+#: ../src/TrackPanel.vala:355
+msgid "Data Sources:"
+msgstr "Fonti dei dati:"
+
+#: ../src/TrackPanel.vala:364
+msgid "Chat Logs"
+msgstr "Registri di chat"
+
+#: ../src/TrackPanel.vala:365
+msgid "Documents"
+msgstr "Documenti"
+
+#: ../src/TrackPanel.vala:366
+msgid "Music"
+msgstr "Musica"
+
+#: ../src/TrackPanel.vala:367
+msgid "Pictures"
+msgstr "Immagini"
+
+#: ../src/TrackPanel.vala:368
+msgid "Presentations"
+msgstr "Presentazioni"
+
+#: ../src/TrackPanel.vala:369
+msgid "Spreadsheets"
+msgstr "Fogli di calcolo"
+
+#: ../src/TrackPanel.vala:370
+msgid "Videos"
+msgstr "Video"
+
+#: ../src/TrackPanel.vala:408
+msgid "Add Application…"
+msgstr "Aggiungi Applicazione..."
+
+#: ../src/TrackPanel.vala:416
+msgid "Add Folder…"
+msgstr "Aggiungi Cartella..."
+
+#: ../src/TrackPanel.vala:418
+msgid "Select a folder to blacklist"
+msgstr "Seleziona cartella da escludere"
+
+#: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
+msgid "Cancel"
+msgstr "Cancella"
+
+#: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
+msgid "Add"
+msgstr "Aggiungi"
+
+#: ../src/TrackPanel.vala:469
+msgid "Do not collect data from the following:"
+msgstr "Non raccogliere i dati da:"
+
+#: ../src/AppsDialog.vala:36
+msgid "Select Application"
+msgstr "Seleziona Applicazione"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -95,11 +240,6 @@ msgstr "%d o %d-%d"
 msgid "Add Rule"
 msgstr "Aggiungi Regola"
 
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
-"È richiesta l'autenticazione per eseguire la configurazione del firewall"
-
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
 msgstr "Sicurezza e Privacy"
@@ -124,117 +264,6 @@ msgstr "Blocco"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Firewall"
-
-#: ../src/TrackPanel.vala:62
-msgid "Privacy Mode:"
-msgstr "Modalità Privacy:"
-
-#: ../src/TrackPanel.vala:83
-msgid "Read more…"
-msgstr "Per saperne di più..."
-
-#: ../src/TrackPanel.vala:96
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Questo sistema operativo è in grado di raccogliere statistiche utili sui "
-"file e utilizzo applicazioni per fornire funzionalità aggiuntive.\r\n"
-"Se altre persone possono vedere o accedere al tuo account, potresti "
-"desiderare di limitare quali elementi sono registrati."
-
-#: ../src/TrackPanel.vala:113
-msgid "Clear Usage Data…"
-msgstr "Pulisci i dati di utilizzo..."
-
-#: ../src/TrackPanel.vala:134
-msgid "Delete records of which files and applications were used:"
-msgstr "Eliminare le registrazioni di file e applicazioni utilizzati:"
-
-#: ../src/TrackPanel.vala:136
-msgid "In the past hour"
-msgstr "Nell'ultima ora"
-
-#: ../src/TrackPanel.vala:137
-msgid "In the past day"
-msgstr "Nell'ultimo giorno"
-
-#: ../src/TrackPanel.vala:138
-msgid "In the past week"
-msgstr "Nell'ultima settimana"
-
-#: ../src/TrackPanel.vala:139
-msgid "From:"
-msgstr "Da:"
-
-#: ../src/TrackPanel.vala:140
-msgid "From all time"
-msgstr "Tutto"
-
-#: ../src/TrackPanel.vala:143
-msgid "To:"
-msgstr "a:"
-
-#: ../src/TrackPanel.vala:146
-msgid "Clear Data"
-msgstr "Pulisci Dati"
-
-#: ../src/TrackPanel.vala:290
-msgid "Data Sources:"
-msgstr "Fonti dei dati:"
-
-#: ../src/TrackPanel.vala:299
-msgid "Chat Logs"
-msgstr "Registri di chat"
-
-#: ../src/TrackPanel.vala:300
-msgid "Documents"
-msgstr "Documenti"
-
-#: ../src/TrackPanel.vala:301
-msgid "Music"
-msgstr "Musica"
-
-#: ../src/TrackPanel.vala:302
-msgid "Pictures"
-msgstr "Immagini"
-
-#: ../src/TrackPanel.vala:303
-msgid "Presentations"
-msgstr "Presentazioni"
-
-#: ../src/TrackPanel.vala:304
-msgid "Spreadsheets"
-msgstr "Fogli di calcolo"
-
-#: ../src/TrackPanel.vala:305
-msgid "Videos"
-msgstr "Video"
-
-#: ../src/TrackPanel.vala:343
-msgid "Add Application…"
-msgstr "Aggiungi Applicazione..."
-
-#: ../src/TrackPanel.vala:351
-msgid "Add Folder…"
-msgstr "Aggiungi Cartella..."
-
-#: ../src/TrackPanel.vala:353
-msgid "Select a folder to blacklist"
-msgstr "Seleziona cartella da escludere"
-
-#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
-msgid "Cancel"
-msgstr "Cancella"
-
-#: ../src/TrackPanel.vala:354 ../src/AppsDialog.vala:54
-msgid "Add"
-msgstr "Aggiungi"
-
-#: ../src/TrackPanel.vala:404
-msgid "Do not collect data from the following:"
-msgstr "Non raccogliere i dati da:"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
@@ -284,6 +313,7 @@ msgstr "Richiedi la mia password per lo sblocco"
 msgid "Show notifications on lockscreen"
 msgstr "Mostra notifiche nella schermata di blocco"
 
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Seleziona Applicazione"
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr ""
+"È richiesta l'autenticazione per eseguire la configurazione del firewall"

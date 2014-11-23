@@ -28,6 +28,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     private PathBlacklist path_blacklist;
     private FileTypeBlacklist filetype_blacklist;
     private Gtk.Grid record_grid;
+    private Gtk.Container description_frame;
     private Gtk.Grid exclude_grid;
 
     private enum Columns {
@@ -63,9 +64,11 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         var record_switch = new Gtk.Switch ();
         record_switch.active = false;
+
         record_switch.notify["active"].connect (() => {
-            record_grid.sensitive = !record_switch.active;
-            exclude_grid.sensitive = !record_switch.active;
+            record_grid.visible = !record_switch.active;
+            exclude_grid.visible = !record_switch.active;
+            description_frame.visible = record_switch.active;
             var recording = !blacklist.get_incognito ();
             if (record_switch.active != recording) {
                 blacklist.set_incognito (recording);
@@ -78,6 +81,9 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         switch_grid.orientation = Gtk.Orientation.HORIZONTAL;
         switch_grid.valign = Gtk.Align.CENTER;
         switch_grid.add (record_switch);
+        switch_grid.hexpand = true;
+
+        create_description_panel ();
 
         var info_button = new Gtk.ToggleButton ();
         info_button.tooltip_text = _("Read more…");
@@ -247,6 +253,65 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         } catch (Error e) {
             warning (e.message);
         }
+    }
+
+    private string get_operating_system_name () {
+        string system = _("Your system");
+        try {
+            string contents = null;
+            if (FileUtils.get_contents ("/etc/os-release", out contents)) {
+                int start = contents.index_of ("NAME=") + "NAME=".length;
+                int end = contents.index_of_char ('\n');
+                system = contents.substring (start, end - start).replace ("\"", "");
+            }
+        } catch (FileError e) {
+        }
+        return system;
+    }
+
+    private void create_description_panel () {
+        description_frame = new Gtk.Frame (null);
+        description_frame.expand = true;
+        description_frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        description_frame.no_show_all = true;
+
+        var grid = new Gtk.Grid ();
+        grid.vexpand = false;
+        grid.valign = Gtk.Align.CENTER;
+        grid.halign = Gtk.Align.CENTER;
+        grid.border_width = 24;
+        grid.row_spacing = 12;
+        grid.column_spacing = 12;
+
+        var image = new Gtk.Image.from_icon_name ("view-private", Gtk.IconSize.DIALOG);
+        image.valign = Gtk.Align.START;
+        image.halign = Gtk.Align.END;
+
+        grid.attach (image, 0, 0, 1, 2);
+
+        string system = get_operating_system_name ();
+        var header = _("%s is in Privacy Mode").printf (system);
+        var label = new Gtk.Label (header);
+        label.halign = Gtk.Align.START;
+        label.justify = Gtk.Justification.FILL;
+        label.get_style_context ().add_class ("h2");
+        grid.attach (label, 1, 0, 1, 1);
+
+        label = new Gtk.Label ("%s\n\n%s\n\n%s".printf (
+                    _("While in Privacy Mode, this operating system won't retain any further data or statistics about file and application usage."),
+                    _("The additional functionality that this data provides will be affected."),
+                    _("This will not prevent apps from recording their own usage data like browser history.")));
+        label.halign = Gtk.Align.START;
+        label.set_line_wrap (true);
+        label.justify = Gtk.Justification.FILL;
+        grid.attach (label, 1, 1, 1, 1);
+
+        grid.show_all ();
+
+        description_frame.add (grid);
+
+        attach (description_frame, 1, 1, 2, 1);
+
     }
 
     private void create_include_treeview () {
