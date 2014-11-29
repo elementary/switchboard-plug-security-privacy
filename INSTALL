@@ -13,3 +13,4 @@ libgtk-3-dev
 valac (>= 0.22)
 xautolock
 procps
+libglib2.0-bin
