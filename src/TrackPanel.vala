@@ -66,14 +66,14 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         record_switch.active = false;
 
         record_switch.notify["active"].connect (() => {
-            record_grid.visible = !record_switch.active;
-            exclude_grid.visible = !record_switch.active;
-            description_frame.visible = record_switch.active;
-            var recording = !blacklist.get_incognito ();
-            if (record_switch.active != recording) {
-                blacklist.set_incognito (recording);
-                privacy_settings.set_boolean ("remember-recent-files", record_switch.active);
-                privacy_settings.set_boolean ("remember-app-usage", record_switch.active);
+            bool privacy_mode = record_switch.active;
+            record_grid.visible = !privacy_mode;
+            exclude_grid.visible = !privacy_mode;
+            description_frame.visible = privacy_mode;
+            if (privacy_mode != blacklist.get_incognito ()) {
+                blacklist.set_incognito (privacy_mode);
+                privacy_settings.set_boolean ("remember-recent-files", !privacy_mode);
+                privacy_settings.set_boolean ("remember-app-usage", !privacy_mode);
             }
         });
 
@@ -158,32 +158,32 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
-                get_history.begin (tr);
+                delete_history.begin (tr);
             } else if (past_day_radio.active = true) {
                 int range = 8640000;//24*60*60*1000;
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
-                get_history.begin (tr);
+                delete_history.begin (tr);
             } else if (past_week_radio.active = true) {
                 int range = 60480000;//7*24*60*60*1000;
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
-                get_history.begin (tr);
+                delete_history.begin (tr);
             } else if (from_radio.active = true) {
                 int64 start = from_datepicker.date.to_unix ()*1000;
                 int64 end = from_datepicker.date.to_unix ()*1000;
                 tr = new Zeitgeist.TimeRange (start, end);
-                get_history.begin (tr);
+                delete_history.begin (tr);
             } else if (all_time_radio.active = true) {
                 tr = new Zeitgeist.TimeRange.anytime ();
-                get_history.begin (tr);
+                delete_history.begin (tr);
                 Gtk.RecentManager recent = new Gtk.RecentManager ().get_default ();
                 try {
                     recent.purge_items ();
                 } catch (Error err) {
-                    warning ("%s", err.message);
+                    critical (err.message);
                 }
             }
             remove_popover.hide ();
@@ -226,32 +226,20 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         create_include_treeview ();
         create_exclude_treeview ();
 
-        record_switch.active = !blacklist.get_incognito ();
+        record_switch.active = blacklist.get_incognito ();
     }
 
-    private async void get_history (Zeitgeist.TimeRange tr) {
-        Idle.add (get_history.callback, Priority.LOW);
-        yield;
+    private async void delete_history (Zeitgeist.TimeRange tr) {
         var events = new GenericArray<Zeitgeist.Event> ();
         events.add (new Zeitgeist.Event ());
         var zg_log = new Zeitgeist.Log ();
         try {
             uint32[] ids = yield zg_log.find_event_ids (tr, events, Zeitgeist.StorageState.ANY, 0, 0, null);
-            Array<int> del_ids = new Array<int> ();
+            Array<uint32> del_ids = new Array<uint32> ();
             del_ids.append_vals (ids, ids.length);
-            delete_history.begin (zg_log, del_ids);
+            yield zg_log.delete_events (del_ids, null);
         } catch (Error e) {
-            warning (e.message);
-        }
-    }
-
-    private async void delete_history (Zeitgeist.Log zg_log, Array<int>? ids) {
-        Idle.add (delete_history.callback, Priority.LOW);
-        yield;
-        try {
-            yield zg_log.delete_events(ids, null);
-        } catch (Error e) {
-            warning (e.message);
+            critical (e.message);
         }
     }
 
