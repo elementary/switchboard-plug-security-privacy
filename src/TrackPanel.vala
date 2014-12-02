@@ -23,7 +23,7 @@
 public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     private Gtk.Popover info_popover;
     private Gtk.Popover remove_popover;
-    private AppsDialog appsdialog;
+    private Dialogs.AppChooser app_chooser;
     private ApplicationBlacklist app_blacklist;
     private PathBlacklist path_blacklist;
     private FileTypeBlacklist filetype_blacklist;
@@ -388,10 +388,16 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         var add_app_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
         add_app_button.tooltip_text = _("Add Application…");
         add_app_button.clicked.connect (() => {
-            if (appsdialog == null || appsdialog.visible == false) {
-                appsdialog = new AppsDialog (app_blacklist);
-                appsdialog.show_all ();
+            if (app_chooser.visible == false) {
+                app_chooser.show_all ();
             }
+        });
+
+        app_chooser = new Dialogs.AppChooser (add_app_button);
+        app_chooser.modal = true;
+        app_chooser.app_chosen.connect ((info) => {
+            var file = File.new_for_path (info.filename);
+            app_blacklist.block (file.get_basename ());
         });
 
         var add_folder_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("folder-new-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
