@@ -30,8 +30,8 @@ namespace SecurityPrivacy {
 
     [DBus (name = "org.gnome.zeitgeist.Blacklist")]
     interface BlacklistInterface : Object {
-        public signal void template_added (string blacklist_id, [DBus (signature = "s(asaasay)")] Variant blacklist_template);
-        public signal void template_removed (string blacklist_id, [DBus (signature = "s(asaasay)")] Variant blacklist_template);
+        public signal void template_added (string blacklist_id, [DBus (signature = "(asaasay)")] Variant blacklist_template);
+        public signal void template_removed (string blacklist_id, [DBus (signature = "(asaasay)")] Variant blacklist_template);
 
         [DBus (signature = "a{s(asaasay)}")]
         public abstract Variant get_templates () throws IOError;

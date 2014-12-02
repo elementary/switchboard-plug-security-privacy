@@ -385,43 +385,32 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         scrolled.expand = true;
         scrolled.add (view);
 
-        var add_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
-        add_button.clicked.connect (() => {
-            var popover_grid = new Gtk.Grid ();
-            popover_grid.margin = 6;
-            popover_grid.column_spacing = 12;
-            popover_grid.row_spacing = 6;
-            popover_grid.orientation = Gtk.Orientation.VERTICAL;
-            var add_popover = new Gtk.Popover (add_button);
-            var application_button = new Gtk.Button.with_label (_("Add Application…"));
-            application_button.clicked.connect (() => {
-                if (appsdialog == null || appsdialog.visible == false) {
-                    appsdialog = new AppsDialog (app_blacklist);
-                    appsdialog.show_all ();
-                    add_popover.hide ();
-                }
-            });
-            var folder_button = new Gtk.Button.with_label (_("Add Folder…"));
-            folder_button.clicked.connect (() => {
-                var chooser = new Gtk.FileChooserDialog (_("Select a folder to blacklist"), null, Gtk.FileChooserAction.SELECT_FOLDER);
-                chooser.add_buttons (_("Cancel"), Gtk.ResponseType.CANCEL, _("Add"), Gtk.ResponseType.OK);
-                int res = chooser.run ();
-                chooser.hide ();
-                if (res == Gtk.ResponseType.OK) {
-                    string folder = chooser.get_filename ();
-                    if(this.path_blacklist.is_duplicate(folder) == false) {
-                        path_blacklist.block (folder);
-                    }
-                }
-            });
+        var add_app_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        add_app_button.tooltip_text = _("Add Application…");
+        add_app_button.clicked.connect (() => {
+            if (appsdialog == null || appsdialog.visible == false) {
+                appsdialog = new AppsDialog (app_blacklist);
+                appsdialog.show_all ();
+            }
+        });
 
-            popover_grid.add (application_button);
-            popover_grid.add (folder_button);
-            add_popover.add (popover_grid);
-            add_popover.show_all ();
+        var add_folder_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("folder-new-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        add_folder_button.tooltip_text = _("Add Folder…");
+        add_folder_button.clicked.connect (() => {
+            var chooser = new Gtk.FileChooserDialog (_("Select a folder to blacklist"), null, Gtk.FileChooserAction.SELECT_FOLDER);
+            chooser.add_buttons (_("Cancel"), Gtk.ResponseType.CANCEL, _("Add"), Gtk.ResponseType.OK);
+            int res = chooser.run ();
+            chooser.hide ();
+            if (res == Gtk.ResponseType.OK) {
+                string folder = chooser.get_filename ();
+                if (this.path_blacklist.is_duplicate (folder) == false) {
+                    path_blacklist.block (folder);
+                }
+            }
         });
 
         var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        remove_button.tooltip_text = _("Delete");
         remove_button.sensitive = false;
         remove_button.clicked.connect (() => {
             Gtk.TreePath path;
@@ -432,21 +421,23 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
             Value is_app;
             list_store.get_value (iter, NotColumns.IS_APP, out is_app);
             if (is_app.get_boolean () == true) {
-                Value name;
-                list_store.get_value (iter, NotColumns.PATH, out name);
-                app_blacklist.unblock (name.get_string ());
+                string name;
+                list_store.get (iter, NotColumns.PATH, out name);
+                app_blacklist.unblock (name);
             } else {
-                Value name;
-                list_store.get_value (iter, NotColumns.PATH, out name);
-                path_blacklist.unblock (name.get_string ());
+                string name;
+                list_store.get (iter, NotColumns.PATH, out name);
+                path_blacklist.unblock (name);
             }
+
             list_store.remove (iter);
         });
 
         var list_toolbar = new Gtk.Toolbar ();
         list_toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         list_toolbar.set_icon_size (Gtk.IconSize.SMALL_TOOLBAR);
-        list_toolbar.insert (add_button, -1);
+        list_toolbar.insert (add_app_button, -1);
+        list_toolbar.insert (add_folder_button, -1);
         list_toolbar.insert (remove_button, -1);
 
         var frame_grid = new Gtk.Grid ();
