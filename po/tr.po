@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-27 22:01+0100\n"
+"POT-Creation-Date: 2014-12-02 20:49+0100\n"
 "PO-Revision-Date: 2014-08-02 05:21+0000\n"
 "Last-Translator: Yiğit <yigituslu@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-28 07:21+0000\n"
-"X-Generator: Launchpad (build 17203)\n"
+"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
+"X-Generator: Launchpad (build 17274)\n"
 "Language: tr\n"
 
 #: ../src/TrackPanel.vala:63
@@ -69,84 +69,88 @@ msgstr "Bitiş:"
 msgid "Clear Data"
 msgstr ""
 
-#: ../src/TrackPanel.vala:259
+#: ../src/TrackPanel.vala:247
 msgid "Your system"
 msgstr ""
 
-#: ../src/TrackPanel.vala:293
+#: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
 msgstr ""
 
-#: ../src/TrackPanel.vala:301
+#: ../src/TrackPanel.vala:289
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
 
-#: ../src/TrackPanel.vala:302
+#: ../src/TrackPanel.vala:290
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
 
-#: ../src/TrackPanel.vala:303
+#: ../src/TrackPanel.vala:291
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
 
-#: ../src/TrackPanel.vala:355
+#: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:364
+#: ../src/TrackPanel.vala:352
 msgid "Chat Logs"
 msgstr ""
 
-#: ../src/TrackPanel.vala:365
+#: ../src/TrackPanel.vala:353
 msgid "Documents"
 msgstr ""
 
-#: ../src/TrackPanel.vala:366
+#: ../src/TrackPanel.vala:354
 msgid "Music"
 msgstr ""
 
-#: ../src/TrackPanel.vala:367
+#: ../src/TrackPanel.vala:355
 msgid "Pictures"
 msgstr ""
 
-#: ../src/TrackPanel.vala:368
+#: ../src/TrackPanel.vala:356
 msgid "Presentations"
 msgstr ""
 
-#: ../src/TrackPanel.vala:369
+#: ../src/TrackPanel.vala:357
 msgid "Spreadsheets"
 msgstr ""
 
-#: ../src/TrackPanel.vala:370
+#: ../src/TrackPanel.vala:358
 msgid "Videos"
 msgstr ""
 
-#: ../src/TrackPanel.vala:408
+#: ../src/TrackPanel.vala:389
 msgid "Add Application…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:416
+#: ../src/TrackPanel.vala:398
 msgid "Add Folder…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:418
+#: ../src/TrackPanel.vala:400
 msgid "Select a folder to blacklist"
 msgstr ""
 
-#: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
+#: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
 msgid "Cancel"
 msgstr ""
 
-#: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
+#: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
 msgid "Add"
 msgstr ""
 
-#: ../src/TrackPanel.vala:469
+#: ../src/TrackPanel.vala:413
+msgid "Delete"
+msgstr ""
+
+#: ../src/TrackPanel.vala:448
 msgid "Do not collect data from the following:"
 msgstr ""
 

@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-27 22:01+0100\n"
+"POT-Creation-Date: 2014-12-02 20:49+0100\n"
 "PO-Revision-Date: 2014-11-11 12:42+0000\n"
 "Last-Translator: Coa_brate <aleksandar.todorovic@mail.ru>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-12 06:48+0000\n"
-"X-Generator: Launchpad (build 17241)\n"
+"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
+"X-Generator: Launchpad (build 17274)\n"
 "Language: bs\n"
 
 #: ../src/TrackPanel.vala:63
@@ -73,15 +73,15 @@ msgstr "Za:"
 msgid "Clear Data"
 msgstr "Obriši podatke"
 
-#: ../src/TrackPanel.vala:259
+#: ../src/TrackPanel.vala:247
 msgid "Your system"
 msgstr "Vaš sistem"
 
-#: ../src/TrackPanel.vala:293
+#: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
 msgstr "%s je u modu za privatnost"
 
-#: ../src/TrackPanel.vala:301
+#: ../src/TrackPanel.vala:289
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
@@ -89,13 +89,13 @@ msgstr ""
 "Ovaj operativni sistem neće sakupljati nikakve dodatne podatke ili "
 "statistike o korišćenju datoteka i aplikacija dok je u modu za privatnost."
 
-#: ../src/TrackPanel.vala:302
+#: ../src/TrackPanel.vala:290
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
 "Ovo će uticati na dodatne funkcionalnosti koje nam pružaju ovi podaci."
 
-#: ../src/TrackPanel.vala:303
+#: ../src/TrackPanel.vala:291
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -103,59 +103,63 @@ msgstr ""
 "Ovo neće spriječiti aplikacije od snimanja njihovih podataka (kao što je "
 "npr. istorija browser-a)."
 
-#: ../src/TrackPanel.vala:355
+#: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
 msgstr "Izvori podataka:"
 
-#: ../src/TrackPanel.vala:364
+#: ../src/TrackPanel.vala:352
 msgid "Chat Logs"
 msgstr "Zapisi dopisivanja"
 
-#: ../src/TrackPanel.vala:365
+#: ../src/TrackPanel.vala:353
 msgid "Documents"
 msgstr "Dokumenti"
 
-#: ../src/TrackPanel.vala:366
+#: ../src/TrackPanel.vala:354
 msgid "Music"
 msgstr "Muzika"
 
-#: ../src/TrackPanel.vala:367
+#: ../src/TrackPanel.vala:355
 msgid "Pictures"
 msgstr "Slike"
 
-#: ../src/TrackPanel.vala:368
+#: ../src/TrackPanel.vala:356
 msgid "Presentations"
 msgstr "Prezentacije"
 
-#: ../src/TrackPanel.vala:369
+#: ../src/TrackPanel.vala:357
 msgid "Spreadsheets"
 msgstr "Proračunske tablice"
 
-#: ../src/TrackPanel.vala:370
+#: ../src/TrackPanel.vala:358
 msgid "Videos"
 msgstr "Video zapisi"
 
-#: ../src/TrackPanel.vala:408
+#: ../src/TrackPanel.vala:389
 msgid "Add Application…"
 msgstr "Dodaj aplikaciju"
 
-#: ../src/TrackPanel.vala:416
+#: ../src/TrackPanel.vala:398
 msgid "Add Folder…"
 msgstr "Dodaj direktorij"
 
-#: ../src/TrackPanel.vala:418
+#: ../src/TrackPanel.vala:400
 msgid "Select a folder to blacklist"
 msgstr "Odaberi direktorij za crnu listu"
 
-#: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
+#: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
 msgid "Cancel"
 msgstr "Poništi"
 
-#: ../src/TrackPanel.vala:419 ../src/AppsDialog.vala:54
+#: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
 msgid "Add"
 msgstr "Dodaj"
 
-#: ../src/TrackPanel.vala:469
+#: ../src/TrackPanel.vala:413
+msgid "Delete"
+msgstr ""
+
+#: ../src/TrackPanel.vala:448
 msgid "Do not collect data from the following:"
 msgstr "Ne sakupljaj podatke od sledjećih:"
 
