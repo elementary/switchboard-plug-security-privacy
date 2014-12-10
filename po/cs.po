@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2014-08-02 05:02+0000\n"
-"Last-Translator: Marek Suchánek <suchm@seznam.cz>\n"
+"PO-Revision-Date: 2014-12-09 20:03+0000\n"
+"Last-Translator: Marek Doležel <marekdolezel@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2014-12-10 07:10+0000\n"
+"X-Generator: Launchpad (build 17283)\n"
 "Language: cs\n"
 
 #: ../src/TrackPanel.vala:63
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:89
 msgid "Read more…"
-msgstr ""
+msgstr "Více..."
 
 #: ../src/TrackPanel.vala:102
 msgid ""
@@ -35,23 +35,23 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:119
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Vymazat data o užívání..."
 
 #: ../src/TrackPanel.vala:140
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Smazat záznamy o použitých souborech a aplikacích:"
 
 #: ../src/TrackPanel.vala:142
 msgid "In the past hour"
-msgstr ""
+msgstr "V předešlé hodině"
 
 #: ../src/TrackPanel.vala:143
 msgid "In the past day"
-msgstr ""
+msgstr "Za poslední den"
 
 #: ../src/TrackPanel.vala:144
 msgid "In the past week"
-msgstr ""
+msgstr "Za poslední týden"
 
 #: ../src/TrackPanel.vala:145
 msgid "From:"
@@ -59,7 +59,7 @@ msgstr "Od:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
-msgstr ""
+msgstr "Za celou dobu"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
@@ -67,15 +67,15 @@ msgstr "Do:"
 
 #: ../src/TrackPanel.vala:152
 msgid "Clear Data"
-msgstr ""
+msgstr "Vymazat data"
 
 #: ../src/TrackPanel.vala:247
 msgid "Your system"
-msgstr ""
+msgstr "Váš systém"
 
 #: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "je v anonymním režimu"
 
 #: ../src/TrackPanel.vala:289
 msgid ""
@@ -100,19 +100,19 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:352
 msgid "Chat Logs"
-msgstr ""
+msgstr "Záznamy konverzací"
 
 #: ../src/TrackPanel.vala:353
 msgid "Documents"
-msgstr ""
+msgstr "Dokumenty"
 
 #: ../src/TrackPanel.vala:354
 msgid "Music"
-msgstr ""
+msgstr "Hudba"
 
 #: ../src/TrackPanel.vala:355
 msgid "Pictures"
-msgstr ""
+msgstr "Obrázky"
 
 #: ../src/TrackPanel.vala:356
 msgid "Presentations"
@@ -120,23 +120,23 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:357
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Tabulky"
 
 #: ../src/TrackPanel.vala:358
 msgid "Videos"
-msgstr ""
+msgstr "Videa"
 
 #: ../src/TrackPanel.vala:389
 msgid "Add Application…"
-msgstr ""
+msgstr "Přidat aplikaci..."
 
 #: ../src/TrackPanel.vala:398
 msgid "Add Folder…"
-msgstr ""
+msgstr "Přidat složku"
 
 #: ../src/TrackPanel.vala:400
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Přidat složku do blacklistu"
 
 #: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
 msgid "Cancel"
