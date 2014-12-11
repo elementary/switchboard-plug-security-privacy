@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2014-11-02 14:29+0000\n"
-"Last-Translator: Marcus Lundgren <lp@gaoth.org>\n"
+"PO-Revision-Date: 2014-12-10 22:09+0000\n"
+"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2014-12-11 08:13+0000\n"
+"X-Generator: Launchpad (build 17283)\n"
 "Language: sv\n"
 
 #: ../src/TrackPanel.vala:63
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:89
 msgid "Read more…"
-msgstr ""
+msgstr "Läs mer…"
 
 #: ../src/TrackPanel.vala:102
 msgid ""
@@ -71,7 +71,7 @@ msgstr "Rensa data"
 
 #: ../src/TrackPanel.vala:247
 msgid "Your system"
-msgstr ""
+msgstr "Ditt system"
 
 #: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
@@ -87,6 +87,8 @@ msgstr ""
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
+"Ytterligare funktionalitet som denna data tillhandahåller kommer att "
+"påverkas."
 
 #: ../src/TrackPanel.vala:291
 msgid ""
@@ -96,7 +98,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
-msgstr ""
+msgstr "Datakällor:"
 
 #: ../src/TrackPanel.vala:352
 msgid "Chat Logs"
@@ -148,11 +150,11 @@ msgstr "Lägg till"
 
 #: ../src/TrackPanel.vala:413
 msgid "Delete"
-msgstr ""
+msgstr "Ta bort"
 
 #: ../src/TrackPanel.vala:448
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "Samla inte in data från följande:"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
@@ -245,7 +247,7 @@ msgstr "Integritet- och aktivitetshanterare"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Vissa inställningar kräver administratörsrättigheter för att ändras"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
@@ -261,7 +263,7 @@ msgstr "Brandvägg"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Låsskärm:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
