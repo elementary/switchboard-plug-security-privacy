@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2014-08-02 04:58+0000\n"
-"Last-Translator: radovid <radovid@vmail.me>\n"
+"PO-Revision-Date: 2014-12-12 14:38+0000\n"
+"Last-Translator: ITPROJECTS <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2014-12-13 07:32+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 "Language: bg\n"
 
 #: ../src/TrackPanel.vala:63
 msgid "Privacy Mode:"
-msgstr ""
+msgstr "Режим Усамотение:"
 
 #: ../src/TrackPanel.vala:89
 msgid "Read more…"
-msgstr ""
+msgstr "Прочети още..."
 
 #: ../src/TrackPanel.vala:102
 msgid ""
@@ -32,26 +32,30 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Тази Операционна Система може да събира полезни данни за ползването на "
+"файловете и приложенията, за да достави допълнитела ползваемост. Ако други "
+"хора могат прегледат потребителя ви, може би бихте предпочели да ограничите "
+"кои части са достъпни."
 
 #: ../src/TrackPanel.vala:119
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Почисти сведенията за дейността"
 
 #: ../src/TrackPanel.vala:140
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Изтрий записите относно използваните файлове и приложения:"
 
 #: ../src/TrackPanel.vala:142
 msgid "In the past hour"
-msgstr ""
+msgstr "За последния час"
 
 #: ../src/TrackPanel.vala:143
 msgid "In the past day"
-msgstr ""
+msgstr "За последния ден"
 
 #: ../src/TrackPanel.vala:144
 msgid "In the past week"
-msgstr ""
+msgstr "За последната седмица"
 
 #: ../src/TrackPanel.vala:145
 msgid "From:"
@@ -59,7 +63,7 @@ msgstr "От:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
-msgstr ""
+msgstr "За цялото време"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
@@ -67,96 +71,101 @@ msgstr "До:"
 
 #: ../src/TrackPanel.vala:152
 msgid "Clear Data"
-msgstr ""
+msgstr "Изчисти Данните"
 
 #: ../src/TrackPanel.vala:247
 msgid "Your system"
-msgstr ""
+msgstr "Вашата система"
 
 #: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "%s е в Режим Усамотеност"
 
 #: ../src/TrackPanel.vala:289
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
+"Докато сте в Режим Усамотеност, тази операционна система няма да запомня още "
+"данни за файловете и ползването на приложенията."
 
 #: ../src/TrackPanel.vala:290
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
+"Допълнителната ползваемост, която тази програма доставя няма да е засегната."
 
 #: ../src/TrackPanel.vala:291
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
+"Това няма да спре приложенията да събират собствените си данни за "
+"ползваемост, кото например мрежовата ви история."
 
 #: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
-msgstr ""
+msgstr "Източници на данни:"
 
 #: ../src/TrackPanel.vala:352
 msgid "Chat Logs"
-msgstr ""
+msgstr "История на мигновените съобщения"
 
 #: ../src/TrackPanel.vala:353
 msgid "Documents"
-msgstr ""
+msgstr "Документи"
 
 #: ../src/TrackPanel.vala:354
 msgid "Music"
-msgstr ""
+msgstr "Музика"
 
 #: ../src/TrackPanel.vala:355
 msgid "Pictures"
-msgstr ""
+msgstr "Снимки"
 
 #: ../src/TrackPanel.vala:356
 msgid "Presentations"
-msgstr ""
+msgstr "Представления"
 
 #: ../src/TrackPanel.vala:357
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Електронни таблици"
 
 #: ../src/TrackPanel.vala:358
 msgid "Videos"
-msgstr ""
+msgstr "Видеа"
 
 #: ../src/TrackPanel.vala:389
 msgid "Add Application…"
-msgstr ""
+msgstr "Добави приложение..."
 
 #: ../src/TrackPanel.vala:398
 msgid "Add Folder…"
-msgstr ""
+msgstr "Добави папка..."
 
 #: ../src/TrackPanel.vala:400
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Добави папка към черния списък"
 
 #: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
 msgid "Cancel"
-msgstr ""
+msgstr "Отказ"
 
 #: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
 msgid "Add"
-msgstr ""
+msgstr "Добави"
 
 #: ../src/TrackPanel.vala:413
 msgid "Delete"
-msgstr ""
+msgstr "Изтрий"
 
 #: ../src/TrackPanel.vala:448
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "Не събирай данни от следното:"
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Избор на приложение"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -217,23 +226,23 @@ msgstr "Действие:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Протокол:"
 
 #: ../src/FirewallPanel.vala:172
 msgid "Direction:"
-msgstr ""
+msgstr "Посока:"
 
 #: ../src/FirewallPanel.vala:179
 msgid "Ports:"
-msgstr ""
+msgstr "Портове:"
 
 #: ../src/FirewallPanel.vala:183
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d или %d-%d"
 
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
-msgstr ""
+msgstr "Добавяне на правило"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
@@ -245,11 +254,11 @@ msgstr "Мениджър на поверителността и дейности
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Някои настройки изискват ръководни правомощия, за да бъдат променени"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Поверителност"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
@@ -261,52 +270,52 @@ msgstr "Защитна стена"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Заключен екран:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
-msgstr ""
+msgstr "Когато екрана се изключи"
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 секунди"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 минута"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 минути"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 минути"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 минути"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 минути"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 минути"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 час"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
-msgstr ""
+msgstr "Питай за парола за да се отключи"
 
 #: ../src/LockPanel.vala:111
 msgid "Show notifications on lockscreen"
-msgstr ""
+msgstr "Покажи известията на заключения екран"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Удостоверение е нужно за да се пусне настройката на Пожарната Стена"

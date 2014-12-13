@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2014-11-13 13:28+0000\n"
+"PO-Revision-Date: 2014-12-12 12:18+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2014-12-13 07:32+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
 #: ../src/TrackPanel.vala:63
 msgid "Privacy Mode:"
@@ -147,7 +147,7 @@ msgstr "加入"
 
 #: ../src/TrackPanel.vala:413
 msgid "Delete"
-msgstr ""
+msgstr "刪除"
 
 #: ../src/TrackPanel.vala:448
 msgid "Do not collect data from the following:"
