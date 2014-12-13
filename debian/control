@@ -16,7 +16,7 @@ Homepage: https://launchpad.net/pantheon-plugs
 
 Package: switchboard-plug-security-privacy
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, procps, xautolock, libglib2.0-bin
+Depends: ${misc:Depends}, ${shlibs:Depends}, libglib2.0-bin, x11-xserver-utils
 Enhances: switchboard
 Description: Manage security and privacy
  Switchboard plug for managing the security and privacy of your system.

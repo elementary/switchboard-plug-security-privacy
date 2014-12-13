@@ -1,0 +1,10 @@
+#! /bin/sh -e
+
+timeout=$(gsettings get org.pantheon.autolock timeout | cut -d" " -f2)
+
+# 0 means disabled
+test "$timeout" -eq 0 && exit 0
+
+timeout=$(($timeout * 60))
+
+exec xset s $timeout

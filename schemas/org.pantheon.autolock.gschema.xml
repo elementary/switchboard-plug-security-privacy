@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/org/pantheon/xautolock/"
-  id="org.pantheon.xautolock"
-  gettext-domain="xautolock">
+  <schema path="/org/pantheon/autolock/"
+  id="org.pantheon.autolock"
+  gettext-domain="autolock">
     <key name="timeout" type="u">
       <default>0</default>
       <range min="0" max="60" />

@@ -1,2 +1,2 @@
 include(GSettings)
-add_schema("org.pantheon.xautolock.gschema.xml")
+add_schema("org.pantheon.autolock.gschema.xml")

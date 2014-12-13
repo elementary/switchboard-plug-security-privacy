@@ -1,8 +1,0 @@
-#! /bin/sh -e
-
-timeout=$(gsettings get org.pantheon.xautolock timeout | cut -d" " -f2)
-
-# 0 means disabled
-test "$timeout" -eq 0 && exit 0
-
-exec xautolock -detectsleep -time $timeout -locker "dm-tool lock"

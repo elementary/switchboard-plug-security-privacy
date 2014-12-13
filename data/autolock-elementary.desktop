@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=xautolock-elementary
+Name=autolock-elementary
 Comment=Lock screen after inactivity timeout
-Exec=xautolock-elementary
+Exec=autolock-elementary
 Terminal=false
 Type=Application
 Categories=System

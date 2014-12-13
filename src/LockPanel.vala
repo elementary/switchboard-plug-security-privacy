@@ -23,14 +23,14 @@
 public class SecurityPrivacy.LockPanel : Gtk.Grid {
 
     Settings locker;
-    Settings xautolock;
+    Settings autolock;
 
     public LockPanel () {
         column_spacing = 12;
         row_spacing = 6;
 
         locker = new Settings ("apps.light-locker");
-        xautolock = new Settings ("org.pantheon.xautolock");
+        autolock = new Settings ("org.pantheon.autolock");
 
         var screen_lock_combobox = new Gtk.ComboBoxText ();
         screen_lock_combobox.append_text (_("Never"));
@@ -41,7 +41,7 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
         screen_lock_combobox.append_text (_("10 minutes"));
         screen_lock_combobox.append_text (_("30 minutes"));
         screen_lock_combobox.append_text (_("1 hour"));
-        var delay = xautolock.get_uint ("timeout");
+        var delay = autolock.get_uint ("timeout");
         if (delay >= 60) {
             screen_lock_combobox.active = 7;
         } else if (delay >= 30) {
@@ -62,43 +62,39 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
         screen_lock_combobox.notify["active"].connect (() => {
             switch (screen_lock_combobox.active) {
                 case 7:
-                    xautolock.set_uint ("timeout", 60);
+                    autolock.set_uint ("timeout", 60);
                     break;
                 case 6:
-                    xautolock.set_uint ("timeout", 30);
+                    autolock.set_uint ("timeout", 30);
                     break;
                 case 5:
-                    xautolock.set_uint ("timeout", 10);
+                    autolock.set_uint ("timeout", 10);
                     break;
                 case 4:
-                    xautolock.set_uint ("timeout", 5);
+                    autolock.set_uint ("timeout", 5);
                     break;
                 case 3:
-                    xautolock.set_uint ("timeout", 3);
+                    autolock.set_uint ("timeout", 3);
                     break;
                 case 2:
-                    xautolock.set_uint ("timeout", 2);
+                    autolock.set_uint ("timeout", 2);
                     break;
                 case 1:
-                    xautolock.set_uint ("timeout", 1);
+                    autolock.set_uint ("timeout", 1);
                     break;
                 default:
-                    xautolock.set_uint ("timeout", 0);
+                    autolock.set_uint ("timeout", 0);
                     break;
             }
 
-            /* the set above races with the get in xautolock-elementary */
+            /* the set above races with the get in autolock-elementary */
             Settings.sync ();
 
             try {
-                /* Kill running xautolock processes, since it can not reload its configuration */
-                Process.spawn_sync (null, { "pkill", "xautolock*" },
-                                    Environ.get (), SpawnFlags.SEARCH_PATH, null);
-                /* Launch a new one using the new timeout setting */
-                Process.spawn_async (null, { "xautolock-elementary" },
+                Process.spawn_async (null, { "autolock-elementary" },
                                      Environ.get (), SpawnFlags.SEARCH_PATH, null, null);
             } catch (SpawnError e) {
-                warning ("Failed to restart xautolock: %s", e.message);
+                warning ("Failed to reset autolock timeout: %s", e.message);
             }
         });
 
