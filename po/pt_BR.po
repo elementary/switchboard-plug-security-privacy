@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2014-10-11 12:47+0000\n"
-"Last-Translator: Leonardo Lemos <leonardolemos@live.com>\n"
+"PO-Revision-Date: 2014-12-23 11:16+0000\n"
+"Last-Translator: Alex <asw.ijuhy@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2014-12-24 06:57+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 "Language: pt_BR\n"
 
 #: ../src/TrackPanel.vala:63
@@ -75,28 +75,32 @@ msgstr "Apagar dados"
 
 #: ../src/TrackPanel.vala:247
 msgid "Your system"
-msgstr ""
+msgstr "Seu sistema"
 
 #: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "%s está em Modo de Privacidade"
 
 #: ../src/TrackPanel.vala:289
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
+"Enquanto em Modo de Privacidade, este sistema operacional não irá reter "
+"quaisquer outros dados ou estatísticas sobre o uso de arquivo e aplicação."
 
 #: ../src/TrackPanel.vala:290
 msgid ""
 "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "A funcionalidade adicional que fornece estes dados serão afetados."
 
 #: ../src/TrackPanel.vala:291
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
+"Isso não vai impedir os aplicativos de gravarem seus próprios dados de uso, "
+"como o histórico do navegador."
 
 #: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
@@ -152,7 +156,7 @@ msgstr "Adicionar"
 
 #: ../src/TrackPanel.vala:413
 msgid "Delete"
-msgstr ""
+msgstr "Excluir"
 
 #: ../src/TrackPanel.vala:448
 msgid "Do not collect data from the following:"
