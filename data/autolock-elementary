@@ -4,4 +4,4 @@ timeout=$(gsettings get org.pantheon.autolock timeout | cut -d" " -f2)
 
 timeout=$(($timeout * 60))
 
-exec xset s $timeout
+exec xset dpms $timeout
