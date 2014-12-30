@@ -4,4 +4,4 @@ usr/share/locale
 usr/share/polkit-1/actions/
 usr/bin/autolock-elementary
 usr/share/glib-2.0/schemas/org.pantheon.autolock.gschema.xml
-usr/etc/xdg/autostart/autolock-elementary.desktop etc/xdg/autostart/
+etc/xdg/autostart/autolock-elementary.desktop
