@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=autolock-elementary
-Comment=Lock screen after inactivity timeout
-Exec=autolock-elementary
+Name=elementary-dpms-helper
+Comment=DPMS settings helper
+Exec=elementary-dpms-helper
 Terminal=false
 Type=Application
 Categories=System

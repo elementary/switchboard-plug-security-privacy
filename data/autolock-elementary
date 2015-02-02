@@ -1,7 +1,0 @@
-#! /bin/sh -e
-
-timeout=$(gsettings get org.pantheon.autolock timeout | cut -d" " -f2)
-
-timeout=$(($timeout * 60))
-
-exec xset dpms $timeout
