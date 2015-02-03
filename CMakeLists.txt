@@ -42,15 +42,9 @@ configure_file (${CMAKE_SOURCE_DIR}/data/org.pantheon.security-privacy.policy.cm
 install(FILES ${CMAKE_BINARY_DIR}/data/org.pantheon.security-privacy.policy DESTINATION ${CMAKE_INSTALL_FULL_DATAROOTDIR}/polkit-1/actions/)
 install(FILES ${CMAKE_SOURCE_DIR}/data/security-privacy-plug-helper PERMISSIONS OWNER_EXECUTE OWNER_READ DESTINATION ${PKGDATADIR}/)
 install(FILES ${CMAKE_SOURCE_DIR}/data/pantheon-security-privacy-plug.desktop PERMISSIONS DESTINATION ${CMAKE_INSTALL_FULL_DATAROOTDIR}/applications/)
-# TODO: do not hard code /etc here
-install(FILES ${CMAKE_SOURCE_DIR}/data/elementary-dpms-helper.desktop DESTINATION /etc/xdg/autostart/)
-install(PROGRAMS ${CMAKE_SOURCE_DIR}/data/elementary-dpms-helper DESTINATION ${CMAKE_INSTALL_BINDIR}/)
 
 # Traslation stuff
 add_subdirectory (po)
-
-# GSettings
-add_subdirectory (schemas)
 
 # Comment this out to enable C compiler warnings
 add_definitions (-w)

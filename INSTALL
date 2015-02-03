@@ -11,5 +11,3 @@ libswitchboard-2.0-dev
 libgranite-dev
 libgtk-3-dev
 valac (>= 0.22)
-libglib2.0-bin
-x11-xserver-utils

@@ -2,6 +2,3 @@ usr/lib/*/switchboard/personal/
 usr/share/applications
 usr/share/locale
 usr/share/polkit-1/actions/
-usr/bin/elementary-dpms-helper
-usr/share/glib-2.0/schemas/org.pantheon.dpms.gschema.xml
-etc/xdg/autostart/elementary-dpms-helper.desktop
