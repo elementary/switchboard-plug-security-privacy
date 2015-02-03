@@ -23,14 +23,14 @@
 public class SecurityPrivacy.LockPanel : Gtk.Grid {
 
     Settings locker;
-    Settings autolock;
+    Settings dpms;
 
     public LockPanel () {
         column_spacing = 12;
         row_spacing = 6;
 
         locker = new Settings ("apps.light-locker");
-        autolock = new Settings ("org.pantheon.autolock");
+        dpms = new Settings ("org.pantheon.dpms");
 
         var screen_lock_combobox = new Gtk.ComboBoxText ();
         screen_lock_combobox.append_text (_("Never"));
@@ -41,7 +41,7 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
         screen_lock_combobox.append_text (_("10 minutes"));
         screen_lock_combobox.append_text (_("30 minutes"));
         screen_lock_combobox.append_text (_("1 hour"));
-        var delay = autolock.get_uint ("timeout");
+        var delay = dpms.get_uint ("standby-time");
         if (delay >= 60) {
             screen_lock_combobox.active = 7;
         } else if (delay >= 30) {
@@ -62,39 +62,39 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
         screen_lock_combobox.notify["active"].connect (() => {
             switch (screen_lock_combobox.active) {
                 case 7:
-                    autolock.set_uint ("timeout", 60);
+                    dpms.set_uint ("standby-time", 60);
                     break;
                 case 6:
-                    autolock.set_uint ("timeout", 30);
+                    dpms.set_uint ("standby-time", 30);
                     break;
                 case 5:
-                    autolock.set_uint ("timeout", 10);
+                    dpms.set_uint ("standby-time", 10);
                     break;
                 case 4:
-                    autolock.set_uint ("timeout", 5);
+                    dpms.set_uint ("standby-time", 5);
                     break;
                 case 3:
-                    autolock.set_uint ("timeout", 3);
+                    dpms.set_uint ("standby-time", 3);
                     break;
                 case 2:
-                    autolock.set_uint ("timeout", 2);
+                    dpms.set_uint ("standby-time", 2);
                     break;
                 case 1:
-                    autolock.set_uint ("timeout", 1);
+                    dpms.set_uint ("standby-time", 1);
                     break;
                 default:
-                    autolock.set_uint ("timeout", 0);
+                    dpms.set_uint ("standby-time", 0);
                     break;
             }
 
-            /* the set above races with the get in autolock-elementary */
+            /* the set above races with the get in elementary-dpms-helper */
             Settings.sync ();
 
             try {
-                Process.spawn_async (null, { "autolock-elementary" },
+                Process.spawn_async (null, { "elementary-dpms-helper" },
                                      Environ.get (), SpawnFlags.SEARCH_PATH, null, null);
             } catch (SpawnError e) {
-                warning ("Failed to reset autolock timeout: %s", e.message);
+                warning ("Failed to reset dpms settings: %s", e.message);
             }
         });
 
