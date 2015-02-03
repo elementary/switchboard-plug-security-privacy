@@ -34,53 +34,41 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
 
         var screen_lock_combobox = new Gtk.ComboBoxText ();
         screen_lock_combobox.append_text (_("Never"));
-        screen_lock_combobox.append_text (_("1 minute"));
-        screen_lock_combobox.append_text (_("2 minutes"));
-        screen_lock_combobox.append_text (_("3 minutes"));
         screen_lock_combobox.append_text (_("5 minutes"));
-        screen_lock_combobox.append_text (_("10 minutes"));
+        screen_lock_combobox.append_text (_("15 minutes"));
         screen_lock_combobox.append_text (_("30 minutes"));
         screen_lock_combobox.append_text (_("1 hour"));
+        screen_lock_combobox.append_text (_("2 hours"));
         var delay = dpms.get_uint ("standby-time");
-        if (delay >= 60) {
-            screen_lock_combobox.active = 7;
-        } else if (delay >= 30) {
-            screen_lock_combobox.active = 6;
-        } else if (delay >= 10) {
+        if (delay >= 7200) {
             screen_lock_combobox.active = 5;
-        } else if (delay >= 5) {
+        } else if (delay >= 3600) {
             screen_lock_combobox.active = 4;
-        } else if (delay >= 3) {
+        } else if (delay >= 1800) {
             screen_lock_combobox.active = 3;
-        } else if (delay >= 2) {
+        } else if (delay >= 900) {
             screen_lock_combobox.active = 2;
-        } else if (delay > 0) {
+        } else if (delay >= 300) {
             screen_lock_combobox.active = 1;
-        } else {
+        } else if (delay >= 0) {
             screen_lock_combobox.active = 0;
         }
         screen_lock_combobox.notify["active"].connect (() => {
             switch (screen_lock_combobox.active) {
-                case 7:
-                    dpms.set_uint ("standby-time", 60);
-                    break;
-                case 6:
-                    dpms.set_uint ("standby-time", 30);
-                    break;
                 case 5:
-                    dpms.set_uint ("standby-time", 10);
+                    dpms.set_uint ("standby-time", 7200);
                     break;
                 case 4:
-                    dpms.set_uint ("standby-time", 5);
+                    dpms.set_uint ("standby-time", 3600);
                     break;
                 case 3:
-                    dpms.set_uint ("standby-time", 3);
+                    dpms.set_uint ("standby-time", 1800);
                     break;
                 case 2:
-                    dpms.set_uint ("standby-time", 2);
+                    dpms.set_uint ("standby-time", 900);
                     break;
                 case 1:
-                    dpms.set_uint ("standby-time", 1);
+                    dpms.set_uint ("standby-time", 300);
                     break;
                 default:
                     dpms.set_uint ("standby-time", 0);
