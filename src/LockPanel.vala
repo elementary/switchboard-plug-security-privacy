@@ -22,117 +22,102 @@
 
 public class SecurityPrivacy.LockPanel : Gtk.Grid {
 
-    Settings notification;
-    Settings screensaver;
+    Settings locker;
+    Settings dpms;
 
     public LockPanel () {
         column_spacing = 12;
         row_spacing = 6;
 
-        notification = new Settings ("org.gnome.desktop.notifications");
-        screensaver = new Settings ("org.gnome.desktop.screensaver");
-
-        var screen_lock_label = new Gtk.Label ("");
-        screen_lock_label.set_markup ("<b>%s</b>".printf (_("Lock screen:")));
-
-        var screen_lock_switch = new Gtk.Switch ();
-        screen_lock_switch.active = true;
-        var switch_grid = new Gtk.Grid ();
-        switch_grid.valign = Gtk.Align.CENTER;
-        switch_grid.add (screen_lock_switch);
+        locker = new Settings ("apps.light-locker");
+        dpms = new Settings ("org.pantheon.dpms");
 
         var screen_lock_combobox = new Gtk.ComboBoxText ();
-        screen_lock_combobox.append_text (_("After display turns off"));
-        screen_lock_combobox.append_text (_("30 seconds"));
-        screen_lock_combobox.append_text (_("1 minute"));
-        screen_lock_combobox.append_text (_("2 minutes"));
-        screen_lock_combobox.append_text (_("3 minutes"));
+        screen_lock_combobox.append_text (_("Never"));
         screen_lock_combobox.append_text (_("5 minutes"));
-        screen_lock_combobox.append_text (_("10 minutes"));
+        screen_lock_combobox.append_text (_("15 minutes"));
         screen_lock_combobox.append_text (_("30 minutes"));
         screen_lock_combobox.append_text (_("1 hour"));
-        var delay = screensaver.get_uint ("lock-delay");
-        if (delay >= 3600) {
-            screen_lock_combobox.active = 8;
-        } else if (delay >= 1800) {
-            screen_lock_combobox.active = 7;
-        } else if (delay >= 600) {
-            screen_lock_combobox.active = 6;
-        } else if (delay >= 300) {
+        screen_lock_combobox.append_text (_("2 hours"));
+        var delay = dpms.get_uint ("standby-time");
+        if (delay >= 7200) {
             screen_lock_combobox.active = 5;
-        } else if (delay >= 180) {
+        } else if (delay >= 3600) {
             screen_lock_combobox.active = 4;
-        } else if (delay >= 120) {
+        } else if (delay >= 1800) {
             screen_lock_combobox.active = 3;
-        } else if (delay >= 60) {
+        } else if (delay >= 900) {
             screen_lock_combobox.active = 2;
-        } else if (delay > 0) {
+        } else if (delay >= 300) {
             screen_lock_combobox.active = 1;
-        } else {
+        } else if (delay >= 0) {
             screen_lock_combobox.active = 0;
         }
         screen_lock_combobox.notify["active"].connect (() => {
             switch (screen_lock_combobox.active) {
-                case 8:
-                    screensaver.set_uint ("lock-delay", 3600);
-                    break;
-                case 7:
-                    screensaver.set_uint ("lock-delay", 1800);
-                    break;
-                case 6:
-                    screensaver.set_uint ("lock-delay", 600);
-                    break;
                 case 5:
-                    screensaver.set_uint ("lock-delay", 300);
+                    dpms.set_uint ("standby-time", 7200);
                     break;
                 case 4:
-                    screensaver.set_uint ("lock-delay", 180);
+                    dpms.set_uint ("standby-time", 3600);
                     break;
                 case 3:
-                    screensaver.set_uint ("lock-delay", 120);
+                    dpms.set_uint ("standby-time", 1800);
                     break;
                 case 2:
-                    screensaver.set_uint ("lock-delay", 60);
+                    dpms.set_uint ("standby-time", 900);
                     break;
                 case 1:
-                    screensaver.set_uint ("lock-delay", 30);
+                    dpms.set_uint ("standby-time", 300);
                     break;
                 default:
-                    screensaver.set_uint ("lock-delay", 0);
+                    dpms.set_uint ("standby-time", 0);
                     break;
+            }
+
+            /* the set above races with the get in elementary-dpms-helper */
+            Settings.sync ();
+
+            try {
+                Process.spawn_async (null, { "elementary-dpms-helper" },
+                                     Environ.get (), SpawnFlags.SEARCH_PATH, null, null);
+            } catch (SpawnError e) {
+                warning ("Failed to reset dpms settings: %s", e.message);
             }
         });
 
-        var ask_checkbutton = new Gtk.CheckButton.with_label (_("Ask for my password to unlock"));
-        ask_checkbutton.notify["active"].connect (() => {
-            screensaver.set_boolean ("ubuntu-lock-on-suspend", ask_checkbutton.active);
-        });
-        ask_checkbutton.active = screensaver.get_boolean ("ubuntu-lock-on-suspend");
-        var notification_checkbutton = new Gtk.CheckButton.with_label (_("Show notifications on lockscreen"));
-        notification_checkbutton.active = notification.get_boolean ("show-in-lock-screen");
-        notification_checkbutton.notify["active"].connect (() => {
-            notification.set_boolean ("show-in-lock-screen", notification_checkbutton.active);
-        });
+        var timeout_label = new Gtk.Label (_("Lock screen after:"));
 
-        screen_lock_switch.notify["active"].connect (() => {
-            screen_lock_combobox.sensitive = screen_lock_switch.active;
-            ask_checkbutton.sensitive = screen_lock_switch.active;
-            notification_checkbutton.sensitive = screen_lock_switch.active;
-            screensaver.set_boolean ("lock-enabled", screen_lock_switch.active);
-        });
-        screen_lock_switch.active = screensaver.get_boolean ("lock-enabled");
+        var lock_suspend_label = new Gtk.Label (_("Lock on sleep:"));
+        var lock_suspend_switch = new Gtk.Switch ();
 
-        var fake_grid_left = new Gtk.Grid ();
-        fake_grid_left.hexpand = true;
-        var fake_grid_right = new Gtk.Grid ();
-        fake_grid_right.hexpand = true;
+        /* Synchronize lock_suspend_switch and GSettings value */
+        lock_suspend_switch.active = locker.get_boolean ("lock-on-suspend");
+        locker.bind ("lock-on-suspend", lock_suspend_switch, "active", SettingsBindFlags.DEFAULT);
 
-        attach (fake_grid_left, 0, 0, 1, 1);
-        attach (screen_lock_label, 1, 0, 1, 1);
-        attach (switch_grid, 2, 0, 1, 1);
-        attach (screen_lock_combobox, 3, 0, 1, 1);
-        attach (ask_checkbutton, 2, 1, 2, 1);
-        //attach (notification_checkbutton, 2, 2, 2, 1);
-        attach (fake_grid_right, 4, 0, 1, 1);
+        timeout_label.margin_top = 15;
+        lock_suspend_label.margin_bottom = 15;
+        screen_lock_combobox.margin_top = 10;
+        lock_suspend_switch.margin_bottom = 10;
+
+        lock_suspend_label.halign = Gtk.Align.END;
+        timeout_label.halign = Gtk.Align.END;
+        lock_suspend_switch.halign = Gtk.Align.START;
+        screen_lock_combobox.halign = Gtk.Align.START;
+
+        var grid_left = new Gtk.Grid ();
+        grid_left.expand = true;
+        grid_left.halign = Gtk.Align.END;
+        var grid_right = new Gtk.Grid ();
+        grid_right.expand = true;
+        grid_right.halign = Gtk.Align.START;
+
+        grid_left.attach (lock_suspend_label, 0, 0, 1, 1);
+        grid_left.attach (timeout_label, 0, 1, 1, 1);
+        grid_right.attach (lock_suspend_switch, 0, 0, 1, 1);
+        grid_right.attach (screen_lock_combobox, 0, 1, 1, 1);
+
+        attach (grid_left, 0, 0, 1, 1);
+        attach (grid_right, 1, 0, 1, 1);
     }
 }
