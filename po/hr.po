@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2014-12-25 10:22+0000\n"
-"Last-Translator: Ivan Vrljić <vrlja92@gmail.com>\n"
+"PO-Revision-Date: 2015-02-05 18:00+0000\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-26 06:46+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-02-07 07:34+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 "Language: hr\n"
 
 #: ../src/TrackPanel.vala:63
@@ -63,7 +63,7 @@ msgstr "Od:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
-msgstr "Od početka korištenja"
+msgstr "Svo vrijeme"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
@@ -120,7 +120,7 @@ msgstr "Glazba"
 
 #: ../src/TrackPanel.vala:355
 msgid "Pictures"
-msgstr "Fotografije"
+msgstr "Slike"
 
 #: ../src/TrackPanel.vala:356
 msgid "Presentations"
