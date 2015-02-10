@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2014-08-02 05:01+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2015-02-10 05:11+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2015-02-10 07:09+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 "Language: ca\n"
 
 #: ../src/TrackPanel.vala:63
 msgid "Privacy Mode:"
-msgstr ""
+msgstr "Mode de privadesa:"
 
 #: ../src/TrackPanel.vala:89
 msgid "Read more…"
-msgstr ""
+msgstr "Més informació…"
 
 #: ../src/TrackPanel.vala:102
 msgid ""
@@ -43,15 +43,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:142
 msgid "In the past hour"
-msgstr ""
+msgstr "L’última hora"
 
 #: ../src/TrackPanel.vala:143
 msgid "In the past day"
-msgstr ""
+msgstr "Les últimes 24 hores"
 
 #: ../src/TrackPanel.vala:144
 msgid "In the past week"
-msgstr ""
+msgstr "La setmana passada"
 
 #: ../src/TrackPanel.vala:145
 msgid "From:"
@@ -59,7 +59,7 @@ msgstr "Des de:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
-msgstr ""
+msgstr "Des de sempre"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:247
 msgid "Your system"
-msgstr ""
+msgstr "El vostre sistema"
 
 #: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
@@ -96,43 +96,43 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
-msgstr ""
+msgstr "Fonts de dades:"
 
 #: ../src/TrackPanel.vala:352
 msgid "Chat Logs"
-msgstr ""
+msgstr "Registres de xat"
 
 #: ../src/TrackPanel.vala:353
 msgid "Documents"
-msgstr ""
+msgstr "Documents"
 
 #: ../src/TrackPanel.vala:354
 msgid "Music"
-msgstr ""
+msgstr "Música"
 
 #: ../src/TrackPanel.vala:355
 msgid "Pictures"
-msgstr ""
+msgstr "Imatges"
 
 #: ../src/TrackPanel.vala:356
 msgid "Presentations"
-msgstr ""
+msgstr "Presentacions"
 
 #: ../src/TrackPanel.vala:357
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Fulls de càlcul"
 
 #: ../src/TrackPanel.vala:358
 msgid "Videos"
-msgstr ""
+msgstr "Vídeos"
 
 #: ../src/TrackPanel.vala:389
 msgid "Add Application…"
-msgstr ""
+msgstr "Afegeix una aplicació…"
 
 #: ../src/TrackPanel.vala:398
 msgid "Add Folder…"
-msgstr ""
+msgstr "Afegeix una carpeta…"
 
 #: ../src/TrackPanel.vala:400
 msgid "Select a folder to blacklist"
@@ -144,11 +144,11 @@ msgstr "Cancel·la"
 
 #: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
 msgid "Add"
-msgstr ""
+msgstr "Afegeix"
 
 #: ../src/TrackPanel.vala:413
 msgid "Delete"
-msgstr ""
+msgstr "Suprimeix"
 
 #: ../src/TrackPanel.vala:448
 msgid "Do not collect data from the following:"
@@ -156,7 +156,7 @@ msgstr ""
 
 #: ../src/AppsDialog.vala:36
 msgid "Select Application"
-msgstr ""
+msgstr "Seleccioneu una aplicació"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -165,23 +165,23 @@ msgstr ""
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
 msgid "Unknown"
-msgstr ""
+msgstr "Desconegut"
 
 #: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "Permet"
 
 #: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Denega"
 
 #: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Rebutja"
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Límit"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
 msgid "In"
@@ -193,51 +193,51 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Acció"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Protocol"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Direcció"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Ports"
 
 #: ../src/FirewallPanel.vala:156
 msgid "Action:"
-msgstr ""
+msgstr "Acció:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Protocol:"
 
 #: ../src/FirewallPanel.vala:172
 msgid "Direction:"
-msgstr ""
+msgstr "Direcció:"
 
 #: ../src/FirewallPanel.vala:179
 msgid "Ports:"
-msgstr ""
+msgstr "Ports:"
 
 #: ../src/FirewallPanel.vala:183
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d o %d-%d"
 
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
-msgstr ""
+msgstr "Afegeix una regla"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Seguretat i privadesa"
 
 #: ../src/Plug.vala:36
 msgid "Privacy and Activity Manager"
@@ -249,7 +249,7 @@ msgstr ""
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Privadesa"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
@@ -257,7 +257,7 @@ msgstr ""
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
-msgstr ""
+msgstr "Tallafocs"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
@@ -269,35 +269,35 @@ msgstr ""
 
 #: ../src/LockPanel.vala:46
 msgid "30 seconds"
-msgstr ""
+msgstr "30 segons"
 
 #: ../src/LockPanel.vala:47
 msgid "1 minute"
-msgstr ""
+msgstr "1 minut"
 
 #: ../src/LockPanel.vala:48
 msgid "2 minutes"
-msgstr ""
+msgstr "2 minuts"
 
 #: ../src/LockPanel.vala:49
 msgid "3 minutes"
-msgstr ""
+msgstr "3 minuts"
 
 #: ../src/LockPanel.vala:50
 msgid "5 minutes"
-msgstr ""
+msgstr "5 minuts"
 
 #: ../src/LockPanel.vala:51
 msgid "10 minutes"
-msgstr ""
+msgstr "10 minuts"
 
 #: ../src/LockPanel.vala:52
 msgid "30 minutes"
-msgstr ""
+msgstr "30 minuts"
 
 #: ../src/LockPanel.vala:53
 msgid "1 hour"
-msgstr ""
+msgstr "1 hora"
 
 #: ../src/LockPanel.vala:106
 msgid "Ask for my password to unlock"
