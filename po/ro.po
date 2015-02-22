@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2014-08-02 05:16+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2015-02-21 06:45+0000\n"
+"Last-Translator: Dobrescu Cristian <Unknown>\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2015-02-22 05:36+0000\n"
+"X-Generator: Launchpad (build 17355)\n"
 "Language: ro\n"
 
 #: ../src/TrackPanel.vala:63
@@ -35,23 +35,23 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:119
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Ștergere date de utilizare..."
 
 #: ../src/TrackPanel.vala:140
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Șterge înregistrările fișierelor și aplicațiilor utilizate:"
 
 #: ../src/TrackPanel.vala:142
 msgid "In the past hour"
-msgstr ""
+msgstr "În ultima oră"
 
 #: ../src/TrackPanel.vala:143
 msgid "In the past day"
-msgstr ""
+msgstr "În ultima zi"
 
 #: ../src/TrackPanel.vala:144
 msgid "In the past week"
-msgstr ""
+msgstr "În ultima săptămână"
 
 #: ../src/TrackPanel.vala:145
 msgid "From:"
@@ -59,7 +59,7 @@ msgstr "De la:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
-msgstr ""
+msgstr "Tot"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
