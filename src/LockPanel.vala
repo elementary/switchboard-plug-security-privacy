@@ -32,7 +32,7 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
 
         var lock_suspend_label = new Gtk.Label (_("Lock on sleep:"));
         var lock_suspend_switch = new Gtk.Switch ();
-        var lock_sleep_label = new Gtk.Label (_("Lock on screen timeout:"));
+        var lock_sleep_label = new Gtk.Label (_("Lock after screen turns off:"));
         var lock_sleep_switch = new Gtk.Switch ();
 
         /* Synchronize lock_suspend_switch and GSettings value */
