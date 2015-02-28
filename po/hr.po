@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2015-02-05 18:00+0000\n"
+"PO-Revision-Date: 2015-02-27 23:45+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-07 07:34+0000\n"
-"X-Generator: Launchpad (build 17331)\n"
+"X-Launchpad-Export-Date: 2015-02-28 06:20+0000\n"
+"X-Generator: Launchpad (build 17361)\n"
 "Language: hr\n"
 
 #: ../src/TrackPanel.vala:63
@@ -132,7 +132,7 @@ msgstr "Proračunske tablice"
 
 #: ../src/TrackPanel.vala:358
 msgid "Videos"
-msgstr "Video"
+msgstr "Snimke"
 
 #: ../src/TrackPanel.vala:389
 msgid "Add Application…"

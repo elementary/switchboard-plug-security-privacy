@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-12-02 20:49+0100\n"
-"PO-Revision-Date: 2015-02-26 16:22+0000\n"
+"PO-Revision-Date: 2015-02-27 16:13+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-27 05:55+0000\n"
+"X-Launchpad-Export-Date: 2015-02-28 06:20+0000\n"
 "X-Generator: Launchpad (build 17361)\n"
 
 #: ../src/TrackPanel.vala:63
@@ -42,7 +42,7 @@ msgstr "Pastro të dhënat e përdorimit..."
 
 #: ../src/TrackPanel.vala:140
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Fshij regjistrimin e skedarëve dhe programeve që janë përdorur:"
 
 #: ../src/TrackPanel.vala:142
 msgid "In the past hour"
@@ -62,11 +62,11 @@ msgstr "Nga:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
-msgstr ""
+msgstr "Gjithmonë"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
-msgstr ""
+msgstr "Deri më"
 
 #: ../src/TrackPanel.vala:152
 msgid "Clear Data"
@@ -86,13 +86,13 @@ msgid ""
 "or statistics about file and application usage."
 msgstr ""
 "Gjersa të jetë në modalitetin e privatësisë, ky sistem operativ nuk do të "
-"mbajë të dhëna të tjera apo statistika mbi përdorimin e skedarëve dhe të "
+"ruajë të dhëna të tjera apo statistika mbi përdorimin e skedarëve dhe të "
 "programeve."
 
 #: ../src/TrackPanel.vala:290
 msgid ""
 "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "Funksionalitetet shtesë që këto të dhëna ofrojnë do të preken."
 
 #: ../src/TrackPanel.vala:291
 msgid ""
@@ -104,7 +104,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
-msgstr "Burimet e të dhënave"
+msgstr "Burimet e të dhënave:"
 
 #: ../src/TrackPanel.vala:352
 msgid "Chat Logs"
@@ -168,7 +168,7 @@ msgstr "Zgjidh programin"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Gjendja e Firewall-it"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
@@ -266,11 +266,11 @@ msgstr ""
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
-msgstr ""
+msgstr "Firewall"
 
 #: ../src/LockPanel.vala:36
 msgid "Lock screen:"
-msgstr ""
+msgstr "Blloko ekranin:"
 
 #: ../src/LockPanel.vala:45
 msgid "After display turns off"
