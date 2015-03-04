@@ -7,15 +7,100 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-12-02 20:49+0100\n"
+"POT-Creation-Date: 2015-03-03 08:45-0600\n"
 "PO-Revision-Date: 2014-08-02 04:58+0000\n"
 "Last-Translator: Alexander Rosolko <rosolko@gmail.com>\n"
 "Language-Team: Belarusian <be@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-03 06:52+0000\n"
-"X-Generator: Launchpad (build 17274)\n"
+"X-Launchpad-Export-Date: 2015-03-04 05:58+0000\n"
+"X-Generator: Launchpad (build 17361)\n"
+
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr ""
+
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
+#: ../src/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
+msgid "Allow"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
+msgid "Deny"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
+msgid "Reject"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
+msgid "Limit"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
+msgid "In"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
+msgid "Out"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:156
+msgid "Action:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:165
+msgid "Protocol:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:172
+msgid "Direction:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:179
+msgid "Ports:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:183
+msgid "%d or %d-%d"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:185
+msgid "Add Rule"
+msgstr ""
 
 #: ../src/TrackPanel.vala:63
 msgid "Privacy Mode:"
@@ -129,109 +214,36 @@ msgstr ""
 msgid "Add Application…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:398
+#: ../src/TrackPanel.vala:404
 msgid "Add Folder…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:400
+#: ../src/TrackPanel.vala:406
 msgid "Select a folder to blacklist"
 msgstr ""
 
-#: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
+#: ../src/TrackPanel.vala:407
 msgid "Cancel"
 msgstr ""
 
-#: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
+#: ../src/TrackPanel.vala:407
 msgid "Add"
 msgstr ""
 
-#: ../src/TrackPanel.vala:413
+#: ../src/TrackPanel.vala:419
 msgid "Delete"
 msgstr ""
 
-#: ../src/TrackPanel.vala:448
+#: ../src/TrackPanel.vala:454
 msgid "Do not collect data from the following:"
 msgstr ""
 
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 
-#: ../src/FirewallPanel.vala:54
-msgid "Firewall Status:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
-#: ../src/FirewallPanel.vala:116
-msgid "Unknown"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
-msgid "Allow"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
-msgid "Deny"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
-msgid "Reject"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
-msgid "Limit"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
-msgid "In"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
-msgid "Out"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:138
-msgid "IPv6"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:139
-msgid "Action"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:141
-msgid "Direction"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:142
-msgid "Ports"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:156
-msgid "Action:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:165
-msgid "Protocol:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:172
-msgid "Direction:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:179
-msgid "Ports:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:183
-msgid "%d or %d-%d"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:185
-msgid "Add Rule"
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
 msgstr ""
 
 #: ../src/Plug.vala:35
@@ -256,56 +268,4 @@ msgstr ""
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
-msgstr ""
-
-#: ../src/LockPanel.vala:36
-msgid "Lock screen:"
-msgstr ""
-
-#: ../src/LockPanel.vala:45
-msgid "After display turns off"
-msgstr ""
-
-#: ../src/LockPanel.vala:46
-msgid "30 seconds"
-msgstr ""
-
-#: ../src/LockPanel.vala:47
-msgid "1 minute"
-msgstr ""
-
-#: ../src/LockPanel.vala:48
-msgid "2 minutes"
-msgstr ""
-
-#: ../src/LockPanel.vala:49
-msgid "3 minutes"
-msgstr ""
-
-#: ../src/LockPanel.vala:50
-msgid "5 minutes"
-msgstr ""
-
-#: ../src/LockPanel.vala:51
-msgid "10 minutes"
-msgstr ""
-
-#: ../src/LockPanel.vala:52
-msgid "30 minutes"
-msgstr ""
-
-#: ../src/LockPanel.vala:53
-msgid "1 hour"
-msgstr ""
-
-#: ../src/LockPanel.vala:106
-msgid "Ask for my password to unlock"
-msgstr ""
-
-#: ../src/LockPanel.vala:111
-msgid "Show notifications on lockscreen"
-msgstr ""
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""

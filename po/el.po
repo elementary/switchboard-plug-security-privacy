@@ -7,16 +7,101 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-02 20:49+0100\n"
+"POT-Creation-Date: 2015-03-03 08:45-0600\n"
 "PO-Revision-Date: 2015-02-10 23:12+0000\n"
 "Last-Translator: gkffzs <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-11 06:28+0000\n"
-"X-Generator: Launchpad (build 17336)\n"
+"X-Launchpad-Export-Date: 2015-03-04 05:58+0000\n"
+"X-Generator: Launchpad (build 17361)\n"
 "Language: el\n"
+
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr ""
+
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr "Κατάσταση Τείχους Προστασίας:"
+
+#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
+#: ../src/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr "Άγνωστη"
+
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
+msgid "Allow"
+msgstr "Αποδοχή"
+
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
+msgid "Deny"
+msgstr "Άρνηση"
+
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
+msgid "Reject"
+msgstr "Απόρριψη"
+
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
+msgid "Limit"
+msgstr "Όριο"
+
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
+msgid "In"
+msgstr "Μέσα"
+
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
+msgid "Out"
+msgstr "Έξω"
+
+#: ../src/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
+msgstr "Ενέργεια"
+
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr "Πρωτόκολλο"
+
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
+msgstr "Κατεύθυνση"
+
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
+msgstr "Θύρες"
+
+#: ../src/FirewallPanel.vala:156
+msgid "Action:"
+msgstr "Ενέργεια:"
+
+#: ../src/FirewallPanel.vala:165
+msgid "Protocol:"
+msgstr "Πρωτόκολλο:"
+
+#: ../src/FirewallPanel.vala:172
+msgid "Direction:"
+msgstr "Κατεύθυνση:"
+
+#: ../src/FirewallPanel.vala:179
+msgid "Ports:"
+msgstr "Θύρες:"
+
+#: ../src/FirewallPanel.vala:183
+msgid "%d or %d-%d"
+msgstr "%d ή %d-%d"
+
+#: ../src/FirewallPanel.vala:185
+msgid "Add Rule"
+msgstr "Προσθήκη Κανόνα"
 
 #: ../src/TrackPanel.vala:63
 msgid "Privacy Mode:"
@@ -141,110 +226,39 @@ msgstr "Βίντεο"
 msgid "Add Application…"
 msgstr "Προσθήκη Εφαρμογής..."
 
-#: ../src/TrackPanel.vala:398
+#: ../src/TrackPanel.vala:404
 msgid "Add Folder…"
 msgstr "Προσθήκη Φακέλου..."
 
-#: ../src/TrackPanel.vala:400
+#: ../src/TrackPanel.vala:406
 msgid "Select a folder to blacklist"
 msgstr "Επιλέξτε φάκελο για τοποθέτηση στη μαύρη λίστα"
 
-#: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
+#: ../src/TrackPanel.vala:407
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: ../src/TrackPanel.vala:401 ../src/AppsDialog.vala:54
+#: ../src/TrackPanel.vala:407
 msgid "Add"
 msgstr "Προσθήκη"
 
-#: ../src/TrackPanel.vala:413
+#: ../src/TrackPanel.vala:419
 msgid "Delete"
 msgstr "Διαγραφή"
 
-#: ../src/TrackPanel.vala:448
+#: ../src/TrackPanel.vala:454
 msgid "Do not collect data from the following:"
 msgstr "Μη συλλέγεις δεδομένα από τα ακόλουθα:"
 
-#: ../src/AppsDialog.vala:36
-msgid "Select Application"
-msgstr "Επιλέξτε Εφαρμογή"
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr ""
+"Απαιτείται πιστοποίηση για να εκτελεστεί το Εργαλείο Παραμετροποίησης "
+"Τείχους Προστασίας"
 
-#: ../src/FirewallPanel.vala:54
-msgid "Firewall Status:"
-msgstr "Κατάσταση Τείχους Προστασίας:"
-
-#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
-#: ../src/FirewallPanel.vala:116
-msgid "Unknown"
-msgstr "Άγνωστη"
-
-#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
-msgid "Allow"
-msgstr "Αποδοχή"
-
-#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
-msgid "Deny"
-msgstr "Άρνηση"
-
-#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
-msgid "Reject"
-msgstr "Απόρριψη"
-
-#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
-msgid "Limit"
-msgstr "Όριο"
-
-#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
-msgid "In"
-msgstr "Μέσα"
-
-#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
-msgid "Out"
-msgstr "Έξω"
-
-#: ../src/FirewallPanel.vala:138
-msgid "IPv6"
-msgstr "IPv6"
-
-#: ../src/FirewallPanel.vala:139
-msgid "Action"
-msgstr "Ενέργεια"
-
-#: ../src/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr "Πρωτόκολλο"
-
-#: ../src/FirewallPanel.vala:141
-msgid "Direction"
-msgstr "Κατεύθυνση"
-
-#: ../src/FirewallPanel.vala:142
-msgid "Ports"
-msgstr "Θύρες"
-
-#: ../src/FirewallPanel.vala:156
-msgid "Action:"
-msgstr "Ενέργεια:"
-
-#: ../src/FirewallPanel.vala:165
-msgid "Protocol:"
-msgstr "Πρωτόκολλο:"
-
-#: ../src/FirewallPanel.vala:172
-msgid "Direction:"
-msgstr "Κατεύθυνση:"
-
-#: ../src/FirewallPanel.vala:179
-msgid "Ports:"
-msgstr "Θύρες:"
-
-#: ../src/FirewallPanel.vala:183
-msgid "%d or %d-%d"
-msgstr "%d ή %d-%d"
-
-#: ../src/FirewallPanel.vala:185
-msgid "Add Rule"
-msgstr "Προσθήκη Κανόνα"
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr ""
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
@@ -269,57 +283,3 @@ msgstr "Κλείδωμα"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Τείχος Προστασίας"
-
-#: ../src/LockPanel.vala:36
-msgid "Lock screen:"
-msgstr "Οθόνη Κλειδώματος:"
-
-#: ../src/LockPanel.vala:45
-msgid "After display turns off"
-msgstr "Μετά την απενεργοποίηση της οθόνης"
-
-#: ../src/LockPanel.vala:46
-msgid "30 seconds"
-msgstr "30 δευτερόλεπτα"
-
-#: ../src/LockPanel.vala:47
-msgid "1 minute"
-msgstr "1 λεπτό"
-
-#: ../src/LockPanel.vala:48
-msgid "2 minutes"
-msgstr "2 λεπτά"
-
-#: ../src/LockPanel.vala:49
-msgid "3 minutes"
-msgstr "3 λεπτά"
-
-#: ../src/LockPanel.vala:50
-msgid "5 minutes"
-msgstr "5 λεπτά"
-
-#: ../src/LockPanel.vala:51
-msgid "10 minutes"
-msgstr "10 λεπτά"
-
-#: ../src/LockPanel.vala:52
-msgid "30 minutes"
-msgstr "30 λεπτά"
-
-#: ../src/LockPanel.vala:53
-msgid "1 hour"
-msgstr "1 ώρα"
-
-#: ../src/LockPanel.vala:106
-msgid "Ask for my password to unlock"
-msgstr "Απαίτηση του κωδικού μου για ξεκλείδωμα"
-
-#: ../src/LockPanel.vala:111
-msgid "Show notifications on lockscreen"
-msgstr "Εμφάνιση ειδοποιήσεων στην οθόνη κλειδώματος"
-
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
-"Απαιτείται πιστοποίηση για να εκτελεστεί το Εργαλείο Παραμετροποίησης "
-"Τείχους Προστασίας"
