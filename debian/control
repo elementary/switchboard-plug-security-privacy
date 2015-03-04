@@ -18,7 +18,6 @@ Package: switchboard-plug-security-privacy
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, light-locker
 Enhances: switchboard
-Recommends: elementary-dpms-helper
 Description: Manage security and privacy
  Switchboard plug for managing the security and privacy of your system.
 
