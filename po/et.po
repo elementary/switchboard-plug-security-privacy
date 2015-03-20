@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2015-02-16 15:08+0000\n"
-"Last-Translator: Tõnis Rand <tonis.rand@gmail.com>\n"
+"PO-Revision-Date: 2015-03-19 14:39+0000\n"
+"Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-04 05:58+0000\n"
-"X-Generator: Launchpad (build 17361)\n"
+"X-Launchpad-Export-Date: 2015-03-20 05:22+0000\n"
+"X-Generator: Launchpad (build 17405)\n"
 "Language: et\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Lukustamine unerežiimis"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Lukustamine pärast ekraani väljalülitamist:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -255,7 +255,7 @@ msgstr "Tulemüüri seadistamiseks on vajalik autentimine"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "Rakenduse otsimine"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
