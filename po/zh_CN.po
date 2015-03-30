@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2015-03-05 13:12+0000\n"
+"PO-Revision-Date: 2015-03-29 08:03+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-06 06:06+0000\n"
-"X-Generator: Launchpad (build 17374)\n"
+"X-Launchpad-Export-Date: 2015-03-30 05:46+0000\n"
+"X-Generator: Launchpad (build 17413)\n"
 "Language: \n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr "睡眠时锁定："
+msgstr "进入睡眠时锁定："
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
