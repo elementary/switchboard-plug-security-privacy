@@ -163,9 +163,10 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
 
+                //  Deletes files added in the last hour
                 try {
                     foreach (var item in items) {
-                        if (item.get_age () == 0)
+                        if (item.get_added () >= start/1000)
                             recent.remove_item (item.get_uri ());
                     }
                 } catch (Error err) {
@@ -178,6 +179,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
 
+                //  Deletes files added in the last day
                 try {
                     foreach (var item in items) {
                         if (item.get_age () <= 1)
@@ -193,6 +195,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
 
+                //  Deletes files added in the last week
                 try {
                     foreach (var item in items) {
                         if (item.get_age () <= 7)
@@ -207,9 +210,10 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
 
+                //  Deletes files added during the given period
                 try {
                     foreach (var item in items) {
-                        if (item.get_added () <= start/1000 && item.get_modified () >= end/1000)
+                        if (item.get_added () >= start/1000 && item.get_added () <= end/1000)
                             recent.remove_item (item.get_uri ());
                     }
                 } catch (Error err) {
@@ -219,7 +223,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                 tr = new Zeitgeist.TimeRange.anytime ();
                 delete_history.begin (tr);
 
-                // Delete all recent files
+                //  Deletes all recent files
                 try {
                     recent.purge_items ();
                 } catch (Error err) {
