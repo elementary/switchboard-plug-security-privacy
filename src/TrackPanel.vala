@@ -153,33 +153,73 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
         clear_button.clicked.connect (() => {
             Zeitgeist.TimeRange tr;
-            if (past_hour_radio.active = true) {
+            Gtk.RecentManager recent = new Gtk.RecentManager ().get_default ();
+            List<Gtk.RecentInfo> items = recent.get_items ();
+
+            if (past_hour_radio.active == true) {
                 int range = 360000;//60*60*1000;
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
-            } else if (past_day_radio.active = true) {
+
+                try {
+                    foreach (var item in items) {
+                        if (item.get_age () == 0)
+                            recent.remove_item (item.get_uri ());
+                    }
+                } catch (Error err) {
+                    critical (err.message);
+                }
+            } else if (past_day_radio.active == true) {
                 int range = 8640000;//24*60*60*1000;
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
-            } else if (past_week_radio.active = true) {
+
+                try {
+                    foreach (var item in items) {
+                        if (item.get_age () <= 1)
+                            recent.remove_item (item.get_uri ());
+                    }
+                } catch (Error err) {
+                    critical (err.message);
+                }
+            } else if (past_week_radio.active == true) {
                 int range = 60480000;//7*24*60*60*1000;
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
-            } else if (from_radio.active = true) {
+
+                try {
+                    foreach (var item in items) {
+                        if (item.get_age () <= 7)
+                            recent.remove_item (item.get_uri ());
+                    }
+                } catch (Error err) {
+                    critical (err.message);
+                }
+            } else if (from_radio.active == true) {
                 int64 start = from_datepicker.date.to_unix ()*1000;
-                int64 end = from_datepicker.date.to_unix ()*1000;
+                int64 end = to_datepicker.date.to_unix ()*1000;
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
-            } else if (all_time_radio.active = true) {
+
+                try {
+                    foreach (var item in items) {
+                        if (item.get_added () <= start/1000 && item.get_modified () >= end/1000)
+                            recent.remove_item (item.get_uri ());
+                    }
+                } catch (Error err) {
+                    critical (err.message);
+                }
+            } else if (all_time_radio.active == true) {
                 tr = new Zeitgeist.TimeRange.anytime ();
                 delete_history.begin (tr);
-                Gtk.RecentManager recent = new Gtk.RecentManager ().get_default ();
+
+                // Delete all recent files
                 try {
                     recent.purge_items ();
                 } catch (Error err) {
