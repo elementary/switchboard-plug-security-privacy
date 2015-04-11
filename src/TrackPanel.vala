@@ -21,6 +21,10 @@
  */
 
 public class SecurityPrivacy.TrackPanel : Gtk.Grid {
+
+    private Gtk.RecentManager recent;
+    private List<Gtk.RecentInfo> items;
+
     private Gtk.Popover info_popover;
     private Gtk.Popover remove_popover;
     private Dialogs.AppChooser app_chooser;
@@ -51,6 +55,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         app_blacklist = new ApplicationBlacklist (blacklist);
         path_blacklist = new PathBlacklist (blacklist);
         filetype_blacklist = new FileTypeBlacklist (blacklist);
+        recent = new Gtk.RecentManager ();
 
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
 
@@ -153,37 +158,97 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
         clear_button.clicked.connect (() => {
             Zeitgeist.TimeRange tr;
-            if (past_hour_radio.active = true) {
+
+            if (past_hour_radio.active == true) {
                 int range = 360000;//60*60*1000;
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
-            } else if (past_day_radio.active = true) {
+
+                //  Deletes files added in the last hour
+                if (recent.size > 0) {
+                    items = recent.get_items ();
+
+                    try {
+                        foreach (var item in items) {
+                            if (item.get_added () >= start/1000)
+                                recent.remove_item (item.get_uri ());
+                        }
+                    } catch (Error err) {
+                        critical (err.message);
+                    }
+                }
+            } else if (past_day_radio.active == true) {
                 int range = 8640000;//24*60*60*1000;
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
-            } else if (past_week_radio.active = true) {
+
+                //  Deletes files added in the last day
+                if (recent.size > 0) {
+                    items = recent.get_items ();
+
+                    try {
+                        foreach (var item in items) {
+                            if (item.get_age () <= 1)
+                                recent.remove_item (item.get_uri ());
+                        }
+                    } catch (Error err) {
+                        critical (err.message);
+                    }
+                }
+            } else if (past_week_radio.active == true) {
                 int range = 60480000;//7*24*60*60*1000;
                 int64 end = Zeitgeist.Timestamp.from_now ();
                 int64 start = end - range;
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
-            } else if (from_radio.active = true) {
+
+                //  Deletes files added in the last week
+                if (recent.size > 0) {
+                    items = recent.get_items ();
+
+                    try {
+                        foreach (var item in items) {
+                            if (item.get_age () <= 7)
+                                recent.remove_item (item.get_uri ());
+                        }
+                    } catch (Error err) {
+                        critical (err.message);
+                    }
+                }
+            } else if (from_radio.active == true) {
                 int64 start = from_datepicker.date.to_unix ()*1000;
-                int64 end = from_datepicker.date.to_unix ()*1000;
+                int64 end = to_datepicker.date.to_unix ()*1000;
                 tr = new Zeitgeist.TimeRange (start, end);
                 delete_history.begin (tr);
-            } else if (all_time_radio.active = true) {
+
+                //  Deletes files added during the given period
+                if (recent.size > 0) {
+                    items = recent.get_items ();
+
+                    try {
+                        foreach (var item in items) {
+                            if (item.get_added () >= start/1000 && item.get_added () <= end/1000)
+                                recent.remove_item (item.get_uri ());
+                        }
+                    } catch (Error err) {
+                        critical (err.message);
+                    }
+                }
+            } else if (all_time_radio.active == true) {
                 tr = new Zeitgeist.TimeRange.anytime ();
                 delete_history.begin (tr);
-                Gtk.RecentManager recent = new Gtk.RecentManager ().get_default ();
-                try {
-                    recent.purge_items ();
-                } catch (Error err) {
-                    critical (err.message);
+
+                //  Deletes all recent files
+                if (recent.size > 0) {
+                    try {
+                        recent.purge_items ();
+                    } catch (Error err) {
+                        critical (err.message);
+                    }
                 }
             }
             remove_popover.hide ();
