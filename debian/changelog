@@ -1,5 +1,5 @@
-switchboard-plug-security-privacy (0.1) UNRELEASED; urgency=low
+switchboard-plug-security-privacy (0.1) trusty; urgency=low
 
   * Initial Release.
 
- -- Corentin "tintou" Noël <shnatsel@gmail.com>  Sat, 19 Apr 2014 18:29:48 +0200
+ -- Cody Garver <cody@elementaryos.org>  Fri, 10 Apr 2015 22:33:47 -0500
