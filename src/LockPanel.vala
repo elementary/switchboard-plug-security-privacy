@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2014 Security & Privacy Plug (http://launchpad.net/your-project)
+ * Copyright (c) 2014-2015 Security & Privacy Plug (https://launchpad.net/switchboard-plug-security-privacy)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -17,7 +17,7 @@
  * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
  * Boston, MA 02111-1307, USA.
  *
- * Authored by: Corentin Noël <tintou@mailoo.org>
+ * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
 public class SecurityPrivacy.LockPanel : Gtk.Grid {
@@ -51,36 +51,29 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
                 lock_sleep_switch.active = false;
         });
 
-	lock_sleep_switch.notify["active"].connect (() => {
+        lock_sleep_switch.notify["active"].connect (() => {
             if (lock_sleep_switch.active)
                 locker.set_uint ("lock-after-screensaver", 1);
             else
                 locker.set_uint ("lock-after-screensaver", 0);
         });
 
-        lock_suspend_label.margin_bottom = 15;
-        lock_sleep_label.margin_bottom = 15;
-        lock_suspend_switch.margin_bottom = 10;
-        lock_sleep_switch.margin_bottom = 10;
-
         lock_suspend_label.halign = Gtk.Align.END;
         lock_sleep_label.halign = Gtk.Align.END;
+        lock_suspend_label.valign = Gtk.Align.CENTER;
+        lock_sleep_label.valign = Gtk.Align.CENTER;
         lock_suspend_switch.halign = Gtk.Align.START;
         lock_sleep_switch.halign = Gtk.Align.START;
 
-        var grid_left = new Gtk.Grid ();
-        grid_left.expand = true;
-        grid_left.halign = Gtk.Align.END;
-        var grid_right = new Gtk.Grid ();
-        grid_right.expand = true;
-        grid_right.halign = Gtk.Align.START;
+        var expander_grid = new Gtk.Grid ();
+        expander_grid.hexpand = true;
 
-        grid_left.attach (lock_suspend_label, 0, 0, 1, 1);
-        grid_left.attach (lock_sleep_label, 0, 1, 1, 1);
-        grid_right.attach (lock_suspend_switch, 0, 0, 1, 1);
-        grid_right.attach (lock_sleep_switch, 0, 1, 1, 1);
+        attach (expander_grid, 0, 0, 4, 1);
+        attach (lock_suspend_label, 1, 0, 1, 1);
+        attach (lock_sleep_label, 1, 1, 1, 1);
+        attach (lock_suspend_switch, 2, 0, 1, 1);
+        attach (lock_sleep_switch, 2, 1, 1, 1);
 
-        attach (grid_left, 0, 0, 1, 1);
-        attach (grid_right, 1, 0, 1, 1);
+        hexpand = true;
     }
 }
