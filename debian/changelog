@@ -1,3 +1,9 @@
+switchboard-plug-security-privacy (0.1.0.1) trusty; urgency=low
+
+  * Vertically center Lock labels
+
+ -- Cody Garver <cody@elementaryos.org>  Wed, 15 Apr 2015 00:26:52 -0500
+
 switchboard-plug-security-privacy (0.1) trusty; urgency=low
 
   * Initial Release.
