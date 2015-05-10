@@ -148,6 +148,9 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         add_button.clicked.connect (() => {
             var popover_grid = new Gtk.Grid ();
             popover_grid.margin = 6;
+            popover_grid.margin_top = 12;
+            popover_grid.margin_start = 12;
+            popover_grid.margin_bottom = 9;
             popover_grid.column_spacing = 12;
             popover_grid.row_spacing = 6;
             add_popover = new Gtk.Popover (add_button);
