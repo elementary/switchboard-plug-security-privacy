@@ -8,108 +8,108 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2014-08-02 05:21+0000\n"
-"Last-Translator: Yiğit <yigituslu@gmail.com>\n"
+"PO-Revision-Date: 2015-05-18 17:38+0000\n"
+"Last-Translator: Sadık <sadikpoyraz01@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-18 05:26+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-05-19 05:45+0000\n"
+"X-Generator: Launchpad (build 17508)\n"
 "Language: tr\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Uykuda kilitle:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Ekran kapandıktan sonra kilitle:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Güvenlik Duvarı Durumu:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
 msgid "Unknown"
-msgstr ""
+msgstr "Bilinmeyen"
 
 #: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
 msgid "Allow"
-msgstr ""
+msgstr "İzin Ver"
 
 #: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
 msgid "Deny"
-msgstr ""
+msgstr "Reddet"
 
 #: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr ""
+msgstr "Reddet"
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
 msgid "Limit"
-msgstr ""
+msgstr "Sınır"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
 msgid "In"
-msgstr ""
+msgstr "Giriş"
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
 msgid "Out"
-msgstr ""
+msgstr "Çıkış"
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Eylem"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Yön"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Portlar"
 
 #: ../src/FirewallPanel.vala:156
 msgid "Action:"
-msgstr ""
+msgstr "Eylem:"
 
 #: ../src/FirewallPanel.vala:165
 msgid "Protocol:"
-msgstr ""
+msgstr "Protokol:"
 
 #: ../src/FirewallPanel.vala:172
 msgid "Direction:"
-msgstr ""
+msgstr "Yön:"
 
 #: ../src/FirewallPanel.vala:179
 msgid "Ports:"
-msgstr ""
+msgstr "Portlar:"
 
 #: ../src/FirewallPanel.vala:183
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d veya %d-%d"
 
 #: ../src/FirewallPanel.vala:185
 msgid "Add Rule"
-msgstr ""
+msgstr "Kural Ekle"
 
 #: ../src/TrackPanel.vala:63
 msgid "Privacy Mode:"
-msgstr ""
+msgstr "Gizlilik Kipi:"
 
 #: ../src/TrackPanel.vala:89
 msgid "Read more…"
-msgstr ""
+msgstr "Devamını oku..."
 
 #: ../src/TrackPanel.vala:102
 msgid ""
@@ -117,26 +117,30 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Bu işletim sistemi ekstra işlevsellik sağlamak için dosya ve uygulama "
+"kullanımı hakkında yararlı istatistikleri toplayabilir. Hesabınızı görebilen "
+"veya hesabınıza erişebilen başka biri varsa, hangi ögelerin kaydedileceği "
+"konusunda sınırlama koyabilirsiniz."
 
 #: ../src/TrackPanel.vala:119
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Kullanım Verisini Sil..."
 
 #: ../src/TrackPanel.vala:140
 msgid "Delete records of which files and applications were used:"
-msgstr ""
+msgstr "Dosyaların ve uygulamaların kullanım kayıtlarını sil:"
 
 #: ../src/TrackPanel.vala:142
 msgid "In the past hour"
-msgstr ""
+msgstr "Son bir saat"
 
 #: ../src/TrackPanel.vala:143
 msgid "In the past day"
-msgstr ""
+msgstr "Geçtiğimiz Gün"
 
 #: ../src/TrackPanel.vala:144
 msgid "In the past week"
-msgstr ""
+msgstr "Geçtiğimiz Hafta"
 
 #: ../src/TrackPanel.vala:145
 msgid "From:"
@@ -144,7 +148,7 @@ msgstr "Başlangıç:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
-msgstr ""
+msgstr "Tüm zamanlar"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
@@ -152,21 +156,23 @@ msgstr "Bitiş:"
 
 #: ../src/TrackPanel.vala:152
 msgid "Clear Data"
-msgstr ""
+msgstr "Veriyi temizle"
 
 #: ../src/TrackPanel.vala:247
 msgid "Your system"
-msgstr ""
+msgstr "Sisteminiz"
 
 #: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "%s Gizlilik Modunda"
 
 #: ../src/TrackPanel.vala:289
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
+"Gizlilik Modunda iken, bu işletim sistemi dosya ve uygulama kullanımı "
+"hakkında herhangi bir veri veya istatistik tutmaz."
 
 #: ../src/TrackPanel.vala:290
 msgid ""
@@ -178,62 +184,64 @@ msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
+"Bu uygulamaların tarayıcı geçmişi gibi kendi kullanım verilerini "
+"kaydetmesine engel olmaz."
 
 #: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
-msgstr ""
+msgstr "Veri Kaynakları:"
 
 #: ../src/TrackPanel.vala:352
 msgid "Chat Logs"
-msgstr ""
+msgstr "Sohbet Kayıtları"
 
 #: ../src/TrackPanel.vala:353
 msgid "Documents"
-msgstr ""
+msgstr "Belgeler"
 
 #: ../src/TrackPanel.vala:354
 msgid "Music"
-msgstr ""
+msgstr "Müzik"
 
 #: ../src/TrackPanel.vala:355
 msgid "Pictures"
-msgstr ""
+msgstr "Resimler"
 
 #: ../src/TrackPanel.vala:356
 msgid "Presentations"
-msgstr ""
+msgstr "Sunumlar"
 
 #: ../src/TrackPanel.vala:357
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Hesap Tabloları"
 
 #: ../src/TrackPanel.vala:358
 msgid "Videos"
-msgstr ""
+msgstr "Videolar"
 
 #: ../src/TrackPanel.vala:389
 msgid "Add Application…"
-msgstr ""
+msgstr "Uygulama Ekle..."
 
 #: ../src/TrackPanel.vala:404
 msgid "Add Folder…"
-msgstr ""
+msgstr "Dizin Ekle…"
 
 #: ../src/TrackPanel.vala:406
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Engellenecek dizini seçin"
 
 #: ../src/TrackPanel.vala:407
 msgid "Cancel"
-msgstr ""
+msgstr "İptal"
 
 #: ../src/TrackPanel.vala:407
 msgid "Add"
-msgstr ""
+msgstr "Ekle"
 
 #: ../src/TrackPanel.vala:419
 msgid "Delete"
-msgstr ""
+msgstr "Sil"
 
 #: ../src/TrackPanel.vala:454
 msgid "Do not collect data from the following:"
@@ -242,31 +250,32 @@ msgstr ""
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
+"Güvenlik duvarı konfigürasyonunu çalıştırmak için kimlik doğrulama gerekli"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "Arama Uygulaması"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Güvenlik & Gizlilik"
 
 #: ../src/Plug.vala:36
 msgid "Privacy and Activity Manager"
-msgstr ""
+msgstr "Gizlilik ve Etkinlik Yöneticisi"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Bazı ayarlar değiştirilmek için yönetici hakları gerektiriyor."
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "Gizlilik"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
-msgstr ""
+msgstr "Kilit"
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
-msgstr ""
+msgstr "Güvenlik Duvarı"
