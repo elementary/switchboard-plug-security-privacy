@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2014-12-24 13:51+0000\n"
+"PO-Revision-Date: 2015-06-23 18:11+0000\n"
 "Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-18 05:26+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-06-24 05:47+0000\n"
+"X-Generator: Launchpad (build 17572)\n"
 "Language: sl\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Zakleni ob spanju:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Zakleni po izklopu zaslona:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -252,7 +252,7 @@ msgstr "Za zagon nastavitev požarnega zidu je zahtevana overitev"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "Najdi aplikacijo"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
