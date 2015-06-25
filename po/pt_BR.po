@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2014-12-23 11:16+0000\n"
-"Last-Translator: Alex <asw.ijuhy@gmail.com>\n"
+"PO-Revision-Date: 2015-06-24 18:42+0000\n"
+"Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-18 05:26+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-06-25 05:39+0000\n"
+"X-Generator: Launchpad (build 17578)\n"
 "Language: pt_BR\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Bloquear ao suspender:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Bloquear após desligar a tela:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -253,7 +253,7 @@ msgstr "A autenticação é exigida para rodar a configuração de firewall"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "Pesquisar aplicação"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
