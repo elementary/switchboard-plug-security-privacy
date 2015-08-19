@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2015-03-19 14:39+0000\n"
+"PO-Revision-Date: 2015-08-18 09:46+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-18 05:26+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-08-19 05:56+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
 "Language: et\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr "Lukustamine unerežiimis"
+msgstr "Lukustamine unerežiimis:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
@@ -117,10 +117,10 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
-"Failide ja rakenduste kasutamisi jälgitakse vaid selleks, et kohandada sinu "
-"süsteemi just sinu jaoks. Kogutud statistikat ei saadeta kuhugi, kuid "
-"teistel inimestel on ligipääs sellele kontole, oleks mõtekas statistika "
-"kogumine keelata."
+"Failide ja rakenduste kasutamisi jälgitakse vaid selleks, et kohandada "
+"süsteemi sinule võimalikult mugavaks. Kogutud andmeid ei saadeta kuhugi, "
+"kuid kui teistel inimestel on ligipääs sellele kontole, oleks mõistlik "
+"statistika kogumine keelata."
 
 #: ../src/TrackPanel.vala:119
 msgid "Clear Usage Data…"
@@ -128,8 +128,7 @@ msgstr "Kustuta kogu kasutamise statistika…"
 
 #: ../src/TrackPanel.vala:140
 msgid "Delete records of which files and applications were used:"
-msgstr ""
-"Kusututakse kõikide rakenduste ja failide kasutamise ajalugu ajavahemikus:"
+msgstr "Rakenduste ja failide kasutamise ajaloo kustutamine ajavahemikus:"
 
 #: ../src/TrackPanel.vala:142
 msgid "In the past hour"
@@ -149,7 +148,7 @@ msgstr "Alates:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
-msgstr "Terve aeg"
+msgstr "Kõik"
 
 #: ../src/TrackPanel.vala:149
 msgid "To:"
@@ -157,7 +156,7 @@ msgstr "Kuni:"
 
 #: ../src/TrackPanel.vala:152
 msgid "Clear Data"
-msgstr "Puhasta andmed"
+msgstr "Kustuta ajalugu"
 
 #: ../src/TrackPanel.vala:247
 msgid "Your system"
@@ -255,7 +254,7 @@ msgstr "Tulemüüri seadistamiseks on vajalik autentimine"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr "Rakenduse otsimine"
+msgstr "Rakenduse otsimine..."
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
