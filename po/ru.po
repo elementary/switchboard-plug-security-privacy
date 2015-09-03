@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2014-12-20 17:42+0000\n"
+"PO-Revision-Date: 2015-09-02 16:43+0000\n"
 "Last-Translator: Artem Anufrij <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-18 05:26+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-09-03 05:40+0000\n"
+"X-Generator: Launchpad (build 17706)\n"
 "Language: ru\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Заблокировать систему при переходе в режим сна:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Заблокировать систему при выключении экрана:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -254,7 +254,7 @@ msgstr "Для запуска программы настройки брандм
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "Поиск приложений"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
