@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2015-09-02 16:43+0000\n"
-"Last-Translator: Artem Anufrij <Unknown>\n"
+"PO-Revision-Date: 2015-10-20 05:39+0000\n"
+"Last-Translator: Maxim Taranov <png2378@protonmail.ch>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-22 06:03+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2015-10-20 05:46+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 "Language: ru\n"
 
 #: ../src/LockPanel.vala:33
@@ -28,7 +28,7 @@ msgstr "Заблокировать систему при выключении э
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr "Режим брандмауэр:"
+msgstr "Состояние брандмауэра:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
@@ -45,7 +45,7 @@ msgstr "Запретить"
 
 #: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
 msgid "Reject"
-msgstr "Отвергнуть"
+msgstr "Отклонить"
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
 msgid "Limit"
@@ -105,7 +105,7 @@ msgstr "Добавить правило"
 
 #: ../src/TrackPanel.vala:63
 msgid "Privacy Mode:"
-msgstr "Режим конфиденциальности:"
+msgstr "Приватный режим:"
 
 #: ../src/TrackPanel.vala:89
 msgid "Read more…"
@@ -117,14 +117,14 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
-"Эта операционная система может отслеживать полезную статистику о файлах и "
-"использования приложений для обеспечения дополнительной функциональности. "
-"Если другие люди могут увидеть или войти с вашим аккаунтом, вы можете "
+"Эта операционная система может собирать полезную статистику о файлах и "
+"использованных приложениях для обеспечения дополнительной функциональности. "
+"Если другие люди могут получить доступ к Вашей учётной записи, то Вы можете "
 "ограничить элементы отслеживания."
 
 #: ../src/TrackPanel.vala:119
 msgid "Clear Usage Data…"
-msgstr "Очистить сведения об активности"
+msgstr "Очистить сведения об активности…"
 
 #: ../src/TrackPanel.vala:140
 msgid "Delete records of which files and applications were used:"
@@ -164,29 +164,30 @@ msgstr "Ваша система"
 
 #: ../src/TrackPanel.vala:281
 msgid "%s is in Privacy Mode"
-msgstr "%s в Частном Доступе"
+msgstr "%s is in приватном режиме"
 
 #: ../src/TrackPanel.vala:289
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
-"Находясь в Приватном Режиме, операционная система не будет собирать "
-"дополнительные данные или статистику об использовании файлов или приложений."
+"Находясь в приватном режиме, операционная система не будет собирать "
+"дополнительные данные или статистику об использовании файлов и приложений."
 
 #: ../src/TrackPanel.vala:290
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
-"Повлияет на дополнительную функциональность, которую обеспечивают эти данные."
+"Приватный режим повлияет на дополнительную функциональность, которую "
+"обеспечивают эти данные."
 
 #: ../src/TrackPanel.vala:291
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
-"Это не помешает приложением сохранять информацию об использовании, как "
-"например истории браузера."
+"Это не помешает приложениям сохранять собственную информацию об "
+"использовании, например историю браузера."
 
 #: ../src/TrackPanel.vala:343
 msgid "Data Sources:"
@@ -250,7 +251,7 @@ msgstr "Не собирать следующие данные:"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Для запуска программы настройки брандмауэр требуется аутентификация"
+msgstr "Для запуска настройки брандмауэра требуется аутентификация"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
@@ -262,7 +263,7 @@ msgstr "Защита и приватность"
 
 #: ../src/Plug.vala:36
 msgid "Privacy and Activity Manager"
-msgstr "Менеджер защиты и приватности"
+msgstr "Диспетчер конфиденциальности и активности"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
