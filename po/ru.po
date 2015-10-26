@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2015-10-22 00:42+0000\n"
-"Last-Translator: Maxim Taranov <png2378@protonmail.ch>\n"
+"PO-Revision-Date: 2015-10-25 12:49+0000\n"
+"Last-Translator: zEvilz <zevilz13@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-23 05:49+0000\n"
+"X-Launchpad-Export-Date: 2015-10-26 05:26+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 "Language: ru\n"
 
@@ -109,7 +109,7 @@ msgstr "Приватный режим:"
 
 #: ../src/TrackPanel.vala:89
 msgid "Read more…"
-msgstr "Больше информации..."
+msgstr "Подробнее..."
 
 #: ../src/TrackPanel.vala:102
 msgid ""
@@ -144,7 +144,7 @@ msgstr "За последнюю неделю"
 
 #: ../src/TrackPanel.vala:145
 msgid "From:"
-msgstr "От:"
+msgstr "Начиная с:"
 
 #: ../src/TrackPanel.vala:146
 msgid "From all time"
@@ -247,11 +247,11 @@ msgstr "Удалить"
 
 #: ../src/TrackPanel.vala:454
 msgid "Do not collect data from the following:"
-msgstr "Не собирать следующие данные:"
+msgstr "Не собирать данные следующих приложений:"
 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Для запуска настройки брандмауэра требуется аутентификация"
+msgstr "Для изменения настроек брандмауэра требуется аутентификация"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
