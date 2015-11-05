@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2015-06-24 18:42+0000\n"
+"PO-Revision-Date: 2015-11-04 13:03+0000\n"
 "Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-22 06:03+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2015-11-05 05:46+0000\n"
+"X-Generator: Launchpad (build 17838)\n"
 "Language: pt_BR\n"
 
 #: ../src/LockPanel.vala:33
@@ -266,7 +266,7 @@ msgstr "Privacidade e gerenciador de atividades"
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
-"Algumas configurações precisam de direitos de administrador para serem "
+"Algumas configurações precisam de direitos administrativos para serem "
 "modificadas"
 
 #: ../src/Plug.vala:100
