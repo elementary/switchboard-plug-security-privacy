@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2015-01-03 14:10+0000\n"
-"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2015-12-07 11:29+0000\n"
+"Last-Translator: Fisz <fiszet@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-29 05:31+0000\n"
-"X-Generator: Launchpad (build 17850)\n"
+"X-Launchpad-Export-Date: 2015-12-08 05:50+0000\n"
+"X-Generator: Launchpad (build 17862)\n"
 "Language: pl\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Zablokuj w trybie uśpienia:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Zablokuj po wyłączeniu ekranu:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -254,7 +254,7 @@ msgstr ""
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "Wyszukaj program"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
