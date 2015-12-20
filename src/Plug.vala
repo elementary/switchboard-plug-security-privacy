@@ -33,7 +33,7 @@ namespace SecurityPrivacy {
             Object (category: Category.PERSONAL,
                     code_name: Build.PLUGCODENAME,
                     display_name: _("Security & Privacy"),
-                    description: _("Privacy and Activity Manager"),
+                    description: _("Configure firewall, screen lock, and activity information"),
                     icon: "preferences-system-privacy");
             plug = this;
         }
