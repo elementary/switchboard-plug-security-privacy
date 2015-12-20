@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-03 08:45-0600\n"
-"PO-Revision-Date: 2015-04-07 12:10+0000\n"
+"PO-Revision-Date: 2015-12-18 23:08+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-29 05:31+0000\n"
-"X-Generator: Launchpad (build 17850)\n"
+"X-Launchpad-Export-Date: 2015-12-20 06:41+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 "Language: it\n"
 
 #: ../src/LockPanel.vala:33
@@ -222,11 +222,11 @@ msgstr "Video"
 
 #: ../src/TrackPanel.vala:389
 msgid "Add Application…"
-msgstr "Aggiungi Applicazione..."
+msgstr "Aggiungi applicazione..."
 
 #: ../src/TrackPanel.vala:404
 msgid "Add Folder…"
-msgstr "Aggiungi Cartella..."
+msgstr "Aggiungi cartella..."
 
 #: ../src/TrackPanel.vala:406
 msgid "Select a folder to blacklist"
