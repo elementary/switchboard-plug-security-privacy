@@ -112,7 +112,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         explain_label.max_width_chars = 60;
         
         var info_popover_grid = new Gtk.Grid ();
-        info_popover_grid.margin = 6;
+        info_popover_grid.margin = 12;
 
         info_popover = new Gtk.Popover (info_button);
         info_popover.add (info_popover_grid);
