@@ -7,24 +7,158 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-03 08:45-0600\n"
+"POT-Creation-Date: 2016-03-02 23:33-0600\n"
 "PO-Revision-Date: 2016-02-23 09:48+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-02-24 05:50+0000\n"
+"X-Launchpad-Export-Date: 2016-03-03 06:14+0000\n"
 "X-Generator: Launchpad (build 17925)\n"
 "Language: ko\n"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr "슬립 모드 일 때 잠금:"
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr "프로그램 검색"
 
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr "화면이 꺼진 후에 잠금:"
+#: ../src/TrackPanel.vala:70
+msgid "Privacy Mode:"
+msgstr "사생활 보호 모드"
+
+#: ../src/TrackPanel.vala:91
+msgid "Read more…"
+msgstr "더 읽어보기..."
+
+#: ../src/TrackPanel.vala:110
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"이 운영체제는 추가적인 기능을 제공하기 위해 파일과 앱 사용에 대한 유용한 통계를 수집할 수 있습니다. 만약 다른 사람이 계정이 "
+"접근하거나 볼 수 있는경우, 어떤 항목을 기록할지 제한 할 수 있습니다."
+
+#: ../src/TrackPanel.vala:127
+msgid "Clear Usage Data…"
+msgstr "사용 데이터 지우기..."
+
+#: ../src/TrackPanel.vala:137
+msgid "Remove system-collected file and application usage data from:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:140
+msgid "The past hour"
+msgstr ""
+
+#: ../src/TrackPanel.vala:141
+msgid "The past day"
+msgstr ""
+
+#: ../src/TrackPanel.vala:142
+msgid "The past week"
+msgstr ""
+
+#: ../src/TrackPanel.vala:143
+msgid "From:"
+msgstr "이때부터:"
+
+#: ../src/TrackPanel.vala:144
+msgid "All time"
+msgstr ""
+
+#: ../src/TrackPanel.vala:147
+msgid "To:"
+msgstr "이때까지:"
+
+#: ../src/TrackPanel.vala:150
+msgid "Clear Data"
+msgstr "데이터 지우기"
+
+#: ../src/TrackPanel.vala:207
+msgid "Your system"
+msgstr "사용자 시스템"
+
+#: ../src/TrackPanel.vala:228
+msgid "%s is in Privacy Mode"
+msgstr "%s 는 사생활 보호 보드 상태입니다"
+
+#: ../src/TrackPanel.vala:230
+msgid ""
+"While in Privacy Mode, this operating system won't retain any further data "
+"or statistics about file and application usage."
+msgstr "사생활 보호 모드에서는, 운영 체제가 파일 및 응용 프로그램 사용에 대한 추가 데이터 나 통계를 유지하지 않습니다."
+
+#: ../src/TrackPanel.vala:231
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr "이 데이터가 제공하는 추가 기능이 영향을받습니다."
+
+#: ../src/TrackPanel.vala:232
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr "브라우저 기록처럼 응용프로그램 자신의 사용 데이터를 기록할 수밖에  없습니다."
+
+#: ../src/TrackPanel.vala:280
+msgid "Data Sources:"
+msgstr "데이터 소스:"
+
+#: ../src/TrackPanel.vala:289
+msgid "Chat Logs"
+msgstr "대화 기록"
+
+#: ../src/TrackPanel.vala:290
+msgid "Documents"
+msgstr "문서"
+
+#: ../src/TrackPanel.vala:291
+msgid "Music"
+msgstr "음악"
+
+#: ../src/TrackPanel.vala:292
+msgid "Pictures"
+msgstr "사진"
+
+#: ../src/TrackPanel.vala:293
+msgid "Presentations"
+msgstr "프레젠테이션"
+
+#: ../src/TrackPanel.vala:294
+msgid "Spreadsheets"
+msgstr "스프레드시트"
+
+#: ../src/TrackPanel.vala:295
+msgid "Videos"
+msgstr "비디오"
+
+#: ../src/TrackPanel.vala:326
+msgid "Add Application…"
+msgstr "프로그램 추가..."
+
+#: ../src/TrackPanel.vala:341
+msgid "Add Folder…"
+msgstr "폴더 추가..."
+
+#: ../src/TrackPanel.vala:343
+msgid "Select a folder to blacklist"
+msgstr "기록을 금지할 폴더 선택"
+
+#: ../src/TrackPanel.vala:344
+msgid "Cancel"
+msgstr "취소"
+
+#: ../src/TrackPanel.vala:344
+msgid "Add"
+msgstr "추가"
+
+#: ../src/TrackPanel.vala:356
+msgid "Delete"
+msgstr "지우기"
+
+#: ../src/TrackPanel.vala:391
+msgid "Do not collect data from the following:"
+msgstr "다음 데이터를 수집하지 마시오:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -35,27 +169,27 @@ msgstr "방화벽 상태:"
 msgid "Unknown"
 msgstr "알 수 없음"
 
-#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
 msgid "Allow"
 msgstr "허용"
 
-#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
 msgid "Deny"
 msgstr "거부"
 
-#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
 msgid "Reject"
 msgstr "거절"
 
-#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
 msgid "Limit"
 msgstr "제한"
 
-#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
 msgid "In"
 msgstr "내부"
 
-#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
 msgid "Out"
 msgstr "외부"
 
@@ -79,183 +213,68 @@ msgstr "방향"
 msgid "Ports"
 msgstr "포트"
 
-#: ../src/FirewallPanel.vala:156
+#: ../src/FirewallPanel.vala:159
 msgid "Action:"
 msgstr "동작:"
 
-#: ../src/FirewallPanel.vala:165
+#: ../src/FirewallPanel.vala:168
 msgid "Protocol:"
 msgstr "프로토콜:"
 
-#: ../src/FirewallPanel.vala:172
+#: ../src/FirewallPanel.vala:175
 msgid "Direction:"
 msgstr "방향:"
 
-#: ../src/FirewallPanel.vala:179
+#: ../src/FirewallPanel.vala:182
 msgid "Ports:"
 msgstr "포트:"
 
-#: ../src/FirewallPanel.vala:183
+#: ../src/FirewallPanel.vala:186
 msgid "%d or %d-%d"
 msgstr "%d 또는 %d-%d"
 
-#: ../src/FirewallPanel.vala:185
+#: ../src/FirewallPanel.vala:188
 msgid "Add Rule"
 msgstr "룰 추가"
 
-#: ../src/TrackPanel.vala:63
-msgid "Privacy Mode:"
-msgstr "사생활 보호 모드"
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr "슬립 모드 일 때 잠금:"
 
-#: ../src/TrackPanel.vala:89
-msgid "Read more…"
-msgstr "더 읽어보기..."
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr "화면이 꺼진 후에 잠금:"
 
-#: ../src/TrackPanel.vala:102
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"이 운영체제는 추가적인 기능을 제공하기 위해 파일과 앱 사용에 대한 유용한 통계를 수집할 수 있습니다. 만약 다른 사람이 계정이 "
-"접근하거나 볼 수 있는경우, 어떤 항목을 기록할지 제한 할 수 있습니다."
-
-#: ../src/TrackPanel.vala:119
-msgid "Clear Usage Data…"
-msgstr "사용 데이터 지우기..."
-
-#: ../src/TrackPanel.vala:140
-msgid "Delete records of which files and applications were used:"
-msgstr "파일과 프로그램 사용 기록 삭제:"
-
-#: ../src/TrackPanel.vala:142
-msgid "In the past hour"
-msgstr "이전 한 시간"
-
-#: ../src/TrackPanel.vala:143
-msgid "In the past day"
-msgstr "이전 날"
-
-#: ../src/TrackPanel.vala:144
-msgid "In the past week"
-msgstr "이전 주"
-
-#: ../src/TrackPanel.vala:145
-msgid "From:"
-msgstr "이때부터:"
-
-#: ../src/TrackPanel.vala:146
-msgid "From all time"
-msgstr "모든 기록"
-
-#: ../src/TrackPanel.vala:149
-msgid "To:"
-msgstr "이때까지:"
-
-#: ../src/TrackPanel.vala:152
-msgid "Clear Data"
-msgstr "데이터 지우기"
-
-#: ../src/TrackPanel.vala:247
-msgid "Your system"
-msgstr "사용자 시스템"
-
-#: ../src/TrackPanel.vala:281
-msgid "%s is in Privacy Mode"
-msgstr "%s 는 사생활 보호 보드 상태입니다"
-
-#: ../src/TrackPanel.vala:289
-msgid ""
-"While in Privacy Mode, this operating system won't retain any further data "
-"or statistics about file and application usage."
-msgstr "사생활 보호 모드에서는, 운영 체제가 파일 및 응용 프로그램 사용에 대한 추가 데이터 나 통계를 유지하지 않습니다."
-
-#: ../src/TrackPanel.vala:290
-msgid ""
-"The additional functionality that this data provides will be affected."
-msgstr "이 데이터가 제공하는 추가 기능이 영향을받습니다."
-
-#: ../src/TrackPanel.vala:291
-msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
-msgstr "브라우저 기록처럼 응용프로그램 자신의 사용 데이터를 기록할 수밖에  없습니다."
-
-#: ../src/TrackPanel.vala:343
-msgid "Data Sources:"
-msgstr "데이터 소스:"
-
-#: ../src/TrackPanel.vala:352
-msgid "Chat Logs"
-msgstr "대화 기록"
-
-#: ../src/TrackPanel.vala:353
-msgid "Documents"
-msgstr "문서"
-
-#: ../src/TrackPanel.vala:354
-msgid "Music"
-msgstr "음악"
-
-#: ../src/TrackPanel.vala:355
-msgid "Pictures"
-msgstr "사진"
-
-#: ../src/TrackPanel.vala:356
-msgid "Presentations"
-msgstr "프레젠테이션"
-
-#: ../src/TrackPanel.vala:357
-msgid "Spreadsheets"
-msgstr "스프레드시트"
-
-#: ../src/TrackPanel.vala:358
-msgid "Videos"
-msgstr "비디오"
-
-#: ../src/TrackPanel.vala:389
-msgid "Add Application…"
-msgstr "프로그램 추가..."
-
-#: ../src/TrackPanel.vala:404
-msgid "Add Folder…"
-msgstr "폴더 추가..."
-
-#: ../src/TrackPanel.vala:406
-msgid "Select a folder to blacklist"
-msgstr "기록을 금지할 폴더 선택"
-
-#: ../src/TrackPanel.vala:407
-msgid "Cancel"
-msgstr "취소"
-
-#: ../src/TrackPanel.vala:407
-msgid "Add"
-msgstr "추가"
-
-#: ../src/TrackPanel.vala:419
-msgid "Delete"
-msgstr "지우기"
-
-#: ../src/TrackPanel.vala:454
-msgid "Do not collect data from the following:"
-msgstr "다음 데이터를 수집하지 마시오:"
-
+#. //launchpad.net/your-project)
+#. *
+#. * This library is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU Library General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This library is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * Library General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU Library General Public
+#. * License along with this library; if not, write to the
+#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+#. * Boston, MA 02111-1307, USA.
+#. *
+#. * Authored by: Corentin Noël <tintou@mailoo.org>
+#. 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "방화벽 설정을 사용하시는 데에 인증이 요구됩니다"
-
-#: ../src/AppChooser.vala:80
-msgid "Search Application"
-msgstr "프로그램 검색"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
 msgstr "보안과 개인 정보"
 
 #: ../src/Plug.vala:36
-msgid "Privacy and Activity Manager"
-msgstr "개인 정보와 활동 기록 관리자"
+msgid "Configure firewall, screen lock, and activity information"
+msgstr ""
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
@@ -272,3 +291,21 @@ msgstr "잠금"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "방화벽"
+
+#~ msgid "Privacy and Activity Manager"
+#~ msgstr "개인 정보와 활동 기록 관리자"
+
+#~ msgid "In the past hour"
+#~ msgstr "이전 한 시간"
+
+#~ msgid "In the past day"
+#~ msgstr "이전 날"
+
+#~ msgid "From all time"
+#~ msgstr "모든 기록"
+
+#~ msgid "In the past week"
+#~ msgstr "이전 주"
+
+#~ msgid "Delete records of which files and applications were used:"
+#~ msgstr "파일과 프로그램 사용 기록 삭제:"

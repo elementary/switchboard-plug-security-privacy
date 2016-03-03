@@ -7,23 +7,164 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-03-03 08:45-0600\n"
+"POT-Creation-Date: 2016-03-02 23:33-0600\n"
 "PO-Revision-Date: 2015-04-02 10:12+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-29 05:31+0000\n"
-"X-Generator: Launchpad (build 17850)\n"
+"X-Launchpad-Export-Date: 2016-03-03 06:14+0000\n"
+"X-Generator: Launchpad (build 17925)\n"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr "Bllokoje kur të pezullohet:"
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr "Kërko programe"
 
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr "Bllokoje kur të fiket ekrani:"
+#: ../src/TrackPanel.vala:70
+msgid "Privacy Mode:"
+msgstr "Modaliteti i Privatësisë:"
+
+#: ../src/TrackPanel.vala:91
+msgid "Read more…"
+msgstr "Lexo më tepër..."
+
+#: ../src/TrackPanel.vala:110
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"Sistemi operativ mund të mbledhë statistika të dobishme mbi përdorimin e "
+"skedarëve dhe të programeve për të ofruar funksionalitete shtesë. Nëse "
+"persona të tjerë mund të shikojnë ose të hapin llogarinë tuaj, mund të "
+"dëshironi të kufizoni cilat elemente të regjistrohen."
+
+#: ../src/TrackPanel.vala:127
+msgid "Clear Usage Data…"
+msgstr "Pastro të dhënat e përdorimit..."
+
+#: ../src/TrackPanel.vala:137
+msgid "Remove system-collected file and application usage data from:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:140
+msgid "The past hour"
+msgstr ""
+
+#: ../src/TrackPanel.vala:141
+msgid "The past day"
+msgstr ""
+
+#: ../src/TrackPanel.vala:142
+msgid "The past week"
+msgstr ""
+
+#: ../src/TrackPanel.vala:143
+msgid "From:"
+msgstr "Nga:"
+
+#: ../src/TrackPanel.vala:144
+msgid "All time"
+msgstr ""
+
+#: ../src/TrackPanel.vala:147
+msgid "To:"
+msgstr "Deri më"
+
+#: ../src/TrackPanel.vala:150
+msgid "Clear Data"
+msgstr "Pastro të dhënat"
+
+#: ../src/TrackPanel.vala:207
+msgid "Your system"
+msgstr "Sistemi juaj"
+
+#: ../src/TrackPanel.vala:228
+msgid "%s is in Privacy Mode"
+msgstr "%s është në modaliteti i Privatësisë"
+
+#: ../src/TrackPanel.vala:230
+msgid ""
+"While in Privacy Mode, this operating system won't retain any further data "
+"or statistics about file and application usage."
+msgstr ""
+"Gjersa të jetë në modalitetin e privatësisë, ky sistem operativ nuk do të "
+"ruajë të dhëna të tjera apo statistika mbi përdorimin e skedarëve dhe të "
+"programeve."
+
+#: ../src/TrackPanel.vala:231
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr "Funksionalitetet shtesë që këto të dhëna ofrojnë do të preken."
+
+#: ../src/TrackPanel.vala:232
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr ""
+"Kjo nuk do të ndalojë programet nga regjistrimi i të dhënave të tyre mbi "
+"përdorimin si puna e kronologjisë së shfletuesit."
+
+#: ../src/TrackPanel.vala:280
+msgid "Data Sources:"
+msgstr "Burimet e të dhënave:"
+
+#: ../src/TrackPanel.vala:289
+msgid "Chat Logs"
+msgstr ""
+
+#: ../src/TrackPanel.vala:290
+msgid "Documents"
+msgstr "Dokumentet"
+
+#: ../src/TrackPanel.vala:291
+msgid "Music"
+msgstr "Muzikë"
+
+#: ../src/TrackPanel.vala:292
+msgid "Pictures"
+msgstr "Fotot"
+
+#: ../src/TrackPanel.vala:293
+msgid "Presentations"
+msgstr "Prezantimet"
+
+#: ../src/TrackPanel.vala:294
+msgid "Spreadsheets"
+msgstr "Fletët elektronike"
+
+#: ../src/TrackPanel.vala:295
+msgid "Videos"
+msgstr "Videot"
+
+#: ../src/TrackPanel.vala:326
+msgid "Add Application…"
+msgstr "Shto program..."
+
+#: ../src/TrackPanel.vala:341
+msgid "Add Folder…"
+msgstr "Shto dosje..."
+
+#: ../src/TrackPanel.vala:343
+msgid "Select a folder to blacklist"
+msgstr "Zgjidh dosjen që do ta përjashtosh"
+
+#: ../src/TrackPanel.vala:344
+msgid "Cancel"
+msgstr "Anulo"
+
+#: ../src/TrackPanel.vala:344
+msgid "Add"
+msgstr "Shto"
+
+#: ../src/TrackPanel.vala:356
+msgid "Delete"
+msgstr "Fshij"
+
+#: ../src/TrackPanel.vala:391
+msgid "Do not collect data from the following:"
+msgstr "Mos mbledh të dhëna nga:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -34,27 +175,27 @@ msgstr "Gjendja e Firewall-it"
 msgid "Unknown"
 msgstr "E panjohur"
 
-#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:159
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
 msgid "Allow"
 msgstr "Lejo"
 
-#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:160
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
 msgid "Deny"
 msgstr "Moho"
 
-#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:161
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
 msgid "Reject"
 msgstr "Refuzo"
 
-#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:162
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
 msgid "Limit"
 msgstr "Kufizo"
 
-#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:175
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
 msgid "In"
 msgstr "Hyrje"
 
-#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:176
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
 msgid "Out"
 msgstr "Dalje"
 
@@ -78,189 +219,67 @@ msgstr "Drejtimi"
 msgid "Ports"
 msgstr ""
 
-#: ../src/FirewallPanel.vala:156
+#: ../src/FirewallPanel.vala:159
 msgid "Action:"
 msgstr "Veprimi:"
 
-#: ../src/FirewallPanel.vala:165
+#: ../src/FirewallPanel.vala:168
 msgid "Protocol:"
 msgstr "Protokolli:"
 
-#: ../src/FirewallPanel.vala:172
+#: ../src/FirewallPanel.vala:175
 msgid "Direction:"
 msgstr "Drejtimi:"
 
-#: ../src/FirewallPanel.vala:179
+#: ../src/FirewallPanel.vala:182
 msgid "Ports:"
 msgstr ""
 
-#: ../src/FirewallPanel.vala:183
+#: ../src/FirewallPanel.vala:186
 msgid "%d or %d-%d"
 msgstr "%d ose %d-%d"
 
-#: ../src/FirewallPanel.vala:185
+#: ../src/FirewallPanel.vala:188
 msgid "Add Rule"
 msgstr "Shto rregull"
 
-#: ../src/TrackPanel.vala:63
-msgid "Privacy Mode:"
-msgstr "Modaliteti i Privatësisë:"
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr "Bllokoje kur të pezullohet:"
 
-#: ../src/TrackPanel.vala:89
-msgid "Read more…"
-msgstr "Lexo më tepër..."
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr "Bllokoje kur të fiket ekrani:"
 
-#: ../src/TrackPanel.vala:102
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Sistemi operativ mund të mbledhë statistika të dobishme mbi përdorimin e "
-"skedarëve dhe të programeve për të ofruar funksionalitete shtesë. Nëse "
-"persona të tjerë mund të shikojnë ose të hapin llogarinë tuaj, mund të "
-"dëshironi të kufizoni cilat elemente të regjistrohen."
-
-#: ../src/TrackPanel.vala:119
-msgid "Clear Usage Data…"
-msgstr "Pastro të dhënat e përdorimit..."
-
-#: ../src/TrackPanel.vala:140
-msgid "Delete records of which files and applications were used:"
-msgstr "Fshij regjistrimin e skedarëve dhe programeve që janë përdorur:"
-
-#: ../src/TrackPanel.vala:142
-msgid "In the past hour"
-msgstr "Gjatë orës së fundit"
-
-#: ../src/TrackPanel.vala:143
-msgid "In the past day"
-msgstr "Gjatë ditës së fundit"
-
-#: ../src/TrackPanel.vala:144
-msgid "In the past week"
-msgstr "Gjatë javës së fundit"
-
-#: ../src/TrackPanel.vala:145
-msgid "From:"
-msgstr "Nga:"
-
-#: ../src/TrackPanel.vala:146
-msgid "From all time"
-msgstr "Gjithmonë"
-
-#: ../src/TrackPanel.vala:149
-msgid "To:"
-msgstr "Deri më"
-
-#: ../src/TrackPanel.vala:152
-msgid "Clear Data"
-msgstr "Pastro të dhënat"
-
-#: ../src/TrackPanel.vala:247
-msgid "Your system"
-msgstr "Sistemi juaj"
-
-#: ../src/TrackPanel.vala:281
-msgid "%s is in Privacy Mode"
-msgstr "%s është në modaliteti i Privatësisë"
-
-#: ../src/TrackPanel.vala:289
-msgid ""
-"While in Privacy Mode, this operating system won't retain any further data "
-"or statistics about file and application usage."
-msgstr ""
-"Gjersa të jetë në modalitetin e privatësisë, ky sistem operativ nuk do të "
-"ruajë të dhëna të tjera apo statistika mbi përdorimin e skedarëve dhe të "
-"programeve."
-
-#: ../src/TrackPanel.vala:290
-msgid ""
-"The additional functionality that this data provides will be affected."
-msgstr "Funksionalitetet shtesë që këto të dhëna ofrojnë do të preken."
-
-#: ../src/TrackPanel.vala:291
-msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
-msgstr ""
-"Kjo nuk do të ndalojë programet nga regjistrimi i të dhënave të tyre mbi "
-"përdorimin si puna e kronologjisë së shfletuesit."
-
-#: ../src/TrackPanel.vala:343
-msgid "Data Sources:"
-msgstr "Burimet e të dhënave:"
-
-#: ../src/TrackPanel.vala:352
-msgid "Chat Logs"
-msgstr ""
-
-#: ../src/TrackPanel.vala:353
-msgid "Documents"
-msgstr "Dokumentet"
-
-#: ../src/TrackPanel.vala:354
-msgid "Music"
-msgstr "Muzikë"
-
-#: ../src/TrackPanel.vala:355
-msgid "Pictures"
-msgstr "Fotot"
-
-#: ../src/TrackPanel.vala:356
-msgid "Presentations"
-msgstr "Prezantimet"
-
-#: ../src/TrackPanel.vala:357
-msgid "Spreadsheets"
-msgstr "Fletët elektronike"
-
-#: ../src/TrackPanel.vala:358
-msgid "Videos"
-msgstr "Videot"
-
-#: ../src/TrackPanel.vala:389
-msgid "Add Application…"
-msgstr "Shto program..."
-
-#: ../src/TrackPanel.vala:404
-msgid "Add Folder…"
-msgstr "Shto dosje..."
-
-#: ../src/TrackPanel.vala:406
-msgid "Select a folder to blacklist"
-msgstr "Zgjidh dosjen që do ta përjashtosh"
-
-#: ../src/TrackPanel.vala:407
-msgid "Cancel"
-msgstr "Anulo"
-
-#: ../src/TrackPanel.vala:407
-msgid "Add"
-msgstr "Shto"
-
-#: ../src/TrackPanel.vala:419
-msgid "Delete"
-msgstr "Fshij"
-
-#: ../src/TrackPanel.vala:454
-msgid "Do not collect data from the following:"
-msgstr "Mos mbledh të dhëna nga:"
-
+#. //launchpad.net/your-project)
+#. *
+#. * This library is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU Library General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This library is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * Library General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU Library General Public
+#. * License along with this library; if not, write to the
+#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+#. * Boston, MA 02111-1307, USA.
+#. *
+#. * Authored by: Corentin Noël <tintou@mailoo.org>
+#. 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
-
-#: ../src/AppChooser.vala:80
-msgid "Search Application"
-msgstr "Kërko programe"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
 msgstr "Siguria dhe Privatësia"
 
 #: ../src/Plug.vala:36
-msgid "Privacy and Activity Manager"
+msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 
 #: ../src/Plug.vala:67
@@ -279,3 +298,18 @@ msgstr "Bllokimi"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Firewall"
+
+#~ msgid "In the past hour"
+#~ msgstr "Gjatë orës së fundit"
+
+#~ msgid "In the past day"
+#~ msgstr "Gjatë ditës së fundit"
+
+#~ msgid "In the past week"
+#~ msgstr "Gjatë javës së fundit"
+
+#~ msgid "Delete records of which files and applications were used:"
+#~ msgstr "Fshij regjistrimin e skedarëve dhe programeve që janë përdorur:"
+
+#~ msgid "From all time"
+#~ msgstr "Gjithmonë"
