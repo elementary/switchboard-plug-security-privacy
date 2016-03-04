@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-03 06:14+0000\n"
-"X-Generator: Launchpad (build 17925)\n"
+"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 "Language: hu\n"
 
 #: ../src/AppChooser.vala:80
@@ -292,22 +292,3 @@ msgstr "Zárolás"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Tűzfal"
-
-#~ msgid "Privacy and Activity Manager"
-#~ msgstr "Magánszféra- és aktivitáskezelő"
-
-#~ msgid "In the past day"
-#~ msgstr "Elmúlt nap"
-
-#~ msgid "Delete records of which files and applications were used:"
-#~ msgstr ""
-#~ "A használt fájlok és alkalmazások listájának törlése ebben az időszakban:"
-
-#~ msgid "From all time"
-#~ msgstr "Összes törlése"
-
-#~ msgid "In the past week"
-#~ msgstr "Elmúlt hét"
-
-#~ msgid "In the past hour"
-#~ msgstr "Elmúlt óra"

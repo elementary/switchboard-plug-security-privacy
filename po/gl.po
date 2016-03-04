@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-03 06:14+0000\n"
-"X-Generator: Launchpad (build 17925)\n"
+"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 "Language: gl\n"
 
 #: ../src/AppChooser.vala:80
@@ -297,21 +297,3 @@ msgstr "Bloqueo"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Devasa"
-
-#~ msgid "Privacy and Activity Manager"
-#~ msgstr "Xestor de intimidade e actividade"
-
-#~ msgid "In the past hour"
-#~ msgstr "Na hora anterior"
-
-#~ msgid "In the past day"
-#~ msgstr "No día anterior"
-
-#~ msgid "Delete records of which files and applications were used:"
-#~ msgstr "Eliminar os rexistros dos ficheiros e aplicativos usados:"
-
-#~ msgid "From all time"
-#~ msgstr "Desde sempre"
-
-#~ msgid "In the past week"
-#~ msgstr "Na semana anterior"

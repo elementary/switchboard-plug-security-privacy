@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-03 06:15+0000\n"
-"X-Generator: Launchpad (build 17925)\n"
+"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 "Language: tr\n"
 
 #: ../src/AppChooser.vala:80
@@ -298,21 +298,3 @@ msgstr "Kilit"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Güvenlik Duvarı"
-
-#~ msgid "In the past week"
-#~ msgstr "Geçtiğimiz Hafta"
-
-#~ msgid "In the past hour"
-#~ msgstr "Son bir saat"
-
-#~ msgid "In the past day"
-#~ msgstr "Geçtiğimiz Gün"
-
-#~ msgid "Delete records of which files and applications were used:"
-#~ msgstr "Dosyaların ve uygulamaların kullanım kayıtlarını sil:"
-
-#~ msgid "From all time"
-#~ msgstr "Tüm zamanlar"
-
-#~ msgid "Privacy and Activity Manager"
-#~ msgstr "Gizlilik ve Etkinlik Yöneticisi"

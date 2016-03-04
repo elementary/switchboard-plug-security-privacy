@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-03 06:14+0000\n"
-"X-Generator: Launchpad (build 17925)\n"
+"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 "Language: bs\n"
 
 #: ../src/AppChooser.vala:80
@@ -300,21 +300,3 @@ msgstr "Zaključavanje"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Zaštitni zid"
-
-#~ msgid "In the past hour"
-#~ msgstr "U zadnjih sat vremena"
-
-#~ msgid "In the past day"
-#~ msgstr "U zadnja 24 sata"
-
-#~ msgid "Delete records of which files and applications were used:"
-#~ msgstr "Obriši podatke o tome koje datoteke i aplikacije su bile korištene:"
-
-#~ msgid "From all time"
-#~ msgstr "Bilo kada"
-
-#~ msgid "In the past week"
-#~ msgstr "U zadnjih 7 dana"
-
-#~ msgid "Privacy and Activity Manager"
-#~ msgstr "Menadžer privatnosti i aktivnosti"

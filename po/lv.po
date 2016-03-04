@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-03 06:14+0000\n"
-"X-Generator: Launchpad (build 17925)\n"
+"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 "Language: lv\n"
 
 #: ../src/AppChooser.vala:80
@@ -289,21 +289,3 @@ msgstr "Slēgšana"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "Ugunsmūris"
-
-#~ msgid "Privacy and Activity Manager"
-#~ msgstr "Privātuma un darbību pārvaldnieks"
-
-#~ msgid "In the past hour"
-#~ msgstr "Pēdējās stundas laikā"
-
-#~ msgid "In the past day"
-#~ msgstr "Pēdējās dienas laikā"
-
-#~ msgid "Delete records of which files and applications were used:"
-#~ msgstr "Dzēst ierakstus par failiem un aplikācijām kuras tika lietotas:"
-
-#~ msgid "From all time"
-#~ msgstr "Visā datora lietošanas laikā"
-
-#~ msgid "In the past week"
-#~ msgstr "Pēdējās nedēļas laikā"

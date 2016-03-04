@@ -14,8 +14,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-03 06:15+0000\n"
-"X-Generator: Launchpad (build 17925)\n"
+"X-Launchpad-Export-Date: 2016-03-04 06:13+0000\n"
+"X-Generator: Launchpad (build 17936)\n"
 "Language: \n"
 
 #: ../src/AppChooser.vala:80
@@ -289,21 +289,3 @@ msgstr "锁定"
 #: ../src/Plug.vala:104
 msgid "Firewall"
 msgstr "防火墙"
-
-#~ msgid "Privacy and Activity Manager"
-#~ msgstr "隐私和活动管理器"
-
-#~ msgid "Delete records of which files and applications were used:"
-#~ msgstr "删除文件和应用的使用记录："
-
-#~ msgid "In the past hour"
-#~ msgstr "过去一小时"
-
-#~ msgid "In the past day"
-#~ msgstr "过去一天"
-
-#~ msgid "In the past week"
-#~ msgstr "过去一周"
-
-#~ msgid "From all time"
-#~ msgstr "所有记录"
