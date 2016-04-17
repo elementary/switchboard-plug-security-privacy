@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2015-04-13 22:20+0000\n"
-"Last-Translator: RM <l4rt1st-1nc0nnu@laposte.net>\n"
+"PO-Revision-Date: 2016-04-16 10:57+0000\n"
+"Last-Translator: Nikos <Unknown>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17936)\n"
+"X-Launchpad-Export-Date: 2016-04-17 05:58+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
 "Language: fr\n"
 
 #: ../src/AppChooser.vala:80
@@ -51,15 +51,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
-msgstr ""
+msgstr "L'heure passée"
 
 #: ../src/TrackPanel.vala:141
 msgid "The past day"
-msgstr ""
+msgstr "Le jour passé"
 
 #: ../src/TrackPanel.vala:142
 msgid "The past week"
-msgstr ""
+msgstr "La semaine dernière"
 
 #: ../src/TrackPanel.vala:143
 msgid "From:"
@@ -67,7 +67,7 @@ msgstr "Du :"
 
 #: ../src/TrackPanel.vala:144
 msgid "All time"
-msgstr ""
+msgstr "Tout le temps"
 
 #: ../src/TrackPanel.vala:147
 msgid "To:"
@@ -283,6 +283,7 @@ msgstr "Sécurité & vie privée"
 #: ../src/Plug.vala:36
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
+"Configurer le pare-feu, l'écran de verouillage et les informations d'activité"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
