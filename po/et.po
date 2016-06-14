@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2015-08-18 09:46+0000\n"
+"PO-Revision-Date: 2016-06-13 16:52+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17936)\n"
+"X-Launchpad-Export-Date: 2016-06-14 06:23+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 "Language: et\n"
 
 #: ../src/AppChooser.vala:80
@@ -51,15 +51,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
-msgstr ""
+msgstr "Viimane tund"
 
 #: ../src/TrackPanel.vala:141
 msgid "The past day"
-msgstr ""
+msgstr "Viimane päev"
 
 #: ../src/TrackPanel.vala:142
 msgid "The past week"
-msgstr ""
+msgstr "Viimane nädal"
 
 #: ../src/TrackPanel.vala:143
 msgid "From:"
@@ -67,7 +67,7 @@ msgstr "Alates:"
 
 #: ../src/TrackPanel.vala:144
 msgid "All time"
-msgstr ""
+msgstr "Kogu aeg"
 
 #: ../src/TrackPanel.vala:147
 msgid "To:"
@@ -282,6 +282,7 @@ msgstr "Turvalisus ja privaatsus"
 #: ../src/Plug.vala:36
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
+"Tulemüüri seadistamine, ekraani lukustamine ja tegevuste informatsioon"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"

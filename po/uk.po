@@ -8,27 +8,27 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2015-03-27 21:28+0000\n"
-"Last-Translator: Bogdan Lisnenko <Unknown>\n"
+"PO-Revision-Date: 2016-06-13 21:12+0000\n"
+"Last-Translator: Roman Sytnyk <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17936)\n"
+"X-Launchpad-Export-Date: 2016-06-14 06:23+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 "Language: uk\n"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "Програма для пошуку"
 
 #: ../src/TrackPanel.vala:70
 msgid "Privacy Mode:"
-msgstr ""
+msgstr "Приватний режим:"
 
 #: ../src/TrackPanel.vala:91
 msgid "Read more…"
-msgstr ""
+msgstr "Прочитати більше"
 
 #: ../src/TrackPanel.vala:110
 msgid ""
@@ -36,10 +36,14 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Ця операційна система може збирати корисну статистику про файли і "
+"використання додатків, щоб забезпечити додаткову функціональність. Якщо інші "
+"люди можуть побачити або отримати доступ до вашого облікового запису, ви "
+"можете обмежити, які елементи записуються."
 
 #: ../src/TrackPanel.vala:127
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Вилучити дані щодо користування…"
 
 #: ../src/TrackPanel.vala:137
 msgid "Remove system-collected file and application usage data from:"
@@ -47,15 +51,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
-msgstr ""
+msgstr "Попередньої години"
 
 #: ../src/TrackPanel.vala:141
 msgid "The past day"
-msgstr ""
+msgstr "Попереднього дня"
 
 #: ../src/TrackPanel.vala:142
 msgid "The past week"
-msgstr ""
+msgstr "Попереднього тижня"
 
 #: ../src/TrackPanel.vala:143
 msgid "From:"
@@ -63,7 +67,7 @@ msgstr "З:"
 
 #: ../src/TrackPanel.vala:144
 msgid "All time"
-msgstr ""
+msgstr "За весь час"
 
 #: ../src/TrackPanel.vala:147
 msgid "To:"
@@ -71,26 +75,29 @@ msgstr "До:"
 
 #: ../src/TrackPanel.vala:150
 msgid "Clear Data"
-msgstr ""
+msgstr "Очистити Дані"
 
 #: ../src/TrackPanel.vala:207
 msgid "Your system"
-msgstr ""
+msgstr "Ваша система"
 
 #: ../src/TrackPanel.vala:228
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "%s є в Режимі Приватності"
 
 #: ../src/TrackPanel.vala:230
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
+"Перебуваючи в Режимі Конфіденційності, ця операційна система не буде "
+"зберігати будь-які дані або статистичні дані про файл і використання "
+"додатків."
 
 #: ../src/TrackPanel.vala:231
 msgid ""
 "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "Додатковий функціонал, який надає ці дані буде порушений."
 
 #: ../src/TrackPanel.vala:232
 msgid ""
@@ -100,148 +107,148 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:280
 msgid "Data Sources:"
-msgstr ""
+msgstr "Джерело Даних:"
 
 #: ../src/TrackPanel.vala:289
 msgid "Chat Logs"
-msgstr ""
+msgstr "Журнали спілкування"
 
 #: ../src/TrackPanel.vala:290
 msgid "Documents"
-msgstr ""
+msgstr "Документи"
 
 #: ../src/TrackPanel.vala:291
 msgid "Music"
-msgstr ""
+msgstr "Музика"
 
 #: ../src/TrackPanel.vala:292
 msgid "Pictures"
-msgstr ""
+msgstr "Зображення"
 
 #: ../src/TrackPanel.vala:293
 msgid "Presentations"
-msgstr ""
+msgstr "Презентації"
 
 #: ../src/TrackPanel.vala:294
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Електронні таблиці"
 
 #: ../src/TrackPanel.vala:295
 msgid "Videos"
-msgstr ""
+msgstr "Відео"
 
 #: ../src/TrackPanel.vala:326
 msgid "Add Application…"
-msgstr ""
+msgstr "Додати програму…"
 
 #: ../src/TrackPanel.vala:341
 msgid "Add Folder…"
-msgstr ""
+msgstr "Додати папку…"
 
 #: ../src/TrackPanel.vala:343
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Виберіть папку для додавання до «чорного» списку"
 
 #: ../src/TrackPanel.vala:344
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 #: ../src/TrackPanel.vala:344
 msgid "Add"
-msgstr ""
+msgstr "Додати"
 
 #: ../src/TrackPanel.vala:356
 msgid "Delete"
-msgstr ""
+msgstr "Видалити"
 
 #: ../src/TrackPanel.vala:391
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "Не збирати дані з наступних:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Статус Файрволу:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
 msgid "Unknown"
-msgstr ""
+msgstr "Невідомий"
 
 #: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
 msgid "Allow"
-msgstr ""
+msgstr "Дозволити"
 
 #: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
 msgid "Deny"
-msgstr ""
+msgstr "Заборонити"
 
 #: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
 msgid "Reject"
-msgstr ""
+msgstr "Відхилити"
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
 msgid "Limit"
-msgstr ""
+msgstr "Ліміт"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
 msgid "In"
-msgstr ""
+msgstr "В"
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
 msgid "Out"
-msgstr ""
+msgstr "З"
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "Дія"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Протокол"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Напрямок"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Порти"
 
 #: ../src/FirewallPanel.vala:159
 msgid "Action:"
-msgstr ""
+msgstr "Дія:"
 
 #: ../src/FirewallPanel.vala:168
 msgid "Protocol:"
-msgstr ""
+msgstr "Протокол:"
 
 #: ../src/FirewallPanel.vala:175
 msgid "Direction:"
-msgstr ""
+msgstr "Напрямок:"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Ports:"
-msgstr ""
+msgstr "Порти:"
 
 #: ../src/FirewallPanel.vala:186
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d чи %d-%d"
 
 #: ../src/FirewallPanel.vala:188
 msgid "Add Rule"
-msgstr ""
+msgstr "Додати правило"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Блокувати у режимі сну"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Блокувати після вимкнення екрану:"
 
 #. //launchpad.net/your-project)
 #. *
@@ -288,4 +295,4 @@ msgstr "Блокування"
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
-msgstr ""
+msgstr "Фаєрвол"
