@@ -1,0 +1,290 @@
+# Tagalog translation for switchboard-plug-security-privacy
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the switchboard-plug-security-privacy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: switchboard-plug-security-privacy\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-03-02 23:33-0600\n"
+"PO-Revision-Date: 2016-06-14 20:12+0000\n"
+"Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
+"Language-Team: Tagalog <tl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-06-15 06:20+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
+
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr "Maghanap ng Application"
+
+#: ../src/TrackPanel.vala:70
+msgid "Privacy Mode:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:91
+msgid "Read more…"
+msgstr "Magbasa pa..."
+
+#: ../src/TrackPanel.vala:110
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+
+#: ../src/TrackPanel.vala:127
+msgid "Clear Usage Data…"
+msgstr ""
+
+#: ../src/TrackPanel.vala:137
+msgid "Remove system-collected file and application usage data from:"
+msgstr ""
+
+#: ../src/TrackPanel.vala:140
+msgid "The past hour"
+msgstr ""
+
+#: ../src/TrackPanel.vala:141
+msgid "The past day"
+msgstr ""
+
+#: ../src/TrackPanel.vala:142
+msgid "The past week"
+msgstr ""
+
+#: ../src/TrackPanel.vala:143
+msgid "From:"
+msgstr "Mula:"
+
+#: ../src/TrackPanel.vala:144
+msgid "All time"
+msgstr ""
+
+#: ../src/TrackPanel.vala:147
+msgid "To:"
+msgstr "Para:"
+
+#: ../src/TrackPanel.vala:150
+msgid "Clear Data"
+msgstr ""
+
+#: ../src/TrackPanel.vala:207
+msgid "Your system"
+msgstr "Ang iyong system"
+
+#: ../src/TrackPanel.vala:228
+msgid "%s is in Privacy Mode"
+msgstr "%s ay nasa Privacy mode"
+
+#: ../src/TrackPanel.vala:230
+msgid ""
+"While in Privacy Mode, this operating system won't retain any further data "
+"or statistics about file and application usage."
+msgstr ""
+
+#: ../src/TrackPanel.vala:231
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr ""
+
+#: ../src/TrackPanel.vala:232
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr ""
+
+#: ../src/TrackPanel.vala:280
+msgid "Data Sources:"
+msgstr "Mga Data Source:"
+
+#: ../src/TrackPanel.vala:289
+msgid "Chat Logs"
+msgstr "Mga Log sa Chat"
+
+#: ../src/TrackPanel.vala:290
+msgid "Documents"
+msgstr "Mga Dokumento"
+
+#: ../src/TrackPanel.vala:291
+msgid "Music"
+msgstr "Musika"
+
+#: ../src/TrackPanel.vala:292
+msgid "Pictures"
+msgstr "Mga Litrato"
+
+#: ../src/TrackPanel.vala:293
+msgid "Presentations"
+msgstr "Mga Presentation"
+
+#: ../src/TrackPanel.vala:294
+msgid "Spreadsheets"
+msgstr "Mga Spreadsheet"
+
+#: ../src/TrackPanel.vala:295
+msgid "Videos"
+msgstr "Mga Pelikula"
+
+#: ../src/TrackPanel.vala:326
+msgid "Add Application…"
+msgstr "Magdagdag ng Application..."
+
+#: ../src/TrackPanel.vala:341
+msgid "Add Folder…"
+msgstr "Magdagdag ng Polder..."
+
+#: ../src/TrackPanel.vala:343
+msgid "Select a folder to blacklist"
+msgstr ""
+
+#: ../src/TrackPanel.vala:344
+msgid "Cancel"
+msgstr "I-kansela"
+
+#: ../src/TrackPanel.vala:344
+msgid "Add"
+msgstr "Magdagdag"
+
+#: ../src/TrackPanel.vala:356
+msgid "Delete"
+msgstr ""
+
+#: ../src/TrackPanel.vala:391
+msgid "Do not collect data from the following:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
+#: ../src/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr "Hindi matukoy"
+
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
+msgid "Allow"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
+msgid "Deny"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
+msgid "Reject"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
+msgid "Limit"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
+msgid "In"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
+msgid "Out"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
+msgstr "Aksyon"
+
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:159
+msgid "Action:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:168
+msgid "Protocol:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:175
+msgid "Direction:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:182
+msgid "Ports:"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:186
+msgid "%d or %d-%d"
+msgstr ""
+
+#: ../src/FirewallPanel.vala:188
+msgid "Add Rule"
+msgstr ""
+
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr ""
+
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr ""
+
+#. //launchpad.net/your-project)
+#. *
+#. * This library is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU Library General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This library is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * Library General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU Library General Public
+#. * License along with this library; if not, write to the
+#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+#. * Boston, MA 02111-1307, USA.
+#. *
+#. * Authored by: Corentin Noël <tintou@mailoo.org>
+#. 
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr ""
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr ""
+
+#: ../src/Plug.vala:36
+msgid "Configure firewall, screen lock, and activity information"
+msgstr ""
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr ""
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr ""
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr ""
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr ""
