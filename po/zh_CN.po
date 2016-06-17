@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2016-03-13 12:09+0000\n"
-"Last-Translator: colindemian <dengmengpc@gmail.com>\n"
+"PO-Revision-Date: 2016-06-16 17:13+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-14 05:44+0000\n"
-"X-Generator: Launchpad (build 17939)\n"
+"X-Launchpad-Export-Date: 2016-06-17 05:46+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 "Language: \n"
 
 #: ../src/AppChooser.vala:80
@@ -35,7 +35,7 @@ msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
-msgstr "此操作系统能收集文件和应用程序的使用状况以提供额外功能。如果其他人能接触到您的电脑，您可能会需要对记录哪些项目作出限制。"
+msgstr "操作系统会收集文件和应用程序的使用状况以提供额外的功能。如果其他人能接触到您的电脑，您需要对记录内容做一些限制。"
 
 #: ../src/TrackPanel.vala:127
 msgid "Clear Usage Data…"
@@ -104,7 +104,7 @@ msgstr "数据来源："
 
 #: ../src/TrackPanel.vala:289
 msgid "Chat Logs"
-msgstr "聊天记录"
+msgstr "聊天"
 
 #: ../src/TrackPanel.vala:290
 msgid "Documents"
@@ -120,11 +120,11 @@ msgstr "图片"
 
 #: ../src/TrackPanel.vala:293
 msgid "Presentations"
-msgstr "演示文稿"
+msgstr "演示"
 
 #: ../src/TrackPanel.vala:294
 msgid "Spreadsheets"
-msgstr "电子表格"
+msgstr "表格"
 
 #: ../src/TrackPanel.vala:295
 msgid "Videos"
