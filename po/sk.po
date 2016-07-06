@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2015-08-17 13:13+0000\n"
-"Last-Translator: pyler <pyler.inbox@gmail.com>\n"
+"PO-Revision-Date: 2016-07-05 18:39+0000\n"
+"Last-Translator: Ľubomír Hlavko <5lubo555@azet.sk>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17936)\n"
+"X-Launchpad-Export-Date: 2016-07-06 05:44+0000\n"
+"X-Generator: Launchpad (build 18115)\n"
 "Language: sk\n"
 
 #: ../src/AppChooser.vala:80
@@ -51,15 +51,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
-msgstr ""
+msgstr "Za poslednú hodinu"
 
 #: ../src/TrackPanel.vala:141
 msgid "The past day"
-msgstr ""
+msgstr "Za posledný deň"
 
 #: ../src/TrackPanel.vala:142
 msgid "The past week"
-msgstr ""
+msgstr "Za posledný týždeň"
 
 #: ../src/TrackPanel.vala:143
 msgid "From:"
