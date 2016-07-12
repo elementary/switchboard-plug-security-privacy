@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2016-06-14 20:12+0000\n"
+"PO-Revision-Date: 2016-07-11 20:18+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-15 06:20+0000\n"
-"X-Generator: Launchpad (build 18097)\n"
+"X-Launchpad-Export-Date: 2016-07-12 06:44+0000\n"
+"X-Generator: Launchpad (build 18115)\n"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:127
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Tanggalin ang Datos ng Paggamit"
 
 #: ../src/TrackPanel.vala:137
 msgid "Remove system-collected file and application usage data from:"
@@ -46,15 +46,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
-msgstr ""
+msgstr "Ang nakaraang oras"
 
 #: ../src/TrackPanel.vala:141
 msgid "The past day"
-msgstr ""
+msgstr "Ang nakaraang araw"
 
 #: ../src/TrackPanel.vala:142
 msgid "The past week"
-msgstr ""
+msgstr "Ang nakaraang linggo"
 
 #: ../src/TrackPanel.vala:143
 msgid "From:"
@@ -62,7 +62,7 @@ msgstr "Mula:"
 
 #: ../src/TrackPanel.vala:144
 msgid "All time"
-msgstr ""
+msgstr "Lahat ng oras"
 
 #: ../src/TrackPanel.vala:147
 msgid "To:"
@@ -70,7 +70,7 @@ msgstr "Para:"
 
 #: ../src/TrackPanel.vala:150
 msgid "Clear Data"
-msgstr ""
+msgstr "Tanggalin ang Datos"
 
 #: ../src/TrackPanel.vala:207
 msgid "Your system"
@@ -151,7 +151,7 @@ msgstr "Magdagdag"
 
 #: ../src/TrackPanel.vala:356
 msgid "Delete"
-msgstr ""
+msgstr "Burahin"
 
 #: ../src/TrackPanel.vala:391
 msgid "Do not collect data from the following:"
@@ -180,15 +180,15 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
 msgid "Limit"
-msgstr ""
+msgstr "Hangganan"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
 msgid "In"
-msgstr ""
+msgstr "Papasok"
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
 msgid "Out"
-msgstr ""
+msgstr "Palabas"
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
@@ -200,35 +200,35 @@ msgstr "Aksyon"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "Direksyon"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "Mga Port"
 
 #: ../src/FirewallPanel.vala:159
 msgid "Action:"
-msgstr ""
+msgstr "Mga Aksyon:"
 
 #: ../src/FirewallPanel.vala:168
 msgid "Protocol:"
-msgstr ""
+msgstr "Protokol"
 
 #: ../src/FirewallPanel.vala:175
 msgid "Direction:"
-msgstr ""
+msgstr "Direksyon:"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Ports:"
-msgstr ""
+msgstr "Mga Port:"
 
 #: ../src/FirewallPanel.vala:186
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d o %d-%d"
 
 #: ../src/FirewallPanel.vala:188
 msgid "Add Rule"
