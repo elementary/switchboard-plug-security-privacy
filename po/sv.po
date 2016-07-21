@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2016-07-17 22:30+0000\n"
+"PO-Revision-Date: 2016-07-20 13:46+0000\n"
 "Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-07-18 05:37+0000\n"
-"X-Generator: Launchpad (build 18140)\n"
+"X-Launchpad-Export-Date: 2016-07-21 06:03+0000\n"
+"X-Generator: Launchpad (build 18147)\n"
 "Language: sv\n"
 
 #: ../src/AppChooser.vala:80
@@ -48,6 +48,8 @@ msgstr "Rensa användningsdata…"
 #: ../src/TrackPanel.vala:137
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
+"Ta bort användningsdata som operativsystemet samlat in om filer och program "
+"sedan:"
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
@@ -67,7 +69,7 @@ msgstr "Från:"
 
 #: ../src/TrackPanel.vala:144
 msgid "All time"
-msgstr ""
+msgstr "All tid"
 
 #: ../src/TrackPanel.vala:147
 msgid "To:"
@@ -282,7 +284,7 @@ msgstr "Säkerhet & integritet"
 
 #: ../src/Plug.vala:36
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "Ställ in brandvägg, låsskärm och aktivitetsdata"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
