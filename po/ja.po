@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2014-08-02 05:11+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2016-08-02 01:29+0000\n"
+"Last-Translator: Masayuki Sugahara <brindflontia@gmail.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-03-04 06:12+0000\n"
-"X-Generator: Launchpad (build 17936)\n"
+"X-Launchpad-Export-Date: 2016-08-02 06:02+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 "Language: ja\n"
 
 #: ../src/AppChooser.vala:80
@@ -160,76 +160,76 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr ""
+msgstr "ファイアウォールの状態:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
 msgid "Unknown"
-msgstr ""
+msgstr "不明"
 
 #: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
 msgid "Allow"
-msgstr ""
+msgstr "許可"
 
 #: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
 msgid "Deny"
-msgstr ""
+msgstr "拒否"
 
 #: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
 msgid "Reject"
-msgstr ""
+msgstr "却下"
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
 msgid "Limit"
-msgstr ""
+msgstr "制限"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
 msgid "In"
-msgstr ""
+msgstr "入力"
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
 msgid "Out"
-msgstr ""
+msgstr "出力"
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr ""
+msgstr "動作"
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr ""
+msgstr "プロトコル"
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr ""
+msgstr "方向"
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr ""
+msgstr "ポート番号"
 
 #: ../src/FirewallPanel.vala:159
 msgid "Action:"
-msgstr ""
+msgstr "操作:"
 
 #: ../src/FirewallPanel.vala:168
 msgid "Protocol:"
-msgstr ""
+msgstr "プロトコル:"
 
 #: ../src/FirewallPanel.vala:175
 msgid "Direction:"
-msgstr ""
+msgstr "方向:"
 
 #: ../src/FirewallPanel.vala:182
 msgid "Ports:"
-msgstr ""
+msgstr "ポート："
 
 #: ../src/FirewallPanel.vala:186
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d または %d-%d"
 
 #: ../src/FirewallPanel.vala:188
 msgid "Add Rule"
@@ -237,11 +237,11 @@ msgstr ""
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "スリープ時にロック:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "画面消去時にロック:"
 
 #. //launchpad.net/your-project)
 #. *
