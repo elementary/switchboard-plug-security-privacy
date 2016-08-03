@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2016-08-02 01:29+0000\n"
-"Last-Translator: Masayuki Sugahara <brindflontia@gmail.com>\n"
+"PO-Revision-Date: 2016-08-03 05:25+0000\n"
+"Last-Translator: BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <Unknown>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-02 06:02+0000\n"
+"X-Launchpad-Export-Date: 2016-08-03 05:56+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 "Language: ja\n"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "アプリケーションの検索"
 
 #: ../src/TrackPanel.vala:70
 msgid "Privacy Mode:"
-msgstr ""
+msgstr "プライバシーモード："
 
 #: ../src/TrackPanel.vala:91
 msgid "Read more…"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:127
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "利用履歴データをクリア…"
 
 #: ../src/TrackPanel.vala:137
 msgid "Remove system-collected file and application usage data from:"
@@ -47,23 +47,23 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
-msgstr ""
+msgstr "過去 １ 時間"
 
 #: ../src/TrackPanel.vala:141
 msgid "The past day"
-msgstr ""
+msgstr "過去 １ 日"
 
 #: ../src/TrackPanel.vala:142
 msgid "The past week"
-msgstr ""
+msgstr "過去 １ 週間"
 
 #: ../src/TrackPanel.vala:143
 msgid "From:"
-msgstr "開始時:"
+msgstr "取得先:"
 
 #: ../src/TrackPanel.vala:144
 msgid "All time"
-msgstr ""
+msgstr "全期間"
 
 #: ../src/TrackPanel.vala:147
 msgid "To:"
@@ -71,7 +71,7 @@ msgstr "終了時:"
 
 #: ../src/TrackPanel.vala:150
 msgid "Clear Data"
-msgstr ""
+msgstr "データを削除"
 
 #: ../src/TrackPanel.vala:207
 msgid "Your system"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:228
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "%s はプライバシーモードです"
 
 #: ../src/TrackPanel.vala:230
 msgid ""
@@ -100,63 +100,63 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:280
 msgid "Data Sources:"
-msgstr ""
+msgstr "データーソース:"
 
 #: ../src/TrackPanel.vala:289
 msgid "Chat Logs"
-msgstr ""
+msgstr "チャットログ"
 
 #: ../src/TrackPanel.vala:290
 msgid "Documents"
-msgstr ""
+msgstr "ドキュメント"
 
 #: ../src/TrackPanel.vala:291
 msgid "Music"
-msgstr ""
+msgstr "ミュージック"
 
 #: ../src/TrackPanel.vala:292
 msgid "Pictures"
-msgstr ""
+msgstr "ピクチャー"
 
 #: ../src/TrackPanel.vala:293
 msgid "Presentations"
-msgstr ""
+msgstr "プレゼンテーション"
 
 #: ../src/TrackPanel.vala:294
 msgid "Spreadsheets"
-msgstr ""
+msgstr "スプレッドシート"
 
 #: ../src/TrackPanel.vala:295
 msgid "Videos"
-msgstr ""
+msgstr "ビデオ"
 
 #: ../src/TrackPanel.vala:326
 msgid "Add Application…"
-msgstr ""
+msgstr "アプリケーションの追加..."
 
 #: ../src/TrackPanel.vala:341
 msgid "Add Folder…"
-msgstr ""
+msgstr "フォルダーの追加..."
 
 #: ../src/TrackPanel.vala:343
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "除外リストに追加するフォルダーを選択"
 
 #: ../src/TrackPanel.vala:344
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: ../src/TrackPanel.vala:344
 msgid "Add"
-msgstr ""
+msgstr "追加"
 
 #: ../src/TrackPanel.vala:356
 msgid "Delete"
-msgstr ""
+msgstr "削除"
 
 #: ../src/TrackPanel.vala:391
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "以下からデータを収集しない："
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -233,7 +233,7 @@ msgstr "%d または %d-%d"
 
 #: ../src/FirewallPanel.vala:188
 msgid "Add Rule"
-msgstr ""
+msgstr "ルールの追加"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
@@ -268,7 +268,7 @@ msgstr ""
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
-msgstr ""
+msgstr "セキュリティとプライバシー"
 
 #: ../src/Plug.vala:36
 msgid "Configure firewall, screen lock, and activity information"
@@ -276,7 +276,7 @@ msgstr ""
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "一部の設定変更には管理者権限が必要です"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
@@ -284,8 +284,8 @@ msgstr ""
 
 #: ../src/Plug.vala:102
 msgid "Locking"
-msgstr ""
+msgstr "ロック中"
 
 #: ../src/Plug.vala:104
 msgid "Firewall"
-msgstr ""
+msgstr "ファイアウォール"
