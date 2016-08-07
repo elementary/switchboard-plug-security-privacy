@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2016-08-04 11:40+0000\n"
-"Last-Translator: BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <Unknown>\n"
+"PO-Revision-Date: 2016-08-06 13:05+0000\n"
+"Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-05 05:44+0000\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:46+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 "Language: ja\n"
 
@@ -28,7 +28,7 @@ msgstr "プライバシーモード："
 
 #: ../src/TrackPanel.vala:91
 msgid "Read more…"
-msgstr ""
+msgstr "続きを読む..."
 
 #: ../src/TrackPanel.vala:110
 msgid ""
@@ -36,6 +36,8 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"このOSは、追加機能を提供するために、ファイルとアプリの使用状況に関する有用な統計情報を収集することができます。他の人が見たり、あなたのアカウントにアクセ"
+"スできる場合は、記録される項目を制限することもできます。"
 
 #: ../src/TrackPanel.vala:127
 msgid "Clear Usage Data…"
@@ -43,7 +45,7 @@ msgstr "利用履歴データをクリア…"
 
 #: ../src/TrackPanel.vala:137
 msgid "Remove system-collected file and application usage data from:"
-msgstr ""
+msgstr "システム収集ファイルとアプリケーションの使用状況データを削除:"
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
@@ -75,7 +77,7 @@ msgstr "データを削除"
 
 #: ../src/TrackPanel.vala:207
 msgid "Your system"
-msgstr ""
+msgstr "あなたのシステム"
 
 #: ../src/TrackPanel.vala:228
 msgid "%s is in Privacy Mode"
@@ -90,13 +92,13 @@ msgstr "プライバシーモードの間、この OS はファイルとアプ�
 #: ../src/TrackPanel.vala:231
 msgid ""
 "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "このデータが提供する追加の機能が影響を受けます。"
 
 #: ../src/TrackPanel.vala:232
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
-msgstr ""
+msgstr "これは、ブラウザの履歴のように、アプリ自身の利用状況データを記録することを防ぐことはできません。"
 
 #: ../src/TrackPanel.vala:280
 msgid "Data Sources:"
@@ -264,7 +266,7 @@ msgstr "画面消去時にロック:"
 #. 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "ファイアウォールの設定を実行するには認証が必要です"
 
 #: ../src/Plug.vala:35
 msgid "Security & Privacy"
@@ -272,7 +274,7 @@ msgstr "セキュリティとプライバシー"
 
 #: ../src/Plug.vala:36
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "ファイアウォール、スクリーンロックとアクティビティ情報を設定します。"
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
@@ -280,11 +282,11 @@ msgstr "一部の設定変更には管理者権限が必要です"
 
 #: ../src/Plug.vala:100
 msgid "Privacy"
-msgstr ""
+msgstr "プライバシー"
 
 #: ../src/Plug.vala:102
 msgid "Locking"
-msgstr "ロック中"
+msgstr "ロック"
 
 #: ../src/Plug.vala:104
 msgid "Firewall"

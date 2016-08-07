@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2016-08-04 18:42+0000\n"
+"PO-Revision-Date: 2016-08-06 18:22+0000\n"
 "Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-05 05:44+0000\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:46+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 "Language: bg\n"
 
@@ -48,6 +48,8 @@ msgstr "Почисти сведенията за дейността..."
 #: ../src/TrackPanel.vala:137
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
+"Премахни събраната от системата информация за използваните файлове и "
+"приложения през:"
 
 #: ../src/TrackPanel.vala:140
 msgid "The past hour"
@@ -282,6 +284,8 @@ msgstr "Сигурност и поверителност"
 #: ../src/Plug.vala:36
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
+"Настройка на защитната стена, заключването на екрана и данните за "
+"активността."
 
 #: ../src/Plug.vala:67
 msgid "Some settings require administrator rights to be changed"
