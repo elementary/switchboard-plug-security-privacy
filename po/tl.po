@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-03-02 23:33-0600\n"
-"PO-Revision-Date: 2016-07-11 20:18+0000\n"
+"PO-Revision-Date: 2016-08-09 20:48+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-07-12 06:44+0000\n"
-"X-Generator: Launchpad (build 18115)\n"
+"X-Launchpad-Export-Date: 2016-08-10 05:42+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
@@ -139,7 +139,7 @@ msgstr "Magdagdag ng Polder..."
 
 #: ../src/TrackPanel.vala:343
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Piliin ang polder na iba-blacklist"
 
 #: ../src/TrackPanel.vala:344
 msgid "Cancel"
@@ -159,7 +159,7 @@ msgstr ""
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Istatus ng Firewall:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
