@@ -25,7 +25,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     private Gtk.RecentManager recent;
     private List<Gtk.RecentInfo> items;
 
-    private Gtk.Popover info_popover;
     private Gtk.Popover remove_popover;
     private Dialogs.AppChooser app_chooser;
     private ApplicationBlacklist app_blacklist;
@@ -87,40 +86,14 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         create_description_panel ();
 
-        var info_button = new Gtk.ToggleButton ();
-        info_button.tooltip_text = _("Read more…");
-        info_button.image = new Gtk.Image.from_icon_name ("help-info-symbolic", Gtk.IconSize.MENU);
-        info_button.relief = Gtk.ReliefStyle.NONE;
-        info_button.notify["active"].connect (() => {
-            if (info_button.active == false) {
-                info_popover.hide ();
-            } else {
-                info_popover.show_all ();
-            }
-        });
+        var info_button = new Gtk.Image.from_icon_name ("help-info-symbolic", Gtk.IconSize.MENU);
+        info_button.tooltip_text = _("This operating system can gather useful statistics about file and app usage to provide extra functionality. If other people can see or access your account, you may wish to limit which items are recorded.");
 
         var record_grid = new Gtk.Grid ();
         record_grid.column_spacing = 12;
         record_grid.add (record_label); 
         record_grid.add (record_switch);
         record_grid.add (info_button);
-
-        /* Info Popover */
-
-        var explain_label = new Gtk.Label (_("This operating system can gather useful statistics about file and app usage to provide extra functionality. If other people can see or access your account, you may wish to limit which items are recorded."));
-        explain_label.wrap = true;
-        explain_label.max_width_chars = 60;
-        
-        var info_popover_grid = new Gtk.Grid ();
-        info_popover_grid.margin = 12;
-
-        info_popover = new Gtk.Popover (info_button);
-        info_popover.add (info_popover_grid);
-        info_popover.closed.connect (() => {
-            info_button.active = false;
-        });
-
-        info_popover_grid.add (explain_label);
 
         /* Remove Popover */
 
