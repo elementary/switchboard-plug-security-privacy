@@ -7,30 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-02 23:33-0600\n"
+"POT-Creation-Date: 2016-09-29 14:23-0700\n"
 "PO-Revision-Date: 2016-08-04 23:05+0000\n"
 "Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-19 05:50+0000\n"
-"X-Generator: Launchpad (build 18176)\n"
+"X-Launchpad-Export-Date: 2016-09-30 06:34+0000\n"
+"X-Generator: Launchpad (build 18204)\n"
 "Language: ru\n"
 
-#: ../src/AppChooser.vala:80
-msgid "Search Application"
-msgstr "Поиск приложений"
-
-#: ../src/TrackPanel.vala:70
+#: ../src/TrackPanel.vala:69
 msgid "Privacy Mode:"
 msgstr "Приватный режим:"
 
-#: ../src/TrackPanel.vala:91
-msgid "Read more…"
-msgstr "Подробнее..."
-
-#: ../src/TrackPanel.vala:110
+#: ../src/TrackPanel.vala:90
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -41,51 +33,51 @@ msgstr ""
 "Если другие люди могут получить доступ к вашей учётной записи, то вы можете "
 "ограничить элементы отслеживания."
 
-#: ../src/TrackPanel.vala:127
+#: ../src/TrackPanel.vala:100
 msgid "Clear Usage Data…"
 msgstr "Очистить сведения об активности…"
 
-#: ../src/TrackPanel.vala:137
+#: ../src/TrackPanel.vala:110
 msgid "Remove system-collected file and application usage data from:"
 msgstr "Удалить полезную статистику о файлах и использованных приложениях:"
 
-#: ../src/TrackPanel.vala:140
+#: ../src/TrackPanel.vala:113
 msgid "The past hour"
 msgstr "За последний час"
 
-#: ../src/TrackPanel.vala:141
+#: ../src/TrackPanel.vala:114
 msgid "The past day"
 msgstr "За последний день"
 
-#: ../src/TrackPanel.vala:142
+#: ../src/TrackPanel.vala:115
 msgid "The past week"
 msgstr "За последнюю неделю"
 
-#: ../src/TrackPanel.vala:143
+#: ../src/TrackPanel.vala:116
 msgid "From:"
 msgstr "Начиная с:"
 
-#: ../src/TrackPanel.vala:144
+#: ../src/TrackPanel.vala:117
 msgid "All time"
 msgstr "За всё время"
 
-#: ../src/TrackPanel.vala:147
+#: ../src/TrackPanel.vala:120
 msgid "To:"
 msgstr "До:"
 
-#: ../src/TrackPanel.vala:150
+#: ../src/TrackPanel.vala:123
 msgid "Clear Data"
 msgstr "Очистить данные"
 
-#: ../src/TrackPanel.vala:207
+#: ../src/TrackPanel.vala:180
 msgid "Your system"
 msgstr "Ваша система"
 
-#: ../src/TrackPanel.vala:228
+#: ../src/TrackPanel.vala:201
 msgid "%s is in Privacy Mode"
 msgstr "Система находится в приватном режиме"
 
-#: ../src/TrackPanel.vala:230
+#: ../src/TrackPanel.vala:203
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
@@ -93,14 +85,14 @@ msgstr ""
 "Находясь в приватном режиме, операционная система не будет собирать "
 "дополнительные данные или статистику об использовании файлов и приложений."
 
-#: ../src/TrackPanel.vala:231
+#: ../src/TrackPanel.vala:204
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
 "Приватный режим повлияет на дополнительную функциональность, которую "
 "обеспечивают эти данные."
 
-#: ../src/TrackPanel.vala:232
+#: ../src/TrackPanel.vala:205
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -108,65 +100,101 @@ msgstr ""
 "Это не помешает приложениям сохранять собственную информацию об "
 "использовании, например историю браузера."
 
-#: ../src/TrackPanel.vala:280
+#: ../src/TrackPanel.vala:253
 msgid "Data Sources:"
 msgstr "Источники информации:"
 
-#: ../src/TrackPanel.vala:289
+#: ../src/TrackPanel.vala:262
 msgid "Chat Logs"
 msgstr "Журналы бесед"
 
-#: ../src/TrackPanel.vala:290
+#: ../src/TrackPanel.vala:263
 msgid "Documents"
 msgstr "Документы"
 
-#: ../src/TrackPanel.vala:291
+#: ../src/TrackPanel.vala:264
 msgid "Music"
 msgstr "Музыка"
 
-#: ../src/TrackPanel.vala:292
+#: ../src/TrackPanel.vala:265
 msgid "Pictures"
 msgstr "Изображения"
 
-#: ../src/TrackPanel.vala:293
+#: ../src/TrackPanel.vala:266
 msgid "Presentations"
 msgstr "Презентации"
 
-#: ../src/TrackPanel.vala:294
+#: ../src/TrackPanel.vala:267
 msgid "Spreadsheets"
 msgstr "Электронные таблицы"
 
-#: ../src/TrackPanel.vala:295
+#: ../src/TrackPanel.vala:268
 msgid "Videos"
 msgstr "Видео"
 
-#: ../src/TrackPanel.vala:326
+#: ../src/TrackPanel.vala:299
 msgid "Add Application…"
 msgstr "Добавить приложение..."
 
-#: ../src/TrackPanel.vala:341
+#: ../src/TrackPanel.vala:314
 msgid "Add Folder…"
 msgstr "Добавить папку..."
 
-#: ../src/TrackPanel.vala:343
+#: ../src/TrackPanel.vala:316
 msgid "Select a folder to blacklist"
 msgstr "Добавить папку в чёрный список"
 
-#: ../src/TrackPanel.vala:344
+#: ../src/TrackPanel.vala:317
 msgid "Cancel"
 msgstr "Отменить"
 
-#: ../src/TrackPanel.vala:344
+#: ../src/TrackPanel.vala:317
 msgid "Add"
 msgstr "Добавить"
 
-#: ../src/TrackPanel.vala:356
+#: ../src/TrackPanel.vala:329
 msgid "Delete"
 msgstr "Удалить"
 
-#: ../src/TrackPanel.vala:391
+#: ../src/TrackPanel.vala:364
 msgid "Do not collect data from the following:"
 msgstr "Не собирать данные следующих приложений:"
+
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr "Поиск приложений"
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Защита и приватность"
+
+#: ../src/Plug.vala:36
+msgid "Configure firewall, screen lock, and activity information"
+msgstr "Настройка фаервола, экрана блокировки и информации об активности"
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr "Для изменения некоторых настроек требуются права администратора"
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr "Файлы и приложения"
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Безопасность"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Брандмауэр"
+
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr "Заблокировать систему при переходе в режим сна:"
+
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr "Заблокировать систему при выключении экрана:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -245,14 +273,6 @@ msgstr "%d или %d-%d"
 msgid "Add Rule"
 msgstr "Добавить правило"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr "Заблокировать систему при переходе в режим сна:"
-
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr "Заблокировать систему при выключении экрана:"
-
 #. //launchpad.net/your-project)
 #. *
 #. * This library is free software; you can redistribute it and/or
@@ -275,27 +295,3 @@ msgstr "Заблокировать систему при выключении э
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Для изменения настроек брандмауэра требуется аутентификация"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Защита и приватность"
-
-#: ../src/Plug.vala:36
-msgid "Configure firewall, screen lock, and activity information"
-msgstr "Настройка фаервола, экрана блокировки и информации об активности"
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr "Для изменения некоторых настроек требуются права администратора"
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr "Файлы и приложения"
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Безопасность"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Брандмауэр"

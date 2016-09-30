@@ -7,30 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-02 23:33-0600\n"
+"POT-Creation-Date: 2016-09-29 14:23-0700\n"
 "PO-Revision-Date: 2014-12-11 07:39+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-19 05:50+0000\n"
-"X-Generator: Launchpad (build 18176)\n"
+"X-Launchpad-Export-Date: 2016-09-30 06:34+0000\n"
+"X-Generator: Launchpad (build 18204)\n"
 "Language: gl\n"
 
-#: ../src/AppChooser.vala:80
-msgid "Search Application"
-msgstr ""
-
-#: ../src/TrackPanel.vala:70
+#: ../src/TrackPanel.vala:69
 msgid "Privacy Mode:"
 msgstr "Modo de intimidade:"
 
-#: ../src/TrackPanel.vala:91
-msgid "Read more…"
-msgstr "Ler máis..."
-
-#: ../src/TrackPanel.vala:110
+#: ../src/TrackPanel.vala:90
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -40,51 +32,51 @@ msgstr ""
 "aplicativos usados a fin de ofrecer funcionalidades extra. Se esta conta for "
 "usada por outras persoas, poderá querer escoller que información é recollida."
 
-#: ../src/TrackPanel.vala:127
+#: ../src/TrackPanel.vala:100
 msgid "Clear Usage Data…"
 msgstr "Eliminar os datos de uso..."
 
-#: ../src/TrackPanel.vala:137
+#: ../src/TrackPanel.vala:110
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:140
+#: ../src/TrackPanel.vala:113
 msgid "The past hour"
 msgstr ""
 
-#: ../src/TrackPanel.vala:141
+#: ../src/TrackPanel.vala:114
 msgid "The past day"
 msgstr ""
 
-#: ../src/TrackPanel.vala:142
+#: ../src/TrackPanel.vala:115
 msgid "The past week"
 msgstr ""
 
-#: ../src/TrackPanel.vala:143
+#: ../src/TrackPanel.vala:116
 msgid "From:"
 msgstr "Desde:"
 
-#: ../src/TrackPanel.vala:144
+#: ../src/TrackPanel.vala:117
 msgid "All time"
 msgstr ""
 
-#: ../src/TrackPanel.vala:147
+#: ../src/TrackPanel.vala:120
 msgid "To:"
 msgstr "Ata:"
 
-#: ../src/TrackPanel.vala:150
+#: ../src/TrackPanel.vala:123
 msgid "Clear Data"
 msgstr "Limpar datos"
 
-#: ../src/TrackPanel.vala:207
+#: ../src/TrackPanel.vala:180
 msgid "Your system"
 msgstr "O seu sistema"
 
-#: ../src/TrackPanel.vala:228
+#: ../src/TrackPanel.vala:201
 msgid "%s is in Privacy Mode"
 msgstr "%s está en modo de intimidade"
 
-#: ../src/TrackPanel.vala:230
+#: ../src/TrackPanel.vala:203
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
@@ -92,13 +84,13 @@ msgstr ""
 "Cando estea en modo de intimidade, o sistema operativo non reterá os datos "
 "ou estatísticas de uso de ficheiros e aplicativos."
 
-#: ../src/TrackPanel.vala:231
+#: ../src/TrackPanel.vala:204
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
 "Calquera funcionalidade adicional baseada nestes datos verase afectada."
 
-#: ../src/TrackPanel.vala:232
+#: ../src/TrackPanel.vala:205
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -106,65 +98,101 @@ msgstr ""
 "Isto non impide que os aplicativos garden os seus propios datos, como o "
 "historial de navegación."
 
-#: ../src/TrackPanel.vala:280
+#: ../src/TrackPanel.vala:253
 msgid "Data Sources:"
 msgstr "Orixes dos datos:"
 
-#: ../src/TrackPanel.vala:289
+#: ../src/TrackPanel.vala:262
 msgid "Chat Logs"
 msgstr "Rexistros de conversas"
 
-#: ../src/TrackPanel.vala:290
+#: ../src/TrackPanel.vala:263
 msgid "Documents"
 msgstr "Documentos"
 
-#: ../src/TrackPanel.vala:291
+#: ../src/TrackPanel.vala:264
 msgid "Music"
 msgstr "Música"
 
-#: ../src/TrackPanel.vala:292
+#: ../src/TrackPanel.vala:265
 msgid "Pictures"
 msgstr "Imaxes"
 
-#: ../src/TrackPanel.vala:293
+#: ../src/TrackPanel.vala:266
 msgid "Presentations"
 msgstr "Presentacións"
 
-#: ../src/TrackPanel.vala:294
+#: ../src/TrackPanel.vala:267
 msgid "Spreadsheets"
 msgstr "Follas de cálculo"
 
-#: ../src/TrackPanel.vala:295
+#: ../src/TrackPanel.vala:268
 msgid "Videos"
 msgstr "Vídeos"
 
-#: ../src/TrackPanel.vala:326
+#: ../src/TrackPanel.vala:299
 msgid "Add Application…"
 msgstr "Engadir aplicativo..."
 
-#: ../src/TrackPanel.vala:341
+#: ../src/TrackPanel.vala:314
 msgid "Add Folder…"
 msgstr "Engadir un cartafol..."
 
-#: ../src/TrackPanel.vala:343
+#: ../src/TrackPanel.vala:316
 msgid "Select a folder to blacklist"
 msgstr "Seleccione un cartafol para engadir á lista negra"
 
-#: ../src/TrackPanel.vala:344
+#: ../src/TrackPanel.vala:317
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../src/TrackPanel.vala:344
+#: ../src/TrackPanel.vala:317
 msgid "Add"
 msgstr "Engadir"
 
-#: ../src/TrackPanel.vala:356
+#: ../src/TrackPanel.vala:329
 msgid "Delete"
 msgstr "Eliminar"
 
-#: ../src/TrackPanel.vala:391
+#: ../src/TrackPanel.vala:364
 msgid "Do not collect data from the following:"
 msgstr "Non recoller datos dos deguintes:"
+
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr ""
+
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Seguranza e intimidade"
+
+#: ../src/Plug.vala:36
+msgid "Configure firewall, screen lock, and activity information"
+msgstr ""
+
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr "Precisanse dereitos de administrador para cambiar algúns axustes"
+
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr "Intimidade"
+
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Bloqueo"
+
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Devasa"
+
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr ""
+
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -243,14 +271,6 @@ msgstr "%d ou %d-%d"
 msgid "Add Rule"
 msgstr "Engadir unha regra"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr ""
-
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr ""
-
 #. //launchpad.net/your-project)
 #. *
 #. * This library is free software; you can redistribute it and/or
@@ -273,27 +293,3 @@ msgstr ""
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Precísase autenticación para configurar a devasa"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Seguranza e intimidade"
-
-#: ../src/Plug.vala:36
-msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr "Precisanse dereitos de administrador para cambiar algúns axustes"
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr "Intimidade"
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Bloqueo"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Devasa"

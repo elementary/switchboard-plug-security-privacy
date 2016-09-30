@@ -7,164 +7,192 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-02 23:33-0600\n"
+"POT-Creation-Date: 2016-09-29 14:23-0700\n"
 "PO-Revision-Date: 2016-03-19 23:18+0000\n"
 "Last-Translator: chilledfrogs <Unknown>\n"
 "Language-Team: English (Canada) <en_CA@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-19 05:50+0000\n"
-"X-Generator: Launchpad (build 18176)\n"
+"X-Launchpad-Export-Date: 2016-09-30 06:34+0000\n"
+"X-Generator: Launchpad (build 18204)\n"
 "Language: \n"
+
+#: ../src/TrackPanel.vala:69
+msgid "Privacy Mode:"
+msgstr "Privacy Mode:"
+
+#: ../src/TrackPanel.vala:90
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+
+#: ../src/TrackPanel.vala:100
+msgid "Clear Usage Data…"
+msgstr "Clear Usage Data…"
+
+#: ../src/TrackPanel.vala:110
+msgid "Remove system-collected file and application usage data from:"
+msgstr "Remove system-collected file and application usage data from:"
+
+#: ../src/TrackPanel.vala:113
+msgid "The past hour"
+msgstr "The past hour"
+
+#: ../src/TrackPanel.vala:114
+msgid "The past day"
+msgstr "The past day"
+
+#: ../src/TrackPanel.vala:115
+msgid "The past week"
+msgstr "The past week"
+
+#: ../src/TrackPanel.vala:116
+msgid "From:"
+msgstr "From:"
+
+#: ../src/TrackPanel.vala:117
+msgid "All time"
+msgstr "All time"
+
+#: ../src/TrackPanel.vala:120
+msgid "To:"
+msgstr "To:"
+
+#: ../src/TrackPanel.vala:123
+msgid "Clear Data"
+msgstr "Clear Data"
+
+#: ../src/TrackPanel.vala:180
+msgid "Your system"
+msgstr "Your system"
+
+#: ../src/TrackPanel.vala:201
+msgid "%s is in Privacy Mode"
+msgstr "%s is in Privacy Mode"
+
+#: ../src/TrackPanel.vala:203
+msgid ""
+"While in Privacy Mode, this operating system won't retain any further data "
+"or statistics about file and application usage."
+msgstr ""
+"While in Privacy Mode, this operating system won't retain any further data "
+"or statistics about file and application usage."
+
+#: ../src/TrackPanel.vala:204
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr ""
+"The additional functionality that this data provides will be affected."
+
+#: ../src/TrackPanel.vala:205
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+
+#: ../src/TrackPanel.vala:253
+msgid "Data Sources:"
+msgstr "Data Sources:"
+
+#: ../src/TrackPanel.vala:262
+msgid "Chat Logs"
+msgstr "Chat Logs"
+
+#: ../src/TrackPanel.vala:263
+msgid "Documents"
+msgstr "Documents"
+
+#: ../src/TrackPanel.vala:264
+msgid "Music"
+msgstr "Music"
+
+#: ../src/TrackPanel.vala:265
+msgid "Pictures"
+msgstr "Pictures"
+
+#: ../src/TrackPanel.vala:266
+msgid "Presentations"
+msgstr "Presentations"
+
+#: ../src/TrackPanel.vala:267
+msgid "Spreadsheets"
+msgstr "Spreadsheets"
+
+#: ../src/TrackPanel.vala:268
+msgid "Videos"
+msgstr "Videos"
+
+#: ../src/TrackPanel.vala:299
+msgid "Add Application…"
+msgstr "Add Application…"
+
+#: ../src/TrackPanel.vala:314
+msgid "Add Folder…"
+msgstr "Add Folder…"
+
+#: ../src/TrackPanel.vala:316
+msgid "Select a folder to blacklist"
+msgstr "Select a folder to blacklist"
+
+#: ../src/TrackPanel.vala:317
+msgid "Cancel"
+msgstr "Cancel"
+
+#: ../src/TrackPanel.vala:317
+msgid "Add"
+msgstr "Add"
+
+#: ../src/TrackPanel.vala:329
+msgid "Delete"
+msgstr "Delete"
+
+#: ../src/TrackPanel.vala:364
+msgid "Do not collect data from the following:"
+msgstr "Do not collect data from the following:"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
 msgstr "Search Application"
 
-#: ../src/TrackPanel.vala:70
-msgid "Privacy Mode:"
-msgstr "Privacy Mode:"
+#: ../src/Plug.vala:35
+msgid "Security & Privacy"
+msgstr "Security & Privacy"
 
-#: ../src/TrackPanel.vala:91
-msgid "Read more…"
-msgstr "Read more…"
+#: ../src/Plug.vala:36
+msgid "Configure firewall, screen lock, and activity information"
+msgstr "Configure firewall, screen lock, and activity information"
 
-#: ../src/TrackPanel.vala:110
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
+#: ../src/Plug.vala:67
+msgid "Some settings require administrator rights to be changed"
+msgstr "Some settings require administrator rights to be changed"
 
-#: ../src/TrackPanel.vala:127
-msgid "Clear Usage Data…"
-msgstr "Clear Usage Data…"
+#: ../src/Plug.vala:100
+msgid "Privacy"
+msgstr "Privacy"
 
-#: ../src/TrackPanel.vala:137
-msgid "Remove system-collected file and application usage data from:"
-msgstr "Remove system-collected file and application usage data from:"
+#: ../src/Plug.vala:102
+msgid "Locking"
+msgstr "Locking"
 
-#: ../src/TrackPanel.vala:140
-msgid "The past hour"
-msgstr "The past hour"
+#: ../src/Plug.vala:104
+msgid "Firewall"
+msgstr "Firewall"
 
-#: ../src/TrackPanel.vala:141
-msgid "The past day"
-msgstr "The past day"
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr "Lock on sleep:"
 
-#: ../src/TrackPanel.vala:142
-msgid "The past week"
-msgstr "The past week"
-
-#: ../src/TrackPanel.vala:143
-msgid "From:"
-msgstr "From:"
-
-#: ../src/TrackPanel.vala:144
-msgid "All time"
-msgstr "All time"
-
-#: ../src/TrackPanel.vala:147
-msgid "To:"
-msgstr "To:"
-
-#: ../src/TrackPanel.vala:150
-msgid "Clear Data"
-msgstr "Clear Data"
-
-#: ../src/TrackPanel.vala:207
-msgid "Your system"
-msgstr "Your system"
-
-#: ../src/TrackPanel.vala:228
-msgid "%s is in Privacy Mode"
-msgstr "%s is in Privacy Mode"
-
-#: ../src/TrackPanel.vala:230
-msgid ""
-"While in Privacy Mode, this operating system won't retain any further data "
-"or statistics about file and application usage."
-msgstr ""
-"While in Privacy Mode, this operating system won't retain any further data "
-"or statistics about file and application usage."
-
-#: ../src/TrackPanel.vala:231
-msgid ""
-"The additional functionality that this data provides will be affected."
-msgstr ""
-"The additional functionality that this data provides will be affected."
-
-#: ../src/TrackPanel.vala:232
-msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
-msgstr ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
-
-#: ../src/TrackPanel.vala:280
-msgid "Data Sources:"
-msgstr "Data Sources:"
-
-#: ../src/TrackPanel.vala:289
-msgid "Chat Logs"
-msgstr "Chat Logs"
-
-#: ../src/TrackPanel.vala:290
-msgid "Documents"
-msgstr "Documents"
-
-#: ../src/TrackPanel.vala:291
-msgid "Music"
-msgstr "Music"
-
-#: ../src/TrackPanel.vala:292
-msgid "Pictures"
-msgstr "Pictures"
-
-#: ../src/TrackPanel.vala:293
-msgid "Presentations"
-msgstr "Presentations"
-
-#: ../src/TrackPanel.vala:294
-msgid "Spreadsheets"
-msgstr "Spreadsheets"
-
-#: ../src/TrackPanel.vala:295
-msgid "Videos"
-msgstr "Videos"
-
-#: ../src/TrackPanel.vala:326
-msgid "Add Application…"
-msgstr "Add Application…"
-
-#: ../src/TrackPanel.vala:341
-msgid "Add Folder…"
-msgstr "Add Folder…"
-
-#: ../src/TrackPanel.vala:343
-msgid "Select a folder to blacklist"
-msgstr "Select a folder to blacklist"
-
-#: ../src/TrackPanel.vala:344
-msgid "Cancel"
-msgstr "Cancel"
-
-#: ../src/TrackPanel.vala:344
-msgid "Add"
-msgstr "Add"
-
-#: ../src/TrackPanel.vala:356
-msgid "Delete"
-msgstr "Delete"
-
-#: ../src/TrackPanel.vala:391
-msgid "Do not collect data from the following:"
-msgstr "Do not collect data from the following:"
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr "Lock after screen turns off:"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -243,14 +271,6 @@ msgstr "%d or %d-%d"
 msgid "Add Rule"
 msgstr "Add Rule"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr "Lock on sleep:"
-
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr "Lock after screen turns off:"
-
 #. //launchpad.net/your-project)
 #. *
 #. * This library is free software; you can redistribute it and/or
@@ -273,27 +293,3 @@ msgstr "Lock after screen turns off:"
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Authentication is required to run the Firewall Configuration"
-
-#: ../src/Plug.vala:35
-msgid "Security & Privacy"
-msgstr "Security & Privacy"
-
-#: ../src/Plug.vala:36
-msgid "Configure firewall, screen lock, and activity information"
-msgstr "Configure firewall, screen lock, and activity information"
-
-#: ../src/Plug.vala:67
-msgid "Some settings require administrator rights to be changed"
-msgstr "Some settings require administrator rights to be changed"
-
-#: ../src/Plug.vala:100
-msgid "Privacy"
-msgstr "Privacy"
-
-#: ../src/Plug.vala:102
-msgid "Locking"
-msgstr "Locking"
-
-#: ../src/Plug.vala:104
-msgid "Firewall"
-msgstr "Firewall"
