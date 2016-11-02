@@ -28,13 +28,19 @@ namespace SecurityPrivacy {
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
         Gtk.Stack stack;
+        TrackPanel tracking;
 
         public Plug () {
             Object (category: Category.PERSONAL,
                     code_name: Build.PLUGCODENAME,
                     display_name: _("Security & Privacy"),
                     description: _("Configure firewall, screen lock, and activity information"),
-                    icon: "preferences-system-privacy");
+                    icon: "preferences-system-privacy",
+                    supported_settings: new Gee.TreeMap<string, string?> (null, null));
+            supported_settings.set ("security", null);
+            supported_settings.set ("security/privacy", "tracking");
+            supported_settings.set ("security/firewall", "firewall");
+            supported_settings.set ("security/screensaver", "locking");
             plug = this;
         }
 
@@ -96,7 +102,7 @@ namespace SecurityPrivacy {
             stack_switcher.halign = Gtk.Align.CENTER;
             stack_switcher.margin = 12;
 
-            var tracking = new TrackPanel ();
+            tracking = new TrackPanel ();
             stack.add_titled (tracking, "tracking", _("Privacy"));
             var locking = new LockPanel ();
             stack.add_titled (locking, "locking", _("Locking"));
@@ -113,12 +119,34 @@ namespace SecurityPrivacy {
         }
 
         public override void search_callback (string location) {
-            
+            if (main_grid.get_children ().length () == 0)
+                shown ();
+
+            switch (location) {
+                case "privacy":
+                    stack.set_visible_child_name ("tracking");
+                    break;
+                case "locking":
+                    stack.set_visible_child_name ("locking");
+                    break;
+                case "locking<sep>privacy-mode":
+                    stack.set_visible_child_name ("locking");
+                    tracking.focus_privacy_switch ();
+                    break;
+                case "firewall":
+                    stack.set_visible_child_name ("firewall");
+                    break;
+            }
         }
 
         // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
         public override async Gee.TreeMap<string, string> search (string search) {
-            return new Gee.TreeMap<string, string> (null, null);
+            var map = new Gee.TreeMap<string, string> (null, null);
+            map.set ("%s → %s".printf (display_name, _("Privacy")), "privacy");
+            map.set ("%s → %s".printf (display_name, _("Locking")), "locking");
+            map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Privacy Mode")), "locking<sep>privacy-mode");
+            map.set ("%s → %s".printf (display_name, _("Firewall")), "firewall");
+            return map;
         }
     }
 }

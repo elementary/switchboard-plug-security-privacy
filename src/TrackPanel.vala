@@ -41,6 +41,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     private Gtk.RadioButton past_hour_radio;
     private Gtk.RadioButton past_day_radio;
     private Gtk.RadioButton past_week_radio;
+    private Gtk.Switch record_switch;
 
     private enum Columns {
         ACTIVE,
@@ -69,7 +70,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         var record_label = new Gtk.Label (_("Privacy Mode:"));
         record_label.get_style_context ().add_class ("h4");
 
-        var record_switch = new Gtk.Switch ();
+        record_switch = new Gtk.Switch ();
         record_switch.valign = Gtk.Align.CENTER;
 
         record_switch.notify["active"].connect (() => {
@@ -160,6 +161,10 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         attach (clear_data, 1, 1, 1, 1);
 
         record_switch.active = blacklist.get_incognito ();
+    }
+    
+    public void focus_privacy_switch () {
+        record_switch.grab_focus ();
     }
 
     private async void delete_history (Zeitgeist.TimeRange tr) {
