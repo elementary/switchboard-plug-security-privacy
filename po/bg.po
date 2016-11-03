@@ -7,22 +7,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-29 14:23-0700\n"
+"POT-Creation-Date: 2016-11-02 01:52+0100\n"
 "PO-Revision-Date: 2016-08-06 18:22+0000\n"
 "Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-09-30 06:34+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
+"X-Launchpad-Export-Date: 2016-11-03 06:22+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
 "Language: bg\n"
 
-#: ../src/TrackPanel.vala:69
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr "Заключи при заспиване:"
+
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr "Заключи след изключване на екрана:"
+
+#: ../src/TrackPanel.vala:70
 msgid "Privacy Mode:"
 msgstr "Режим усамотение:"
 
-#: ../src/TrackPanel.vala:90
+#: ../src/TrackPanel.vala:91
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -33,53 +41,53 @@ msgstr ""
 "други хора могат да преглеждат потребителския Ви профил или имат достъп до "
 "него, може би бихте предпочели да ограничите кои части са достъпни."
 
-#: ../src/TrackPanel.vala:100
+#: ../src/TrackPanel.vala:101
 msgid "Clear Usage Data…"
 msgstr "Почисти сведенията за дейността..."
 
-#: ../src/TrackPanel.vala:110
+#: ../src/TrackPanel.vala:111
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
 "Премахни събраната от системата информация за използваните файлове и "
 "приложения през:"
 
-#: ../src/TrackPanel.vala:113
+#: ../src/TrackPanel.vala:114
 msgid "The past hour"
 msgstr "През последния час"
 
-#: ../src/TrackPanel.vala:114
+#: ../src/TrackPanel.vala:115
 msgid "The past day"
 msgstr "За последния ден"
 
-#: ../src/TrackPanel.vala:115
+#: ../src/TrackPanel.vala:116
 msgid "The past week"
 msgstr "За последната седмица"
 
-#: ../src/TrackPanel.vala:116
+#: ../src/TrackPanel.vala:117
 msgid "From:"
 msgstr "От:"
 
-#: ../src/TrackPanel.vala:117
+#: ../src/TrackPanel.vala:118
 msgid "All time"
 msgstr "За всички времена"
 
-#: ../src/TrackPanel.vala:120
+#: ../src/TrackPanel.vala:121
 msgid "To:"
 msgstr "До:"
 
-#: ../src/TrackPanel.vala:123
+#: ../src/TrackPanel.vala:124
 msgid "Clear Data"
 msgstr "Изчисти Данните"
 
-#: ../src/TrackPanel.vala:180
+#: ../src/TrackPanel.vala:185
 msgid "Your system"
 msgstr "Вашата система"
 
-#: ../src/TrackPanel.vala:201
+#: ../src/TrackPanel.vala:206
 msgid "%s is in Privacy Mode"
 msgstr "%s е в Режим Усамотеност"
 
-#: ../src/TrackPanel.vala:203
+#: ../src/TrackPanel.vala:208
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
@@ -87,13 +95,13 @@ msgstr ""
 "Докато сте в Режим Усамотеност, тази операционна система няма да запомня още "
 "данни за файловете и ползването на приложенията."
 
-#: ../src/TrackPanel.vala:204
+#: ../src/TrackPanel.vala:209
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
 "Допълнителната ползваемост, която тази програма доставя няма да е засегната."
 
-#: ../src/TrackPanel.vala:205
+#: ../src/TrackPanel.vala:210
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -101,103 +109,118 @@ msgstr ""
 "Това няма да спре приложенията да събират собствените си данни за "
 "ползваемост, кото например мрежовата ви история."
 
-#: ../src/TrackPanel.vala:253
+#: ../src/TrackPanel.vala:258
 msgid "Data Sources:"
 msgstr "Източници на данни:"
 
-#: ../src/TrackPanel.vala:262
+#: ../src/TrackPanel.vala:267
 msgid "Chat Logs"
 msgstr "История на мигновените съобщения"
 
-#: ../src/TrackPanel.vala:263
+#: ../src/TrackPanel.vala:268
 msgid "Documents"
 msgstr "Документи"
 
-#: ../src/TrackPanel.vala:264
+#: ../src/TrackPanel.vala:269
 msgid "Music"
 msgstr "Музика"
 
-#: ../src/TrackPanel.vala:265
+#: ../src/TrackPanel.vala:270
 msgid "Pictures"
 msgstr "Снимки"
 
-#: ../src/TrackPanel.vala:266
+#: ../src/TrackPanel.vala:271
 msgid "Presentations"
 msgstr "Представления"
 
-#: ../src/TrackPanel.vala:267
+#: ../src/TrackPanel.vala:272
 msgid "Spreadsheets"
 msgstr "Електронни таблици"
 
-#: ../src/TrackPanel.vala:268
+#: ../src/TrackPanel.vala:273
 msgid "Videos"
 msgstr "Видеа"
 
-#: ../src/TrackPanel.vala:299
+#: ../src/TrackPanel.vala:304
 msgid "Add Application…"
 msgstr "Добави приложение..."
 
-#: ../src/TrackPanel.vala:314
+#: ../src/TrackPanel.vala:319
 msgid "Add Folder…"
 msgstr "Добави папка..."
 
-#: ../src/TrackPanel.vala:316
+#: ../src/TrackPanel.vala:321
 msgid "Select a folder to blacklist"
 msgstr "Добави папка към черния списък"
 
-#: ../src/TrackPanel.vala:317
+#: ../src/TrackPanel.vala:322
 msgid "Cancel"
 msgstr "Отказ"
 
-#: ../src/TrackPanel.vala:317
+#: ../src/TrackPanel.vala:322
 msgid "Add"
 msgstr "Добави"
 
-#: ../src/TrackPanel.vala:329
+#: ../src/TrackPanel.vala:334
 msgid "Delete"
 msgstr "Изтрий"
 
-#: ../src/TrackPanel.vala:364
+#: ../src/TrackPanel.vala:369
 msgid "Do not collect data from the following:"
 msgstr "Не събирай данни от следното:"
 
-#: ../src/AppChooser.vala:80
-msgid "Search Application"
-msgstr "Търси за аплликация"
+#. //launchpad.net/your-project)
+#. *
+#. * This library is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU Library General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This library is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * Library General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU Library General Public
+#. * License along with this library; if not, write to the
+#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+#. * Boston, MA 02111-1307, USA.
+#. *
+#. * Authored by: Corentin Noël <tintou@mailoo.org>
+#. 
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Удостоверение е нужно за да се пусне настройката на Пожарната Стена"
 
-#: ../src/Plug.vala:35
+#: ../src/Plug.vala:36
 msgid "Security & Privacy"
 msgstr "Сигурност и поверителност"
 
-#: ../src/Plug.vala:36
+#: ../src/Plug.vala:37
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 "Настройка на защитната стена, заключването на екрана и данните за "
 "активността."
 
-#: ../src/Plug.vala:67
+#: ../src/Plug.vala:73
 msgid "Some settings require administrator rights to be changed"
 msgstr "Някои настройки изискват ръководни правомощия, за да бъдат променени"
 
-#: ../src/Plug.vala:100
+#: ../src/Plug.vala:106 ../src/Plug.vala:145
 msgid "Privacy"
 msgstr "Поверителност"
 
-#: ../src/Plug.vala:102
+#: ../src/Plug.vala:108 ../src/Plug.vala:146 ../src/Plug.vala:147
 msgid "Locking"
 msgstr "Заключване"
 
-#: ../src/Plug.vala:104
+#: ../src/Plug.vala:110 ../src/Plug.vala:148
 msgid "Firewall"
 msgstr "Защитна стена"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr "Заключи при заспиване:"
-
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr "Заключи след изключване на екрана:"
+#: ../src/Plug.vala:147
+msgid "Privacy Mode"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -276,25 +299,6 @@ msgstr "%d или %d-%d"
 msgid "Add Rule"
 msgstr "Добави правило"
 
-#. //launchpad.net/your-project)
-#. *
-#. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Library General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This library is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Library General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU Library General Public
-#. * License along with this library; if not, write to the
-#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-#. * Boston, MA 02111-1307, USA.
-#. *
-#. * Authored by: Corentin Noël <tintou@mailoo.org>
-#. 
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Удостоверение е нужно за да се пусне настройката на Пожарната Стена"
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr "Търси за аплликация"

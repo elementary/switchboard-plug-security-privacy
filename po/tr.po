@@ -7,22 +7,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-29 14:23-0700\n"
+"POT-Creation-Date: 2016-11-02 01:52+0100\n"
 "PO-Revision-Date: 2016-04-09 13:09+0000\n"
 "Last-Translator: Melih Güçlü <melihguclu@hotmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-09-30 06:34+0000\n"
-"X-Generator: Launchpad (build 18204)\n"
+"X-Launchpad-Export-Date: 2016-11-03 06:22+0000\n"
+"X-Generator: Launchpad (build 18246)\n"
 "Language: tr\n"
 
-#: ../src/TrackPanel.vala:69
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr "Uykuda kilitle:"
+
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr "Ekran kapandıktan sonra kilitle:"
+
+#: ../src/TrackPanel.vala:70
 msgid "Privacy Mode:"
 msgstr "Gizlilik Kipi:"
 
-#: ../src/TrackPanel.vala:90
+#: ../src/TrackPanel.vala:91
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -33,52 +41,52 @@ msgstr ""
 "veya hesabınıza erişebilen başka biri varsa, hangi ögelerin kaydedileceği "
 "konusunda sınırlama koyabilirsiniz."
 
-#: ../src/TrackPanel.vala:100
+#: ../src/TrackPanel.vala:101
 msgid "Clear Usage Data…"
 msgstr "Kullanım Verisini Sil..."
 
-#: ../src/TrackPanel.vala:110
+#: ../src/TrackPanel.vala:111
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
 "Şuradan; sistem tarafından toplanan dosya ve uygulama kullanım bilgisini sil:"
 
-#: ../src/TrackPanel.vala:113
+#: ../src/TrackPanel.vala:114
 msgid "The past hour"
 msgstr "Geçen saat"
 
-#: ../src/TrackPanel.vala:114
+#: ../src/TrackPanel.vala:115
 msgid "The past day"
 msgstr "Geçen gün"
 
-#: ../src/TrackPanel.vala:115
+#: ../src/TrackPanel.vala:116
 msgid "The past week"
 msgstr "Geçen hafta"
 
-#: ../src/TrackPanel.vala:116
+#: ../src/TrackPanel.vala:117
 msgid "From:"
 msgstr "Başlangıç:"
 
-#: ../src/TrackPanel.vala:117
+#: ../src/TrackPanel.vala:118
 msgid "All time"
 msgstr "Tüm zamanlar"
 
-#: ../src/TrackPanel.vala:120
+#: ../src/TrackPanel.vala:121
 msgid "To:"
 msgstr "Bitiş:"
 
-#: ../src/TrackPanel.vala:123
+#: ../src/TrackPanel.vala:124
 msgid "Clear Data"
 msgstr "Veriyi temizle"
 
-#: ../src/TrackPanel.vala:180
+#: ../src/TrackPanel.vala:185
 msgid "Your system"
 msgstr "Sisteminiz"
 
-#: ../src/TrackPanel.vala:201
+#: ../src/TrackPanel.vala:206
 msgid "%s is in Privacy Mode"
 msgstr "%s Gizlilik Modunda"
 
-#: ../src/TrackPanel.vala:203
+#: ../src/TrackPanel.vala:208
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
@@ -86,12 +94,12 @@ msgstr ""
 "Gizlilik Modunda iken, bu işletim sistemi dosya ve uygulama kullanımı "
 "hakkında herhangi bir veri veya istatistik tutmaz."
 
-#: ../src/TrackPanel.vala:204
+#: ../src/TrackPanel.vala:209
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr "Bu veriyi sağlayan ek işlevsellik etkilenecektir."
 
-#: ../src/TrackPanel.vala:205
+#: ../src/TrackPanel.vala:210
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -99,101 +107,117 @@ msgstr ""
 "Bu uygulamaların tarayıcı geçmişi gibi kendi kullanım verilerini "
 "kaydetmesine engel olmaz."
 
-#: ../src/TrackPanel.vala:253
+#: ../src/TrackPanel.vala:258
 msgid "Data Sources:"
 msgstr "Veri Kaynakları:"
 
-#: ../src/TrackPanel.vala:262
+#: ../src/TrackPanel.vala:267
 msgid "Chat Logs"
 msgstr "Sohbet Kayıtları"
 
-#: ../src/TrackPanel.vala:263
+#: ../src/TrackPanel.vala:268
 msgid "Documents"
 msgstr "Belgeler"
 
-#: ../src/TrackPanel.vala:264
+#: ../src/TrackPanel.vala:269
 msgid "Music"
 msgstr "Müzik"
 
-#: ../src/TrackPanel.vala:265
+#: ../src/TrackPanel.vala:270
 msgid "Pictures"
 msgstr "Resimler"
 
-#: ../src/TrackPanel.vala:266
+#: ../src/TrackPanel.vala:271
 msgid "Presentations"
 msgstr "Sunumlar"
 
-#: ../src/TrackPanel.vala:267
+#: ../src/TrackPanel.vala:272
 msgid "Spreadsheets"
 msgstr "Hesap Tabloları"
 
-#: ../src/TrackPanel.vala:268
+#: ../src/TrackPanel.vala:273
 msgid "Videos"
 msgstr "Videolar"
 
-#: ../src/TrackPanel.vala:299
+#: ../src/TrackPanel.vala:304
 msgid "Add Application…"
 msgstr "Uygulama Ekle..."
 
-#: ../src/TrackPanel.vala:314
+#: ../src/TrackPanel.vala:319
 msgid "Add Folder…"
 msgstr "Dizin Ekle…"
 
-#: ../src/TrackPanel.vala:316
+#: ../src/TrackPanel.vala:321
 msgid "Select a folder to blacklist"
 msgstr "Engellenecek dizini seçin"
 
-#: ../src/TrackPanel.vala:317
+#: ../src/TrackPanel.vala:322
 msgid "Cancel"
 msgstr "İptal"
 
-#: ../src/TrackPanel.vala:317
+#: ../src/TrackPanel.vala:322
 msgid "Add"
 msgstr "Ekle"
 
-#: ../src/TrackPanel.vala:329
+#: ../src/TrackPanel.vala:334
 msgid "Delete"
 msgstr "Sil"
 
-#: ../src/TrackPanel.vala:364
+#: ../src/TrackPanel.vala:369
 msgid "Do not collect data from the following:"
 msgstr "Aşagidakilerden veri toplama:"
 
-#: ../src/AppChooser.vala:80
-msgid "Search Application"
-msgstr "Arama Uygulaması"
+#. //launchpad.net/your-project)
+#. *
+#. * This library is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU Library General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This library is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * Library General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU Library General Public
+#. * License along with this library; if not, write to the
+#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+#. * Boston, MA 02111-1307, USA.
+#. *
+#. * Authored by: Corentin Noël <tintou@mailoo.org>
+#. 
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr ""
+"Güvenlik duvarı konfigürasyonunu çalıştırmak için kimlik doğrulama gerekli"
 
-#: ../src/Plug.vala:35
+#: ../src/Plug.vala:36
 msgid "Security & Privacy"
 msgstr "Güvenlik & Gizlilik"
 
-#: ../src/Plug.vala:36
+#: ../src/Plug.vala:37
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Güvenlik duvarı, ekran kilidi ve aktivite bilgisini düzenle"
 
-#: ../src/Plug.vala:67
+#: ../src/Plug.vala:73
 msgid "Some settings require administrator rights to be changed"
 msgstr "Bazı ayarlar değiştirilmek için yönetici hakları gerektiriyor."
 
-#: ../src/Plug.vala:100
+#: ../src/Plug.vala:106 ../src/Plug.vala:145
 msgid "Privacy"
 msgstr "Gizlilik"
 
-#: ../src/Plug.vala:102
+#: ../src/Plug.vala:108 ../src/Plug.vala:146 ../src/Plug.vala:147
 msgid "Locking"
 msgstr "Kilit"
 
-#: ../src/Plug.vala:104
+#: ../src/Plug.vala:110 ../src/Plug.vala:148
 msgid "Firewall"
 msgstr "Güvenlik Duvarı"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr "Uykuda kilitle:"
-
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr "Ekran kapandıktan sonra kilitle:"
+#: ../src/Plug.vala:147
+msgid "Privacy Mode"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
@@ -272,26 +296,6 @@ msgstr "%d veya %d-%d"
 msgid "Add Rule"
 msgstr "Kural Ekle"
 
-#. //launchpad.net/your-project)
-#. *
-#. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Library General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This library is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Library General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU Library General Public
-#. * License along with this library; if not, write to the
-#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-#. * Boston, MA 02111-1307, USA.
-#. *
-#. * Authored by: Corentin Noël <tintou@mailoo.org>
-#. 
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
-"Güvenlik duvarı konfigürasyonunu çalıştırmak için kimlik doğrulama gerekli"
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr "Arama Uygulaması"
