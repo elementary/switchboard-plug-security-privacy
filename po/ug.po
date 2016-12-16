@@ -1,0 +1,301 @@
+# Uyghur translation for switchboard-plug-security-privacy
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
+# This file is distributed under the same license as the switchboard-plug-security-privacy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: switchboard-plug-security-privacy\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2016-11-02 01:52+0100\n"
+"PO-Revision-Date: 2016-12-15 17:51+0000\n"
+"Last-Translator: ablimet <Unknown>\n"
+"Language-Team: Uyghur <ug@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2016-12-16 05:55+0000\n"
+"X-Generator: Launchpad (build 18293)\n"
+"Language: ug\n"
+
+#: ../src/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr "ئۇخلاش ھالىتىگە كىرگەندە قۇلۇپلاش:"
+
+#: ../src/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr "ئىكران ئۆچكەندىن كىيىن قۇلۇپلاش:"
+
+#: ../src/TrackPanel.vala:70
+msgid "Privacy Mode:"
+msgstr "شەخسىي ھالەت:"
+
+#: ../src/TrackPanel.vala:91
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"بەزى ئىقتىدارلار ئۈچۈن بۇ مەشغۇلات سىستىمىسى ھۆججەت ۋە ئەپلەرنىڭ "
+"ئىشلىتىلىشىگە ئائىت بەزى ئۇچۇرلارنى يىغىدۇ.ئەگەر باشقا كىشىلەرمۇ كۆرەلىسە "
+"ياكى ھىساۋاتىڭىزنى زىيارەت قىلالىسا، ئۇ ھالدا خاتىرىلەنگەن مەزمۇنغا بەزى "
+"چەكلىمىلەرنى قويۇشىڭىزنى تەۋسىيە قىلىمىز."
+
+#: ../src/TrackPanel.vala:101
+msgid "Clear Usage Data…"
+msgstr "ئىشلىتىش ئۇچۇرلىرىنى ئۆچۈرۈش...."
+
+#: ../src/TrackPanel.vala:111
+msgid "Remove system-collected file and application usage data from:"
+msgstr ""
+"سىستىما يىغقان ھۆججەت ۋە ئەپلەرنىڭ ئىشلىتىلىشىگە دائىر ئۇچۇرلارنى ئۆچۈرۈش:"
+
+#: ../src/TrackPanel.vala:114
+msgid "The past hour"
+msgstr "ئالدىنقى بىر سائەت"
+
+#: ../src/TrackPanel.vala:115
+msgid "The past day"
+msgstr "ئالدىنقى بىركۈن"
+
+#: ../src/TrackPanel.vala:116
+msgid "The past week"
+msgstr "ئالدىنقى بىر ھەپتە"
+
+#: ../src/TrackPanel.vala:117
+msgid "From:"
+msgstr "باشلىنىش چىسلاسى:"
+
+#: ../src/TrackPanel.vala:118
+msgid "All time"
+msgstr "بارلىق مەزمۇنلار"
+
+#: ../src/TrackPanel.vala:121
+msgid "To:"
+msgstr "ئاخىرلىشىش چىسلاسى:"
+
+#: ../src/TrackPanel.vala:124
+msgid "Clear Data"
+msgstr "ئۇچۇرلارنى ئۆچۈرۈش"
+
+#: ../src/TrackPanel.vala:185
+msgid "Your system"
+msgstr "سىستىمىڭىز"
+
+#: ../src/TrackPanel.vala:206
+msgid "%s is in Privacy Mode"
+msgstr "%s شەخسىي ھالەتتە تۇرۇۋاتىدۇ"
+
+#: ../src/TrackPanel.vala:208
+msgid ""
+"While in Privacy Mode, this operating system won't retain any further data "
+"or statistics about file and application usage."
+msgstr ""
+"شەخسىي ھالەتتە، بۇ مەشغۇلات سىستىمىسى ھۆججەتلەر ۋە ئەپلەرنىڭ ئىشلىتىلىشىگە "
+"دائىر ئوشۇقچە ئۇچۇرلارنى يىغمايدۇ."
+
+#: ../src/TrackPanel.vala:209
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr "بۇ ئۇچۇرلارنى ئىشلىتىدىغان ئىقتىدارلار تەسىرگە ئۇچرايدۇ."
+
+#: ../src/TrackPanel.vala:210
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr ""
+"بۇ توركۆرگۈچ تارىخىغا ئوخشاش ئەپلەرنىڭ ئۆزىنىڭ ئىشلىتىلىشىگە ئوخشاش "
+"ئۇچۇرلارنى يىغىشىغا تەسىر يەتكۈزمەيدۇ."
+
+#: ../src/TrackPanel.vala:258
+msgid "Data Sources:"
+msgstr "ئۇچۇر مەنبەسى:"
+
+#: ../src/TrackPanel.vala:267
+msgid "Chat Logs"
+msgstr "پاراڭلىشىش خاتىرىسى:"
+
+#: ../src/TrackPanel.vala:268
+msgid "Documents"
+msgstr "يازما ھۆججەتلەر"
+
+#: ../src/TrackPanel.vala:269
+msgid "Music"
+msgstr "مۇزىكىلار"
+
+#: ../src/TrackPanel.vala:270
+msgid "Pictures"
+msgstr "رەسىملەر"
+
+#: ../src/TrackPanel.vala:271
+msgid "Presentations"
+msgstr "كۆرسىتىش ھۆججەتلىرى"
+
+#: ../src/TrackPanel.vala:272
+msgid "Spreadsheets"
+msgstr "جەدىۋەللەر"
+
+#: ../src/TrackPanel.vala:273
+msgid "Videos"
+msgstr "ۋېدىئولار"
+
+#: ../src/TrackPanel.vala:304
+msgid "Add Application…"
+msgstr "ئەپ قىتىش...."
+
+#: ../src/TrackPanel.vala:319
+msgid "Add Folder…"
+msgstr "مۇندەرىجە قىتىش...."
+
+#: ../src/TrackPanel.vala:321
+msgid "Select a folder to blacklist"
+msgstr "قارا تىزىملىككە كىرگۈزىدىغان مۇندەرىجىنى تاللاڭ"
+
+#: ../src/TrackPanel.vala:322
+msgid "Cancel"
+msgstr "ئەمەلدىن قالدۇرۇش"
+
+#: ../src/TrackPanel.vala:322
+msgid "Add"
+msgstr "قىتىش"
+
+#: ../src/TrackPanel.vala:334
+msgid "Delete"
+msgstr "ئۆچۈرۈش"
+
+#: ../src/TrackPanel.vala:369
+msgid "Do not collect data from the following:"
+msgstr "تۆۋەندىكى تۈرلەردىن ئۇچۇر يىغماسلىق:"
+
+#. //launchpad.net/your-project)
+#. *
+#. * This library is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU Library General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This library is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * Library General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU Library General Public
+#. * License along with this library; if not, write to the
+#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+#. * Boston, MA 02111-1307, USA.
+#. *
+#. * Authored by: Corentin Noël <tintou@mailoo.org>
+#. 
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "قوغداش تېمىنى تەڭشەش ئۈچۈن سالاھىيەت دەلىللەش زۆرۈر"
+
+#: ../src/Plug.vala:36
+msgid "Security & Privacy"
+msgstr "بىخەتەرلىك ۋە مەخپىيەتلىك"
+
+#: ../src/Plug.vala:37
+msgid "Configure firewall, screen lock, and activity information"
+msgstr "قوغداش تېمى تەڭشىكى، ئىكران قۇلۇپى ۋە ئىشلىتىش خاتىرىسى"
+
+#: ../src/Plug.vala:73
+msgid "Some settings require administrator rights to be changed"
+msgstr ""
+"بەزى تەڭشەكلەرنى باشقۇرغۇچىلىق سالاھىيىتى بولغاندىلا ئۆزگەرتكىلى بولىدۇ"
+
+#: ../src/Plug.vala:106 ../src/Plug.vala:145
+msgid "Privacy"
+msgstr "مەخپىيەتلىك"
+
+#: ../src/Plug.vala:108 ../src/Plug.vala:146 ../src/Plug.vala:147
+msgid "Locking"
+msgstr "قۇلۇپلاش"
+
+#: ../src/Plug.vala:110 ../src/Plug.vala:148
+msgid "Firewall"
+msgstr "قوغداش تېمى"
+
+#: ../src/Plug.vala:147
+msgid "Privacy Mode"
+msgstr "شەخسىي ھالەت"
+
+#: ../src/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr "قوغداش تېمى ھالىتى:"
+
+#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
+#: ../src/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr "نامەلۇم"
+
+#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
+msgid "Allow"
+msgstr "يول قويۇش"
+
+#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
+msgid "Deny"
+msgstr "چەكلەش"
+
+#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
+msgid "Reject"
+msgstr "رەت قىلىش"
+
+#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
+msgid "Limit"
+msgstr "چەك قويۇش"
+
+#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
+msgid "In"
+msgstr "ئۇچۇرنى كىرگۈزۈش"
+
+#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
+msgid "Out"
+msgstr "ئۇچۇرنى چىقىرىش"
+
+#: ../src/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/FirewallPanel.vala:139
+msgid "Action"
+msgstr "ھەركەت"
+
+#: ../src/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr "كىلىشىم"
+
+#: ../src/FirewallPanel.vala:141
+msgid "Direction"
+msgstr "يۆنىلىش"
+
+#: ../src/FirewallPanel.vala:142
+msgid "Ports"
+msgstr "پورتلار"
+
+#: ../src/FirewallPanel.vala:159
+msgid "Action:"
+msgstr "ھەركەت:"
+
+#: ../src/FirewallPanel.vala:168
+msgid "Protocol:"
+msgstr "كىلىشىم:"
+
+#: ../src/FirewallPanel.vala:175
+msgid "Direction:"
+msgstr "يۆنىلىش:"
+
+#: ../src/FirewallPanel.vala:182
+msgid "Ports:"
+msgstr "پورتلار:"
+
+#: ../src/FirewallPanel.vala:186
+msgid "%d or %d-%d"
+msgstr "%d ياكى %d-%d"
+
+#: ../src/FirewallPanel.vala:188
+msgid "Add Rule"
+msgstr "قائىدە قىتىش"
+
+#: ../src/AppChooser.vala:80
+msgid "Search Application"
+msgstr "ئەپ ئىزدەش"
