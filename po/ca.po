@@ -8,23 +8,23 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-02 01:52+0100\n"
-"PO-Revision-Date: 2015-02-10 05:11+0000\n"
-"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
+"PO-Revision-Date: 2016-12-19 16:34+0000\n"
+"Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-11-03 06:22+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-12-20 05:10+0000\n"
+"X-Generator: Launchpad (build 18298)\n"
 "Language: ca\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Bloqueja't en aturar temporalment:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Bloqueja't després d'apagar la pantalla:"
 
 #: ../src/TrackPanel.vala:70
 msgid "Privacy Mode:"
@@ -36,26 +36,31 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Aquest sistema operatiu pot recopilar estadístiques útils sobre fitxers i ús "
+"d'aplicacions per proporcionar funcionalitat addicional. Si altres persones "
+"poden veure o accedir al vostre compte, és possible que vulgueu limitar els "
+"elements que es registren."
 
 #: ../src/TrackPanel.vala:101
 msgid "Clear Usage Data…"
-msgstr ""
+msgstr "Esborra les dades d'ús..."
 
 #: ../src/TrackPanel.vala:111
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
+"Esborra les dades d'ús de fitxers i aplicacions recopilades des de..."
 
 #: ../src/TrackPanel.vala:114
 msgid "The past hour"
-msgstr ""
+msgstr "La darrera hora"
 
 #: ../src/TrackPanel.vala:115
 msgid "The past day"
-msgstr ""
+msgstr "Ahir"
 
 #: ../src/TrackPanel.vala:116
 msgid "The past week"
-msgstr ""
+msgstr "La setmana passada"
 
 #: ../src/TrackPanel.vala:117
 msgid "From:"
@@ -63,7 +68,7 @@ msgstr "Des de:"
 
 #: ../src/TrackPanel.vala:118
 msgid "All time"
-msgstr ""
+msgstr "Tot"
 
 #: ../src/TrackPanel.vala:121
 msgid "To:"
@@ -71,7 +76,7 @@ msgstr "Fins a:"
 
 #: ../src/TrackPanel.vala:124
 msgid "Clear Data"
-msgstr ""
+msgstr "Esborra'n les dades"
 
 #: ../src/TrackPanel.vala:185
 msgid "Your system"
@@ -79,24 +84,29 @@ msgstr "El vostre sistema"
 
 #: ../src/TrackPanel.vala:206
 msgid "%s is in Privacy Mode"
-msgstr ""
+msgstr "%s està en mode privat"
 
 #: ../src/TrackPanel.vala:208
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
+"Durant el mode privat, aquest sistema operatiu no retindrà més dades o "
+"estadístiques de l'ús de fitxers i aplicacions."
 
 #: ../src/TrackPanel.vala:209
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
+"Això afectarà la funcionalitat addicional que aquestes dades proporcionen."
 
 #: ../src/TrackPanel.vala:210
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
+"Això no evitarà que algunes aplicacions guardin dades d'ús pròpies com ara "
+"l'historial de navegació."
 
 #: ../src/TrackPanel.vala:258
 msgid "Data Sources:"
@@ -140,7 +150,7 @@ msgstr "Afegeix una carpeta…"
 
 #: ../src/TrackPanel.vala:321
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Seleccioneu una carpeta per a la llista negra"
 
 #: ../src/TrackPanel.vala:322
 msgid "Cancel"
@@ -156,7 +166,7 @@ msgstr "Suprimeix"
 
 #: ../src/TrackPanel.vala:369
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "No recopilis dades de..."
 
 #. //launchpad.net/your-project)
 #. *
@@ -179,7 +189,7 @@ msgstr ""
 #. 
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Cal autenticació per executar la configuració del tallafoc"
 
 #: ../src/Plug.vala:36
 msgid "Security & Privacy"
@@ -188,10 +198,12 @@ msgstr "Seguretat i privadesa"
 #: ../src/Plug.vala:37
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
+"Configureu el tallafoc, el bloqueig de pantalla i la informació d'activitat"
 
 #: ../src/Plug.vala:73
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
+"Alguns paràmetres necessiten permisos d'administrador per ser modificats."
 
 #: ../src/Plug.vala:106 ../src/Plug.vala:145
 msgid "Privacy"
@@ -199,7 +211,7 @@ msgstr "Privadesa"
 
 #: ../src/Plug.vala:108 ../src/Plug.vala:146 ../src/Plug.vala:147
 msgid "Locking"
-msgstr ""
+msgstr "Bloqueig"
 
 #: ../src/Plug.vala:110 ../src/Plug.vala:148
 msgid "Firewall"
@@ -207,11 +219,11 @@ msgstr "Tallafocs"
 
 #: ../src/Plug.vala:147
 msgid "Privacy Mode"
-msgstr ""
+msgstr "Mode privat"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr ""
+msgstr "Estat del tallafoc:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
@@ -236,11 +248,11 @@ msgstr "Límit"
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
 msgid "In"
-msgstr ""
+msgstr "Dins"
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
 msgid "Out"
-msgstr ""
+msgstr "Fora"
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
@@ -288,4 +300,4 @@ msgstr "Afegeix una regla"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr ""
+msgstr "Cerca aplicacions"
