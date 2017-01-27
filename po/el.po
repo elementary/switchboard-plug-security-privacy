@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-02 01:52+0100\n"
-"PO-Revision-Date: 2017-01-23 12:33+0000\n"
+"PO-Revision-Date: 2017-01-26 13:36+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-24 06:08+0000\n"
-"X-Generator: Launchpad (build 18312)\n"
+"X-Launchpad-Export-Date: 2017-01-27 06:15+0000\n"
+"X-Generator: Launchpad (build 18315)\n"
 "Language: el\n"
 
 #: ../src/LockPanel.vala:33
@@ -24,11 +24,11 @@ msgstr ""
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Κλείδωμα μετά την απενεργοποίηση της οθόνης:"
 
 #: ../src/TrackPanel.vala:70
 msgid "Privacy Mode:"
-msgstr "Ιδιωτική Λειτουργία"
+msgstr "Λειτουργία απορρήτου:"
 
 #: ../src/TrackPanel.vala:91
 msgid ""
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:101
 msgid "Clear Usage Data…"
-msgstr "Εκκαθάριση Χρήσης Δεδομένων..."
+msgstr "Εκκαθάριση δεδομένων χρήσης..."
 
 #: ../src/TrackPanel.vala:111
 msgid "Remove system-collected file and application usage data from:"
@@ -51,15 +51,15 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:114
 msgid "The past hour"
-msgstr ""
+msgstr "Την περασμένη ώρα"
 
 #: ../src/TrackPanel.vala:115
 msgid "The past day"
-msgstr ""
+msgstr "Την περασμένη μέρα"
 
 #: ../src/TrackPanel.vala:116
 msgid "The past week"
-msgstr ""
+msgstr "Την περασμένη εβδομάδα"
 
 #: ../src/TrackPanel.vala:117
 msgid "From:"
@@ -67,7 +67,7 @@ msgstr "Από:"
 
 #: ../src/TrackPanel.vala:118
 msgid "All time"
-msgstr ""
+msgstr "Συνεχώς"
 
 #: ../src/TrackPanel.vala:121
 msgid "To:"
@@ -75,7 +75,7 @@ msgstr "Προς:"
 
 #: ../src/TrackPanel.vala:124
 msgid "Clear Data"
-msgstr "Εκκαθάριση Δεδομένων"
+msgstr "Εκκαθάριση δεδομένων"
 
 #: ../src/TrackPanel.vala:185
 msgid "Your system"
@@ -83,14 +83,14 @@ msgstr "Το σύστημά σας"
 
 #: ../src/TrackPanel.vala:206
 msgid "%s is in Privacy Mode"
-msgstr "%s είναι σε Ιδιωτική Λειτουργία"
+msgstr "Το %s βρίσκεται σε λειτουργία απορρήτου"
 
 #: ../src/TrackPanel.vala:208
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
-"Όταν είστε σε Ιδιωτική Λειτουργία, αυτό το λειτουργικό σύστημα δε θα "
+"Όταν βρίσκεστε σε λειτουργία απορρήτου, αυτό το λειτουργικό σύστημα δε θα "
 "διατηρεί κανένα επιπλέον δεδομένο ή στατιστικό σχετικά με τη χρήση αρχείων "
 "και εφαρμογών."
 
@@ -142,11 +142,11 @@ msgstr "Βίντεο"
 
 #: ../src/TrackPanel.vala:304
 msgid "Add Application…"
-msgstr "Προσθήκη Εφαρμογής..."
+msgstr "Προσθήκη εφαρμογής..."
 
 #: ../src/TrackPanel.vala:319
 msgid "Add Folder…"
-msgstr "Προσθήκη Φακέλου..."
+msgstr "Προσθήκη φακέλου..."
 
 #: ../src/TrackPanel.vala:321
 msgid "Select a folder to blacklist"
@@ -195,7 +195,7 @@ msgstr ""
 
 #: ../src/Plug.vala:36
 msgid "Security & Privacy"
-msgstr "Ασφάλεια & Απόρρητο"
+msgstr "Ασφάλεια & απόρρητο"
 
 #: ../src/Plug.vala:37
 msgid "Configure firewall, screen lock, and activity information"
@@ -215,7 +215,7 @@ msgstr "Κλείδωμα"
 
 #: ../src/Plug.vala:110 ../src/Plug.vala:148
 msgid "Firewall"
-msgstr "Τείχος Προστασίας"
+msgstr "Τείχος προστασίας"
 
 #: ../src/Plug.vala:147
 msgid "Privacy Mode"
@@ -223,7 +223,7 @@ msgstr "Λειτουργία απορρήτου"
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr "Κατάσταση Τείχους Προστασίας:"
+msgstr "Κατάσταση τείχους προστασίας:"
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
