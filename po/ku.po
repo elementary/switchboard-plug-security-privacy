@@ -1,34 +1,33 @@
-# Italian translation for maya
-# Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the maya package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
+# Kurdish translation for switchboard-plug-security-privacy
+# Copyright (c) 2017 Rosetta Contributors and Canonical Ltd 2017
+# This file is distributed under the same license as the switchboard-plug-security-privacy package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: maya\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: switchboard-plug-security-privacy\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-11-02 01:52+0100\n"
-"PO-Revision-Date: 2017-01-27 21:44+0000\n"
-"Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
-"Language-Team: Italian <it@li.org>\n"
+"PO-Revision-Date: 2017-01-27 21:17+0000\n"
+"Last-Translator: Rokar <Unknown>\n"
+"Language-Team: Kurdish <ku@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2017-01-28 06:08+0000\n"
 "X-Generator: Launchpad (build 18315)\n"
-"Language: it\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr "Blocca su sospensione:"
+msgstr ""
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
-msgstr "Blocca quando lo schermo si spegne:"
+msgstr ""
 
 #: ../src/TrackPanel.vala:70
 msgid "Privacy Mode:"
-msgstr "Modalità Privacy:"
+msgstr ""
 
 #: ../src/TrackPanel.vala:91
 msgid ""
@@ -36,136 +35,127 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
-"Questo sistema operativo è in grado di raccogliere statistiche utili "
-"sull'utilizzo di file e applicazioni per fornire funzionalità aggiuntive.\r\n"
-"Se altre persone possono vedere o accedere al tuo account, potresti voler "
-"limitare quali elementi sono registrati."
 
 #: ../src/TrackPanel.vala:101
 msgid "Clear Usage Data…"
-msgstr "Pulisci i dati di utilizzo..."
+msgstr ""
 
 #: ../src/TrackPanel.vala:111
 msgid "Remove system-collected file and application usage data from:"
-msgstr "Rimuovi i dati dei file e delle applicazioni di sistema raccolti da:"
+msgstr ""
 
 #: ../src/TrackPanel.vala:114
 msgid "The past hour"
-msgstr "L'ultima ora"
+msgstr ""
 
 #: ../src/TrackPanel.vala:115
 msgid "The past day"
-msgstr "L'ultimo giorno"
+msgstr "Roja borî"
 
 #: ../src/TrackPanel.vala:116
 msgid "The past week"
-msgstr "L'ultima settimana"
+msgstr "Hefteya borî"
 
 #: ../src/TrackPanel.vala:117
 msgid "From:"
-msgstr "Da:"
+msgstr "Ji:"
 
 #: ../src/TrackPanel.vala:118
 msgid "All time"
-msgstr "Sempre"
+msgstr ""
 
 #: ../src/TrackPanel.vala:121
 msgid "To:"
-msgstr "a:"
+msgstr "Ji bo:"
 
 #: ../src/TrackPanel.vala:124
 msgid "Clear Data"
-msgstr "Pulisci dati"
+msgstr ""
 
 #: ../src/TrackPanel.vala:185
 msgid "Your system"
-msgstr "Il tuo sistema"
+msgstr ""
 
 #: ../src/TrackPanel.vala:206
 msgid "%s is in Privacy Mode"
-msgstr "%s è in modalità Privacy"
+msgstr ""
 
 #: ../src/TrackPanel.vala:208
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
-"Mentre è in modalità Privacy, questo sistema operativo non manterrà "
-"ulteriori dati o statistiche circa l'utilizzo di file e applicazioni."
 
 #: ../src/TrackPanel.vala:209
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
-"Le funzionalità aggiuntive che questi dati forniscono saranno interessate."
 
 #: ../src/TrackPanel.vala:210
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
-"Questo non impedirà alle applicazioni di registrare i propri dati di "
-"utilizzo come la cronologia del browser."
 
 #: ../src/TrackPanel.vala:258
 msgid "Data Sources:"
-msgstr "Fonti dei dati:"
+msgstr ""
 
 #: ../src/TrackPanel.vala:267
 msgid "Chat Logs"
-msgstr "Registri di chat"
+msgstr ""
 
 #: ../src/TrackPanel.vala:268
 msgid "Documents"
-msgstr "Documenti"
+msgstr ""
 
 #: ../src/TrackPanel.vala:269
 msgid "Music"
-msgstr "Musica"
+msgstr ""
 
 #: ../src/TrackPanel.vala:270
 msgid "Pictures"
-msgstr "Immagini"
+msgstr ""
 
 #: ../src/TrackPanel.vala:271
 msgid "Presentations"
-msgstr "Presentazioni"
+msgstr ""
 
 #: ../src/TrackPanel.vala:272
 msgid "Spreadsheets"
-msgstr "Fogli di calcolo"
+msgstr ""
 
 #: ../src/TrackPanel.vala:273
 msgid "Videos"
-msgstr "Video"
+msgstr ""
 
 #: ../src/TrackPanel.vala:304
 msgid "Add Application…"
-msgstr "Aggiungi applicazione..."
+msgstr ""
 
 #: ../src/TrackPanel.vala:319
 msgid "Add Folder…"
-msgstr "Aggiungi cartella..."
+msgstr ""
 
 #: ../src/TrackPanel.vala:321
 msgid "Select a folder to blacklist"
-msgstr "Seleziona cartella da escludere"
+msgstr ""
 
 #: ../src/TrackPanel.vala:322
 msgid "Cancel"
-msgstr "Cancella"
+msgstr ""
 
 #: ../src/TrackPanel.vala:322
 msgid "Add"
-msgstr "Aggiungi"
+msgstr ""
 
 #: ../src/TrackPanel.vala:334
 msgid "Delete"
-msgstr "Rimuovi"
+msgstr ""
 
 #: ../src/TrackPanel.vala:369
 msgid "Do not collect data from the following:"
-msgstr "Non raccogliere i dati da:"
+msgstr ""
 
 #. //launchpad.net/your-project)
 #. *
@@ -189,116 +179,112 @@ msgstr "Non raccogliere i dati da:"
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
-"È richiesta l'autenticazione per eseguire la configurazione del firewall"
 
 #: ../src/Plug.vala:36
 msgid "Security & Privacy"
-msgstr "Sicurezza e Privacy"
+msgstr ""
 
 #: ../src/Plug.vala:37
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
-"Configura il firewall, il blocco schermo e le informazioni sull'attività"
 
 #: ../src/Plug.vala:73
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
-"Alcune impostazioni richiedono i diritti di amministratore per essere "
-"modificate"
 
 #: ../src/Plug.vala:106 ../src/Plug.vala:145
 msgid "Privacy"
-msgstr "Privacy"
+msgstr ""
 
 #: ../src/Plug.vala:108 ../src/Plug.vala:146 ../src/Plug.vala:147
 msgid "Locking"
-msgstr "Blocco"
+msgstr ""
 
 #: ../src/Plug.vala:110 ../src/Plug.vala:148
 msgid "Firewall"
-msgstr "Firewall"
+msgstr ""
 
 #: ../src/Plug.vala:147
 msgid "Privacy Mode"
-msgstr "Modalità Privacy"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:54
 msgid "Firewall Status:"
-msgstr "Stato del Firewall"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
 #: ../src/FirewallPanel.vala:116
 msgid "Unknown"
-msgstr "Sconosciuto"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
 msgid "Allow"
-msgstr "Permetti"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
 msgid "Deny"
-msgstr "Blocca"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
 msgid "Reject"
-msgstr "Rifiuta"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
 msgid "Limit"
-msgstr "Limite"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
 msgid "In"
-msgstr "Entrata"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
 msgid "Out"
-msgstr "Uscita"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:138
 msgid "IPv6"
-msgstr "IPv6"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:139
 msgid "Action"
-msgstr "Azione"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:140
 msgid "Protocol"
-msgstr "Protocollo"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:141
 msgid "Direction"
-msgstr "Direzione"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:142
 msgid "Ports"
-msgstr "Porte"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:159
 msgid "Action:"
-msgstr "Azione:"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:168
 msgid "Protocol:"
-msgstr "Protocollo:"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:175
 msgid "Direction:"
-msgstr "Direzione:"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:182
 msgid "Ports:"
-msgstr "Porte:"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:186
 msgid "%d or %d-%d"
-msgstr "%d o %d-%d"
+msgstr ""
 
 #: ../src/FirewallPanel.vala:188
 msgid "Add Rule"
-msgstr "Aggiungi regola"
+msgstr ""
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
-msgstr "Cerca applicazione"
+msgstr ""
