@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-02 01:52+0100\n"
-"PO-Revision-Date: 2017-01-27 21:44+0000\n"
+"PO-Revision-Date: 2017-02-01 16:33+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-28 06:08+0000\n"
+"X-Launchpad-Export-Date: 2017-02-02 06:19+0000\n"
 "X-Generator: Launchpad (build 18315)\n"
 "Language: it\n"
 
@@ -63,7 +63,7 @@ msgstr "L'ultima settimana"
 
 #: ../src/TrackPanel.vala:117
 msgid "From:"
-msgstr "Da:"
+msgstr "Dal:"
 
 #: ../src/TrackPanel.vala:118
 msgid "All time"
@@ -71,7 +71,7 @@ msgstr "Sempre"
 
 #: ../src/TrackPanel.vala:121
 msgid "To:"
-msgstr "a:"
+msgstr "al:"
 
 #: ../src/TrackPanel.vala:124
 msgid "Clear Data"
@@ -104,8 +104,8 @@ msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
-"Questo non impedirà alle applicazioni di registrare i propri dati di "
-"utilizzo come la cronologia del browser."
+"Ciò non impedirà alle applicazioni di registrare i propri dati di utilizzo "
+"come la cronologia del browser."
 
 #: ../src/TrackPanel.vala:258
 msgid "Data Sources:"
