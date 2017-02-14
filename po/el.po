@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-02 01:52+0100\n"
-"PO-Revision-Date: 2017-01-26 13:36+0000\n"
+"PO-Revision-Date: 2017-02-13 13:31+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-27 06:15+0000\n"
-"X-Generator: Launchpad (build 18315)\n"
+"X-Launchpad-Export-Date: 2017-02-14 06:00+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 "Language: el\n"
 
 #: ../src/LockPanel.vala:33
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Κλείδωμα στον ύπνο:"
 
 #: ../src/LockPanel.vala:35
 msgid "Lock after screen turns off:"
@@ -48,6 +48,7 @@ msgstr "Εκκαθάριση δεδομένων χρήσης..."
 #: ../src/TrackPanel.vala:111
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
+"Αφαίρεση συλλεγμένων αρχείων συστήματος και δεδομένων χρήσης εφαρμογών από:"
 
 #: ../src/TrackPanel.vala:114
 msgid "The past hour"
@@ -90,7 +91,7 @@ msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
-"Όταν βρίσκεστε σε λειτουργία απορρήτου, αυτό το λειτουργικό σύστημα δε θα "
+"Όταν βρίσκεστε σε λειτουργία απορρήτου, το λειτουργικό σύστημα δε θα "
 "διατηρεί κανένα επιπλέον δεδομένο ή στατιστικό σχετικά με τη χρήση αρχείων "
 "και εφαρμογών."
 
@@ -110,7 +111,7 @@ msgstr ""
 
 #: ../src/TrackPanel.vala:258
 msgid "Data Sources:"
-msgstr "Πηγές Δεδομένων:"
+msgstr "Πηγές δεδομένων:"
 
 #: ../src/TrackPanel.vala:267
 msgid "Chat Logs"
@@ -166,7 +167,7 @@ msgstr "Διαγραφή"
 
 #: ../src/TrackPanel.vala:369
 msgid "Do not collect data from the following:"
-msgstr "Μη συλλέγεις δεδομένα από τα ακόλουθα:"
+msgstr "Να μη γίνει συλλογή δεδομένων από τα ακόλουθα:"
 
 #. //launchpad.net/your-project)
 #. *
@@ -190,8 +191,7 @@ msgstr "Μη συλλέγεις δεδομένα από τα ακόλουθα:"
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
-"Απαιτείται πιστοποίηση για να εκτελεστεί το Εργαλείο Παραμετροποίησης "
-"Τείχους Προστασίας"
+"Απαιτείται επαλήθευση για να εκτελεστεί η ρύθμιση του τείχους προστασίας"
 
 #: ../src/Plug.vala:36
 msgid "Security & Privacy"
@@ -200,6 +200,7 @@ msgstr "Ασφάλεια & απόρρητο"
 #: ../src/Plug.vala:37
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
+"Ρύθμιση τείχους προστασίας, κλειδώματος οθόνης και δραστηριότητας πληροφοριών"
 
 #: ../src/Plug.vala:73
 msgid "Some settings require administrator rights to be changed"
@@ -296,7 +297,7 @@ msgstr "%d ή %d-%d"
 
 #: ../src/FirewallPanel.vala:188
 msgid "Add Rule"
-msgstr "Προσθήκη Κανόνα"
+msgstr "Προσθήκη κανόνα"
 
 #: ../src/AppChooser.vala:80
 msgid "Search Application"
