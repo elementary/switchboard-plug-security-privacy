@@ -13,14 +13,17 @@ ensure_vala_version ("0.22.0" MINIMUM)
 include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
 vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
-    AppChooser.vala
     BlackList.vala
     Plug.vala
-    FirewallPanel.vala
-    LockPanel.vala
-    TrackPanel.vala
     UFWHelpers.vala
     ZGUtilities.vala
+
+    Views/FirewallPanel.vala
+    Views/LockPanel.vala
+    Views/TrackPanel.vala
+
+    Widgets/AppChooser.vala
+
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gtk+-3.0
