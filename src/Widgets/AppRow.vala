@@ -28,14 +28,14 @@ public class AppRow : Gtk.Grid {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name (get_icon_name (app_info), Gtk.IconSize.DND);
+        var image = new Gtk.Image.from_icon_name (get_icon_name (), Gtk.IconSize.DND);
         image.pixel_size = 32;
 
-        var app_name = new Gtk.Label (get_app_name (app_info));
+        var app_name = new Gtk.Label (get_app_name ());
         app_name.get_style_context ().add_class ("h3");
         app_name.xalign = 0;
 
-        var app_comment = new Gtk.Label ("<span font_size='small'>" + get_app_comment (app_info) + "</span>");
+        var app_comment = new Gtk.Label ("<span font_size='small'>" + get_app_comment () + "</span>");
         app_comment.xalign = 0;
         app_comment.use_markup = true;
 
@@ -50,7 +50,7 @@ public class AppRow : Gtk.Grid {
         show_all ();
     }
 
-    private string get_app_comment (DesktopAppInfo app_info) {
+    private string get_app_comment () {
         var comment = app_info.get_description ();
 
         if (comment == null) {
@@ -60,7 +60,7 @@ public class AppRow : Gtk.Grid {
         return Markup.escape_text (comment);
     }
 
-    private string get_app_name (DesktopAppInfo app_info) {
+    private string get_app_name () {
         var name = app_info.get_display_name ();
 
         if (name == null) {
@@ -70,7 +70,7 @@ public class AppRow : Gtk.Grid {
         return Markup.escape_text (name);
     }
 
-    private string get_icon_name (DesktopAppInfo app_info) {
+    private string get_icon_name () {
         var icon_theme = Gtk.IconTheme.get_default ();
 
         if (icon_theme.has_icon (app_info.get_icon ().to_string ())) {
