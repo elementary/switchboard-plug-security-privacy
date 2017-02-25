@@ -57,6 +57,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
 
         var control_switch = new Gtk.Switch ();
         control_switch.valign = Gtk.Align.CENTER;
+        location_settings.bind ("location-enabled", control_switch, "active", GLib.SettingsBindFlags.DEFAULT);
 
         var treeview_grid = create_treeview ();
         attach (location_icon, 0, 0, 1, 1);
