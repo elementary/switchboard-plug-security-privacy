@@ -34,11 +34,12 @@ namespace SecurityPrivacy {
             Object (category: Category.PERSONAL,
                     code_name: Build.PLUGCODENAME,
                     display_name: _("Security & Privacy"),
-                    description: _("Configure firewall, screen lock, and activity information"),
+                    description: _("Configure firewall, location, screen lock, and activity information"),
                     icon: "preferences-system-privacy",
                     supported_settings: new Gee.TreeMap<string, string?> (null, null));
             supported_settings.set ("security", null);
             supported_settings.set ("security/privacy", "tracking");
+            supported_settings.set ("security/privacy/location", "location");
             supported_settings.set ("security/firewall", "firewall");
             supported_settings.set ("security/screensaver", "locking");
             plug = this;
@@ -108,6 +109,8 @@ namespace SecurityPrivacy {
             stack.add_titled (locking, "locking", _("Locking"));
             var firewall = new FirewallPanel ();
             stack.add_titled (firewall, "firewall", _("Firewall"));
+            var location = new LocationPanel ();
+            stack.add_titled (location, "location", _("Location"));
 
             main_grid.attach (stack_switcher, 0, 1, 1, 1);
             main_grid.attach (stack, 0, 2, 1, 1);
@@ -136,6 +139,9 @@ namespace SecurityPrivacy {
                 case "firewall":
                     stack.set_visible_child_name ("firewall");
                     break;
+                case "location":
+                    stack.set_visible_child_name ("location");
+                    break;
             }
         }
 
@@ -146,6 +152,7 @@ namespace SecurityPrivacy {
             map.set ("%s → %s".printf (display_name, _("Locking")), "locking");
             map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Privacy Mode")), "locking<sep>privacy-mode");
             map.set ("%s → %s".printf (display_name, _("Firewall")), "firewall");
+            map.set ("%s → %s".printf (display_name, _("Location")), "location");
             return map;
         }
     }
