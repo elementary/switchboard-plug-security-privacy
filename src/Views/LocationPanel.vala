@@ -22,11 +22,11 @@
 
 public class SecurityPrivacy.LocationPanel : Gtk.Grid {
 
-    private Gtk.Grid grid;
     private GLib.Settings location_settings;
     private Variant remembered_apps;
     private VariantDict remembered_apps_dict;
     private Gtk.ListStore list_store;
+    private Gtk.TreeView tree_view;
 
     private enum Columns {
         AUTHORIZED,
@@ -47,21 +47,36 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         margin = 12;
         margin_top = 0;
 
-        create_treeview ();
+        var location_icon = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
+        location_icon.halign = Gtk.Align.START;
+
+        var title = new Gtk.Label (_("Location Services"));
+        title.get_style_context ().add_class ("h2");
+        title.halign = Gtk.Align.START;
+        title.hexpand = true;
+
+        var control_switch = new Gtk.Switch ();
+        control_switch.valign = Gtk.Align.CENTER;
+
+        var treeview_grid = create_treeview ();
+        attach (location_icon, 0, 0, 1, 1);
+        attach (title, 1, 0, 1, 1);
+        attach (control_switch, 2, 0, 1, 1);
+        attach (treeview_grid, 0, 1, 3, 1);
 
         location_settings.changed.connect((key) => {
             populate_app_treeview ();
         });
     }
 
-    private void create_treeview () {
-        var view = new Gtk.TreeView.with_model (list_store);
-        view.vexpand = true;
-        view.headers_visible = false;
-        view.activate_on_single_click = true;
+    private Gtk.Grid create_treeview () {
+        tree_view = new Gtk.TreeView.with_model (list_store);
+        tree_view.vexpand = true;
+        tree_view.headers_visible = false;
+        tree_view.activate_on_single_click = true;
 
         var celltoggle = new Gtk.CellRendererToggle ();
-        view.row_activated.connect ((path, column) => {
+        tree_view.row_activated.connect ((path, column) => {
             Value active;
             Gtk.TreeIter iter;
             list_store.get_iter (out iter, path);
@@ -78,36 +93,43 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         var cell = new Gtk.CellRendererText ();
         var cellpixbuf = new Gtk.CellRendererPixbuf ();
         cellpixbuf.stock_size = Gtk.IconSize.DND;
-        view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.AUTHORIZED);
-        view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
-        view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
+        tree_view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.AUTHORIZED);
+        tree_view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
+        tree_view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.shadow_type = Gtk.ShadowType.IN;
         scrolled.expand = true;
-        scrolled.add (view);
+        scrolled.add (tree_view);
 
         var locations_label = new Gtk.Label (_("Allow the apps below to determine your location"));
         locations_label.xalign = 0;
 
-        grid = new Gtk.Grid ();
-        grid.row_spacing = 6;
-        grid.attach (locations_label, 0, 0, 1, 1);
-        grid.attach (scrolled, 0, 1, 1, 1);
-        attach (grid, 0, 0, 1, 1);
+        var treeview_grid = new Gtk.Grid ();
+        treeview_grid.row_spacing = 6;
+        treeview_grid.attach (locations_label, 0, 0, 1, 1);
+        treeview_grid.attach (scrolled, 0, 1, 1, 1);
 
         populate_app_treeview ();
+
+        return treeview_grid;
     }
 
     private void populate_app_treeview () {
         load_remembered_apps ();
+        Gtk.TreePath? current_selection;
+        Gtk.TreeViewColumn? current_column;
+        tree_view.get_cursor (out current_selection, out current_column);
+
         list_store.clear ();
         foreach (var app in remembered_apps) {
             string app_id = app.get_child_value (0).get_string ();
             bool authed = app.get_child_value (1).get_variant ().get_child_value (0).get_boolean ();
             var app_info = new DesktopAppInfo (app_id + ".desktop");
             add_liststore_item (list_store, authed, app_info.get_display_name (), app_info.get_icon ().to_string (), app_id);
-        }  
+        }
+
+        tree_view.set_cursor (current_selection, current_column, false);
     }
 
     private void add_liststore_item (Gtk.ListStore list_store, bool active, string name, string icon, string app_id) {
