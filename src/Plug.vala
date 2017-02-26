@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2014 Security & Privacy Plug (http://launchpad.net/your-project)
+ * Copyright (c) 2014-2017 elementary LLC. (https://launchpad.net/switchboard-plug-security-privacy)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public
@@ -19,6 +19,7 @@
  *
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
+
 namespace SecurityPrivacy {
 
     public static Plug plug;
@@ -57,24 +58,44 @@ namespace SecurityPrivacy {
         }
 
         public override void shown () {
-            if (main_grid.get_children ().length () > 0)
+            if (main_grid.get_children ().length () > 0) {
                 return;
+            }
+
+            var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
+
+            var infobar = new Gtk.InfoBar ();
+            infobar.message_type = Gtk.MessageType.INFO;
+            infobar.no_show_all = true;
+            infobar.get_content_area ().add (label);
+
+            tracking = new TrackPanel ();
+            var locking = new LockPanel ();
+            var firewall = new FirewallPanel ();
 
             stack = new Gtk.Stack ();
-            stack.expand = true;
+            stack.add_titled (tracking, "tracking", _("Privacy"));
+            stack.add_titled (locking, "locking", _("Locking"));
+            stack.add_titled (firewall, "firewall", _("Firewall"));
+
+            var stack_switcher = new Gtk.StackSwitcher ();
+            stack_switcher.set_stack (stack);
+            stack_switcher.halign = Gtk.Align.CENTER;
+            stack_switcher.margin = 12;
+
+            main_grid.attach (infobar, 0, 0, 1, 1);
+            main_grid.attach (stack_switcher, 0, 1, 1, 1);
+            main_grid.attach (stack, 0, 2, 1, 1);
+            main_grid.show_all ();
 
             try {
                 var permission = new Polkit.Permission.sync ("org.pantheon.security-privacy", Polkit.UnixProcess.new (Posix.getpid ()));
-                var infobar = new Gtk.InfoBar ();
-                infobar.message_type = Gtk.MessageType.INFO;
+
                 lock_button = new Gtk.LockButton (permission);
+
                 var area = infobar.get_action_area () as Gtk.Container;
-                var content = infobar.get_content_area () as Gtk.Container;
-                var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
                 area.add (lock_button);
-                content.add (label);
-                main_grid.attach (infobar, 0, 0, 1, 1);
-                infobar.no_show_all = true;
+
                 stack.notify["visible-child-name"].connect (() => {
                     if (permission.allowed == false && stack.visible_child_name == "firewall") {
                         infobar.no_show_all = false;
@@ -84,6 +105,7 @@ namespace SecurityPrivacy {
                         infobar.hide ();
                     }
                 });
+
                 permission.notify["allowed"].connect (() => {
                     if (permission.allowed == false && stack.visible_child_name == "firewall") {
                         infobar.no_show_all = false;
@@ -96,22 +118,6 @@ namespace SecurityPrivacy {
             } catch (Error e) {
                 critical (e.message);
             }
-
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.set_stack (stack);
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.margin = 12;
-
-            tracking = new TrackPanel ();
-            stack.add_titled (tracking, "tracking", _("Privacy"));
-            var locking = new LockPanel ();
-            stack.add_titled (locking, "locking", _("Locking"));
-            var firewall = new FirewallPanel ();
-            stack.add_titled (firewall, "firewall", _("Firewall"));
-
-            main_grid.attach (stack_switcher, 0, 1, 1, 1);
-            main_grid.attach (stack, 0, 2, 1, 1);
-            main_grid.show_all ();
         }
 
         public override void hidden () {
