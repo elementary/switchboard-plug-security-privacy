@@ -78,15 +78,24 @@ namespace SecurityPrivacy {
             stack.add_titled (locking, "locking", _("Locking"));
             stack.add_titled (firewall, "firewall", _("Firewall"));
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.set_stack (stack);
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.margin = 12;
+            var grid = new Gtk.Grid ();
+            grid.attach (infobar, 0, 0, 1, 1);
+            grid.attach (stack, 0, 3, 1, 1);
 
-            main_grid.attach (infobar, 0, 0, 1, 1);
-            main_grid.attach (stack_switcher, 0, 1, 1, 1);
-            main_grid.attach (stack, 0, 2, 1, 1);
+            var service_list = new ServiceList ();
+
+            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
+            paned.position = 200;
+            paned.add1 (service_list);
+            paned.add2 (grid);
+
+            main_grid.add (paned);
             main_grid.show_all ();
+
+            service_list.row_selected.connect ((row) => {
+                var title = ((ServiceItem)row).title;
+                stack.visible_child_name = title;
+            });
 
             try {
                 var permission = new Polkit.Permission.sync ("org.pantheon.security-privacy", Polkit.UnixProcess.new (Posix.getpid ()));

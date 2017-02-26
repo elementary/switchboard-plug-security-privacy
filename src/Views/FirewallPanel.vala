@@ -42,7 +42,6 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 6;
         margin = 12;
-        margin_top = 0;
         orientation = Gtk.Orientation.VERTICAL;
 
         var status_grid = new Gtk.Grid ();
@@ -254,12 +253,15 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         var view_grid = new Gtk.Grid ();
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.shadow_type = Gtk.ShadowType.IN;
         scrolled.expand = true;
         scrolled.add (view);
 
         view_grid.attach (scrolled, 0, 0, 1, 1);
         view_grid.attach (list_toolbar, 0, 1, 1, 1);
-        add (view_grid);
+
+        var frame = new Gtk.Frame (null);
+        frame.add (view_grid);
+
+        add (frame);
     }
 }
