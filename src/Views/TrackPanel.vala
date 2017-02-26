@@ -21,11 +21,7 @@
  */
 
 public class SecurityPrivacy.TrackPanel : Gtk.Grid {
-
-    private Gtk.RecentManager recent;
-    private List<Gtk.RecentInfo> items;
-
-    private Gtk.Popover remove_popover;
+    private Widgets.ClearUsagePopover remove_popover;
     private Dialogs.AppChooser app_chooser;
     private ApplicationBlacklist app_blacklist;
     private PathBlacklist path_blacklist;
@@ -34,13 +30,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     private Gtk.Container description_frame;
     private Gtk.Grid exclude_grid;
 
-    private Granite.Widgets.DatePicker to_datepicker;
-    private Granite.Widgets.DatePicker from_datepicker;
-    private Gtk.RadioButton all_time_radio;
-    private Gtk.RadioButton from_radio;
-    private Gtk.RadioButton past_hour_radio;
-    private Gtk.RadioButton past_day_radio;
-    private Gtk.RadioButton past_week_radio;
     private Gtk.Switch record_switch;
 
     private enum Columns {
@@ -63,7 +52,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         app_blacklist = new ApplicationBlacklist (blacklist);
         path_blacklist = new PathBlacklist (blacklist);
         filetype_blacklist = new FileTypeBlacklist (blacklist);
-        recent = new Gtk.RecentManager ();
 
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
 
@@ -96,8 +84,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         record_grid.add (record_switch);
         record_grid.add (info_button);
 
-        /* Remove Popover */
-
         var clear_data = new Gtk.ToggleButton.with_label (_("Clear Usage Data…"));
         clear_data.halign = Gtk.Align.END;
         clear_data.notify["active"].connect (() => {
@@ -108,44 +94,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
             }
         });
 
-        var clear_label = new Gtk.Label (_("Remove system-collected file and application usage data from:"));
-        clear_label.halign = Gtk.Align.START;
-
-        past_hour_radio = new Gtk.RadioButton.with_label (null, _("The past hour"));
-        past_day_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("The past day"));
-        past_week_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("The past week"));
-        from_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("From:"));
-        all_time_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("All time"));
-
-        from_datepicker = new Granite.Widgets.DatePicker ();
-        var to_label = new Gtk.Label (_("To:"));
-        to_datepicker = new Granite.Widgets.DatePicker ();
-
-        var clear_button = new Gtk.Button.with_label (_("Clear Data"));
-        clear_button.halign = Gtk.Align.END;
-        clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-        clear_button.clicked.connect (() => {
-            on_clear_data ();
-        });
-
-        var remove_popover_grid = new Gtk.Grid ();
-        remove_popover_grid.margin = 12;
-        remove_popover_grid.column_spacing = 12;
-        remove_popover_grid.row_spacing = 6;
-
-        remove_popover_grid.attach (clear_label, 0, 0, 4, 1);
-        remove_popover_grid.attach (past_hour_radio, 0, 1, 4, 1);
-        remove_popover_grid.attach (past_day_radio, 0, 2, 4, 1);
-        remove_popover_grid.attach (past_week_radio, 0, 3, 4, 1);
-        remove_popover_grid.attach (from_radio, 0, 4, 1, 1);
-        remove_popover_grid.attach (from_datepicker, 1, 4, 1, 1);
-        remove_popover_grid.attach (to_label, 2, 4, 1, 1);
-        remove_popover_grid.attach (to_datepicker, 3, 4, 1, 1);
-        remove_popover_grid.attach (all_time_radio, 0, 5, 4, 1);
-        remove_popover_grid.attach (clear_button, 0, 6, 4, 1);
-
-        remove_popover = new Gtk.Popover (clear_data);
-        remove_popover.add (remove_popover_grid);
+        remove_popover = new Widgets.ClearUsagePopover (clear_data);
         remove_popover.closed.connect (() => {
             clear_data.active = false;
         });
@@ -165,20 +114,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     
     public void focus_privacy_switch () {
         record_switch.grab_focus ();
-    }
-
-    private async void delete_history (Zeitgeist.TimeRange tr) {
-        var events = new GenericArray<Zeitgeist.Event> ();
-        events.add (new Zeitgeist.Event ());
-        var zg_log = new Zeitgeist.Log ();
-        try {
-            uint32[] ids = yield zg_log.find_event_ids (tr, events, Zeitgeist.StorageState.ANY, 0, 0, null);
-            Array<uint32> del_ids = new Array<uint32> ();
-            del_ids.append_vals (ids, ids.length);
-            yield zg_log.delete_events (del_ids, null);
-        } catch (Error e) {
-            critical (e.message);
-        }
     }
 
     private string get_operating_system_name () {
@@ -425,103 +360,5 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                     NotColumns.ICON, new ThemedIcon ("folder"), NotColumns.PATH, path,
                     NotColumns.IS_APP, false);
         });
-    }
-
-    private void on_clear_data () {
-        Zeitgeist.TimeRange tr;
-
-        if (past_hour_radio.active == true) {
-            int range = 360000;//60*60*1000;
-            int64 end = Zeitgeist.Timestamp.from_now ();
-            int64 start = end - range;
-            tr = new Zeitgeist.TimeRange (start, end);
-            delete_history.begin (tr);
-
-            //  Deletes files added in the last hour
-            if (recent.size > 0) {
-                items = recent.get_items ();
-
-                try {
-                    foreach (var item in items) {
-                        if (item.get_added () >= start/1000)
-                            recent.remove_item (item.get_uri ());
-                    }
-                } catch (Error err) {
-                    critical (err.message);
-                }
-            }
-        } else if (past_day_radio.active == true) {
-            int range = 8640000;//24*60*60*1000;
-            int64 end = Zeitgeist.Timestamp.from_now ();
-            int64 start = end - range;
-            tr = new Zeitgeist.TimeRange (start, end);
-            delete_history.begin (tr);
-
-            //  Deletes files added in the last day
-            if (recent.size > 0) {
-                items = recent.get_items ();
-
-                try {
-                    foreach (var item in items) {
-                        if (item.get_age () <= 1)
-                            recent.remove_item (item.get_uri ());
-                    }
-                } catch (Error err) {
-                    critical (err.message);
-                }
-            }
-        } else if (past_week_radio.active == true) {
-            int range = 60480000;//7*24*60*60*1000;
-            int64 end = Zeitgeist.Timestamp.from_now ();
-            int64 start = end - range;
-            tr = new Zeitgeist.TimeRange (start, end);
-            delete_history.begin (tr);
-
-            //  Deletes files added in the last week
-            if (recent.size > 0) {
-                items = recent.get_items ();
-
-                try {
-                    foreach (var item in items) {
-                        if (item.get_age () <= 7)
-                            recent.remove_item (item.get_uri ());
-                    }
-                } catch (Error err) {
-                    critical (err.message);
-                }
-            }
-        } else if (from_radio.active == true) {
-            int64 start = from_datepicker.date.to_unix ()*1000;
-            int64 end = to_datepicker.date.to_unix ()*1000;
-            tr = new Zeitgeist.TimeRange (start, end);
-            delete_history.begin (tr);
-
-            //  Deletes files added during the given period
-            if (recent.size > 0) {
-                items = recent.get_items ();
-
-                try {
-                    foreach (var item in items) {
-                        if (item.get_added () >= start/1000 && item.get_added () <= end/1000)
-                            recent.remove_item (item.get_uri ());
-                    }
-                } catch (Error err) {
-                    critical (err.message);
-                }
-            }
-        } else if (all_time_radio.active == true) {
-            tr = new Zeitgeist.TimeRange.anytime ();
-            delete_history.begin (tr);
-
-            //  Deletes all recent files
-            if (recent.size > 0) {
-                try {
-                    recent.purge_items ();
-                } catch (Error err) {
-                    critical (err.message);
-                }
-            }
-        }
-        remove_popover.hide ();
     }
 }

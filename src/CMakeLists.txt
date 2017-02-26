@@ -24,6 +24,8 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Views/LocationPanel.vala
 
     Widgets/AppChooser.vala
+    Widgets/AppRow.vala
+    Widgets/ClearUsagePopover.vala
 
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
