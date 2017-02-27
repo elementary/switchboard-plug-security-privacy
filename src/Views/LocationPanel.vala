@@ -45,7 +45,6 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 12;
         margin = 12;
-        margin_top = 0;
 
         var location_icon = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
         location_icon.halign = Gtk.Align.START;

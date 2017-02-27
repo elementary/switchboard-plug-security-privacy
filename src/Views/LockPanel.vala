@@ -27,6 +27,7 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
     public LockPanel () {
         column_spacing = 12;
         row_spacing = 6;
+        margin = 12;
 
         locker = new Settings ("apps.light-locker");
 
