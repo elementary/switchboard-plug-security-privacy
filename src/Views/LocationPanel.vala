@@ -29,6 +29,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
     private Gtk.TreeView tree_view;
     private Gtk.Grid treeview_grid;
     private Gtk.Frame disabled_frame;
+    public Gtk.Switch status_switch;
 
     private enum Columns {
         AUTHORIZED,
@@ -52,7 +53,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         status_label.hexpand = true;
         status_label.xalign = 0;
 
-        var status_switch = new Gtk.Switch ();
+        status_switch = new Gtk.Switch ();
         status_switch.valign = Gtk.Align.CENTER;        
 
         location_settings = new GLib.Settings ("org.pantheon.agent-geoclue2");
