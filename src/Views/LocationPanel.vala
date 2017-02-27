@@ -27,6 +27,8 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
     private VariantDict remembered_apps_dict;
     private Gtk.ListStore list_store;
     private Gtk.TreeView tree_view;
+    private Gtk.Grid treeview_grid;
+    private Gtk.Frame disabled_frame;
 
     private enum Columns {
         AUTHORIZED,
@@ -37,39 +39,63 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
     }
 
     construct {
-        list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool),
-                typeof (string), typeof (string), typeof (string));
-
-        location_settings = new GLib.Settings ("org.pantheon.agent-geoclue2");
-        
         column_spacing = 12;
-        row_spacing = 12;
+        row_spacing = 6;
         margin = 12;
 
-        var location_icon = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
-        location_icon.halign = Gtk.Align.START;
+        create_disabled_panel ();
 
-        var title = new Gtk.Label (_("Location"));
-        title.get_style_context ().add_class ("h2");
-        title.halign = Gtk.Align.START;
-        title.hexpand = true;
+        var status_icon = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
 
-        var control_switch = new Gtk.Switch ();
-        control_switch.valign = Gtk.Align.CENTER;
-        location_settings.bind ("location-enabled", control_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        var status_label = new Gtk.Label (_("Location"));
+        status_label.get_style_context ().add_class ("h2");
+        status_label.hexpand = true;
+        status_label.xalign = 0;
 
-        var treeview_grid = create_treeview ();
-        attach (location_icon, 0, 0, 1, 1);
-        attach (title, 1, 0, 1, 1);
-        attach (control_switch, 2, 0, 1, 1);
-        attach (treeview_grid, 0, 1, 3, 1);
+        var status_switch = new Gtk.Switch ();
+        status_switch.valign = Gtk.Align.CENTER;        
 
+        location_settings = new GLib.Settings ("org.pantheon.agent-geoclue2");
+        location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
+        location_settings.bind ("location-enabled", disabled_frame, "visible", SettingsBindFlags.INVERT_BOOLEAN);
         location_settings.changed.connect((key) => {
             populate_app_treeview ();
         });
+
+        attach (status_icon, 0, 0, 1, 1);
+        attach (status_label, 1, 0, 1, 1);
+        attach (status_switch, 2, 0, 1, 1);
+        
+        create_treeview ();
     }
 
-    private Gtk.Grid create_treeview () {
+    private void create_disabled_panel () {
+        disabled_frame = new Gtk.Frame (null);
+        disabled_frame.expand = true;
+        disabled_frame.no_show_all = true;
+
+        var icon = "view-private";
+        var title = _("Location is disabled");
+        var description = ("%s\n\n%s\n\n%s".printf (
+                    _("While location is disabled, location requests from apps will be automatically rejected."),
+                    _("The additional functionality that location provides in those apps will be affected."),
+                    _("This will not prevent apps from trying to determine your location based on IP address.")));
+
+        var alert = new Granite.Widgets.AlertView (title, description, icon);
+        alert.show_all ();
+
+        disabled_frame.add (alert);
+
+        attach (disabled_frame, 0, 1, 3, 1);
+    }
+
+    private void create_treeview () {
+        var locations_label = new Gtk.Label (_("Allow the apps below to determine your location"));
+        locations_label.xalign = 0;
+
+        list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool),
+                                        typeof (string), typeof (string), typeof (string));
+
         tree_view = new Gtk.TreeView.with_model (list_store);
         tree_view.vexpand = true;
         tree_view.headers_visible = false;
@@ -97,22 +123,20 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         tree_view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
         tree_view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
 
+        populate_app_treeview ();
+
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.shadow_type = Gtk.ShadowType.IN;
         scrolled.expand = true;
         scrolled.add (tree_view);
 
-        var locations_label = new Gtk.Label (_("Allow the apps below to determine your location"));
-        locations_label.xalign = 0;
-
-        var treeview_grid = new Gtk.Grid ();
+        treeview_grid = new Gtk.Grid ();
+        treeview_grid.margin_top = 12;
         treeview_grid.row_spacing = 6;
         treeview_grid.attach (locations_label, 0, 0, 1, 1);
         treeview_grid.attach (scrolled, 0, 1, 1, 1);
 
-        populate_app_treeview ();
-
-        return treeview_grid;
+        attach (treeview_grid, 0, 1, 3, 1);
     }
 
     private void populate_app_treeview () {
