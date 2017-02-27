@@ -25,6 +25,7 @@ namespace SecurityPrivacy {
     public static Plug plug;
     public static Gtk.LockButton lock_button;
     public static Blacklist blacklist;
+    public static FirewallPanel firewall;
 
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
@@ -109,7 +110,7 @@ namespace SecurityPrivacy {
 
             tracking = new TrackPanel ();
             var locking = new LockPanel ();
-            var firewall = new FirewallPanel ();
+            firewall = new FirewallPanel ();
 
             stack.add_titled (tracking, "tracking", _("Privacy"));
             stack.add_titled (locking, "locking", _("Locking"));

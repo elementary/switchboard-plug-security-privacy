@@ -12,5 +12,13 @@ public class ServiceList : Gtk.ListBox {
         add (privacy_item);
         add (lock_item);
         add (firewall_item);
+
+        SecurityPrivacy.firewall.status_switch.notify["active"].connect (() => {
+            if (SecurityPrivacy.firewall.status_switch.active) {
+                firewall_item.status = ServiceItem.Status.ENABLED;
+            } else {
+                firewall_item.status = ServiceItem.Status.DISABLED;
+            }
+        });
     }
 }
