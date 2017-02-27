@@ -62,43 +62,17 @@ namespace SecurityPrivacy {
                 return;
             }
 
-            var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
-
-            var infobar = new Gtk.InfoBar ();
-            infobar.message_type = Gtk.MessageType.INFO;
-            infobar.no_show_all = true;
-            infobar.get_content_area ().add (label);
-
-            tracking = new TrackPanel ();
-            var locking = new LockPanel ();
-            var firewall = new FirewallPanel ();
-
             stack = new Gtk.Stack ();
-            stack.add_titled (tracking, "tracking", _("Privacy"));
-            stack.add_titled (locking, "locking", _("Locking"));
-            stack.add_titled (firewall, "firewall", _("Firewall"));
-
-            var grid = new Gtk.Grid ();
-            grid.attach (infobar, 0, 0, 1, 1);
-            grid.attach (stack, 0, 3, 1, 1);
-
-            var service_list = new ServiceList ();
-
-            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
-            paned.position = 200;
-            paned.add1 (service_list);
-            paned.add2 (grid);
-
-            main_grid.add (paned);
-            main_grid.show_all ();
-
-            service_list.row_selected.connect ((row) => {
-                var title = ((ServiceItem)row).title;
-                stack.visible_child_name = title;
-            });
 
             try {
                 var permission = new Polkit.Permission.sync ("org.pantheon.security-privacy", Polkit.UnixProcess.new (Posix.getpid ()));
+
+                var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
+
+                var infobar = new Gtk.InfoBar ();
+                infobar.message_type = Gtk.MessageType.INFO;
+                infobar.no_show_all = true;
+                infobar.get_content_area ().add (label);
 
                 lock_button = new Gtk.LockButton (permission);
 
@@ -127,6 +101,33 @@ namespace SecurityPrivacy {
             } catch (Error e) {
                 critical (e.message);
             }
+
+            tracking = new TrackPanel ();
+            var locking = new LockPanel ();
+            var firewall = new FirewallPanel ();
+
+            stack.add_titled (tracking, "tracking", _("Privacy"));
+            stack.add_titled (locking, "locking", _("Locking"));
+            stack.add_titled (firewall, "firewall", _("Firewall"));
+
+            var grid = new Gtk.Grid ();
+            grid.attach (infobar, 0, 0, 1, 1);
+            grid.attach (stack, 0, 3, 1, 1);
+
+            var service_list = new ServiceList ();
+
+            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
+            paned.position = 200;
+            paned.add1 (service_list);
+            paned.add2 (grid);
+
+            main_grid.add (paned);
+            main_grid.show_all ();
+
+            service_list.row_selected.connect ((row) => {
+                var title = ((ServiceItem)row).title;
+                stack.visible_child_name = title;
+            });
         }
 
         public override void hidden () {
