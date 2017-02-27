@@ -64,6 +64,9 @@ namespace SecurityPrivacy {
 
             stack = new Gtk.Stack ();
 
+            var grid = new Gtk.Grid ();
+            grid.attach (stack, 0, 3, 1, 1);
+
             try {
                 var permission = new Polkit.Permission.sync ("org.pantheon.security-privacy", Polkit.UnixProcess.new (Posix.getpid ()));
 
@@ -73,6 +76,8 @@ namespace SecurityPrivacy {
                 infobar.message_type = Gtk.MessageType.INFO;
                 infobar.no_show_all = true;
                 infobar.get_content_area ().add (label);
+
+                grid.attach (infobar, 0, 0, 1, 1);
 
                 lock_button = new Gtk.LockButton (permission);
 
@@ -109,10 +114,6 @@ namespace SecurityPrivacy {
             stack.add_titled (tracking, "tracking", _("Privacy"));
             stack.add_titled (locking, "locking", _("Locking"));
             stack.add_titled (firewall, "firewall", _("Firewall"));
-
-            var grid = new Gtk.Grid ();
-            grid.attach (infobar, 0, 0, 1, 1);
-            grid.attach (stack, 0, 3, 1, 1);
 
             var service_list = new ServiceList ();
 
