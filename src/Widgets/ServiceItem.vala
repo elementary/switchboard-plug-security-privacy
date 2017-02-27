@@ -17,6 +17,7 @@ public class ServiceItem: Gtk.ListBoxRow {
                     break;
             }
             status_label.no_show_all = false;
+            status_label.show ();
             status_label.label = "<span font_size='small'>" + status_label.label + "</span>";
         }
     }

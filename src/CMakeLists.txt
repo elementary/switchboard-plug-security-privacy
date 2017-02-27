@@ -26,6 +26,8 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Widgets/AppChooser.vala
     Widgets/AppRow.vala
     Widgets/ClearUsagePopover.vala
+    Widgets/ExcludeTreeView.vala
+    Widgets/IncludeTreeView.vala
     Widgets/ServiceItem.vala
     Widgets/ServiceList.vala
 

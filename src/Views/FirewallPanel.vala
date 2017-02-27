@@ -27,6 +27,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     private bool loading = false;
     private Gtk.Popover add_popover;
     private Gtk.ToolButton remove_button;
+    public Gtk.Switch status_switch;
 
     private enum Columns {
         ACTION,
@@ -52,7 +53,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         status_label.hexpand = true;
         status_label.xalign = 0;
 
-        var status_switch = new Gtk.Switch ();
+        status_switch = new Gtk.Switch ();
         status_switch.valign = Gtk.Align.CENTER;
 
         status_switch.notify["active"].connect (() => {
