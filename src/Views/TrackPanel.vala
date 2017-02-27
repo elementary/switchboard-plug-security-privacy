@@ -31,14 +31,13 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     }
 
     construct {
-        var icon = "view-private";
-        var title = _("%s is in Privacy Mode").printf (get_operating_system_name ());
+        var title = _("History Is Disabled").printf (get_operating_system_name ());
         var description = ("%s\n\n%s\n\n%s".printf (
-                    _("While in Privacy Mode, this operating system won't retain any further data or statistics about file and application usage."),
+                    _("%s won't retain any further data or statistics about file and application usage.").printf (get_operating_system_name ()),
                     _("The additional functionality that this data provides will be affected."),
                     _("This will not prevent apps from recording their own usage data like browser history.")));
 
-        var alert = new Granite.Widgets.AlertView (title, description, icon);
+        var alert = new Granite.Widgets.AlertView (title, description, "");
         alert.show_all ();
 
         var description_frame = new Gtk.Frame (null);
@@ -47,10 +46,11 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         var header_image = new Gtk.Image.from_icon_name ("document-open-recent", Gtk.IconSize.DIALOG);
 
-        var record_label = new Gtk.Label (_("Privacy"));
+        var record_label = new Gtk.Label (_("History"));
         record_label.get_style_context ().add_class ("h2");
 
         record_switch = new Gtk.Switch ();
+        record_switch.active = true;
         record_switch.valign = Gtk.Align.CENTER;
 
         var info_button = new Gtk.Image.from_icon_name ("help-info-symbolic", Gtk.IconSize.MENU);
@@ -66,7 +66,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         header_grid.add (info_button);
         header_grid.add (record_switch);
 
-        var clear_data = new Gtk.ToggleButton.with_label (_("Clear Usage Data…"));
+        var clear_data = new Gtk.ToggleButton.with_label (_("Clear History…"));
         clear_data.halign = Gtk.Align.END;
         clear_data.notify["active"].connect (() => {
             if (clear_data.active == false) {
@@ -91,7 +91,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         attach (clear_data, 1, 2, 1, 1);
 
         record_switch.notify["active"].connect (() => {
-            bool privacy_mode = record_switch.active;
+            bool privacy_mode = !record_switch.active;
             include_treeview.visible = !privacy_mode;
             exclude_treeview.visible = !privacy_mode;
             description_frame.visible = privacy_mode;
@@ -105,7 +105,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
             }
         });
 
-        record_switch.active = blacklist.get_incognito ();
+        record_switch.active = !blacklist.get_incognito ();
     }
     
     public void focus_privacy_switch () {
