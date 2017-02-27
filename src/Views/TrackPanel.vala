@@ -286,7 +286,11 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
                 path_blacklist.unblock (name);
             }
 
+#if VALA_0_36
+            list_store.remove (ref iter);
+#else
             list_store.remove (iter);
+#endif
         });
 
         var list_toolbar = new Gtk.Toolbar ();
