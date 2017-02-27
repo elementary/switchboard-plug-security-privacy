@@ -49,14 +49,24 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     }
 
     public TrackPanel () {
+        Object (column_spacing: 12,
+                margin: 12,
+                row_spacing: 12);
+    }
+
+    construct {
         app_blacklist = new ApplicationBlacklist (blacklist);
         path_blacklist = new PathBlacklist (blacklist);
         filetype_blacklist = new FileTypeBlacklist (blacklist);
 
+        create_description_panel ();
+
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
 
-        var record_label = new Gtk.Label (_("Privacy Mode:"));
-        record_label.get_style_context ().add_class ("h4");
+        var icon = new Gtk.Image.from_icon_name ("document-open-recent", Gtk.IconSize.DIALOG);
+
+        var record_label = new Gtk.Label (_("Privacy"));
+        record_label.get_style_context ().add_class ("h2");
 
         record_switch = new Gtk.Switch ();
         record_switch.valign = Gtk.Align.CENTER;
@@ -73,16 +83,18 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
             }
         });
 
-        create_description_panel ();
-
         var info_button = new Gtk.Image.from_icon_name ("help-info-symbolic", Gtk.IconSize.MENU);
+        info_button.hexpand = true;
+        info_button.xalign = 0;
         info_button.tooltip_text = _("This operating system can gather useful statistics about file and app usage to provide extra functionality. If other people can see or access your account, you may wish to limit which items are recorded.");
 
-        var record_grid = new Gtk.Grid ();
-        record_grid.column_spacing = 12;
-        record_grid.add (record_label); 
-        record_grid.add (record_switch);
-        record_grid.add (info_button);
+        var header_grid = new Gtk.Grid ();
+        header_grid.column_spacing = 12;
+        header_grid.margin_bottom = 12;
+        header_grid.add (icon);
+        header_grid.add (record_label);
+        header_grid.add (info_button);
+        header_grid.add (record_switch);
 
         var clear_data = new Gtk.ToggleButton.with_label (_("Clear Usage Data…"));
         clear_data.halign = Gtk.Align.END;
@@ -99,14 +111,11 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
             clear_data.active = false;
         });
 
-        column_spacing = 12;
-        row_spacing = 12;
-        margin = 12;
-
         create_include_treeview ();
         create_exclude_treeview ();
-        attach (record_grid, 0, 1, 1, 1);
-        attach (clear_data, 1, 1, 1, 1);
+        attach (header_grid, 0, 0, 2, 1);
+        attach (exclude_grid, 1, 1, 1, 1);
+        attach (clear_data, 1, 2, 1, 1);
 
         record_switch.active = blacklist.get_incognito ();
     }
@@ -148,7 +157,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
 
         description_frame.add (alert);
 
-        attach (description_frame, 0, 0, 2, 1);
+        attach (description_frame, 0, 1, 2, 1);
     }
 
     private void create_include_treeview () {
@@ -196,7 +205,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         record_grid.row_spacing = 6;
         record_grid.attach (record_label, 0, 0, 1, 1);
         record_grid.attach (scrolled, 0, 1, 1, 1);
-        attach (record_grid, 0, 0, 1, 1);
+        attach (record_grid, 0, 1, 1, 1);
 
         set_inclue_iter_to_liststore (list_store, _("Chat Logs"), "internet-chat", Zeitgeist.NMO.IMMESSAGE);
         set_inclue_iter_to_liststore (list_store, _("Documents"), "x-office-document", Zeitgeist.NFO.DOCUMENT);
@@ -314,7 +323,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         exclude_grid.orientation = Gtk.Orientation.VERTICAL;
         exclude_grid.add (record_label);
         exclude_grid.add (frame);
-        attach (exclude_grid, 1, 0, 1, 1);
 
         view.cursor_changed.connect (() => {
             remove_button.sensitive = true;

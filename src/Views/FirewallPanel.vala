@@ -39,20 +39,22 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     }
 
     public FirewallPanel () {
-        column_spacing = 12;
-        row_spacing = 6;
-        margin = 12;
-        orientation = Gtk.Orientation.VERTICAL;
+        Object (column_spacing: 12,
+                margin: 12,
+                row_spacing: 6);
+    }
 
-        var status_grid = new Gtk.Grid ();
-        status_grid.orientation = Gtk.Orientation.HORIZONTAL;
-        status_grid.column_spacing = 12;
-        status_grid.halign = Gtk.Align.CENTER;
+    construct {
+        var status_icon = new Gtk.Image.from_icon_name ("network-firewall", Gtk.IconSize.DIALOG);
 
-        var status_label = new Gtk.Label ("");
-        status_label.set_markup ("<b>%s</b>".printf (_("Firewall Status:")));
+        var status_label = new Gtk.Label (_("Firewall"));
+        status_label.get_style_context ().add_class ("h2");
+        status_label.hexpand = true;
+        status_label.xalign = 0;
 
         var status_switch = new Gtk.Switch ();
+        status_switch.valign = Gtk.Align.CENTER;
+
         status_switch.notify["active"].connect (() => {
             if (loading == false) {
                 view.sensitive = status_switch.active;
@@ -61,11 +63,14 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             show_rules ();
         });
 
-        status_grid.add (status_label);
-        status_grid.add (status_switch);
+        attach (status_icon, 0, 0, 1, 1);
+        attach (status_label, 1, 0, 1, 1);
+        attach (status_switch, 2, 0, 1, 1);
 
-        add (status_grid);
+        create_treeview ();
+
         sensitive = false;
+
         lock_button.get_permission ().notify["allowed"].connect (() => {
             loading = true;
             sensitive = lock_button.get_permission ().allowed;
@@ -82,8 +87,6 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             }
             loading = false;
         });
-
-        create_treeview ();
     }
 
     private void show_rules () {
@@ -260,8 +263,9 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         view_grid.attach (list_toolbar, 0, 1, 1, 1);
 
         var frame = new Gtk.Frame (null);
+        frame.margin_top = 12;
         frame.add (view_grid);
 
-        add (frame);
+        attach (frame, 0, 1, 3, 1);
     }
 }

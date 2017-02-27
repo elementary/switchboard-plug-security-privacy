@@ -49,7 +49,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         var location_icon = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
         location_icon.halign = Gtk.Align.START;
 
-        var title = new Gtk.Label (_("Location Services"));
+        var title = new Gtk.Label (_("Location"));
         title.get_style_context ().add_class ("h2");
         title.halign = Gtk.Align.START;
         title.hexpand = true;
