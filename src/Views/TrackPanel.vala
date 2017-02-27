@@ -102,7 +102,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 12;
         margin = 12;
-        margin_top = 0;
 
         create_include_treeview ();
         create_exclude_treeview ();
@@ -231,7 +230,6 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         view.insert_column_with_attributes (-1, "", cell, "markup", NotColumns.NAME);
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.shadow_type = Gtk.ShadowType.IN;
         scrolled.expand = true;
         scrolled.add (view);
 
@@ -305,6 +303,9 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         frame_grid.add (scrolled);
         frame_grid.add (list_toolbar);
 
+        var frame = new Gtk.Frame (null);
+        frame.add (frame_grid);
+
         var record_label = new Gtk.Label (_("Do not collect data from the following:"));
         record_label.xalign = 0;
 
@@ -312,7 +313,7 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
         exclude_grid.row_spacing = 6;
         exclude_grid.orientation = Gtk.Orientation.VERTICAL;
         exclude_grid.add (record_label);
-        exclude_grid.add (frame_grid);
+        exclude_grid.add (frame);
         attach (exclude_grid, 1, 0, 1, 1);
 
         view.cursor_changed.connect (() => {
