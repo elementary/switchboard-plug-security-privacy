@@ -36,7 +36,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         N_COLUMNS
     }
 
-    public LocationPanel () {
+    construct {
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool),
                 typeof (string), typeof (string), typeof (string));
 
