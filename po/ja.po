@@ -7,30 +7,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-02 01:52+0100\n"
+"POT-Creation-Date: 2017-02-26 13:40-0600\n"
 "PO-Revision-Date: 2017-02-11 12:43+0000\n"
 "Last-Translator: Ryo Nakano <Unknown>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:23+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
+"X-Launchpad-Export-Date: 2017-02-27 05:51+0000\n"
+"X-Generator: Launchpad (build 18328)\n"
 "Language: ja\n"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr "スリープ時にロック:"
-
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr "画面消去時にロック:"
-
-#: ../src/TrackPanel.vala:70
+#: ../src/Views/TrackPanel.vala:58
 msgid "Privacy Mode:"
 msgstr "プライバシーモード："
 
-#: ../src/TrackPanel.vala:91
+#: ../src/Views/TrackPanel.vala:79
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -40,126 +32,179 @@ msgstr ""
 "は、追加機能を提供するために、ファイルとアプリの使用状況に関する有用な統計情報を収集することができます。他の人が見たり、あなたのアカウントにアクセスできる"
 "場合は、記録される項目を制限することもできます。"
 
-#: ../src/TrackPanel.vala:101
+#: ../src/Views/TrackPanel.vala:87
 msgid "Clear Usage Data…"
 msgstr "利用履歴データをクリア…"
 
-#: ../src/TrackPanel.vala:111
-msgid "Remove system-collected file and application usage data from:"
-msgstr "システム収集ファイルとアプリケーションの使用状況データを削除:"
-
-#: ../src/TrackPanel.vala:114
-msgid "The past hour"
-msgstr "過去 １ 時間"
-
-#: ../src/TrackPanel.vala:115
-msgid "The past day"
-msgstr "過去 １ 日"
-
-#: ../src/TrackPanel.vala:116
-msgid "The past week"
-msgstr "過去 １ 週間"
-
-#: ../src/TrackPanel.vala:117
-msgid "From:"
-msgstr "取得先:"
-
-#: ../src/TrackPanel.vala:118
-msgid "All time"
-msgstr "全期間"
-
-#: ../src/TrackPanel.vala:121
-msgid "To:"
-msgstr "終了時:"
-
-#: ../src/TrackPanel.vala:124
-msgid "Clear Data"
-msgstr "データを削除"
-
-#: ../src/TrackPanel.vala:185
+#: ../src/Views/TrackPanel.vala:120
 msgid "Your system"
 msgstr "あなたのシステム"
 
-#: ../src/TrackPanel.vala:206
+#: ../src/Views/TrackPanel.vala:141
 msgid "%s is in Privacy Mode"
 msgstr "%s はプライバシーモードです"
 
-#: ../src/TrackPanel.vala:208
+#: ../src/Views/TrackPanel.vala:143
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr "プライバシーモードの間、この OS はファイルとアプリケーション使用に関するデータや統計情報をこれ以上保持しません。"
 
-#: ../src/TrackPanel.vala:209
+#: ../src/Views/TrackPanel.vala:144
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr "このデータが提供する追加の機能が影響を受けます。"
 
-#: ../src/TrackPanel.vala:210
+#: ../src/Views/TrackPanel.vala:145
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr "これは、ブラウザの履歴のように、アプリ自身の利用状況データを記録することを防ぐことはできません。"
 
-#: ../src/TrackPanel.vala:258
+#: ../src/Views/TrackPanel.vala:193
 msgid "Data Sources:"
 msgstr "データーソース:"
 
-#: ../src/TrackPanel.vala:267
+#: ../src/Views/TrackPanel.vala:202
 msgid "Chat Logs"
 msgstr "チャットログ"
 
-#: ../src/TrackPanel.vala:268
+#: ../src/Views/TrackPanel.vala:203
 msgid "Documents"
 msgstr "ドキュメント"
 
-#: ../src/TrackPanel.vala:269
+#: ../src/Views/TrackPanel.vala:204
 msgid "Music"
 msgstr "ミュージック"
 
-#: ../src/TrackPanel.vala:270
+#: ../src/Views/TrackPanel.vala:205
 msgid "Pictures"
 msgstr "ピクチャー"
 
-#: ../src/TrackPanel.vala:271
+#: ../src/Views/TrackPanel.vala:206
 msgid "Presentations"
 msgstr "プレゼンテーション"
 
-#: ../src/TrackPanel.vala:272
+#: ../src/Views/TrackPanel.vala:207
 msgid "Spreadsheets"
 msgstr "スプレッドシート"
 
-#: ../src/TrackPanel.vala:273
+#: ../src/Views/TrackPanel.vala:208
 msgid "Videos"
 msgstr "ビデオ"
 
-#: ../src/TrackPanel.vala:304
+#: ../src/Views/TrackPanel.vala:239
 msgid "Add Application…"
 msgstr "アプリケーションの追加..."
 
-#: ../src/TrackPanel.vala:319
+#: ../src/Views/TrackPanel.vala:254
 msgid "Add Folder…"
 msgstr "フォルダーの追加..."
 
-#: ../src/TrackPanel.vala:321
+#: ../src/Views/TrackPanel.vala:256
 msgid "Select a folder to blacklist"
 msgstr "除外リストに追加するフォルダーを選択"
 
-#: ../src/TrackPanel.vala:322
+#: ../src/Views/TrackPanel.vala:257
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: ../src/TrackPanel.vala:322
+#: ../src/Views/TrackPanel.vala:257
 msgid "Add"
 msgstr "追加"
 
-#: ../src/TrackPanel.vala:334
+#: ../src/Views/TrackPanel.vala:269
 msgid "Delete"
 msgstr "削除"
 
-#: ../src/TrackPanel.vala:369
+#: ../src/Views/TrackPanel.vala:304
 msgid "Do not collect data from the following:"
 msgstr "以下からデータを収集しない："
+
+#: ../src/Views/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr "ファイアウォールの状態:"
+
+#: ../src/Views/FirewallPanel.vala:100 ../src/Views/FirewallPanel.vala:110
+#: ../src/Views/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr "不明"
+
+#: ../src/Views/FirewallPanel.vala:102 ../src/Views/FirewallPanel.vala:162
+msgid "Allow"
+msgstr "許可"
+
+#: ../src/Views/FirewallPanel.vala:104 ../src/Views/FirewallPanel.vala:163
+msgid "Deny"
+msgstr "拒否"
+
+#: ../src/Views/FirewallPanel.vala:106 ../src/Views/FirewallPanel.vala:164
+msgid "Reject"
+msgstr "却下"
+
+#: ../src/Views/FirewallPanel.vala:108 ../src/Views/FirewallPanel.vala:165
+msgid "Limit"
+msgstr "制限"
+
+#: ../src/Views/FirewallPanel.vala:118 ../src/Views/FirewallPanel.vala:178
+msgid "In"
+msgstr "入力"
+
+#: ../src/Views/FirewallPanel.vala:120 ../src/Views/FirewallPanel.vala:179
+msgid "Out"
+msgstr "出力"
+
+#: ../src/Views/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/Views/FirewallPanel.vala:139
+msgid "Action"
+msgstr "動作"
+
+#: ../src/Views/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr "プロトコル"
+
+#: ../src/Views/FirewallPanel.vala:141
+msgid "Direction"
+msgstr "方向"
+
+#: ../src/Views/FirewallPanel.vala:142
+msgid "Ports"
+msgstr "ポート番号"
+
+#: ../src/Views/FirewallPanel.vala:159
+msgid "Action:"
+msgstr "操作:"
+
+#: ../src/Views/FirewallPanel.vala:168
+msgid "Protocol:"
+msgstr "プロトコル:"
+
+#: ../src/Views/FirewallPanel.vala:175
+msgid "Direction:"
+msgstr "方向:"
+
+#: ../src/Views/FirewallPanel.vala:182
+msgid "Ports:"
+msgstr "ポート："
+
+#: ../src/Views/FirewallPanel.vala:186
+msgid "%d or %d-%d"
+msgstr "%d または %d-%d"
+
+#: ../src/Views/FirewallPanel.vala:188
+msgid "Add Rule"
+msgstr "ルールの追加"
+
+#: ../src/Views/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr "スリープ時にロック:"
+
+#: ../src/Views/LockPanel.vala:35
+msgid "Lock after screen turns off:"
+msgstr "画面消去時にロック:"
 
 #. //launchpad.net/your-project)
 #. *
@@ -184,111 +229,66 @@ msgstr "以下からデータを収集しない："
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "ファイアウォールの設定を実行するには認証が必要です"
 
-#: ../src/Plug.vala:36
+#: ../src/Widgets/AppChooser.vala:39
+msgid "Search Application"
+msgstr "アプリケーションの検索"
+
+#: ../src/Widgets/ClearUsagePopover.vala:41
+msgid "Remove system-collected file and application usage data from:"
+msgstr "システム収集ファイルとアプリケーションの使用状況データを削除:"
+
+#: ../src/Widgets/ClearUsagePopover.vala:44
+msgid "The past hour"
+msgstr "過去 １ 時間"
+
+#: ../src/Widgets/ClearUsagePopover.vala:45
+msgid "The past day"
+msgstr "過去 １ 日"
+
+#: ../src/Widgets/ClearUsagePopover.vala:46
+msgid "The past week"
+msgstr "過去 １ 週間"
+
+#: ../src/Widgets/ClearUsagePopover.vala:47
+msgid "From:"
+msgstr "取得先:"
+
+#: ../src/Widgets/ClearUsagePopover.vala:48
+msgid "All time"
+msgstr "全期間"
+
+#: ../src/Widgets/ClearUsagePopover.vala:51
+msgid "To:"
+msgstr "終了時:"
+
+#: ../src/Widgets/ClearUsagePopover.vala:54
+msgid "Clear Data"
+msgstr "データを削除"
+
+#: ../src/Plug.vala:37
 msgid "Security & Privacy"
 msgstr "セキュリティとプライバシー"
 
-#: ../src/Plug.vala:37
+#: ../src/Plug.vala:38
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "ファイアウォール、スクリーンロックとアクティビティ情報を設定します"
 
-#: ../src/Plug.vala:73
+#: ../src/Plug.vala:65
 msgid "Some settings require administrator rights to be changed"
 msgstr "一部の設定変更には管理者権限が必要です"
 
-#: ../src/Plug.vala:106 ../src/Plug.vala:145
+#: ../src/Plug.vala:77 ../src/Plug.vala:151
 msgid "Privacy"
 msgstr "プライバシー"
 
-#: ../src/Plug.vala:108 ../src/Plug.vala:146 ../src/Plug.vala:147
+#: ../src/Plug.vala:78 ../src/Plug.vala:152 ../src/Plug.vala:153
 msgid "Locking"
 msgstr "ロック"
 
-#: ../src/Plug.vala:110 ../src/Plug.vala:148
+#: ../src/Plug.vala:79 ../src/Plug.vala:154
 msgid "Firewall"
 msgstr "ファイアウォール"
 
-#: ../src/Plug.vala:147
+#: ../src/Plug.vala:153
 msgid "Privacy Mode"
 msgstr "プライバシーモード"
-
-#: ../src/FirewallPanel.vala:54
-msgid "Firewall Status:"
-msgstr "ファイアウォールの状態:"
-
-#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
-#: ../src/FirewallPanel.vala:116
-msgid "Unknown"
-msgstr "不明"
-
-#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
-msgid "Allow"
-msgstr "許可"
-
-#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
-msgid "Deny"
-msgstr "拒否"
-
-#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
-msgid "Reject"
-msgstr "却下"
-
-#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
-msgid "Limit"
-msgstr "制限"
-
-#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
-msgid "In"
-msgstr "入力"
-
-#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
-msgid "Out"
-msgstr "出力"
-
-#: ../src/FirewallPanel.vala:138
-msgid "IPv6"
-msgstr "IPv6"
-
-#: ../src/FirewallPanel.vala:139
-msgid "Action"
-msgstr "動作"
-
-#: ../src/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr "プロトコル"
-
-#: ../src/FirewallPanel.vala:141
-msgid "Direction"
-msgstr "方向"
-
-#: ../src/FirewallPanel.vala:142
-msgid "Ports"
-msgstr "ポート番号"
-
-#: ../src/FirewallPanel.vala:159
-msgid "Action:"
-msgstr "操作:"
-
-#: ../src/FirewallPanel.vala:168
-msgid "Protocol:"
-msgstr "プロトコル:"
-
-#: ../src/FirewallPanel.vala:175
-msgid "Direction:"
-msgstr "方向:"
-
-#: ../src/FirewallPanel.vala:182
-msgid "Ports:"
-msgstr "ポート："
-
-#: ../src/FirewallPanel.vala:186
-msgid "%d or %d-%d"
-msgstr "%d または %d-%d"
-
-#: ../src/FirewallPanel.vala:188
-msgid "Add Rule"
-msgstr "ルールの追加"
-
-#: ../src/AppChooser.vala:80
-msgid "Search Application"
-msgstr "アプリケーションの検索"

@@ -7,155 +7,200 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-02 01:52+0100\n"
+"POT-Creation-Date: 2017-02-26 13:40-0600\n"
 "PO-Revision-Date: 2014-08-02 05:13+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: Malayalam <ml@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-11-03 06:22+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2017-02-27 05:51+0000\n"
+"X-Generator: Launchpad (build 18328)\n"
 "Language: ml\n"
 
-#: ../src/LockPanel.vala:33
-msgid "Lock on sleep:"
-msgstr ""
-
-#: ../src/LockPanel.vala:35
-msgid "Lock after screen turns off:"
-msgstr ""
-
-#: ../src/TrackPanel.vala:70
+#: ../src/Views/TrackPanel.vala:58
 msgid "Privacy Mode:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:91
+#: ../src/Views/TrackPanel.vala:79
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
 
-#: ../src/TrackPanel.vala:101
+#: ../src/Views/TrackPanel.vala:87
 msgid "Clear Usage Data…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:111
-msgid "Remove system-collected file and application usage data from:"
-msgstr ""
-
-#: ../src/TrackPanel.vala:114
-msgid "The past hour"
-msgstr ""
-
-#: ../src/TrackPanel.vala:115
-msgid "The past day"
-msgstr ""
-
-#: ../src/TrackPanel.vala:116
-msgid "The past week"
-msgstr ""
-
-#: ../src/TrackPanel.vala:117
-msgid "From:"
-msgstr "മുതല്‍:"
-
-#: ../src/TrackPanel.vala:118
-msgid "All time"
-msgstr ""
-
-#: ../src/TrackPanel.vala:121
-msgid "To:"
-msgstr "വരെ:"
-
-#: ../src/TrackPanel.vala:124
-msgid "Clear Data"
-msgstr ""
-
-#: ../src/TrackPanel.vala:185
+#: ../src/Views/TrackPanel.vala:120
 msgid "Your system"
 msgstr ""
 
-#: ../src/TrackPanel.vala:206
+#: ../src/Views/TrackPanel.vala:141
 msgid "%s is in Privacy Mode"
 msgstr ""
 
-#: ../src/TrackPanel.vala:208
+#: ../src/Views/TrackPanel.vala:143
 msgid ""
 "While in Privacy Mode, this operating system won't retain any further data "
 "or statistics about file and application usage."
 msgstr ""
 
-#: ../src/TrackPanel.vala:209
+#: ../src/Views/TrackPanel.vala:144
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr ""
 
-#: ../src/TrackPanel.vala:210
+#: ../src/Views/TrackPanel.vala:145
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
 
-#: ../src/TrackPanel.vala:258
+#: ../src/Views/TrackPanel.vala:193
 msgid "Data Sources:"
 msgstr ""
 
-#: ../src/TrackPanel.vala:267
+#: ../src/Views/TrackPanel.vala:202
 msgid "Chat Logs"
 msgstr ""
 
-#: ../src/TrackPanel.vala:268
+#: ../src/Views/TrackPanel.vala:203
 msgid "Documents"
 msgstr ""
 
-#: ../src/TrackPanel.vala:269
+#: ../src/Views/TrackPanel.vala:204
 msgid "Music"
 msgstr ""
 
-#: ../src/TrackPanel.vala:270
+#: ../src/Views/TrackPanel.vala:205
 msgid "Pictures"
 msgstr ""
 
-#: ../src/TrackPanel.vala:271
+#: ../src/Views/TrackPanel.vala:206
 msgid "Presentations"
 msgstr ""
 
-#: ../src/TrackPanel.vala:272
+#: ../src/Views/TrackPanel.vala:207
 msgid "Spreadsheets"
 msgstr ""
 
-#: ../src/TrackPanel.vala:273
+#: ../src/Views/TrackPanel.vala:208
 msgid "Videos"
 msgstr ""
 
-#: ../src/TrackPanel.vala:304
+#: ../src/Views/TrackPanel.vala:239
 msgid "Add Application…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:319
+#: ../src/Views/TrackPanel.vala:254
 msgid "Add Folder…"
 msgstr ""
 
-#: ../src/TrackPanel.vala:321
+#: ../src/Views/TrackPanel.vala:256
 msgid "Select a folder to blacklist"
 msgstr ""
 
-#: ../src/TrackPanel.vala:322
+#: ../src/Views/TrackPanel.vala:257
 msgid "Cancel"
 msgstr ""
 
-#: ../src/TrackPanel.vala:322
+#: ../src/Views/TrackPanel.vala:257
 msgid "Add"
 msgstr ""
 
-#: ../src/TrackPanel.vala:334
+#: ../src/Views/TrackPanel.vala:269
 msgid "Delete"
 msgstr ""
 
-#: ../src/TrackPanel.vala:369
+#: ../src/Views/TrackPanel.vala:304
 msgid "Do not collect data from the following:"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:54
+msgid "Firewall Status:"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:100 ../src/Views/FirewallPanel.vala:110
+#: ../src/Views/FirewallPanel.vala:116
+msgid "Unknown"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:102 ../src/Views/FirewallPanel.vala:162
+msgid "Allow"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:104 ../src/Views/FirewallPanel.vala:163
+msgid "Deny"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:106 ../src/Views/FirewallPanel.vala:164
+msgid "Reject"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:108 ../src/Views/FirewallPanel.vala:165
+msgid "Limit"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:118 ../src/Views/FirewallPanel.vala:178
+msgid "In"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:120 ../src/Views/FirewallPanel.vala:179
+msgid "Out"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:138
+msgid "IPv6"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:139
+msgid "Action"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:140
+msgid "Protocol"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:141
+msgid "Direction"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:142
+msgid "Ports"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:159
+msgid "Action:"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:168
+msgid "Protocol:"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:175
+msgid "Direction:"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:182
+msgid "Ports:"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:186
+msgid "%d or %d-%d"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:188
+msgid "Add Rule"
+msgstr ""
+
+#: ../src/Views/LockPanel.vala:33
+msgid "Lock on sleep:"
+msgstr ""
+
+#: ../src/Views/LockPanel.vala:35
+msgid "Lock after screen turns off:"
 msgstr ""
 
 #. //launchpad.net/your-project)
@@ -181,111 +226,66 @@ msgstr ""
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 
-#: ../src/Plug.vala:36
-msgid "Security & Privacy"
+#: ../src/Widgets/AppChooser.vala:39
+msgid "Search Application"
+msgstr ""
+
+#: ../src/Widgets/ClearUsagePopover.vala:41
+msgid "Remove system-collected file and application usage data from:"
+msgstr ""
+
+#: ../src/Widgets/ClearUsagePopover.vala:44
+msgid "The past hour"
+msgstr ""
+
+#: ../src/Widgets/ClearUsagePopover.vala:45
+msgid "The past day"
+msgstr ""
+
+#: ../src/Widgets/ClearUsagePopover.vala:46
+msgid "The past week"
+msgstr ""
+
+#: ../src/Widgets/ClearUsagePopover.vala:47
+msgid "From:"
+msgstr "മുതല്‍:"
+
+#: ../src/Widgets/ClearUsagePopover.vala:48
+msgid "All time"
+msgstr ""
+
+#: ../src/Widgets/ClearUsagePopover.vala:51
+msgid "To:"
+msgstr "വരെ:"
+
+#: ../src/Widgets/ClearUsagePopover.vala:54
+msgid "Clear Data"
 msgstr ""
 
 #: ../src/Plug.vala:37
+msgid "Security & Privacy"
+msgstr ""
+
+#: ../src/Plug.vala:38
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 
-#: ../src/Plug.vala:73
+#: ../src/Plug.vala:65
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 
-#: ../src/Plug.vala:106 ../src/Plug.vala:145
+#: ../src/Plug.vala:77 ../src/Plug.vala:151
 msgid "Privacy"
 msgstr ""
 
-#: ../src/Plug.vala:108 ../src/Plug.vala:146 ../src/Plug.vala:147
+#: ../src/Plug.vala:78 ../src/Plug.vala:152 ../src/Plug.vala:153
 msgid "Locking"
 msgstr ""
 
-#: ../src/Plug.vala:110 ../src/Plug.vala:148
+#: ../src/Plug.vala:79 ../src/Plug.vala:154
 msgid "Firewall"
 msgstr ""
 
-#: ../src/Plug.vala:147
+#: ../src/Plug.vala:153
 msgid "Privacy Mode"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:54
-msgid "Firewall Status:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:100 ../src/FirewallPanel.vala:110
-#: ../src/FirewallPanel.vala:116
-msgid "Unknown"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:102 ../src/FirewallPanel.vala:162
-msgid "Allow"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:104 ../src/FirewallPanel.vala:163
-msgid "Deny"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:106 ../src/FirewallPanel.vala:164
-msgid "Reject"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:108 ../src/FirewallPanel.vala:165
-msgid "Limit"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:118 ../src/FirewallPanel.vala:178
-msgid "In"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:120 ../src/FirewallPanel.vala:179
-msgid "Out"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:138
-msgid "IPv6"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:139
-msgid "Action"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:141
-msgid "Direction"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:142
-msgid "Ports"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:159
-msgid "Action:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:168
-msgid "Protocol:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:175
-msgid "Direction:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:182
-msgid "Ports:"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:186
-msgid "%d or %d-%d"
-msgstr ""
-
-#: ../src/FirewallPanel.vala:188
-msgid "Add Rule"
-msgstr ""
-
-#: ../src/AppChooser.vala:80
-msgid "Search Application"
 msgstr ""
