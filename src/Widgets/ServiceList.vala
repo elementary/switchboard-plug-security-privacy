@@ -5,9 +5,9 @@ public class ServiceList : Gtk.ListBox {
     }
 
     construct {
-        var privacy_item = new ServiceItem ("view-private", "tracking", _("Privacy"));
+        var privacy_item = new ServiceItem ("document-open-recent", "tracking", _("Privacy"));
         var lock_item = new ServiceItem ("system-lock-screen", "locking", _("Locking"));
-        var firewall_item = new ServiceItem ("preferences-system-network", "firewall", _("Firewall"));
+        var firewall_item = new ServiceItem ("network-firewall", "firewall", _("Firewall"));
 
         add (privacy_item);
         add (lock_item);
