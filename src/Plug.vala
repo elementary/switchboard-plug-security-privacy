@@ -118,7 +118,7 @@ namespace SecurityPrivacy {
             stack.add_titled (tracking, "tracking", _("Privacy"));
             stack.add_titled (locking, "locking", _("Locking"));
             stack.add_titled (firewall, "firewall", _("Firewall"));
-            stack.add_titled (location, "location", _("Location"));
+            stack.add_titled (location, "location", _("Location Services"));
 
             var service_list = new ServiceList ();
 
@@ -171,7 +171,7 @@ namespace SecurityPrivacy {
             map.set ("%s → %s".printf (display_name, _("Locking")), "locking");
             map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Privacy Mode")), "locking<sep>privacy-mode");
             map.set ("%s → %s".printf (display_name, _("Firewall")), "firewall");
-            map.set ("%s → %s".printf (display_name, _("Location")), "location");
+            map.set ("%s → %s".printf (display_name, _("Location Services")), "location");
             return map;
         }
     }

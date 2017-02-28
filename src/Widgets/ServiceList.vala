@@ -24,7 +24,7 @@ public class ServiceList : Gtk.ListBox {
         });
 
         if (location_agent_installed ()) {
-            location_item = new ServiceItem ("find-location", "location", _("Location"));
+            location_item = new ServiceItem ("find-location", "location", _("Location Services"));
             add (location_item);
             update_location_status ();
             SecurityPrivacy.location.status_switch.notify["active"].connect (() => {
