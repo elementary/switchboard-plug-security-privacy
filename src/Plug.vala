@@ -31,6 +31,7 @@ namespace SecurityPrivacy {
         Gtk.Grid main_grid;
         Gtk.Stack stack;
         TrackPanel tracking;
+        ServiceList service_list;
 
         public Plug () {
             Object (category: Category.PERSONAL,
@@ -116,7 +117,7 @@ namespace SecurityPrivacy {
             stack.add_titled (locking, "locking", _("Locking"));
             stack.add_titled (firewall, "firewall", _("Firewall"));
 
-            var service_list = new ServiceList ();
+            service_list = new ServiceList ();
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             paned.position = 200;
@@ -143,16 +144,20 @@ namespace SecurityPrivacy {
             switch (location) {
                 case "privacy":
                     stack.set_visible_child_name ("tracking");
+                    service_list.select_service_name ("tracking");
                     break;
                 case "locking":
                     stack.set_visible_child_name ("locking");
+                    service_list.select_service_name ("locking");
                     break;
                 case "locking<sep>privacy-mode":
                     stack.set_visible_child_name ("locking");
+                    service_list.select_service_name ("locking");
                     tracking.focus_privacy_switch ();
                     break;
                 case "firewall":
                     stack.set_visible_child_name ("firewall");
+                    service_list.select_service_name ("firewall");
                     break;
             }
         }
