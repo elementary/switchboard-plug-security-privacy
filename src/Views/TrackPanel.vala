@@ -31,13 +31,12 @@ public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     }
 
     construct {
-        var title = _("History Is Disabled").printf (get_operating_system_name ());
-        var description = ("%s\n\n%s\n\n%s".printf (
+        var description = ("%s %s\n\n%s".printf (
                     _("%s won't retain any further data or statistics about file and application usage.").printf (get_operating_system_name ()),
                     _("The additional functionality that this data provides will be affected."),
                     _("This will not prevent apps from recording their own usage data like browser history.")));
 
-        var alert = new Granite.Widgets.AlertView (title, description, "");
+        var alert = new Granite.Widgets.AlertView (_("History Is Disabled"), description, "");
         alert.show_all ();
 
         var description_frame = new Gtk.Frame (null);

@@ -7,22 +7,76 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-26 13:40-0600\n"
+"POT-Creation-Date: 2017-02-27 16:08-0800\n"
 "PO-Revision-Date: 2014-12-11 07:39+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-27 05:51+0000\n"
-"X-Generator: Launchpad (build 18328)\n"
+"X-Launchpad-Export-Date: 2017-02-28 05:27+0000\n"
+"X-Generator: Launchpad (build 18329)\n"
 "Language: gl\n"
 
-#: ../src/Views/TrackPanel.vala:58
-msgid "Privacy Mode:"
-msgstr "Modo de intimidade:"
+#: ../src/Plug.vala:38
+msgid "Security & Privacy"
+msgstr "Seguranza e intimidade"
 
-#: ../src/Views/TrackPanel.vala:79
+#: ../src/Plug.vala:39
+msgid "Configure firewall, screen lock, and activity information"
+msgstr ""
+
+#: ../src/Plug.vala:74
+msgid "Some settings require administrator rights to be changed"
+msgstr "Precisanse dereitos de administrador para cambiar algúns axustes"
+
+#: ../src/Plug.vala:115 ../src/Plug.vala:163
+msgid "Privacy"
+msgstr "Intimidade"
+
+#: ../src/Plug.vala:116 ../src/Plug.vala:164 ../src/Plug.vala:165
+#: ../src/Widgets/ServiceList.vala:9
+msgid "Locking"
+msgstr "Bloqueo"
+
+#: ../src/Plug.vala:117 ../src/Plug.vala:166 ../src/Views/FirewallPanel.vala:51
+#: ../src/Widgets/ServiceList.vala:10
+msgid "Firewall"
+msgstr "Devasa"
+
+#: ../src/Plug.vala:165
+msgid "Privacy Mode"
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:34
+msgid "History Is Disabled"
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:36
+msgid ""
+"%s won't retain any further data or statistics about file and application "
+"usage."
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:37
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr ""
+"Calquera funcionalidade adicional baseada nestes datos verase afectada."
+
+#: ../src/Views/TrackPanel.vala:38
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr ""
+"Isto non impide que os aplicativos garden os seus propios datos, como o "
+"historial de navegación."
+
+#: ../src/Views/TrackPanel.vala:49 ../src/Widgets/ServiceList.vala:8
+msgid "History"
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:59
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -32,211 +86,166 @@ msgstr ""
 "aplicativos usados a fin de ofrecer funcionalidades extra. Se esta conta for "
 "usada por outras persoas, poderá querer escoller que información é recollida."
 
-#: ../src/Views/TrackPanel.vala:87
-msgid "Clear Usage Data…"
-msgstr "Eliminar os datos de uso..."
+#: ../src/Views/TrackPanel.vala:69
+msgid "Clear History…"
+msgstr ""
 
-#: ../src/Views/TrackPanel.vala:120
+#: ../src/Views/TrackPanel.vala:116
 msgid "Your system"
 msgstr "O seu sistema"
 
-#: ../src/Views/TrackPanel.vala:141
-msgid "%s is in Privacy Mode"
-msgstr "%s está en modo de intimidade"
-
-#: ../src/Views/TrackPanel.vala:143
-msgid ""
-"While in Privacy Mode, this operating system won't retain any further data "
-"or statistics about file and application usage."
-msgstr ""
-"Cando estea en modo de intimidade, o sistema operativo non reterá os datos "
-"ou estatísticas de uso de ficheiros e aplicativos."
-
-#: ../src/Views/TrackPanel.vala:144
-msgid ""
-"The additional functionality that this data provides will be affected."
-msgstr ""
-"Calquera funcionalidade adicional baseada nestes datos verase afectada."
-
-#: ../src/Views/TrackPanel.vala:145
-msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
-msgstr ""
-"Isto non impide que os aplicativos garden os seus propios datos, como o "
-"historial de navegación."
-
-#: ../src/Views/TrackPanel.vala:193
-msgid "Data Sources:"
-msgstr "Orixes dos datos:"
-
-#: ../src/Views/TrackPanel.vala:202
-msgid "Chat Logs"
-msgstr "Rexistros de conversas"
-
-#: ../src/Views/TrackPanel.vala:203
-msgid "Documents"
-msgstr "Documentos"
-
-#: ../src/Views/TrackPanel.vala:204
-msgid "Music"
-msgstr "Música"
-
-#: ../src/Views/TrackPanel.vala:205
-msgid "Pictures"
-msgstr "Imaxes"
-
-#: ../src/Views/TrackPanel.vala:206
-msgid "Presentations"
-msgstr "Presentacións"
-
-#: ../src/Views/TrackPanel.vala:207
-msgid "Spreadsheets"
-msgstr "Follas de cálculo"
-
-#: ../src/Views/TrackPanel.vala:208
-msgid "Videos"
-msgstr "Vídeos"
-
-#: ../src/Views/TrackPanel.vala:239
-msgid "Add Application…"
-msgstr "Engadir aplicativo..."
-
-#: ../src/Views/TrackPanel.vala:254
-msgid "Add Folder…"
-msgstr "Engadir un cartafol..."
-
-#: ../src/Views/TrackPanel.vala:256
-msgid "Select a folder to blacklist"
-msgstr "Seleccione un cartafol para engadir á lista negra"
-
-#: ../src/Views/TrackPanel.vala:257
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: ../src/Views/TrackPanel.vala:257
-msgid "Add"
-msgstr "Engadir"
-
-#: ../src/Views/TrackPanel.vala:269
-msgid "Delete"
-msgstr "Eliminar"
-
-#: ../src/Views/TrackPanel.vala:304
-msgid "Do not collect data from the following:"
-msgstr "Non recoller datos dos deguintes:"
-
-#: ../src/Views/FirewallPanel.vala:54
-msgid "Firewall Status:"
-msgstr "Estado da devasa:"
-
-#: ../src/Views/FirewallPanel.vala:100 ../src/Views/FirewallPanel.vala:110
-#: ../src/Views/FirewallPanel.vala:116
-msgid "Unknown"
-msgstr "Descoñecido"
-
-#: ../src/Views/FirewallPanel.vala:102 ../src/Views/FirewallPanel.vala:162
-msgid "Allow"
-msgstr "Permitir"
-
-#: ../src/Views/FirewallPanel.vala:104 ../src/Views/FirewallPanel.vala:163
-msgid "Deny"
-msgstr "Denegar"
-
-#: ../src/Views/FirewallPanel.vala:106 ../src/Views/FirewallPanel.vala:164
-msgid "Reject"
-msgstr "Rexeitar"
-
-#: ../src/Views/FirewallPanel.vala:108 ../src/Views/FirewallPanel.vala:165
-msgid "Limit"
-msgstr "Limitar"
-
-#: ../src/Views/FirewallPanel.vala:118 ../src/Views/FirewallPanel.vala:178
-msgid "In"
-msgstr "Entrante"
-
-#: ../src/Views/FirewallPanel.vala:120 ../src/Views/FirewallPanel.vala:179
-msgid "Out"
-msgstr "Saínte"
-
-#: ../src/Views/FirewallPanel.vala:138
-msgid "IPv6"
-msgstr "IPv6"
-
-#: ../src/Views/FirewallPanel.vala:139
-msgid "Action"
-msgstr "Acción"
-
-#: ../src/Views/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr "Protocolo"
-
-#: ../src/Views/FirewallPanel.vala:141
-msgid "Direction"
-msgstr "Dirección"
-
-#: ../src/Views/FirewallPanel.vala:142
-msgid "Ports"
-msgstr "Portos"
-
-#: ../src/Views/FirewallPanel.vala:159
-msgid "Action:"
-msgstr "Acción:"
-
-#: ../src/Views/FirewallPanel.vala:168
-msgid "Protocol:"
-msgstr "Protocolo:"
-
-#: ../src/Views/FirewallPanel.vala:175
-msgid "Direction:"
-msgstr "Dirección:"
-
-#: ../src/Views/FirewallPanel.vala:182
-msgid "Ports:"
-msgstr "Portos:"
-
-#: ../src/Views/FirewallPanel.vala:186
-msgid "%d or %d-%d"
-msgstr "%d ou %d-%d"
-
-#: ../src/Views/FirewallPanel.vala:188
-msgid "Add Rule"
-msgstr "Engadir unha regra"
-
-#: ../src/Views/LockPanel.vala:33
+#: ../src/Views/LockPanel.vala:34
 msgid "Lock on sleep:"
 msgstr ""
 
-#: ../src/Views/LockPanel.vala:35
+#: ../src/Views/LockPanel.vala:36
 msgid "Lock after screen turns off:"
 msgstr ""
 
-#. //launchpad.net/your-project)
-#. *
-#. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Library General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This library is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Library General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU Library General Public
-#. * License along with this library; if not, write to the
-#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-#. * Boston, MA 02111-1307, USA.
-#. *
-#. * Authored by: Corentin Noël <tintou@mailoo.org>
-#. 
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Precísase autenticación para configurar a devasa"
+#: ../src/Views/FirewallPanel.vala:103 ../src/Views/FirewallPanel.vala:113
+#: ../src/Views/FirewallPanel.vala:119
+msgid "Unknown"
+msgstr "Descoñecido"
+
+#: ../src/Views/FirewallPanel.vala:105 ../src/Views/FirewallPanel.vala:165
+msgid "Allow"
+msgstr "Permitir"
+
+#: ../src/Views/FirewallPanel.vala:107 ../src/Views/FirewallPanel.vala:166
+msgid "Deny"
+msgstr "Denegar"
+
+#: ../src/Views/FirewallPanel.vala:109 ../src/Views/FirewallPanel.vala:167
+msgid "Reject"
+msgstr "Rexeitar"
+
+#: ../src/Views/FirewallPanel.vala:111 ../src/Views/FirewallPanel.vala:168
+msgid "Limit"
+msgstr "Limitar"
+
+#: ../src/Views/FirewallPanel.vala:121 ../src/Views/FirewallPanel.vala:181
+msgid "In"
+msgstr "Entrante"
+
+#: ../src/Views/FirewallPanel.vala:123 ../src/Views/FirewallPanel.vala:182
+msgid "Out"
+msgstr "Saínte"
+
+#: ../src/Views/FirewallPanel.vala:141
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/Views/FirewallPanel.vala:142
+msgid "Action"
+msgstr "Acción"
+
+#: ../src/Views/FirewallPanel.vala:143
+msgid "Protocol"
+msgstr "Protocolo"
+
+#: ../src/Views/FirewallPanel.vala:144
+msgid "Direction"
+msgstr "Dirección"
+
+#: ../src/Views/FirewallPanel.vala:145
+msgid "Ports"
+msgstr "Portos"
+
+#: ../src/Views/FirewallPanel.vala:162
+msgid "Action:"
+msgstr "Acción:"
+
+#: ../src/Views/FirewallPanel.vala:171
+msgid "Protocol:"
+msgstr "Protocolo:"
+
+#: ../src/Views/FirewallPanel.vala:178
+msgid "Direction:"
+msgstr "Dirección:"
+
+#: ../src/Views/FirewallPanel.vala:185
+msgid "Ports:"
+msgstr "Portos:"
+
+#: ../src/Views/FirewallPanel.vala:189
+msgid "%d or %d-%d"
+msgstr "%d ou %d-%d"
+
+#: ../src/Views/FirewallPanel.vala:191
+msgid "Add Rule"
+msgstr "Engadir unha regra"
+
+#: ../src/Widgets/IncludeTreeView.vala:76
+msgid "Data Sources:"
+msgstr "Orixes dos datos:"
+
+#: ../src/Widgets/IncludeTreeView.vala:82
+msgid "Chat Logs"
+msgstr "Rexistros de conversas"
+
+#: ../src/Widgets/IncludeTreeView.vala:83
+msgid "Documents"
+msgstr "Documentos"
+
+#: ../src/Widgets/IncludeTreeView.vala:84
+msgid "Music"
+msgstr "Música"
+
+#: ../src/Widgets/IncludeTreeView.vala:85
+msgid "Pictures"
+msgstr "Imaxes"
+
+#: ../src/Widgets/IncludeTreeView.vala:86
+msgid "Presentations"
+msgstr "Presentacións"
+
+#: ../src/Widgets/IncludeTreeView.vala:87
+msgid "Spreadsheets"
+msgstr "Follas de cálculo"
+
+#: ../src/Widgets/IncludeTreeView.vala:88
+msgid "Videos"
+msgstr "Vídeos"
+
+#: ../src/Widgets/ServiceItem.vala:12
+msgid "Enabled"
+msgstr ""
+
+#: ../src/Widgets/ServiceItem.vala:16
+msgid "Disabled"
+msgstr ""
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
 msgstr ""
+
+#: ../src/Widgets/ExcludeTreeView.vala:56
+msgid "Add Application…"
+msgstr "Engadir aplicativo..."
+
+#: ../src/Widgets/ExcludeTreeView.vala:71
+msgid "Add Folder…"
+msgstr "Engadir un cartafol..."
+
+#: ../src/Widgets/ExcludeTreeView.vala:73
+msgid "Select a folder to blacklist"
+msgstr "Seleccione un cartafol para engadir á lista negra"
+
+#: ../src/Widgets/ExcludeTreeView.vala:74
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../src/Widgets/ExcludeTreeView.vala:74
+msgid "Add"
+msgstr "Engadir"
+
+#: ../src/Widgets/ExcludeTreeView.vala:86
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ../src/Widgets/ExcludeTreeView.vala:128
+msgid "Do not collect data from the following:"
+msgstr "Non recoller datos dos deguintes:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
@@ -270,30 +279,44 @@ msgstr "Ata:"
 msgid "Clear Data"
 msgstr "Limpar datos"
 
-#: ../src/Plug.vala:37
-msgid "Security & Privacy"
-msgstr "Seguranza e intimidade"
+#. //launchpad.net/your-project)
+#. *
+#. * This library is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU Library General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This library is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * Library General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU Library General Public
+#. * License along with this library; if not, write to the
+#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+#. * Boston, MA 02111-1307, USA.
+#. *
+#. * Authored by: Corentin Noël <tintou@mailoo.org>
+#. 
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Precísase autenticación para configurar a devasa"
 
-#: ../src/Plug.vala:38
-msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+#~ msgid "Firewall Status:"
+#~ msgstr "Estado da devasa:"
 
-#: ../src/Plug.vala:65
-msgid "Some settings require administrator rights to be changed"
-msgstr "Precisanse dereitos de administrador para cambiar algúns axustes"
+#~ msgid "Clear Usage Data…"
+#~ msgstr "Eliminar os datos de uso..."
 
-#: ../src/Plug.vala:77 ../src/Plug.vala:151
-msgid "Privacy"
-msgstr "Intimidade"
+#~ msgid "Privacy Mode:"
+#~ msgstr "Modo de intimidade:"
 
-#: ../src/Plug.vala:78 ../src/Plug.vala:152 ../src/Plug.vala:153
-msgid "Locking"
-msgstr "Bloqueo"
+#~ msgid ""
+#~ "While in Privacy Mode, this operating system won't retain any further data "
+#~ "or statistics about file and application usage."
+#~ msgstr ""
+#~ "Cando estea en modo de intimidade, o sistema operativo non reterá os datos "
+#~ "ou estatísticas de uso de ficheiros e aplicativos."
 
-#: ../src/Plug.vala:79 ../src/Plug.vala:154
-msgid "Firewall"
-msgstr "Devasa"
-
-#: ../src/Plug.vala:153
-msgid "Privacy Mode"
-msgstr ""
+#~ msgid "%s is in Privacy Mode"
+#~ msgstr "%s está en modo de intimidade"
