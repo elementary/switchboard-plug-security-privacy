@@ -88,10 +88,10 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         var disabled_frame = new Gtk.Frame (null);
         disabled_frame.expand = true;
 
-        var title = _("Location is disabled");
+        var title = _("Location services are disabled");
         var description = ("%s\n\n%s\n\n%s".printf (
-                    _("While location is disabled, location requests from apps will be automatically rejected."),
-                    _("The additional functionality that location provides in those apps will be affected."),
+                    _("While location services are disabled, location requests from apps will be automatically rejected."),
+                    _("The additional functionality that location access provides in those apps will be affected."),
                     _("This will not prevent apps from trying to determine your location based on IP address.")));
 
         var alert = new Granite.Widgets.AlertView (title, description, "");
