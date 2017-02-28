@@ -21,6 +21,7 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Views/FirewallPanel.vala
     Views/LockPanel.vala
     Views/TrackPanel.vala
+    Views/LocationPanel.vala
 
     Widgets/AppChooser.vala
     Widgets/AppRow.vala

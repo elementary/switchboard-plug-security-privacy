@@ -6,6 +6,8 @@ public class ServiceList : Gtk.ListBox {
                 selection_mode: Gtk.SelectionMode.SINGLE);
     }
 
+    ServiceItem? location_item;
+
     construct {
         var privacy_item = new ServiceItem ("document-open-recent", "tracking", _("History"));
         var lock_item = new ServiceItem ("system-lock-screen", "locking", _("Locking"));
@@ -22,6 +24,23 @@ public class ServiceList : Gtk.ListBox {
                 firewall_item.status = ServiceItem.Status.DISABLED;
             }
         });
+
+        if (SecurityPrivacy.LocationPanel.location_agent_installed ()) {
+            location_item = new ServiceItem ("find-location", "location", _("Location Services"));
+            add_service (location_item);
+            update_location_status ();
+            SecurityPrivacy.location.status_switch.notify["active"].connect (() => {
+                update_location_status ();
+            });
+        }      
+    }
+
+    private void update_location_status () {
+        if (SecurityPrivacy.location.status_switch.active) {
+            location_item.status = ServiceItem.Status.ENABLED;
+        } else {
+            location_item.status = ServiceItem.Status.DISABLED;
+        }    
     }
 
     public void add_service (ServiceItem service) {

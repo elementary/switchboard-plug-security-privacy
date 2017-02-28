@@ -25,13 +25,17 @@ namespace SecurityPrivacy {
     public static Plug plug;
     public static Gtk.LockButton lock_button;
     public static Blacklist blacklist;
+    public static LocationPanel location;
     public static FirewallPanel firewall;
 
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
         Gtk.Stack stack;
+
         TrackPanel tracking;
         ServiceList service_list;
+
+        bool location_agent_installed = false;
 
         public Plug () {
             Object (category: Category.PERSONAL,
@@ -40,10 +44,16 @@ namespace SecurityPrivacy {
                     description: _("Configure firewall, screen lock, and activity information"),
                     icon: "preferences-system-privacy",
                     supported_settings: new Gee.TreeMap<string, string?> (null, null));
+
+            location_agent_installed = SecurityPrivacy.LocationPanel.location_agent_installed ();
             supported_settings.set ("security", null);
             supported_settings.set ("security/privacy", "tracking");
             supported_settings.set ("security/firewall", "firewall");
             supported_settings.set ("security/screensaver", "locking");
+            
+            if (location_agent_installed) {
+                supported_settings.set ("security/privacy/location", "location");
+            }
             plug = this;
         }
 
@@ -117,6 +127,11 @@ namespace SecurityPrivacy {
             stack.add_titled (locking, "locking", _("Locking"));
             stack.add_titled (firewall, "firewall", _("Firewall"));
 
+            if (location_agent_installed) {
+                location = new LocationPanel ();
+                stack.add_titled (location, "location", _("Location Services"));
+            }                
+
             service_list = new ServiceList ();
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
@@ -159,6 +174,10 @@ namespace SecurityPrivacy {
                     stack.set_visible_child_name ("firewall");
                     service_list.select_service_name ("firewall");
                     break;
+                case "location":
+                    stack.set_visible_child_name ("location");
+                    service_list.select_service_name ("location");
+                    break;
             }
         }
 
@@ -169,6 +188,9 @@ namespace SecurityPrivacy {
             map.set ("%s → %s".printf (display_name, _("Locking")), "locking");
             map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Privacy Mode")), "locking<sep>privacy-mode");
             map.set ("%s → %s".printf (display_name, _("Firewall")), "firewall");
+            if (location_agent_installed) {
+                map.set ("%s → %s".printf (display_name, _("Location Services")), "location");
+            }
             return map;
         }
     }
