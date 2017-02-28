@@ -7,22 +7,78 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-26 13:40-0600\n"
+"POT-Creation-Date: 2017-02-27 16:08-0800\n"
 "PO-Revision-Date: 2016-08-06 18:22+0000\n"
 "Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-27 05:50+0000\n"
-"X-Generator: Launchpad (build 18328)\n"
+"X-Launchpad-Export-Date: 2017-02-28 05:27+0000\n"
+"X-Generator: Launchpad (build 18329)\n"
 "Language: bg\n"
 
-#: ../src/Views/TrackPanel.vala:58
-msgid "Privacy Mode:"
-msgstr "Режим усамотение:"
+#: ../src/Plug.vala:38
+msgid "Security & Privacy"
+msgstr "Сигурност и поверителност"
 
-#: ../src/Views/TrackPanel.vala:79
+#: ../src/Plug.vala:39
+msgid "Configure firewall, screen lock, and activity information"
+msgstr ""
+"Настройка на защитната стена, заключването на екрана и данните за "
+"активността."
+
+#: ../src/Plug.vala:74
+msgid "Some settings require administrator rights to be changed"
+msgstr "Някои настройки изискват ръководни правомощия, за да бъдат променени"
+
+#: ../src/Plug.vala:115 ../src/Plug.vala:163
+msgid "Privacy"
+msgstr "Поверителност"
+
+#: ../src/Plug.vala:116 ../src/Plug.vala:164 ../src/Plug.vala:165
+#: ../src/Widgets/ServiceList.vala:9
+msgid "Locking"
+msgstr "Заключване"
+
+#: ../src/Plug.vala:117 ../src/Plug.vala:166 ../src/Views/FirewallPanel.vala:51
+#: ../src/Widgets/ServiceList.vala:10
+msgid "Firewall"
+msgstr "Защитна стена"
+
+#: ../src/Plug.vala:165
+msgid "Privacy Mode"
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:34
+msgid "History Is Disabled"
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:36
+msgid ""
+"%s won't retain any further data or statistics about file and application "
+"usage."
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:37
+msgid ""
+"The additional functionality that this data provides will be affected."
+msgstr ""
+"Допълнителната ползваемост, която тази програма доставя няма да е засегната."
+
+#: ../src/Views/TrackPanel.vala:38
+msgid ""
+"This will not prevent apps from recording their own usage data like browser "
+"history."
+msgstr ""
+"Това няма да спре приложенията да събират собствените си данни за "
+"ползваемост, кото например мрежовата ви история."
+
+#: ../src/Views/TrackPanel.vala:49 ../src/Widgets/ServiceList.vala:8
+msgid "History"
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:59
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -33,211 +89,166 @@ msgstr ""
 "други хора могат да преглеждат потребителския Ви профил или имат достъп до "
 "него, може би бихте предпочели да ограничите кои части са достъпни."
 
-#: ../src/Views/TrackPanel.vala:87
-msgid "Clear Usage Data…"
-msgstr "Почисти сведенията за дейността..."
+#: ../src/Views/TrackPanel.vala:69
+msgid "Clear History…"
+msgstr ""
 
-#: ../src/Views/TrackPanel.vala:120
+#: ../src/Views/TrackPanel.vala:116
 msgid "Your system"
 msgstr "Вашата система"
 
-#: ../src/Views/TrackPanel.vala:141
-msgid "%s is in Privacy Mode"
-msgstr "%s е в Режим Усамотеност"
-
-#: ../src/Views/TrackPanel.vala:143
-msgid ""
-"While in Privacy Mode, this operating system won't retain any further data "
-"or statistics about file and application usage."
-msgstr ""
-"Докато сте в Режим Усамотеност, тази операционна система няма да запомня още "
-"данни за файловете и ползването на приложенията."
-
-#: ../src/Views/TrackPanel.vala:144
-msgid ""
-"The additional functionality that this data provides will be affected."
-msgstr ""
-"Допълнителната ползваемост, която тази програма доставя няма да е засегната."
-
-#: ../src/Views/TrackPanel.vala:145
-msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
-msgstr ""
-"Това няма да спре приложенията да събират собствените си данни за "
-"ползваемост, кото например мрежовата ви история."
-
-#: ../src/Views/TrackPanel.vala:193
-msgid "Data Sources:"
-msgstr "Източници на данни:"
-
-#: ../src/Views/TrackPanel.vala:202
-msgid "Chat Logs"
-msgstr "История на мигновените съобщения"
-
-#: ../src/Views/TrackPanel.vala:203
-msgid "Documents"
-msgstr "Документи"
-
-#: ../src/Views/TrackPanel.vala:204
-msgid "Music"
-msgstr "Музика"
-
-#: ../src/Views/TrackPanel.vala:205
-msgid "Pictures"
-msgstr "Снимки"
-
-#: ../src/Views/TrackPanel.vala:206
-msgid "Presentations"
-msgstr "Представления"
-
-#: ../src/Views/TrackPanel.vala:207
-msgid "Spreadsheets"
-msgstr "Електронни таблици"
-
-#: ../src/Views/TrackPanel.vala:208
-msgid "Videos"
-msgstr "Видеа"
-
-#: ../src/Views/TrackPanel.vala:239
-msgid "Add Application…"
-msgstr "Добави приложение..."
-
-#: ../src/Views/TrackPanel.vala:254
-msgid "Add Folder…"
-msgstr "Добави папка..."
-
-#: ../src/Views/TrackPanel.vala:256
-msgid "Select a folder to blacklist"
-msgstr "Добави папка към черния списък"
-
-#: ../src/Views/TrackPanel.vala:257
-msgid "Cancel"
-msgstr "Отказ"
-
-#: ../src/Views/TrackPanel.vala:257
-msgid "Add"
-msgstr "Добави"
-
-#: ../src/Views/TrackPanel.vala:269
-msgid "Delete"
-msgstr "Изтрий"
-
-#: ../src/Views/TrackPanel.vala:304
-msgid "Do not collect data from the following:"
-msgstr "Не събирай данни от следното:"
-
-#: ../src/Views/FirewallPanel.vala:54
-msgid "Firewall Status:"
-msgstr "Статус на защитната стена:"
-
-#: ../src/Views/FirewallPanel.vala:100 ../src/Views/FirewallPanel.vala:110
-#: ../src/Views/FirewallPanel.vala:116
-msgid "Unknown"
-msgstr "Неизвестно"
-
-#: ../src/Views/FirewallPanel.vala:102 ../src/Views/FirewallPanel.vala:162
-msgid "Allow"
-msgstr "Разреши"
-
-#: ../src/Views/FirewallPanel.vala:104 ../src/Views/FirewallPanel.vala:163
-msgid "Deny"
-msgstr "Забрани"
-
-#: ../src/Views/FirewallPanel.vala:106 ../src/Views/FirewallPanel.vala:164
-msgid "Reject"
-msgstr "Отхвърли"
-
-#: ../src/Views/FirewallPanel.vala:108 ../src/Views/FirewallPanel.vala:165
-msgid "Limit"
-msgstr "Ограничи"
-
-#: ../src/Views/FirewallPanel.vala:118 ../src/Views/FirewallPanel.vala:178
-msgid "In"
-msgstr "Входящи"
-
-#: ../src/Views/FirewallPanel.vala:120 ../src/Views/FirewallPanel.vala:179
-msgid "Out"
-msgstr "Изходящи"
-
-#: ../src/Views/FirewallPanel.vala:138
-msgid "IPv6"
-msgstr "IPv6"
-
-#: ../src/Views/FirewallPanel.vala:139
-msgid "Action"
-msgstr "Действиe"
-
-#: ../src/Views/FirewallPanel.vala:140
-msgid "Protocol"
-msgstr "Протокол"
-
-#: ../src/Views/FirewallPanel.vala:141
-msgid "Direction"
-msgstr "Посока"
-
-#: ../src/Views/FirewallPanel.vala:142
-msgid "Ports"
-msgstr "Портове"
-
-#: ../src/Views/FirewallPanel.vala:159
-msgid "Action:"
-msgstr "Действие:"
-
-#: ../src/Views/FirewallPanel.vala:168
-msgid "Protocol:"
-msgstr "Протокол:"
-
-#: ../src/Views/FirewallPanel.vala:175
-msgid "Direction:"
-msgstr "Посока:"
-
-#: ../src/Views/FirewallPanel.vala:182
-msgid "Ports:"
-msgstr "Портове:"
-
-#: ../src/Views/FirewallPanel.vala:186
-msgid "%d or %d-%d"
-msgstr "%d или %d-%d"
-
-#: ../src/Views/FirewallPanel.vala:188
-msgid "Add Rule"
-msgstr "Добави правило"
-
-#: ../src/Views/LockPanel.vala:33
+#: ../src/Views/LockPanel.vala:34
 msgid "Lock on sleep:"
 msgstr "Заключи при заспиване:"
 
-#: ../src/Views/LockPanel.vala:35
+#: ../src/Views/LockPanel.vala:36
 msgid "Lock after screen turns off:"
 msgstr "Заключи след изключване на екрана:"
 
-#. //launchpad.net/your-project)
-#. *
-#. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Library General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This library is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Library General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU Library General Public
-#. * License along with this library; if not, write to the
-#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-#. * Boston, MA 02111-1307, USA.
-#. *
-#. * Authored by: Corentin Noël <tintou@mailoo.org>
-#. 
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Удостоверение е нужно за да се пусне настройката на Пожарната Стена"
+#: ../src/Views/FirewallPanel.vala:103 ../src/Views/FirewallPanel.vala:113
+#: ../src/Views/FirewallPanel.vala:119
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: ../src/Views/FirewallPanel.vala:105 ../src/Views/FirewallPanel.vala:165
+msgid "Allow"
+msgstr "Разреши"
+
+#: ../src/Views/FirewallPanel.vala:107 ../src/Views/FirewallPanel.vala:166
+msgid "Deny"
+msgstr "Забрани"
+
+#: ../src/Views/FirewallPanel.vala:109 ../src/Views/FirewallPanel.vala:167
+msgid "Reject"
+msgstr "Отхвърли"
+
+#: ../src/Views/FirewallPanel.vala:111 ../src/Views/FirewallPanel.vala:168
+msgid "Limit"
+msgstr "Ограничи"
+
+#: ../src/Views/FirewallPanel.vala:121 ../src/Views/FirewallPanel.vala:181
+msgid "In"
+msgstr "Входящи"
+
+#: ../src/Views/FirewallPanel.vala:123 ../src/Views/FirewallPanel.vala:182
+msgid "Out"
+msgstr "Изходящи"
+
+#: ../src/Views/FirewallPanel.vala:141
+msgid "IPv6"
+msgstr "IPv6"
+
+#: ../src/Views/FirewallPanel.vala:142
+msgid "Action"
+msgstr "Действиe"
+
+#: ../src/Views/FirewallPanel.vala:143
+msgid "Protocol"
+msgstr "Протокол"
+
+#: ../src/Views/FirewallPanel.vala:144
+msgid "Direction"
+msgstr "Посока"
+
+#: ../src/Views/FirewallPanel.vala:145
+msgid "Ports"
+msgstr "Портове"
+
+#: ../src/Views/FirewallPanel.vala:162
+msgid "Action:"
+msgstr "Действие:"
+
+#: ../src/Views/FirewallPanel.vala:171
+msgid "Protocol:"
+msgstr "Протокол:"
+
+#: ../src/Views/FirewallPanel.vala:178
+msgid "Direction:"
+msgstr "Посока:"
+
+#: ../src/Views/FirewallPanel.vala:185
+msgid "Ports:"
+msgstr "Портове:"
+
+#: ../src/Views/FirewallPanel.vala:189
+msgid "%d or %d-%d"
+msgstr "%d или %d-%d"
+
+#: ../src/Views/FirewallPanel.vala:191
+msgid "Add Rule"
+msgstr "Добави правило"
+
+#: ../src/Widgets/IncludeTreeView.vala:76
+msgid "Data Sources:"
+msgstr "Източници на данни:"
+
+#: ../src/Widgets/IncludeTreeView.vala:82
+msgid "Chat Logs"
+msgstr "История на мигновените съобщения"
+
+#: ../src/Widgets/IncludeTreeView.vala:83
+msgid "Documents"
+msgstr "Документи"
+
+#: ../src/Widgets/IncludeTreeView.vala:84
+msgid "Music"
+msgstr "Музика"
+
+#: ../src/Widgets/IncludeTreeView.vala:85
+msgid "Pictures"
+msgstr "Снимки"
+
+#: ../src/Widgets/IncludeTreeView.vala:86
+msgid "Presentations"
+msgstr "Представления"
+
+#: ../src/Widgets/IncludeTreeView.vala:87
+msgid "Spreadsheets"
+msgstr "Електронни таблици"
+
+#: ../src/Widgets/IncludeTreeView.vala:88
+msgid "Videos"
+msgstr "Видеа"
+
+#: ../src/Widgets/ServiceItem.vala:12
+msgid "Enabled"
+msgstr ""
+
+#: ../src/Widgets/ServiceItem.vala:16
+msgid "Disabled"
+msgstr ""
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
 msgstr "Търси за аплликация"
+
+#: ../src/Widgets/ExcludeTreeView.vala:56
+msgid "Add Application…"
+msgstr "Добави приложение..."
+
+#: ../src/Widgets/ExcludeTreeView.vala:71
+msgid "Add Folder…"
+msgstr "Добави папка..."
+
+#: ../src/Widgets/ExcludeTreeView.vala:73
+msgid "Select a folder to blacklist"
+msgstr "Добави папка към черния списък"
+
+#: ../src/Widgets/ExcludeTreeView.vala:74
+msgid "Cancel"
+msgstr "Отказ"
+
+#: ../src/Widgets/ExcludeTreeView.vala:74
+msgid "Add"
+msgstr "Добави"
+
+#: ../src/Widgets/ExcludeTreeView.vala:86
+msgid "Delete"
+msgstr "Изтрий"
+
+#: ../src/Widgets/ExcludeTreeView.vala:128
+msgid "Do not collect data from the following:"
+msgstr "Не събирай данни от следното:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
@@ -273,32 +284,44 @@ msgstr "До:"
 msgid "Clear Data"
 msgstr "Изчисти Данните"
 
-#: ../src/Plug.vala:37
-msgid "Security & Privacy"
-msgstr "Сигурност и поверителност"
+#. //launchpad.net/your-project)
+#. *
+#. * This library is free software; you can redistribute it and/or
+#. * modify it under the terms of the GNU Library General Public
+#. * License as published by the Free Software Foundation; either
+#. * version 3 of the License, or (at your option) any later version.
+#. *
+#. * This library is distributed in the hope that it will be useful,
+#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
+#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+#. * Library General Public License for more details.
+#. *
+#. * You should have received a copy of the GNU Library General Public
+#. * License along with this library; if not, write to the
+#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+#. * Boston, MA 02111-1307, USA.
+#. *
+#. * Authored by: Corentin Noël <tintou@mailoo.org>
+#. 
+#: ../src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Удостоверение е нужно за да се пусне настройката на Пожарната Стена"
 
-#: ../src/Plug.vala:38
-msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
-"Настройка на защитната стена, заключването на екрана и данните за "
-"активността."
+#~ msgid ""
+#~ "While in Privacy Mode, this operating system won't retain any further data "
+#~ "or statistics about file and application usage."
+#~ msgstr ""
+#~ "Докато сте в Режим Усамотеност, тази операционна система няма да запомня още "
+#~ "данни за файловете и ползването на приложенията."
 
-#: ../src/Plug.vala:65
-msgid "Some settings require administrator rights to be changed"
-msgstr "Някои настройки изискват ръководни правомощия, за да бъдат променени"
+#~ msgid "%s is in Privacy Mode"
+#~ msgstr "%s е в Режим Усамотеност"
 
-#: ../src/Plug.vala:77 ../src/Plug.vala:151
-msgid "Privacy"
-msgstr "Поверителност"
+#~ msgid "Firewall Status:"
+#~ msgstr "Статус на защитната стена:"
 
-#: ../src/Plug.vala:78 ../src/Plug.vala:152 ../src/Plug.vala:153
-msgid "Locking"
-msgstr "Заключване"
+#~ msgid "Clear Usage Data…"
+#~ msgstr "Почисти сведенията за дейността..."
 
-#: ../src/Plug.vala:79 ../src/Plug.vala:154
-msgid "Firewall"
-msgstr "Защитна стена"
-
-#: ../src/Plug.vala:153
-msgid "Privacy Mode"
-msgstr ""
+#~ msgid "Privacy Mode:"
+#~ msgstr "Режим усамотение:"
