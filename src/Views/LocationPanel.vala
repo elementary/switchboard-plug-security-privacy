@@ -45,10 +45,8 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         margin = 12;
 
         location_settings = new GLib.Settings ("org.pantheon.agent-geoclue2");
-
         disabled_stack = new Gtk.Stack ();
-        create_disabled_panel ();
-
+        
         var status_icon = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
 
         var status_label = new Gtk.Label (_("Location Services"));
@@ -62,9 +60,10 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         attach (status_icon, 0, 0, 1, 1);
         attach (status_label, 1, 0, 1, 1);
         attach (status_switch, 2, 0, 1, 1);
-        attach (disabled_stack, 0, 1, 3, 1);
+        attach (disabled_stack, 0, 1, 3, 1);        
         
         create_treeview ();
+        create_disabled_panel ();
 
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
         status_switch.notify["active"].connect (() => {
@@ -74,7 +73,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
             populate_app_treeview ();
         });
 
-        update_stack_visible_child ();
+        update_stack_visible_child ();    
     }
     
     private void update_stack_visible_child () {
@@ -100,6 +99,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
 
         disabled_frame.add (alert);
         disabled_stack.add_named (disabled_frame, "disabled");
+        disabled_frame.set_visible (true);
     }
 
     private void create_treeview () {
@@ -148,8 +148,9 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         treeview_grid.row_spacing = 6;
         treeview_grid.attach (locations_label, 0, 0, 1, 1);
         treeview_grid.attach (scrolled, 0, 1, 1, 1);
-
+        
         disabled_stack.add_named (treeview_grid, "enabled");
+        treeview_grid.set_visible (true);
     }
 
     private void populate_app_treeview () {
