@@ -89,7 +89,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         disabled_frame.expand = true;
 
         var title = _("Location services are disabled");
-        var description = ("%s\n\n%s\n\n%s".printf (
+        var description = ("%s\n%s\n%s".printf (
                     _("While location services are disabled, location requests from apps will be automatically rejected."),
                     _("The additional functionality that location access provides in those apps will be affected."),
                     _("This will not prevent apps from trying to determine your location based on IP address.")));
