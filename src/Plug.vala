@@ -31,20 +31,29 @@ namespace SecurityPrivacy {
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
         Gtk.Stack stack;
-        TrackPanel tracking;        
+
+        TrackPanel tracking;
+        ServiceList service_list;
+
+        bool location_agent_installed = false;
 
         public Plug () {
             Object (category: Category.PERSONAL,
                     code_name: Build.PLUGCODENAME,
                     display_name: _("Security & Privacy"),
-                    description: _("Configure firewall, location, screen lock, and activity information"),
+                    description: _("Configure firewall, screen lock, and activity information"),
                     icon: "preferences-system-privacy",
                     supported_settings: new Gee.TreeMap<string, string?> (null, null));
+
+            location_agent_installed = SecurityPrivacy.LocationPanel.location_agent_installed ();
             supported_settings.set ("security", null);
             supported_settings.set ("security/privacy", "tracking");
-            supported_settings.set ("security/privacy/location", "location");
             supported_settings.set ("security/firewall", "firewall");
             supported_settings.set ("security/screensaver", "locking");
+            
+            if (location_agent_installed) {
+                supported_settings.set ("security/privacy/location", "location");
+            }
             plug = this;
         }
 
@@ -112,15 +121,18 @@ namespace SecurityPrivacy {
 
             tracking = new TrackPanel ();
             var locking = new LockPanel ();
-            location = new LocationPanel ();
             firewall = new FirewallPanel ();
 
             stack.add_titled (tracking, "tracking", _("Privacy"));
             stack.add_titled (locking, "locking", _("Locking"));
             stack.add_titled (firewall, "firewall", _("Firewall"));
-            stack.add_titled (location, "location", _("Location Services"));
 
-            var service_list = new ServiceList ();
+            if (location_agent_installed) {
+                location = new LocationPanel ();
+                stack.add_titled (location, "location", _("Location Services"));
+            }                
+
+            service_list = new ServiceList ();
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             paned.position = 200;
@@ -147,19 +159,24 @@ namespace SecurityPrivacy {
             switch (location) {
                 case "privacy":
                     stack.set_visible_child_name ("tracking");
+                    service_list.select_service_name ("tracking");
                     break;
                 case "locking":
                     stack.set_visible_child_name ("locking");
+                    service_list.select_service_name ("locking");
                     break;
                 case "locking<sep>privacy-mode":
                     stack.set_visible_child_name ("locking");
+                    service_list.select_service_name ("locking");
                     tracking.focus_privacy_switch ();
                     break;
                 case "firewall":
                     stack.set_visible_child_name ("firewall");
+                    service_list.select_service_name ("firewall");
                     break;
                 case "location":
                     stack.set_visible_child_name ("location");
+                    service_list.select_service_name ("location");
                     break;
             }
         }
@@ -171,7 +188,9 @@ namespace SecurityPrivacy {
             map.set ("%s → %s".printf (display_name, _("Locking")), "locking");
             map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Privacy Mode")), "locking<sep>privacy-mode");
             map.set ("%s → %s".printf (display_name, _("Firewall")), "firewall");
-            map.set ("%s → %s".printf (display_name, _("Location Services")), "location");
+            if (location_agent_installed) {
+                map.set ("%s → %s".printf (display_name, _("Location Services")), "location");
+            }
             return map;
         }
     }

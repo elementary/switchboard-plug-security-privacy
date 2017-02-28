@@ -88,7 +88,7 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         var disabled_frame = new Gtk.Frame (null);
         disabled_frame.expand = true;
 
-        var title = _("Location services are disabled");
+        var title = _("Location Services Are Disabled");
         var description = ("%s\n%s\n%s".printf (
                     _("While location services are disabled, location requests from apps will be automatically rejected."),
                     _("The additional functionality that location access provides in those apps will be affected."),
@@ -193,5 +193,14 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
 
     private uint32 get_app_level (string desktop_id) {
         return remembered_apps.lookup_value (desktop_id, GLib.VariantType.TUPLE).get_child_value (1).get_uint32 ();
+    }
+
+    public static bool location_agent_installed () {
+        var schemas = GLib.SettingsSchemaSource.get_default ();
+        if (schemas.lookup ("org.pantheon.agent-geoclue2", true) != null) {
+            return true;
+        }
+
+        return false;
     }
 }
