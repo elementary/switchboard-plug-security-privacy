@@ -7,63 +7,66 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-27 16:08-0800\n"
-"PO-Revision-Date: 2016-11-03 22:13+0000\n"
+"POT-Creation-Date: 2017-02-28 15:39-0800\n"
+"PO-Revision-Date: 2017-02-28 17:33+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-28 05:27+0000\n"
+"X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 "X-Generator: Launchpad (build 18329)\n"
 "Language: lt\n"
 
-#: ../src/Plug.vala:38
+#: ../src/Plug.vala:43
 msgid "Security & Privacy"
 msgstr "Saugumas ir privatumas"
 
-#: ../src/Plug.vala:39
+#: ../src/Plug.vala:44
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Konfigūruoti užkardą, ekrano užrakinimą ir veiklos informaciją"
 
-#: ../src/Plug.vala:74
+#: ../src/Plug.vala:85
 msgid "Some settings require administrator rights to be changed"
 msgstr "Kai kurių nustatymų pakeitimui reikia administratoriaus teisių"
 
-#: ../src/Plug.vala:115 ../src/Plug.vala:163
+#: ../src/Plug.vala:126 ../src/Plug.vala:187
 msgid "Privacy"
 msgstr "Privatumas"
 
-#: ../src/Plug.vala:116 ../src/Plug.vala:164 ../src/Plug.vala:165
-#: ../src/Widgets/ServiceList.vala:9
+#: ../src/Plug.vala:127 ../src/Plug.vala:188 ../src/Plug.vala:189
+#: ../src/Widgets/ServiceList.vala:13
 msgid "Locking"
 msgstr "Užrakinimas"
 
-#: ../src/Plug.vala:117 ../src/Plug.vala:166 ../src/Views/FirewallPanel.vala:51
-#: ../src/Widgets/ServiceList.vala:10
+#: ../src/Plug.vala:128 ../src/Plug.vala:190 ../src/Views/FirewallPanel.vala:51
+#: ../src/Widgets/ServiceList.vala:14
 msgid "Firewall"
 msgstr "Užkarda"
 
-#: ../src/Plug.vala:165
+#: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
+#: ../src/Widgets/ServiceList.vala:29
+msgid "Location Services"
+msgstr ""
+
+#: ../src/Plug.vala:189
 msgid "Privacy Mode"
 msgstr "Privatumo veiksena"
 
-#: ../src/Views/TrackPanel.vala:34
-msgid "History Is Disabled"
-msgstr ""
-
-#: ../src/Views/TrackPanel.vala:36
+#: ../src/Views/TrackPanel.vala:35
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s nesaugos atmintyje jokių tolimesnių duomenų ar statistikos apie failų bei "
+"programų naudojimą."
 
-#: ../src/Views/TrackPanel.vala:37
+#: ../src/Views/TrackPanel.vala:36
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr "Bus paveiktas šių duomenų teikiamas papildomas funkcionalumas."
 
-#: ../src/Views/TrackPanel.vala:38
+#: ../src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -71,11 +74,15 @@ msgstr ""
 "Tai nesutrukdys programoms pačioms įrašinėti savo naudojimo duomenų, kaip "
 "pavyzdžiui, naršyklės naršymo žurnalą."
 
-#: ../src/Views/TrackPanel.vala:49 ../src/Widgets/ServiceList.vala:8
-msgid "History"
-msgstr ""
+#: ../src/Views/TrackPanel.vala:39
+msgid "History Is Disabled"
+msgstr "Istorija yra išjungta"
 
-#: ../src/Views/TrackPanel.vala:59
+#: ../src/Views/TrackPanel.vala:48 ../src/Widgets/ServiceList.vala:12
+msgid "History"
+msgstr "Istorija"
+
+#: ../src/Views/TrackPanel.vala:58
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -86,13 +93,39 @@ msgstr ""
 "matyti ar gauti prieigą prie jūsų paskyros, jūs galite pageidauti apriboti "
 "įrašomus elementus."
 
-#: ../src/Views/TrackPanel.vala:69
+#: ../src/Views/TrackPanel.vala:68
 msgid "Clear History…"
-msgstr ""
+msgstr "Išvalyti istoriją..."
 
-#: ../src/Views/TrackPanel.vala:116
+#: ../src/Views/TrackPanel.vala:115
 msgid "Your system"
 msgstr "Jūsų sistema"
+
+#: ../src/Views/LocationPanel.vala:91
+msgid "Location Services Are Disabled"
+msgstr ""
+
+#: ../src/Views/LocationPanel.vala:93
+msgid ""
+"While location services are disabled, location requests from apps will be "
+"automatically rejected."
+msgstr ""
+
+#: ../src/Views/LocationPanel.vala:94
+msgid ""
+"The additional functionality that location access provides in those apps "
+"will be affected."
+msgstr ""
+
+#: ../src/Views/LocationPanel.vala:95
+msgid ""
+"This will not prevent apps from trying to determine your location based on "
+"IP address."
+msgstr ""
+
+#: ../src/Views/LocationPanel.vala:106
+msgid "Allow the apps below to determine your location"
+msgstr ""
 
 #: ../src/Views/LockPanel.vala:34
 msgid "Lock on sleep:"
@@ -209,11 +242,11 @@ msgstr "Vaizdo įrašai"
 
 #: ../src/Widgets/ServiceItem.vala:12
 msgid "Enabled"
-msgstr ""
+msgstr "Įjungta"
 
 #: ../src/Widgets/ServiceItem.vala:16
 msgid "Disabled"
-msgstr ""
+msgstr "Išjungta"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
@@ -301,22 +334,3 @@ msgstr "Išvalyti duomenis"
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Norint vykdyti užkardos konfigūraciją, reikia nustatyti tapatybę"
-
-#~ msgid "Clear Usage Data…"
-#~ msgstr "Išvalyti naudojimo duomenis..."
-
-#~ msgid "Privacy Mode:"
-#~ msgstr "Privatumo veiksena:"
-
-#~ msgid "%s is in Privacy Mode"
-#~ msgstr "%s yra privatumo veiksenoje"
-
-#~ msgid "Firewall Status:"
-#~ msgstr "Užkardos būsena:"
-
-#~ msgid ""
-#~ "While in Privacy Mode, this operating system won't retain any further data "
-#~ "or statistics about file and application usage."
-#~ msgstr ""
-#~ "Tol, kol ši operacinė sistema yra privatumo veiksenoje, ji nesaugos jokių "
-#~ "tolimesnių duomenų ar statistikos apie failų ir programų naudojimą."

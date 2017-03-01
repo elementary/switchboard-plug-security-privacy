@@ -8,63 +8,64 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-27 16:08-0800\n"
+"POT-Creation-Date: 2017-02-28 15:39-0800\n"
 "PO-Revision-Date: 2016-12-12 22:07+0000\n"
 "Last-Translator: Martin Korpala <Unknown>\n"
 "Language-Team: Slovak <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-28 05:27+0000\n"
+"X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 "X-Generator: Launchpad (build 18329)\n"
 "Language: sk\n"
 
-#: ../src/Plug.vala:38
+#: ../src/Plug.vala:43
 msgid "Security & Privacy"
 msgstr "Bezpečnosť & Súkromie"
 
-#: ../src/Plug.vala:39
+#: ../src/Plug.vala:44
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Nastav firewall, zámok obrazovky a informácie o aktivite"
 
-#: ../src/Plug.vala:74
+#: ../src/Plug.vala:85
 msgid "Some settings require administrator rights to be changed"
 msgstr "Niektoré nastavenia vyžadujú zmenu administrátorských práv"
 
-#: ../src/Plug.vala:115 ../src/Plug.vala:163
+#: ../src/Plug.vala:126 ../src/Plug.vala:187
 msgid "Privacy"
 msgstr "Súkromie"
 
-#: ../src/Plug.vala:116 ../src/Plug.vala:164 ../src/Plug.vala:165
-#: ../src/Widgets/ServiceList.vala:9
+#: ../src/Plug.vala:127 ../src/Plug.vala:188 ../src/Plug.vala:189
+#: ../src/Widgets/ServiceList.vala:13
 msgid "Locking"
 msgstr "Uzamknutie"
 
-#: ../src/Plug.vala:117 ../src/Plug.vala:166 ../src/Views/FirewallPanel.vala:51
-#: ../src/Widgets/ServiceList.vala:10
+#: ../src/Plug.vala:128 ../src/Plug.vala:190 ../src/Views/FirewallPanel.vala:51
+#: ../src/Widgets/ServiceList.vala:14
 msgid "Firewall"
 msgstr "Firewall"
 
-#: ../src/Plug.vala:165
+#: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
+#: ../src/Widgets/ServiceList.vala:29
+msgid "Location Services"
+msgstr ""
+
+#: ../src/Plug.vala:189
 msgid "Privacy Mode"
 msgstr "Súkromný mód"
 
-#: ../src/Views/TrackPanel.vala:34
-msgid "History Is Disabled"
-msgstr ""
-
-#: ../src/Views/TrackPanel.vala:36
+#: ../src/Views/TrackPanel.vala:35
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:37
+#: ../src/Views/TrackPanel.vala:36
 msgid ""
 "The additional functionality that this data provides will be affected."
 msgstr "Ďalšie funkcie, ktoré tieto dáta poskytujú, budú ovplyvnené."
 
-#: ../src/Views/TrackPanel.vala:38
+#: ../src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -72,11 +73,15 @@ msgstr ""
 "Nezabráni to aplikáciám v nahrávaní svojich vlastných údajov o používaní ako "
 "je napríklad história prehliadača"
 
-#: ../src/Views/TrackPanel.vala:49 ../src/Widgets/ServiceList.vala:8
+#: ../src/Views/TrackPanel.vala:39
+msgid "History Is Disabled"
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:48 ../src/Widgets/ServiceList.vala:12
 msgid "History"
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:59
+#: ../src/Views/TrackPanel.vala:58
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -87,13 +92,39 @@ msgstr ""
 "vidieť alebo pristupovať k vášmu účtu, môžete obmedziť, ktoré položky sú "
 "zaznamenané."
 
-#: ../src/Views/TrackPanel.vala:69
+#: ../src/Views/TrackPanel.vala:68
 msgid "Clear History…"
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:116
+#: ../src/Views/TrackPanel.vala:115
 msgid "Your system"
 msgstr "Váš systém"
+
+#: ../src/Views/LocationPanel.vala:91
+msgid "Location Services Are Disabled"
+msgstr ""
+
+#: ../src/Views/LocationPanel.vala:93
+msgid ""
+"While location services are disabled, location requests from apps will be "
+"automatically rejected."
+msgstr ""
+
+#: ../src/Views/LocationPanel.vala:94
+msgid ""
+"The additional functionality that location access provides in those apps "
+"will be affected."
+msgstr ""
+
+#: ../src/Views/LocationPanel.vala:95
+msgid ""
+"This will not prevent apps from trying to determine your location based on "
+"IP address."
+msgstr ""
+
+#: ../src/Views/LocationPanel.vala:106
+msgid "Allow the apps below to determine your location"
+msgstr ""
 
 #: ../src/Views/LockPanel.vala:34
 msgid "Lock on sleep:"
@@ -302,22 +333,3 @@ msgstr "Vymazať údaje"
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Je vyžadované overenie pre spustenie konfigurovania Firewallu"
-
-#~ msgid "Firewall Status:"
-#~ msgstr "Stav Firewalu:"
-
-#~ msgid "Clear Usage Data…"
-#~ msgstr "Vymazať údaje o používaní"
-
-#~ msgid "Privacy Mode:"
-#~ msgstr "Režim súkromia"
-
-#~ msgid ""
-#~ "While in Privacy Mode, this operating system won't retain any further data "
-#~ "or statistics about file and application usage."
-#~ msgstr ""
-#~ "Počas režimu súkromia nebude tento operačný systém uchovávať žiadne ďalšie "
-#~ "údaje alebo štatistiky o používaní súborov a aplikácií."
-
-#~ msgid "%s is in Privacy Mode"
-#~ msgstr "%s je v režime súkromia"
