@@ -6,8 +6,6 @@ public class ServiceList : Gtk.ListBox {
                 selection_mode: Gtk.SelectionMode.SINGLE);
     }
 
-    ServiceItem? location_item;
-
     construct {
         var privacy_item = new ServiceItem ("document-open-recent", "tracking", _("History"));
         var lock_item = new ServiceItem ("system-lock-screen", "locking", _("Locking"));
@@ -18,28 +16,31 @@ public class ServiceList : Gtk.ListBox {
         add_service (firewall_item);
 
         SecurityPrivacy.firewall.status_switch.notify["active"].connect (() => {
-            if (SecurityPrivacy.firewall.status_switch.active) {
-                firewall_item.status = ServiceItem.Status.ENABLED;
-            } else {
-                firewall_item.status = ServiceItem.Status.DISABLED;
-            }
+            update_service_status (firewall_item, SecurityPrivacy.firewall.status_switch.active);
+        });
+
+        update_service_status (privacy_item, SecurityPrivacy.tracking.record_switch.active);
+
+        SecurityPrivacy.tracking.record_switch.notify["active"].connect (() => {
+            update_service_status (privacy_item, SecurityPrivacy.tracking.record_switch.active);
         });
 
         if (SecurityPrivacy.LocationPanel.location_agent_installed ()) {
-            location_item = new ServiceItem ("find-location", "location", _("Location Services"));
+            var location_item = new ServiceItem ("find-location", "location", _("Location Services"));
             add_service (location_item);
-            update_location_status ();
+            update_service_status (location_item, SecurityPrivacy.location.status_switch.active);
+
             SecurityPrivacy.location.status_switch.notify["active"].connect (() => {
-                update_location_status ();
+                update_service_status (location_item, SecurityPrivacy.location.status_switch.active);
             });
         }      
     }
 
-    private void update_location_status () {
-        if (SecurityPrivacy.location.status_switch.active) {
-            location_item.status = ServiceItem.Status.ENABLED;
+    private void update_service_status (ServiceItem service_item, bool service_status) {
+        if (service_status) {
+            service_item.status = ServiceItem.Status.ENABLED;
         } else {
-            location_item.status = ServiceItem.Status.DISABLED;
+            service_item.status = ServiceItem.Status.DISABLED;
         }    
     }
 

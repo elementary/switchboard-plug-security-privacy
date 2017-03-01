@@ -22,7 +22,7 @@
 
 public class SecurityPrivacy.TrackPanel : Gtk.Grid {
     private Widgets.ClearUsagePopover remove_popover;
-    private Gtk.Switch record_switch;
+    public Gtk.Switch record_switch;
 
     public TrackPanel () {
         Object (column_spacing: 12,

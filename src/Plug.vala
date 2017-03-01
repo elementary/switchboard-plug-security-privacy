@@ -27,12 +27,12 @@ namespace SecurityPrivacy {
     public static Blacklist blacklist;
     public static LocationPanel location;
     public static FirewallPanel firewall;
+    public static TrackPanel tracking;
 
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
         Gtk.Stack stack;
 
-        TrackPanel tracking;
         ServiceList service_list;
 
         bool location_agent_installed = false;
