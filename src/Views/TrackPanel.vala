@@ -85,10 +85,6 @@ public class SecurityPrivacy.TrackPanel : ServicePanel {
 
         status_switch.active = !blacklist.get_incognito ();
     }
-    
-    public void focus_privacy_switch () {
-        status_switch.grab_focus ();
-    }
 
     private string get_operating_system_name () {
         string system = _("Your system");
