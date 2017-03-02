@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-28 15:39-0800\n"
-"PO-Revision-Date: 2017-01-20 11:44+0000\n"
+"PO-Revision-Date: 2017-03-01 16:15+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
+"X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 "X-Generator: Launchpad (build 18329)\n"
 "Language: hr\n"
 
@@ -47,7 +47,7 @@ msgstr "Vatrozid"
 #: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
 #: ../src/Widgets/ServiceList.vala:29
 msgid "Location Services"
-msgstr ""
+msgstr "Usluge lokacije"
 
 #: ../src/Plug.vala:189
 msgid "Privacy Mode"
@@ -58,6 +58,8 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s neće zadržati sve buduće podatke ili statistiku o upotrebi datoteka i "
+"aplikacija."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid ""
@@ -74,11 +76,11 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "Povijest je onemogućena"
 
 #: ../src/Views/TrackPanel.vala:48 ../src/Widgets/ServiceList.vala:12
 msgid "History"
-msgstr ""
+msgstr "Povijest"
 
 #: ../src/Views/TrackPanel.vala:58
 msgid ""
@@ -93,7 +95,7 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:68
 msgid "Clear History…"
-msgstr ""
+msgstr "Obriši povijest..."
 
 #: ../src/Views/TrackPanel.vala:115
 msgid "Your system"
@@ -101,29 +103,35 @@ msgstr "Vaš sustav"
 
 #: ../src/Views/LocationPanel.vala:91
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Usluge lociranja su onemogućene"
 
 #: ../src/Views/LocationPanel.vala:93
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Kada su usluge lociranja onemogućene, zahtjevi lociranja iz aplikacija će "
+"biti automatski odbijeni."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Dodatne funkcionalnosti koju pristup lokaciji omogućuje u tim aplikacijama "
+"će biti obuhvaćene."
 
 #: ../src/Views/LocationPanel.vala:95
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"To neće spriječiti aplikacije u pokušaju otkrivanja vaše lokacije temeljene "
+"na IP adresi."
 
 #: ../src/Views/LocationPanel.vala:106
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Dopusti aplikacijama ispod da otkriju vašu lokaciju"
 
 #: ../src/Views/LockPanel.vala:34
 msgid "Lock on sleep:"
@@ -240,11 +248,11 @@ msgstr "Snimke"
 
 #: ../src/Widgets/ServiceItem.vala:12
 msgid "Enabled"
-msgstr ""
+msgstr "Omogućeno"
 
 #: ../src/Widgets/ServiceItem.vala:16
 msgid "Disabled"
-msgstr ""
+msgstr "Onemogućeno"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
