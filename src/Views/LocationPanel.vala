@@ -132,7 +132,6 @@ public class SecurityPrivacy.LocationPanel : ServicePanel {
         scrolled.add (tree_view);
 
         treeview_grid = new Gtk.Grid ();
-        treeview_grid.margin_top = 12;
         treeview_grid.row_spacing = 6;
         treeview_grid.attach (locations_label, 0, 0, 1, 1);
         treeview_grid.attach (scrolled, 0, 1, 1, 1);

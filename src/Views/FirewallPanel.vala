@@ -249,7 +249,6 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
         view_grid.attach (list_toolbar, 0, 1, 1, 1);
 
         var frame = new Gtk.Frame (null);
-        frame.margin_top = 12;
         frame.add (view_grid);
 
         content_area.attach (frame, 0, 1, 3, 1);
