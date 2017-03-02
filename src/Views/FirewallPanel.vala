@@ -20,14 +20,13 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
+public class SecurityPrivacy.FirewallPanel : ServicePanel {
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private Gtk.Toolbar list_toolbar;
     private bool loading = false;
     private Gtk.Popover add_popover;
     private Gtk.ToolButton remove_button;
-    public Gtk.Switch status_switch;
 
     private enum Columns {
         ACTION,
@@ -40,22 +39,12 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     }
 
     public FirewallPanel () {
-        Object (column_spacing: 12,
-                margin: 12,
-                row_spacing: 6);
+        Object (activatable: true,
+                icon_name: "network-firewall",
+                title: _("Firewall"));
     }
 
     construct {
-        var status_icon = new Gtk.Image.from_icon_name ("network-firewall", Gtk.IconSize.DIALOG);
-
-        var status_label = new Gtk.Label (_("Firewall"));
-        status_label.get_style_context ().add_class ("h2");
-        status_label.hexpand = true;
-        status_label.xalign = 0;
-
-        status_switch = new Gtk.Switch ();
-        status_switch.valign = Gtk.Align.CENTER;
-
         status_switch.notify["active"].connect (() => {
             if (loading == false) {
                 view.sensitive = status_switch.active;
@@ -63,10 +52,6 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             }
             show_rules ();
         });
-
-        attach (status_icon, 0, 0, 1, 1);
-        attach (status_label, 1, 0, 1, 1);
-        attach (status_switch, 2, 0, 1, 1);
 
         create_treeview ();
 
@@ -267,6 +252,6 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         frame.margin_top = 12;
         frame.add (view_grid);
 
-        attach (frame, 0, 1, 3, 1);
+        content_area.attach (frame, 0, 1, 3, 1);
     }
 }

@@ -39,10 +39,10 @@ public class ServiceList : Gtk.ListBox {
             update_service_status (firewall_item, SecurityPrivacy.firewall.status_switch.active);
         });
 
-        update_service_status (privacy_item, SecurityPrivacy.tracking.record_switch.active);
+        update_service_status (privacy_item, SecurityPrivacy.tracking.status_switch.active);
 
-        SecurityPrivacy.tracking.record_switch.notify["active"].connect (() => {
-            update_service_status (privacy_item, SecurityPrivacy.tracking.record_switch.active);
+        SecurityPrivacy.tracking.status_switch.notify["active"].connect (() => {
+            update_service_status (privacy_item, SecurityPrivacy.tracking.status_switch.active);
         });
 
         if (SecurityPrivacy.LocationPanel.location_agent_installed ()) {
