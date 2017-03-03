@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-28 15:39-0800\n"
-"PO-Revision-Date: 2017-02-01 16:33+0000\n"
+"PO-Revision-Date: 2017-03-02 18:14+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
+"X-Launchpad-Export-Date: 2017-03-03 06:05+0000\n"
 "X-Generator: Launchpad (build 18329)\n"
 "Language: it\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
-msgstr "Sicurezza e Privacy"
+msgstr "Sicurezza e privacy"
 
 #: ../src/Plug.vala:44
 msgid "Configure firewall, screen lock, and activity information"
@@ -50,7 +50,7 @@ msgstr "Firewall"
 #: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
 #: ../src/Widgets/ServiceList.vala:29
 msgid "Location Services"
-msgstr ""
+msgstr "Servizi di localizzazione"
 
 #: ../src/Plug.vala:189
 msgid "Privacy Mode"
@@ -61,6 +61,8 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s non conserverà alcun ulteriore dato o statisticha sui file e "
+"sull'utilizzo delle applicazioni."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid ""
@@ -78,11 +80,11 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "La cronologia è disabilitata"
 
 #: ../src/Views/TrackPanel.vala:48 ../src/Widgets/ServiceList.vala:12
 msgid "History"
-msgstr ""
+msgstr "Cronologia"
 
 #: ../src/Views/TrackPanel.vala:58
 msgid ""
@@ -97,7 +99,7 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:68
 msgid "Clear History…"
-msgstr ""
+msgstr "Cancella la cronologia..."
 
 #: ../src/Views/TrackPanel.vala:115
 msgid "Your system"
@@ -105,29 +107,36 @@ msgstr "Il tuo sistema"
 
 #: ../src/Views/LocationPanel.vala:91
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "I servizi di localizzazione sono disabilitati"
 
 #: ../src/Views/LocationPanel.vala:93
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Mentre i servizi di localizzazione sono disattivati, le richieste di "
+"localizzazione delle applicazioni saranno respinte automaticamente."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Le funzionalità aggiuntive che l'accesso alla posizione offre all'interno di "
+"queste applicazioni saranno interessate."
 
 #: ../src/Views/LocationPanel.vala:95
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Ciò non impedirà alle applicazioni di tentare di determinare la tua "
+"posizione sulla base dell'indirizzo IP."
 
 #: ../src/Views/LocationPanel.vala:106
 msgid "Allow the apps below to determine your location"
 msgstr ""
+"Permetti alle applicazioni sottostanti di determinare la tua posizione"
 
 #: ../src/Views/LockPanel.vala:34
 msgid "Lock on sleep:"
@@ -244,11 +253,11 @@ msgstr "Video"
 
 #: ../src/Widgets/ServiceItem.vala:12
 msgid "Enabled"
-msgstr ""
+msgstr "Abilitato"
 
 #: ../src/Widgets/ServiceItem.vala:16
 msgid "Disabled"
-msgstr ""
+msgstr "Disabilitato"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
