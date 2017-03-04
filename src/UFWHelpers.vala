@@ -109,16 +109,18 @@ namespace SecurityPrivacy.UFWHelpers {
                 case Rule.Protocol.UDP:
                     rule_str = "%s proto udp".printf (rule_str);
                     break;
+                case Rule.Protocol.BOTH:
+                    break;
                 default:
                     rule_str = "%s proto tcp".printf (rule_str);
                     break;
             }           
 
-            if (rule.is_v6 == null) {
+            if (rule.type == Rule.Type.BOTH) {
                 rule_str = "%s to any".printf (rule_str);                
-            } else if (rule.is_v6) {
+            } else if (rule.type == Rule.Type.IPV6) {
                 rule_str = "%s to ::/0".printf (rule_str);
-            } else if (!rule.is_v6 == null) {
+            } else if (rule.type == Rule.Type.IPV4) {
                 rule_str = "%s to 0.0.0.0/0".printf (rule_str);
             }
 
@@ -151,11 +153,17 @@ namespace SecurityPrivacy.UFWHelpers {
             OUT
         }
 
+        public enum Type {
+            IPV4,
+            IPV6,
+            BOTH
+        }
+
         public Action action;
         public Protocol protocol;
         public Direction direction;
         public string ports;
-        public bool? is_v6 = null;
+        public Type type = Type.BOTH;
         public int number;
 
         public Rule () {
@@ -164,9 +172,9 @@ namespace SecurityPrivacy.UFWHelpers {
 
         public Rule.from_line (string line) {
             if (line.contains ("(v6)")) {
-                is_v6 = true;
+                type = Type.IPV6;
             } else {
-                is_v6 = false;
+                type = Type.IPV4;
             }
 
             try {
