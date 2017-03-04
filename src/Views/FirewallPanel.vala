@@ -136,6 +136,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         // The View:
         view = new Gtk.TreeView.with_model (list_store);
         view.vexpand = true;
+        view.activate_on_single_click = true;
 
         var celltoggle = new Gtk.CellRendererToggle ();
         var cell = new Gtk.CellRendererText ();
@@ -145,6 +146,24 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         view.insert_column_with_attributes (-1, _("Protocol"), cell, "text", Columns.PROTOCOL);
         view.insert_column_with_attributes (-1, _("Direction"), cell, "text", Columns.DIRECTION);
         view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.PORTS);
+
+        view.row_activated.connect ((path, column) => {
+            Value active;
+            Gtk.TreeIter iter;
+            list_store.get_iter (out iter, path);
+            list_store.get_value (iter, Columns.ENABLED, out active);
+            var is_active = !active.get_boolean ();
+            list_store.set (iter, Columns.ENABLED, is_active);
+
+            Value rule_value;
+            list_store.get_value (iter, Columns.RULE, out rule_value);
+            UFWHelpers.Rule rule = (UFWHelpers.Rule)rule_value.get_object ();
+            if (is_active == false) {
+                UFWHelpers.remove_rule (rule);
+            } else {
+                UFWHelpers.add_rule (rule);
+            }
+        });
 
         list_toolbar = new Gtk.Toolbar ();
         list_toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
