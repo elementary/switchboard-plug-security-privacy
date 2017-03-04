@@ -35,6 +35,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         DIRECTION,
         PORTS,
         V6,
+        ENABLED,
         RULE,
         N_COLUMNS
     }
@@ -125,12 +126,12 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
                 Columns.DIRECTION, direction, Columns.PORTS, rule.ports.replace (":", "-"),
-                Columns.V6, rule.is_v6, Columns.RULE, rule);
+                Columns.V6, rule.is_v6 ? "IPv6" : "IPv4", Columns.ENABLED, true, Columns.RULE, rule);
     }
 
     private void create_treeview () {
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (string),
-                typeof (string), typeof (string), typeof (string), typeof (bool), typeof (UFWHelpers.Rule));
+                typeof (string), typeof (string), typeof (string), typeof (string), typeof(bool), typeof (UFWHelpers.Rule));
 
         // The View:
         view = new Gtk.TreeView.with_model (list_store);
@@ -138,7 +139,8 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
 
         var celltoggle = new Gtk.CellRendererToggle ();
         var cell = new Gtk.CellRendererText ();
-        view.insert_column_with_attributes (-1, _("IPv6"), celltoggle, "active", Columns.V6);
+        view.insert_column_with_attributes (-1, _("Enabled"), celltoggle, "active", Columns.ENABLED);
+        view.insert_column_with_attributes (-1, _("Type"), cell, "text", Columns.V6);
         view.insert_column_with_attributes (-1, _("Action"), cell, "text", Columns.ACTION);
         view.insert_column_with_attributes (-1, _("Protocol"), cell, "text", Columns.PROTOCOL);
         view.insert_column_with_attributes (-1, _("Direction"), cell, "text", Columns.DIRECTION);
