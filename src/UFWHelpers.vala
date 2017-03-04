@@ -103,16 +103,28 @@ namespace SecurityPrivacy.UFWHelpers {
                 default:
                     rule_str = "%s in".printf (rule_str);
                     break;
-            }
+            } 
 
             switch (rule.protocol) {
                 case Rule.Protocol.UDP:
-                    rule_str = "%s %s/udp".printf (rule_str, rule.ports);
+                    rule_str = "%s proto udp".printf (rule_str);
                     break;
                 default:
-                    rule_str = "%s %s/tcp".printf (rule_str, rule.ports);
+                    rule_str = "%s proto tcp".printf (rule_str);
                     break;
+            }           
+
+            if (rule.is_v6 == null) {
+                rule_str = "%s to any".printf (rule_str);                
+            } else if (rule.is_v6) {
+                rule_str = "%s to ::/0".printf (rule_str);
+            } else if (!rule.is_v6 == null) {
+                rule_str = "%s to 0.0.0.0/0".printf (rule_str);
             }
+
+            rule_str = "%s port %s".printf (rule_str, rule.ports);
+        
+            warning (rule_str);
 
             Process.spawn_command_line_sync ("pkexec %s -5 \"%s\"".printf (get_helper_path (), rule_str));
         } catch (Error e) {
@@ -130,7 +142,8 @@ namespace SecurityPrivacy.UFWHelpers {
 
         public enum Protocol {
             UDP,
-            TCP
+            TCP,
+            BOTH
         }
 
         public enum Direction {
@@ -142,7 +155,7 @@ namespace SecurityPrivacy.UFWHelpers {
         public Protocol protocol;
         public Direction direction;
         public string ports;
-        public bool is_v6 = false;
+        public bool? is_v6 = null;
         public int number;
 
         public Rule () {
@@ -150,48 +163,50 @@ namespace SecurityPrivacy.UFWHelpers {
         }
 
         public Rule.from_line (string line) {
-            if (line.contains ("(v6)"))
+            if (line.contains ("(v6)")) {
                 is_v6 = true;
-            var first = line.replace ("(v6)", "").split ("] ");
-            number = int.parse (first[0].replace ("[", ""));
-            var second = first[1];
-            var third = second.split ("/");
-            ports = third[0];
-            string current = "";
-            int position = 0;
-            foreach (var car in third[1].data) {
-                if (car == ' ') {
-                    if (current == "") {
-                        continue;
-                    }
+            } else {
+                is_v6 = false;
+            }
 
-                    if (position == 0) {
-                        if ("udp" in current)
-                            protocol = Protocol.UDP;
-                        else if ("tcp" in current)
-                            protocol = Protocol.TCP;
-                    } else if (position == 1) {
-                        if ("ALLOW" in current)
-                            action = Action.ALLOW;
-                        else if ("DENY" in current)
-                            action = Action.DENY;
-                        else if ("REJECT" in current)
-                            action = Action.REJECT;
-                        else if ("LIMIT" in current)
-                            action = Action.LIMIT;
-                    } else if (position == 2) {
-                        if ("IN" in current)
-                            direction = Direction.IN;
-                        else if ("OUT" in current)
-                            direction = Direction.OUT;
-                        break;
-                    }
-
-                    current = "";
-                    position++;
-                    continue;
+            try {
+                var r = new Regex ("""\[\s*(\d+)\]\s{1}(?:([\d,:]+)\/?)?([A-Za-z0-9 \(\)]+?)\s{2,}([A-Za-z ]+?)\s{2,}(?:([\d,:]+)\/?)?([A-Za-z0-9 \(\)]+?)$""");
+                MatchInfo info;
+                r.match (line, 0, out info);
+                
+                number = int.parse (info.fetch (1));
+                if (info.fetch (2) != null) {
+                    ports = info.fetch(2);
                 }
-                current = "%s%c".printf (current, car);
+
+                string proto = info.fetch (3);
+                if (proto.contains ("tcp")) {
+                    protocol = Protocol.TCP;
+                } else if (proto.contains ("udp")) {
+                    protocol = Protocol.UDP;
+                } else {
+                    protocol = Protocol.BOTH;
+                }
+                
+                string type = info.fetch (4);
+
+                if ("ALLOW" in type) {
+                    action = Action.ALLOW;
+                } else if ("DENY" in type) {
+                    action = Action.DENY;
+                } else if ("REJECT" in type) {
+                    action = Action.REJECT;
+                } else if ("LIMIT" in type) {
+                    action = Action.LIMIT;
+                }
+
+                if ("IN" in type) {
+                    direction = Direction.IN;
+                } else if ("OUT" in type) {
+                    direction = Direction.OUT;
+                }
+            } catch (Error e) {
+                return;
             }
         }
     }

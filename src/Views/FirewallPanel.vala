@@ -116,6 +116,8 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             protocol = "UDP";
         } else if (rule.protocol == UFWHelpers.Rule.Protocol.TCP) {
             protocol = "TCP";
+        } else if (rule.protocol == UFWHelpers.Rule.Protocol.BOTH) {
+            protocol = "TCP/UDP";
         }
         string direction = _("Unknown");
         if (rule.direction == UFWHelpers.Rule.Direction.IN) {
@@ -147,10 +149,10 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         view.insert_column_with_attributes (-1, _("Direction"), cell, "text", Columns.DIRECTION);
         view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.PORTS);
 
-        view.row_activated.connect ((path, column) => {
+        celltoggle.toggled.connect ((path) => {
             Value active;
             Gtk.TreeIter iter;
-            list_store.get_iter (out iter, path);
+            list_store.get_iter (out iter, new Gtk.TreePath.from_string(path));
             list_store.get_value (iter, Columns.ENABLED, out active);
             var is_active = !active.get_boolean ();
             list_store.set (iter, Columns.ENABLED, is_active);
