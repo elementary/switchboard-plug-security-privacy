@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+
+<schema id="org.pantheon.security-privacy" path="/org/pantheon/security-privacy/">
+    <key name="disabled-rules" type="a(iiimb)">
+        <default>[]</default>
+        <summary>Firewall rules that have been disabled, but should still be listed in the plug</summary>
+        <description>An array of rules, each containing action, protocol, direction and (bool v6) in that order.</description>
+    </key>
+</schema>
+
+</schemalist>
