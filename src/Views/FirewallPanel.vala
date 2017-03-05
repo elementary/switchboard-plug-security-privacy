@@ -127,24 +127,29 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
 
     private void disable_rule (UFWHelpers.Rule rule) {
         load_disabled_rules ();
-        VariantBuilder builder = new VariantBuilder (new VariantType("a(siiii)"));
-        for (int i = 0; i < disabled_rules.length; i++) {
-            var existing_rule = disabled_rules.index (i);
-            builder.add ("(siiii)", existing_rule.ports, existing_rule.action, existing_rule.protocol, existing_rule.direction, existing_rule.type);
-        }
-        builder.add ("(siiii)", rule.ports, rule.action, rule.protocol, rule.direction, rule.type);
-        settings.set_value ("disabled-firewall-rules", builder.end ());
+        save_disabled_rules (rule);
         UFWHelpers.remove_rule (rule);
         show_rules ();
     }
 
     private void enable_rule (int array_index) {
         UFWHelpers.add_rule (disabled_rules.index (array_index));
+        delete_disabled_rule (array_index);        
+    }
+
+    private void delete_disabled_rule (int array_index) {
         disabled_rules.remove_index (array_index);
+        save_disabled_rules ();
+    }
+
+    private void save_disabled_rules (UFWHelpers.Rule? additional_rule = null) {
         VariantBuilder builder = new VariantBuilder (new VariantType("a(siiii)"));
         for (int i = 0; i < disabled_rules.length; i++) {
             var existing_rule = disabled_rules.index (i);
             builder.add ("(siiii)", existing_rule.ports, existing_rule.action, existing_rule.protocol, existing_rule.direction, existing_rule.type);
+        }
+        if (additional_rule != null) {
+            builder.add ("(siiii)", additional_rule.ports, additional_rule.action, additional_rule.protocol, additional_rule.direction, additional_rule.type);
         }
         settings.set_value ("disabled-firewall-rules", builder.end ());
         show_rules ();
@@ -327,9 +332,15 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             view.get_cursor (out path, out column);
             Gtk.TreeIter iter;
             list_store.get_iter (out iter, path);
-            Value val;
-            list_store.get_value (iter, Columns.RULE, out val);
-            UFWHelpers.remove_rule ((UFWHelpers.Rule) val.get_object ());
+            Value index;
+            list_store.get_value (iter, Columns.INDEX, out index);
+            if (index.get_int () == -1) {
+                Value val;
+                list_store.get_value (iter, Columns.RULE, out val);
+                UFWHelpers.remove_rule ((UFWHelpers.Rule) val.get_object ());
+            } else {
+                delete_disabled_rule (index.get_int ());
+            }
             show_rules ();
         });
         list_toolbar.insert (remove_button, -1);
