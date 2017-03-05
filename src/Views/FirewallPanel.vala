@@ -34,8 +34,6 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
         ACTION,
         PROTOCOL,
         DIRECTION,
-        TO_PORTS,
-        FROM_PORTS,
         TO,
         FROM,
         V6,
@@ -105,7 +103,14 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
     }
 
     private string generate_hash_for_rule (UFWHelpers.Rule r) {
-        return r.to + r.to_ports + r.from + r.from_ports + r.action.to_string () + r.protocol.to_string () + r.direction.to_string () + r.version.to_string ();
+        return r.to + 
+               r.to_ports + 
+               r.from + 
+               r.from_ports + 
+               r.action.to_string () + 
+               r.protocol.to_string () + 
+               r.direction.to_string () + 
+               r.version.to_string ();
     }
     
     private void reload_rule_numbers () {
@@ -215,21 +220,40 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
         } else if (rule.version == UFWHelpers.Rule.Version.IPV4) {
             version = "IPv4";
         }
+        
+        string from = "";
+        string to = "";
+        if (rule.from_ports != "") {
+            if (rule.from_ports.contains (":") || rule.from_ports.contains (",")) {
+                from = _("%s Ports %s").printf (rule.from, rule.from_ports.replace (":", "-"));
+            } else {
+                from = _("%s Port %s").printf (rule.from, rule.from_ports.replace (":", "-"));
+            }
+        } else {
+            from = rule.from;
+        }
+
+        if (rule.to_ports != "") {
+            if (rule.to_ports.contains (":") || rule.to_ports.contains (",")) {
+                to = _("%s Ports %s").printf (rule.to, rule.to_ports.replace (":", "-"));
+            } else {
+                to = _("%s Port %s").printf (rule.to, rule.to_ports.replace (":", "-"));
+            }
+        } else {
+            to = rule.to;
+        }
  
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
-                Columns.DIRECTION, direction, Columns.TO_PORTS, rule.to_ports.replace (":", "-"),
-                Columns.V6, version, Columns.ENABLED, enabled, Columns.RULE, rule,
-                Columns.TO, rule.to, Columns.FROM, rule.from, Columns.FROM_PORTS, rule.from_ports);
+                Columns.DIRECTION, direction, Columns.V6, version, Columns.ENABLED, enabled, 
+                Columns.RULE, rule, Columns.TO, to.strip (), Columns.FROM, from.strip ());
     }
 
     private void create_treeview () {
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (string),
                                                            typeof (string), 
                                                            typeof (string),     
-                                                           typeof (string), 
-                                                           typeof (string), 
-                                                           typeof (string), 
+                                                           typeof (string),
                                                            typeof (string), 
                                                            typeof (string), 
                                                            typeof (bool), 
@@ -248,9 +272,7 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
         view.insert_column_with_attributes (-1, _("Protocol"), cell, "text", Columns.PROTOCOL);
         view.insert_column_with_attributes (-1, _("Direction"), cell, "text", Columns.DIRECTION);
         view.insert_column_with_attributes (-1, _("To"), cell, "text", Columns.TO);
-        view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.TO_PORTS);
         view.insert_column_with_attributes (-1, _("From"), cell, "text", Columns.FROM);
-        view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.FROM_PORTS);
 
         celltoggle.toggled.connect ((path) => {
             Value active;
