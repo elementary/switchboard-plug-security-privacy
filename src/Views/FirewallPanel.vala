@@ -35,7 +35,10 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         ACTION,
         PROTOCOL,
         DIRECTION,
-        PORTS,
+        TO_PORTS,
+        FROM_PORTS,
+        TO,
+        FROM,
         V6,
         ENABLED,
         RULE,
@@ -97,13 +100,16 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
 
     private void load_disabled_rules () {
         disabled_rules = new Array<UFWHelpers.Rule> ();
-        string? ports = "";
+        string? to = "", to_ports = "", from = "", from_ports = "";
         int action = 0, protocol = 0, direction = 0, version = 0;
         var rules = settings.get_value ("disabled-firewall-rules");
         VariantIter iter = rules.iterator ();
-        while (iter.next ("(siiii)", &ports, &action, &protocol, &direction, &version)) {
+        while (iter.next ("(ssssiiii)", &to, &to_ports, &from, &from_ports, &action, &protocol, &direction, &version)) {
 		    UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
-            new_rule.ports = ports;
+            new_rule.to = to;
+            new_rule.to_ports = to_ports;
+            new_rule.from = from;
+            new_rule.from_ports = from_ports;
             new_rule.action = (UFWHelpers.Rule.Action)action;
             new_rule.protocol = (UFWHelpers.Rule.Protocol)protocol;
             new_rule.direction = (UFWHelpers.Rule.Direction)direction;
@@ -143,13 +149,28 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     }
 
     private void save_disabled_rules (UFWHelpers.Rule? additional_rule = null) {
-        VariantBuilder builder = new VariantBuilder (new VariantType("a(siiii)"));
+        VariantBuilder builder = new VariantBuilder (new VariantType("a(ssssiiii)"));
         for (int i = 0; i < disabled_rules.length; i++) {
             var existing_rule = disabled_rules.index (i);
-            builder.add ("(siiii)", existing_rule.ports, existing_rule.action, existing_rule.protocol, existing_rule.direction, existing_rule.version);
+            builder.add ("(ssssiiii)", existing_rule.to, 
+                                       existing_rule.to_ports, 
+                                       existing_rule.from, 
+                                       existing_rule.from_ports,
+                                       existing_rule.action, 
+                                       existing_rule.protocol, 
+                                       existing_rule.direction, 
+                                       existing_rule.version);
         }
         if (additional_rule != null) {
-            builder.add ("(siiii)", additional_rule.ports, additional_rule.action, additional_rule.protocol, additional_rule.direction, additional_rule.version);
+            warning (additional_rule.from_ports.length.to_string ());
+            builder.add ("(ssssiiii)", additional_rule.to, 
+                                       additional_rule.to_ports, 
+                                       additional_rule.from, 
+                                       additional_rule.from_ports,
+                                       additional_rule.action, 
+                                       additional_rule.protocol, 
+                                       additional_rule.direction, 
+                                       additional_rule.version);
         }
         settings.set_value ("disabled-firewall-rules", builder.end ());
         show_rules ();
@@ -190,13 +211,23 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
  
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
-                Columns.DIRECTION, direction, Columns.PORTS, rule.ports.replace (":", "-"),
-                Columns.V6, version, Columns.ENABLED, enabled, Columns.RULE, rule, Columns.INDEX, array_index);
+                Columns.DIRECTION, direction, Columns.TO_PORTS, rule.to_ports.replace (":", "-"),
+                Columns.V6, version, Columns.ENABLED, enabled, Columns.RULE, rule, Columns.INDEX, array_index,
+                Columns.TO, rule.to, Columns.FROM, rule.from, Columns.FROM_PORTS, rule.from_ports);
     }
 
     private void create_treeview () {
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (string),
-                typeof (string), typeof (string), typeof (string), typeof (string), typeof(bool), typeof (UFWHelpers.Rule), typeof(int));
+                                                           typeof (string), 
+                                                           typeof (string),     
+                                                           typeof (string), 
+                                                           typeof (string), 
+                                                           typeof (string), 
+                                                           typeof (string), 
+                                                           typeof (string), 
+                                                           typeof (bool), 
+                                                           typeof (UFWHelpers.Rule), 
+                                                           typeof (int));
 
         // The View:
         view = new Gtk.TreeView.with_model (list_store);
@@ -210,7 +241,10 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         view.insert_column_with_attributes (-1, _("Action"), cell, "text", Columns.ACTION);
         view.insert_column_with_attributes (-1, _("Protocol"), cell, "text", Columns.PROTOCOL);
         view.insert_column_with_attributes (-1, _("Direction"), cell, "text", Columns.DIRECTION);
-        view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.PORTS);
+        view.insert_column_with_attributes (-1, _("To"), cell, "text", Columns.TO);
+        view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.TO_PORTS);
+        view.insert_column_with_attributes (-1, _("From"), cell, "text", Columns.FROM);
+        view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.FROM_PORTS);
 
         celltoggle.toggled.connect ((path) => {
             Value active;
@@ -315,7 +349,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
                 else
                     rule.version = UFWHelpers.Rule.Version.BOTH;
 
-                rule.ports = ports_entry.text.replace ("-", ":");
+                rule.to_ports = ports_entry.text.replace ("-", ":");
                 UFWHelpers.add_rule (rule);
                 add_popover.hide ();
                 show_rules ();

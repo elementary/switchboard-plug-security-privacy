@@ -114,17 +114,43 @@ namespace SecurityPrivacy.UFWHelpers {
                 default:
                     rule_str = "%s proto tcp".printf (rule_str);
                     break;
-            }           
-
-            if (rule.version == Rule.Version.BOTH) {
-                rule_str = "%s to any".printf (rule_str);                
-            } else if (rule.version == Rule.Version.IPV6) {
-                rule_str = "%s to ::/0".printf (rule_str);
-            } else if (rule.version == Rule.Version.IPV4) {
-                rule_str = "%s to 0.0.0.0/0".printf (rule_str);
             }
 
-            rule_str = "%s port %s".printf (rule_str, rule.ports);
+            if (rule.to != "" && !rule.to.contains ("Anywhere")) {
+                rule_str = "%s to %s".printf (rule_str, rule.to);
+                if (rule.to_ports != "") {
+                    rule_str = "%s port %s".printf (rule_str, rule.to_ports);                    
+                }            
+            } else {
+                if (rule.version == Rule.Version.BOTH) {
+                    rule_str = "%s to any".printf (rule_str);                
+                } else if (rule.version == Rule.Version.IPV6) {
+                    rule_str = "%s to ::/0".printf (rule_str);
+                } else if (rule.version == Rule.Version.IPV4) {
+                    rule_str = "%s to 0.0.0.0/0".printf (rule_str);
+                }
+                if (rule.to_ports != "") {
+                    rule_str = "%s port %s".printf (rule_str, rule.to_ports);
+                }
+            }
+
+            if (rule.from != "" && !rule.from.contains ("Anywhere")) {
+                rule_str = "%s from %s".printf (rule_str, rule.from);
+                if (rule.from_ports != "") {
+                    rule_str = "%s port %s".printf (rule_str, rule.from_ports);
+                }            
+            } else {
+                if (rule.version == Rule.Version.BOTH) {
+                    rule_str = "%s from any".printf (rule_str);                
+                } else if (rule.version == Rule.Version.IPV6) {
+                    rule_str = "%s from ::/0".printf (rule_str);
+                } else if (rule.version == Rule.Version.IPV4) {
+                    rule_str = "%s from 0.0.0.0/0".printf (rule_str);
+                }
+                if (rule.from_ports != "") {
+                    rule_str = "%s port %s".printf (rule_str, rule.from_ports);
+                }
+            }
         
             warning (rule_str);
 
@@ -162,7 +188,10 @@ namespace SecurityPrivacy.UFWHelpers {
         public Action action;
         public Protocol protocol;
         public Direction direction;
-        public string ports;
+        public string to_ports = "";
+        public string from_ports = "";
+        public string to = "";
+        public string from = "";
         public Version version = Version.BOTH;
         public int number;
 
@@ -178,25 +207,42 @@ namespace SecurityPrivacy.UFWHelpers {
             }
 
             try {
-                var r = new Regex ("""\[\s*(\d+)\]\s{1}(?:([\d,:]+)\/?)?([A-Za-z0-9 \(\)]+?)\s{2,}([A-Za-z ]+?)\s{2,}(?:([\d,:]+)\/?)?([A-Za-z0-9 \(\)]+?)$""");
+                var r = new Regex ("""\[\s*(\d+)\]\s{1}([A-Za-z0-9 \(\)/\.:]+?)\s{2,}([A-Z ]+?)\s{2,}([A-Za-z0-9 \(\)/\.:]+?)(?:\s{2,}.*)?$""");
                 MatchInfo info;
                 r.match (line, 0, out info);
                 
                 number = int.parse (info.fetch (1));
-                if (info.fetch (2) != null) {
-                    ports = info.fetch(2);
+
+                MatchInfo port_info;
+                string to_match = info.fetch (2);
+                var port_regex = new Regex ("""^(?=.)((?:\d+\.\d+\.\d+\.\d+(?:\/\d+)?)?(?:[^\S\n])?(?:[A-Za-z]+)?)([\d,:]+)?(?:.+)?$""");
+                port_regex.match (to_match, 0, out port_info);
+                if (port_info.fetch (2) != null) {
+                    to_ports = port_info.fetch(2);
                 }
 
-                string proto = info.fetch (3);
-                if (proto.contains ("tcp")) {
+                if (port_info.fetch (1) != null) {
+                    to = port_info.fetch (1);
+                }
+
+                string from_match = info.fetch (4);
+                port_regex.match (from_match, 0, out port_info);
+                if (port_info.fetch (2) != null) {
+                    from_ports = port_info.fetch (2);
+                }
+                if(port_info.fetch (1) != null) {
+                    from = port_info.fetch (1);
+                }
+
+                if (from.contains ("tcp")) {
                     protocol = Protocol.TCP;
-                } else if (proto.contains ("udp")) {
+                } else if (from.contains ("udp")) {
                     protocol = Protocol.UDP;
                 } else {
                     protocol = Protocol.BOTH;
                 }
                 
-                string type = info.fetch (4);
+                string type = info.fetch (3);
 
                 if ("ALLOW" in type) {
                     action = Action.ALLOW;
