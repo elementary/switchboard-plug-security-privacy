@@ -107,6 +107,27 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
     private string generate_hash_for_rule (UFWHelpers.Rule r) {
         return r.to + r.to_ports + r.from + r.from_ports + r.action.to_string () + r.protocol.to_string () + r.direction.to_string () + r.version.to_string ();
     }
+    
+    private void reload_rule_numbers () {
+        foreach (var rule in UFWHelpers.get_rules ()) {
+            string ufw_hash = generate_hash_for_rule (rule);
+            Gtk.TreeModelForeachFunc update_row = (model, path, iter) => {
+                Value val;
+
+		        list_store.get_value (iter, Columns.RULE, out val);
+                var tree_rule = (UFWHelpers.Rule)val;
+                string tree_hash = generate_hash_for_rule (tree_rule);
+		        if (ufw_hash == tree_hash) {
+                    tree_rule.number = rule.number;
+                    list_store.set_value (iter, Columns.RULE, tree_rule);
+                    return true;
+                }
+                
+		        return false;
+	        };
+            list_store.foreach (update_row);
+        }    
+    }
 
     private void show_rules () {
         list_store.clear ();
@@ -127,7 +148,6 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
     }
 
     private void enable_rule (string hash) {
-        warning ("enabling: %s".printf(hash));
         UFWHelpers.add_rule (disabled_rules.get (hash));
         delete_disabled_rule (hash);        
     }
@@ -249,6 +269,8 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
             } else {
                 enable_rule (gen_hash);
             }
+
+            reload_rule_numbers ();
         });
 
         list_toolbar = new Gtk.Toolbar ();
