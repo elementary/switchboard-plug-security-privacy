@@ -116,11 +116,11 @@ namespace SecurityPrivacy.UFWHelpers {
                     break;
             }           
 
-            if (rule.type == Rule.Type.BOTH) {
+            if (rule.version == Rule.Version.BOTH) {
                 rule_str = "%s to any".printf (rule_str);                
-            } else if (rule.type == Rule.Type.IPV6) {
+            } else if (rule.version == Rule.Version.IPV6) {
                 rule_str = "%s to ::/0".printf (rule_str);
-            } else if (rule.type == Rule.Type.IPV4) {
+            } else if (rule.version == Rule.Version.IPV4) {
                 rule_str = "%s to 0.0.0.0/0".printf (rule_str);
             }
 
@@ -153,7 +153,7 @@ namespace SecurityPrivacy.UFWHelpers {
             OUT
         }
 
-        public enum Type {
+        public enum Version {
             IPV4,
             IPV6,
             BOTH
@@ -163,7 +163,7 @@ namespace SecurityPrivacy.UFWHelpers {
         public Protocol protocol;
         public Direction direction;
         public string ports;
-        public Type type = Type.BOTH;
+        public Version version = Version.BOTH;
         public int number;
 
         public Rule () {
@@ -172,9 +172,9 @@ namespace SecurityPrivacy.UFWHelpers {
 
         public Rule.from_line (string line) {
             if (line.contains ("(v6)")) {
-                type = Type.IPV6;
+                version = Version.IPV6;
             } else {
-                type = Type.IPV4;
+                version = Version.IPV4;
             }
 
             try {

@@ -98,16 +98,16 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     private void load_disabled_rules () {
         disabled_rules = new Array<UFWHelpers.Rule> ();
         string? ports = "";
-        int action = 0, protocol = 0, direction = 0, type = 0;
+        int action = 0, protocol = 0, direction = 0, version = 0;
         var rules = settings.get_value ("disabled-firewall-rules");
         VariantIter iter = rules.iterator ();
-        while (iter.next ("(siiii)", &ports, &action, &protocol, &direction, &type)) {
+        while (iter.next ("(siiii)", &ports, &action, &protocol, &direction, &version)) {
 		    UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
             new_rule.ports = ports;
             new_rule.action = (UFWHelpers.Rule.Action)action;
             new_rule.protocol = (UFWHelpers.Rule.Protocol)protocol;
             new_rule.direction = (UFWHelpers.Rule.Direction)direction;
-            new_rule.type = (UFWHelpers.Rule.Type)type;
+            new_rule.version = (UFWHelpers.Rule.Version)version;
             disabled_rules.append_val (new_rule);
         }    
     }
@@ -146,10 +146,10 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         VariantBuilder builder = new VariantBuilder (new VariantType("a(siiii)"));
         for (int i = 0; i < disabled_rules.length; i++) {
             var existing_rule = disabled_rules.index (i);
-            builder.add ("(siiii)", existing_rule.ports, existing_rule.action, existing_rule.protocol, existing_rule.direction, existing_rule.type);
+            builder.add ("(siiii)", existing_rule.ports, existing_rule.action, existing_rule.protocol, existing_rule.direction, existing_rule.version);
         }
         if (additional_rule != null) {
-            builder.add ("(siiii)", additional_rule.ports, additional_rule.action, additional_rule.protocol, additional_rule.direction, additional_rule.type);
+            builder.add ("(siiii)", additional_rule.ports, additional_rule.action, additional_rule.protocol, additional_rule.direction, additional_rule.version);
         }
         settings.set_value ("disabled-firewall-rules", builder.end ());
         show_rules ();
@@ -181,17 +181,17 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         } else if (rule.direction == UFWHelpers.Rule.Direction.OUT) {
             direction = _("Out");
         }
-        string type = _("Unknown");
-        if (rule.type == UFWHelpers.Rule.Type.IPV6) {
-            type = "IPv6";
-        } else if (rule.type == UFWHelpers.Rule.Type.IPV4) {
-            type = "IPv4";
+        string version = _("Unknown");
+        if (rule.version == UFWHelpers.Rule.Version.IPV6) {
+            version = "IPv6";
+        } else if (rule.version == UFWHelpers.Rule.Version.IPV4) {
+            version = "IPv4";
         }
  
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
                 Columns.DIRECTION, direction, Columns.PORTS, rule.ports.replace (":", "-"),
-                Columns.V6, type, Columns.ENABLED, enabled, Columns.RULE, rule, Columns.INDEX, array_index);
+                Columns.V6, version, Columns.ENABLED, enabled, Columns.RULE, rule, Columns.INDEX, array_index);
     }
 
     private void create_treeview () {
@@ -206,7 +206,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         var celltoggle = new Gtk.CellRendererToggle ();
         var cell = new Gtk.CellRendererText ();
         view.insert_column_with_attributes (-1, _("Enabled"), celltoggle, "active", Columns.ENABLED);
-        view.insert_column_with_attributes (-1, _("Type"), cell, "text", Columns.V6);
+        view.insert_column_with_attributes (-1, _("Version"), cell, "text", Columns.V6);
         view.insert_column_with_attributes (-1, _("Action"), cell, "text", Columns.ACTION);
         view.insert_column_with_attributes (-1, _("Protocol"), cell, "text", Columns.PROTOCOL);
         view.insert_column_with_attributes (-1, _("Direction"), cell, "text", Columns.DIRECTION);
