@@ -264,6 +264,14 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             protocol_combobox.append_text ("UDP");
             protocol_combobox.active = 0;
 
+            var version_label = new Gtk.Label (_("Version:"));
+            version_label.xalign = 1;
+            var version_combobox = new Gtk.ComboBoxText ();
+            version_combobox.append_text ("IPv4");
+            version_combobox.append_text ("IPv6");
+            version_combobox.append_text (_("Both"));
+            version_combobox.active = 0;
+
             var direction_label = new Gtk.Label (_("Direction:"));
             direction_label.xalign = 1;
             var direction_combobox = new Gtk.ComboBoxText ();
@@ -300,6 +308,13 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
                 else
                     rule.action = UFWHelpers.Rule.Action.LIMIT;
 
+                if (version_combobox.active == 0)
+                    rule.version = UFWHelpers.Rule.Version.IPV4;
+                else if (version_combobox.active == 1)
+                    rule.version = UFWHelpers.Rule.Version.IPV6;
+                else
+                    rule.version = UFWHelpers.Rule.Version.BOTH;
+
                 rule.ports = ports_entry.text.replace ("-", ":");
                 UFWHelpers.add_rule (rule);
                 add_popover.hide ();
@@ -314,11 +329,13 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             popover_grid.attach (policy_combobox, 1, 0, 1, 1);
             popover_grid.attach (protocol_label, 0, 1, 1, 1);
             popover_grid.attach (protocol_combobox, 1, 1, 1, 1);
-            popover_grid.attach (direction_label, 0, 2, 1, 1);
-            popover_grid.attach (direction_combobox, 1, 2, 1, 1);
-            popover_grid.attach (ports_label, 0, 3, 1, 1);
-            popover_grid.attach (ports_entry, 1, 3, 1, 1);
-            popover_grid.attach (add_button_grid, 0, 4, 2, 1);
+            popover_grid.attach (version_label, 0, 2, 1, 1);
+            popover_grid.attach (version_combobox, 1, 2, 1, 1);
+            popover_grid.attach (direction_label, 0, 3, 1, 1);
+            popover_grid.attach (direction_combobox, 1, 3, 1, 1);
+            popover_grid.attach (ports_label, 0, 4, 1, 1);
+            popover_grid.attach (ports_entry, 1, 4, 1, 1);
+            popover_grid.attach (add_button_grid, 0, 5, 2, 1);
 
             add_popover.show_all ();
         });
