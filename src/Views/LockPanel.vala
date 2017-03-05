@@ -20,15 +20,16 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class SecurityPrivacy.LockPanel : Gtk.Grid {
+public class SecurityPrivacy.LockPanel : ServicePanel {
 
     Settings locker;
 
     public LockPanel () {
-        column_spacing = 12;
-        row_spacing = 6;
-        margin = 12;
+        Object (icon_name: "system-lock-screen",
+                title: _("Locking"));
+    }
 
+    construct {
         locker = new Settings ("apps.light-locker");
 
         var lock_suspend_label = new Gtk.Label (_("Lock on sleep:"));
@@ -66,15 +67,11 @@ public class SecurityPrivacy.LockPanel : Gtk.Grid {
         lock_suspend_switch.halign = Gtk.Align.START;
         lock_sleep_switch.halign = Gtk.Align.START;
 
-        var expander_grid = new Gtk.Grid ();
-        expander_grid.hexpand = true;
-
-        attach (expander_grid, 0, 0, 4, 1);
-        attach (lock_suspend_label, 1, 0, 1, 1);
-        attach (lock_sleep_label, 1, 1, 1, 1);
-        attach (lock_suspend_switch, 2, 0, 1, 1);
-        attach (lock_sleep_switch, 2, 1, 1, 1);
-
-        hexpand = true;
+        content_area.hexpand = true;
+        content_area.halign = Gtk.Align.CENTER;
+        content_area.attach (lock_suspend_label, 0, 0, 1, 1);
+        content_area.attach (lock_sleep_label, 0, 1, 1, 1);
+        content_area.attach (lock_suspend_switch, 1, 0, 1, 1);
+        content_area.attach (lock_sleep_switch, 1, 1, 1, 1);
     }
 }

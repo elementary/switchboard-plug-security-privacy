@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
+public class SecurityPrivacy.FirewallPanel : ServicePanel {
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private Gtk.Toolbar list_toolbar;
@@ -28,8 +28,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     private Gtk.Popover add_popover;
     private Gtk.ToolButton remove_button;
     private Settings settings;
-    private Array<UFWHelpers.Rule> disabled_rules;
-    public Gtk.Switch status_switch;
+    private Gee.HashMap<string, UFWHelpers.Rule> disabled_rules;
 
     private enum Columns {
         ACTION,
@@ -42,30 +41,20 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         V6,
         ENABLED,
         RULE,
-        INDEX,
         N_COLUMNS
     }
 
     public FirewallPanel () {
-        Object (column_spacing: 12,
-                margin: 12,
-                row_spacing: 6);
+        Object (activatable: true,
+                icon_name: "network-firewall",
+                title: _("Firewall"));
     }
 
     construct {
         settings = new Settings ("org.pantheon.security-privacy");
-        disabled_rules = new Array<UFWHelpers.Rule> ();
+        disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
         load_disabled_rules ();
-        var status_icon = new Gtk.Image.from_icon_name ("network-firewall", Gtk.IconSize.DIALOG);
-
-        var status_label = new Gtk.Label (_("Firewall"));
-        status_label.get_style_context ().add_class ("h2");
-        status_label.hexpand = true;
-        status_label.xalign = 0;
-
-        status_switch = new Gtk.Switch ();
-        status_switch.valign = Gtk.Align.CENTER;
-
+        
         status_switch.notify["active"].connect (() => {
             if (loading == false) {
                 view.sensitive = status_switch.active;
@@ -73,10 +62,6 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             }
             show_rules ();
         });
-
-        attach (status_icon, 0, 0, 1, 1);
-        attach (status_label, 1, 0, 1, 1);
-        attach (status_switch, 2, 0, 1, 1);
 
         create_treeview ();
 
@@ -99,7 +84,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
     }
 
     private void load_disabled_rules () {
-        disabled_rules = new Array<UFWHelpers.Rule> ();
+        disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
         string? to = "", to_ports = "", from = "", from_ports = "";
         int action = 0, protocol = 0, direction = 0, version = 0;
         var rules = settings.get_value ("disabled-firewall-rules");
@@ -114,8 +99,13 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             new_rule.protocol = (UFWHelpers.Rule.Protocol)protocol;
             new_rule.direction = (UFWHelpers.Rule.Direction)direction;
             new_rule.version = (UFWHelpers.Rule.Version)version;
-            disabled_rules.append_val (new_rule);
+            string hash = generate_hash_for_rule (new_rule);
+            disabled_rules.set (hash, new_rule);
         }    
+    }
+
+    private string generate_hash_for_rule (UFWHelpers.Rule r) {
+        return r.to + r.to_ports + r.from + r.from_ports + r.action.to_string () + r.protocol.to_string () + r.direction.to_string () + r.version.to_string ();
     }
 
     private void show_rules () {
@@ -126,32 +116,30 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         }
         
         load_disabled_rules ();
-        for (int i = 0; i < disabled_rules.length; i++) {
-            add_rule (disabled_rules.index(i), false, i);
+        foreach (var rule in disabled_rules.entries) {
+            add_rule (rule.value, false, rule.key);
         }
     }
 
     private void disable_rule (UFWHelpers.Rule rule) {
-        load_disabled_rules ();
         save_disabled_rules (rule);
         UFWHelpers.remove_rule (rule);
-        show_rules ();
     }
 
-    private void enable_rule (int array_index) {
-        UFWHelpers.add_rule (disabled_rules.index (array_index));
-        delete_disabled_rule (array_index);        
+    private void enable_rule (string hash) {
+        warning ("enabling: %s".printf(hash));
+        UFWHelpers.add_rule (disabled_rules.get (hash));
+        delete_disabled_rule (hash);        
     }
 
-    private void delete_disabled_rule (int array_index) {
-        disabled_rules.remove_index (array_index);
+    private void delete_disabled_rule (string hash) {
+        disabled_rules.unset (hash);
         save_disabled_rules ();
     }
 
     private void save_disabled_rules (UFWHelpers.Rule? additional_rule = null) {
         VariantBuilder builder = new VariantBuilder (new VariantType("a(ssssiiii)"));
-        for (int i = 0; i < disabled_rules.length; i++) {
-            var existing_rule = disabled_rules.index (i);
+        foreach (var existing_rule in disabled_rules.values) {
             builder.add ("(ssssiiii)", existing_rule.to, 
                                        existing_rule.to_ports, 
                                        existing_rule.from, 
@@ -162,7 +150,6 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
                                        existing_rule.version);
         }
         if (additional_rule != null) {
-            warning (additional_rule.from_ports.length.to_string ());
             builder.add ("(ssssiiii)", additional_rule.to, 
                                        additional_rule.to_ports, 
                                        additional_rule.from, 
@@ -173,10 +160,10 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
                                        additional_rule.version);
         }
         settings.set_value ("disabled-firewall-rules", builder.end ());
-        show_rules ();
+        load_disabled_rules ();
     }
 
-    public void add_rule (UFWHelpers.Rule rule, bool enabled = true, int array_index = -1) {
+    public void add_rule (UFWHelpers.Rule rule, bool enabled = true, string hash = "") {
         Gtk.TreeIter iter;
         string action = _("Unknown");
         if (rule.action == UFWHelpers.Rule.Action.ALLOW) {
@@ -212,7 +199,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
                 Columns.DIRECTION, direction, Columns.TO_PORTS, rule.to_ports.replace (":", "-"),
-                Columns.V6, version, Columns.ENABLED, enabled, Columns.RULE, rule, Columns.INDEX, array_index,
+                Columns.V6, version, Columns.ENABLED, enabled, Columns.RULE, rule,
                 Columns.TO, rule.to, Columns.FROM, rule.from, Columns.FROM_PORTS, rule.from_ports);
     }
 
@@ -226,8 +213,7 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
                                                            typeof (string), 
                                                            typeof (string), 
                                                            typeof (bool), 
-                                                           typeof (UFWHelpers.Rule), 
-                                                           typeof (int));
+                                                           typeof (UFWHelpers.Rule));
 
         // The View:
         view = new Gtk.TreeView.with_model (list_store);
@@ -257,14 +243,12 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             Value rule_value;
             list_store.get_value (iter, Columns.RULE, out rule_value);
             UFWHelpers.Rule rule = (UFWHelpers.Rule)rule_value.get_object ();
+            string gen_hash = generate_hash_for_rule (rule);
             if (is_active == false) {
                 disable_rule (rule);
             } else {
-                Value index;
-                list_store.get_value (iter, Columns.INDEX, out index);
-                enable_rule (index.get_int ());
+                enable_rule (gen_hash);
             }
-            show_rules ();
         });
 
         list_toolbar = new Gtk.Toolbar ();
@@ -383,14 +367,16 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
             view.get_cursor (out path, out column);
             Gtk.TreeIter iter;
             list_store.get_iter (out iter, path);
-            Value index;
-            list_store.get_value (iter, Columns.INDEX, out index);
-            if (index.get_int () == -1) {
-                Value val;
-                list_store.get_value (iter, Columns.RULE, out val);
-                UFWHelpers.remove_rule ((UFWHelpers.Rule) val.get_object ());
+            Value val;
+            list_store.get_value (iter, Columns.RULE, out val);
+            var rule = (UFWHelpers.Rule) val.get_object ();
+            string gen_hash = generate_hash_for_rule (rule);
+            Value active;
+            list_store.get_value (iter, Columns.ENABLED, out active);
+            if (active.get_boolean ()) {                
+                UFWHelpers.remove_rule (rule);
             } else {
-                delete_disabled_rule (index.get_int ());
+                delete_disabled_rule (gen_hash);
             }
             show_rules ();
         });
@@ -410,9 +396,8 @@ public class SecurityPrivacy.FirewallPanel : Gtk.Grid {
         view_grid.attach (list_toolbar, 0, 1, 1, 1);
 
         var frame = new Gtk.Frame (null);
-        frame.margin_top = 12;
         frame.add (view_grid);
 
-        attach (frame, 0, 1, 3, 1);
+        content_area.attach (frame, 0, 1, 3, 1);
     }
 }

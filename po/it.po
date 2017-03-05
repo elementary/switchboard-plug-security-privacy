@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-28 15:39-0800\n"
-"PO-Revision-Date: 2017-03-02 18:14+0000\n"
+"PO-Revision-Date: 2017-03-04 16:36+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-03 06:05+0000\n"
+"X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 "X-Generator: Launchpad (build 18329)\n"
 "Language: it\n"
 
@@ -61,8 +61,8 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
-"%s non conserverà alcun ulteriore dato o statisticha sui file e "
-"sull'utilizzo delle applicazioni."
+"%s non conserverà alcun ulteriore dato o statistica sui file e sull'utilizzo "
+"delle applicazioni."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid ""
@@ -165,7 +165,7 @@ msgstr "Rifiuta"
 
 #: ../src/Views/FirewallPanel.vala:111 ../src/Views/FirewallPanel.vala:168
 msgid "Limit"
-msgstr "Limite"
+msgstr "Limita"
 
 #: ../src/Views/FirewallPanel.vala:121 ../src/Views/FirewallPanel.vala:181
 msgid "In"
