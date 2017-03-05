@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2017 elementary LLC.
+ * Copyright (c) 2017 elementary LLC. (http://launchpad.net/switchboard-plug-security-privacy)
  * Copyright (C) 2017 David Hewitt <davidmhewitt@gmail.com>   
  *
  * This program is free software; you can redistribute it and/or modify
@@ -20,7 +20,7 @@
  * Authored by: David Hewitt <davidmhewitt@gmail.com>
  */
 
-public class SecurityPrivacy.LocationPanel : Gtk.Grid {
+public class SecurityPrivacy.LocationPanel : ServicePanel {
 
     private GLib.Settings location_settings;
     private Variant remembered_apps;
@@ -29,7 +29,6 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
     private Gtk.TreeView tree_view;
     private Gtk.Grid treeview_grid;
     private Gtk.Stack disabled_stack;
-    public Gtk.Switch status_switch;
 
     private enum Columns {
         AUTHORIZED,
@@ -39,28 +38,17 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         N_COLUMNS
     }
 
-    construct {
-        column_spacing = 12;
-        row_spacing = 6;
-        margin = 12;
+    public LocationPanel () {
+        Object (activatable: true,
+                icon_name: "find-location",
+                title: _("Location Services"));
+    }
 
+    construct {
         location_settings = new GLib.Settings ("org.pantheon.agent-geoclue2");
         disabled_stack = new Gtk.Stack ();
         
-        var status_icon = new Gtk.Image.from_icon_name ("find-location", Gtk.IconSize.DIALOG);
-
-        var status_label = new Gtk.Label (_("Location Services"));
-        status_label.get_style_context ().add_class ("h2");
-        status_label.hexpand = true;
-        status_label.xalign = 0;
-
-        status_switch = new Gtk.Switch ();
-        status_switch.valign = Gtk.Align.CENTER;        
-
-        attach (status_icon, 0, 0, 1, 1);
-        attach (status_label, 1, 0, 1, 1);
-        attach (status_switch, 2, 0, 1, 1);
-        attach (disabled_stack, 0, 1, 3, 1);        
+        content_area.attach (disabled_stack, 0, 1, 3, 1);        
         
         create_treeview ();
         create_disabled_panel ();
@@ -144,7 +132,6 @@ public class SecurityPrivacy.LocationPanel : Gtk.Grid {
         scrolled.add (tree_view);
 
         treeview_grid = new Gtk.Grid ();
-        treeview_grid.margin_top = 12;
         treeview_grid.row_spacing = 6;
         treeview_grid.attach (locations_label, 0, 0, 1, 1);
         treeview_grid.attach (scrolled, 0, 1, 1, 1);

@@ -168,7 +168,6 @@ namespace SecurityPrivacy {
                 case "locking<sep>privacy-mode":
                     stack.set_visible_child_name ("locking");
                     service_list.select_service_name ("locking");
-                    tracking.focus_privacy_switch ();
                     break;
                 case "firewall":
                     stack.set_visible_child_name ("firewall");
