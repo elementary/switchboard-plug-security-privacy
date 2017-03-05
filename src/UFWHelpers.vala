@@ -151,9 +151,6 @@ namespace SecurityPrivacy.UFWHelpers {
                     rule_str = "%s port %s".printf (rule_str, rule.from_ports);
                 }
             }
-        
-            warning (rule_str);
-
             Process.spawn_command_line_sync ("pkexec %s -5 \"%s\"".printf (get_helper_path (), rule_str));
         } catch (Error e) {
             warning (e.message);
@@ -199,6 +196,56 @@ namespace SecurityPrivacy.UFWHelpers {
             
         }
 
+        private void get_address_and_port (string input, ref Version version, ref string ports, ref string address) {
+            try {
+                var ipv6regex = new Regex ("""(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))""");
+                var ipv4regex = new Regex ("""^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$""");
+                var parts = input.split (" ");
+                if (parts.length > 1) {
+                    ports = parts[1].split("/")[0];
+                    address = parts[0];
+                    var ip = parts[0].split ("/")[0];
+                    if (ipv6regex.match (ip)) {
+                        version = Version.IPV6;
+                    } else {
+                        version = Version.IPV4;
+                    }
+                } else {
+                    var ip_parts = parts[0].split ("/");
+                    if (ip_parts.length > 1) {
+                        if (ip_parts[1] == "tcp" || ip_parts[1] == "udp") {
+                            ports = ip_parts[0];
+                        } else {
+                            address = parts[0];
+                            var ip = ip_parts[0];
+                            if (ipv6regex.match (ip)) {
+                                version = Version.IPV6;
+                            } else {
+                                version = Version.IPV4;
+                            }
+                        }
+                    } else {
+                        if (ipv6regex.match (ip_parts[0])) {
+                            address = ip_parts[0];
+                            version = Version.IPV6;
+                        } else if (ipv4regex.match (ip_parts[0])) {
+                            address = ip_parts[0];
+                            version = Version.IPV4;
+                        } else {
+                            if (ip_parts[0].contains ("Anywhere")) {
+                                address = "Anywhere";
+                            } else {
+                                ports = ip_parts[0];
+                            }
+                        }
+                    }
+                }  
+            } catch (Error e) {
+                warning ("Error parsing to/from address: %s".printf (input));
+                warning (e.message);
+            }  
+        }
+
         public Rule.from_line (string line) {
             if (line.contains ("(v6)")) {
                 version = Version.IPV6;
@@ -206,41 +253,27 @@ namespace SecurityPrivacy.UFWHelpers {
                 version = Version.IPV4;
             }
 
+            if (line.contains ("tcp")) {
+                protocol = Protocol.TCP;
+            } else if (line.contains ("udp")) {
+                protocol = Protocol.UDP;
+            } else {
+                protocol = Protocol.BOTH;
+            }
+
             try {
-                var r = new Regex ("""\[\s*(\d+)\]\s{1}([A-Za-z0-9 \(\)/\.:]+?)\s{2,}([A-Z ]+?)\s{2,}([A-Za-z0-9 \(\)/\.:]+?)(?:\s{2,}.*)?$""");
+                               
+                var r = new Regex ("""\[\s*(\d+)\]\s{1}([A-Za-z0-9 \(\)/\.:,]+?)\s{2,}([A-Z ]+?)\s{2,}([A-Za-z0-9 \(\)/\.:,]+?)(?:\s{2,}.*)?$""");
                 MatchInfo info;
                 r.match (line, 0, out info);
                 
                 number = int.parse (info.fetch (1));
 
-                MatchInfo port_info;
-                string to_match = info.fetch (2);
-                var port_regex = new Regex ("""^(?=.)((?:\d+\.\d+\.\d+\.\d+(?:\/\d+)?)?(?:[^\S\n])?(?:[A-Za-z]+)?)([\d,:]+)?(?:.+)?$""");
-                port_regex.match (to_match, 0, out port_info);
-                if (port_info.fetch (2) != null) {
-                    to_ports = port_info.fetch(2);
-                }
+                string to_match = info.fetch (2).replace (" (v6)", "");
+                string from_match = info.fetch (4).replace (" (v6)", "");
 
-                if (port_info.fetch (1) != null) {
-                    to = port_info.fetch (1);
-                }
-
-                string from_match = info.fetch (4);
-                port_regex.match (from_match, 0, out port_info);
-                if (port_info.fetch (2) != null) {
-                    from_ports = port_info.fetch (2);
-                }
-                if(port_info.fetch (1) != null) {
-                    from = port_info.fetch (1);
-                }
-
-                if (from.contains ("tcp")) {
-                    protocol = Protocol.TCP;
-                } else if (from.contains ("udp")) {
-                    protocol = Protocol.UDP;
-                } else {
-                    protocol = Protocol.BOTH;
-                }
+                get_address_and_port (to_match, ref version, ref to_ports, ref to);
+                get_address_and_port (from_match, ref version, ref from_ports, ref from);
                 
                 string type = info.fetch (3);
 
