@@ -198,17 +198,17 @@ namespace SecurityPrivacy.UFWHelpers {
 
         private void get_address_and_port (string input, ref Version version, ref string ports, ref string address) {
             try {
-                var ipv6regex = new Regex ("""(([0-9a-fA-F]{1,4}:){7,7}[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,7}:|([0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|([0-9a-fA-F]{1,4}:){1,5}(:[0-9a-fA-F]{1,4}){1,2}|([0-9a-fA-F]{1,4}:){1,4}(:[0-9a-fA-F]{1,4}){1,3}|([0-9a-fA-F]{1,4}:){1,3}(:[0-9a-fA-F]{1,4}){1,4}|([0-9a-fA-F]{1,4}:){1,2}(:[0-9a-fA-F]{1,4}){1,5}|[0-9a-fA-F]{1,4}:((:[0-9a-fA-F]{1,4}){1,6})|:((:[0-9a-fA-F]{1,4}){1,7}|:)|fe80:(:[0-9a-fA-F]{0,4}){0,4}%[0-9a-zA-Z]{1,}|::(ffff(:0{1,4}){0,1}:){0,1}((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])|([0-9a-fA-F]{1,4}:){1,4}:((25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9])\.){3,3}(25[0-5]|(2[0-4]|1{0,1}[0-9]){0,1}[0-9]))""");
-                var ipv4regex = new Regex ("""^(?:(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(?:25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$""");
                 var parts = input.split (" ");
                 if (parts.length > 1) {
                     ports = parts[1].split("/")[0];
                     address = parts[0];
-                    var ip = parts[0].split ("/")[0];
-                    if (ipv6regex.match (ip)) {
-                        version = Version.IPV6;
-                    } else {
-                        version = Version.IPV4;
+                    var ip = new InetAddress.from_string (parts[0].split ("/")[0]);
+                    if (ip != null) {
+                        if (ip.get_family () == SocketFamily.IPV6) {
+                            version = Version.IPV6;
+                        } else {
+                            version = Version.IPV4;
+                        }
                     }
                 } else {
                     var ip_parts = parts[0].split ("/");
@@ -217,26 +217,29 @@ namespace SecurityPrivacy.UFWHelpers {
                             ports = ip_parts[0];
                         } else {
                             address = parts[0];
-                            var ip = ip_parts[0];
-                            if (ipv6regex.match (ip)) {
-                                version = Version.IPV6;
-                            } else {
-                                version = Version.IPV4;
+                            var ip = new InetAddress.from_string (ip_parts[0]);
+                            if (ip != null) {
+                                if (ip.get_family () == SocketFamily.IPV6) {
+                                    version = Version.IPV6;
+                                } else {
+                                    version = Version.IPV4;
+                                }
                             }
                         }
                     } else {
-                        if (ipv6regex.match (ip_parts[0])) {
-                            address = ip_parts[0];
-                            version = Version.IPV6;
-                        } else if (ipv4regex.match (ip_parts[0])) {
-                            address = ip_parts[0];
-                            version = Version.IPV4;
-                        } else {
+                        var ip = new InetAddress.from_string (ip_parts[0]);
+                        if (ip == null) {
                             if (ip_parts[0].contains ("Anywhere")) {
                                 address = "Anywhere";
                             } else {
                                 ports = ip_parts[0];
                             }
+                        } else if (ip.get_family () == SocketFamily.IPV6) {
+                            address = ip_parts[0];
+                            version = Version.IPV6;
+                        } else if (ip.get_family () == SocketFamily.IPV4) {
+                            address = ip_parts[0];
+                            version = Version.IPV4;
                         }
                     }
                 }  
