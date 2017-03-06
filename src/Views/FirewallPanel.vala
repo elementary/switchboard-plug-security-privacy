@@ -87,7 +87,7 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
         int action = 0, protocol = 0, direction = 0, version = 0;
         var rules = settings.get_value ("disabled-firewall-rules");
         VariantIter iter = rules.iterator ();
-        while (iter.next ("(ssssiiii)", &to, &to_ports, &from, &from_ports, &action, &protocol, &direction, &version)) {
+        while (iter.next ("(ssssiiii)", ref to, ref to_ports, ref from, ref from_ports, ref action, ref protocol, ref direction, ref version)) {
 		    UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
             new_rule.to = to;
             new_rule.to_ports = to_ports;
