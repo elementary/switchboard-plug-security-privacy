@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-28 15:39-0800\n"
-"PO-Revision-Date: 2016-11-30 13:20+0000\n"
-"Last-Translator: Jimmy Merrild Krag <jimmy@kragenet.dk>\n"
+"PO-Revision-Date: 2017-03-17 14:51+0000\n"
+"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <da@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
+"X-Launchpad-Export-Date: 2017-03-19 06:46+0000\n"
+"X-Generator: Launchpad (build 18332)\n"
 "Language: da\n"
 
 #: ../src/Plug.vala:43
@@ -48,7 +48,7 @@ msgstr "Firewall"
 #: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
 #: ../src/Widgets/ServiceList.vala:29
 msgid "Location Services"
-msgstr ""
+msgstr "Placeringstjenester"
 
 #: ../src/Plug.vala:189
 msgid "Privacy Mode"
@@ -59,6 +59,8 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s vil ikke bibeholde yderligere data eller statistik om brug af filer og "
+"programmer."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid ""
@@ -76,11 +78,11 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "Historik er deaktiveret"
 
 #: ../src/Views/TrackPanel.vala:48 ../src/Widgets/ServiceList.vala:12
 msgid "History"
-msgstr ""
+msgstr "Historik"
 
 #: ../src/Views/TrackPanel.vala:58
 msgid ""
@@ -94,7 +96,7 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:68
 msgid "Clear History…"
-msgstr ""
+msgstr "Ryd historik…"
 
 #: ../src/Views/TrackPanel.vala:115
 msgid "Your system"
@@ -102,29 +104,35 @@ msgstr "Dit system"
 
 #: ../src/Views/LocationPanel.vala:91
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Placeringstjenester er deaktiveret"
 
 #: ../src/Views/LocationPanel.vala:93
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Mens placeringstjenester er deaktiveret, vil forespørgsler fra programmer om "
+"placering automatisk blive afvist."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Den yderligere funktionalitet som placeringsadgang giver i disse programmer "
+"vil blive påvirket."
 
 #: ../src/Views/LocationPanel.vala:95
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Dette vil ikke forhindre programmer i at prøve at finde din placering "
+"baseret på IP-adresse."
 
 #: ../src/Views/LocationPanel.vala:106
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Giver programmerne nedenfor tilladelse til kende din placering"
 
 #: ../src/Views/LockPanel.vala:34
 msgid "Lock on sleep:"
@@ -241,11 +249,11 @@ msgstr "Videoer"
 
 #: ../src/Widgets/ServiceItem.vala:12
 msgid "Enabled"
-msgstr ""
+msgstr "Aktiveret"
 
 #: ../src/Widgets/ServiceItem.vala:16
 msgid "Disabled"
-msgstr ""
+msgstr "Deaktiveret"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
@@ -253,11 +261,11 @@ msgstr "Søg efter program"
 
 #: ../src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "Tilføj program..."
+msgstr "Tilføj program…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "Tilføj mappe..."
+msgstr "Tilføj mappe…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
