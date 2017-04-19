@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-28 15:39-0800\n"
-"PO-Revision-Date: 2016-11-13 17:41+0000\n"
-"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2017-04-18 09:44+0000\n"
+"Last-Translator: Piotr Strębski <strebski@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
+"X-Launchpad-Export-Date: 2017-04-19 06:39+0000\n"
+"X-Generator: Launchpad (build 18354)\n"
 "Language: pl\n"
 
 #: ../src/Plug.vala:43
@@ -48,7 +48,7 @@ msgstr "Zapora sieciowa"
 #: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
 #: ../src/Widgets/ServiceList.vala:29
 msgid "Location Services"
-msgstr ""
+msgstr "Usługi lokalizacji"
 
 #: ../src/Plug.vala:189
 msgid "Privacy Mode"
@@ -59,6 +59,8 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s nie zachowa żadnych danych lub statystyk dotyczących plików i korzystania "
+"z programów."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid ""
@@ -75,11 +77,11 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "Historia jest wyłączona"
 
 #: ../src/Views/TrackPanel.vala:48 ../src/Widgets/ServiceList.vala:12
 msgid "History"
-msgstr ""
+msgstr "Historia"
 
 #: ../src/Views/TrackPanel.vala:58
 msgid ""
@@ -94,7 +96,7 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:68
 msgid "Clear History…"
-msgstr ""
+msgstr "Wyczyść historię..."
 
 #: ../src/Views/TrackPanel.vala:115
 msgid "Your system"
@@ -102,13 +104,15 @@ msgstr "Twój system"
 
 #: ../src/Views/LocationPanel.vala:91
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Usługi lokalizacji są wyłączone"
 
 #: ../src/Views/LocationPanel.vala:93
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Podczas, gdy usługi lokalizacji są wyłączone, żądania lokalizacji z "
+"programów będą automatycznie odrzucane."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid ""
@@ -121,10 +125,12 @@ msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Nie uniemożliwi to programom prób ustalenia lokalizacji na podstawie adresu "
+"IP."
 
 #: ../src/Views/LocationPanel.vala:106
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Zezwól poniższym programom na określenie lokalizacji"
 
 #: ../src/Views/LockPanel.vala:34
 msgid "Lock on sleep:"
@@ -241,11 +247,11 @@ msgstr "Wideo"
 
 #: ../src/Widgets/ServiceItem.vala:12
 msgid "Enabled"
-msgstr ""
+msgstr "Włączone"
 
 #: ../src/Widgets/ServiceItem.vala:16
 msgid "Disabled"
-msgstr ""
+msgstr "Wyłączone"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
