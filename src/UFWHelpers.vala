@@ -103,17 +103,54 @@ namespace SecurityPrivacy.UFWHelpers {
                 default:
                     rule_str = "%s in".printf (rule_str);
                     break;
-            }
+            } 
 
             switch (rule.protocol) {
                 case Rule.Protocol.UDP:
-                    rule_str = "%s %s/udp".printf (rule_str, rule.ports);
+                    rule_str = "%s proto udp".printf (rule_str);
+                    break;
+                case Rule.Protocol.BOTH:
                     break;
                 default:
-                    rule_str = "%s %s/tcp".printf (rule_str, rule.ports);
+                    rule_str = "%s proto tcp".printf (rule_str);
                     break;
             }
 
+            if (rule.to != "" && !rule.to.contains ("Anywhere")) {
+                rule_str = "%s to %s".printf (rule_str, rule.to);
+                if (rule.to_ports != "") {
+                    rule_str = "%s port %s".printf (rule_str, rule.to_ports);                    
+                }            
+            } else {
+                if (rule.version == Rule.Version.BOTH) {
+                    rule_str = "%s to any".printf (rule_str);                
+                } else if (rule.version == Rule.Version.IPV6) {
+                    rule_str = "%s to ::/0".printf (rule_str);
+                } else if (rule.version == Rule.Version.IPV4) {
+                    rule_str = "%s to 0.0.0.0/0".printf (rule_str);
+                }
+                if (rule.to_ports != "") {
+                    rule_str = "%s port %s".printf (rule_str, rule.to_ports);
+                }
+            }
+
+            if (rule.from != "" && !rule.from.contains ("Anywhere")) {
+                rule_str = "%s from %s".printf (rule_str, rule.from);
+                if (rule.from_ports != "") {
+                    rule_str = "%s port %s".printf (rule_str, rule.from_ports);
+                }            
+            } else {
+                if (rule.version == Rule.Version.BOTH) {
+                    rule_str = "%s from any".printf (rule_str);                
+                } else if (rule.version == Rule.Version.IPV6) {
+                    rule_str = "%s from ::/0".printf (rule_str);
+                } else if (rule.version == Rule.Version.IPV4) {
+                    rule_str = "%s from 0.0.0.0/0".printf (rule_str);
+                }
+                if (rule.from_ports != "") {
+                    rule_str = "%s port %s".printf (rule_str, rule.from_ports);
+                }
+            }
             Process.spawn_command_line_sync ("pkexec %s -5 \"%s\"".printf (get_helper_path (), rule_str));
         } catch (Error e) {
             warning (e.message);
@@ -130,7 +167,8 @@ namespace SecurityPrivacy.UFWHelpers {
 
         public enum Protocol {
             UDP,
-            TCP
+            TCP,
+            BOTH
         }
 
         public enum Direction {
@@ -138,60 +176,127 @@ namespace SecurityPrivacy.UFWHelpers {
             OUT
         }
 
+        public enum Version {
+            IPV4,
+            IPV6,
+            BOTH
+        }
+
         public Action action;
         public Protocol protocol;
         public Direction direction;
-        public string ports;
-        public bool is_v6 = false;
+        public string to_ports = "";
+        public string from_ports = "";
+        public string to = "";
+        public string from = "";
+        public Version version = Version.BOTH;
         public int number;
 
         public Rule () {
             
         }
 
+        private void get_address_and_port (string input, ref Version version, ref string ports, ref string address) {
+            try {
+                var parts = input.split (" ");
+                if (parts.length > 1) {
+                    ports = parts[1].split("/")[0];
+                    address = parts[0];
+                    var ip = new InetAddress.from_string (parts[0].split ("/")[0]);
+                    if (ip != null) {
+                        if (ip.get_family () == SocketFamily.IPV6) {
+                            version = Version.IPV6;
+                        } else {
+                            version = Version.IPV4;
+                        }
+                    }
+                } else {
+                    var ip_parts = parts[0].split ("/");
+                    if (ip_parts.length > 1) {
+                        if (ip_parts[1] == "tcp" || ip_parts[1] == "udp") {
+                            ports = ip_parts[0];
+                        } else {
+                            address = parts[0];
+                            var ip = new InetAddress.from_string (ip_parts[0]);
+                            if (ip != null) {
+                                if (ip.get_family () == SocketFamily.IPV6) {
+                                    version = Version.IPV6;
+                                } else {
+                                    version = Version.IPV4;
+                                }
+                            }
+                        }
+                    } else {
+                        var ip = new InetAddress.from_string (ip_parts[0]);
+                        if (ip == null) {
+                            if (ip_parts[0].contains ("Anywhere")) {
+                                address = "Anywhere";
+                            } else {
+                                ports = ip_parts[0];
+                            }
+                        } else if (ip.get_family () == SocketFamily.IPV6) {
+                            address = ip_parts[0];
+                            version = Version.IPV6;
+                        } else if (ip.get_family () == SocketFamily.IPV4) {
+                            address = ip_parts[0];
+                            version = Version.IPV4;
+                        }
+                    }
+                }  
+            } catch (Error e) {
+                warning ("Error parsing to/from address: %s".printf (input));
+                warning (e.message);
+            }  
+        }
+
         public Rule.from_line (string line) {
-            if (line.contains ("(v6)"))
-                is_v6 = true;
-            var first = line.replace ("(v6)", "").split ("] ");
-            number = int.parse (first[0].replace ("[", ""));
-            var second = first[1];
-            var third = second.split ("/");
-            ports = third[0];
-            string current = "";
-            int position = 0;
-            foreach (var car in third[1].data) {
-                if (car == ' ') {
-                    if (current == "") {
-                        continue;
-                    }
+            if (line.contains ("(v6)")) {
+                version = Version.IPV6;
+            } else {
+                version = Version.IPV4;
+            }
 
-                    if (position == 0) {
-                        if ("udp" in current)
-                            protocol = Protocol.UDP;
-                        else if ("tcp" in current)
-                            protocol = Protocol.TCP;
-                    } else if (position == 1) {
-                        if ("ALLOW" in current)
-                            action = Action.ALLOW;
-                        else if ("DENY" in current)
-                            action = Action.DENY;
-                        else if ("REJECT" in current)
-                            action = Action.REJECT;
-                        else if ("LIMIT" in current)
-                            action = Action.LIMIT;
-                    } else if (position == 2) {
-                        if ("IN" in current)
-                            direction = Direction.IN;
-                        else if ("OUT" in current)
-                            direction = Direction.OUT;
-                        break;
-                    }
+            if (line.contains ("tcp")) {
+                protocol = Protocol.TCP;
+            } else if (line.contains ("udp")) {
+                protocol = Protocol.UDP;
+            } else {
+                protocol = Protocol.BOTH;
+            }
 
-                    current = "";
-                    position++;
-                    continue;
+            try {
+                               
+                var r = new Regex ("""\[\s*(\d+)\]\s{1}([A-Za-z0-9 \(\)/\.:,]+?)\s{2,}([A-Z ]+?)\s{2,}([A-Za-z0-9 \(\)/\.:,]+?)(?:\s{2,}.*)?$""");
+                MatchInfo info;
+                r.match (line, 0, out info);
+                
+                number = int.parse (info.fetch (1));
+
+                string to_match = info.fetch (2).replace (" (v6)", "");
+                string from_match = info.fetch (4).replace (" (v6)", "");
+
+                get_address_and_port (to_match, ref version, ref to_ports, ref to);
+                get_address_and_port (from_match, ref version, ref from_ports, ref from);
+                
+                string type = info.fetch (3);
+
+                if ("ALLOW" in type) {
+                    action = Action.ALLOW;
+                } else if ("DENY" in type) {
+                    action = Action.DENY;
+                } else if ("REJECT" in type) {
+                    action = Action.REJECT;
+                } else if ("LIMIT" in type) {
+                    action = Action.LIMIT;
                 }
-                current = "%s%c".printf (current, car);
+
+                if ("IN" in type) {
+                    direction = Direction.IN;
+                } else if ("OUT" in type) {
+                    direction = Direction.OUT;
+                }
+            } catch (Error e) {
+                return;
             }
         }
     }

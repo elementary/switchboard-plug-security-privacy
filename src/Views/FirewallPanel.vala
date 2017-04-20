@@ -27,13 +27,17 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
     private bool loading = false;
     private Gtk.Popover add_popover;
     private Gtk.ToolButton remove_button;
+    private Settings settings;
+    private Gee.HashMap<string, UFWHelpers.Rule> disabled_rules;
 
     private enum Columns {
         ACTION,
         PROTOCOL,
         DIRECTION,
-        PORTS,
+        TO,
+        FROM,
         V6,
+        ENABLED,
         RULE,
         N_COLUMNS
     }
@@ -45,6 +49,10 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
     }
 
     construct {
+        settings = new Settings ("org.pantheon.security-privacy");
+        disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
+        load_disabled_rules ();
+        
         status_switch.notify["active"].connect (() => {
             if (loading == false) {
                 view.sensitive = status_switch.active;
@@ -65,14 +73,65 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
             remove_button.sensitive = false;
             if (status_switch.active == true) {
                 view.sensitive = true;
-                foreach (var rule in UFWHelpers.get_rules ()) {
-                    add_rule (rule);
-                }
+                show_rules ();
             } else {
                 view.sensitive = false;
             }
             loading = false;
         });
+    }
+
+    private void load_disabled_rules () {
+        disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
+        string? to = "", to_ports = "", from = "", from_ports = "";
+        int action = 0, protocol = 0, direction = 0, version = 0;
+        var rules = settings.get_value ("disabled-firewall-rules");
+        VariantIter iter = rules.iterator ();
+        while (iter.next ("(ssssiiii)", ref to, ref to_ports, ref from, ref from_ports, ref action, ref protocol, ref direction, ref version)) {
+		    UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
+            new_rule.to = to;
+            new_rule.to_ports = to_ports;
+            new_rule.from = from;
+            new_rule.from_ports = from_ports;
+            new_rule.action = (UFWHelpers.Rule.Action)action;
+            new_rule.protocol = (UFWHelpers.Rule.Protocol)protocol;
+            new_rule.direction = (UFWHelpers.Rule.Direction)direction;
+            new_rule.version = (UFWHelpers.Rule.Version)version;
+            string hash = generate_hash_for_rule (new_rule);
+            disabled_rules.set (hash, new_rule);
+        }    
+    }
+
+    private string generate_hash_for_rule (UFWHelpers.Rule r) {
+        return r.to + 
+               r.to_ports + 
+               r.from + 
+               r.from_ports + 
+               r.action.to_string () + 
+               r.protocol.to_string () + 
+               r.direction.to_string () + 
+               r.version.to_string ();
+    }
+    
+    private void reload_rule_numbers () {
+        foreach (var rule in UFWHelpers.get_rules ()) {
+            string ufw_hash = generate_hash_for_rule (rule);
+            Gtk.TreeModelForeachFunc update_row = (model, path, iter) => {
+                Value val;
+
+		        list_store.get_value (iter, Columns.RULE, out val);
+                var tree_rule = (UFWHelpers.Rule)val;
+                string tree_hash = generate_hash_for_rule (tree_rule);
+		        if (ufw_hash == tree_hash) {
+                    tree_rule.number = rule.number;
+                    list_store.set_value (iter, Columns.RULE, tree_rule);
+                    return true;
+                }
+                
+		        return false;
+	        };
+            list_store.foreach (update_row);
+        }    
     }
 
     private void show_rules () {
@@ -81,9 +140,55 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
         foreach (var rule in UFWHelpers.get_rules ()) {
             add_rule (rule);
         }
+        
+        load_disabled_rules ();
+        foreach (var rule in disabled_rules.entries) {
+            add_rule (rule.value, false, rule.key);
+        }
     }
 
-    public void add_rule (UFWHelpers.Rule rule) {
+    private void disable_rule (UFWHelpers.Rule rule) {
+        save_disabled_rules (rule);
+        UFWHelpers.remove_rule (rule);
+    }
+
+    private void enable_rule (string hash) {
+        UFWHelpers.add_rule (disabled_rules.get (hash));
+        delete_disabled_rule (hash);        
+    }
+
+    private void delete_disabled_rule (string hash) {
+        disabled_rules.unset (hash);
+        save_disabled_rules ();
+    }
+
+    private void save_disabled_rules (UFWHelpers.Rule? additional_rule = null) {
+        VariantBuilder builder = new VariantBuilder (new VariantType("a(ssssiiii)"));
+        foreach (var existing_rule in disabled_rules.values) {
+            builder.add ("(ssssiiii)", existing_rule.to, 
+                                       existing_rule.to_ports, 
+                                       existing_rule.from, 
+                                       existing_rule.from_ports,
+                                       existing_rule.action, 
+                                       existing_rule.protocol, 
+                                       existing_rule.direction, 
+                                       existing_rule.version);
+        }
+        if (additional_rule != null) {
+            builder.add ("(ssssiiii)", additional_rule.to, 
+                                       additional_rule.to_ports, 
+                                       additional_rule.from, 
+                                       additional_rule.from_ports,
+                                       additional_rule.action, 
+                                       additional_rule.protocol, 
+                                       additional_rule.direction, 
+                                       additional_rule.version);
+        }
+        settings.set_value ("disabled-firewall-rules", builder.end ());
+        load_disabled_rules ();
+    }
+
+    public void add_rule (UFWHelpers.Rule rule, bool enabled = true, string hash = "") {
         Gtk.TreeIter iter;
         string action = _("Unknown");
         if (rule.action == UFWHelpers.Rule.Action.ALLOW) {
@@ -100,6 +205,8 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
             protocol = "UDP";
         } else if (rule.protocol == UFWHelpers.Rule.Protocol.TCP) {
             protocol = "TCP";
+        } else if (rule.protocol == UFWHelpers.Rule.Protocol.BOTH) {
+            protocol = "TCP/UDP";
         }
         string direction = _("Unknown");
         if (rule.direction == UFWHelpers.Rule.Direction.IN) {
@@ -107,27 +214,86 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
         } else if (rule.direction == UFWHelpers.Rule.Direction.OUT) {
             direction = _("Out");
         }
+        string version = _("Unknown");
+        if (rule.version == UFWHelpers.Rule.Version.IPV6) {
+            version = "IPv6";
+        } else if (rule.version == UFWHelpers.Rule.Version.IPV4) {
+            version = "IPv4";
+        }
+        
+        string from = "";
+        string to = "";
+        if (rule.from_ports != "") {
+            if (rule.from_ports.contains (":") || rule.from_ports.contains (",")) {
+                from = _("%s Ports %s").printf (rule.from, rule.from_ports.replace (":", "-"));
+            } else {
+                from = _("%s Port %s").printf (rule.from, rule.from_ports.replace (":", "-"));
+            }
+        } else {
+            from = rule.from;
+        }
+
+        if (rule.to_ports != "") {
+            if (rule.to_ports.contains (":") || rule.to_ports.contains (",")) {
+                to = _("%s Ports %s").printf (rule.to, rule.to_ports.replace (":", "-"));
+            } else {
+                to = _("%s Port %s").printf (rule.to, rule.to_ports.replace (":", "-"));
+            }
+        } else {
+            to = rule.to;
+        }
+ 
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
-                Columns.DIRECTION, direction, Columns.PORTS, rule.ports.replace (":", "-"),
-                Columns.V6, rule.is_v6, Columns.RULE, rule);
+                Columns.DIRECTION, direction, Columns.V6, version, Columns.ENABLED, enabled, 
+                Columns.RULE, rule, Columns.TO, to.strip (), Columns.FROM, from.strip ());
     }
 
     private void create_treeview () {
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (string),
-                typeof (string), typeof (string), typeof (string), typeof (bool), typeof (UFWHelpers.Rule));
+                                                           typeof (string), 
+                                                           typeof (string),     
+                                                           typeof (string),
+                                                           typeof (string), 
+                                                           typeof (string), 
+                                                           typeof (bool), 
+                                                           typeof (UFWHelpers.Rule));
 
         // The View:
         view = new Gtk.TreeView.with_model (list_store);
         view.vexpand = true;
+        view.activate_on_single_click = true;
 
         var celltoggle = new Gtk.CellRendererToggle ();
         var cell = new Gtk.CellRendererText ();
-        view.insert_column_with_attributes (-1, _("IPv6"), celltoggle, "active", Columns.V6);
+        view.insert_column_with_attributes (-1, _("Enabled"), celltoggle, "active", Columns.ENABLED);
+        view.insert_column_with_attributes (-1, _("Version"), cell, "text", Columns.V6);
         view.insert_column_with_attributes (-1, _("Action"), cell, "text", Columns.ACTION);
         view.insert_column_with_attributes (-1, _("Protocol"), cell, "text", Columns.PROTOCOL);
         view.insert_column_with_attributes (-1, _("Direction"), cell, "text", Columns.DIRECTION);
-        view.insert_column_with_attributes (-1, _("Ports"), cell, "text", Columns.PORTS);
+        view.insert_column_with_attributes (-1, _("To"), cell, "text", Columns.TO);
+        view.insert_column_with_attributes (-1, _("From"), cell, "text", Columns.FROM);
+
+        celltoggle.toggled.connect ((path) => {
+            Value active;
+            Gtk.TreeIter iter;
+            list_store.get_iter (out iter, new Gtk.TreePath.from_string(path));
+            list_store.get_value (iter, Columns.ENABLED, out active);
+            var is_active = !active.get_boolean ();
+            list_store.set (iter, Columns.ENABLED, is_active);
+
+            Value rule_value;
+            list_store.get_value (iter, Columns.RULE, out rule_value);
+            UFWHelpers.Rule rule = (UFWHelpers.Rule)rule_value.get_object ();
+            string gen_hash = generate_hash_for_rule (rule);
+            if (is_active == false) {
+                disable_rule (rule);
+            } else {
+                enable_rule (gen_hash);
+            }
+
+            reload_rule_numbers ();
+        });
 
         list_toolbar = new Gtk.Toolbar ();
         list_toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
@@ -159,6 +325,14 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
             protocol_combobox.append_text ("TCP");
             protocol_combobox.append_text ("UDP");
             protocol_combobox.active = 0;
+
+            var version_label = new Gtk.Label (_("Version:"));
+            version_label.xalign = 1;
+            var version_combobox = new Gtk.ComboBoxText ();
+            version_combobox.append_text ("IPv4");
+            version_combobox.append_text ("IPv6");
+            version_combobox.append_text (_("Both"));
+            version_combobox.active = 0;
 
             var direction_label = new Gtk.Label (_("Direction:"));
             direction_label.xalign = 1;
@@ -196,7 +370,14 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
                 else
                     rule.action = UFWHelpers.Rule.Action.LIMIT;
 
-                rule.ports = ports_entry.text.replace ("-", ":");
+                if (version_combobox.active == 0)
+                    rule.version = UFWHelpers.Rule.Version.IPV4;
+                else if (version_combobox.active == 1)
+                    rule.version = UFWHelpers.Rule.Version.IPV6;
+                else
+                    rule.version = UFWHelpers.Rule.Version.BOTH;
+
+                rule.to_ports = ports_entry.text.replace ("-", ":");
                 UFWHelpers.add_rule (rule);
                 add_popover.hide ();
                 show_rules ();
@@ -210,11 +391,13 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
             popover_grid.attach (policy_combobox, 1, 0, 1, 1);
             popover_grid.attach (protocol_label, 0, 1, 1, 1);
             popover_grid.attach (protocol_combobox, 1, 1, 1, 1);
-            popover_grid.attach (direction_label, 0, 2, 1, 1);
-            popover_grid.attach (direction_combobox, 1, 2, 1, 1);
-            popover_grid.attach (ports_label, 0, 3, 1, 1);
-            popover_grid.attach (ports_entry, 1, 3, 1, 1);
-            popover_grid.attach (add_button_grid, 0, 4, 2, 1);
+            popover_grid.attach (version_label, 0, 2, 1, 1);
+            popover_grid.attach (version_combobox, 1, 2, 1, 1);
+            popover_grid.attach (direction_label, 0, 3, 1, 1);
+            popover_grid.attach (direction_combobox, 1, 3, 1, 1);
+            popover_grid.attach (ports_label, 0, 4, 1, 1);
+            popover_grid.attach (ports_entry, 1, 4, 1, 1);
+            popover_grid.attach (add_button_grid, 0, 5, 2, 1);
 
             add_popover.show_all ();
         });
@@ -230,7 +413,15 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
             list_store.get_iter (out iter, path);
             Value val;
             list_store.get_value (iter, Columns.RULE, out val);
-            UFWHelpers.remove_rule ((UFWHelpers.Rule) val.get_object ());
+            var rule = (UFWHelpers.Rule) val.get_object ();
+            string gen_hash = generate_hash_for_rule (rule);
+            Value active;
+            list_store.get_value (iter, Columns.ENABLED, out active);
+            if (active.get_boolean ()) {                
+                UFWHelpers.remove_rule (rule);
+            } else {
+                delete_disabled_rule (gen_hash);
+            }
             show_rules ();
         });
         list_toolbar.insert (remove_button, -1);
