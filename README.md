@@ -8,7 +8,7 @@ You'll need the following dependencies:
 * libgranite-dev
 * libpolkit-gobject-1-dev
 * libswitchboard-2.0-dev
-* libzeitgeist-dev
+* libzeitgeist-2.0-dev
 * valac
 
 It's recommended to create a clean build environment
