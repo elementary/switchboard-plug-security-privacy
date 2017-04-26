@@ -8,15 +8,18 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-28 15:39-0800\n"
-"PO-Revision-Date: 2016-12-01 22:45+0000\n"
-"Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"PO-Revision-Date: 2017-04-26 16:18+0000\n"
+"Last-Translator: Yuly <crow@rikka.io>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-security-privacy/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
-"Language: ru\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
@@ -47,7 +50,7 @@ msgstr "Брандмауэр"
 #: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
 #: ../src/Widgets/ServiceList.vala:29
 msgid "Location Services"
-msgstr ""
+msgstr "Сервисы местоположения"
 
 #: ../src/Plug.vala:189
 msgid "Privacy Mode"
@@ -60,8 +63,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Views/TrackPanel.vala:36
-msgid ""
-"The additional functionality that this data provides will be affected."
+msgid "The additional functionality that this data provides will be affected."
 msgstr ""
 "Приватный режим повлияет на дополнительную функциональность, которую "
 "обеспечивают эти данные."
@@ -330,7 +332,7 @@ msgstr "Очистить данные"
 #. * Boston, MA 02111-1307, USA.
 #. *
 #. * Authored by: Corentin Noël <tintou@mailoo.org>
-#. 
+#.
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Для изменения настроек брандмауэра требуется аутентификация"
