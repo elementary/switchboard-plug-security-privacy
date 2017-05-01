@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-28 15:39-0800\n"
+"POT-Creation-Date: 2017-04-25 09:18-0700\n"
 "PO-Revision-Date: 2017-03-04 16:36+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: Italian <it@li.org>\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 "X-Generator: Launchpad (build 18329)\n"
-"Language: it\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
@@ -33,28 +33,43 @@ msgstr ""
 "Alcune impostazioni richiedono i diritti di amministratore per essere "
 "modificate"
 
-#: ../src/Plug.vala:126 ../src/Plug.vala:187
+#: ../src/Plug.vala:126 ../src/Plug.vala:186
 msgid "Privacy"
 msgstr "Privacy"
 
-#: ../src/Plug.vala:127 ../src/Plug.vala:188 ../src/Plug.vala:189
-#: ../src/Widgets/ServiceList.vala:13
+#: ../src/Plug.vala:127 ../src/Plug.vala:187 ../src/Plug.vala:188
+#: ../src/Views/LockPanel.vala:29 ../src/Widgets/ServiceList.vala:31
 msgid "Locking"
 msgstr "Blocco"
 
-#: ../src/Plug.vala:128 ../src/Plug.vala:190 ../src/Views/FirewallPanel.vala:51
-#: ../src/Widgets/ServiceList.vala:14
+#: ../src/Plug.vala:128 ../src/Plug.vala:189 ../src/Views/FirewallPanel.vala:48
+#: ../src/Widgets/ServiceList.vala:32
 msgid "Firewall"
 msgstr "Firewall"
 
-#: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
-#: ../src/Widgets/ServiceList.vala:29
+#: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
+#: ../src/Widgets/ServiceList.vala:49
 msgid "Location Services"
 msgstr "Servizi di localizzazione"
 
-#: ../src/Plug.vala:189
+#: ../src/Plug.vala:188
 msgid "Privacy Mode"
 msgstr "Modalità Privacy"
+
+#: ../src/Views/TrackPanel.vala:28
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"Questo sistema operativo è in grado di raccogliere statistiche utili "
+"sull'utilizzo di file e applicazioni per fornire funzionalità aggiuntive.\r\n"
+"Se altre persone possono vedere o accedere al tuo account, potresti voler "
+"limitare quali elementi sono registrati."
+
+#: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
+msgid "History"
+msgstr "Cronologia"
 
 #: ../src/Views/TrackPanel.vala:35
 msgid ""
@@ -65,8 +80,7 @@ msgstr ""
 "delle applicazioni."
 
 #: ../src/Views/TrackPanel.vala:36
-msgid ""
-"The additional functionality that this data provides will be affected."
+msgid "The additional functionality that this data provides will be affected."
 msgstr ""
 "Le funzionalità aggiuntive che questi dati forniscono saranno interessate."
 
@@ -82,34 +96,19 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "La cronologia è disabilitata"
 
-#: ../src/Views/TrackPanel.vala:48 ../src/Widgets/ServiceList.vala:12
-msgid "History"
-msgstr "Cronologia"
-
-#: ../src/Views/TrackPanel.vala:58
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Questo sistema operativo è in grado di raccogliere statistiche utili "
-"sull'utilizzo di file e applicazioni per fornire funzionalità aggiuntive.\r\n"
-"Se altre persone possono vedere o accedere al tuo account, potresti voler "
-"limitare quali elementi sono registrati."
-
-#: ../src/Views/TrackPanel.vala:68
+#: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
 msgstr "Cancella la cronologia..."
 
-#: ../src/Views/TrackPanel.vala:115
+#: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
 msgstr "Il tuo sistema"
 
-#: ../src/Views/LocationPanel.vala:91
+#: ../src/Views/LocationPanel.vala:79
 msgid "Location Services Are Disabled"
 msgstr "I servizi di localizzazione sono disabilitati"
 
-#: ../src/Views/LocationPanel.vala:93
+#: ../src/Views/LocationPanel.vala:81
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -117,7 +116,7 @@ msgstr ""
 "Mentre i servizi di localizzazione sono disattivati, le richieste di "
 "localizzazione delle applicazioni saranno respinte automaticamente."
 
-#: ../src/Views/LocationPanel.vala:94
+#: ../src/Views/LocationPanel.vala:82
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
@@ -125,7 +124,7 @@ msgstr ""
 "Le funzionalità aggiuntive che l'accesso alla posizione offre all'interno di "
 "queste applicazioni saranno interessate."
 
-#: ../src/Views/LocationPanel.vala:95
+#: ../src/Views/LocationPanel.vala:83
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -133,89 +132,116 @@ msgstr ""
 "Ciò non impedirà alle applicazioni di tentare di determinare la tua "
 "posizione sulla base dell'indirizzo IP."
 
-#: ../src/Views/LocationPanel.vala:106
+#: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
-msgstr ""
-"Permetti alle applicazioni sottostanti di determinare la tua posizione"
+msgstr "Permetti alle applicazioni sottostanti di determinare la tua posizione"
 
-#: ../src/Views/LockPanel.vala:34
+#: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
 msgstr "Blocca su sospensione:"
 
-#: ../src/Views/LockPanel.vala:36
+#: ../src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
 msgstr "Blocca quando lo schermo si spegne:"
 
-#: ../src/Views/FirewallPanel.vala:103 ../src/Views/FirewallPanel.vala:113
-#: ../src/Views/FirewallPanel.vala:119
+#: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
+#: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
 msgid "Unknown"
 msgstr "Sconosciuto"
 
-#: ../src/Views/FirewallPanel.vala:105 ../src/Views/FirewallPanel.vala:165
+#: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
 msgid "Allow"
 msgstr "Permetti"
 
-#: ../src/Views/FirewallPanel.vala:107 ../src/Views/FirewallPanel.vala:166
+#: ../src/Views/FirewallPanel.vala:197 ../src/Views/FirewallPanel.vala:317
 msgid "Deny"
 msgstr "Blocca"
 
-#: ../src/Views/FirewallPanel.vala:109 ../src/Views/FirewallPanel.vala:167
+#: ../src/Views/FirewallPanel.vala:199 ../src/Views/FirewallPanel.vala:318
 msgid "Reject"
 msgstr "Rifiuta"
 
-#: ../src/Views/FirewallPanel.vala:111 ../src/Views/FirewallPanel.vala:168
+#: ../src/Views/FirewallPanel.vala:201 ../src/Views/FirewallPanel.vala:319
 msgid "Limit"
 msgstr "Limita"
 
-#: ../src/Views/FirewallPanel.vala:121 ../src/Views/FirewallPanel.vala:181
+#: ../src/Views/FirewallPanel.vala:213 ../src/Views/FirewallPanel.vala:340
 msgid "In"
 msgstr "Entrata"
 
-#: ../src/Views/FirewallPanel.vala:123 ../src/Views/FirewallPanel.vala:182
+#: ../src/Views/FirewallPanel.vala:215 ../src/Views/FirewallPanel.vala:341
 msgid "Out"
 msgstr "Uscita"
 
-#: ../src/Views/FirewallPanel.vala:141
-msgid "IPv6"
-msgstr "IPv6"
+#: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
+#, fuzzy
+msgid "%s Ports %s"
+msgstr "Porte"
 
-#: ../src/Views/FirewallPanel.vala:142
+#: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
+#, fuzzy
+msgid "%s Port %s"
+msgstr "Porte"
+
+#: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
+msgid "Enabled"
+msgstr "Abilitato"
+
+#: ../src/Views/FirewallPanel.vala:270
+msgid "Version"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
 msgstr "Azione"
 
-#: ../src/Views/FirewallPanel.vala:143
+#: ../src/Views/FirewallPanel.vala:272
 msgid "Protocol"
 msgstr "Protocollo"
 
-#: ../src/Views/FirewallPanel.vala:144
+#: ../src/Views/FirewallPanel.vala:273
 msgid "Direction"
 msgstr "Direzione"
 
-#: ../src/Views/FirewallPanel.vala:145
-msgid "Ports"
-msgstr "Porte"
+#: ../src/Views/FirewallPanel.vala:274
+#, fuzzy
+msgid "To"
+msgstr "al:"
 
-#: ../src/Views/FirewallPanel.vala:162
+#: ../src/Views/FirewallPanel.vala:275
+#, fuzzy
+msgid "From"
+msgstr "Dal:"
+
+#: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
 msgstr "Azione:"
 
-#: ../src/Views/FirewallPanel.vala:171
+#: ../src/Views/FirewallPanel.vala:322
 msgid "Protocol:"
 msgstr "Protocollo:"
 
-#: ../src/Views/FirewallPanel.vala:178
+#: ../src/Views/FirewallPanel.vala:329
+msgid "Version:"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:334
+msgid "Both"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
 msgstr "Direzione:"
 
-#: ../src/Views/FirewallPanel.vala:185
+#: ../src/Views/FirewallPanel.vala:344
 msgid "Ports:"
 msgstr "Porte:"
 
-#: ../src/Views/FirewallPanel.vala:189
+#: ../src/Views/FirewallPanel.vala:348
 msgid "%d or %d-%d"
 msgstr "%d o %d-%d"
 
-#: ../src/Views/FirewallPanel.vala:191
+#: ../src/Views/FirewallPanel.vala:350
 msgid "Add Rule"
 msgstr "Aggiungi regola"
 
@@ -251,11 +277,7 @@ msgstr "Fogli di calcolo"
 msgid "Videos"
 msgstr "Video"
 
-#: ../src/Widgets/ServiceItem.vala:12
-msgid "Enabled"
-msgstr "Abilitato"
-
-#: ../src/Widgets/ServiceItem.vala:16
+#: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
 msgstr "Disabilitato"
 
@@ -323,26 +345,29 @@ msgstr "al:"
 msgid "Clear Data"
 msgstr "Pulisci dati"
 
-#. //launchpad.net/your-project)
+#. //launchpad.net/switchboard-plug-security-privacy)
 #. *
 #. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Library General Public
+#. * modify it under the terms of the GNU Lesser General Public
 #. * License as published by the Free Software Foundation; either
 #. * version 3 of the License, or (at your option) any later version.
 #. *
 #. * This library is distributed in the hope that it will be useful,
 #. * but WITHOUT ANY WARRANTY; without even the implied warranty of
 #. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Library General Public License for more details.
+#. * Lesser General Public License for more details.
 #. *
-#. * You should have received a copy of the GNU Library General Public
-#. * License along with this library; if not, write to the
-#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-#. * Boston, MA 02111-1307, USA.
+#. * You should have received a copy of the GNU Lesser General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
 #. *
 #. * Authored by: Corentin Noël <tintou@mailoo.org>
-#. 
+#.
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 "È richiesta l'autenticazione per eseguire la configurazione del firewall"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"

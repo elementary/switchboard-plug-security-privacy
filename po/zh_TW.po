@@ -7,10 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-28 15:39-0800\n"
+"POT-Creation-Date: 2017-04-25 09:18-0700\n"
 "PO-Revision-Date: 2016-08-06 09:21+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,27 +30,40 @@ msgstr "調整防火牆、螢幕鎖定、和活動資訊"
 msgid "Some settings require administrator rights to be changed"
 msgstr "有些設定值需要管理員權利才能修改"
 
-#: ../src/Plug.vala:126 ../src/Plug.vala:187
+#: ../src/Plug.vala:126 ../src/Plug.vala:186
 msgid "Privacy"
 msgstr "隱私"
 
-#: ../src/Plug.vala:127 ../src/Plug.vala:188 ../src/Plug.vala:189
-#: ../src/Widgets/ServiceList.vala:13
+#: ../src/Plug.vala:127 ../src/Plug.vala:187 ../src/Plug.vala:188
+#: ../src/Views/LockPanel.vala:29 ../src/Widgets/ServiceList.vala:31
 msgid "Locking"
 msgstr "鎖定"
 
-#: ../src/Plug.vala:128 ../src/Plug.vala:190 ../src/Views/FirewallPanel.vala:51
-#: ../src/Widgets/ServiceList.vala:14
+#: ../src/Plug.vala:128 ../src/Plug.vala:189 ../src/Views/FirewallPanel.vala:48
+#: ../src/Widgets/ServiceList.vala:32
 msgid "Firewall"
 msgstr "防火牆"
 
-#: ../src/Plug.vala:132 ../src/Plug.vala:192 ../src/Views/LocationPanel.vala:52
-#: ../src/Widgets/ServiceList.vala:29
+#: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
+#: ../src/Widgets/ServiceList.vala:49
 msgid "Location Services"
 msgstr ""
 
-#: ../src/Plug.vala:189
+#: ../src/Plug.vala:188
 msgid "Privacy Mode"
+msgstr ""
+
+#: ../src/Views/TrackPanel.vala:28
+msgid ""
+"This operating system can gather useful statistics about file and app usage "
+"to provide extra functionality. If other people can see or access your "
+"account, you may wish to limit which items are recorded."
+msgstr ""
+"此作業系統可收集檔案與程式的使用方式等有用的統計數據以提供額外功能。若還有其"
+"他人能查看或存取您的帳號，您可能會希望限制紀錄的項目。"
+
+#: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
+msgid "History"
 msgstr ""
 
 #: ../src/Views/TrackPanel.vala:35
@@ -59,8 +73,7 @@ msgid ""
 msgstr ""
 
 #: ../src/Views/TrackPanel.vala:36
-msgid ""
-"The additional functionality that this data provides will be affected."
+msgid "The additional functionality that this data provides will be affected."
 msgstr "由此資料提供的額外功能會受到影響。"
 
 #: ../src/Views/TrackPanel.vala:37
@@ -73,129 +86,146 @@ msgstr "這不會讓程式停止紀錄其自身的使用資料，例如瀏覽器
 msgid "History Is Disabled"
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:48 ../src/Widgets/ServiceList.vala:12
-msgid "History"
-msgstr ""
-
-#: ../src/Views/TrackPanel.vala:58
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr "此作業系統可收集檔案與程式的使用方式等有用的統計數據以提供額外功能。若還有其他人能查看或存取您的帳號，您可能會希望限制紀錄的項目。"
-
-#: ../src/Views/TrackPanel.vala:68
+#: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:115
+#: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
 msgstr "您的系統"
 
-#: ../src/Views/LocationPanel.vala:91
+#: ../src/Views/LocationPanel.vala:79
 msgid "Location Services Are Disabled"
 msgstr ""
 
-#: ../src/Views/LocationPanel.vala:93
+#: ../src/Views/LocationPanel.vala:81
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
 
-#: ../src/Views/LocationPanel.vala:94
+#: ../src/Views/LocationPanel.vala:82
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
 
-#: ../src/Views/LocationPanel.vala:95
+#: ../src/Views/LocationPanel.vala:83
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
 
-#: ../src/Views/LocationPanel.vala:106
+#: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
 msgstr ""
 
-#: ../src/Views/LockPanel.vala:34
+#: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
 msgstr "睡眠時鎖定："
 
-#: ../src/Views/LockPanel.vala:36
+#: ../src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
 msgstr "螢幕關閉時鎖定："
 
-#: ../src/Views/FirewallPanel.vala:103 ../src/Views/FirewallPanel.vala:113
-#: ../src/Views/FirewallPanel.vala:119
+#: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
+#: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
 msgid "Unknown"
 msgstr "不明"
 
-#: ../src/Views/FirewallPanel.vala:105 ../src/Views/FirewallPanel.vala:165
+#: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
 msgid "Allow"
 msgstr "允許"
 
-#: ../src/Views/FirewallPanel.vala:107 ../src/Views/FirewallPanel.vala:166
+#: ../src/Views/FirewallPanel.vala:197 ../src/Views/FirewallPanel.vala:317
 msgid "Deny"
 msgstr "拒絕"
 
-#: ../src/Views/FirewallPanel.vala:109 ../src/Views/FirewallPanel.vala:167
+#: ../src/Views/FirewallPanel.vala:199 ../src/Views/FirewallPanel.vala:318
 msgid "Reject"
 msgstr "回絕"
 
-#: ../src/Views/FirewallPanel.vala:111 ../src/Views/FirewallPanel.vala:168
+#: ../src/Views/FirewallPanel.vala:201 ../src/Views/FirewallPanel.vala:319
 msgid "Limit"
 msgstr "限制"
 
-#: ../src/Views/FirewallPanel.vala:121 ../src/Views/FirewallPanel.vala:181
+#: ../src/Views/FirewallPanel.vala:213 ../src/Views/FirewallPanel.vala:340
 msgid "In"
 msgstr "入"
 
-#: ../src/Views/FirewallPanel.vala:123 ../src/Views/FirewallPanel.vala:182
+#: ../src/Views/FirewallPanel.vala:215 ../src/Views/FirewallPanel.vala:341
 msgid "Out"
 msgstr "出"
 
-#: ../src/Views/FirewallPanel.vala:141
-msgid "IPv6"
-msgstr "IPv6"
+#: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
+#, fuzzy
+msgid "%s Ports %s"
+msgstr "連接埠"
 
-#: ../src/Views/FirewallPanel.vala:142
+#: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
+#, fuzzy
+msgid "%s Port %s"
+msgstr "連接埠"
+
+#: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
+msgid "Enabled"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:270
+msgid "Version"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
 msgstr "動作"
 
-#: ../src/Views/FirewallPanel.vala:143
+#: ../src/Views/FirewallPanel.vala:272
 msgid "Protocol"
 msgstr "協定"
 
-#: ../src/Views/FirewallPanel.vala:144
+#: ../src/Views/FirewallPanel.vala:273
 msgid "Direction"
 msgstr "方向"
 
-#: ../src/Views/FirewallPanel.vala:145
-msgid "Ports"
-msgstr "連接埠"
+#: ../src/Views/FirewallPanel.vala:274
+#, fuzzy
+msgid "To"
+msgstr "到："
 
-#: ../src/Views/FirewallPanel.vala:162
+#: ../src/Views/FirewallPanel.vala:275
+#, fuzzy
+msgid "From"
+msgstr "從："
+
+#: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
 msgstr "動作："
 
-#: ../src/Views/FirewallPanel.vala:171
+#: ../src/Views/FirewallPanel.vala:322
 msgid "Protocol:"
 msgstr "協定："
 
-#: ../src/Views/FirewallPanel.vala:178
+#: ../src/Views/FirewallPanel.vala:329
+msgid "Version:"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:334
+msgid "Both"
+msgstr ""
+
+#: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
 msgstr "方向："
 
-#: ../src/Views/FirewallPanel.vala:185
+#: ../src/Views/FirewallPanel.vala:344
 msgid "Ports:"
 msgstr "連接埠："
 
-#: ../src/Views/FirewallPanel.vala:189
+#: ../src/Views/FirewallPanel.vala:348
 msgid "%d or %d-%d"
 msgstr "%d 或 %d-%d"
 
-#: ../src/Views/FirewallPanel.vala:191
+#: ../src/Views/FirewallPanel.vala:350
 msgid "Add Rule"
 msgstr "加入規則"
 
@@ -231,11 +261,7 @@ msgstr "試算表"
 msgid "Videos"
 msgstr "影片"
 
-#: ../src/Widgets/ServiceItem.vala:12
-msgid "Enabled"
-msgstr ""
-
-#: ../src/Widgets/ServiceItem.vala:16
+#: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
 msgstr ""
 
@@ -303,25 +329,28 @@ msgstr "到："
 msgid "Clear Data"
 msgstr "清除資料"
 
-#. //launchpad.net/your-project)
+#. //launchpad.net/switchboard-plug-security-privacy)
 #. *
 #. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Library General Public
+#. * modify it under the terms of the GNU Lesser General Public
 #. * License as published by the Free Software Foundation; either
 #. * version 3 of the License, or (at your option) any later version.
 #. *
 #. * This library is distributed in the hope that it will be useful,
 #. * but WITHOUT ANY WARRANTY; without even the implied warranty of
 #. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Library General Public License for more details.
+#. * Lesser General Public License for more details.
 #. *
-#. * You should have received a copy of the GNU Library General Public
-#. * License along with this library; if not, write to the
-#. * Free Software Foundation, Inc., 59 Temple Place - Suite 330,
-#. * Boston, MA 02111-1307, USA.
+#. * You should have received a copy of the GNU Lesser General Public
+#. * License along with this program; if not, write to the
+#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+#. * Boston, MA 02110-1301 USA
 #. *
 #. * Authored by: Corentin Noël <tintou@mailoo.org>
-#. 
+#.
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "若要執行防火牆組態設定需要先核對身份"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
