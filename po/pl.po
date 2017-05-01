@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-05-01 00:52+0000\n"
+"PO-Revision-Date: 2017-05-01 00:56+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/pl/>\n"
@@ -98,7 +98,7 @@ msgstr "Historia jest wyłączona"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr "Wyczyść historię..."
+msgstr "Wyczyść historię…"
 
 #: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
@@ -271,7 +271,7 @@ msgstr "Arkusze kalkulacyjne"
 
 #: ../src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
-msgstr "Wideo"
+msgstr "Filmy"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
@@ -283,15 +283,15 @@ msgstr "Wyszukaj program"
 
 #: ../src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "Dodaj program..."
+msgstr "Dodaj program…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "Dodaj katalog..."
+msgstr "Dodaj katalog…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
-msgstr "Wybierz katalog, który powinien zostać dodany do czarnej listy."
+msgstr "Wybierz katalog, który powinien zostać dodany do czarnej listy"
 
 #: ../src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"
