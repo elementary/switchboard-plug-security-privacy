@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-04-21 14:45+0000\n"
+"PO-Revision-Date: 2017-05-01 18:49+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
-"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-security-privacy/fr/>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-security-privacy/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -175,9 +175,8 @@ msgid "Out"
 msgstr "Sortant"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "Ports"
+msgstr "%s Ports %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
 #, fuzzy
