@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-05-17 17:11+0000\n"
-"Last-Translator: Micael Pimentel <micael.pimentel1@gmail.com>\n"
+"PO-Revision-Date: 2017-05-17 17:12+0000\n"
+"Last-Translator: Saulo de Baco <saulodebaco@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-security-"
 "privacy/pt_BR/>\n"
@@ -71,13 +71,14 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
 msgid "History"
-msgstr ""
+msgstr "Histórico"
 
 #: ../src/Views/TrackPanel.vala:35
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s não reterá dados ou estatísticas sobre o uso de arquivos e aplicativos."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
@@ -93,7 +94,7 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "Histórico desativado"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
