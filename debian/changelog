@@ -1,3 +1,9 @@
+switchboard-plug-security-privacy (0.1.2) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Mon, 22 May 2017 14:20:00 -0500
+
 switchboard-plug-security-privacy (0.1.1.1) xenial; urgency=medium
 
   * New upstream release.
