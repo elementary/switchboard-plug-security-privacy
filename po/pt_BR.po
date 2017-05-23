@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-05-17 17:12+0000\n"
+"PO-Revision-Date: 2017-05-23 08:07+0000\n"
 "Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-security-"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: ../src/Plug.vala:43
@@ -106,29 +106,35 @@ msgstr "Seu sistema"
 
 #: ../src/Views/LocationPanel.vala:79
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Serviços de localização estão desabilitados"
 
 #: ../src/Views/LocationPanel.vala:81
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Enquanto os serviços de localização estiverem desabilitados, solicitações de "
+"localização dos aplicativos serão automaticamente rejeitados."
 
 #: ../src/Views/LocationPanel.vala:82
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"A funcionalidade adicional que o acesso a localização nesses aplicativos "
+"será afetado."
 
 #: ../src/Views/LocationPanel.vala:83
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Isso não prevenirá os aplicativos de tentar determinar sua localização "
+"baseada no seu endereço IP."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Permitir que os aplicativos abaixo determinem sua localização"
 
 #: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -177,11 +183,11 @@ msgstr "%s Portas %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
-msgstr ""
+msgstr "Habilitado"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "Versão"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -213,11 +219,11 @@ msgstr "Protocolo:"
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "Versão:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "Ambos"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
@@ -269,7 +275,7 @@ msgstr "Vídeos"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
-msgstr ""
+msgstr "Desabilitado"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
