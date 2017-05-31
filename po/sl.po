@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-05-31 21:38+0000\n"
+"PO-Revision-Date: 2017-05-31 21:39+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/sl/>\n"
@@ -86,7 +86,7 @@ msgid ""
 "history."
 msgstr ""
 "To ne bo preprečilo aplikacijam zbirati svoje podatke (npr. zgodovina strani "
-"v brskalniku.)"
+"v brskalniku)."
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
@@ -276,11 +276,11 @@ msgstr "Najdi aplikacijo"
 
 #: ../src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "Dodaj aplikacijo..."
+msgstr "Dodaj aplikacijo…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "Dodaj mapo..."
+msgstr "Dodaj mapo…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
