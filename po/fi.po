@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-05-21 07:24+0000\n"
+"PO-Revision-Date: 2017-06-12 06:41+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/fi/>\n"
@@ -172,14 +172,12 @@ msgid "Out"
 msgstr "Ulos"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "Portit"
+msgstr "%s Portit %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "Portit"
+msgstr "%s Portti %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
@@ -202,14 +200,12 @@ msgid "Direction"
 msgstr "Suunta"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "Päättyen:"
+msgstr "Kohde"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "Alkaen:"
+msgstr "Lähde"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
