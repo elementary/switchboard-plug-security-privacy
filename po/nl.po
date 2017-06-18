@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
 "PO-Revision-Date: 2017-06-18 21:26+0000\n"
-"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
+"Last-Translator: Rowan Hoogervorst <rowtricker@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/nl/>\n"
 "Language: nl\n"
@@ -184,7 +184,7 @@ msgstr "Ingeschakeld"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "Versie"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -216,11 +216,11 @@ msgstr "Protocol:"
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "Versie:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "Beide"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
@@ -312,15 +312,15 @@ msgstr ""
 
 #: ../src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr ""
+msgstr "Het afgelopen uur"
 
 #: ../src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr ""
+msgstr "De afgelopen dag"
 
 #: ../src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr ""
+msgstr "De afgelopen week"
 
 #: ../src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
@@ -328,7 +328,7 @@ msgstr "Van:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
-msgstr ""
+msgstr "Altijd"
 
 #: ../src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
