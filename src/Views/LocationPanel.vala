@@ -20,7 +20,7 @@
  * Authored by: David Hewitt <davidmhewitt@gmail.com>
  */
 
-public class SecurityPrivacy.LocationPanel : ServicePanel {
+public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
 
     private GLib.Settings location_settings;
     private Variant remembered_apps;

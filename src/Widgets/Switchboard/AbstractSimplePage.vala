@@ -18,18 +18,15 @@
 *
 */
 
-public abstract class ServicePanel : Gtk.Grid {
+public abstract class Switchboard.SimplePage : Switchboard.Page {
     public Gtk.ButtonBox action_area;
     public Gtk.Grid content_area;
     public Gtk.Switch? status_switch;
 
     public bool activatable { get; construct; }
-
     public string description { get; construct; }
-    public string icon_name { get; construct; }
-    public string title { get; construct; }
 
-    public ServicePanel () {
+    public SimplePage () {
         Object (activatable: activatable,
                 icon_name: icon_name,
                 description: description,
@@ -71,11 +68,14 @@ public abstract class ServicePanel : Gtk.Grid {
         action_area.set_layout (Gtk.ButtonBoxStyle.END);
         action_area.set_spacing (6);
 
-        margin = 12;
-        orientation = Gtk.Orientation.VERTICAL;
-        row_spacing = 24;
-        add (header_area);
-        add (content_area);
-        add (action_area);
+        var grid = new Gtk.Grid ();
+        grid.margin = 12;
+        grid.orientation = Gtk.Orientation.VERTICAL;
+        grid.row_spacing = 24;
+        grid.add (header_area);
+        grid.add (content_area);
+        grid.add (action_area);
+
+        add (grid);
     }
 }

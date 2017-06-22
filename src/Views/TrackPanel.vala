@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.TrackPanel : ServicePanel {
+public class SecurityPrivacy.TrackPanel : Switchboard.SimplePage {
     private Widgets.ClearUsagePopover remove_popover;
 
     public TrackPanel () {
