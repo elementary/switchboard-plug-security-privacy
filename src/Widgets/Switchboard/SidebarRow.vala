@@ -18,6 +18,24 @@
 */
 
 public class Switchboard.SidebarRow : Gtk.ListBoxRow {
+    public Switchboard.Page.Status status {
+        set {
+            switch (value) {
+                case Switchboard.Page.Status.ENABLED:
+                    status_icon.icon_name = "user-available";
+                    status_label.label = _("Enabled");
+                    break;
+                case Switchboard.Page.Status.DISABLED:
+                    status_icon.icon_name = "user-offline";
+                    status_label.label = _("Disabled");
+                    break;
+            }
+            status_label.no_show_all = false;
+            status_label.show ();
+            status_label.label = "<span font_size='small'>" + status_label.label + "</span>";
+        }
+    }
+
     public string? header { get; set; }
 
     public string icon_name {
@@ -41,6 +59,8 @@ public class Switchboard.SidebarRow : Gtk.ListBoxRow {
     }
 
     private Gtk.Image icon;
+    private Gtk.Image status_icon;
+    private Gtk.Label status_label;
     private Gtk.Label title_label;
     private string _icon_name;
     private string _title;
@@ -61,11 +81,27 @@ public class Switchboard.SidebarRow : Gtk.ListBoxRow {
         title_label.xalign = 0;
         title_label.get_style_context ().add_class ("h3");
 
+        status_icon = new Gtk.Image ();
+        status_icon.halign = Gtk.Align.END;
+        status_icon.valign = Gtk.Align.END;
+
+        status_label = new Gtk.Label (null);
+        status_label.no_show_all = true;
+        status_label.use_markup = true;
+        status_label.ellipsize = Pango.EllipsizeMode.END;
+        status_label.xalign = 0;
+
+        var overlay = new Gtk.Overlay ();
+        overlay.width_request = 38;
+        overlay.add (icon);
+        overlay.add_overlay (status_icon);
+
         var grid = new Gtk.Grid ();
-        grid.column_spacing = 6;
         grid.margin = 6;
-        grid.add (icon);
-        grid.add (title_label);
+        grid.column_spacing = 6;
+        grid.attach (overlay, 0, 0, 1, 2);
+        grid.attach (title_label, 1, 0, 1, 1);
+        grid.attach (status_label, 1, 1, 1, 1);
 
         add (grid);
     }

@@ -81,9 +81,21 @@ public class SecurityPrivacy.TrackPanel : Switchboard.SimplePage {
                 privacy_settings.set_boolean ("remember-recent-files", !privacy_mode);
                 privacy_settings.set_boolean ("remember-app-usage", !privacy_mode);
             }
+
+            if (status_switch.active) {
+                status = Switchboard.Page.Status.ENABLED;
+            } else {
+                status = Switchboard.Page.Status.DISABLED;
+            }
         });
 
         status_switch.active = !blacklist.get_incognito ();
+
+        if (status_switch.active) {
+            status = Switchboard.Page.Status.ENABLED;
+        } else {
+            status = Switchboard.Page.Status.DISABLED;
+        }
     }
 
     private string get_operating_system_name () {

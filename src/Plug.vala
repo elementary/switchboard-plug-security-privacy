@@ -33,8 +33,6 @@ namespace SecurityPrivacy {
         Gtk.Grid main_grid;
         Gtk.Stack stack;
 
-        ServiceList service_list;
-
         bool location_agent_installed = false;
 
         public Plug () {
@@ -123,16 +121,16 @@ namespace SecurityPrivacy {
             var locking = new LockPanel ();
             firewall = new FirewallPanel ();
 
-            stack.add_titled (tracking, "tracking", _("Privacy"));
-            stack.add_titled (locking, "locking", _("Locking"));
-            stack.add_titled (firewall, "firewall", _("Firewall"));
+            stack.add_named (tracking, "tracking");
+            stack.add_named (locking, "locking");
+            stack.add_named (firewall, "firewall");
 
             if (location_agent_installed) {
                 location = new LocationPanel ();
                 stack.add_titled (location, "location", _("Location Services"));
             }                
 
-            service_list = new ServiceList ();
+            var service_list = new Switchboard.Sidebar (stack);
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             paned.position = 200;
@@ -141,11 +139,6 @@ namespace SecurityPrivacy {
 
             main_grid.add (paned);
             main_grid.show_all ();
-
-            service_list.row_selected.connect ((row) => {
-                var title = ((ServiceItem)row).title;
-                stack.visible_child_name = title;
-            });
         }
 
         public override void hidden () {
@@ -159,23 +152,23 @@ namespace SecurityPrivacy {
             switch (location) {
                 case "privacy":
                     stack.set_visible_child_name ("tracking");
-                    service_list.select_service_name ("tracking");
+                    //service_list.select_service_name ("tracking");
                     break;
                 case "locking":
                     stack.set_visible_child_name ("locking");
-                    service_list.select_service_name ("locking");
+                    //service_list.select_service_name ("locking");
                     break;
                 case "locking<sep>privacy-mode":
                     stack.set_visible_child_name ("locking");
-                    service_list.select_service_name ("locking");
+                    //service_list.select_service_name ("locking");
                     break;
                 case "firewall":
                     stack.set_visible_child_name ("firewall");
-                    service_list.select_service_name ("firewall");
+                    //service_list.select_service_name ("firewall");
                     break;
                 case "location":
                     stack.set_visible_child_name ("location");
-                    service_list.select_service_name ("location");
+                    //service_list.select_service_name ("location");
                     break;
             }
         }

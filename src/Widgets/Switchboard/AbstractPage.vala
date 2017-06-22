@@ -18,6 +18,13 @@
 */
 
 public abstract class Switchboard.Page : Gtk.ScrolledWindow {
+    public enum Status {
+        ENABLED,
+        DISABLED,
+        NULL
+    }
+
+    public Status status { get; set; default = Status.NULL; } // Making the enum nullable seems to break it
     public string? header { get; construct; }
     public string icon_name { get; construct; }
     public string title { get; construct; }

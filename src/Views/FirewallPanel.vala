@@ -58,6 +58,13 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SimplePage {
                 view.sensitive = status_switch.active;
                 UFWHelpers.set_status (status_switch.active);
             }
+
+            if (status_switch.active) {
+                status = Switchboard.Page.Status.ENABLED;
+            } else {
+                status = Switchboard.Page.Status.DISABLED;
+            }
+
             show_rules ();
         });
 

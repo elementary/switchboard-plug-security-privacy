@@ -46,6 +46,12 @@ public class Switchboard.Sidebar : Gtk.ScrolledWindow {
             row.name = name;
             row.header = page.header;
 
+            page.bind_property ("status", row, "status", BindingFlags.DEFAULT);
+
+            if (page.status != Switchboard.Page.Status.NULL) {
+                row.status = page.status;
+            }
+
             listbox.add (row);
         }
 

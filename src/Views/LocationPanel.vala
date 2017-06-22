@@ -56,10 +56,22 @@ public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
         status_switch.notify["active"].connect (() => {
             update_stack_visible_child ();
+
+            if (status_switch.active) {
+                status = Switchboard.Page.Status.ENABLED;
+            } else {
+                status = Switchboard.Page.Status.DISABLED;
+            }
         });
         location_settings.changed.connect((key) => {
             populate_app_treeview ();
         });
+
+        if (status_switch.active) {
+            status = Switchboard.Page.Status.ENABLED;
+        } else {
+            status = Switchboard.Page.Status.DISABLED;
+        }
 
         update_stack_visible_child ();    
     }

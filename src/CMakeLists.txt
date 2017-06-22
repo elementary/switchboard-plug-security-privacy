@@ -28,8 +28,6 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Widgets/ClearUsagePopover.vala
     Widgets/ExcludeTreeView.vala
     Widgets/IncludeTreeView.vala
-    Widgets/ServiceItem.vala
-    Widgets/ServiceList.vala
 
     Widgets/Switchboard/AbstractSimplePage.vala
     Widgets/Switchboard/AbstractPage.vala
