@@ -22,6 +22,8 @@
 
 public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
 
+    private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
+
     private GLib.Settings location_settings;
     private Variant remembered_apps;
     private VariantDict remembered_apps_dict;
@@ -45,7 +47,7 @@ public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
     }
 
     construct {
-        location_settings = new GLib.Settings ("org.pantheon.agent-geoclue2");
+        location_settings = new GLib.Settings (LOCATION_AGENT_ID);
         disabled_stack = new Gtk.Stack ();
         
         content_area.attach (disabled_stack, 0, 1, 3, 1);        
@@ -196,7 +198,7 @@ public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
 
     public static bool location_agent_installed () {
         var schemas = GLib.SettingsSchemaSource.get_default ();
-        if (schemas.lookup ("org.pantheon.agent-geoclue2", true) != null) {
+        if (schemas.lookup (LOCATION_AGENT_ID, true) != null) {
             return true;
         }
 

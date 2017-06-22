@@ -8,15 +8,18 @@ msgstr ""
 "Project-Id-Version: pantheon-security-privacy-plug\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-01-07 18:40+0000\n"
+"PO-Revision-Date: 2017-05-06 12:19+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
-"Language-Team: Serbian <(nothing)>\n"
+"Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-security-privacy/sr/>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=nplurals=3; plural=(n%10==1 && n%100!=11 ? "
+"0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
@@ -28,7 +31,7 @@ msgstr "Подесите мрежну баријеру, закључавање �
 
 #: ../src/Plug.vala:85
 msgid "Some settings require administrator rights to be changed"
-msgstr "Нека подешавања захтевају администраторска права да би се мењала"
+msgstr "За измену неких подешавања потребна су администраторска права"
 
 #: ../src/Plug.vala:126 ../src/Plug.vala:186
 msgid "Privacy"
@@ -47,7 +50,7 @@ msgstr "Мрежна баријера"
 #: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
 #: ../src/Widgets/ServiceList.vala:49
 msgid "Location Services"
-msgstr ""
+msgstr "Услуге места"
 
 #: ../src/Plug.vala:188
 msgid "Privacy Mode"
@@ -66,13 +69,15 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
 msgid "History"
-msgstr ""
+msgstr "Историјат"
 
 #: ../src/Views/TrackPanel.vala:35
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"„%s“ неће задржати никакве додатне податке или статистику о коришћењу "
+"датотека и програма."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
@@ -88,11 +93,11 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "Историјат је искључен"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr ""
+msgstr "Очисти историјат…"
 
 #: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
@@ -100,29 +105,34 @@ msgstr "Ваш систем"
 
 #: ../src/Views/LocationPanel.vala:79
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Услуге места су искључене"
 
 #: ../src/Views/LocationPanel.vala:81
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Док су услуге места искључене, захтеви места од програма биће аутоматски "
+"одбијени."
 
 #: ../src/Views/LocationPanel.vala:82
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Ово ће утицати на додатне функционалности које обезбеђује приступ места."
 
 #: ../src/Views/LocationPanel.vala:83
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Ово неће спречити програме да покушају да одреде ваше место на основу ИП "
+"адресе."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Дозволите програмима испод да одреде ваше место"
 
 #: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -130,7 +140,7 @@ msgstr "Закључај при спавању:"
 
 #: ../src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr "Закључај након закључавања екрана:"
+msgstr "Закључај након гашења екрана:"
 
 #: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
 #: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
@@ -162,22 +172,20 @@ msgid "Out"
 msgstr "Слање"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "Портови"
+msgstr "%s портови %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "Портови"
+msgstr "%s порт %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
-msgstr ""
+msgstr "Укључен"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "Верзија"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -192,14 +200,12 @@ msgid "Direction"
 msgstr "Смер"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "До:"
+msgstr "До"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "Од:"
+msgstr "Од"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
@@ -211,11 +217,11 @@ msgstr "Протокол:"
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "Верзија:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "Оба"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
@@ -263,11 +269,11 @@ msgstr "Табеле"
 
 #: ../src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
-msgstr "Видео снимци"
+msgstr "Снимци"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
-msgstr ""
+msgstr "Искључено"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"

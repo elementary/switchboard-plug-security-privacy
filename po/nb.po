@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-05-01 13:09+0000\n"
+"PO-Revision-Date: 2017-05-05 13:00+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://l10n.elementary.io/projects/switchboard/switchboard-plug-security-"
@@ -199,14 +199,12 @@ msgid "Direction"
 msgstr "Retningsanvisning"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "Til:"
+msgstr "Til"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "Fra:"
+msgstr "Fra"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
@@ -270,7 +268,7 @@ msgstr "Regneark"
 
 #: ../src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
-msgstr "Filmer"
+msgstr "Videoer"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
@@ -282,11 +280,11 @@ msgstr "Søkeapplikasjon"
 
 #: ../src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "Legg til applikasjon..."
+msgstr "Legg til program…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "Legg til mappe..."
+msgstr "Legg til mappe…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
