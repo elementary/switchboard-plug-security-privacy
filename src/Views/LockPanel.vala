@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class SecurityPrivacy.LockPanel : Switchboard.SimplePage {
+public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
 
     Settings locker;
 

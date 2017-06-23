@@ -20,7 +20,7 @@
  * Authored by: David Hewitt <davidmhewitt@gmail.com>
  */
 
-public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
+public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
     private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
 
@@ -60,11 +60,11 @@ public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
             update_stack_visible_child ();
 
             if (status_switch.active) {
-                status_type = Switchboard.Page.StatusType.SUCCESS;
-                status = Switchboard.Page.ENABLED;
+                status_type = Granite.SettingsPage.StatusType.SUCCESS;
+                status = Granite.SettingsPage.ENABLED;
             } else {
-                status_type = Switchboard.Page.StatusType.OFFLINE;
-                status = Switchboard.Page.DISABLED;
+                status_type = Granite.SettingsPage.StatusType.OFFLINE;
+                status = Granite.SettingsPage.DISABLED;
             }
         });
         location_settings.changed.connect((key) => {
@@ -72,11 +72,11 @@ public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
         });
 
         if (status_switch.active) {
-            status_type = Switchboard.Page.StatusType.SUCCESS;
-            status = Switchboard.Page.ENABLED;
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = Granite.SettingsPage.ENABLED;
         } else {
-            status_type = Switchboard.Page.StatusType.OFFLINE;
-            status = Switchboard.Page.DISABLED;
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = Granite.SettingsPage.DISABLED;
         }
 
         update_stack_visible_child ();    

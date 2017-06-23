@@ -29,12 +29,6 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Widgets/ExcludeTreeView.vala
     Widgets/IncludeTreeView.vala
 
-    Widgets/Switchboard/AbstractSimplePage.vala
-    Widgets/Switchboard/AbstractPage.vala
-    Widgets/Switchboard/Sidebar.vala
-    Widgets/Switchboard/SidebarRow.vala
-    Widgets/Switchboard/HeaderLabel.vala
-
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gtk+-3.0

@@ -130,7 +130,7 @@ namespace SecurityPrivacy {
                 stack.add_titled (location, "location", _("Location Services"));
             }                
 
-            var service_list = new Switchboard.Sidebar (stack);
+            var service_list = new Granite.SettingsSidebar (stack);
 
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             paned.position = 200;

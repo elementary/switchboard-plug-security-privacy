@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.FirewallPanel : Switchboard.SimplePage {
+public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private Gtk.Toolbar list_toolbar;
@@ -60,11 +60,11 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SimplePage {
             }
 
             if (status_switch.active) {
-                status_type = Switchboard.Page.StatusType.SUCCESS;
-                status = Switchboard.Page.ENABLED;
+                status_type = Granite.SettingsPage.StatusType.SUCCESS;
+                status = Granite.SettingsPage.ENABLED;
             } else {
-                status_type = Switchboard.Page.StatusType.OFFLINE;
-                status = Switchboard.Page.DISABLED;
+                status_type = Granite.SettingsPage.StatusType.OFFLINE;
+                status = Granite.SettingsPage.DISABLED;
             }
 
             show_rules ();

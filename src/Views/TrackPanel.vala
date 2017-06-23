@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.TrackPanel : Switchboard.SimplePage {
+public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     private Widgets.ClearUsagePopover remove_popover;
 
     public TrackPanel () {
@@ -83,23 +83,23 @@ public class SecurityPrivacy.TrackPanel : Switchboard.SimplePage {
             }
 
             if (status_switch.active) {
-                status_type = Switchboard.Page.StatusType.SUCCESS;
-                status = Switchboard.Page.ENABLED;
+                status_type = Granite.SettingsPage.StatusType.SUCCESS;
+                status = Granite.SettingsPage.ENABLED;
             } else {
-                status_type = Switchboard.Page.StatusType.OFFLINE;
-                status = Switchboard.Page.DISABLED;
+                status_type = Granite.SettingsPage.StatusType.OFFLINE;
+                status = Granite.SettingsPage.DISABLED;
             }
         });
 
         status_switch.active = !blacklist.get_incognito ();
 
         if (status_switch.active) {
-            status_type = Switchboard.Page.StatusType.SUCCESS;
-            status = Switchboard.Page.ENABLED;
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = Granite.SettingsPage.ENABLED;
         } else {
             warning ("Trying to set offline");
-            status_type = Switchboard.Page.StatusType.OFFLINE;
-            status = Switchboard.Page.DISABLED;
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = Granite.SettingsPage.DISABLED;
         }
     }
 
