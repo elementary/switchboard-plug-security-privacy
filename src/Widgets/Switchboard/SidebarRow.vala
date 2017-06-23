@@ -18,21 +18,22 @@
 */
 
 public class Switchboard.SidebarRow : Gtk.ListBoxRow {
-    public Switchboard.Page.Status status {
+    public Switchboard.Page.StatusType status_type {
         set {
             switch (value) {
-                case Switchboard.Page.Status.ENABLED:
-                    status_icon.icon_name = "user-available";
-                    status_label.label = _("Enabled");
+                case Switchboard.Page.StatusType.ERROR:
+                    status_icon.icon_name = "user-busy";
                     break;
-                case Switchboard.Page.Status.DISABLED:
+                case Switchboard.Page.StatusType.OFFLINE:
                     status_icon.icon_name = "user-offline";
-                    status_label.label = _("Disabled");
+                    break;
+                case Switchboard.Page.StatusType.SUCCESS:
+                    status_icon.icon_name = "user-available";
+                    break;
+                case Switchboard.Page.StatusType.WARNING:
+                    status_icon.icon_name = "user-away";
                     break;
             }
-            status_label.no_show_all = false;
-            status_label.show ();
-            status_label.label = "<span font_size='small'>" + status_label.label + "</span>";
         }
     }
 
@@ -46,6 +47,14 @@ public class Switchboard.SidebarRow : Gtk.ListBoxRow {
             _icon_name = value;
             icon.icon_name = value;
         } 
+    }
+
+    public string status {
+        set {
+            status_label.label = "<span font_size='small'>%s</span>".printf (value);
+            status_label.no_show_all = false;
+            status_label.show ();
+        }
     }
 
     public string title {

@@ -83,18 +83,23 @@ public class SecurityPrivacy.TrackPanel : Switchboard.SimplePage {
             }
 
             if (status_switch.active) {
-                status = Switchboard.Page.Status.ENABLED;
+                status_type = Switchboard.Page.StatusType.SUCCESS;
+                status = Switchboard.Page.ENABLED;
             } else {
-                status = Switchboard.Page.Status.DISABLED;
+                status_type = Switchboard.Page.StatusType.OFFLINE;
+                status = Switchboard.Page.DISABLED;
             }
         });
 
         status_switch.active = !blacklist.get_incognito ();
 
         if (status_switch.active) {
-            status = Switchboard.Page.Status.ENABLED;
+            status_type = Switchboard.Page.StatusType.SUCCESS;
+            status = Switchboard.Page.ENABLED;
         } else {
-            status = Switchboard.Page.Status.DISABLED;
+            warning ("Trying to set offline");
+            status_type = Switchboard.Page.StatusType.OFFLINE;
+            status = Switchboard.Page.DISABLED;
         }
     }
 

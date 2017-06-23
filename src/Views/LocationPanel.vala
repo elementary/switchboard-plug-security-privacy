@@ -60,9 +60,11 @@ public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
             update_stack_visible_child ();
 
             if (status_switch.active) {
-                status = Switchboard.Page.Status.ENABLED;
+                status_type = Switchboard.Page.StatusType.SUCCESS;
+                status = Switchboard.Page.ENABLED;
             } else {
-                status = Switchboard.Page.Status.DISABLED;
+                status_type = Switchboard.Page.StatusType.OFFLINE;
+                status = Switchboard.Page.DISABLED;
             }
         });
         location_settings.changed.connect((key) => {
@@ -70,9 +72,11 @@ public class SecurityPrivacy.LocationPanel : Switchboard.SimplePage {
         });
 
         if (status_switch.active) {
-            status = Switchboard.Page.Status.ENABLED;
+            status_type = Switchboard.Page.StatusType.SUCCESS;
+            status = Switchboard.Page.ENABLED;
         } else {
-            status = Switchboard.Page.Status.DISABLED;
+            status_type = Switchboard.Page.StatusType.OFFLINE;
+            status = Switchboard.Page.DISABLED;
         }
 
         update_stack_visible_child ();    
