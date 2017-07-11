@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-06-28 12:49+0000\n"
-"Last-Translator: Jesus Krauer <jesuskrauer@gmail.com>\n"
+"PO-Revision-Date: 2017-07-11 06:24+0000\n"
+"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/es/>\n"
 "Language: es\n"
@@ -189,7 +189,7 @@ msgstr "Habilitado"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "Versión"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -221,11 +221,11 @@ msgstr "Protocolo:"
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "Versión:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "Ambos"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
