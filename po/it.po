@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-05-04 21:40+0000\n"
+"PO-Revision-Date: 2017-06-24 10:11+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
 #: ../src/Plug.vala:43
@@ -176,12 +176,10 @@ msgid "Out"
 msgstr "Uscita"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
 msgstr "Porte %s %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
 msgstr "Porte %s %s"
 

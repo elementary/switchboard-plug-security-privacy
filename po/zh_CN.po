@@ -8,15 +8,18 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-03-13 08:37+0000\n"
+"PO-Revision-Date: 2017-07-04 09:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
-"Language: \n"
+"Language-Team: Chinese (Simplified) "
+"<https://l10n.elementary.io/projects/switchboard/switchboard-plug-security-"
+"privacy/zh_CN/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:25+0000\n"
-"X-Generator: Launchpad (build 18331)\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
@@ -88,7 +91,7 @@ msgstr "历史已禁用"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr "清除历史..."
+msgstr "清除历史…"
 
 #: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
@@ -158,14 +161,12 @@ msgid "Out"
 msgstr "数据传出"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "端口"
+msgstr "%s 端口 %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "端口"
+msgstr "%s 端口 %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
@@ -173,7 +174,7 @@ msgstr "已启用"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -188,12 +189,10 @@ msgid "Direction"
 msgstr "方向"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
 msgstr "结束日期："
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
 msgstr "起始日期："
 
@@ -207,11 +206,11 @@ msgstr "协议："
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "版本："
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "所有"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
@@ -271,11 +270,11 @@ msgstr "搜索应用程序"
 
 #: ../src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "添加应用程序..."
+msgstr "添加应用程序…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "添加文件夹..."
+msgstr "添加文件夹…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
