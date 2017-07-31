@@ -2,56 +2,57 @@
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
 # This file is distributed under the same license as the maya package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2014-08-02 05:11+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
-"Language-Team: Indonesian <id@li.org>\n"
+"PO-Revision-Date: 2017-07-31 15:03+0700\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-security-privacy/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
-msgstr ""
+msgstr "Keamanan & Privasi"
 
 #: ../src/Plug.vala:44
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "Konfigurasikan firewall, kunci layar, dan informasi aktivitas"
 
 #: ../src/Plug.vala:85
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
+msgstr "Beberapa pengaturan memerlukan hak administrator untuk diubah"
 
 #: ../src/Plug.vala:126 ../src/Plug.vala:186
 msgid "Privacy"
-msgstr ""
+msgstr "Privasi"
 
 #: ../src/Plug.vala:127 ../src/Plug.vala:187 ../src/Plug.vala:188
 #: ../src/Views/LockPanel.vala:29 ../src/Widgets/ServiceList.vala:31
 msgid "Locking"
-msgstr ""
+msgstr "Penguncian"
 
 #: ../src/Plug.vala:128 ../src/Plug.vala:189 ../src/Views/FirewallPanel.vala:48
 #: ../src/Widgets/ServiceList.vala:32
 msgid "Firewall"
-msgstr ""
+msgstr "Firewall"
 
 #: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
 #: ../src/Widgets/ServiceList.vala:49
 msgid "Location Services"
-msgstr ""
+msgstr "Layanan Lokasi"
 
 #: ../src/Plug.vala:188
 msgid "Privacy Mode"
-msgstr ""
+msgstr "Mode Privasi"
 
 #: ../src/Views/TrackPanel.vala:28
 msgid ""
@@ -59,255 +60,267 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
+"Sistem operasi ini dapat mengumpulkan statistik yang berguna tentang "
+"penggunaan berkas dan aplikasi untuk menyediakan fungsionalitas tambahan. "
+"Jika orang lain dapat melihat atau mengakses akun Anda, Anda mungkin ingin "
+"membatasi item mana yang tercatat."
 
 #: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
 msgid "History"
-msgstr ""
+msgstr "Riwayat"
 
 #: ../src/Views/TrackPanel.vala:35
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s tidak akan menyimpan data lebih lanjut atau statistik tentang penggunaan "
+"berkas dan aplikasi."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "Fungsi tambahan yang disediakan data ini akan terpengaruh."
 
 #: ../src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
+"Ini tidak akan mencegah aplikasi merekam data penggunaan mereka sendiri "
+"seperti riwayat peramban."
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "Riwayat Dinonaktifkan"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr ""
+msgstr "Bersihkan Riwayat…"
 
 #: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
-msgstr ""
+msgstr "Sistem Anda"
 
 #: ../src/Views/LocationPanel.vala:79
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Layanan Lokasi Dinonaktifkan"
 
 #: ../src/Views/LocationPanel.vala:81
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Sementara layanan lokasi dinonaktifkan, permintaan lokasi dari aplikasi akan "
+"ditolak secara otomatis."
 
 #: ../src/Views/LocationPanel.vala:82
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Fungsi tambahan yang diberikan akses lokasi di aplikasi tersebut akan "
+"terpengaruh."
 
 #: ../src/Views/LocationPanel.vala:83
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Ini tidak akan mencegah aplikasi mencoba menentukan lokasi Anda berdasarkan "
+"alamat IP."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Izinkan aplikasi di bawah untuk menentukan lokasi Anda"
 
 #: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Kunci saat tidur:"
 
 #: ../src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Kunci setelah layar dimatikan:"
 
 #: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
 #: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
 msgid "Unknown"
-msgstr ""
+msgstr "Tidak Diketahui"
 
 #: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
 msgid "Allow"
-msgstr ""
+msgstr "Izinkan"
 
 #: ../src/Views/FirewallPanel.vala:197 ../src/Views/FirewallPanel.vala:317
 msgid "Deny"
-msgstr ""
+msgstr "Abaikan"
 
 #: ../src/Views/FirewallPanel.vala:199 ../src/Views/FirewallPanel.vala:318
 msgid "Reject"
-msgstr ""
+msgstr "Tolak"
 
 #: ../src/Views/FirewallPanel.vala:201 ../src/Views/FirewallPanel.vala:319
 msgid "Limit"
-msgstr ""
+msgstr "Batas"
 
 #: ../src/Views/FirewallPanel.vala:213 ../src/Views/FirewallPanel.vala:340
 msgid "In"
-msgstr ""
+msgstr "Di"
 
 #: ../src/Views/FirewallPanel.vala:215 ../src/Views/FirewallPanel.vala:341
 msgid "Out"
-msgstr ""
+msgstr "Keluar"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
 msgid "%s Ports %s"
-msgstr ""
+msgstr "%s Port %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
 msgid "%s Port %s"
-msgstr ""
+msgstr "%s Port %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
-msgstr ""
+msgstr "Diaktifkan"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "Versi"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
-msgstr ""
+msgstr "Aksi"
 
 #: ../src/Views/FirewallPanel.vala:272
 msgid "Protocol"
-msgstr ""
+msgstr "Protokol"
 
 #: ../src/Views/FirewallPanel.vala:273
 msgid "Direction"
-msgstr ""
+msgstr "Arah"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "Hingga:"
+msgstr "Ke"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "Dari:"
+msgstr "Dari"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
-msgstr ""
+msgstr "Aksi:"
 
 #: ../src/Views/FirewallPanel.vala:322
 msgid "Protocol:"
-msgstr ""
+msgstr "Protokol:"
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "Versi:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "Keduanya"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
-msgstr ""
+msgstr "Arah:"
 
 #: ../src/Views/FirewallPanel.vala:344
 msgid "Ports:"
-msgstr ""
+msgstr "Port:"
 
 #: ../src/Views/FirewallPanel.vala:348
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d atau %d-%d"
 
 #: ../src/Views/FirewallPanel.vala:350
 msgid "Add Rule"
-msgstr ""
+msgstr "Tambah Aturan"
 
 #: ../src/Widgets/IncludeTreeView.vala:76
 msgid "Data Sources:"
-msgstr ""
+msgstr "Sumber Data:"
 
 #: ../src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
-msgstr ""
+msgstr "Log Obrolan"
 
 #: ../src/Widgets/IncludeTreeView.vala:83
 msgid "Documents"
-msgstr ""
+msgstr "Dokumen"
 
 #: ../src/Widgets/IncludeTreeView.vala:84
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 #: ../src/Widgets/IncludeTreeView.vala:85
 msgid "Pictures"
-msgstr ""
+msgstr "Gambar"
 
 #: ../src/Widgets/IncludeTreeView.vala:86
 msgid "Presentations"
-msgstr ""
+msgstr "Presentasi"
 
 #: ../src/Widgets/IncludeTreeView.vala:87
 msgid "Spreadsheets"
-msgstr ""
+msgstr "Spreadsheet"
 
 #: ../src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
-msgstr ""
+msgstr "Video"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
-msgstr ""
+msgstr "Dinonaktifkan"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr ""
+msgstr "Cari Aplikasi"
 
 #: ../src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr ""
+msgstr "Tambah Aplikasi…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr ""
+msgstr "Tambah Folder…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "Pilih folder untuk daftar hitam"
 
 #: ../src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"
-msgstr ""
+msgstr "Batal"
 
 #: ../src/Widgets/ExcludeTreeView.vala:74
 msgid "Add"
-msgstr ""
+msgstr "Tambah"
 
 #: ../src/Widgets/ExcludeTreeView.vala:86
 msgid "Delete"
-msgstr ""
+msgstr "Hapus"
 
 #: ../src/Widgets/ExcludeTreeView.vala:128
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "Jangan kumpulkan data dari berikut ini:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
-msgstr ""
+msgstr "Hapus data yang dikumpulkan dari sistem dan penggunaan aplikasi dari:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr ""
+msgstr "Satu jam yang lalu"
 
 #: ../src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr ""
+msgstr "Satu hari yang lalu"
 
 #: ../src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr ""
+msgstr "Satu minggu yang lalu"
 
 #: ../src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
@@ -315,7 +328,7 @@ msgstr "Dari:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
-msgstr ""
+msgstr "Sepanjang waktu"
 
 #: ../src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
@@ -323,7 +336,7 @@ msgstr "Hingga:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
-msgstr ""
+msgstr "Bersihkan Data"
 
 #. //launchpad.net/switchboard-plug-security-privacy)
 #. *
@@ -346,4 +359,4 @@ msgstr ""
 #.
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "Otentikasi diperlukan untuk menjalankan Konfigurasi Firewall"
