@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-08-16 11:42+0000\n"
+"PO-Revision-Date: 2017-08-16 11:44+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/hr/>\n"
@@ -97,7 +97,7 @@ msgstr "Povijest je onemogućena"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr "Obriši povijest..."
+msgstr "Obriši povijest…"
 
 #: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
@@ -282,11 +282,11 @@ msgstr "Pretraži aplikacije"
 
 #: ../src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "Dodaj aplikaciju..."
+msgstr "Dodaj aplikaciju…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "Dodaj mapu..."
+msgstr "Dodaj mapu…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
