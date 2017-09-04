@@ -10,7 +10,7 @@ Build-Depends: cmake (>= 2.8),
                libpolkit-gobject-1-dev,
                libswitchboard-2.0-dev,
                libzeitgeist-2.0-dev,
-               valac-0.24 | valac (>= 0.23.2)
+               valac (>= 0.34.1)
 Standards-Version: 3.9.5
 Homepage: https://launchpad.net/pantheon-plugs
 
