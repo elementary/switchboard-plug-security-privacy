@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2014-10-30 15:39+0000\n"
-"Last-Translator: abuyop <Unknown>\n"
-"Language-Team: Malay <ms@li.org>\n"
+"PO-Revision-Date: 2017-09-08 17:22+0000\n"
+"Last-Translator: M Aiman <m.aimanismail@gmail.com>\n"
+"Language-Team: Malay <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-security-privacy/ms/>\n"
 "Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
@@ -267,7 +269,7 @@ msgstr "Video"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
-msgstr ""
+msgstr "Dimatikan"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
