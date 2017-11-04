@@ -84,10 +84,10 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
 
             if (status_switch.active) {
                 status_type = Granite.SettingsPage.StatusType.SUCCESS;
-                status = Granite.SettingsPage.ENABLED;
+                status = _("Enabled");
             } else {
                 status_type = Granite.SettingsPage.StatusType.OFFLINE;
-                status = Granite.SettingsPage.DISABLED;
+                status = _("Disabled");
             }
         });
 
@@ -95,11 +95,11 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
 
         if (status_switch.active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
-            status = Granite.SettingsPage.ENABLED;
+            status = _("Enabled");
         } else {
             warning ("Trying to set offline");
             status_type = Granite.SettingsPage.StatusType.OFFLINE;
-            status = Granite.SettingsPage.DISABLED;
+            status = _("Disabled");
         }
     }
 

@@ -61,10 +61,10 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
             if (status_switch.active) {
                 status_type = Granite.SettingsPage.StatusType.SUCCESS;
-                status = Granite.SettingsPage.ENABLED;
+                status = _("Enabled");
             } else {
                 status_type = Granite.SettingsPage.StatusType.OFFLINE;
-                status = Granite.SettingsPage.DISABLED;
+                status = _("Disabled");
             }
 
             show_rules ();

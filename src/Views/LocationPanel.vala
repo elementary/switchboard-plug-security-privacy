@@ -61,10 +61,10 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
             if (status_switch.active) {
                 status_type = Granite.SettingsPage.StatusType.SUCCESS;
-                status = Granite.SettingsPage.ENABLED;
+                status = _("Enabled");
             } else {
                 status_type = Granite.SettingsPage.StatusType.OFFLINE;
-                status = Granite.SettingsPage.DISABLED;
+                status = _("Disabled");
             }
         });
         location_settings.changed.connect((key) => {
@@ -73,10 +73,10 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         if (status_switch.active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
-            status = Granite.SettingsPage.ENABLED;
+            status = _("Enabled");
         } else {
             status_type = Granite.SettingsPage.StatusType.OFFLINE;
-            status = Granite.SettingsPage.DISABLED;
+            status = _("Disabled");
         }
 
         update_stack_visible_child ();    
