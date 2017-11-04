@@ -35,6 +35,11 @@ namespace SecurityPrivacy {
 
         bool location_agent_installed = false;
 
+        private const string FIREWALL = "firewall";
+        private const string LOCKING = "locking";
+        private const string LOCATION = "location";
+        private const string TRACKING = "tracking";
+
         public Plug () {
             Object (category: Category.PERSONAL,
                     code_name: Build.PLUGCODENAME,
@@ -45,12 +50,12 @@ namespace SecurityPrivacy {
 
             location_agent_installed = SecurityPrivacy.LocationPanel.location_agent_installed ();
             supported_settings.set ("security", null);
-            supported_settings.set ("security/privacy", "tracking");
-            supported_settings.set ("security/firewall", "firewall");
-            supported_settings.set ("security/screensaver", "locking");
+            supported_settings.set ("security/privacy", TRACKING);
+            supported_settings.set ("security/firewall", FIREWALL);
+            supported_settings.set ("security/screensaver", LOCKING);
             
             if (location_agent_installed) {
-                supported_settings.set ("security/privacy/location", "location");
+                supported_settings.set ("security/privacy/location", LOCATION);
             }
             plug = this;
         }
@@ -95,7 +100,7 @@ namespace SecurityPrivacy {
                 area.add (lock_button);
 
                 stack.notify["visible-child-name"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
+                    if (permission.allowed == false && stack.visible_child_name == FIREWALL) {
                         infobar.no_show_all = false;
                         infobar.show_all ();
                     } else {
@@ -105,7 +110,7 @@ namespace SecurityPrivacy {
                 });
 
                 permission.notify["allowed"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
+                    if (permission.allowed == false && stack.visible_child_name == FIREWALL) {
                         infobar.no_show_all = false;
                         infobar.show_all ();
                     } else {
@@ -121,14 +126,14 @@ namespace SecurityPrivacy {
             var locking = new LockPanel ();
             firewall = new FirewallPanel ();
 
-            stack.add_named (tracking, "tracking");
-            stack.add_named (locking, "locking");
-            stack.add_named (firewall, "firewall");
+            stack.add_named (tracking, TRACKING);
+            stack.add_named (locking, LOCKING);
+            stack.add_named (firewall, FIREWALL);
 
             if (location_agent_installed) {
                 location = new LocationPanel ();
-                stack.add_titled (location, "location", _("Location Services"));
-            }                
+                stack.add_titled (location, LOCATION, _("Location Services"));
+            }
 
             var service_list = new Granite.SettingsSidebar (stack);
 
@@ -149,39 +154,19 @@ namespace SecurityPrivacy {
             if (main_grid.get_children ().length () == 0)
                 shown ();
 
-            switch (location) {
-                case "privacy":
-                    stack.set_visible_child_name ("tracking");
-                    //service_list.select_service_name ("tracking");
-                    break;
-                case "locking":
-                    stack.set_visible_child_name ("locking");
-                    //service_list.select_service_name ("locking");
-                    break;
-                case "locking<sep>privacy-mode":
-                    stack.set_visible_child_name ("locking");
-                    //service_list.select_service_name ("locking");
-                    break;
-                case "firewall":
-                    stack.set_visible_child_name ("firewall");
-                    //service_list.select_service_name ("firewall");
-                    break;
-                case "location":
-                    stack.set_visible_child_name ("location");
-                    //service_list.select_service_name ("location");
-                    break;
-            }
+            stack.visible_child_name = location;
+            stack.show_all ();
         }
 
         // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
         public override async Gee.TreeMap<string, string> search (string search) {
             var map = new Gee.TreeMap<string, string> (null, null);
-            map.set ("%s → %s".printf (display_name, _("Privacy")), "privacy");
-            map.set ("%s → %s".printf (display_name, _("Locking")), "locking");
+            map.set ("%s → %s".printf (display_name, _("Privacy")), TRACKING);
+            map.set ("%s → %s".printf (display_name, _("Locking")), LOCKING);
             map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Privacy Mode")), "locking<sep>privacy-mode");
-            map.set ("%s → %s".printf (display_name, _("Firewall")), "firewall");
+            map.set ("%s → %s".printf (display_name, _("Firewall")), FIREWALL);
             if (location_agent_installed) {
-                map.set ("%s → %s".printf (display_name, _("Location Services")), "location");
+                map.set ("%s → %s".printf (display_name, _("Location Services")), LOCATION);
             }
             return map;
         }
