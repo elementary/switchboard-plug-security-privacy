@@ -8,7 +8,7 @@ link_directories (${DEPS_LIBRARY_DIRS})
 
 find_package (Vala REQUIRED)
 include (ValaVersion)
-ensure_vala_version ("0.22.0" MINIMUM)
+ensure_vala_version ("0.34.1" MINIMUM)
 
 include (ValaPrecompile)
 # Add all your vala files and requires packages to the List below to include them in the build
@@ -37,9 +37,6 @@ PACKAGES
     polkit-gobject-1
     zeitgeist-2.0
     posix
-OPTIONS
-    --thread
-    --vapidir=${CMAKE_SOURCE_DIR}/vapi
 )
 
 add_library (${CMAKE_PROJECT_NAME} MODULE ${VALA_C})
