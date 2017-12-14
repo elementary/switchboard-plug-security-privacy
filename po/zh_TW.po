@@ -8,15 +8,18 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2016-08-06 09:21+0000\n"
+"PO-Revision-Date: 2017-12-15 00:12+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
-"Language: \n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"security-privacy/zh_TW/>\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.17.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
@@ -131,7 +134,7 @@ msgstr "螢幕關閉時鎖定："
 #: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
 #: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
 msgid "Unknown"
-msgstr "不明"
+msgstr "未知"
 
 #: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
 msgid "Allow"
