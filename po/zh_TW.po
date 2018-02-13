@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-12-15 00:12+0000\n"
+"PO-Revision-Date: 2018-02-13 09:49+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.17.1\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: ../src/Plug.vala:43
@@ -50,11 +50,11 @@ msgstr "防火牆"
 #: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
 #: ../src/Widgets/ServiceList.vala:49
 msgid "Location Services"
-msgstr ""
+msgstr "位置服務"
 
 #: ../src/Plug.vala:188
 msgid "Privacy Mode"
-msgstr ""
+msgstr "隱私模式"
 
 #: ../src/Views/TrackPanel.vala:28
 msgid ""
@@ -67,13 +67,13 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
 msgid "History"
-msgstr ""
+msgstr "歷史"
 
 #: ../src/Views/TrackPanel.vala:35
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
-msgstr ""
+msgstr "%s 不會保留檔案相關和應用程式使用狀況的任何資料或統計數據。"
 
 #: ../src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
@@ -87,11 +87,11 @@ msgstr "這不會讓程式停止紀錄其自身的使用資料，例如瀏覽器
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "歷史已停用"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr ""
+msgstr "清除歷史…"
 
 #: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
@@ -99,29 +99,29 @@ msgstr "您的系統"
 
 #: ../src/Views/LocationPanel.vala:79
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "位置服務已停用"
 
 #: ../src/Views/LocationPanel.vala:81
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
-msgstr ""
+msgstr "當位置服務停用時，會自動拒絕程式的位置請求。"
 
 #: ../src/Views/LocationPanel.vala:82
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
-msgstr ""
+msgstr "這些程式由位置存取提供的額外功能將受到影響。"
 
 #: ../src/Views/LocationPanel.vala:83
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
-msgstr ""
+msgstr "這無法防止程式試圖根據 IP 位址判斷您的可能位置。"
 
 #: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "允許下列程式判定您的位置"
 
 #: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -161,22 +161,20 @@ msgid "Out"
 msgstr "出"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "連接埠"
+msgstr "%s 連接埠 %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "連接埠"
+msgstr "%s 連接埠 %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
-msgstr ""
+msgstr "已啟用"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -191,14 +189,12 @@ msgid "Direction"
 msgstr "方向"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "到："
+msgstr "到"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "從："
+msgstr "從"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
@@ -210,11 +206,11 @@ msgstr "協定："
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "版本："
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "兩者"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
@@ -266,7 +262,7 @@ msgstr "影片"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
-msgstr ""
+msgstr "已停用"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
