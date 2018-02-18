@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-06-24 10:11+0000\n"
+"PO-Revision-Date: 2018-02-21 00:08+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://l10n.elementary.io/projects/switchboard"
+"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
 #: ../src/Plug.vala:43
@@ -153,11 +153,11 @@ msgstr "Sconosciuto"
 
 #: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
 msgid "Allow"
-msgstr "Permetti"
+msgstr "Acconsenti"
 
 #: ../src/Views/FirewallPanel.vala:197 ../src/Views/FirewallPanel.vala:317
 msgid "Deny"
-msgstr "Blocca"
+msgstr "Nega"
 
 #: ../src/Views/FirewallPanel.vala:199 ../src/Views/FirewallPanel.vala:318
 msgid "Reject"
@@ -181,7 +181,7 @@ msgstr "Porte %s %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
 msgid "%s Port %s"
-msgstr "Porte %s %s"
+msgstr "Porta %s %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
@@ -364,8 +364,7 @@ msgstr "Pulisci dati"
 #.
 #: ../src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
-"È richiesta l'autenticazione per eseguire la configurazione del firewall"
+msgstr "È necessario autenticarsi per eseguire la configurazione del firewall"
 
 #~ msgid "IPv6"
 #~ msgstr "IPv6"
