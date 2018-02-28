@@ -41,7 +41,7 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.height_request = 200;
         scrolled.width_request = 500;
-        scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
+        scrolled.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 
         list = new Gtk.ListBox ();
         list.expand = true;
