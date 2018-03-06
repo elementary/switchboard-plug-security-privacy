@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-02-18 11:09+0000\n"
+"PO-Revision-Date: 2018-03-07 00:01+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/ja/>\n"
@@ -280,11 +280,11 @@ msgstr "アプリケーションの追加…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "フォルダーの追加…"
+msgstr "フォルダの追加…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
-msgstr "除外リストに追加するフォルダーを選択"
+msgstr "除外リストに追加するフォルダを選択"
 
 #: ../src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"
