@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2014-2017 elementary LLC. (https://launchpad.net/switchboard-plug-security-privacy)
+ * Copyright (c) 2014-2018 elementary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -37,6 +37,11 @@ namespace SecurityPrivacy {
 
         bool location_agent_installed = false;
 
+        private const string FIREWALL = "firewall";
+        private const string HISTORY = "tracking";
+        private const string LOCKING = "locking";
+        private const string LOCATION = "location";
+
         public Plug () {
             Object (category: Category.PERSONAL,
                     code_name: Build.PLUGCODENAME,
@@ -47,12 +52,12 @@ namespace SecurityPrivacy {
 
             location_agent_installed = SecurityPrivacy.LocationPanel.location_agent_installed ();
             supported_settings.set ("security", null);
-            supported_settings.set ("security/privacy", "tracking");
-            supported_settings.set ("security/firewall", "firewall");
-            supported_settings.set ("security/screensaver", "locking");
+            supported_settings.set ("security/privacy", HISTORY);
+            supported_settings.set ("security/firewall", FIREWALL);
+            supported_settings.set ("security/screensaver", LOCKING);
             
             if (location_agent_installed) {
-                supported_settings.set ("security/privacy/location", "location");
+                supported_settings.set ("security/privacy/location", LOCATION);
             }
             plug = this;
         }
@@ -123,13 +128,13 @@ namespace SecurityPrivacy {
             var locking = new LockPanel ();
             firewall = new FirewallPanel ();
 
-            stack.add_titled (tracking, "tracking", _("Privacy"));
-            stack.add_titled (locking, "locking", _("Locking"));
-            stack.add_titled (firewall, "firewall", _("Firewall"));
+            stack.add_titled (tracking, HISTORY, _("Privacy"));
+            stack.add_titled (locking, LOCKING, _("Locking"));
+            stack.add_titled (firewall, FIREWALL, _("Firewall"));
 
             if (location_agent_installed) {
                 location = new LocationPanel ();
-                stack.add_titled (location, "location", _("Location Services"));
+                stack.add_titled (location, LOCATION, _("Location Services"));
             }                
 
             service_list = new ServiceList ();
@@ -153,42 +158,23 @@ namespace SecurityPrivacy {
         }
 
         public override void search_callback (string location) {
-            if (main_grid.get_children ().length () == 0)
+            if (main_grid.get_children ().length () == 0) {
                 shown ();
-
-            switch (location) {
-                case "privacy":
-                    stack.set_visible_child_name ("tracking");
-                    service_list.select_service_name ("tracking");
-                    break;
-                case "locking":
-                    stack.set_visible_child_name ("locking");
-                    service_list.select_service_name ("locking");
-                    break;
-                case "locking<sep>privacy-mode":
-                    stack.set_visible_child_name ("locking");
-                    service_list.select_service_name ("locking");
-                    break;
-                case "firewall":
-                    stack.set_visible_child_name ("firewall");
-                    service_list.select_service_name ("firewall");
-                    break;
-                case "location":
-                    stack.set_visible_child_name ("location");
-                    service_list.select_service_name ("location");
-                    break;
             }
+
+            stack.set_visible_child_name (location);
+            service_list.select_service_name (location);
         }
 
         // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
         public override async Gee.TreeMap<string, string> search (string search) {
             var map = new Gee.TreeMap<string, string> (null, null);
-            map.set ("%s → %s".printf (display_name, _("Privacy")), "privacy");
-            map.set ("%s → %s".printf (display_name, _("Locking")), "locking");
-            map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Privacy Mode")), "locking<sep>privacy-mode");
-            map.set ("%s → %s".printf (display_name, _("Firewall")), "firewall");
+            map.set ("%s → %s".printf (display_name, _("History")), HISTORY);
+            map.set ("%s → %s".printf (display_name, _("Privacy")), HISTORY);
+            map.set ("%s → %s".printf (display_name, _("Locking")), LOCKING);
+            map.set ("%s → %s".printf (display_name, _("Firewall")), FIREWALL);
             if (location_agent_installed) {
-                map.set ("%s → %s".printf (display_name, _("Location Services")), "location");
+                map.set ("%s → %s".printf (display_name, _("Location Services")), LOCATION);
             }
             return map;
         }
