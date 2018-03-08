@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-05-26 11:38+0000\n"
-"Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
-"Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard"
+"PO-Revision-Date: 2018-03-07 00:01+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 
 #: ../src/Plug.vala:43
@@ -123,9 +123,7 @@ msgstr "これらのアプリで位置情報アクセスが提供する追加の
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
-msgstr ""
-"これは、アプリが IP アドレスに基づいて現在地を特定しようとするのを妨ぐことは"
-"できません。"
+msgstr "アプリが IP アドレスに基づいて現在地を特定しようとするのを妨ぐことはできません。"
 
 #: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
@@ -169,14 +167,12 @@ msgid "Out"
 msgstr "出力"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "ポート番号"
+msgstr ""
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "ポート番号"
+msgstr ""
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
@@ -284,11 +280,11 @@ msgstr "アプリケーションの追加…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "フォルダーの追加…"
+msgstr "フォルダの追加…"
 
 #: ../src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
-msgstr "除外リストに追加するフォルダーを選択"
+msgstr "除外リストに追加するフォルダを選択"
 
 #: ../src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"

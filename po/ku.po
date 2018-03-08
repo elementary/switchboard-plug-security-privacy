@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-02-10 20:39+0000\n"
-"Last-Translator: Rokar ✌ <Unknown>\n"
-"Language-Team: Kurdish <ku@li.org>\n"
+"PO-Revision-Date: 2018-02-11 00:09+0000\n"
+"Last-Translator: Rokar <mail@rokar.de>\n"
+"Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-security-privacy/ku/>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
@@ -156,18 +158,16 @@ msgid "Out"
 msgstr "Dûr"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "Port"
+msgstr ""
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "Port"
+msgstr ""
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
-msgstr ""
+msgstr "Çalake"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
@@ -186,14 +186,12 @@ msgid "Direction"
 msgstr "Hêl"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "Ji bo:"
+msgstr "Ji bo"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "Ji:"
+msgstr "Ji"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
@@ -217,7 +215,7 @@ msgstr ""
 
 #: ../src/Views/FirewallPanel.vala:344
 msgid "Ports:"
-msgstr "Ports:"
+msgstr "ports:"
 
 #: ../src/Views/FirewallPanel.vala:348
 msgid "%d or %d-%d"
@@ -261,7 +259,7 @@ msgstr "Vîdyo"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
-msgstr ""
+msgstr "Na çalak"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"

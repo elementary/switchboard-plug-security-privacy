@@ -34,10 +34,12 @@ public class AppRow : Gtk.Grid {
         var app_name = new Gtk.Label (get_app_name ());
         app_name.get_style_context ().add_class ("h3");
         app_name.xalign = 0;
+        app_name.ellipsize = Pango.EllipsizeMode.END;
 
         var app_comment = new Gtk.Label ("<span font_size='small'>" + get_app_comment () + "</span>");
         app_comment.xalign = 0;
         app_comment.use_markup = true;
+        app_comment.ellipsize = Pango.EllipsizeMode.END;
 
         margin = 6;
         margin_end = 12;
