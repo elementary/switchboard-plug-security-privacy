@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2017 elementary LLC. (http://launchpad.net/switchboard-plug-security-privacy)
+ * Copyright (c) 2017-2018 elementary LLC. (https://elementary.io)
  * Copyright (C) 2017 David Hewitt <davidmhewitt@gmail.com>   
  *
  * This program is free software; you can redistribute it and/or modify
