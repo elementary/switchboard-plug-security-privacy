@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.FirewallPanel : ServicePanel {
+public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private Gtk.Toolbar list_toolbar;
@@ -58,6 +58,9 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
                 view.sensitive = status_switch.active;
                 UFWHelpers.set_status (status_switch.active);
             }
+
+            update_status_switch ();
+
             show_rules ();
         });
 
@@ -79,6 +82,17 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
             }
             loading = false;
         });
+    }
+
+    private void update_status_switch () {
+        if (status_switch.active) {
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
+        } else {
+            warning ("Trying to set offline");
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
+        }
     }
 
     private void load_disabled_rules () {

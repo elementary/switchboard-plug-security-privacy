@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2014 elementary LLC. (http://launchpad.net/switchboard-plug-security-privacy)
+ * Copyright (c) 2014-2018 elementary LLC. (http://launchpad.net/switchboard-plug-security-privacy)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.TrackPanel : ServicePanel {
+public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     private Widgets.ClearUsagePopover remove_popover;
 
     public TrackPanel () {
@@ -81,9 +81,13 @@ public class SecurityPrivacy.TrackPanel : ServicePanel {
                 privacy_settings.set_boolean ("remember-recent-files", !privacy_mode);
                 privacy_settings.set_boolean ("remember-app-usage", !privacy_mode);
             }
+
+            update_status_switch ();
         });
 
         status_switch.active = !blacklist.get_incognito ();
+
+        update_status_switch ();
     }
 
     private string get_operating_system_name () {
@@ -98,5 +102,16 @@ public class SecurityPrivacy.TrackPanel : ServicePanel {
         } catch (FileError e) {
         }
         return system;
+    }
+
+    private void update_status_switch () {
+        if (status_switch.active) {
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
+        } else {
+            warning ("Trying to set offline");
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
+        }
     }
 }

@@ -20,7 +20,7 @@
  * Authored by: David Hewitt <davidmhewitt@gmail.com>
  */
 
-public class SecurityPrivacy.LocationPanel : ServicePanel {
+public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
     private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
 
@@ -29,7 +29,6 @@ public class SecurityPrivacy.LocationPanel : ServicePanel {
     private VariantDict remembered_apps_dict;
     private Gtk.ListStore list_store;
     private Gtk.TreeView tree_view;
-    private Gtk.Grid treeview_grid;
     private Gtk.Stack disabled_stack;
 
     private enum Columns {
@@ -41,9 +40,12 @@ public class SecurityPrivacy.LocationPanel : ServicePanel {
     }
 
     public LocationPanel () {
-        Object (activatable: true,
-                icon_name: "find-location",
-                title: _("Location Services"));
+        Object (
+            activatable: true,
+            description: _("Allow the apps below to determine your location"),
+            icon_name: "find-location",
+            title: _("Location Services")
+        );
     }
 
     construct {
@@ -58,12 +60,25 @@ public class SecurityPrivacy.LocationPanel : ServicePanel {
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
         status_switch.notify["active"].connect (() => {
             update_stack_visible_child ();
+            update_status_switch ();
         });
         location_settings.changed.connect((key) => {
             populate_app_treeview ();
         });
 
-        update_stack_visible_child ();    
+        update_stack_visible_child (); 
+        update_status_switch ();
+    }
+
+    private void update_status_switch () {
+        if (status_switch.active) {
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
+        } else {
+            warning ("Trying to set offline");
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
+        }
     }
     
     private void update_stack_visible_child () {
@@ -89,13 +104,9 @@ public class SecurityPrivacy.LocationPanel : ServicePanel {
 
         disabled_frame.add (alert);
         disabled_stack.add_named (disabled_frame, "disabled");
-        disabled_frame.set_visible (true);
     }
 
     private void create_treeview () {
-        var locations_label = new Gtk.Label (_("Allow the apps below to determine your location"));
-        locations_label.xalign = 0;
-
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool),
                                         typeof (string), typeof (string), typeof (string));
 
@@ -132,14 +143,8 @@ public class SecurityPrivacy.LocationPanel : ServicePanel {
         scrolled.shadow_type = Gtk.ShadowType.IN;
         scrolled.expand = true;
         scrolled.add (tree_view);
-
-        treeview_grid = new Gtk.Grid ();
-        treeview_grid.row_spacing = 6;
-        treeview_grid.attach (locations_label, 0, 0, 1, 1);
-        treeview_grid.attach (scrolled, 0, 1, 1, 1);
         
-        disabled_stack.add_named (treeview_grid, "enabled");
-        treeview_grid.set_visible (true);
+        disabled_stack.add_named (scrolled, "enabled");
     }
 
     private void populate_app_treeview () {
