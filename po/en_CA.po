@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-02-24 00:04+0000\n"
+"PO-Revision-Date: 2018-03-08 17:50+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -50,11 +50,11 @@ msgstr "Firewall"
 #: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
 #: ../src/Widgets/ServiceList.vala:49
 msgid "Location Services"
-msgstr ""
+msgstr "Location Services"
 
 #: ../src/Plug.vala:188
 msgid "Privacy Mode"
-msgstr ""
+msgstr "Privacy Mode"
 
 #: ../src/Views/TrackPanel.vala:28
 msgid ""
@@ -68,13 +68,15 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
 msgid "History"
-msgstr ""
+msgstr "History"
 
 #: ../src/Views/TrackPanel.vala:35
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s won't retain any further data or statistics about file and application "
+"usage."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
@@ -90,11 +92,11 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "History Is Disabled"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr ""
+msgstr "Clear History…"
 
 #: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
@@ -102,29 +104,35 @@ msgstr "Your system"
 
 #: ../src/Views/LocationPanel.vala:79
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Location Services Are Disabled"
 
 #: ../src/Views/LocationPanel.vala:81
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"While location services are disabled, location requests from apps will be "
+"automatically rejected."
 
 #: ../src/Views/LocationPanel.vala:82
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"The additional functionality that location access provides in those apps "
+"will be affected."
 
 #: ../src/Views/LocationPanel.vala:83
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"This will not prevent apps from trying to determine your location based on "
+"IP address."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Allow the apps below to determine your location"
 
 #: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -164,22 +172,20 @@ msgid "Out"
 msgstr "Out"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "Ports"
+msgstr "%s Ports %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "Ports"
+msgstr "%s Port %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
-msgstr ""
+msgstr "Enabled"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -194,14 +200,12 @@ msgid "Direction"
 msgstr "Direction"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "To:"
+msgstr "To"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "From:"
+msgstr "From"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
@@ -213,11 +217,11 @@ msgstr "Protocol:"
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "Version:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "Both"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
