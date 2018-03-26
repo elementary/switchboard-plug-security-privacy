@@ -20,7 +20,7 @@
  * Authored by: David Hewitt <davidmhewitt@gmail.com>
  */
 
-public class SecurityPrivacy.LocationPanel : ServicePanel {
+public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
     private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
 
@@ -58,10 +58,26 @@ public class SecurityPrivacy.LocationPanel : ServicePanel {
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
         status_switch.notify["active"].connect (() => {
             update_stack_visible_child ();
+
+            if (status_switch.active) {
+                status_type = Granite.SettingsPage.StatusType.SUCCESS;
+                status = _("Enabled");
+            } else {
+                status_type = Granite.SettingsPage.StatusType.OFFLINE;
+                status = _("Disabled");
+            }
         });
         location_settings.changed.connect((key) => {
             populate_app_treeview ();
         });
+
+        if (status_switch.active) {
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
+        } else {
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
+        }
 
         update_stack_visible_child ();    
     }

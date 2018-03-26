@@ -18,7 +18,6 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     UFWHelpers.vala
     ZGUtilities.vala
 
-    Views/AbstractServicePanel.vala
     Views/FirewallPanel.vala
     Views/LockPanel.vala
     Views/TrackPanel.vala
@@ -29,8 +28,6 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Widgets/ClearUsagePopover.vala
     Widgets/ExcludeTreeView.vala
     Widgets/IncludeTreeView.vala
-    Widgets/ServiceItem.vala
-    Widgets/ServiceList.vala
 
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES

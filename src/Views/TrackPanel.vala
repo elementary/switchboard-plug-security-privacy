@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.TrackPanel : ServicePanel {
+public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     private Widgets.ClearUsagePopover remove_popover;
 
     public TrackPanel () {
@@ -81,9 +81,26 @@ public class SecurityPrivacy.TrackPanel : ServicePanel {
                 privacy_settings.set_boolean ("remember-recent-files", !privacy_mode);
                 privacy_settings.set_boolean ("remember-app-usage", !privacy_mode);
             }
+
+            if (status_switch.active) {
+                status_type = Granite.SettingsPage.StatusType.SUCCESS;
+                status = _("Enabled");
+            } else {
+                status_type = Granite.SettingsPage.StatusType.OFFLINE;
+                status = _("Disabled");
+            }
         });
 
         status_switch.active = !blacklist.get_incognito ();
+
+        if (status_switch.active) {
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
+        } else {
+            warning ("Trying to set offline");
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
+        }
     }
 
     private string get_operating_system_name () {

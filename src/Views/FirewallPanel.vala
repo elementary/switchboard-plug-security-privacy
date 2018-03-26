@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.FirewallPanel : ServicePanel {
+public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private Gtk.Toolbar list_toolbar;
@@ -58,6 +58,15 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
                 view.sensitive = status_switch.active;
                 UFWHelpers.set_status (status_switch.active);
             }
+
+            if (status_switch.active) {
+                status_type = Granite.SettingsPage.StatusType.SUCCESS;
+                status = _("Enabled");
+            } else {
+                status_type = Granite.SettingsPage.StatusType.OFFLINE;
+                status = _("Disabled");
+            }
+
             show_rules ();
         });
 
