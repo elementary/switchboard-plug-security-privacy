@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-07-01 22:11+0000\n"
-"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
-"Language-Team: Danish <https://l10n.elementary.io/projects/switchboard"
+"PO-Revision-Date: 2018-03-25 00:09+0000\n"
+"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:46+0000\n"
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
-msgstr "Sikkerhed og Privatliv"
+msgstr "Sikkerhed og Fortrolighed"
 
 #: ../src/Plug.vala:44
 msgid "Configure firewall, screen lock, and activity information"
@@ -173,14 +173,12 @@ msgid "Out"
 msgstr "Ud"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "Porte"
+msgstr "%s Porte %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "Porte"
+msgstr "%s Port %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
@@ -188,7 +186,7 @@ msgstr "Aktiveret"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "Version"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -203,14 +201,12 @@ msgid "Direction"
 msgstr "Retning"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "Til:"
+msgstr "Til"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "Fra:"
+msgstr "Fra"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
@@ -222,11 +218,11 @@ msgstr "Protokol:"
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "Version:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "Begge"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
