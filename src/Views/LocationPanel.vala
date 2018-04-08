@@ -104,6 +104,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         disabled_frame.add (alert);
         disabled_stack.add_named (disabled_frame, "disabled");
+        disabled_frame.visible = true;
     }
 
     private void create_treeview () {
@@ -142,6 +143,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.shadow_type = Gtk.ShadowType.IN;
         scrolled.expand = true;
+        scrolled.visible = true;
         scrolled.add (tree_view);
         
         disabled_stack.add_named (scrolled, "enabled");
