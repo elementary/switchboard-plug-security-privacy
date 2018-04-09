@@ -71,35 +71,35 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
-        scrolled.visible = true;
         scrolled.add (tree_view);
 
-        var title = _("Location Services Are Disabled");
-        var description = ("%s\n%s\n%s".printf (
-                    _("While location services are disabled, location requests from apps will be automatically rejected."),
-                    _("The additional functionality that location access provides in those apps will be affected."),
-                    _("This will not prevent apps from trying to determine your location based on IP address.")));
+        var description = "%s\n%s\n%s".printf (
+            _("While location services are disabled, location requests from apps will be automatically rejected."),
+            _("The additional functionality that location access provides in those apps will be affected."),
+            _("This will not prevent apps from trying to determine your location based on IP address.")
+        );
 
-        var alert = new Granite.Widgets.AlertView (title, description, "");
-        alert.show_all ();
+        var alert = new Granite.Widgets.AlertView (
+            _("Location Services Are Disabled"),
+            description,
+            ""
+        );
 
         disabled_stack = new Gtk.Stack ();
-        disabled_stack.add_named (scrolled, "enabled");
         disabled_stack.add_named (alert, "disabled");
+        disabled_stack.add_named (scrolled, "enabled");
 
         var frame = new Gtk.Frame (null);
         frame.add (disabled_stack);
 
         content_area.add (frame);
 
-        update_stack_visible_child (); 
-        update_status_switch ();
+        update_status ();
 
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
 
         status_switch.notify["active"].connect (() => {
-            update_stack_visible_child ();
-            update_status_switch ();
+            update_status ();
         });
 
         tree_view.row_activated.connect ((path, column) => {
@@ -121,23 +121,18 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         });
     }
 
-    private void update_status_switch () {
+    private void update_status () {
         if (status_switch.active) {
+            disabled_stack.visible_child_name = "enabled";
+
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
             status = _("Enabled");
         } else {
-            warning ("Trying to set offline");
+            disabled_stack.visible_child_name = "disabled";
+
             status_type = Granite.SettingsPage.StatusType.OFFLINE;
             status = _("Disabled");
         }
-    }
-    
-    private void update_stack_visible_child () {
-        if (status_switch.active) {
-            disabled_stack.set_visible_child_name ("enabled");
-        } else {
-            disabled_stack.set_visible_child_name ("disabled");
-        }    
     }
 
     private void populate_app_treeview () {
