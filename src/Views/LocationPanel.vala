@@ -21,7 +21,6 @@
  */
 
 public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
-
     private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
 
     private GLib.Settings location_settings;
@@ -50,24 +49,79 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
     construct {
         location_settings = new GLib.Settings (LOCATION_AGENT_ID);
+        
+        list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool), typeof (string), typeof (string), typeof (string));
+
+        var celltoggle = new Gtk.CellRendererToggle ();
+
+        var cell = new Gtk.CellRendererText ();
+
+        var cellpixbuf = new Gtk.CellRendererPixbuf ();
+        cellpixbuf.stock_size = Gtk.IconSize.DND;
+
+        tree_view = new Gtk.TreeView.with_model (list_store);
+        tree_view.vexpand = true;
+        tree_view.headers_visible = false;
+        tree_view.activate_on_single_click = true;
+        tree_view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.AUTHORIZED);
+        tree_view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
+        tree_view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
+
+        populate_app_treeview ();
+
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.shadow_type = Gtk.ShadowType.IN;
+        scrolled.expand = true;
+        scrolled.visible = true;
+        scrolled.add (tree_view);
+
+        var title = _("Location Services Are Disabled");
+        var description = ("%s\n%s\n%s".printf (
+                    _("While location services are disabled, location requests from apps will be automatically rejected."),
+                    _("The additional functionality that location access provides in those apps will be affected."),
+                    _("This will not prevent apps from trying to determine your location based on IP address.")));
+
+        var alert = new Granite.Widgets.AlertView (title, description, "");
+        alert.show_all ();
+
+        var disabled_frame = new Gtk.Frame (null);
+        disabled_frame.expand = true;
+        disabled_frame.visible = true;
+        disabled_frame.add (alert);
+
         disabled_stack = new Gtk.Stack ();
-        
-        content_area.attach (disabled_stack, 0, 1, 3, 1);        
-        
-        create_treeview ();
-        create_disabled_panel ();
+        disabled_stack.add_named (scrolled, "enabled");
+        disabled_stack.add_named (disabled_frame, "disabled");
+
+        update_stack_visible_child (); 
+        update_status_switch ();
+
+        content_area.add (disabled_stack);
 
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
+
         status_switch.notify["active"].connect (() => {
             update_stack_visible_child ();
             update_status_switch ();
         });
+
+        tree_view.row_activated.connect ((path, column) => {
+            Value active;
+            Gtk.TreeIter iter;
+            list_store.get_iter (out iter, path);
+            list_store.get_value (iter, Columns.AUTHORIZED, out active);
+            var is_active = !active.get_boolean ();
+            list_store.set (iter, Columns.AUTHORIZED, is_active);
+            Value app_id;
+            list_store.get_value (iter, Columns.APP_ID, out app_id);
+
+            uint32 level = get_app_level (app_id.get_string ());
+            save_app_settings (app_id.get_string (), is_active, level);
+        });
+
         location_settings.changed.connect((key) => {
             populate_app_treeview ();
         });
-
-        update_stack_visible_child (); 
-        update_status_switch ();
     }
 
     private void update_status_switch () {
@@ -87,66 +141,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         } else {
             disabled_stack.set_visible_child_name ("disabled");
         }    
-    }
-
-    private void create_disabled_panel () {
-        var disabled_frame = new Gtk.Frame (null);
-        disabled_frame.expand = true;
-
-        var title = _("Location Services Are Disabled");
-        var description = ("%s\n%s\n%s".printf (
-                    _("While location services are disabled, location requests from apps will be automatically rejected."),
-                    _("The additional functionality that location access provides in those apps will be affected."),
-                    _("This will not prevent apps from trying to determine your location based on IP address.")));
-
-        var alert = new Granite.Widgets.AlertView (title, description, "");
-        alert.show_all ();
-
-        disabled_frame.add (alert);
-        disabled_stack.add_named (disabled_frame, "disabled");
-        disabled_frame.visible = true;
-    }
-
-    private void create_treeview () {
-        list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool),
-                                        typeof (string), typeof (string), typeof (string));
-
-        tree_view = new Gtk.TreeView.with_model (list_store);
-        tree_view.vexpand = true;
-        tree_view.headers_visible = false;
-        tree_view.activate_on_single_click = true;
-
-        var celltoggle = new Gtk.CellRendererToggle ();
-        tree_view.row_activated.connect ((path, column) => {
-            Value active;
-            Gtk.TreeIter iter;
-            list_store.get_iter (out iter, path);
-            list_store.get_value (iter, Columns.AUTHORIZED, out active);
-            var is_active = !active.get_boolean ();
-            list_store.set (iter, Columns.AUTHORIZED, is_active);
-            Value app_id;
-            list_store.get_value (iter, Columns.APP_ID, out app_id);
-
-            uint32 level = get_app_level (app_id.get_string ());
-            save_app_settings (app_id.get_string (), is_active, level);
-        });
-
-        var cell = new Gtk.CellRendererText ();
-        var cellpixbuf = new Gtk.CellRendererPixbuf ();
-        cellpixbuf.stock_size = Gtk.IconSize.DND;
-        tree_view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.AUTHORIZED);
-        tree_view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
-        tree_view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
-
-        populate_app_treeview ();
-
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.shadow_type = Gtk.ShadowType.IN;
-        scrolled.expand = true;
-        scrolled.visible = true;
-        scrolled.add (tree_view);
-        
-        disabled_stack.add_named (scrolled, "enabled");
     }
 
     private void populate_app_treeview () {
