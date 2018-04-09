@@ -1,6 +1,6 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2014 elementary LLC. ((http://launchpad.net/switchboard-plug-security-privacy)
+ * Copyright (c) 2014-2018 elementary LLC. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.FirewallPanel : ServicePanel {
+public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private Gtk.Toolbar list_toolbar;
@@ -58,6 +58,16 @@ public class SecurityPrivacy.FirewallPanel : ServicePanel {
                 view.sensitive = status_switch.active;
                 UFWHelpers.set_status (status_switch.active);
             }
+
+            if (status_switch.active) {
+                status_type = Granite.SettingsPage.StatusType.SUCCESS;
+                status = _("Enabled");
+            } else {
+                warning ("Trying to set offline");
+                status_type = Granite.SettingsPage.StatusType.OFFLINE;
+                status = _("Disabled");
+            }
+
             show_rules ();
         });
 
