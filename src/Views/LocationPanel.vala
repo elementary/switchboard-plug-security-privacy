@@ -71,6 +71,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
+        scrolled.visible = true;
         scrolled.add (tree_view);
 
         var alert = new Granite.Widgets.AlertView (
@@ -82,6 +83,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             ),
             ""
         );
+        alert.visible = true;
 
         disabled_stack = new Gtk.Stack ();
         disabled_stack.add_named (alert, "disabled");
@@ -92,9 +94,9 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         content_area.add (frame);
 
-        update_status ();
-
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
+
+        update_status ();
 
         status_switch.notify["active"].connect (() => {
             update_status ();
