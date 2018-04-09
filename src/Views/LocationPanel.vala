@@ -73,15 +73,13 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         scrolled.expand = true;
         scrolled.add (tree_view);
 
-        var description = "%s\n%s\n%s".printf (
-            _("While location services are disabled, location requests from apps will be automatically rejected."),
-            _("The additional functionality that location access provides in those apps will be affected."),
-            _("This will not prevent apps from trying to determine your location based on IP address.")
-        );
-
         var alert = new Granite.Widgets.AlertView (
             _("Location Services Are Disabled"),
-            description,
+            "%s\n%s\n%s".printf (
+                _("While location services are disabled, location requests from apps will be automatically rejected."),
+                _("The additional functionality that location access provides in those apps will be affected."),
+                _("This will not prevent apps from trying to determine your location based on IP address.")
+            ),
             ""
         );
 
