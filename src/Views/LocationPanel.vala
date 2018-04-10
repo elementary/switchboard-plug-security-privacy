@@ -21,7 +21,6 @@
  */
 
 public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
-
     private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
 
     private GLib.Settings location_settings;
@@ -50,73 +49,59 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
     construct {
         location_settings = new GLib.Settings (LOCATION_AGENT_ID);
-        disabled_stack = new Gtk.Stack ();
         
-        content_area.attach (disabled_stack, 0, 1, 3, 1);        
-        
-        create_treeview ();
-        create_disabled_panel ();
+        list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool), typeof (string), typeof (string), typeof (string));
 
-        location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
-        status_switch.notify["active"].connect (() => {
-            update_stack_visible_child ();
-            update_status_switch ();
-        });
-        location_settings.changed.connect((key) => {
-            populate_app_treeview ();
-        });
+        var celltoggle = new Gtk.CellRendererToggle ();
 
-        update_stack_visible_child (); 
-        update_status_switch ();
-    }
+        var cell = new Gtk.CellRendererText ();
 
-    private void update_status_switch () {
-        if (status_switch.active) {
-            status_type = Granite.SettingsPage.StatusType.SUCCESS;
-            status = _("Enabled");
-        } else {
-            warning ("Trying to set offline");
-            status_type = Granite.SettingsPage.StatusType.OFFLINE;
-            status = _("Disabled");
-        }
-    }
-    
-    private void update_stack_visible_child () {
-        if (status_switch.active) {
-            disabled_stack.set_visible_child_name ("enabled");
-        } else {
-            disabled_stack.set_visible_child_name ("disabled");
-        }    
-    }
-
-    private void create_disabled_panel () {
-        var disabled_frame = new Gtk.Frame (null);
-        disabled_frame.expand = true;
-
-        var title = _("Location Services Are Disabled");
-        var description = ("%s\n%s\n%s".printf (
-                    _("While location services are disabled, location requests from apps will be automatically rejected."),
-                    _("The additional functionality that location access provides in those apps will be affected."),
-                    _("This will not prevent apps from trying to determine your location based on IP address.")));
-
-        var alert = new Granite.Widgets.AlertView (title, description, "");
-        alert.show_all ();
-
-        disabled_frame.add (alert);
-        disabled_stack.add_named (disabled_frame, "disabled");
-        disabled_frame.visible = true;
-    }
-
-    private void create_treeview () {
-        list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool),
-                                        typeof (string), typeof (string), typeof (string));
+        var cellpixbuf = new Gtk.CellRendererPixbuf ();
+        cellpixbuf.stock_size = Gtk.IconSize.DND;
 
         tree_view = new Gtk.TreeView.with_model (list_store);
         tree_view.vexpand = true;
         tree_view.headers_visible = false;
         tree_view.activate_on_single_click = true;
+        tree_view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.AUTHORIZED);
+        tree_view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
+        tree_view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
 
-        var celltoggle = new Gtk.CellRendererToggle ();
+        populate_app_treeview ();
+
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.expand = true;
+        scrolled.visible = true;
+        scrolled.add (tree_view);
+
+        var alert = new Granite.Widgets.AlertView (
+            _("Location Services Are Disabled"),
+            "%s\n%s\n%s".printf (
+                _("While location services are disabled, location requests from apps will be automatically rejected."),
+                _("The additional functionality that location access provides in those apps will be affected."),
+                _("This will not prevent apps from trying to determine your location based on IP address.")
+            ),
+            ""
+        );
+        alert.visible = true;
+
+        disabled_stack = new Gtk.Stack ();
+        disabled_stack.add_named (alert, "disabled");
+        disabled_stack.add_named (scrolled, "enabled");
+
+        var frame = new Gtk.Frame (null);
+        frame.add (disabled_stack);
+
+        content_area.add (frame);
+
+        location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
+
+        update_status ();
+
+        status_switch.notify["active"].connect (() => {
+            update_status ();
+        });
+
         tree_view.row_activated.connect ((path, column) => {
             Value active;
             Gtk.TreeIter iter;
@@ -131,22 +116,23 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             save_app_settings (app_id.get_string (), is_active, level);
         });
 
-        var cell = new Gtk.CellRendererText ();
-        var cellpixbuf = new Gtk.CellRendererPixbuf ();
-        cellpixbuf.stock_size = Gtk.IconSize.DND;
-        tree_view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.AUTHORIZED);
-        tree_view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
-        tree_view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
+        location_settings.changed.connect((key) => {
+            populate_app_treeview ();
+        });
+    }
 
-        populate_app_treeview ();
+    private void update_status () {
+        if (status_switch.active) {
+            disabled_stack.visible_child_name = "enabled";
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.shadow_type = Gtk.ShadowType.IN;
-        scrolled.expand = true;
-        scrolled.visible = true;
-        scrolled.add (tree_view);
-        
-        disabled_stack.add_named (scrolled, "enabled");
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
+        } else {
+            disabled_stack.visible_child_name = "disabled";
+
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
+        }
     }
 
     private void populate_app_treeview () {
