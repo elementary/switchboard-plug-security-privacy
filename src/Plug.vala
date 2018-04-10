@@ -44,7 +44,7 @@ namespace SecurityPrivacy {
 
         public Plug () {
             Object (category: Category.PERSONAL,
-                    code_name: Build.PLUGCODENAME,
+                    code_name: "pantheon-security-privacy",
                     display_name: _("Security & Privacy"),
                     description: _("Configure firewall, screen lock, and activity information"),
                     icon: "preferences-system-privacy",
