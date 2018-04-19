@@ -170,7 +170,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             image.pixel_size = 32;
 
             var app_name = new Gtk.Label (app_info.get_display_name ());
-            app_name.get_style_context ().add_class ("h3");
+            app_name.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
             app_name.xalign = 0;
 
             var app_comment = new Gtk.Label (app_info.get_description ());
