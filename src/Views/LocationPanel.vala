@@ -204,7 +204,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
 
         public void on_active_changed () {
-            active_switch.active = !active_switch.active;
+            active_switch.activate ();
         }
     }
 }
