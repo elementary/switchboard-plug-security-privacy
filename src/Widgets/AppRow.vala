@@ -20,8 +20,9 @@
 *              Corentin Noël <corentin@elementaryos.org>
 */
 
-public class AppRow : Gtk.Grid {
+public class AppRow : Gtk.ListBoxRow {
     public DesktopAppInfo app_info { get; construct; }
+    protected Gtk.Grid main_grid;
 
     public AppRow (DesktopAppInfo app_info) {
         Object (app_info: app_info);
@@ -41,14 +42,16 @@ public class AppRow : Gtk.Grid {
         app_comment.use_markup = true;
         app_comment.ellipsize = Pango.EllipsizeMode.END;
 
-        margin = 6;
-        margin_end = 12;
-        margin_start = 10; // Account for icon position on the canvas
-        column_spacing = 12;
-        attach (image, 0, 0, 1, 2);
-        attach (app_name, 1, 0, 1, 1);
-        attach (app_comment, 1, 1, 1, 1);
+        main_grid = new Gtk.Grid ();
+        main_grid.margin = 6;
+        main_grid.margin_end = 12;
+        main_grid.margin_start = 10; // Account for icon position on the canvas
+        main_grid.column_spacing = 12;
+        main_grid.attach (image, 0, 0, 1, 2);
+        main_grid.attach (app_name, 1, 0, 1, 1);
+        main_grid.attach (app_comment, 1, 1, 1, 1);
 
+        add (main_grid);
         show_all ();
     }
 

@@ -160,39 +160,28 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         return false;
     }
 
-    private class LocationRow : Gtk.ListBoxRow {
+    private class LocationRow : AppRow {
         public signal void active_changed (bool active);
-
+        public bool authed { get; construct; }
         private Gtk.Switch active_switch;
 
         public LocationRow (DesktopAppInfo app_info, bool authed) {
-            var image = new Gtk.Image.from_icon_name (app_info.get_icon ().to_string (), Gtk.IconSize.DND);
-            image.pixel_size = 32;
+            Object (
+                app_info: app_info,
+                authed: authed
+            );
+        }
 
-            var app_name = new Gtk.Label (app_info.get_display_name ());
-            app_name.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-            app_name.xalign = 0;
-
-            var app_comment = new Gtk.Label (app_info.get_description ());
-            app_comment.ellipsize = Pango.EllipsizeMode.END;
-            app_comment.hexpand = true;
-            app_comment.xalign = 0;
-
+        construct {
             active_switch = new Gtk.Switch ();
+            active_switch.halign = Gtk.Align.END;
+            active_switch.hexpand = true;
             active_switch.tooltip_text = _("Allow %s to use location services".printf (app_info.get_display_name ()));
             active_switch.valign = Gtk.Align.CENTER;
             active_switch.active = authed;
 
-            var main_grid = new Gtk.Grid ();
             main_grid.margin = 6;
-            main_grid.column_spacing = 12;
-            main_grid.attach (image, 0, 0, 1, 2);
-            main_grid.attach (app_name, 1, 0, 1, 1);
-            main_grid.attach (app_comment, 1, 1, 1, 1);
             main_grid.attach (active_switch, 2, 0, 1, 2);
-
-            add (main_grid);
-            show_all ();
 
             activate.connect (() => {
                 active_switch.active = false;
