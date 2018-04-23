@@ -182,6 +182,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
             main_grid.margin = 6;
             main_grid.attach (active_switch, 2, 0, 1, 2);
+            show_all ();
 
             activate.connect (() => {
                 active_switch.active = false;
