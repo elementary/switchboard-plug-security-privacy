@@ -26,8 +26,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     private GLib.Settings location_settings;
     private Variant remembered_apps;
     private VariantDict remembered_apps_dict;
-    private Gtk.ListStore list_store;
-    private Gtk.TreeView tree_view;
+    private Gtk.ListBox listbox;
     private Gtk.Stack disabled_stack;
 
     private enum Columns {
@@ -49,30 +48,16 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
     construct {
         location_settings = new GLib.Settings (LOCATION_AGENT_ID);
-        
-        list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool), typeof (string), typeof (string), typeof (string));
 
-        var celltoggle = new Gtk.CellRendererToggle ();
+        listbox = new Gtk.ListBox ();
+        listbox.activate_on_single_click = true;
 
-        var cell = new Gtk.CellRendererText ();
-
-        var cellpixbuf = new Gtk.CellRendererPixbuf ();
-        cellpixbuf.stock_size = Gtk.IconSize.DND;
-
-        tree_view = new Gtk.TreeView.with_model (list_store);
-        tree_view.vexpand = true;
-        tree_view.headers_visible = false;
-        tree_view.activate_on_single_click = true;
-        tree_view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.AUTHORIZED);
-        tree_view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
-        tree_view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
-
-        populate_app_treeview ();
+        populate_app_listbox ();
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.expand = true;
         scrolled.visible = true;
-        scrolled.add (tree_view);
+        scrolled.add (listbox);
 
         var alert = new Granite.Widgets.AlertView (
             _("Location Services Are Disabled"),
@@ -102,22 +87,12 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             update_status ();
         });
 
-        tree_view.row_activated.connect ((path, column) => {
-            Value active;
-            Gtk.TreeIter iter;
-            list_store.get_iter (out iter, path);
-            list_store.get_value (iter, Columns.AUTHORIZED, out active);
-            var is_active = !active.get_boolean ();
-            list_store.set (iter, Columns.AUTHORIZED, is_active);
-            Value app_id;
-            list_store.get_value (iter, Columns.APP_ID, out app_id);
-
-            uint32 level = get_app_level (app_id.get_string ());
-            save_app_settings (app_id.get_string (), is_active, level);
+        listbox.row_activated.connect ((row) => {
+            ((LocationRow) row).on_active_changed ();
         });
 
         location_settings.changed.connect((key) => {
-            populate_app_treeview ();
+            populate_app_listbox ();
         });
     }
 
@@ -135,28 +110,27 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
     }
 
-    private void populate_app_treeview () {
+    private void populate_app_listbox  () {
         load_remembered_apps ();
-        Gtk.TreePath? current_selection;
-        Gtk.TreeViewColumn? current_column;
-        tree_view.get_cursor (out current_selection, out current_column);
 
-        list_store.clear ();
+        foreach (var row in listbox.get_children ()) {
+            listbox.remove (row);
+        }
+
         foreach (var app in remembered_apps) {
             string app_id = app.get_child_value (0).get_string ();
             bool authed = app.get_child_value (1).get_variant ().get_child_value (0).get_boolean ();
             var app_info = new DesktopAppInfo (app_id + ".desktop");
-            add_liststore_item (list_store, authed, app_info.get_display_name (), app_info.get_icon ().to_string (), app_id);
+
+            var app_row = new LocationRow (app_info, authed);
+
+            app_row.active_changed.connect ((active) => {
+                uint32 level = get_app_level (app_id);
+                save_app_settings (app_id, active, level);
+            });
+
+            listbox.add (app_row);
         }
-
-        tree_view.set_cursor (current_selection, current_column, false);
-    }
-
-    private void add_liststore_item (Gtk.ListStore list_store, bool active, string name, string icon, string app_id) {
-        Gtk.TreeIter iter;
-        list_store.append (out iter);
-        list_store.set (iter, Columns.AUTHORIZED, active, Columns.NAME, name,
-                        Columns.ICON, icon, Columns.APP_ID, app_id);
     }
 
 	private void load_remembered_apps () {
@@ -184,5 +158,43 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
 
         return false;
+    }
+
+    private class LocationRow : AppRow {
+        public signal void active_changed (bool active);
+        public bool authed { get; construct; }
+        private Gtk.Switch active_switch;
+
+        public LocationRow (DesktopAppInfo app_info, bool authed) {
+            Object (
+                app_info: app_info,
+                authed: authed
+            );
+        }
+
+        construct {
+            active_switch = new Gtk.Switch ();
+            active_switch.halign = Gtk.Align.END;
+            active_switch.hexpand = true;
+            active_switch.tooltip_text = _("Allow %s to use location services".printf (app_info.get_display_name ()));
+            active_switch.valign = Gtk.Align.CENTER;
+            active_switch.active = authed;
+
+            main_grid.margin = 6;
+            main_grid.attach (active_switch, 2, 0, 1, 2);
+            show_all ();
+
+            activate.connect (() => {
+                active_switch.active = false;
+            });
+
+            active_switch.notify ["active"].connect (() => {
+                active_changed (active_switch.active);
+            });
+        }
+
+        public void on_active_changed () {
+            active_switch.activate ();
+        }
     }
 }
