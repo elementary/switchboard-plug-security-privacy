@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-04-20 00:12+0000\n"
+"PO-Revision-Date: 2018-04-27 00:03+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/cs/>\n"
@@ -26,7 +26,7 @@ msgstr "Bezpečnost a soukromí"
 
 #: ../src/Plug.vala:44
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "Nastavuj firewall, zámek obrazovky a informace o aktivitě"
 
 #: ../src/Plug.vala:85
 msgid "Some settings require administrator rights to be changed"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
 msgid "History"
-msgstr ""
+msgstr "Historie"
 
 #: ../src/Views/TrackPanel.vala:35
 msgid ""
@@ -89,11 +89,11 @@ msgstr ""
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "Historie je vypnutá"
 
 #: ../src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr ""
+msgstr "Vymazat historii…"
 
 #: ../src/Views/TrackPanel.vala:90
 msgid "Your system"
@@ -127,11 +127,11 @@ msgstr ""
 
 #: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Uzamknout v režimu spánku:"
 
 #: ../src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Uzamknout při vypnutí obrazovky:"
 
 #: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
 #: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
@@ -163,14 +163,12 @@ msgid "Out"
 msgstr "Ven"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
 msgid "%s Ports %s"
-msgstr "Porty"
+msgstr "%s porty %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
 msgid "%s Port %s"
-msgstr "Porty"
+msgstr "%s port %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
@@ -178,7 +176,7 @@ msgstr "Zapnuto"
 
 #: ../src/Views/FirewallPanel.vala:270
 msgid "Version"
-msgstr ""
+msgstr "Verze"
 
 #: ../src/Views/FirewallPanel.vala:271
 msgid "Action"
@@ -212,7 +210,7 @@ msgstr "Protokol:"
 
 #: ../src/Views/FirewallPanel.vala:329
 msgid "Version:"
-msgstr ""
+msgstr "Verze:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
@@ -308,15 +306,15 @@ msgstr ""
 
 #: ../src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr ""
+msgstr "Uplynulá hodina"
 
 #: ../src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr ""
+msgstr "Poslední den"
 
 #: ../src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr ""
+msgstr "Poslední týden"
 
 #: ../src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
