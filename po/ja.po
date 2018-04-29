@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-03-07 00:01+0000\n"
+"PO-Revision-Date: 2018-05-03 08:01+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/ja/>\n"
@@ -236,7 +236,7 @@ msgstr "ルールの追加"
 
 #: ../src/Widgets/IncludeTreeView.vala:76
 msgid "Data Sources:"
-msgstr "データーソース:"
+msgstr "データソース:"
 
 #: ../src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
@@ -300,7 +300,7 @@ msgstr "削除"
 
 #: ../src/Widgets/ExcludeTreeView.vala:128
 msgid "Do not collect data from the following:"
-msgstr "以下からデータを収集しない："
+msgstr "以下からデータを収集しない:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
@@ -308,15 +308,15 @@ msgstr "システム収集ファイルとアプリケーションの使用状況
 
 #: ../src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "過去 １ 時間"
+msgstr "過去1時間"
 
 #: ../src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr "過去 １ 日"
+msgstr "過去1日"
 
 #: ../src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr "過去 １ 週間"
+msgstr "過去1週間"
 
 #: ../src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
