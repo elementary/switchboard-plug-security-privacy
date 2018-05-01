@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2017-06-12 06:42+0000\n"
+"PO-Revision-Date: 2018-05-04 00:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
 #: ../src/Plug.vala:43
@@ -273,7 +273,7 @@ msgstr "Videot"
 
 #: ../src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
-msgstr "Ei käytössä"
+msgstr "Pois käytöstä"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
