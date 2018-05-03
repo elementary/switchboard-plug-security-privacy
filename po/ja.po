@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-05-03 08:01+0000\n"
+"PO-Revision-Date: 2018-05-03 14:26+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/ja/>\n"
@@ -168,11 +168,11 @@ msgstr "出力"
 
 #: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
 msgid "%s Ports %s"
-msgstr ""
+msgstr "%s ポート %s"
 
 #: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
 msgid "%s Port %s"
-msgstr ""
+msgstr "%s ポート %s"
 
 #: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
