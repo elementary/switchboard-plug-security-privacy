@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-03-25 00:09+0000\n"
+"PO-Revision-Date: 2018-05-07 00:03+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/da/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
-msgstr "Sikkerhed og Fortrolighed"
+msgstr "Sikkerhed & Privatliv"
 
 #: ../src/Plug.vala:44
 msgid "Configure firewall, screen lock, and activity information"
