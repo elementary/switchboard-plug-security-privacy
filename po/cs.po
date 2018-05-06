@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-04-27 00:03+0000\n"
+"PO-Revision-Date: 2018-05-07 00:03+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/cs/>\n"
@@ -136,7 +136,7 @@ msgstr "Uzamknout při vypnutí obrazovky:"
 #: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
 #: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
 msgid "Unknown"
-msgstr "Neznámý"
+msgstr "Neznámé"
 
 #: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
 msgid "Allow"
