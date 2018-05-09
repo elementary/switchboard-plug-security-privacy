@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-03-08 17:50+0000\n"
-"Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
+"PO-Revision-Date: 2018-05-10 00:09+0000\n"
+"Last-Translator: martin fromont <martin.fromont1@gmail.com>\n"
 "Language-Team: English (Canada) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
 "security-privacy/en_CA/>\n"
@@ -145,7 +145,7 @@ msgstr "Lock after screen turns off:"
 #: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
 #: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
 msgid "Unknown"
-msgstr "Unknown"
+msgstr "Inconnu"
 
 #: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
 msgid "Allow"
