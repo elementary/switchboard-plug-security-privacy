@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-05-07 00:03+0000\n"
+"PO-Revision-Date: 2018-05-11 00:06+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/cs/>\n"
@@ -49,11 +49,11 @@ msgstr "Firewall"
 #: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
 #: ../src/Widgets/ServiceList.vala:49
 msgid "Location Services"
-msgstr ""
+msgstr "Služby určování polohy"
 
 #: ../src/Plug.vala:188
 msgid "Privacy Mode"
-msgstr ""
+msgstr "Soukromý režim"
 
 #: ../src/Views/TrackPanel.vala:28
 msgid ""
@@ -62,8 +62,8 @@ msgid ""
 "account, you may wish to limit which items are recorded."
 msgstr ""
 "Tento operační systém může sbírat užitečné statistiky o používání souborů a "
-"aplikací. Tyto statistiky poskytují vylepšené funkce. Pokud tento účet "
-"sdílíte  s ostatními lidmi, potom si možná přejete omezit některé záznamy."
+"aplikací pro zajištění vylepšení funkcí. Pokud tento účet sdílíte  s "
+"ostatními lidmi, potom si možná přejete omezit některé záznamy."
 
 #: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
 msgid "History"
@@ -74,18 +74,20 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s již nebude v budoucnu sbírat data nebo statistky o používání souborů a "
+"aplikací."
 
 #: ../src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
-msgstr "Doplňkové funkce budou ovlivněny."
+msgstr "Doplňkové funkce, které tato data umožňují, budou ovlivněny."
 
 #: ../src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
-"Toto nastavení nezabrání aplikacím v uchovávání vlastních dat jako například "
-"historie prohlížení."
+"Toto nastavení nezabrání aplikacím v uchovávání jejich vlastních dat jako "
+"například historie prohlížení."
 
 #: ../src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
@@ -101,19 +103,23 @@ msgstr "Váš systém"
 
 #: ../src/Views/LocationPanel.vala:79
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Služby určování polohy jsou vypnuty"
 
 #: ../src/Views/LocationPanel.vala:81
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Když jsou služby určování polohy vypnuty, požadavky určení polohy z aplikací "
+"budou automaticky odmítány."
 
 #: ../src/Views/LocationPanel.vala:82
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Doplňkové funkce, které v těchto aplikacích určení polohy umožňuje, budou "
+"ovlivněny."
 
 #: ../src/Views/LocationPanel.vala:83
 msgid ""
