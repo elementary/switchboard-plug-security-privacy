@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-03-20 00:12+0000\n"
+"PO-Revision-Date: 2018-05-12 00:12+0000\n"
 "Last-Translator: Anand Kumar <anand@anandkumar.net>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/hi/>\n"
@@ -131,7 +131,7 @@ msgstr ""
 #: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
 #: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
 msgid "Unknown"
-msgstr ""
+msgstr "अज्ञात"
 
 #: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
 msgid "Allow"
@@ -281,7 +281,7 @@ msgstr ""
 
 #: ../src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"
-msgstr ""
+msgstr "रद्द"
 
 #: ../src/Widgets/ExcludeTreeView.vala:74
 msgid "Add"
