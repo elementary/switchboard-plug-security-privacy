@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-05-07 00:03+0000\n"
+"PO-Revision-Date: 2018-05-13 00:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/ja/>\n"
@@ -200,7 +200,7 @@ msgstr "終点"
 
 #: ../src/Views/FirewallPanel.vala:275
 msgid "From"
-msgstr "期間の起点"
+msgstr "起点"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
@@ -320,7 +320,7 @@ msgstr "過去1週間"
 
 #: ../src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
-msgstr "期間の起点:"
+msgstr "開始:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
@@ -328,7 +328,7 @@ msgstr "全期間"
 
 #: ../src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "終点:"
+msgstr "終了:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
