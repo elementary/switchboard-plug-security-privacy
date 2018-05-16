@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-05-16 14:00+0000\n"
+"PO-Revision-Date: 2018-05-17 00:04+0000\n"
 "Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/cs/>\n"
@@ -22,11 +22,11 @@ msgstr ""
 
 #: ../src/Plug.vala:43
 msgid "Security & Privacy"
-msgstr "Bezpečnost a soukromí"
+msgstr "Bezpečnost & Soukromí"
 
 #: ../src/Plug.vala:44
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Nastavuj firewall, zámek obrazovky a informace o aktivitě"
+msgstr "Nastavte firewall, zámek obrazovky a informace o aktivitě"
 
 #: ../src/Plug.vala:85
 msgid "Some settings require administrator rights to be changed"
