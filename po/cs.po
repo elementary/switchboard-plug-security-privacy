@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-05-11 00:06+0000\n"
-"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
+"PO-Revision-Date: 2018-05-16 14:00+0000\n"
+"Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/cs/>\n"
 "Language: cs\n"
@@ -126,10 +126,11 @@ msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Toto nezabrání aplikacím v pokusech zjistit vaši polohu na základě IP adresy."
 
 #: ../src/Views/LocationPanel.vala:94
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Povolte aplikacím níže zjistit vaši lokaci"
 
 #: ../src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -197,14 +198,12 @@ msgid "Direction"
 msgstr "Směr"
 
 #: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
 msgid "To"
-msgstr "Do:"
+msgstr "Do"
 
 #: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
 msgid "From"
-msgstr "Od:"
+msgstr "Od"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
@@ -220,7 +219,7 @@ msgstr "Verze:"
 
 #: ../src/Views/FirewallPanel.vala:334
 msgid "Both"
-msgstr ""
+msgstr "Obojí"
 
 #: ../src/Views/FirewallPanel.vala:337
 msgid "Direction:"
@@ -276,7 +275,7 @@ msgstr "Vypnuto"
 
 #: ../src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr ""
+msgstr "Vyhledat aplikaci"
 
 #: ../src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
@@ -309,6 +308,7 @@ msgstr "Nesbírat data z následujících:"
 #: ../src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
+"Odstranit soubory shromažďované systémem a statistiky využívání aplikace z:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
@@ -328,7 +328,7 @@ msgstr "Od:"
 
 #: ../src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
-msgstr ""
+msgstr "Celá věčnost"
 
 #: ../src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
