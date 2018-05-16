@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-05-13 00:11+0000\n"
+"PO-Revision-Date: 2018-05-17 00:04+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/ja/>\n"
@@ -196,11 +196,11 @@ msgstr "方向"
 
 #: ../src/Views/FirewallPanel.vala:274
 msgid "To"
-msgstr "終点"
+msgstr "宛先"
 
 #: ../src/Views/FirewallPanel.vala:275
 msgid "From"
-msgstr "起点"
+msgstr "送信元"
 
 #: ../src/Views/FirewallPanel.vala:313
 msgid "Action:"
