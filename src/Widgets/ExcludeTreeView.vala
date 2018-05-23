@@ -89,6 +89,8 @@ public class ExcludeTreeView : Gtk.Grid {
             Gtk.TreePath path;
             Gtk.TreeViewColumn column;
             view.get_cursor (out path, out column);
+            if (path == null)
+                return;
             Gtk.TreeIter iter;
             list_store.get_iter (out iter, path);
             Value is_app;
@@ -134,7 +136,10 @@ public class ExcludeTreeView : Gtk.Grid {
         add (frame);
 
         view.cursor_changed.connect (() => {
-            remove_button.sensitive = true;
+            Gtk.TreePath path;
+            Gtk.TreeViewColumn column;
+            view.get_cursor (out path, out column);
+            remove_button.sensitive = (path != null);
         });
 
         Gtk.TreeIter iter;
