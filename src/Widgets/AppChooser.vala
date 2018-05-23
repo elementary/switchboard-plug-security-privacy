@@ -78,8 +78,8 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
 
     int sort_function (Gtk.ListBoxRow list_box_row_1,
                        Gtk.ListBoxRow list_box_row_2) {
-        var row_1 = list_box_row_1.get_child () as AppRow;
-        var row_2 = list_box_row_2.get_child () as AppRow;
+        var row_1 = list_box_row_1 as AppRow;
+        var row_2 = list_box_row_2 as AppRow;
 
         var name_1 = row_1.app_info.get_display_name ();
         var name_2 = row_2.app_info.get_display_name ();
@@ -88,7 +88,7 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
     }
 
     bool filter_function (Gtk.ListBoxRow list_box_row) {
-        var app_row = list_box_row.get_child () as AppRow;
+        var app_row = list_box_row as AppRow;
         string name = app_row.app_info.get_display_name ();
         if (name == null)
             name = app_row.app_info.get_name ();
@@ -101,7 +101,7 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
     }
 
     void on_app_selected (Gtk.ListBoxRow list_box_row) {
-        var app_row = list_box_row.get_child () as AppRow;
+        var app_row = list_box_row as AppRow;
         app_chosen (app_row.app_info);
         hide ();
     }
