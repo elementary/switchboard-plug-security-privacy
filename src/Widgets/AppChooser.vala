@@ -66,10 +66,7 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
 
     public void init_list () {
         foreach (var app_info in AppInfo.get_all ()) {
-            if (app_info.should_show () == false)
-                continue;
-
-            if (app_info is DesktopAppInfo) {
+            if (app_info is DesktopAppInfo && app_info.should_show ()) {
                 var app_row = new AppRow ((DesktopAppInfo)app_info);
                 list.prepend (app_row);
             }
