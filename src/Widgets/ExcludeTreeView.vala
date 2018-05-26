@@ -91,6 +91,7 @@ public class ExcludeTreeView : Gtk.Grid {
             view.get_cursor (out path, out column);
             if (path == null)
                 return;
+
             Gtk.TreeIter iter;
             list_store.get_iter (out iter, path);
             Value is_app;
