@@ -85,7 +85,7 @@ namespace SecurityPrivacy {
             grid.attach (stack, 0, 3, 1, 1);
 
             try {
-                var permission = new Polkit.Permission.sync ("org.pantheon.security-privacy", new Polkit.UnixProcess (Posix.getpid ()));
+                var permission = new Polkit.Permission.sync ("io.elementary.switchboard.security-privacy", new Polkit.UnixProcess (Posix.getpid ()));
 
                 var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
 
