@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-05-31 07:26+0000\n"
+"PO-Revision-Date: 2018-06-01 00:08+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/hu/>\n"
@@ -252,7 +252,7 @@ msgstr "Dokumentumok"
 
 #: ../src/Widgets/IncludeTreeView.vala:84
 msgid "Music"
-msgstr "Zene"
+msgstr "Zenék"
 
 #: ../src/Widgets/IncludeTreeView.vala:85
 msgid "Pictures"
