@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-25 09:18-0700\n"
-"PO-Revision-Date: 2018-06-01 00:08+0000\n"
+"PO-Revision-Date: 2018-06-02 00:06+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/hu/>\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../src/Plug.vala:85
 msgid "Some settings require administrator rights to be changed"
-msgstr "Egyes beállítások megváltoztatása adminisztrátori jogokat igényel"
+msgstr "Egyes beállítások megváltoztatása rendszergazdai jogokat igényel"
 
 #: ../src/Plug.vala:126 ../src/Plug.vala:186
 msgid "Privacy"
@@ -75,7 +75,7 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
-"%s nem tárol további adatokat vagy statisztikákat a fájlok és az "
+"A(z) %s nem tárol további adatokat vagy statisztikákat a fájlok és az "
 "alkalmazások használatáról."
 
 #: ../src/Views/TrackPanel.vala:36
