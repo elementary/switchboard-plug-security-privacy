@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 09:18-0700\n"
+"POT-Creation-Date: 2018-06-04 09:37-0500\n"
 "PO-Revision-Date: 2018-05-29 00:13+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
-"Language-Team: French <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-security-privacy/fr/>\n"
+"Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-security-privacy/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,44 +20,164 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: ../src/Plug.vala:43
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "Sécurité & vie privée"
 
-#: ../src/Plug.vala:44
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 "Configurer le pare-feu, l'écran de verouillage et les informations d'activité"
 
-#: ../src/Plug.vala:85
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "La modification de certains paramètres nécessite les droits d'administrateur"
 
-#: ../src/Plug.vala:126 ../src/Plug.vala:186
+#: src/Plug.vala:131 src/Plug.vala:173
 msgid "Privacy"
 msgstr "Confidentialité"
 
-#: ../src/Plug.vala:127 ../src/Plug.vala:187 ../src/Plug.vala:188
-#: ../src/Views/LockPanel.vala:29 ../src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:132 src/Plug.vala:174 src/Views/LockPanel.vala:29
+#: src/Widgets/ServiceList.vala:31
 msgid "Locking"
 msgstr "Verrouillage"
 
-#: ../src/Plug.vala:128 ../src/Plug.vala:189 ../src/Views/FirewallPanel.vala:48
-#: ../src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:133 src/Plug.vala:175 src/Views/FirewallPanel.vala:48
+#: src/Widgets/ServiceList.vala:32
 msgid "Firewall"
 msgstr "Pare-feu"
 
-#: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
-#: ../src/Widgets/ServiceList.vala:49
+#: src/Plug.vala:137 src/Plug.vala:177 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:49
 msgid "Location Services"
 msgstr "Services de localisation"
 
-#: ../src/Plug.vala:188
-msgid "Privacy Mode"
-msgstr "Mode privé"
+#: src/Plug.vala:172 src/Views/TrackPanel.vala:30
+#: src/Widgets/ServiceList.vala:30
+msgid "History"
+msgstr "Historique"
 
-#: ../src/Views/TrackPanel.vala:28
+#: src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Authentification requise pour configurer le pare-feu"
+
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:104
+#: src/Widgets/ServiceItem.vala:32
+msgid "Enabled"
+msgstr "Activé"
+
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/LocationPanel.vala:109 src/Widgets/ServiceItem.vala:36
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+msgid "Unknown"
+msgstr "Inconnu"
+
+#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+msgid "Allow"
+msgstr "Autoriser"
+
+#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+msgid "Deny"
+msgstr "Refuser"
+
+#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+msgid "Reject"
+msgstr "Rejeter"
+
+#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+msgid "Limit"
+msgstr "Limiter"
+
+#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+msgid "In"
+msgstr "Entrant"
+
+#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+msgid "Out"
+msgstr "Sortant"
+
+#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#, c-format
+msgid "%s Ports %s"
+msgstr "%s Ports %s"
+
+#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#, c-format
+msgid "%s Port %s"
+msgstr "%s Port %s"
+
+#: src/Views/FirewallPanel.vala:280
+msgid "Version"
+msgstr "Version"
+
+#: src/Views/FirewallPanel.vala:281
+msgid "Action"
+msgstr "Action"
+
+#: src/Views/FirewallPanel.vala:282
+msgid "Protocol"
+msgstr "Protocole"
+
+#: src/Views/FirewallPanel.vala:283
+msgid "Direction"
+msgstr "Direction"
+
+#: src/Views/FirewallPanel.vala:284
+msgid "To"
+msgstr "Au"
+
+#: src/Views/FirewallPanel.vala:285
+msgid "From"
+msgstr "Du"
+
+#: src/Views/FirewallPanel.vala:323
+msgid "Action:"
+msgstr "Action :"
+
+#: src/Views/FirewallPanel.vala:332
+msgid "Protocol:"
+msgstr "Protocole :"
+
+#: src/Views/FirewallPanel.vala:339
+msgid "Version:"
+msgstr "Version :"
+
+#: src/Views/FirewallPanel.vala:344
+msgid "Both"
+msgstr "Les deux"
+
+#: src/Views/FirewallPanel.vala:347
+msgid "Direction:"
+msgstr "Direction :"
+
+#: src/Views/FirewallPanel.vala:354
+msgid "Ports:"
+msgstr "Ports :"
+
+#: src/Views/FirewallPanel.vala:358
+#, c-format
+msgid "%d or %d-%d"
+msgstr "%d ou %d-%d"
+
+#: src/Views/FirewallPanel.vala:360
+msgid "Add Rule"
+msgstr "Ajouter une règle"
+
+#: src/Views/LockPanel.vala:35
+msgid "Lock on sleep:"
+msgstr "Verrouiller en veille :"
+
+#: src/Views/LockPanel.vala:37
+msgid "Lock after screen turns off:"
+msgstr "Verrouiller après l'extinction de l'écran :"
+
+#: src/Views/TrackPanel.vala:28
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -68,11 +188,8 @@ msgstr ""
 "supplémentaires. Si d'autres personnes peuvent voir ou accéder à votre "
 "compte, vous pouvez limiter les éléments enregistrés."
 
-#: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
-msgid "History"
-msgstr "Historique"
-
-#: ../src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:35
+#, c-format
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
@@ -80,12 +197,12 @@ msgstr ""
 "%s ne retiendra plus de données ou statistiques concernant l'utilisation de "
 "fichiers et d'applications."
 
-#: ../src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
 msgstr ""
 "La fonctionnalité supplémentaire que cette donnée fournit sera affectée."
 
-#: ../src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -93,23 +210,27 @@ msgstr ""
 "Ceci n'empêchera pas les applications d'enregistrer leurs propres données "
 "d'utilisation telles que l'historique d'un navigateur."
 
-#: ../src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
 msgstr "L'historique est désactivé"
 
-#: ../src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:48
 msgid "Clear History…"
 msgstr "Effacer l'historique…"
 
-#: ../src/Views/TrackPanel.vala:90
+#: src/Views/TrackPanel.vala:94
 msgid "Your system"
 msgstr "Votre système"
 
-#: ../src/Views/LocationPanel.vala:79
+#: src/Views/LocationPanel.vala:43
+msgid "Allow the apps below to determine your location"
+msgstr "Autoriser les applications suivantes à déterminer votre localisation"
+
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
 msgstr "Les services de localisation sont désactivés"
 
-#: ../src/Views/LocationPanel.vala:81
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -117,7 +238,7 @@ msgstr ""
 "Lorsque les services de localisation sont désactivés, les requêtes de "
 "localisation émanant des applications sont rejetés automatiquement."
 
-#: ../src/Views/LocationPanel.vala:82
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
@@ -125,7 +246,7 @@ msgstr ""
 "Les fonctionnalités supplémentaires permises par l'accès à la localisation "
 "seront affectés."
 
-#: ../src/Views/LocationPanel.vala:83
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -133,239 +254,111 @@ msgstr ""
 "Ceci n'empêchera pas les applications d'essayer de déterminer votre "
 "localisation grâce à votre adresse IP."
 
-#: ../src/Views/LocationPanel.vala:94
-msgid "Allow the apps below to determine your location"
-msgstr "Autoriser les applications suivantes à déterminer votre localisation"
+#: src/Views/LocationPanel.vala:179
+#, fuzzy, c-format
+msgid "Allow %s to use location services"
+msgstr "Services de localisation"
 
-#: ../src/Views/LockPanel.vala:35
-msgid "Lock on sleep:"
-msgstr "Verrouiller en veille :"
-
-#: ../src/Views/LockPanel.vala:37
-msgid "Lock after screen turns off:"
-msgstr "Verrouiller après l'extinction de l'écran :"
-
-#: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
-#: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
-msgid "Unknown"
-msgstr "Inconnu"
-
-#: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
-msgid "Allow"
-msgstr "Autoriser"
-
-#: ../src/Views/FirewallPanel.vala:197 ../src/Views/FirewallPanel.vala:317
-msgid "Deny"
-msgstr "Refuser"
-
-#: ../src/Views/FirewallPanel.vala:199 ../src/Views/FirewallPanel.vala:318
-msgid "Reject"
-msgstr "Rejeter"
-
-#: ../src/Views/FirewallPanel.vala:201 ../src/Views/FirewallPanel.vala:319
-msgid "Limit"
-msgstr "Limiter"
-
-#: ../src/Views/FirewallPanel.vala:213 ../src/Views/FirewallPanel.vala:340
-msgid "In"
-msgstr "Entrant"
-
-#: ../src/Views/FirewallPanel.vala:215 ../src/Views/FirewallPanel.vala:341
-msgid "Out"
-msgstr "Sortant"
-
-#: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-msgid "%s Ports %s"
-msgstr "%s Ports %s"
-
-#: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-msgid "%s Port %s"
-msgstr "%s Port %s"
-
-#: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
-msgid "Enabled"
-msgstr "Activé"
-
-#: ../src/Views/FirewallPanel.vala:270
-msgid "Version"
-msgstr "Version"
-
-#: ../src/Views/FirewallPanel.vala:271
-msgid "Action"
-msgstr "Action"
-
-#: ../src/Views/FirewallPanel.vala:272
-msgid "Protocol"
-msgstr "Protocole"
-
-#: ../src/Views/FirewallPanel.vala:273
-msgid "Direction"
-msgstr "Direction"
-
-#: ../src/Views/FirewallPanel.vala:274
-msgid "To"
-msgstr "Au"
-
-#: ../src/Views/FirewallPanel.vala:275
-msgid "From"
-msgstr "Du"
-
-#: ../src/Views/FirewallPanel.vala:313
-msgid "Action:"
-msgstr "Action :"
-
-#: ../src/Views/FirewallPanel.vala:322
-msgid "Protocol:"
-msgstr "Protocole :"
-
-#: ../src/Views/FirewallPanel.vala:329
-msgid "Version:"
-msgstr "Version :"
-
-#: ../src/Views/FirewallPanel.vala:334
-msgid "Both"
-msgstr "Les deux"
-
-#: ../src/Views/FirewallPanel.vala:337
-msgid "Direction:"
-msgstr "Direction :"
-
-#: ../src/Views/FirewallPanel.vala:344
-msgid "Ports:"
-msgstr "Ports :"
-
-#: ../src/Views/FirewallPanel.vala:348
-msgid "%d or %d-%d"
-msgstr "%d ou %d-%d"
-
-#: ../src/Views/FirewallPanel.vala:350
-msgid "Add Rule"
-msgstr "Ajouter une règle"
-
-#: ../src/Widgets/IncludeTreeView.vala:76
-msgid "Data Sources:"
-msgstr "Sources de données :"
-
-#: ../src/Widgets/IncludeTreeView.vala:82
-msgid "Chat Logs"
-msgstr "Historique des conversations"
-
-#: ../src/Widgets/IncludeTreeView.vala:83
-msgid "Documents"
-msgstr "Documents"
-
-#: ../src/Widgets/IncludeTreeView.vala:84
-msgid "Music"
-msgstr "Musique"
-
-#: ../src/Widgets/IncludeTreeView.vala:85
-msgid "Pictures"
-msgstr "Images"
-
-#: ../src/Widgets/IncludeTreeView.vala:86
-msgid "Presentations"
-msgstr "Présentations"
-
-#: ../src/Widgets/IncludeTreeView.vala:87
-msgid "Spreadsheets"
-msgstr "Feuilles de calcul"
-
-#: ../src/Widgets/IncludeTreeView.vala:88
-msgid "Videos"
-msgstr "Vidéos"
-
-#: ../src/Widgets/ServiceItem.vala:36
-msgid "Disabled"
-msgstr "Désactivé"
-
-#: ../src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
 msgstr "Rechercher une application"
 
-#: ../src/Widgets/ExcludeTreeView.vala:56
-msgid "Add Application…"
-msgstr "Ajouter une application…"
-
-#: ../src/Widgets/ExcludeTreeView.vala:71
-msgid "Add Folder…"
-msgstr "Ajouter un dossier…"
-
-#: ../src/Widgets/ExcludeTreeView.vala:73
-msgid "Select a folder to blacklist"
-msgstr "Ajouter un dossier à la liste noire"
-
-#: ../src/Widgets/ExcludeTreeView.vala:74
-msgid "Cancel"
-msgstr "Annuler"
-
-#: ../src/Widgets/ExcludeTreeView.vala:74
-msgid "Add"
-msgstr "Ajouter"
-
-#: ../src/Widgets/ExcludeTreeView.vala:86
-msgid "Delete"
-msgstr "Supprimer"
-
-#: ../src/Widgets/ExcludeTreeView.vala:128
-msgid "Do not collect data from the following:"
-msgstr "Ne pas collecter les données des sources suivantes :"
-
-#: ../src/Widgets/ClearUsagePopover.vala:41
+#: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
 "Supprimer les données d'usage collectées de votre système et de vos "
 "applications depuis :"
 
-#: ../src/Widgets/ClearUsagePopover.vala:44
+#: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
 msgstr "L'heure passée"
 
-#: ../src/Widgets/ClearUsagePopover.vala:45
+#: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
 msgstr "Le jour passé"
 
-#: ../src/Widgets/ClearUsagePopover.vala:46
+#: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
 msgstr "La semaine dernière"
 
-#: ../src/Widgets/ClearUsagePopover.vala:47
+#: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
 msgstr "De :"
 
-#: ../src/Widgets/ClearUsagePopover.vala:48
+#: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
 msgstr "Tout le temps"
 
-#: ../src/Widgets/ClearUsagePopover.vala:51
+#: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
 msgstr "À :"
 
-#: ../src/Widgets/ClearUsagePopover.vala:54
+#: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
 msgstr "Effacer les données"
 
-#. //launchpad.net/switchboard-plug-security-privacy)
-#. *
-#. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Lesser General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This library is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Lesser General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU Lesser General Public
-#. * License along with this program; if not, write to the
-#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#. * Boston, MA 02110-1301 USA
-#. *
-#. * Authored by: Corentin Noël <tintou@mailoo.org>
-#.
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Authentification requise pour configurer le pare-feu"
+#: src/Widgets/ExcludeTreeView.vala:56
+msgid "Add Application…"
+msgstr "Ajouter une application…"
+
+#: src/Widgets/ExcludeTreeView.vala:71
+msgid "Add Folder…"
+msgstr "Ajouter un dossier…"
+
+#: src/Widgets/ExcludeTreeView.vala:73
+msgid "Select a folder to blacklist"
+msgstr "Ajouter un dossier à la liste noire"
+
+#: src/Widgets/ExcludeTreeView.vala:74
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/Widgets/ExcludeTreeView.vala:74
+msgid "Add"
+msgstr "Ajouter"
+
+#: src/Widgets/ExcludeTreeView.vala:86
+msgid "Delete"
+msgstr "Supprimer"
+
+#: src/Widgets/ExcludeTreeView.vala:131
+msgid "Do not collect data from the following:"
+msgstr "Ne pas collecter les données des sources suivantes :"
+
+#: src/Widgets/IncludeTreeView.vala:76
+msgid "Data Sources:"
+msgstr "Sources de données :"
+
+#: src/Widgets/IncludeTreeView.vala:82
+msgid "Chat Logs"
+msgstr "Historique des conversations"
+
+#: src/Widgets/IncludeTreeView.vala:83
+msgid "Documents"
+msgstr "Documents"
+
+#: src/Widgets/IncludeTreeView.vala:84
+msgid "Music"
+msgstr "Musique"
+
+#: src/Widgets/IncludeTreeView.vala:85
+msgid "Pictures"
+msgstr "Images"
+
+#: src/Widgets/IncludeTreeView.vala:86
+msgid "Presentations"
+msgstr "Présentations"
+
+#: src/Widgets/IncludeTreeView.vala:87
+msgid "Spreadsheets"
+msgstr "Feuilles de calcul"
+
+#: src/Widgets/IncludeTreeView.vala:88
+msgid "Videos"
+msgstr "Vidéos"
+
+#~ msgid "Privacy Mode"
+#~ msgstr "Mode privé"
 
 #~ msgid "IPv6"
 #~ msgstr "IPv6"

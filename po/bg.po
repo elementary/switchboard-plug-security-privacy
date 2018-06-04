@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 09:18-0700\n"
+"POT-Creation-Date: 2018-06-04 09:37-0500\n"
 "PO-Revision-Date: 2016-08-06 18:22+0000\n"
 "Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
@@ -18,44 +18,166 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 "X-Generator: Launchpad (build 18329)\n"
 
-#: ../src/Plug.vala:43
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "Сигурност и поверителност"
 
-#: ../src/Plug.vala:44
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 "Настройка на защитната стена, заключването на екрана и данните за "
 "активността."
 
-#: ../src/Plug.vala:85
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "Някои настройки изискват ръководни правомощия, за да бъдат променени"
 
-#: ../src/Plug.vala:126 ../src/Plug.vala:186
+#: src/Plug.vala:131 src/Plug.vala:173
 msgid "Privacy"
 msgstr "Поверителност"
 
-#: ../src/Plug.vala:127 ../src/Plug.vala:187 ../src/Plug.vala:188
-#: ../src/Views/LockPanel.vala:29 ../src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:132 src/Plug.vala:174 src/Views/LockPanel.vala:29
+#: src/Widgets/ServiceList.vala:31
 msgid "Locking"
 msgstr "Заключване"
 
-#: ../src/Plug.vala:128 ../src/Plug.vala:189 ../src/Views/FirewallPanel.vala:48
-#: ../src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:133 src/Plug.vala:175 src/Views/FirewallPanel.vala:48
+#: src/Widgets/ServiceList.vala:32
 msgid "Firewall"
 msgstr "Защитна стена"
 
-#: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
-#: ../src/Widgets/ServiceList.vala:49
+#: src/Plug.vala:137 src/Plug.vala:177 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:49
 msgid "Location Services"
 msgstr ""
 
-#: ../src/Plug.vala:188
-msgid "Privacy Mode"
+#: src/Plug.vala:172 src/Views/TrackPanel.vala:30
+#: src/Widgets/ServiceList.vala:30
+msgid "History"
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:28
+#: src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Удостоверение е нужно за да се пусне настройката на Пожарната Стена"
+
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:104
+#: src/Widgets/ServiceItem.vala:32
+msgid "Enabled"
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/LocationPanel.vala:109 src/Widgets/ServiceItem.vala:36
+msgid "Disabled"
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+msgid "Allow"
+msgstr "Разреши"
+
+#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+msgid "Deny"
+msgstr "Забрани"
+
+#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+msgid "Reject"
+msgstr "Отхвърли"
+
+#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+msgid "Limit"
+msgstr "Ограничи"
+
+#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+msgid "In"
+msgstr "Входящи"
+
+#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+msgid "Out"
+msgstr "Изходящи"
+
+#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#, fuzzy, c-format
+msgid "%s Ports %s"
+msgstr "Портове"
+
+#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#, fuzzy, c-format
+msgid "%s Port %s"
+msgstr "Портове"
+
+#: src/Views/FirewallPanel.vala:280
+msgid "Version"
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:281
+msgid "Action"
+msgstr "Действиe"
+
+#: src/Views/FirewallPanel.vala:282
+msgid "Protocol"
+msgstr "Протокол"
+
+#: src/Views/FirewallPanel.vala:283
+msgid "Direction"
+msgstr "Посока"
+
+#: src/Views/FirewallPanel.vala:284
+#, fuzzy
+msgid "To"
+msgstr "До:"
+
+#: src/Views/FirewallPanel.vala:285
+#, fuzzy
+msgid "From"
+msgstr "От:"
+
+#: src/Views/FirewallPanel.vala:323
+msgid "Action:"
+msgstr "Действие:"
+
+#: src/Views/FirewallPanel.vala:332
+msgid "Protocol:"
+msgstr "Протокол:"
+
+#: src/Views/FirewallPanel.vala:339
+msgid "Version:"
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:344
+msgid "Both"
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:347
+msgid "Direction:"
+msgstr "Посока:"
+
+#: src/Views/FirewallPanel.vala:354
+msgid "Ports:"
+msgstr "Портове:"
+
+#: src/Views/FirewallPanel.vala:358
+#, c-format
+msgid "%d or %d-%d"
+msgstr "%d или %d-%d"
+
+#: src/Views/FirewallPanel.vala:360
+msgid "Add Rule"
+msgstr "Добави правило"
+
+#: src/Views/LockPanel.vala:35
+msgid "Lock on sleep:"
+msgstr "Заключи при заспиване:"
+
+#: src/Views/LockPanel.vala:37
+msgid "Lock after screen turns off:"
+msgstr "Заключи след изключване на екрана:"
+
+#: src/Views/TrackPanel.vala:28
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -66,22 +188,19 @@ msgstr ""
 "други хора могат да преглеждат потребителския Ви профил или имат достъп до "
 "него, може би бихте предпочели да ограничите кои части са достъпни."
 
-#: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
-msgid "History"
-msgstr ""
-
-#: ../src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:35
+#, c-format
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
 msgstr ""
 "Допълнителната ползваемост, която тази програма доставя няма да е засегната."
 
-#: ../src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -89,277 +208,146 @@ msgstr ""
 "Това няма да спре приложенията да събират собствените си данни за "
 "ползваемост, кото например мрежовата ви история."
 
-#: ../src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:48
 msgid "Clear History…"
 msgstr ""
 
-#: ../src/Views/TrackPanel.vala:90
+#: src/Views/TrackPanel.vala:94
 msgid "Your system"
 msgstr "Вашата система"
 
-#: ../src/Views/LocationPanel.vala:79
+#: src/Views/LocationPanel.vala:43
+msgid "Allow the apps below to determine your location"
+msgstr ""
+
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
 msgstr ""
 
-#: ../src/Views/LocationPanel.vala:81
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
 
-#: ../src/Views/LocationPanel.vala:82
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
 
-#: ../src/Views/LocationPanel.vala:83
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
 
-#: ../src/Views/LocationPanel.vala:94
-msgid "Allow the apps below to determine your location"
+#: src/Views/LocationPanel.vala:179
+#, c-format
+msgid "Allow %s to use location services"
 msgstr ""
 
-#: ../src/Views/LockPanel.vala:35
-msgid "Lock on sleep:"
-msgstr "Заключи при заспиване:"
-
-#: ../src/Views/LockPanel.vala:37
-msgid "Lock after screen turns off:"
-msgstr "Заключи след изключване на екрана:"
-
-#: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
-#: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
-msgid "Unknown"
-msgstr "Неизвестно"
-
-#: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
-msgid "Allow"
-msgstr "Разреши"
-
-#: ../src/Views/FirewallPanel.vala:197 ../src/Views/FirewallPanel.vala:317
-msgid "Deny"
-msgstr "Забрани"
-
-#: ../src/Views/FirewallPanel.vala:199 ../src/Views/FirewallPanel.vala:318
-msgid "Reject"
-msgstr "Отхвърли"
-
-#: ../src/Views/FirewallPanel.vala:201 ../src/Views/FirewallPanel.vala:319
-msgid "Limit"
-msgstr "Ограничи"
-
-#: ../src/Views/FirewallPanel.vala:213 ../src/Views/FirewallPanel.vala:340
-msgid "In"
-msgstr "Входящи"
-
-#: ../src/Views/FirewallPanel.vala:215 ../src/Views/FirewallPanel.vala:341
-msgid "Out"
-msgstr "Изходящи"
-
-#: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-#, fuzzy
-msgid "%s Ports %s"
-msgstr "Портове"
-
-#: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-#, fuzzy
-msgid "%s Port %s"
-msgstr "Портове"
-
-#: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
-msgid "Enabled"
-msgstr ""
-
-#: ../src/Views/FirewallPanel.vala:270
-msgid "Version"
-msgstr ""
-
-#: ../src/Views/FirewallPanel.vala:271
-msgid "Action"
-msgstr "Действиe"
-
-#: ../src/Views/FirewallPanel.vala:272
-msgid "Protocol"
-msgstr "Протокол"
-
-#: ../src/Views/FirewallPanel.vala:273
-msgid "Direction"
-msgstr "Посока"
-
-#: ../src/Views/FirewallPanel.vala:274
-#, fuzzy
-msgid "To"
-msgstr "До:"
-
-#: ../src/Views/FirewallPanel.vala:275
-#, fuzzy
-msgid "From"
-msgstr "От:"
-
-#: ../src/Views/FirewallPanel.vala:313
-msgid "Action:"
-msgstr "Действие:"
-
-#: ../src/Views/FirewallPanel.vala:322
-msgid "Protocol:"
-msgstr "Протокол:"
-
-#: ../src/Views/FirewallPanel.vala:329
-msgid "Version:"
-msgstr ""
-
-#: ../src/Views/FirewallPanel.vala:334
-msgid "Both"
-msgstr ""
-
-#: ../src/Views/FirewallPanel.vala:337
-msgid "Direction:"
-msgstr "Посока:"
-
-#: ../src/Views/FirewallPanel.vala:344
-msgid "Ports:"
-msgstr "Портове:"
-
-#: ../src/Views/FirewallPanel.vala:348
-msgid "%d or %d-%d"
-msgstr "%d или %d-%d"
-
-#: ../src/Views/FirewallPanel.vala:350
-msgid "Add Rule"
-msgstr "Добави правило"
-
-#: ../src/Widgets/IncludeTreeView.vala:76
-msgid "Data Sources:"
-msgstr "Източници на данни:"
-
-#: ../src/Widgets/IncludeTreeView.vala:82
-msgid "Chat Logs"
-msgstr "История на мигновените съобщения"
-
-#: ../src/Widgets/IncludeTreeView.vala:83
-msgid "Documents"
-msgstr "Документи"
-
-#: ../src/Widgets/IncludeTreeView.vala:84
-msgid "Music"
-msgstr "Музика"
-
-#: ../src/Widgets/IncludeTreeView.vala:85
-msgid "Pictures"
-msgstr "Снимки"
-
-#: ../src/Widgets/IncludeTreeView.vala:86
-msgid "Presentations"
-msgstr "Представления"
-
-#: ../src/Widgets/IncludeTreeView.vala:87
-msgid "Spreadsheets"
-msgstr "Електронни таблици"
-
-#: ../src/Widgets/IncludeTreeView.vala:88
-msgid "Videos"
-msgstr "Видеа"
-
-#: ../src/Widgets/ServiceItem.vala:36
-msgid "Disabled"
-msgstr ""
-
-#: ../src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
 msgstr "Търси за аплликация"
 
-#: ../src/Widgets/ExcludeTreeView.vala:56
-msgid "Add Application…"
-msgstr "Добави приложение..."
-
-#: ../src/Widgets/ExcludeTreeView.vala:71
-msgid "Add Folder…"
-msgstr "Добави папка..."
-
-#: ../src/Widgets/ExcludeTreeView.vala:73
-msgid "Select a folder to blacklist"
-msgstr "Добави папка към черния списък"
-
-#: ../src/Widgets/ExcludeTreeView.vala:74
-msgid "Cancel"
-msgstr "Отказ"
-
-#: ../src/Widgets/ExcludeTreeView.vala:74
-msgid "Add"
-msgstr "Добави"
-
-#: ../src/Widgets/ExcludeTreeView.vala:86
-msgid "Delete"
-msgstr "Изтрий"
-
-#: ../src/Widgets/ExcludeTreeView.vala:128
-msgid "Do not collect data from the following:"
-msgstr "Не събирай данни от следното:"
-
-#: ../src/Widgets/ClearUsagePopover.vala:41
+#: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
 "Премахни събраната от системата информация за използваните файлове и "
 "приложения през:"
 
-#: ../src/Widgets/ClearUsagePopover.vala:44
+#: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
 msgstr "През последния час"
 
-#: ../src/Widgets/ClearUsagePopover.vala:45
+#: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
 msgstr "За последния ден"
 
-#: ../src/Widgets/ClearUsagePopover.vala:46
+#: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
 msgstr "За последната седмица"
 
-#: ../src/Widgets/ClearUsagePopover.vala:47
+#: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
 msgstr "От:"
 
-#: ../src/Widgets/ClearUsagePopover.vala:48
+#: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
 msgstr "За всички времена"
 
-#: ../src/Widgets/ClearUsagePopover.vala:51
+#: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
 msgstr "До:"
 
-#: ../src/Widgets/ClearUsagePopover.vala:54
+#: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
 msgstr "Изчисти Данните"
 
-#. //launchpad.net/switchboard-plug-security-privacy)
-#. *
-#. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Lesser General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This library is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Lesser General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU Lesser General Public
-#. * License along with this program; if not, write to the
-#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#. * Boston, MA 02110-1301 USA
-#. *
-#. * Authored by: Corentin Noël <tintou@mailoo.org>
-#.
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Удостоверение е нужно за да се пусне настройката на Пожарната Стена"
+#: src/Widgets/ExcludeTreeView.vala:56
+msgid "Add Application…"
+msgstr "Добави приложение..."
+
+#: src/Widgets/ExcludeTreeView.vala:71
+msgid "Add Folder…"
+msgstr "Добави папка..."
+
+#: src/Widgets/ExcludeTreeView.vala:73
+msgid "Select a folder to blacklist"
+msgstr "Добави папка към черния списък"
+
+#: src/Widgets/ExcludeTreeView.vala:74
+msgid "Cancel"
+msgstr "Отказ"
+
+#: src/Widgets/ExcludeTreeView.vala:74
+msgid "Add"
+msgstr "Добави"
+
+#: src/Widgets/ExcludeTreeView.vala:86
+msgid "Delete"
+msgstr "Изтрий"
+
+#: src/Widgets/ExcludeTreeView.vala:131
+msgid "Do not collect data from the following:"
+msgstr "Не събирай данни от следното:"
+
+#: src/Widgets/IncludeTreeView.vala:76
+msgid "Data Sources:"
+msgstr "Източници на данни:"
+
+#: src/Widgets/IncludeTreeView.vala:82
+msgid "Chat Logs"
+msgstr "История на мигновените съобщения"
+
+#: src/Widgets/IncludeTreeView.vala:83
+msgid "Documents"
+msgstr "Документи"
+
+#: src/Widgets/IncludeTreeView.vala:84
+msgid "Music"
+msgstr "Музика"
+
+#: src/Widgets/IncludeTreeView.vala:85
+msgid "Pictures"
+msgstr "Снимки"
+
+#: src/Widgets/IncludeTreeView.vala:86
+msgid "Presentations"
+msgstr "Представления"
+
+#: src/Widgets/IncludeTreeView.vala:87
+msgid "Spreadsheets"
+msgstr "Електронни таблици"
+
+#: src/Widgets/IncludeTreeView.vala:88
+msgid "Videos"
+msgstr "Видеа"
 
 #~ msgid "IPv6"
 #~ msgstr "IPv6"
