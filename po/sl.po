@@ -7,56 +7,176 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 09:18-0700\n"
+"POT-Creation-Date: 2018-06-05 16:07-0700\n"
 "PO-Revision-Date: 2018-05-24 00:10+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
-"Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-security-privacy/sl/>\n"
+"Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-security-privacy/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: ../src/Plug.vala:43
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "Varnost in zasebnost"
 
-#: ../src/Plug.vala:44
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Nastavitve požarnega zidu, zaklepanja zaslona in zbiranja podatkov"
 
-#: ../src/Plug.vala:85
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "Za spreminjanje nekaterih nastavitev so potrebne skrbniške pravice"
 
-#: ../src/Plug.vala:126 ../src/Plug.vala:186
+#: src/Plug.vala:131 src/Plug.vala:173
 msgid "Privacy"
 msgstr "Zasebnost"
 
-#: ../src/Plug.vala:127 ../src/Plug.vala:187 ../src/Plug.vala:188
-#: ../src/Views/LockPanel.vala:29 ../src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:132 src/Plug.vala:174 src/Views/LockPanel.vala:29
+#: src/Widgets/ServiceList.vala:31
 msgid "Locking"
 msgstr "Zaklepanje"
 
-#: ../src/Plug.vala:128 ../src/Plug.vala:189 ../src/Views/FirewallPanel.vala:48
-#: ../src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:133 src/Plug.vala:175 src/Views/FirewallPanel.vala:48
+#: src/Widgets/ServiceList.vala:32
 msgid "Firewall"
 msgstr "Požarni zid"
 
-#: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
-#: ../src/Widgets/ServiceList.vala:49
+#: src/Plug.vala:137 src/Plug.vala:177 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:49
 msgid "Location Services"
 msgstr "Lokacijske storitve"
 
-#: ../src/Plug.vala:188
-msgid "Privacy Mode"
-msgstr "Zasebni način"
+#: src/Plug.vala:172 src/Views/TrackPanel.vala:30
+#: src/Widgets/ServiceList.vala:30
+msgid "History"
+msgstr "Zgodovina"
 
-#: ../src/Views/TrackPanel.vala:28
+#: src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "Za zagon nastavitev požarnega zidu je zahtevana overitev"
+
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Widgets/ServiceItem.vala:32
+msgid "Enabled"
+msgstr "Omogočeno"
+
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:36
+msgid "Disabled"
+msgstr "Onemogočeno"
+
+#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+msgid "Unknown"
+msgstr "Neznano"
+
+#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+msgid "Allow"
+msgstr "Dovoli"
+
+#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+msgid "Deny"
+msgstr "Blokiraj"
+
+#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+msgid "Reject"
+msgstr "Zavrni"
+
+#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+msgid "Limit"
+msgstr "Omeji"
+
+#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+msgid "In"
+msgstr "Dohodni promet"
+
+#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+msgid "Out"
+msgstr "Odhodni promet"
+
+#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#, c-format
+msgid "%s Ports %s"
+msgstr "%s vrata %s"
+
+#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#, c-format
+msgid "%s Port %s"
+msgstr "%s vrata %s"
+
+#: src/Views/FirewallPanel.vala:280
+msgid "Version"
+msgstr "Verzija"
+
+#: src/Views/FirewallPanel.vala:281
+msgid "Action"
+msgstr "Ukrep"
+
+#: src/Views/FirewallPanel.vala:282
+msgid "Protocol"
+msgstr "Protokol"
+
+#: src/Views/FirewallPanel.vala:283
+msgid "Direction"
+msgstr "Smer"
+
+#: src/Views/FirewallPanel.vala:284
+msgid "To"
+msgstr "Do"
+
+#: src/Views/FirewallPanel.vala:285
+msgid "From"
+msgstr "Od"
+
+#: src/Views/FirewallPanel.vala:323
+msgid "Action:"
+msgstr "Ukrep:"
+
+#: src/Views/FirewallPanel.vala:332
+msgid "Protocol:"
+msgstr "Protokol:"
+
+#: src/Views/FirewallPanel.vala:339
+msgid "Version:"
+msgstr "Verzija:"
+
+#: src/Views/FirewallPanel.vala:344
+msgid "Both"
+msgstr "Oboje"
+
+#: src/Views/FirewallPanel.vala:347
+msgid "Direction:"
+msgstr "Smer:"
+
+#: src/Views/FirewallPanel.vala:354
+msgid "Ports:"
+msgstr "Vrata:"
+
+#: src/Views/FirewallPanel.vala:358
+#, c-format
+msgid "%d or %d-%d"
+msgstr "%d ali %d-%d"
+
+#: src/Views/FirewallPanel.vala:360
+msgid "Add Rule"
+msgstr "Dodaj pravilo"
+
+#: src/Views/LockPanel.vala:35
+msgid "Lock on sleep:"
+msgstr "Zakleni ob spanju:"
+
+#: src/Views/LockPanel.vala:37
+msgid "Lock after screen turns off:"
+msgstr "Zakleni po izklopu zaslona:"
+
+#: src/Views/TrackPanel.vala:28
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -66,21 +186,18 @@ msgstr ""
 "uporabi aplikacij in datotek. Če lahko drugi ljudje dostopajo do vašega "
 "računa, si morda želite omejiti zbiranje podatkov."
 
-#: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
-msgid "History"
-msgstr "Zgodovina"
-
-#: ../src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:35
+#, c-format
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr "%s ne bo več shranjeval podatkov o uporabi datotek in aplikacij."
 
-#: ../src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Dodatne funkcije, ki se zanašajo na te podatke ne bodo delovale."
 
-#: ../src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
@@ -88,23 +205,38 @@ msgstr ""
 "To ne bo preprečilo aplikacijam zbirati svoje podatke (npr. zgodovina strani "
 "v brskalniku)."
 
-#: ../src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
 msgstr "Zgodovina je onemogočena"
 
-#: ../src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:48
 msgid "Clear History…"
 msgstr "Izbriši zgodovino…"
 
-#: ../src/Views/TrackPanel.vala:90
+#: src/Views/TrackPanel.vala:94
 msgid "Your system"
 msgstr "Vaš sistem"
 
-#: ../src/Views/LocationPanel.vala:79
+#: src/Views/LocationPanel.vala:43
+msgid "Allow the apps below to determine your location"
+msgstr "Dovoli aplikacijam spodaj dostop do vaše lokacije"
+
+#: src/Views/LocationPanel.vala:53
+#, fuzzy
+msgid "No Apps Are Using Location Services"
+msgstr "Lokacijske storitve"
+
+#: src/Views/LocationPanel.vala:54
+msgid ""
+"When apps are installed that use location services they will automatically "
+"appear here."
+msgstr ""
+
+#: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
 msgstr "Lokacijske storitve so onemogočene"
 
-#: ../src/Views/LocationPanel.vala:81
+#: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -112,250 +244,122 @@ msgstr ""
 "Zahteve za lokacijo bodo avtomatično zavrnjene dokler so lokacijske storitve "
 "onemogočene."
 
-#: ../src/Views/LocationPanel.vala:82
+#: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr "V aplikacijah ne bodo delovale funkcije, ki temeljijo na lokaciji."
 
-#: ../src/Views/LocationPanel.vala:83
+#: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
 "Aplikacije bodo lahko vseeno poskusile določiti vašo lokacijo z IP naslovom."
 
-#: ../src/Views/LocationPanel.vala:94
-msgid "Allow the apps below to determine your location"
-msgstr "Dovoli aplikacijam spodaj dostop do vaše lokacije"
+#: src/Views/LocationPanel.vala:187
+#, fuzzy, c-format
+msgid "Allow %s to use location services"
+msgstr "Lokacijske storitve"
 
-#: ../src/Views/LockPanel.vala:35
-msgid "Lock on sleep:"
-msgstr "Zakleni ob spanju:"
-
-#: ../src/Views/LockPanel.vala:37
-msgid "Lock after screen turns off:"
-msgstr "Zakleni po izklopu zaslona:"
-
-#: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
-#: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
-msgid "Unknown"
-msgstr "Neznano"
-
-#: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
-msgid "Allow"
-msgstr "Dovoli"
-
-#: ../src/Views/FirewallPanel.vala:197 ../src/Views/FirewallPanel.vala:317
-msgid "Deny"
-msgstr "Blokiraj"
-
-#: ../src/Views/FirewallPanel.vala:199 ../src/Views/FirewallPanel.vala:318
-msgid "Reject"
-msgstr "Zavrni"
-
-#: ../src/Views/FirewallPanel.vala:201 ../src/Views/FirewallPanel.vala:319
-msgid "Limit"
-msgstr "Omeji"
-
-#: ../src/Views/FirewallPanel.vala:213 ../src/Views/FirewallPanel.vala:340
-msgid "In"
-msgstr "Dohodni promet"
-
-#: ../src/Views/FirewallPanel.vala:215 ../src/Views/FirewallPanel.vala:341
-msgid "Out"
-msgstr "Odhodni promet"
-
-#: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-msgid "%s Ports %s"
-msgstr "%s vrata %s"
-
-#: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-msgid "%s Port %s"
-msgstr "%s vrata %s"
-
-#: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
-msgid "Enabled"
-msgstr "Omogočeno"
-
-#: ../src/Views/FirewallPanel.vala:270
-msgid "Version"
-msgstr "Verzija"
-
-#: ../src/Views/FirewallPanel.vala:271
-msgid "Action"
-msgstr "Ukrep"
-
-#: ../src/Views/FirewallPanel.vala:272
-msgid "Protocol"
-msgstr "Protokol"
-
-#: ../src/Views/FirewallPanel.vala:273
-msgid "Direction"
-msgstr "Smer"
-
-#: ../src/Views/FirewallPanel.vala:274
-msgid "To"
-msgstr "Do"
-
-#: ../src/Views/FirewallPanel.vala:275
-msgid "From"
-msgstr "Od"
-
-#: ../src/Views/FirewallPanel.vala:313
-msgid "Action:"
-msgstr "Ukrep:"
-
-#: ../src/Views/FirewallPanel.vala:322
-msgid "Protocol:"
-msgstr "Protokol:"
-
-#: ../src/Views/FirewallPanel.vala:329
-msgid "Version:"
-msgstr "Verzija:"
-
-#: ../src/Views/FirewallPanel.vala:334
-msgid "Both"
-msgstr "Oboje"
-
-#: ../src/Views/FirewallPanel.vala:337
-msgid "Direction:"
-msgstr "Smer:"
-
-#: ../src/Views/FirewallPanel.vala:344
-msgid "Ports:"
-msgstr "Vrata:"
-
-#: ../src/Views/FirewallPanel.vala:348
-msgid "%d or %d-%d"
-msgstr "%d ali %d-%d"
-
-#: ../src/Views/FirewallPanel.vala:350
-msgid "Add Rule"
-msgstr "Dodaj pravilo"
-
-#: ../src/Widgets/IncludeTreeView.vala:76
-msgid "Data Sources:"
-msgstr "Viri podatkov:"
-
-#: ../src/Widgets/IncludeTreeView.vala:82
-msgid "Chat Logs"
-msgstr "Dnevniki pogovorov"
-
-#: ../src/Widgets/IncludeTreeView.vala:83
-msgid "Documents"
-msgstr "Dokumenti"
-
-#: ../src/Widgets/IncludeTreeView.vala:84
-msgid "Music"
-msgstr "Glasba"
-
-#: ../src/Widgets/IncludeTreeView.vala:85
-msgid "Pictures"
-msgstr "Slike"
-
-#: ../src/Widgets/IncludeTreeView.vala:86
-msgid "Presentations"
-msgstr "Predstavitve"
-
-#: ../src/Widgets/IncludeTreeView.vala:87
-msgid "Spreadsheets"
-msgstr "Preglednice"
-
-#: ../src/Widgets/IncludeTreeView.vala:88
-msgid "Videos"
-msgstr "Videoposnetki"
-
-#: ../src/Widgets/ServiceItem.vala:36
-msgid "Disabled"
-msgstr "Onemogočeno"
-
-#: ../src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
 msgstr "Najdi aplikacijo"
 
-#: ../src/Widgets/ExcludeTreeView.vala:56
-msgid "Add Application…"
-msgstr "Dodaj aplikacijo…"
-
-#: ../src/Widgets/ExcludeTreeView.vala:71
-msgid "Add Folder…"
-msgstr "Dodaj mapo…"
-
-#: ../src/Widgets/ExcludeTreeView.vala:73
-msgid "Select a folder to blacklist"
-msgstr "Izberite mapo za črni seznam"
-
-#: ../src/Widgets/ExcludeTreeView.vala:74
-msgid "Cancel"
-msgstr "Prekliči"
-
-#: ../src/Widgets/ExcludeTreeView.vala:74
-msgid "Add"
-msgstr "Dodaj"
-
-#: ../src/Widgets/ExcludeTreeView.vala:86
-msgid "Delete"
-msgstr "Izbriši"
-
-#: ../src/Widgets/ExcludeTreeView.vala:128
-msgid "Do not collect data from the following:"
-msgstr "Ne zbiraj podatkov od:"
-
-#: ../src/Widgets/ClearUsagePopover.vala:41
+#: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr "Počisti sistemsko zbrane podatke o uporabi za:"
 
-#: ../src/Widgets/ClearUsagePopover.vala:44
+#: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
 msgstr "Preteklo uro"
 
-#: ../src/Widgets/ClearUsagePopover.vala:45
+#: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
 msgstr "Pretekli dan"
 
-#: ../src/Widgets/ClearUsagePopover.vala:46
+#: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
 msgstr "Pretekli teden"
 
-#: ../src/Widgets/ClearUsagePopover.vala:47
+#: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
 msgstr "Od:"
 
-#: ../src/Widgets/ClearUsagePopover.vala:48
+#: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
 msgstr "Vso zgodovino"
 
-#: ../src/Widgets/ClearUsagePopover.vala:51
+#: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
 msgstr "Do:"
 
-#: ../src/Widgets/ClearUsagePopover.vala:54
+#: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
 msgstr "Počisti"
 
-#. //launchpad.net/switchboard-plug-security-privacy)
-#. *
-#. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Lesser General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This library is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Lesser General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU Lesser General Public
-#. * License along with this program; if not, write to the
-#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#. * Boston, MA 02110-1301 USA
-#. *
-#. * Authored by: Corentin Noël <tintou@mailoo.org>
-#.
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Za zagon nastavitev požarnega zidu je zahtevana overitev"
+#: src/Widgets/ExcludeTreeView.vala:56
+msgid "Add Application…"
+msgstr "Dodaj aplikacijo…"
+
+#: src/Widgets/ExcludeTreeView.vala:71
+msgid "Add Folder…"
+msgstr "Dodaj mapo…"
+
+#: src/Widgets/ExcludeTreeView.vala:73
+msgid "Select a folder to blacklist"
+msgstr "Izberite mapo za črni seznam"
+
+#: src/Widgets/ExcludeTreeView.vala:74
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: src/Widgets/ExcludeTreeView.vala:74
+msgid "Add"
+msgstr "Dodaj"
+
+#: src/Widgets/ExcludeTreeView.vala:86
+msgid "Delete"
+msgstr "Izbriši"
+
+#: src/Widgets/ExcludeTreeView.vala:131
+msgid "Do not collect data from the following:"
+msgstr "Ne zbiraj podatkov od:"
+
+#: src/Widgets/IncludeTreeView.vala:76
+msgid "Data Sources:"
+msgstr "Viri podatkov:"
+
+#: src/Widgets/IncludeTreeView.vala:82
+msgid "Chat Logs"
+msgstr "Dnevniki pogovorov"
+
+#: src/Widgets/IncludeTreeView.vala:83
+msgid "Documents"
+msgstr "Dokumenti"
+
+#: src/Widgets/IncludeTreeView.vala:84
+msgid "Music"
+msgstr "Glasba"
+
+#: src/Widgets/IncludeTreeView.vala:85
+msgid "Pictures"
+msgstr "Slike"
+
+#: src/Widgets/IncludeTreeView.vala:86
+msgid "Presentations"
+msgstr "Predstavitve"
+
+#: src/Widgets/IncludeTreeView.vala:87
+msgid "Spreadsheets"
+msgstr "Preglednice"
+
+#: src/Widgets/IncludeTreeView.vala:88
+msgid "Videos"
+msgstr "Videoposnetki"
+
+#~ msgid "Privacy Mode"
+#~ msgstr "Zasebni način"
 
 #~ msgid "IPv6"
 #~ msgstr "IPv6"

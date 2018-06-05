@@ -7,12 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-25 09:18-0700\n"
+"POT-Creation-Date: 2018-06-05 16:07-0700\n"
 "PO-Revision-Date: 2018-02-13 09:49+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
-"security-privacy/zh_TW/>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-security-privacy/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,42 +20,162 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: ../src/Plug.vala:43
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "安全與隱私"
 
-#: ../src/Plug.vala:44
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "調整防火牆、螢幕鎖定、和活動資訊"
 
-#: ../src/Plug.vala:85
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "有些設定值需要管理員權利才能修改"
 
-#: ../src/Plug.vala:126 ../src/Plug.vala:186
+#: src/Plug.vala:131 src/Plug.vala:173
 msgid "Privacy"
 msgstr "隱私"
 
-#: ../src/Plug.vala:127 ../src/Plug.vala:187 ../src/Plug.vala:188
-#: ../src/Views/LockPanel.vala:29 ../src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:132 src/Plug.vala:174 src/Views/LockPanel.vala:29
+#: src/Widgets/ServiceList.vala:31
 msgid "Locking"
 msgstr "鎖定"
 
-#: ../src/Plug.vala:128 ../src/Plug.vala:189 ../src/Views/FirewallPanel.vala:48
-#: ../src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:133 src/Plug.vala:175 src/Views/FirewallPanel.vala:48
+#: src/Widgets/ServiceList.vala:32
 msgid "Firewall"
 msgstr "防火牆"
 
-#: ../src/Plug.vala:132 ../src/Plug.vala:191 ../src/Views/LocationPanel.vala:44
-#: ../src/Widgets/ServiceList.vala:49
+#: src/Plug.vala:137 src/Plug.vala:177 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:49
 msgid "Location Services"
 msgstr "位置服務"
 
-#: ../src/Plug.vala:188
-msgid "Privacy Mode"
-msgstr "隱私模式"
+#: src/Plug.vala:172 src/Views/TrackPanel.vala:30
+#: src/Widgets/ServiceList.vala:30
+msgid "History"
+msgstr "歷史"
 
-#: ../src/Views/TrackPanel.vala:28
+#: src/UFWHelpers.vala:24
+msgid "Authentication is required to run the Firewall Configuration"
+msgstr "若要執行防火牆組態設定需要先核對身份"
+
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Widgets/ServiceItem.vala:32
+msgid "Enabled"
+msgstr "已啟用"
+
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:36
+msgid "Disabled"
+msgstr "已停用"
+
+#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+msgid "Unknown"
+msgstr "未知"
+
+#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+msgid "Allow"
+msgstr "允許"
+
+#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+msgid "Deny"
+msgstr "拒絕"
+
+#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+msgid "Reject"
+msgstr "回絕"
+
+#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+msgid "Limit"
+msgstr "限制"
+
+#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+msgid "In"
+msgstr "入"
+
+#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+msgid "Out"
+msgstr "出"
+
+#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#, c-format
+msgid "%s Ports %s"
+msgstr "%s 連接埠 %s"
+
+#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#, c-format
+msgid "%s Port %s"
+msgstr "%s 連接埠 %s"
+
+#: src/Views/FirewallPanel.vala:280
+msgid "Version"
+msgstr "版本"
+
+#: src/Views/FirewallPanel.vala:281
+msgid "Action"
+msgstr "動作"
+
+#: src/Views/FirewallPanel.vala:282
+msgid "Protocol"
+msgstr "協定"
+
+#: src/Views/FirewallPanel.vala:283
+msgid "Direction"
+msgstr "方向"
+
+#: src/Views/FirewallPanel.vala:284
+msgid "To"
+msgstr "到"
+
+#: src/Views/FirewallPanel.vala:285
+msgid "From"
+msgstr "從"
+
+#: src/Views/FirewallPanel.vala:323
+msgid "Action:"
+msgstr "動作："
+
+#: src/Views/FirewallPanel.vala:332
+msgid "Protocol:"
+msgstr "協定："
+
+#: src/Views/FirewallPanel.vala:339
+msgid "Version:"
+msgstr "版本："
+
+#: src/Views/FirewallPanel.vala:344
+msgid "Both"
+msgstr "兩者"
+
+#: src/Views/FirewallPanel.vala:347
+msgid "Direction:"
+msgstr "方向："
+
+#: src/Views/FirewallPanel.vala:354
+msgid "Ports:"
+msgstr "連接埠："
+
+#: src/Views/FirewallPanel.vala:358
+#, c-format
+msgid "%d or %d-%d"
+msgstr "%d 或 %d-%d"
+
+#: src/Views/FirewallPanel.vala:360
+msgid "Add Rule"
+msgstr "加入規則"
+
+#: src/Views/LockPanel.vala:35
+msgid "Lock on sleep:"
+msgstr "睡眠時鎖定："
+
+#: src/Views/LockPanel.vala:37
+msgid "Lock after screen turns off:"
+msgstr "螢幕關閉時鎖定："
+
+#: src/Views/TrackPanel.vala:28
 msgid ""
 "This operating system can gather useful statistics about file and app usage "
 "to provide extra functionality. If other people can see or access your "
@@ -65,291 +184,175 @@ msgstr ""
 "此作業系統可收集檔案與程式的使用方式等有用的統計數據以提供額外功能。若還有其"
 "他人能查看或存取您的帳號，您可能會希望限制紀錄的項目。"
 
-#: ../src/Views/TrackPanel.vala:30 ../src/Widgets/ServiceList.vala:30
-msgid "History"
-msgstr "歷史"
-
-#: ../src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:35
+#, c-format
 msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr "%s 不會保留檔案相關和應用程式使用狀況的任何資料或統計數據。"
 
-#: ../src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
 msgstr "由此資料提供的額外功能會受到影響。"
 
-#: ../src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr "這不會讓程式停止紀錄其自身的使用資料，例如瀏覽器歷史等。"
 
-#: ../src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
 msgstr "歷史已停用"
 
-#: ../src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:48
 msgid "Clear History…"
 msgstr "清除歷史…"
 
-#: ../src/Views/TrackPanel.vala:90
+#: src/Views/TrackPanel.vala:94
 msgid "Your system"
 msgstr "您的系統"
 
-#: ../src/Views/LocationPanel.vala:79
+#: src/Views/LocationPanel.vala:43
+msgid "Allow the apps below to determine your location"
+msgstr "允許下列程式判定您的位置"
+
+#: src/Views/LocationPanel.vala:53
+#, fuzzy
+msgid "No Apps Are Using Location Services"
+msgstr "位置服務"
+
+#: src/Views/LocationPanel.vala:54
+msgid ""
+"When apps are installed that use location services they will automatically "
+"appear here."
+msgstr ""
+
+#: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
 msgstr "位置服務已停用"
 
-#: ../src/Views/LocationPanel.vala:81
+#: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr "當位置服務停用時，會自動拒絕程式的位置請求。"
 
-#: ../src/Views/LocationPanel.vala:82
+#: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr "這些程式由位置存取提供的額外功能將受到影響。"
 
-#: ../src/Views/LocationPanel.vala:83
+#: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr "這無法防止程式試圖根據 IP 位址判斷您的可能位置。"
 
-#: ../src/Views/LocationPanel.vala:94
-msgid "Allow the apps below to determine your location"
-msgstr "允許下列程式判定您的位置"
+#: src/Views/LocationPanel.vala:187
+#, fuzzy, c-format
+msgid "Allow %s to use location services"
+msgstr "位置服務"
 
-#: ../src/Views/LockPanel.vala:35
-msgid "Lock on sleep:"
-msgstr "睡眠時鎖定："
-
-#: ../src/Views/LockPanel.vala:37
-msgid "Lock after screen turns off:"
-msgstr "螢幕關閉時鎖定："
-
-#: ../src/Views/FirewallPanel.vala:193 ../src/Views/FirewallPanel.vala:203
-#: ../src/Views/FirewallPanel.vala:211 ../src/Views/FirewallPanel.vala:217
-msgid "Unknown"
-msgstr "未知"
-
-#: ../src/Views/FirewallPanel.vala:195 ../src/Views/FirewallPanel.vala:316
-msgid "Allow"
-msgstr "允許"
-
-#: ../src/Views/FirewallPanel.vala:197 ../src/Views/FirewallPanel.vala:317
-msgid "Deny"
-msgstr "拒絕"
-
-#: ../src/Views/FirewallPanel.vala:199 ../src/Views/FirewallPanel.vala:318
-msgid "Reject"
-msgstr "回絕"
-
-#: ../src/Views/FirewallPanel.vala:201 ../src/Views/FirewallPanel.vala:319
-msgid "Limit"
-msgstr "限制"
-
-#: ../src/Views/FirewallPanel.vala:213 ../src/Views/FirewallPanel.vala:340
-msgid "In"
-msgstr "入"
-
-#: ../src/Views/FirewallPanel.vala:215 ../src/Views/FirewallPanel.vala:341
-msgid "Out"
-msgstr "出"
-
-#: ../src/Views/FirewallPanel.vala:228 ../src/Views/FirewallPanel.vala:238
-msgid "%s Ports %s"
-msgstr "%s 連接埠 %s"
-
-#: ../src/Views/FirewallPanel.vala:230 ../src/Views/FirewallPanel.vala:240
-msgid "%s Port %s"
-msgstr "%s 連接埠 %s"
-
-#: ../src/Views/FirewallPanel.vala:269 ../src/Widgets/ServiceItem.vala:32
-msgid "Enabled"
-msgstr "已啟用"
-
-#: ../src/Views/FirewallPanel.vala:270
-msgid "Version"
-msgstr "版本"
-
-#: ../src/Views/FirewallPanel.vala:271
-msgid "Action"
-msgstr "動作"
-
-#: ../src/Views/FirewallPanel.vala:272
-msgid "Protocol"
-msgstr "協定"
-
-#: ../src/Views/FirewallPanel.vala:273
-msgid "Direction"
-msgstr "方向"
-
-#: ../src/Views/FirewallPanel.vala:274
-msgid "To"
-msgstr "到"
-
-#: ../src/Views/FirewallPanel.vala:275
-msgid "From"
-msgstr "從"
-
-#: ../src/Views/FirewallPanel.vala:313
-msgid "Action:"
-msgstr "動作："
-
-#: ../src/Views/FirewallPanel.vala:322
-msgid "Protocol:"
-msgstr "協定："
-
-#: ../src/Views/FirewallPanel.vala:329
-msgid "Version:"
-msgstr "版本："
-
-#: ../src/Views/FirewallPanel.vala:334
-msgid "Both"
-msgstr "兩者"
-
-#: ../src/Views/FirewallPanel.vala:337
-msgid "Direction:"
-msgstr "方向："
-
-#: ../src/Views/FirewallPanel.vala:344
-msgid "Ports:"
-msgstr "連接埠："
-
-#: ../src/Views/FirewallPanel.vala:348
-msgid "%d or %d-%d"
-msgstr "%d 或 %d-%d"
-
-#: ../src/Views/FirewallPanel.vala:350
-msgid "Add Rule"
-msgstr "加入規則"
-
-#: ../src/Widgets/IncludeTreeView.vala:76
-msgid "Data Sources:"
-msgstr "資料來源："
-
-#: ../src/Widgets/IncludeTreeView.vala:82
-msgid "Chat Logs"
-msgstr "聊天記錄"
-
-#: ../src/Widgets/IncludeTreeView.vala:83
-msgid "Documents"
-msgstr "文件"
-
-#: ../src/Widgets/IncludeTreeView.vala:84
-msgid "Music"
-msgstr "音樂"
-
-#: ../src/Widgets/IncludeTreeView.vala:85
-msgid "Pictures"
-msgstr "圖片"
-
-#: ../src/Widgets/IncludeTreeView.vala:86
-msgid "Presentations"
-msgstr "簡報"
-
-#: ../src/Widgets/IncludeTreeView.vala:87
-msgid "Spreadsheets"
-msgstr "試算表"
-
-#: ../src/Widgets/IncludeTreeView.vala:88
-msgid "Videos"
-msgstr "影片"
-
-#: ../src/Widgets/ServiceItem.vala:36
-msgid "Disabled"
-msgstr "已停用"
-
-#: ../src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
 msgstr "搜尋應用程式"
 
-#: ../src/Widgets/ExcludeTreeView.vala:56
-msgid "Add Application…"
-msgstr "加入應用程式…"
-
-#: ../src/Widgets/ExcludeTreeView.vala:71
-msgid "Add Folder…"
-msgstr "加入資料夾…"
-
-#: ../src/Widgets/ExcludeTreeView.vala:73
-msgid "Select a folder to blacklist"
-msgstr "選取資料夾加入黑名單中"
-
-#: ../src/Widgets/ExcludeTreeView.vala:74
-msgid "Cancel"
-msgstr "取消"
-
-#: ../src/Widgets/ExcludeTreeView.vala:74
-msgid "Add"
-msgstr "加入"
-
-#: ../src/Widgets/ExcludeTreeView.vala:86
-msgid "Delete"
-msgstr "刪除"
-
-#: ../src/Widgets/ExcludeTreeView.vala:128
-msgid "Do not collect data from the following:"
-msgstr "不要從下列項目中收集資料："
-
-#: ../src/Widgets/ClearUsagePopover.vala:41
+#: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr "移除系統蒐集來的檔案和應用程式使用資料："
 
-#: ../src/Widgets/ClearUsagePopover.vala:44
+#: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
 msgstr "過去一小時"
 
-#: ../src/Widgets/ClearUsagePopover.vala:45
+#: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
 msgstr "過去一天"
 
-#: ../src/Widgets/ClearUsagePopover.vala:46
+#: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
 msgstr "過去一週"
 
-#: ../src/Widgets/ClearUsagePopover.vala:47
+#: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
 msgstr "從："
 
-#: ../src/Widgets/ClearUsagePopover.vala:48
+#: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
 msgstr "所有時間"
 
-#: ../src/Widgets/ClearUsagePopover.vala:51
+#: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
 msgstr "到："
 
-#: ../src/Widgets/ClearUsagePopover.vala:54
+#: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
 msgstr "清除資料"
 
-#. //launchpad.net/switchboard-plug-security-privacy)
-#. *
-#. * This library is free software; you can redistribute it and/or
-#. * modify it under the terms of the GNU Lesser General Public
-#. * License as published by the Free Software Foundation; either
-#. * version 3 of the License, or (at your option) any later version.
-#. *
-#. * This library is distributed in the hope that it will be useful,
-#. * but WITHOUT ANY WARRANTY; without even the implied warranty of
-#. * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-#. * Lesser General Public License for more details.
-#. *
-#. * You should have received a copy of the GNU Lesser General Public
-#. * License along with this program; if not, write to the
-#. * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-#. * Boston, MA 02110-1301 USA
-#. *
-#. * Authored by: Corentin Noël <tintou@mailoo.org>
-#.
-#: ../src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "若要執行防火牆組態設定需要先核對身份"
+#: src/Widgets/ExcludeTreeView.vala:56
+msgid "Add Application…"
+msgstr "加入應用程式…"
+
+#: src/Widgets/ExcludeTreeView.vala:71
+msgid "Add Folder…"
+msgstr "加入資料夾…"
+
+#: src/Widgets/ExcludeTreeView.vala:73
+msgid "Select a folder to blacklist"
+msgstr "選取資料夾加入黑名單中"
+
+#: src/Widgets/ExcludeTreeView.vala:74
+msgid "Cancel"
+msgstr "取消"
+
+#: src/Widgets/ExcludeTreeView.vala:74
+msgid "Add"
+msgstr "加入"
+
+#: src/Widgets/ExcludeTreeView.vala:86
+msgid "Delete"
+msgstr "刪除"
+
+#: src/Widgets/ExcludeTreeView.vala:131
+msgid "Do not collect data from the following:"
+msgstr "不要從下列項目中收集資料："
+
+#: src/Widgets/IncludeTreeView.vala:76
+msgid "Data Sources:"
+msgstr "資料來源："
+
+#: src/Widgets/IncludeTreeView.vala:82
+msgid "Chat Logs"
+msgstr "聊天記錄"
+
+#: src/Widgets/IncludeTreeView.vala:83
+msgid "Documents"
+msgstr "文件"
+
+#: src/Widgets/IncludeTreeView.vala:84
+msgid "Music"
+msgstr "音樂"
+
+#: src/Widgets/IncludeTreeView.vala:85
+msgid "Pictures"
+msgstr "圖片"
+
+#: src/Widgets/IncludeTreeView.vala:86
+msgid "Presentations"
+msgstr "簡報"
+
+#: src/Widgets/IncludeTreeView.vala:87
+msgid "Spreadsheets"
+msgstr "試算表"
+
+#: src/Widgets/IncludeTreeView.vala:88
+msgid "Videos"
+msgstr "影片"
+
+#~ msgid "Privacy Mode"
+#~ msgstr "隱私模式"
 
 #~ msgid "IPv6"
 #~ msgstr "IPv6"
