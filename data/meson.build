@@ -1,6 +1,6 @@
 gettext_declaration = configure_file(
     configuration: configuration_data,
-    input: 'org.pantheon.security-privacy.policy.in',
+    input: 'io.elementary.switchboard.security-privacy.policy.in',
     output: '@BASENAME@'
 )
 
@@ -16,6 +16,6 @@ install_data(
 )
 
 install_data(
-    'org.pantheon.security-privacy.gschema.xml',
+    'io.elementary.switchboard.security-privacy.gschema.xml',
     install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas')
 )

@@ -4,9 +4,9 @@
  "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
 <policyconfig>
   <vendor>elementary</vendor>
-  <vendor_url>http://www.elementaryos.org/</vendor_url>
+  <vendor_url>https://elementary.io/</vendor_url>
 
-  <action id="org.pantheon.security-privacy">
+  <action id="io.elementary.switchboard.security-privacy">
     <message gettext-domain="@GETTEXT_PACKAGE@">Authentication is required to run the Firewall Configuration</message>
     <icon_name>preferences-system-privacy</icon_name>
     <defaults>
