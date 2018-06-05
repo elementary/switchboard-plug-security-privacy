@@ -49,8 +49,16 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     construct {
         location_settings = new GLib.Settings (LOCATION_AGENT_ID);
 
+        var placeholder = new Granite.Widgets.AlertView (
+            _("No Apps Are Using Location Services"),
+            _("When apps are installed that use location services they will automatically appear here."),
+            ""
+        );
+        placeholder.show_all ();
+
         listbox = new Gtk.ListBox ();
         listbox.activate_on_single_click = true;
+        listbox.set_placeholder (placeholder);
 
         populate_app_listbox ();
 
