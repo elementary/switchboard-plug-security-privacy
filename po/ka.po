@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-04 09:37-0500\n"
+"POT-Creation-Date: 2018-06-05 16:07-0700\n"
 "PO-Revision-Date: 2018-02-11 00:09+0000\n"
 "Last-Translator: Lasha-Giorgi Esebua <lashagiorgiesebua@gmail.com>\n"
 "Language-Team: Georgian <https://weblate.elementary.io/projects/switchboard/"
@@ -62,13 +62,13 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "ფაიერვოლის კონფიგურაციის გასაშვებად საჭიროა ავტენთიფიკაცია"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:104
+#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
 msgstr "ჩართულია"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
-#: src/Views/LocationPanel.vala:109 src/Widgets/ServiceItem.vala:36
+#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
 msgstr "გამორთულია"
 
@@ -224,23 +224,33 @@ msgstr "თქვენი სისტემა"
 msgid "Allow the apps below to determine your location"
 msgstr "უფლება მიეცი წინამდებარე აპლიკაციებს დაადგინონ თქვენი მდებარეობა"
 
-#: src/Views/LocationPanel.vala:63
+#: src/Views/LocationPanel.vala:53
+msgid "No Apps Are Using Location Services"
+msgstr ""
+
+#: src/Views/LocationPanel.vala:54
+msgid ""
+"When apps are installed that use location services they will automatically "
+"appear here."
+msgstr ""
+
+#: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
 msgstr ""
 
-#: src/Views/LocationPanel.vala:65
+#: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
 
-#: src/Views/LocationPanel.vala:66
+#: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
 
-#: src/Views/LocationPanel.vala:67
+#: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -248,7 +258,7 @@ msgstr ""
 "ეს ვერ შეაჩრებს აპლიკაციას დაადგინოს თქვენი მდებარეობ იპ მისამართის "
 "გამოყენებით"
 
-#: src/Views/LocationPanel.vala:179
+#: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
 msgstr ""

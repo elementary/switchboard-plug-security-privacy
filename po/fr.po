@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-04 09:37-0500\n"
+"POT-Creation-Date: 2018-06-05 16:07-0700\n"
 "PO-Revision-Date: 2018-05-29 00:13+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
@@ -63,13 +63,13 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Authentification requise pour configurer le pare-feu"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:104
+#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:32
 msgid "Enabled"
 msgstr "Activé"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
-#: src/Views/LocationPanel.vala:109 src/Widgets/ServiceItem.vala:36
+#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
 msgstr "Désactivé"
 
@@ -226,11 +226,22 @@ msgstr "Votre système"
 msgid "Allow the apps below to determine your location"
 msgstr "Autoriser les applications suivantes à déterminer votre localisation"
 
-#: src/Views/LocationPanel.vala:63
+#: src/Views/LocationPanel.vala:53
+#, fuzzy
+msgid "No Apps Are Using Location Services"
+msgstr "Services de localisation"
+
+#: src/Views/LocationPanel.vala:54
+msgid ""
+"When apps are installed that use location services they will automatically "
+"appear here."
+msgstr ""
+
+#: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
 msgstr "Les services de localisation sont désactivés"
 
-#: src/Views/LocationPanel.vala:65
+#: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -238,7 +249,7 @@ msgstr ""
 "Lorsque les services de localisation sont désactivés, les requêtes de "
 "localisation émanant des applications sont rejetés automatiquement."
 
-#: src/Views/LocationPanel.vala:66
+#: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
@@ -246,7 +257,7 @@ msgstr ""
 "Les fonctionnalités supplémentaires permises par l'accès à la localisation "
 "seront affectés."
 
-#: src/Views/LocationPanel.vala:67
+#: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -254,7 +265,7 @@ msgstr ""
 "Ceci n'empêchera pas les applications d'essayer de déterminer votre "
 "localisation grâce à votre adresse IP."
 
-#: src/Views/LocationPanel.vala:179
+#: src/Views/LocationPanel.vala:187
 #, fuzzy, c-format
 msgid "Allow %s to use location services"
 msgstr "Services de localisation"
