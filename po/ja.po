@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-06-07 07:10+0000\n"
+"PO-Revision-Date: 2018-06-08 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/ja/>\n"
@@ -220,7 +220,7 @@ msgstr "あなたのシステム"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
-msgstr "以下のアプリに現在地の特定を許可する"
+msgstr "以下のアプリに現在地の特定を許可します"
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
@@ -305,11 +305,11 @@ msgstr "アプリケーションの追加…"
 
 #: src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "フォルダの追加…"
+msgstr "フォルダーの追加…"
 
 #: src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
-msgstr "除外リストに追加するフォルダを選択"
+msgstr "除外リストに追加するフォルダーを選択"
 
 #: src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"
