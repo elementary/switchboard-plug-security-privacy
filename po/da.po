@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-05-07 00:03+0000\n"
+"PO-Revision-Date: 2018-06-08 11:38+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
-"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-security-privacy/da/>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-security-privacy/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -225,34 +225,34 @@ msgid "Allow the apps below to determine your location"
 msgstr "Giver programmerne nedenfor tilladelse til kende din placering"
 
 #: src/Views/LocationPanel.vala:53
-#, fuzzy
 msgid "No Apps Are Using Location Services"
-msgstr "Placeringstjenester"
+msgstr "Ingen Apps Bruger Lokationstjenester"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Når apps installeres, der bruger lokationstjenester, vises de automatisk her."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr "Placeringstjenester er deaktiveret"
+msgstr "Lokationstjenester Er Deaktiveret"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
-"Mens placeringstjenester er deaktiveret, vil forespørgsler fra programmer om "
-"placering automatisk blive afvist."
+"Mens lokationstjenester er deaktiveret, vil forespørgsler om lokation fra "
+"apps automatisk blive afvist."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
-"Den yderligere funktionalitet som placeringsadgang giver i disse programmer "
+"Den yderligere funktionalitet som lokationsadgang giver i disse programmer "
 "vil blive påvirket."
 
 #: src/Views/LocationPanel.vala:75
@@ -260,25 +260,25 @@ msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
-"Dette vil ikke forhindre programmer i at prøve at finde din placering "
-"baseret på IP-adresse."
+"Dette vil ikke forhindre programmer i at prøve at finde din lokation baseret "
+"på IP-adresse."
 
 #: src/Views/LocationPanel.vala:187
-#, fuzzy, c-format
+#, c-format
 msgid "Allow %s to use location services"
-msgstr "Placeringstjenester"
+msgstr "Tillad %s at bruge lokationstjenester"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr "Søg efter program"
+msgstr "Søg Applikation"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
-msgstr "Fjern systemindsamlede fil- og programdata fra:"
+msgstr "Fjern systemindsamlede fil- og applikationsbrugsdata fra:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "Seneste time"
+msgstr "Den sidste time"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
