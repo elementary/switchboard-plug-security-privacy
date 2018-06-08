@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-06-02 00:06+0000\n"
+"PO-Revision-Date: 2018-06-08 08:15+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-security-privacy/fi/>\n"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-security-privacy/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -224,15 +224,16 @@ msgid "Allow the apps below to determine your location"
 msgstr "Salli alla olevien sovellusten paikantaa sijaintisi"
 
 #: src/Views/LocationPanel.vala:53
-#, fuzzy
 msgid "No Apps Are Using Location Services"
-msgstr "Sijaintipalvelut"
+msgstr "Mikään sovellus ei käytä sijaintipalveluja"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Kun sijaintipalveluja käyttäviä sovelluksia on asennettu, ne ilmestyvät "
+"tänne."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
@@ -263,9 +264,9 @@ msgstr ""
 "perusteella."
 
 #: src/Views/LocationPanel.vala:187
-#, fuzzy, c-format
+#, c-format
 msgid "Allow %s to use location services"
-msgstr "Sijaintipalvelut"
+msgstr "Salli sovelluksen %s käyttää sijaintipalveluja"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
