@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-06-08 10:25+0000\n"
+"PO-Revision-Date: 2018-06-09 00:06+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/cs/>\n"
@@ -305,11 +305,11 @@ msgstr "Vymazat data"
 
 #: src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "Přidat aplikaci..."
+msgstr "Přidat aplikaci…"
 
 #: src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "Přidat složku"
+msgstr "Přidat složku…"
 
 #: src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
@@ -333,7 +333,7 @@ msgstr "Nesbírat data z následujících:"
 
 #: src/Widgets/IncludeTreeView.vala:76
 msgid "Data Sources:"
-msgstr "Zdroje dat"
+msgstr "Zdroje dat:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
