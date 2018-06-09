@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-06-08 00:12+0000\n"
+"PO-Revision-Date: 2018-06-10 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/ja/>\n"
@@ -173,7 +173,7 @@ msgstr "スリープ時にロック:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr "画面消去時にロック:"
+msgstr "画面の電源が切れたときにロック:"
 
 #: src/Views/TrackPanel.vala:28
 msgid ""
