@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-06-07 06:58+0000\n"
+"PO-Revision-Date: 2018-06-12 00:03+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/hu/>\n"
@@ -217,7 +217,7 @@ msgstr "Előzmények törlése…"
 
 #: src/Views/TrackPanel.vala:94
 msgid "Your system"
-msgstr "Az Ön rendszere"
+msgstr "Az ön rendszere"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
@@ -259,8 +259,8 @@ msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
-"Ez nem akadályozza meg az alkalmazásokat, hogy megpróbálják meghatározni az "
-"Ön helyét IP-cím alapján."
+"Ez nem gátolja meg az alkalmazásokat abban, hogy megpróbálják meghatározni "
+"az ön helyét IP-cím alapján."
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
