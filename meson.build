@@ -1,4 +1,4 @@
-project('security-privacy', 'vala', 'c')
+project('security-privacy', 'vala', 'c', meson_version: '>= 0.46.1')
 
 switchboard_dep = dependency('switchboard-2.0')
 
