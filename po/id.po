@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-06-12 07:25+0000\n"
+"PO-Revision-Date: 2018-06-13 00:07+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/id/>\n"
@@ -73,7 +73,7 @@ msgstr "Dinonaktifkan"
 #: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
 #: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
 msgid "Unknown"
-msgstr "Tidak Diketahui"
+msgstr "Tidak diketahui"
 
 #: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
 msgid "Allow"
