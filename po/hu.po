@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-06-12 00:03+0000\n"
+"PO-Revision-Date: 2018-06-15 00:11+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/hu/>\n"
@@ -70,7 +70,7 @@ msgstr "Bekapcsolva"
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:36
 msgid "Disabled"
-msgstr "Letiltva"
+msgstr "Kikapcsolva"
 
 #: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
 #: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
@@ -184,7 +184,7 @@ msgid ""
 msgstr ""
 "Az operációs rendszer képes statisztikai adatokat gyüjteni a fájlokról, "
 "alkalmazásokról és extra funkciókról. Ha más emberek is használják a fiókot "
-"vagy a számítógépet, akkor érdemes korlátozni ennek hozzáférhetőségét."
+"vagy a számítógépet, akkor érdemes korlátozni ezek hozzáférhetőségét."
 
 #: src/Views/TrackPanel.vala:35
 #, c-format
@@ -209,7 +209,7 @@ msgstr ""
 
 #: src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr "Előzmények letiltva"
+msgstr "Előzmények kikapcsolva"
 
 #: src/Views/TrackPanel.vala:48
 msgid "Clear History…"
