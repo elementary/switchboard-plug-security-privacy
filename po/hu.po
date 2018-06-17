@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-05 16:07-0700\n"
-"PO-Revision-Date: 2018-06-15 00:11+0000\n"
+"PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-security-privacy/hu/>\n"
@@ -26,12 +26,11 @@ msgstr "Biztonság és magánszféra"
 
 #: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
-"Állítsa be a tűzfalat, a lezárási képernyőt, és az aktivitási információkat"
+msgstr "A tűzfal, a lezárási képernyő és az aktivitási információk beállítása"
 
 #: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
-msgstr "Egyes beállítások megváltoztatása rendszergazdai jogokat igényel"
+msgstr "Egyes beállítások megváltoztatásához rendszergazdai jogokra van szükség"
 
 #: src/Plug.vala:131 src/Plug.vala:173
 msgid "Privacy"
@@ -182,9 +181,10 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
-"Az operációs rendszer képes statisztikai adatokat gyüjteni a fájlokról, "
-"alkalmazásokról és extra funkciókról. Ha más emberek is használják a fiókot "
-"vagy a számítógépet, akkor érdemes korlátozni ezek hozzáférhetőségét."
+"Az operációs rendszer képes hasznos statisztikai adatokat gyüjteni a fájl- "
+"és alkalmazáshasználatról, hogy extra funkciókat nyújtson. Ha mások is "
+"használják a fiókot vagy a számítógépet, akkor érdemes korlátozni ezek "
+"hozzáférhetőségét."
 
 #: src/Views/TrackPanel.vala:35
 #, c-format
@@ -274,7 +274,7 @@ msgstr "Alkalmazás keresése"
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
-"Távolítsa el a rendszer által gyűjtött fájl- és alkalmazásfelhasználási "
+"Távolítsa el a rendszer által gyűjtött fájl- és alkalmazáshasználati "
 "adatokat:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
