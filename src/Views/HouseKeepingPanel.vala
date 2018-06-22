@@ -42,7 +42,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         trash_files_switch = new Gtk.Switch ();
         trash_files_switch.halign = Gtk.Align.START;
 
-        file_age_label = new Gtk.Label (_("Number of days to keep trash and temporary files:"));
+        file_age_label = new Gtk.Label (_("Number of days to keep trashed and temporary files:"));
         file_age_label.xalign = 1;
 
         file_age_spinbutton = new Gtk.SpinButton.with_range (0, 90, 5);
