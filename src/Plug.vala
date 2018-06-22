@@ -27,6 +27,7 @@ namespace SecurityPrivacy {
     public static Blacklist blacklist;
     public static LocationPanel location;
     public static FirewallPanel firewall;
+    public static HouseKeepingPanel housekeeping;
     public static TrackPanel tracking;
 
     public class Plug : Switchboard.Plug {
@@ -129,7 +130,7 @@ namespace SecurityPrivacy {
             tracking = new TrackPanel ();
             var locking = new LockPanel ();
             firewall = new FirewallPanel ();
-            var housekeeping = new HouseKeepingPanel ();
+            housekeeping = new HouseKeepingPanel ();
 
             stack.add_titled (tracking, HISTORY, _("Privacy"));
             stack.add_titled (locking, LOCKING, _("Locking"));

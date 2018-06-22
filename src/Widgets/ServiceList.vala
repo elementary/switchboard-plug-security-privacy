@@ -19,6 +19,7 @@
  */
 
 public class ServiceList : Gtk.ListBox {
+    private ServiceItem housekeeping_item;
     Gee.HashMap<string, ServiceItem> services = new Gee.HashMap<string, ServiceItem> ();
 
     public ServiceList () {
@@ -30,7 +31,7 @@ public class ServiceList : Gtk.ListBox {
         var privacy_item = new ServiceItem ("document-open-recent", "tracking", _("History"));
         var lock_item = new ServiceItem ("system-lock-screen", "locking", _("Locking"));
         var firewall_item = new ServiceItem ("network-firewall", "firewall", _("Firewall"));
-        var housekeeping_item = new ServiceItem ("edit-clear", "housekeeping", _("Housekeeping"));
+        housekeeping_item = new ServiceItem ("edit-clear", "housekeeping", _("Housekeeping"));
 
         add_service (privacy_item);
         add_service (lock_item);
@@ -42,6 +43,12 @@ public class ServiceList : Gtk.ListBox {
         });
 
         update_service_status (privacy_item, SecurityPrivacy.tracking.status_switch.active);
+
+        SecurityPrivacy.housekeeping.notify["status-type"].connect (() => {
+            update_housekeeping_status ();
+        });
+
+        update_housekeeping_status ();
 
         SecurityPrivacy.tracking.status_switch.notify["active"].connect (() => {
             update_service_status (privacy_item, SecurityPrivacy.tracking.status_switch.active);
@@ -64,6 +71,16 @@ public class ServiceList : Gtk.ListBox {
         } else {
             service_item.status = ServiceItem.Status.DISABLED;
         }    
+    }
+
+    private void update_housekeeping_status () {
+        if (SecurityPrivacy.housekeeping.status_type == Granite.SettingsPage.StatusType.SUCCESS) {
+            housekeeping_item.status = ServiceItem.Status.ENABLED;
+        } else if (SecurityPrivacy.housekeeping.status_type == Granite.SettingsPage.StatusType.WARNING) {
+            housekeeping_item.status = ServiceItem.Status.PARTIAL;
+        } else if (SecurityPrivacy.housekeeping.status_type == Granite.SettingsPage.StatusType.OFFLINE) {
+            housekeeping_item.status = ServiceItem.Status.DISABLED;
+        }
     }
 
     public void add_service (ServiceItem service) {
