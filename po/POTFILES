@@ -3,6 +3,7 @@ src/Plug.vala
 src/UFWHelpers.vala
 src/ZGUtilities.vala
 src/Views/FirewallPanel.vala
+src/Views/HouseKeepingPanel.vala
 src/Views/LockPanel.vala
 src/Views/TrackPanel.vala
 src/Views/LocationPanel.vala

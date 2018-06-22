@@ -10,6 +10,7 @@ plug_files = files(
     'UFWHelpers.vala',
     'ZGUtilities.vala',
     'Views/FirewallPanel.vala',
+    'Views/HouseKeepingPanel.vala',
     'Views/LockPanel.vala',
     'Views/TrackPanel.vala',
     'Views/LocationPanel.vala',

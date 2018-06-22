@@ -30,10 +30,12 @@ public class ServiceList : Gtk.ListBox {
         var privacy_item = new ServiceItem ("document-open-recent", "tracking", _("History"));
         var lock_item = new ServiceItem ("system-lock-screen", "locking", _("Locking"));
         var firewall_item = new ServiceItem ("network-firewall", "firewall", _("Firewall"));
+        var housekeeping_item = new ServiceItem ("edit-clear", "housekeeping", _("Housekeeping"));
 
         add_service (privacy_item);
         add_service (lock_item);
         add_service (firewall_item);
+        add_service (housekeeping_item);
 
         SecurityPrivacy.firewall.status_switch.notify["active"].connect (() => {
             update_service_status (firewall_item, SecurityPrivacy.firewall.status_switch.active);
