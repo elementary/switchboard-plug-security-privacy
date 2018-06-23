@@ -56,6 +56,10 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         content_area.attach (file_age_label, 0, 2);
         content_area.attach (file_age_spinbutton, 1, 2);
 
+        var view_trash_button = new Gtk.Button.with_label (_("Open Trash…"));
+
+        action_area.add (view_trash_button);
+
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
         privacy_settings.bind ("remove-old-temp-files", temp_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         privacy_settings.bind ("remove-old-trash-files", trash_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -63,6 +67,14 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
         temp_files_switch.notify["active"].connect (update_status);
         trash_files_switch.notify["active"].connect (update_status);
+
+        view_trash_button.clicked.connect (() => {
+            try {
+                AppInfo.launch_default_for_uri ("trash:///", null);
+            } catch (Error e) {
+                warning ("Failed to open trash: %s", e.message);
+            }
+        });
 
         update_status ();
     }
