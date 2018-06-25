@@ -21,7 +21,8 @@
 public class ServiceItem: Gtk.ListBoxRow {
     public enum Status {
         ENABLED,
-        DISABLED
+        DISABLED,
+        PARTIAL
     }
 
     public Status status {
@@ -34,6 +35,10 @@ public class ServiceItem: Gtk.ListBoxRow {
                 case Status.DISABLED:
                     status_icon.icon_name = "user-offline";
                     status_label.label = _("Disabled");
+                    break;
+                case Status.PARTIAL:
+                    status_icon.icon_name = "user-away";
+                    status_label.label = _("Partially Enabled");
                     break;
             }
             status_label.no_show_all = false;

@@ -27,6 +27,7 @@ namespace SecurityPrivacy {
     public static Blacklist blacklist;
     public static LocationPanel location;
     public static FirewallPanel firewall;
+    public static HouseKeepingPanel housekeeping;
     public static TrackPanel tracking;
 
     public class Plug : Switchboard.Plug {
@@ -38,6 +39,7 @@ namespace SecurityPrivacy {
         bool location_agent_installed = false;
 
         private const string FIREWALL = "firewall";
+        private const string HOUSEKEEPING = "housekeeping";
         private const string HISTORY = "tracking";
         private const string LOCKING = "locking";
         private const string LOCATION = "location";
@@ -54,6 +56,7 @@ namespace SecurityPrivacy {
             supported_settings.set ("security", null);
             supported_settings.set ("security/privacy", HISTORY);
             supported_settings.set ("security/firewall", FIREWALL);
+            supported_settings.set ("security/housekeeping", HOUSEKEEPING);
             supported_settings.set ("security/screensaver", LOCKING);
             
             if (location_agent_installed) {
@@ -127,10 +130,12 @@ namespace SecurityPrivacy {
             tracking = new TrackPanel ();
             var locking = new LockPanel ();
             firewall = new FirewallPanel ();
+            housekeeping = new HouseKeepingPanel ();
 
             stack.add_titled (tracking, HISTORY, _("Privacy"));
             stack.add_titled (locking, LOCKING, _("Locking"));
             stack.add_titled (firewall, FIREWALL, _("Firewall"));
+            stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
 
             if (location_agent_installed) {
                 location = new LocationPanel ();
@@ -173,6 +178,7 @@ namespace SecurityPrivacy {
             map.set ("%s → %s".printf (display_name, _("Privacy")), HISTORY);
             map.set ("%s → %s".printf (display_name, _("Locking")), LOCKING);
             map.set ("%s → %s".printf (display_name, _("Firewall")), FIREWALL);
+            map.set ("%s → %s".printf (display_name, _("Housekeeping")), HOUSEKEEPING);
             if (location_agent_installed) {
                 map.set ("%s → %s".printf (display_name, _("Location Services")), LOCATION);
             }
