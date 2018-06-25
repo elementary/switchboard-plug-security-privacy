@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 16:07-0700\n"
+"POT-Creation-Date: 2018-06-25 16:07-0700\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-security-privacy/hu/>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-security-privacy/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,39 +20,45 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:48
+#: src/Plug.vala:50
 msgid "Security & Privacy"
 msgstr "Biztonság és magánszféra"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "A tűzfal, a lezárási képernyő és az aktivitási információk beállítása"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:93
 msgid "Some settings require administrator rights to be changed"
-msgstr "Egyes beállítások megváltoztatásához rendszergazdai jogokra van szükség"
+msgstr ""
+"Egyes beállítások megváltoztatásához rendszergazdai jogokra van szükség"
 
-#: src/Plug.vala:131 src/Plug.vala:173
+#: src/Plug.vala:135 src/Plug.vala:178
 msgid "Privacy"
 msgstr "Magánszféra"
 
-#: src/Plug.vala:132 src/Plug.vala:174 src/Views/LockPanel.vala:29
-#: src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:136 src/Plug.vala:179 src/Views/LockPanel.vala:29
+#: src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Zárolás"
 
-#: src/Plug.vala:133 src/Plug.vala:175 src/Views/FirewallPanel.vala:48
-#: src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:137 src/Plug.vala:180 src/Views/FirewallPanel.vala:48
+#: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Tűzfal"
 
-#: src/Plug.vala:137 src/Plug.vala:177 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:49
+#: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
+#: src/Widgets/ServiceList.vala:34
+msgid "Housekeeping"
+msgstr ""
+
+#: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "Helymeghatározó szolgáltatások"
 
-#: src/Plug.vala:172 src/Views/TrackPanel.vala:30
-#: src/Widgets/ServiceList.vala:30
+#: src/Plug.vala:177 src/Views/TrackPanel.vala:30
+#: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Előzmények"
 
@@ -62,12 +68,12 @@ msgstr "Hitelesítés szükséges a tűzfal beállításokhoz"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
 #: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
-#: src/Widgets/ServiceItem.vala:32
+#: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Bekapcsolva"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:36
+#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Kikapcsolva"
 
@@ -166,6 +172,22 @@ msgstr "%d vagy %d-%d"
 #: src/Views/FirewallPanel.vala:360
 msgid "Add Rule"
 msgstr "Szabály hozzáadása"
+
+#: src/Views/HouseKeepingPanel.vala:33
+msgid "Automatically delete old temporary files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:39
+msgid "Automatically delete old trashed files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:45
+msgid "Number of days to keep trashed and temporary files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:59
+msgid "Open Trash…"
+msgstr ""
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -364,6 +386,10 @@ msgstr "Táblázatok"
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
 msgstr "Videók"
+
+#: src/Widgets/ServiceItem.vala:41
+msgid "Partially Enabled"
+msgstr ""
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Adatvédelmi mód"

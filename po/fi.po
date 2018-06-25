@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 16:07-0700\n"
+"POT-Creation-Date: 2018-06-25 16:07-0700\n"
 "PO-Revision-Date: 2018-06-08 08:15+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-security-privacy/fi/>\n"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-security-privacy/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,39 +20,44 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
-#: src/Plug.vala:48
+#: src/Plug.vala:50
 msgid "Security & Privacy"
 msgstr "Turvallisuus ja yksityisyys"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Muokkaa palomuuria, näytön lukitusta ja toimien tietoja"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:93
 msgid "Some settings require administrator rights to be changed"
 msgstr "Jotkin asetukset vaativat muutoksia varten ylläpitäjän oikeuksia"
 
-#: src/Plug.vala:131 src/Plug.vala:173
+#: src/Plug.vala:135 src/Plug.vala:178
 msgid "Privacy"
 msgstr "Yksityisyys"
 
-#: src/Plug.vala:132 src/Plug.vala:174 src/Views/LockPanel.vala:29
-#: src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:136 src/Plug.vala:179 src/Views/LockPanel.vala:29
+#: src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Lukitus"
 
-#: src/Plug.vala:133 src/Plug.vala:175 src/Views/FirewallPanel.vala:48
-#: src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:137 src/Plug.vala:180 src/Views/FirewallPanel.vala:48
+#: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Palomuuri"
 
-#: src/Plug.vala:137 src/Plug.vala:177 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:49
+#: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
+#: src/Widgets/ServiceList.vala:34
+msgid "Housekeeping"
+msgstr ""
+
+#: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "Sijaintipalvelut"
 
-#: src/Plug.vala:172 src/Views/TrackPanel.vala:30
-#: src/Widgets/ServiceList.vala:30
+#: src/Plug.vala:177 src/Views/TrackPanel.vala:30
+#: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historia"
 
@@ -62,12 +67,12 @@ msgstr "Palomuurin asetukset vaatii tunnistautumisen"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
 #: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
-#: src/Widgets/ServiceItem.vala:32
+#: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Käytössä"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:36
+#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Pois käytöstä"
 
@@ -166,6 +171,22 @@ msgstr "%d tai %d-%d"
 #: src/Views/FirewallPanel.vala:360
 msgid "Add Rule"
 msgstr "Lisää sääntö"
+
+#: src/Views/HouseKeepingPanel.vala:33
+msgid "Automatically delete old temporary files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:39
+msgid "Automatically delete old trashed files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:45
+msgid "Number of days to keep trashed and temporary files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:59
+msgid "Open Trash…"
+msgstr ""
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -364,6 +385,10 @@ msgstr "Laskentataulukot"
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
 msgstr "Videot"
+
+#: src/Widgets/ServiceItem.vala:41
+msgid "Partially Enabled"
+msgstr ""
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Yksityisyystila"

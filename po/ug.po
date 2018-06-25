@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 16:07-0700\n"
+"POT-Creation-Date: 2018-06-25 16:07-0700\n"
 "PO-Revision-Date: 2016-12-15 17:51+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -18,40 +18,45 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 "X-Generator: Launchpad (build 18329)\n"
 
-#: src/Plug.vala:48
+#: src/Plug.vala:50
 msgid "Security & Privacy"
 msgstr "بىخەتەرلىك ۋە مەخپىيەتلىك"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "قوغداش تېمى تەڭشىكى، ئىكران قۇلۇپى ۋە ئىشلىتىش خاتىرىسى"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:93
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "بەزى تەڭشەكلەرنى باشقۇرغۇچىلىق سالاھىيىتى بولغاندىلا ئۆزگەرتكىلى بولىدۇ"
 
-#: src/Plug.vala:131 src/Plug.vala:173
+#: src/Plug.vala:135 src/Plug.vala:178
 msgid "Privacy"
 msgstr "مەخپىيەتلىك"
 
-#: src/Plug.vala:132 src/Plug.vala:174 src/Views/LockPanel.vala:29
-#: src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:136 src/Plug.vala:179 src/Views/LockPanel.vala:29
+#: src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "قۇلۇپلاش"
 
-#: src/Plug.vala:133 src/Plug.vala:175 src/Views/FirewallPanel.vala:48
-#: src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:137 src/Plug.vala:180 src/Views/FirewallPanel.vala:48
+#: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "قوغداش تېمى"
 
-#: src/Plug.vala:137 src/Plug.vala:177 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:49
+#: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
+#: src/Widgets/ServiceList.vala:34
+msgid "Housekeeping"
+msgstr ""
+
+#: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr ""
 
-#: src/Plug.vala:172 src/Views/TrackPanel.vala:30
-#: src/Widgets/ServiceList.vala:30
+#: src/Plug.vala:177 src/Views/TrackPanel.vala:30
+#: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr ""
 
@@ -61,12 +66,12 @@ msgstr "قوغداش تېمىنى تەڭشەش ئۈچۈن سالاھىيەت د�
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
 #: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
-#: src/Widgets/ServiceItem.vala:32
+#: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr ""
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:36
+#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr ""
 
@@ -167,6 +172,22 @@ msgstr "%d ياكى %d-%d"
 #: src/Views/FirewallPanel.vala:360
 msgid "Add Rule"
 msgstr "قائىدە قىتىش"
+
+#: src/Views/HouseKeepingPanel.vala:33
+msgid "Automatically delete old temporary files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:39
+msgid "Automatically delete old trashed files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:45
+msgid "Number of days to keep trashed and temporary files:"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:59
+msgid "Open Trash…"
+msgstr ""
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -355,6 +376,10 @@ msgstr "جەدىۋەللەر"
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
 msgstr "ۋېدىئولار"
+
+#: src/Widgets/ServiceItem.vala:41
+msgid "Partially Enabled"
+msgstr ""
 
 #~ msgid "Privacy Mode"
 #~ msgstr "شەخسىي ھالەت"
