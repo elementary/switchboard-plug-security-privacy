@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-08 11:38+0000\n"
+"PO-Revision-Date: 2018-06-28 16:53+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/da/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:46+0000\n"
 
 #: src/Plug.vala:50
@@ -50,7 +50,7 @@ msgstr "Firewall"
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Husholdning"
 
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -175,19 +175,19 @@ msgstr "Tilføj regel"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Slet automatisk gamle midlertidige filer:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Slet automatisk gamle udsmidte filer:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Antal dage at beholde udmidte og midlertidige filer:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Åben Skraldespand…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -387,7 +387,7 @@ msgstr "Videoer"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Delvist Aktiveret"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Privatlivstilstand"
