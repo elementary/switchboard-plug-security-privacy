@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-07 09:30+0000\n"
+"PO-Revision-Date: 2018-06-28 19:37+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-20 06:36+0000\n"
 
 #: src/Plug.vala:50
@@ -51,7 +51,7 @@ msgstr "Zapora sieciowa"
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Gospodarowanie"
 
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -177,19 +177,19 @@ msgstr "Dodaj regułę"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Usuwaj automatycznie stare pliki tymczasowe:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Usuwaj automatycznie stare pliki z kosza:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Ilość dni przechowywania plików tymczasowych i w koszu:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Otwórz kosz…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -390,7 +390,7 @@ msgstr "Filmy"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Częściowo włączone"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Tryb prywatny"
