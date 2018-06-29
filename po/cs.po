@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-09 00:06+0000\n"
+"PO-Revision-Date: 2018-06-29 20:57+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/cs/>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Bezpečnost & Soukromí"
+msgstr "Bezpečnost a soukromí"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
@@ -49,7 +49,7 @@ msgstr "Firewall"
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Údržba"
 
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -174,19 +174,19 @@ msgstr "Přidat pravidlo"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Automaticky mazat staré dočasné soubory:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Automaticky mazat staré soubory v koši:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Počet dnů pro uchování dočasných souborů a souborů v koši:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Otevřít koš…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -224,8 +224,8 @@ msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
-"Toto nastavení nezabrání aplikacím v uchovávání jejich vlastních dat jako "
-"například historie prohlížení."
+"Toto nezabrání aplikacím v uchovávání jejich vlastních dat jako například "
+"historie prohlížení."
 
 #: src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
@@ -386,7 +386,7 @@ msgstr "Videa"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Částečně povoleno"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Soukromý režim"
