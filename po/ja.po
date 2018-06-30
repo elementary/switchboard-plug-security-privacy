@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-30 00:03+0000\n"
+"PO-Revision-Date: 2018-07-01 00:02+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -284,7 +284,7 @@ msgstr ""
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr "%s が位置情報サービスを使用することを許可する"
+msgstr "%s が位置情報サービスを使用することを許可"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
