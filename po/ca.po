@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-08 14:34+0000\n"
+"PO-Revision-Date: 2018-07-02 16:01+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:39+0000\n"
 
 #: src/Plug.vala:50
@@ -51,7 +51,7 @@ msgstr "Tallafocs"
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Manteniment"
 
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -176,19 +176,19 @@ msgstr "Afegeix una regla"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Suprimeix automàticament els fitxers temporals antics:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Suprimeix automàticament els fitxers enviats a la paperera:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Nombre de dies per mantenir els fitxers temporals i a la paperera:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Obre la paperera…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -390,7 +390,7 @@ msgstr "Vídeos"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Habilitat parcialment"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Mode privat"
