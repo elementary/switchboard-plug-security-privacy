@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-29 20:57+0000\n"
+"PO-Revision-Date: 2018-07-10 00:03+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/cs/>\n"
@@ -54,7 +54,7 @@ msgstr "Údržba"
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
-msgstr "Služby určování polohy"
+msgstr "Služby polohy"
 
 #: src/Plug.vala:177 src/Views/TrackPanel.vala:30
 #: src/Widgets/ServiceList.vala:31
@@ -63,7 +63,7 @@ msgstr "Historie"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Autentizace je vyžadována pro změnu nastavení Firewall"
+msgstr "Pro změnu nastavení Firewallu je potřeba ověření"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
 #: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
@@ -245,26 +245,26 @@ msgstr "Povolte aplikacím níže zjistit vaši lokaci"
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr "Žádné aplikace nepoužívají služby určování polohy"
+msgstr "Žádné aplikace nepoužívají služby určení polohy"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
-"Když budou nainstalovány aplikace používající služby určování polohy, "
-"automaticky se objeví zde."
+"Po nainstalování se aplikace používající služby určení polohy automaticky "
+"objeví zde."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr "Služby určování polohy jsou vypnuty"
+msgstr "Služby určení polohy jsou vypnuty"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
-"Když jsou služby určování polohy vypnuty, požadavky určení polohy z aplikací "
+"Když jsou služby určení polohy vypnuty, požadavky určení polohy z aplikací "
 "budou automaticky odmítány."
 
 #: src/Views/LocationPanel.vala:74
@@ -285,7 +285,7 @@ msgstr ""
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr "Povolit %s používat služby určování polohy"
+msgstr "Povolit %s používat služby určení polohy"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
