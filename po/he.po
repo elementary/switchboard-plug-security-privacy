@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-29 00:05+0000\n"
+"PO-Revision-Date: 2018-07-11 00:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/he/>\n"
@@ -182,11 +182,11 @@ msgstr "מחיקה אוטומטית של קבצים ישנים שהושלכו ל
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "מספר הימים לשמירת קבצים זמניים וכאלו שבאשפה:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "פתיחת האשפה…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -375,7 +375,7 @@ msgstr "סרטונים"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "מופעל חלקית"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "מצב פרטיות"
