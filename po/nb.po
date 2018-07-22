@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-07-18 00:06+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2018-07-23 00:04+0000\n"
+"Last-Translator: Nils K <slx@nilsk.net>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/nb/>\n"
 "Language: nb\n"
@@ -112,9 +112,9 @@ msgid "%s Ports %s"
 msgstr "%s Porter %s"
 
 #: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
-#, fuzzy, c-format
+#, c-format
 msgid "%s Port %s"
-msgstr "% Port %s"
+msgstr "%s Port %s"
 
 #: src/Views/FirewallPanel.vala:280
 msgid "Version"
@@ -244,9 +244,8 @@ msgid "Allow the apps below to determine your location"
 msgstr "La programmene bestemme din posisjon"
 
 #: src/Views/LocationPanel.vala:53
-#, fuzzy
 msgid "No Apps Are Using Location Services"
-msgstr "Posisjonstjenester"
+msgstr "Ingen apper bruker posisjonstjenester"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
@@ -285,9 +284,9 @@ msgstr ""
 "fra din IP-adresse."
 
 #: src/Views/LocationPanel.vala:187
-#, fuzzy, c-format
+#, c-format
 msgid "Allow %s to use location services"
-msgstr "Posisjonstjenester"
+msgstr "Gi %s tillatelse til å bruke posisjonstjenester"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
