@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2017-07-12 16:42+0000\n"
-"Last-Translator: Thomas <beyercenter@gmail.com>\n"
-"Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2018-08-18 14:15+0000\n"
+"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -52,7 +52,7 @@ msgstr "Firewall"
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Reinigungsdienst"
 
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -177,19 +177,20 @@ msgstr "Regel hinzufügen"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Ältere temporäre Dateien automatisch löschen:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Ältere Dateien im Papierkorb automatisch löschen:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
 msgstr ""
+"Anzahl der Tage, in denen gelöschte und temporäre Dateien aufbewahrt werden:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Öffne Papierkorb…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -250,15 +251,15 @@ msgid "Allow the apps below to determine your location"
 msgstr "Unten aufgelisteten Anwendungen erlauben, den Ort zu ermitteln"
 
 #: src/Views/LocationPanel.vala:53
-#, fuzzy
 msgid "No Apps Are Using Location Services"
-msgstr "Ortsdienste"
+msgstr "Derzeit benutzen keine Anwendungen Ortungsdienste"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Anwendungen, welche Ortungsdienste benutzen, erscheinen hier automatisch."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
@@ -289,9 +290,9 @@ msgstr ""
 "Aufenthaltsort auf Basis der IP-Adresse zu ermitteln."
 
 #: src/Views/LocationPanel.vala:187
-#, fuzzy, c-format
+#, c-format
 msgid "Allow %s to use location services"
-msgstr "Ortsdienste"
+msgstr "Erlaube %s Ortungsdienste zu benutzen"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
@@ -392,7 +393,7 @@ msgstr "Videos"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Teilweise aktiviert"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Datenschutzmodus"
