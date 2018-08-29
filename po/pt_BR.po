@@ -9,7 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
 "PO-Revision-Date: 2018-08-29 06:51+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
+"\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -246,9 +247,8 @@ msgid "Allow the apps below to determine your location"
 msgstr "Permitir que os aplicativos abaixo determinem sua localização"
 
 #: src/Views/LocationPanel.vala:53
-#, fuzzy
 msgid "No Apps Are Using Location Services"
-msgstr "Serviços de localização"
+msgstr "Nenhum aplicativo está usando Serviços de Localização"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
@@ -287,9 +287,9 @@ msgstr ""
 "baseada no seu endereço IP."
 
 #: src/Views/LocationPanel.vala:187
-#, fuzzy, c-format
+#, c-format
 msgid "Allow %s to use location services"
-msgstr "Serviços de localização"
+msgstr "Permitir %s usar serviços de localização"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
