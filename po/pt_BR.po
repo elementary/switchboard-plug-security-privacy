@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2017-05-23 08:07+0000\n"
-"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
+"PO-Revision-Date: 2018-08-29 06:51+0000\n"
+"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -51,7 +51,7 @@ msgstr "Firewall"
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Serviço de Limpeza"
 
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -176,19 +176,19 @@ msgstr "Adicionar regra"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Excluir automaticamente arquivos temporários antigos:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Excluir automaticamente arquivos antigos da lixeira:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Número de dias para manter arquivos da lixeira e temporários:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Abrir Lixo…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -255,6 +255,8 @@ msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Quando aplicativos instalados usam serviços de localização, eles aparecerão "
+"automaticamente aqui."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
@@ -311,7 +313,7 @@ msgstr "A última semana"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
-msgstr "De:"
+msgstr "Das:"
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
@@ -319,7 +321,7 @@ msgstr "Tudo"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "Para:"
+msgstr "Às:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
@@ -367,7 +369,7 @@ msgstr "Documentos"
 
 #: src/Widgets/IncludeTreeView.vala:84
 msgid "Music"
-msgstr "Músicas"
+msgstr "Música"
 
 #: src/Widgets/IncludeTreeView.vala:85
 msgid "Pictures"
@@ -387,7 +389,7 @@ msgstr "Vídeos"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Parcialmente habilitado"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Modo de privacidade"
