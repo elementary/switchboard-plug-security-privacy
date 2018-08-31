@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-08-30 00:08+0000\n"
+"PO-Revision-Date: 2018-09-01 00:09+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/pt_BR/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Segurança e privacidade"
+msgstr "Segurança e Privacidade"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
@@ -188,7 +188,7 @@ msgstr "Número de dias para manter arquivos da lixeira e temporários:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr "Abrir Lixo…"
+msgstr "Abrir Lixeira…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
