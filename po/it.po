@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-09-06 13:15+0000\n"
+"PO-Revision-Date: 2018-09-07 00:06+0000\n"
 "Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/it/>\n"
@@ -315,7 +315,7 @@ msgstr "L'ultima settimana"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
-msgstr "Dal:"
+msgstr "Dalle:"
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
@@ -323,7 +323,7 @@ msgstr "Sempre"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "Al:"
+msgstr "Alle:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
