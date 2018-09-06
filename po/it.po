@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-03-14 00:02+0000\n"
-"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"PO-Revision-Date: 2018-09-06 13:15+0000\n"
+"Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
 #: src/Plug.vala:50
@@ -52,7 +52,7 @@ msgstr "Firewall"
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Manutenzione"
 
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -177,19 +177,19 @@ msgstr "Aggiungi regola"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Eliminare automaticamente i file temporanei più vecchi:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Eliminare automaticamente i file più vecchi nel cestino:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Numero di giorni nei quali conservare i file temporanei e nel cestino:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Apri il cestino…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -249,15 +249,16 @@ msgid "Allow the apps below to determine your location"
 msgstr "Permetti alle applicazioni sottostanti di determinare la tua posizione"
 
 #: src/Views/LocationPanel.vala:53
-#, fuzzy
 msgid "No Apps Are Using Location Services"
-msgstr "Servizi di localizzazione"
+msgstr "Nessuna applicazione sta usando i servizi di localizzazione"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Le applicazioni installate che usano i servizi di localizzazione appaiono "
+"automaticamente qui."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
@@ -288,9 +289,9 @@ msgstr ""
 "posizione sulla base dell'indirizzo IP."
 
 #: src/Views/LocationPanel.vala:187
-#, fuzzy, c-format
+#, c-format
 msgid "Allow %s to use location services"
-msgstr "Servizi di localizzazione"
+msgstr "Autorizzare %s ad usare i servizi di localizzazione"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
@@ -322,7 +323,7 @@ msgstr "Sempre"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "al:"
+msgstr "Al:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
@@ -390,7 +391,7 @@ msgstr "Video"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Abilitato parzialmente"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Modalità Privacy"
