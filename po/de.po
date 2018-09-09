@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-08-18 14:15+0000\n"
+"PO-Revision-Date: 2018-09-10 00:08+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
@@ -240,7 +240,7 @@ msgstr "Die Verlaufsspeicherung ist deaktiviert"
 
 #: src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr "Verlauf löschen …"
+msgstr "Verlauf löschen…"
 
 #: src/Views/TrackPanel.vala:94
 msgid "Your system"
