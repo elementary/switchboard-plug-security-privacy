@@ -12,6 +12,14 @@ i18n.merge_file(
     install_dir: join_paths(get_option('datadir'), 'polkit-1', 'actions')
 )
 
+i18n.merge_file(
+    input: 'io.elementary.switchboard.security-privacy.appdata.xml.in',
+    output: 'io.elementary.switchboard.security-privacy.appdata.xml',
+    po_dir: join_paths(meson.source_root (), 'po', 'extra'),
+    install_dir: join_paths(get_option('datadir'), 'metainfo'),
+    install: true
+)
+
 install_data(
     'security-privacy-plug-helper',
     install_mode: 'r-xr--r--',
