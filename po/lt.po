@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-30 10:23+0000\n"
+"PO-Revision-Date: 2018-09-19 00:09+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/lt/>\n"
@@ -75,7 +75,7 @@ msgstr "Įjungta"
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr "Išjungtas"
+msgstr "Išjungta"
 
 #: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
 #: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
