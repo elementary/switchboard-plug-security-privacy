@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-07-23 00:04+0000\n"
+"PO-Revision-Date: 2018-09-26 21:08+0000\n"
 "Last-Translator: Nils K <slx@nilsk.net>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/nb/>\n"
@@ -48,7 +48,6 @@ msgstr "Brannmur"
 
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
-#, fuzzy
 msgid "Housekeeping"
 msgstr "Husarbeid"
 
