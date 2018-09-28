@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-06-14 00:09+0000\n"
+"PO-Revision-Date: 2018-09-28 19:25+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/id/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -48,7 +48,7 @@ msgstr "Firewall"
 #: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Pembenahan"
 
 #: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -173,19 +173,20 @@ msgstr "Tambah Aturan"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Hapus berkas lama sementara secara otomatis :"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Hapus berkas lama yang telah dibuang secara otomatis:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
 msgstr ""
+"Jumlah hari untuk menyimpan berkas yang telah dibuang dan yang sementara:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Buka Tempat Sampah…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -386,7 +387,7 @@ msgstr "Video"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Diaktifkan Sebagian"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Mode Privasi"
