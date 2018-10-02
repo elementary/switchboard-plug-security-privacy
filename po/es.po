@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
 "PO-Revision-Date: 2018-10-02 13:56+0000\n"
-"Last-Translator: Pablo Solís La Beira <pabsol1977@gmail.com>\n"
+"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/es/>\n"
 "Language: es\n"
@@ -183,7 +183,7 @@ msgstr "Eliminar automáticamente archivos antiguos en la papelera:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Número de días para mantener archivos temporales y borrados:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
