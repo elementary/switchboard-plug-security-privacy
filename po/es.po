@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-10-02 13:56+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
+"PO-Revision-Date: 2018-10-02 14:03+0000\n"
+"Last-Translator: Pablo Solís La Beira <pabsol1977@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/es/>\n"
 "Language: es\n"
@@ -187,7 +187,7 @@ msgstr "Número de días para mantener archivos temporales y en la papelera:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr "Abrir papelera ..."
+msgstr "Abrir papelera…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -195,7 +195,7 @@ msgstr "Bloquear en reposo:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr "Bloquear luego de que la pantalla se apague:"
+msgstr "Bloquear tras apagado de pantalla:"
 
 #: src/Views/TrackPanel.vala:28
 msgid ""
@@ -219,7 +219,9 @@ msgstr ""
 
 #: src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
-msgstr "Se afectará la funcionalidad adicional provista por estos datos."
+msgstr ""
+"Puede que las funcionalidades adicionales proporcionadas por estos datos se "
+"vean afectadas."
 
 #: src/Views/TrackPanel.vala:37
 msgid ""
@@ -239,7 +241,7 @@ msgstr "Limpiar historial…"
 
 #: src/Views/TrackPanel.vala:94
 msgid "Your system"
-msgstr "Tu sistema"
+msgstr "Sistema"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
@@ -275,8 +277,8 @@ msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
-"Se verá afectada la funcionalidad adicional que provee el acceso a la "
-"ubicación en esas aplicaciones."
+"La funcionalidad que provee el servicio de localización de estas "
+"aplicaciones se verá afectada. ."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
@@ -319,7 +321,7 @@ msgstr "Desde:"
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
-msgstr "Todo el tiempo"
+msgstr "Siempre"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
@@ -347,7 +349,7 @@ msgstr "Cancelar"
 
 #: src/Widgets/ExcludeTreeView.vala:74
 msgid "Add"
-msgstr "Añadir"
+msgstr "Añadir"
 
 #: src/Widgets/ExcludeTreeView.vala:86
 msgid "Delete"
@@ -391,7 +393,7 @@ msgstr "Vídeos"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Habilitado parcialmente"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Modo privado"
