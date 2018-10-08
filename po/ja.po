@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-25 16:07-0700\n"
-"PO-Revision-Date: 2018-07-01 00:02+0000\n"
+"PO-Revision-Date: 2018-10-08 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -364,11 +364,11 @@ msgstr "ドキュメント"
 
 #: src/Widgets/IncludeTreeView.vala:84
 msgid "Music"
-msgstr "ミュージック"
+msgstr "音楽"
 
 #: src/Widgets/IncludeTreeView.vala:85
 msgid "Pictures"
-msgstr "ピクチャー"
+msgstr "写真"
 
 #: src/Widgets/IncludeTreeView.vala:86
 msgid "Presentations"
@@ -380,7 +380,7 @@ msgstr "スプレッドシート"
 
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
-msgstr "ビデオ"
+msgstr "動画"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
