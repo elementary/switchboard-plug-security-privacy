@@ -140,7 +140,7 @@ namespace SecurityPrivacy {
             if (location_agent_installed) {
                 location = new LocationPanel ();
                 stack.add_titled (location, LOCATION, _("Location Services"));
-            }                
+            }
 
             service_list = new ServiceList ();
 
@@ -175,10 +175,15 @@ namespace SecurityPrivacy {
         public override async Gee.TreeMap<string, string> search (string search) {
             var map = new Gee.TreeMap<string, string> (null, null);
             map.set ("%s → %s".printf (display_name, _("History")), HISTORY);
-            map.set ("%s → %s".printf (display_name, _("Privacy")), HISTORY);
+            map.set ("%s → %s → %s".printf (display_name, _("History"), _("Clear History")), HISTORY);
             map.set ("%s → %s".printf (display_name, _("Locking")), LOCKING);
+            map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Lock on sleep")), HISTORY);
+            map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Lock after sceen turns off")), HISTORY);
             map.set ("%s → %s".printf (display_name, _("Firewall")), FIREWALL);
             map.set ("%s → %s".printf (display_name, _("Housekeeping")), HOUSEKEEPING);
+            map.set ("%s → %s → %s".printf (display_name, _("Housekeeping"), _("Automatically delete old temporary files")), HOUSEKEEPING);
+            map.set ("%s → %s → %s".printf (display_name, _("Housekeeping"), _("Automatically delete old trashed files")), HOUSEKEEPING);
+            map.set ("%s → %s → %s".printf (display_name, _("Housekeeping"), _("Number of days to keep trashed and temporary files")), HOUSEKEEPING);
             if (location_agent_installed) {
                 map.set ("%s → %s".printf (display_name, _("Location Services")), LOCATION);
             }
