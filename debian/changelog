@@ -1,3 +1,9 @@
+switchboard-plug-security-privacy (2.2.0) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Mon, 15 Oct 2018 21:10:58 -0500
+
 switchboard-plug-security-privacy (0.1.3) bionic; urgency=medium
 
   * New upstream release.
