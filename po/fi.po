@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 16:32-0700\n"
+"POT-Creation-Date: 2018-10-15 19:39-0700\n"
 "PO-Revision-Date: 2018-07-02 16:37+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
@@ -32,34 +32,66 @@ msgstr "Muokkaa palomuuria, näytön lukitusta ja toimien tietoja"
 msgid "Some settings require administrator rights to be changed"
 msgstr "Jotkin asetukset vaativat muutoksia varten ylläpitäjän oikeuksia"
 
-#: src/Plug.vala:135 src/Plug.vala:178
+#: src/Plug.vala:135
 msgid "Privacy"
 msgstr "Yksityisyys"
 
-#: src/Plug.vala:136 src/Plug.vala:179 src/Views/LockPanel.vala:29
-#: src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
+#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Lukitus"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Palomuuri"
 
-#: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:138 src/Plug.vala:183 src/Plug.vala:184 src/Plug.vala:185
+#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr "Puhtaanapito"
 
-#: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "Sijaintipalvelut"
 
-#: src/Plug.vala:177 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historia"
+
+#: src/Plug.vala:178
+#, fuzzy
+msgid "Clear History"
+msgstr "Tyhjennä historia…"
+
+#: src/Plug.vala:180
+#, fuzzy
+msgid "Lock on sleep"
+msgstr "Lukitse lepotilassa:"
+
+#: src/Plug.vala:181
+#, fuzzy
+msgid "Lock after sceen turns off"
+msgstr "Lukitse näytön sammumisen jälkeen:"
+
+#: src/Plug.vala:184
+#, fuzzy
+msgid "Automatically delete old temporary files"
+msgstr "Poista automaattisesti vanhat väliaikaistiedostot:"
+
+#: src/Plug.vala:185
+#, fuzzy
+msgid "Automatically delete old trashed files"
+msgstr "Poista automaattisesti vanhat roskakorissa olevat tiedostot:"
+
+#: src/Plug.vala:186
+#, fuzzy
+msgid "Number of days to keep trashed and temporary files"
+msgstr ""
+"Montako päivää väliaikaistiedostoja ja roskakorin tiedostoja säilytetään:"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"

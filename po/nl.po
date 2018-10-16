@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 16:32-0700\n"
+"POT-Creation-Date: 2018-10-15 19:39-0700\n"
 "PO-Revision-Date: 2018-06-30 00:03+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
@@ -32,34 +32,62 @@ msgstr "Configureer firewall-, schermvergrendeling- en activiteitsinformatie"
 msgid "Some settings require administrator rights to be changed"
 msgstr "Sommige instellingen vereisen beheerdersrechten om te worden gewijzigd"
 
-#: src/Plug.vala:135 src/Plug.vala:178
+#: src/Plug.vala:135
 msgid "Privacy"
 msgstr "Privacy"
 
-#: src/Plug.vala:136 src/Plug.vala:179 src/Views/LockPanel.vala:29
-#: src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
+#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Vergrendelen"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Firewall"
 
-#: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:138 src/Plug.vala:183 src/Plug.vala:184 src/Plug.vala:185
+#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "Locatieservices"
 
-#: src/Plug.vala:177 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Geschiedenis"
+
+#: src/Plug.vala:178
+#, fuzzy
+msgid "Clear History"
+msgstr "Verwijder geschiedenis…"
+
+#: src/Plug.vala:180
+#, fuzzy
+msgid "Lock on sleep"
+msgstr "Vergrendelen in slaapstand:"
+
+#: src/Plug.vala:181
+#, fuzzy
+msgid "Lock after sceen turns off"
+msgstr "Vergrendelen nadat het scherm zich uitgeschakeld heeft:"
+
+#: src/Plug.vala:184
+msgid "Automatically delete old temporary files"
+msgstr ""
+
+#: src/Plug.vala:185
+msgid "Automatically delete old trashed files"
+msgstr ""
+
+#: src/Plug.vala:186
+msgid "Number of days to keep trashed and temporary files"
+msgstr ""
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"

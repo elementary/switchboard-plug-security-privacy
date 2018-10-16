@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 16:32-0700\n"
+"POT-Creation-Date: 2018-10-15 19:39-0700\n"
 "PO-Revision-Date: 2014-08-02 05:20+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: Swahili <sw@li.org>\n"
@@ -30,33 +30,58 @@ msgstr ""
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 
-#: src/Plug.vala:135 src/Plug.vala:178
+#: src/Plug.vala:135
 msgid "Privacy"
 msgstr ""
 
-#: src/Plug.vala:136 src/Plug.vala:179 src/Views/LockPanel.vala:29
-#: src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
+#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr ""
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr ""
 
-#: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:138 src/Plug.vala:183 src/Plug.vala:184 src/Plug.vala:185
+#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr ""
 
-#: src/Plug.vala:177 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
+msgstr ""
+
+#: src/Plug.vala:178
+msgid "Clear History"
+msgstr ""
+
+#: src/Plug.vala:180
+msgid "Lock on sleep"
+msgstr ""
+
+#: src/Plug.vala:181
+msgid "Lock after sceen turns off"
+msgstr ""
+
+#: src/Plug.vala:184
+msgid "Automatically delete old temporary files"
+msgstr ""
+
+#: src/Plug.vala:185
+msgid "Automatically delete old trashed files"
+msgstr ""
+
+#: src/Plug.vala:186
+msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
 #: src/UFWHelpers.vala:24

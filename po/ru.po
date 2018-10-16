@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 16:32-0700\n"
+"POT-Creation-Date: 2018-10-15 19:39-0700\n"
 "PO-Revision-Date: 2018-07-08 14:44+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/switchboard/"
@@ -33,34 +33,65 @@ msgstr "Настройка фаервола, экрана блокировки �
 msgid "Some settings require administrator rights to be changed"
 msgstr "Для изменения некоторых настроек требуются права администратора"
 
-#: src/Plug.vala:135 src/Plug.vala:178
+#: src/Plug.vala:135
 msgid "Privacy"
 msgstr "Файлы и приложения"
 
-#: src/Plug.vala:136 src/Plug.vala:179 src/Views/LockPanel.vala:29
-#: src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
+#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Безопасность"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Брандмауэр"
 
-#: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:138 src/Plug.vala:183 src/Plug.vala:184 src/Plug.vala:185
+#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr "Очистка"
 
-#: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "Сервисы местоположения"
 
-#: src/Plug.vala:177 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "История"
+
+#: src/Plug.vala:178
+#, fuzzy
+msgid "Clear History"
+msgstr "Очистить историю…"
+
+#: src/Plug.vala:180
+#, fuzzy
+msgid "Lock on sleep"
+msgstr "Заблокировать систему при переходе в режим сна:"
+
+#: src/Plug.vala:181
+#, fuzzy
+msgid "Lock after sceen turns off"
+msgstr "Заблокировать систему при выключении экрана:"
+
+#: src/Plug.vala:184
+#, fuzzy
+msgid "Automatically delete old temporary files"
+msgstr "Автоматически удалять старые временные файлы:"
+
+#: src/Plug.vala:185
+#, fuzzy
+msgid "Automatically delete old trashed files"
+msgstr "Автоматически удалять старые файлы из корзины:"
+
+#: src/Plug.vala:186
+#, fuzzy
+msgid "Number of days to keep trashed and temporary files"
+msgstr "Количество дней до удаления файлов из корзины и временных файлов:"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"

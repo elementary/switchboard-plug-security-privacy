@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 16:32-0700\n"
+"POT-Creation-Date: 2018-10-15 19:39-0700\n"
 "PO-Revision-Date: 2018-06-28 16:53+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
@@ -33,34 +33,65 @@ msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "Nogle indstillinger kræver administratorrettigheder for at blive ændret"
 
-#: src/Plug.vala:135 src/Plug.vala:178
+#: src/Plug.vala:135
 msgid "Privacy"
 msgstr "Privatliv"
 
-#: src/Plug.vala:136 src/Plug.vala:179 src/Views/LockPanel.vala:29
-#: src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
+#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Låsning"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Firewall"
 
-#: src/Plug.vala:138 src/Plug.vala:181 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:138 src/Plug.vala:183 src/Plug.vala:184 src/Plug.vala:185
+#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr "Husholdning"
 
-#: src/Plug.vala:142 src/Plug.vala:183 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "Placeringstjenester"
 
-#: src/Plug.vala:177 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historik"
+
+#: src/Plug.vala:178
+#, fuzzy
+msgid "Clear History"
+msgstr "Ryd historik…"
+
+#: src/Plug.vala:180
+#, fuzzy
+msgid "Lock on sleep"
+msgstr "Lås ved hvile:"
+
+#: src/Plug.vala:181
+#, fuzzy
+msgid "Lock after sceen turns off"
+msgstr "Lås når skærmen slukkes:"
+
+#: src/Plug.vala:184
+#, fuzzy
+msgid "Automatically delete old temporary files"
+msgstr "Slet automatisk gamle midlertidige filer:"
+
+#: src/Plug.vala:185
+#, fuzzy
+msgid "Automatically delete old trashed files"
+msgstr "Slet automatisk gamle udsmidte filer:"
+
+#: src/Plug.vala:186
+#, fuzzy
+msgid "Number of days to keep trashed and temporary files"
+msgstr "Antal dage at beholde udmidte og midlertidige filer:"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
