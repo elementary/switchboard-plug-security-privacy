@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-10-17 19:35+0000\n"
+"PO-Revision-Date: 2018-10-18 00:11+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/pt_BR/>\n"
@@ -26,7 +26,7 @@ msgstr "Segurança e Privacidade"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Configurar firewall, bloqueio de tela, e informações de atividade"
+msgstr "Configurar firewall, bloqueio de tela e informações de atividade"
 
 #: src/Plug.vala:93
 msgid "Some settings require administrator rights to be changed"
@@ -90,7 +90,7 @@ msgstr "Número de dias para manter arquivos da lixeira e temporários"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "A autenticação é exigida para rodar a configuração de firewall"
+msgstr "É necessária autenticação para executar a configuração de Firewall"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
 #: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
