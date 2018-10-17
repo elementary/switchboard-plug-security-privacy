@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-07-02 16:01+0000\n"
+"PO-Revision-Date: 2018-10-17 13:10+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ca/>\n"
@@ -65,34 +65,28 @@ msgid "History"
 msgstr "Historial"
 
 #: src/Plug.vala:178
-#, fuzzy
 msgid "Clear History"
-msgstr "Neteja l'historial…"
+msgstr "Neteja l'historial"
 
 #: src/Plug.vala:180
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Bloqueja't en aturar temporalment:"
+msgstr "Bloqueja't amb l'aturada temporal"
 
 #: src/Plug.vala:181
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Bloqueja't després d'apagar la pantalla:"
+msgstr "Bloqueja't després d'apagar la pantalla"
 
 #: src/Plug.vala:184
-#, fuzzy
 msgid "Automatically delete old temporary files"
-msgstr "Suprimeix automàticament els fitxers temporals antics:"
+msgstr "Suprimeix automàticament els fitxers temporals antics"
 
 #: src/Plug.vala:185
-#, fuzzy
 msgid "Automatically delete old trashed files"
-msgstr "Suprimeix automàticament els fitxers enviats a la paperera:"
+msgstr "Suprimeix automàticament els fitxers enviats a la paperera"
 
 #: src/Plug.vala:186
-#, fuzzy
 msgid "Number of days to keep trashed and temporary files"
-msgstr "Nombre de dies per mantenir els fitxers temporals i a la paperera:"
+msgstr "Dies per mantenir els fitxers temporals i els enviats a la paperera"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
