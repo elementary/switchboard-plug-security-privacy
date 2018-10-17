@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-10-17 19:34+0000\n"
-"Last-Translator: Deyvison Rocha <deyvison@gmail.com>\n"
+"PO-Revision-Date: 2018-10-17 19:35+0000\n"
+"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -69,28 +69,24 @@ msgid "Clear History"
 msgstr "Limpar histórico"
 
 #: src/Plug.vala:180
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Bloquear ao suspender:"
+msgstr "Bloquear ao suspender"
 
 #: src/Plug.vala:181
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Bloquear após desligar a tela:"
+msgstr "Bloquear após desligar a tela"
 
 #: src/Plug.vala:184
-#, fuzzy
 msgid "Automatically delete old temporary files"
-msgstr "Excluir automaticamente arquivos temporários antigos:"
+msgstr "Excluir automaticamente arquivos temporários antigos"
 
 #: src/Plug.vala:185
 msgid "Automatically delete old trashed files"
-msgstr "Excluir automaticamente arquivos antigos da lixeira:"
+msgstr "Excluir automaticamente arquivos antigos da lixeira"
 
 #: src/Plug.vala:186
-#, fuzzy
 msgid "Number of days to keep trashed and temporary files"
-msgstr "Número de dias para manter arquivos da lixeira e temporários:"
+msgstr "Número de dias para manter arquivos da lixeira e temporários"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
