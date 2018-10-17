@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-09-19 00:09+0000\n"
+"PO-Revision-Date: 2018-10-17 08:10+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/lt/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 
@@ -64,34 +64,28 @@ msgid "History"
 msgstr "Istorija"
 
 #: src/Plug.vala:178
-#, fuzzy
 msgid "Clear History"
-msgstr "Išvalyti istoriją…"
+msgstr "Išvalyti istoriją"
 
 #: src/Plug.vala:180
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Užrakinti, pristabdant kompiuterį:"
+msgstr "Užrakinti, pristabdant kompiuterį"
 
 #: src/Plug.vala:181
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Užrakinti po to, kai ekranas išsijungia:"
+msgstr "Užrakinti po to, kai ekranas išsijungia"
 
 #: src/Plug.vala:184
-#, fuzzy
 msgid "Automatically delete old temporary files"
-msgstr "Automatiškai ištrinti senus laikinuosius failus:"
+msgstr "Automatiškai ištrinti senus laikinuosius failus"
 
 #: src/Plug.vala:185
-#, fuzzy
 msgid "Automatically delete old trashed files"
-msgstr "Automatiškai ištrinti senus failus šiukšlinėje:"
+msgstr "Automatiškai ištrinti senus failus šiukšlinėje"
 
 #: src/Plug.vala:186
-#, fuzzy
 msgid "Number of days to keep trashed and temporary files"
-msgstr "Kiek dienų laikyti failus šiukšlinėje ir laikinuosius failus:"
+msgstr "Kiek dienų laikyti failus šiukšlinėje ir laikinuosius failus"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
