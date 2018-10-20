@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-06-29 04:37+0000\n"
+"PO-Revision-Date: 2018-10-20 03:02+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ko/>\n"
@@ -63,34 +63,28 @@ msgid "History"
 msgstr "사용 기록"
 
 #: src/Plug.vala:178
-#, fuzzy
 msgid "Clear History"
-msgstr "사용 기록 청소…"
+msgstr "사용 기록 청소"
 
 #: src/Plug.vala:180
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "슬립모드 일 때 잠금:"
+msgstr "슬립모드 일 때 잠금"
 
 #: src/Plug.vala:181
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "화면이 꺼진 후에 잠금:"
+msgstr "화면이 꺼진 후에 잠금"
 
 #: src/Plug.vala:184
-#, fuzzy
 msgid "Automatically delete old temporary files"
-msgstr "오래된 임시 파일 자동 삭제:"
+msgstr "오래된 임시 파일 자동 삭제"
 
 #: src/Plug.vala:185
-#, fuzzy
 msgid "Automatically delete old trashed files"
-msgstr "휴지통에 보낸 지 오래된 파일 자동 삭제:"
+msgstr "휴지통에 보낸 지 오래된 파일 자동 삭제"
 
 #: src/Plug.vala:186
-#, fuzzy
 msgid "Number of days to keep trashed and temporary files"
-msgstr "휴지통 및 임시 파일 보관 일 수:"
+msgstr "휴지통 및 임시 파일 보관 일 수"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
