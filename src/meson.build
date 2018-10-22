@@ -8,6 +8,7 @@ plug_files = files(
     'BlackList.vala',
     'Plug.vala',
     'UFWHelpers.vala',
+    'Utilities.vala',
     'ZGUtilities.vala',
     'Views/FirewallPanel.vala',
     'Views/HouseKeepingPanel.vala',

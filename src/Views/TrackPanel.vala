@@ -24,17 +24,20 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     private Widgets.ClearUsagePopover remove_popover;
 
     public TrackPanel () {
-        Object (activatable: true,
-                description: _("This operating system can gather useful statistics about file and app usage to provide extra functionality. If other people can see or access your account, you may wish to limit which items are recorded."),
-                icon_name: "document-open-recent",
-                title: _("History"));
+        Object (
+            activatable: true,
+            description: (_("%s can store local usage data to provide extra functionality like offering recently-used files and more relevant local search. Regardless of this setting, usage data is never transmitted off of this device or to third parties.").printf (Utilities.get_operating_system_name ())),
+            icon_name: "document-open-recent",
+            title: _("History")
+        );
     }
 
     construct {
         var description = ("%s %s\n\n%s".printf (
-                    _("%s won't retain any further data or statistics about file and application usage.").printf (get_operating_system_name ()),
-                    _("The additional functionality that this data provides will be affected."),
-                    _("This will not prevent apps from recording their own usage data like browser history.")));
+            _("%s won't retain any usage data.").printf (Utilities.get_operating_system_name ()),
+            _("The additional functionality that this data provides will be affected."),
+            _("This may not prevent apps from recording their own usage data, such as browser history.")
+        ));
 
         var alert = new Granite.Widgets.AlertView (_("History Is Disabled"), description, "");
         alert.show_all ();
@@ -90,20 +93,6 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         update_status_switch ();
     }
 
-    private string get_operating_system_name () {
-        string system = _("Your system");
-        try {
-            string contents = null;
-            if (FileUtils.get_contents ("/etc/os-release", out contents)) {
-                int start = contents.index_of ("NAME=") + "NAME=".length;
-                int end = contents.index_of_char ('\n');
-                system = contents.substring (start, end - start).replace ("\"", "");
-            }
-        } catch (FileError e) {
-        }
-        return system;
-    }
-
     private void update_status_switch () {
         if (status_switch.active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
@@ -115,3 +104,4 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         }
     }
 }
+
