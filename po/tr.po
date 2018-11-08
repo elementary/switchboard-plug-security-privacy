@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-05-27 00:02+0000\n"
+"PO-Revision-Date: 2018-11-08 19:06+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -26,7 +26,7 @@ msgstr "Güvenlik & Gizlilik"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Güvenlik duvarı, ekran kilidi ve aktivite bilgisini düzenle"
+msgstr "Güvenlik duvarı, ekran kilidi ve aktivite bilgisini yapılandırın"
 
 #: src/Plug.vala:93
 msgid "Some settings require administrator rights to be changed"
@@ -40,7 +40,7 @@ msgstr "Gizlilik"
 #: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
-msgstr "Kilit"
+msgstr "Kilitleme"
 
 #: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
@@ -51,12 +51,12 @@ msgstr "Güvenlik Duvarı"
 #: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Temizlik ve Bakım"
 
 #: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
-msgstr "Lokasyon Servisleri"
+msgstr "Konum Hizmetleri"
 
 #: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
 #: src/Widgets/ServiceList.vala:31
@@ -64,36 +64,34 @@ msgid "History"
 msgstr "Geçmiş"
 
 #: src/Plug.vala:178
-#, fuzzy
 msgid "Clear History"
-msgstr "Geçmişi Temizle…"
+msgstr "Geçmişi Temizle"
 
 #: src/Plug.vala:180
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Uykuda kilitle:"
+msgstr "Uykuda kilitle"
 
 #: src/Plug.vala:181
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Ekran kapandıktan sonra kilitle:"
+msgstr "Ekran kapandıktan sonra kilitle"
 
 #: src/Plug.vala:184
 msgid "Automatically delete old temporary files"
-msgstr ""
+msgstr "Eski geçici dosyaları otomatik olarak sil"
 
 #: src/Plug.vala:185
 msgid "Automatically delete old trashed files"
-msgstr ""
+msgstr "Eski çöp dosyalarını otomatik olarak sil"
 
 #: src/Plug.vala:186
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
+msgstr "Çöp ve geçici dosyaları tutmak için gün sayısını belirleyin"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
-"Güvenlik duvarı konfigürasyonunu çalıştırmak için kimlik doğrulama gerekli"
+"Güvenlik Duvarı Yapılandırmasını çalıştırmak için kimlik doğrulaması "
+"gereklidir"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
 #: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
@@ -125,7 +123,7 @@ msgstr "Reddet"
 
 #: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
 msgid "Limit"
-msgstr "Sınır"
+msgstr "Limit"
 
 #: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
 msgid "In"
@@ -136,14 +134,14 @@ msgid "Out"
 msgstr "Çıkış"
 
 #: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
-#, fuzzy, c-format
+#, c-format
 msgid "%s Ports %s"
-msgstr "Portlar"
+msgstr "%s Portlar %s"
 
 #: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
-#, fuzzy, c-format
+#, c-format
 msgid "%s Port %s"
-msgstr "Portlar"
+msgstr "%s Port %s"
 
 #: src/Views/FirewallPanel.vala:280
 msgid "Version"
@@ -162,14 +160,12 @@ msgid "Direction"
 msgstr "Yön"
 
 #: src/Views/FirewallPanel.vala:284
-#, fuzzy
 msgid "To"
-msgstr "Bitiş:"
+msgstr "Bitiş"
 
 #: src/Views/FirewallPanel.vala:285
-#, fuzzy
 msgid "From"
-msgstr "Başlangıç:"
+msgstr "Başlangıç"
 
 #: src/Views/FirewallPanel.vala:323
 msgid "Action:"
@@ -206,19 +202,19 @@ msgstr "Kural Ekle"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Eskiyen geçici dosyaları otomatik olarak sil:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Eski çöp dosyalarını otomatik olarak sil:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Çöp ve geçici dosyaları tutmak için gün sayısı:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Çöp Kutusunu Aç…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -237,7 +233,7 @@ msgstr ""
 "Bu işletim sistemi ekstra işlevsellik sağlamak için dosya ve uygulama "
 "kullanımı hakkında yararlı istatistikleri toplayabilir. Hesabınızı görebilen "
 "veya hesabınıza erişebilen başka biri varsa, hangi ögelerin kaydedileceği "
-"konusunda sınırlama koyabilirsiniz."
+"konusunda sınırlama koymak isteyebilirsiniz."
 
 #: src/Views/TrackPanel.vala:35
 #, c-format
@@ -245,6 +241,8 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s dosya ve uygulama kullanımıyla ilgili daha fazla veri veya istatistik "
+"kullanmayacaktır."
 
 #: src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
@@ -255,12 +253,12 @@ msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
-"Bu uygulamaların tarayıcı geçmişi gibi kendi kullanım verilerini "
-"kaydetmesine engel olmaz."
+"Bu, uygulamaların tarayıcı geçmişi gibi kendi kullanım verilerini "
+"kaydetmesini engellemez."
 
 #: src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr "Geçmiş Aktif Değil"
+msgstr "Geçmiş Devre Dışı"
 
 #: src/Views/TrackPanel.vala:48
 msgid "Clear History…"
@@ -272,47 +270,51 @@ msgstr "Sisteminiz"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Aşağıdaki uygulamaların konumunuzu belirlemesine izin verin"
 
 #: src/Views/LocationPanel.vala:53
-#, fuzzy
 msgid "No Apps Are Using Location Services"
-msgstr "Lokasyon Servisleri"
+msgstr "Hiçbir Uygulama Konum Hizmetlerini Kullanmıyor"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Konum hizmetlerini kullanan uygulamalar yüklendiğinde, otomatik olarak "
+"burada görünürler."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr "Lokasyon Servisleri Aktif Değil"
+msgstr "Konum Hizmetleri Devre Dışı"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
-"Konum hizmetleri devre dışı bırakıldığında, uygulamalardan gelen konum "
-"istekleri otomatik olarak reddedilir."
+"Konum hizmetleri devre dışıyken, uygulamalardan gelen konum istekleri "
+"otomatik olarak reddedilir."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Bu uygulamalarda konum erişiminin sağladığı ek işlevler bundan etkilenir."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Bu, uygulamaların konumunuzu IP adresini temel alarak belirlemesini "
+"engellemez."
 
 #: src/Views/LocationPanel.vala:187
-#, fuzzy, c-format
+#, c-format
 msgid "Allow %s to use location services"
-msgstr "Lokasyon Servisleri"
+msgstr "%s uygulamasının konum hizmetlerini kullanmasına izin ver"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
@@ -413,7 +415,7 @@ msgstr "Videolar"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Kısmen Etkin"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Gizlilik Modu"
