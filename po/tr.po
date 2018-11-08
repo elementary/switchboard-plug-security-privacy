@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-11-08 19:06+0000\n"
+"PO-Revision-Date: 2018-11-12 20:13+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/tr/>\n"
@@ -318,16 +318,16 @@ msgstr "%s uygulamasının konum hizmetlerini kullanmasına izin ver"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr "Arama Uygulaması"
+msgstr "Uygulama Ara"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
-"Şuradan; sistem tarafından toplanan dosya ve uygulama kullanım bilgisini sil:"
+"Sistem tarafından toplanan dosya ve uygulama kullanım verilerini kaldırın:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "Geçen saat"
+msgstr "Geçtiğimiz saat"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
@@ -351,7 +351,7 @@ msgstr "Bitiş:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
-msgstr "Veriyi temizle"
+msgstr "Veriyi Temizle"
 
 #: src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
@@ -363,7 +363,7 @@ msgstr "Dizin Ekle…"
 
 #: src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
-msgstr "Engellenecek dizini seçin"
+msgstr "Kara liste için bir klasör seçin"
 
 #: src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"
@@ -379,7 +379,7 @@ msgstr "Sil"
 
 #: src/Widgets/ExcludeTreeView.vala:131
 msgid "Do not collect data from the following:"
-msgstr "Aşagidakilerden veri toplama:"
+msgstr "Aşağıdakilerden veri toplama:"
 
 #: src/Widgets/IncludeTreeView.vala:76
 msgid "Data Sources:"
@@ -387,7 +387,7 @@ msgstr "Veri Kaynakları:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
-msgstr "Sohbet Kayıtları"
+msgstr "Sohbet Günlükleri"
 
 #: src/Widgets/IncludeTreeView.vala:83
 msgid "Documents"
