@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-10-17 09:36+0000\n"
+"PO-Revision-Date: 2018-11-14 05:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -195,7 +195,7 @@ msgstr "%d または %d-%d"
 
 #: src/Views/FirewallPanel.vala:360
 msgid "Add Rule"
-msgstr "ルールの追加"
+msgstr "ルールを追加"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
