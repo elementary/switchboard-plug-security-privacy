@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-11-14 05:08+0000\n"
+"PO-Revision-Date: 2018-11-24 12:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -166,15 +166,15 @@ msgstr "送信元"
 
 #: src/Views/FirewallPanel.vala:323
 msgid "Action:"
-msgstr "操作:"
+msgstr "操作："
 
 #: src/Views/FirewallPanel.vala:332
 msgid "Protocol:"
-msgstr "プロトコル:"
+msgstr "プロトコル："
 
 #: src/Views/FirewallPanel.vala:339
 msgid "Version:"
-msgstr "バージョン:"
+msgstr "バージョン："
 
 #: src/Views/FirewallPanel.vala:344
 msgid "Both"
@@ -182,11 +182,11 @@ msgstr "両方"
 
 #: src/Views/FirewallPanel.vala:347
 msgid "Direction:"
-msgstr "方向:"
+msgstr "方向："
 
 #: src/Views/FirewallPanel.vala:354
 msgid "Ports:"
-msgstr "ポート:"
+msgstr "ポート："
 
 #: src/Views/FirewallPanel.vala:358
 #, c-format
@@ -199,15 +199,15 @@ msgstr "ルールを追加"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr "古い一時ファイルを自動的に削除:"
+msgstr "古い一時ファイルを自動的に削除："
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr "ゴミ箱に移動した古いファイルを自動的に削除:"
+msgstr "ゴミ箱に移動した古いファイルを自動的に削除："
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する日数:"
+msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する日数："
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
@@ -215,11 +215,11 @@ msgstr "ゴミ箱を開く…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
-msgstr "スリープ時にロック:"
+msgstr "スリープ時にロック："
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr "画面の電源がオフのときにロック:"
+msgstr "画面の電源がオフのときにロック："
 
 #: src/Views/TrackPanel.vala:28
 msgid ""
@@ -262,7 +262,7 @@ msgstr "履歴を削除…"
 
 #: src/Views/TrackPanel.vala:94
 msgid "Your system"
-msgstr "あなたのシステム"
+msgstr "お使いのシステム"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
@@ -317,23 +317,23 @@ msgstr "アプリケーションを検索"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
-msgstr "システム収集ファイルとアプリケーションの使用状況データを削除:"
+msgstr "システム収集ファイルとアプリケーションの使用状況データを削除："
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "過去1時間"
+msgstr "過去 1 時間"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr "過去1日"
+msgstr "過去 1 日"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr "過去1週間"
+msgstr "過去 1 週間"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
-msgstr "開始:"
+msgstr "開始："
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
@@ -341,7 +341,7 @@ msgstr "全期間"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "終了:"
+msgstr "終了："
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
@@ -349,11 +349,11 @@ msgstr "データを削除"
 
 #: src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "アプリケーションの追加…"
+msgstr "アプリケーションを追加…"
 
 #: src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "フォルダーの追加…"
+msgstr "フォルダーを追加…"
 
 #: src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
@@ -373,11 +373,11 @@ msgstr "削除"
 
 #: src/Widgets/ExcludeTreeView.vala:131
 msgid "Do not collect data from the following:"
-msgstr "以下からデータを収集しない:"
+msgstr "以下からデータを収集しない："
 
 #: src/Widgets/IncludeTreeView.vala:76
 msgid "Data Sources:"
-msgstr "データソース:"
+msgstr "データソース："
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
