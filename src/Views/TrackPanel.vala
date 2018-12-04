@@ -93,18 +93,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         update_status_switch ();
     }
 
-    private void update_status_switch () {
-        if (status_switch.active) {
-            status_type = Granite.SettingsPage.StatusType.SUCCESS;
-            status = _("Enabled");
-        } else {
-            warning ("Trying to set offline");
-            status_type = Granite.SettingsPage.StatusType.OFFLINE;
-            status = _("Disabled");
-        }
-    }
-
-        private static string get_operating_system_name () {
+    private static string get_operating_system_name () {
         string system = _("Your system");
         try {
             string contents = null;
@@ -117,6 +106,17 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
             debug ("Could not get OS name");
         }
         return system;
+    }
+
+    private void update_status_switch () {
+        if (status_switch.active) {
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
+        } else {
+            warning ("Trying to set offline");
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
+        }
     }
 }
 
