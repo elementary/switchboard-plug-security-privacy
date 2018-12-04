@@ -26,7 +26,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     public TrackPanel () {
         Object (
             activatable: true,
-            description: (_("%s can store local usage data to provide extra functionality like offering recently-used files and more relevant local search. Regardless of this setting, usage data is never transmitted off of this device or to third parties.").printf (Utilities.get_operating_system_name ())),
+            description: (_("%s can store local usage data to provide extra functionality like offering recently-used files and more relevant local search. Regardless of this setting, usage data is never transmitted off of this device or to third parties.").printf (get_operating_system_name ())),
             icon_name: "document-open-recent",
             title: _("History")
         );
@@ -34,7 +34,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
 
     construct {
         var description = ("%s %s\n\n%s".printf (
-            _("%s won't retain any usage data.").printf (Utilities.get_operating_system_name ()),
+            _("%s won't retain any usage data.").printf (get_operating_system_name ()),
             _("The additional functionality that this data provides will be affected."),
             _("This may not prevent apps from recording their own usage data, such as browser history.")
         ));
@@ -102,6 +102,21 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
             status_type = Granite.SettingsPage.StatusType.OFFLINE;
             status = _("Disabled");
         }
+    }
+
+        private static string get_operating_system_name () {
+        string system = _("Your system");
+        try {
+            string contents = null;
+            if (FileUtils.get_contents ("/etc/os-release", out contents)) {
+                int start = contents.index_of ("NAME=") + "NAME=".length;
+                int end = contents.index_of_char ('\n');
+                system = contents.substring (start, end - start).replace ("\"", "");
+            }
+        } catch (FileError e) {
+            debug ("Could not get OS name");
+        }
+        return system;
     }
 }
 
