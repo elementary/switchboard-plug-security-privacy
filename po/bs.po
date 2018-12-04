@@ -8,15 +8,18 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2014-12-06 18:15+0000\n"
-"Last-Translator: aleksandar-todorovic <aleksandar.todorovic@mail.ru>\n"
-"Language-Team: Bosnian <bs@li.org>\n"
+"PO-Revision-Date: 2018-11-05 22:15+0000\n"
+"Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
+"Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-security-privacy/bs/>\n"
 "Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
@@ -25,11 +28,11 @@ msgstr "Sigurnost i privatnost"
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
+"Podesite zaštitni zid, zaključavanje ekrana i informacije o aktivnostima"
 
 #: src/Plug.vala:93
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
-"Neka podešavanja zahtijevaju administratorska prava da mi se promjenila"
+msgstr "Za izmjenu nekih podešavanja su potrebna administratorska prava"
 
 #: src/Plug.vala:135
 msgid "Privacy"
@@ -49,42 +52,41 @@ msgstr "Zaštitni zid"
 #: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Održavanje"
 
 #: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
-msgstr ""
+msgstr "Lokacijske usluge"
 
 #: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
-msgstr ""
+msgstr "Historija"
 
 #: src/Plug.vala:178
-#, fuzzy
 msgid "Clear History"
-msgstr "Obriši podatke"
+msgstr "Izbriši historiju"
 
 #: src/Plug.vala:180
 msgid "Lock on sleep"
-msgstr ""
+msgstr "Zaključaj kada uređaj spava"
 
 #: src/Plug.vala:181
 msgid "Lock after sceen turns off"
-msgstr ""
+msgstr "Zaključaj kada se ugasi ekran"
 
 #: src/Plug.vala:184
 msgid "Automatically delete old temporary files"
-msgstr ""
+msgstr "Automatski izbriši stare privremene datoteke"
 
 #: src/Plug.vala:185
 msgid "Automatically delete old trashed files"
-msgstr ""
+msgstr "Automatski izbriši stare datoteke u otpadu"
 
 #: src/Plug.vala:186
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
+msgstr "Broj dana koliko će se čuvati privremene i datoteke u otpadu"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -95,12 +97,12 @@ msgstr ""
 #: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
-msgstr ""
+msgstr "Aktivirano"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr ""
+msgstr "Deaktivirano"
 
 #: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
 #: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
@@ -125,29 +127,29 @@ msgstr "Ograniči"
 
 #: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
 msgid "In"
-msgstr "ln"
+msgstr "Ulaz"
 
 #: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
 msgid "Out"
 msgstr "Izlaz"
 
 #: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
-#, fuzzy, c-format
+#, c-format
 msgid "%s Ports %s"
-msgstr "Portovi"
+msgstr "%s ulazi %s"
 
 #: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
-#, fuzzy, c-format
+#, c-format
 msgid "%s Port %s"
-msgstr "Portovi"
+msgstr "%s ulaz %s"
 
 #: src/Views/FirewallPanel.vala:280
 msgid "Version"
-msgstr ""
+msgstr "Verzija"
 
 #: src/Views/FirewallPanel.vala:281
 msgid "Action"
-msgstr "Akcija"
+msgstr "Radnja"
 
 #: src/Views/FirewallPanel.vala:282
 msgid "Protocol"
@@ -158,18 +160,16 @@ msgid "Direction"
 msgstr "Smjer"
 
 #: src/Views/FirewallPanel.vala:284
-#, fuzzy
 msgid "To"
-msgstr "Za:"
+msgstr "Do"
 
 #: src/Views/FirewallPanel.vala:285
-#, fuzzy
 msgid "From"
-msgstr "Od:"
+msgstr "Od"
 
 #: src/Views/FirewallPanel.vala:323
 msgid "Action:"
-msgstr "Akcija:"
+msgstr "Radnja:"
 
 #: src/Views/FirewallPanel.vala:332
 msgid "Protocol:"
@@ -177,11 +177,11 @@ msgstr "Protokol:"
 
 #: src/Views/FirewallPanel.vala:339
 msgid "Version:"
-msgstr ""
+msgstr "Verzija:"
 
 #: src/Views/FirewallPanel.vala:344
 msgid "Both"
-msgstr ""
+msgstr "Oba"
 
 #: src/Views/FirewallPanel.vala:347
 msgid "Direction:"
@@ -189,7 +189,7 @@ msgstr "Smjer:"
 
 #: src/Views/FirewallPanel.vala:354
 msgid "Ports:"
-msgstr "Portovi:"
+msgstr "Ulazi:"
 
 #: src/Views/FirewallPanel.vala:358
 #, c-format
@@ -202,27 +202,27 @@ msgstr "Dodaj pravilo"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "Automatski izbriši stare privremene datoteke:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "Automatski izbriši stare datoteke u otpadu:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "Broj dana koliko će se čuvati privremene i datoteke u otpadu:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "Otvori otpad…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "Zaključaj kada uređaj spava:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "Zaključaj kada se ugasi ekran:"
 
 #: src/Views/TrackPanel.vala:28
 msgid ""
@@ -230,10 +230,10 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
-"Ovaj operativni sistem može da sakupi korisne informacije o korišćenju "
-"datoteka i aplikacija sa ciljem pružanja dodatnih funkcionalnosti. Ukoliko "
-"druge osobe imaju pristup vašem korisničkom računu, vaša je dužnost da "
-"ograničite šta ćemo sakupljati kao podatke."
+"Ovaj operativni sistem može sakupljati korisne statistike o korištenju "
+"datoteka i aplikacija kako bi pružao dodatne funkcionalnosti. Ako druge "
+"osobe mogu vidjeti Vaš račun ili pristupiti njemu, možda biste trebali "
+"ograničiti koje stavke bivaju zabilježene."
 
 #: src/Views/TrackPanel.vala:35
 #, c-format
@@ -241,26 +241,30 @@ msgid ""
 "%s won't retain any further data or statistics about file and application "
 "usage."
 msgstr ""
+"%s neće više zadržavati nikakve podatke ili statistike o korištenju datoteka "
+"i aplikacija."
 
 #: src/Views/TrackPanel.vala:36
 msgid "The additional functionality that this data provides will be affected."
-msgstr "Ovo će uticati na dodatne funkcionalnosti koje nam pružaju ovi podaci."
+msgstr ""
+"Ovo će utjecati na dodatne funkcionalnosti koje se pružaju na osnovi ovih "
+"podataka."
 
 #: src/Views/TrackPanel.vala:37
 msgid ""
 "This will not prevent apps from recording their own usage data like browser "
 "history."
 msgstr ""
-"Ovo neće spriječiti aplikacije od snimanja njihovih podataka (kao što je "
-"npr. istorija browser-a)."
+"Ovo neće spriječiti aplikacije od vođenja vlastitih podataka o korištenju, "
+"poput historije web preglednika."
 
 #: src/Views/TrackPanel.vala:39
 msgid "History Is Disabled"
-msgstr ""
+msgstr "Historija je deaktivirana"
 
 #: src/Views/TrackPanel.vala:48
 msgid "Clear History…"
-msgstr ""
+msgstr "Izbriši historiju…"
 
 #: src/Views/TrackPanel.vala:94
 msgid "Your system"
@@ -268,64 +272,74 @@ msgstr "Vaš sistem"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Dozvoli sljedećim aplikacijama da odrede Vašu lokaciju"
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr ""
+msgstr "Nema aplikacija koje koriste lokacijske usluge"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Kada budu instalirane aplikacije koje koriste lokacijske usluge, pojavit će "
+"se ovdje automatski."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Lokacijske usluge su deaktivirane"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Kada su lokacijske usluge deaktivirane, zahtjevi za lokacijom iz ovih "
+"aplikacija će biti automatski odbijeni."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Ovo će utjecati na dodatne funkcionalnosti koje se pružaju na osnovi "
+"pristupa lokaciji u ovim aplikacijama."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Ovo neće spriječiti aplikacije da pokušaju odrediti Vašu lokaciju na osnovi "
+"IP adrese."
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr ""
+msgstr "Dozvoli %s da koristi lokacijske usluge"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr ""
+msgstr "Pretraži aplikaciju"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
+"Ukloni podatke koje je sistem prikupio o korištenju datoteka i aplikacija "
+"tokom:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr ""
+msgstr "Posljednjeg sata"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr ""
+msgstr "Posljednjeg dana"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr ""
+msgstr "Posljednje sedmice"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
@@ -333,31 +347,31 @@ msgstr "Od:"
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
-msgstr ""
+msgstr "Sve vrijeme"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "Za:"
+msgstr "Do:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
-msgstr "Obriši podatke"
+msgstr "Izbriši podatke"
 
 #: src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "Dodaj aplikaciju"
+msgstr "Dodaj aplikaciju…"
 
 #: src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "Dodaj direktorij"
+msgstr "Dodaj fasciklu…"
 
 #: src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
-msgstr "Odaberi direktorij za crnu listu"
+msgstr "Odaberi fasciklu za crnu listu"
 
 #: src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"
-msgstr "Poništi"
+msgstr "Otkaži"
 
 #: src/Widgets/ExcludeTreeView.vala:74
 msgid "Add"
@@ -369,7 +383,7 @@ msgstr "Izbriši"
 
 #: src/Widgets/ExcludeTreeView.vala:131
 msgid "Do not collect data from the following:"
-msgstr "Ne sakupljaj podatke od sledjećih:"
+msgstr "Ne prikupljaj podatke iz sljedećih:"
 
 #: src/Widgets/IncludeTreeView.vala:76
 msgid "Data Sources:"
@@ -377,7 +391,7 @@ msgstr "Izvori podataka:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
-msgstr "Zapisi dopisivanja"
+msgstr "Zapisnik dopisivanja"
 
 #: src/Widgets/IncludeTreeView.vala:83
 msgid "Documents"
@@ -397,15 +411,15 @@ msgstr "Prezentacije"
 
 #: src/Widgets/IncludeTreeView.vala:87
 msgid "Spreadsheets"
-msgstr "Proračunske tablice"
+msgstr "Tabele"
 
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
-msgstr "Video zapisi"
+msgstr "Video"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Djelimično aktivirano"
 
 #~ msgid "IPv6"
 #~ msgstr "IPv6"

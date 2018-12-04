@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:39-0700\n"
-"PO-Revision-Date: 2018-10-17 09:36+0000\n"
+"PO-Revision-Date: 2018-12-02 06:49+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -195,7 +195,7 @@ msgstr "%d または %d-%d"
 
 #: src/Views/FirewallPanel.vala:360
 msgid "Add Rule"
-msgstr "ルールの追加"
+msgstr "ルールを追加"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
@@ -227,9 +227,8 @@ msgid ""
 "to provide extra functionality. If other people can see or access your "
 "account, you may wish to limit which items are recorded."
 msgstr ""
-"この OS は、追加機能を提供するために、ファイルとアプリの使用状況に関する有用"
-"な統計情報を収集することができます。他の人がお使いのアカウントを見たりアクセ"
-"スできたりする場合は、記録される項目を制限することもできます。"
+"この OS は、追加機能を提供するために、ファイルとアプリの使用状況に関する有用な統計情報を収集できます。他の人がお使いのアカウントを見たりアクセスできた"
+"りする場合は、記録される項目を制限することもできます。"
 
 #: src/Views/TrackPanel.vala:35
 #, c-format
@@ -262,7 +261,7 @@ msgstr "履歴を削除…"
 
 #: src/Views/TrackPanel.vala:94
 msgid "Your system"
-msgstr "あなたのシステム"
+msgstr "お使いのシステム"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
@@ -321,15 +320,15 @@ msgstr "システム収集ファイルとアプリケーションの使用状況
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "過去1時間"
+msgstr "過去 1 時間"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr "過去1日"
+msgstr "過去 1 日"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr "過去1週間"
+msgstr "過去 1 週間"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
@@ -349,11 +348,11 @@ msgstr "データを削除"
 
 #: src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr "アプリケーションの追加…"
+msgstr "アプリケーションを追加…"
 
 #: src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "フォルダーの追加…"
+msgstr "フォルダーを追加…"
 
 #: src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
