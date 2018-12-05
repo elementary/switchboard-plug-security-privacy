@@ -56,7 +56,7 @@ namespace SecurityPrivacy {
             supported_settings.set ("security", null);
             supported_settings.set ("security/firewall", FIREWALL);
             supported_settings.set ("security/locking", LOCKING);
-            supported_settings.set ("privacy", null);
+            supported_settings.set ("privacy", HISTORY);
             supported_settings.set ("privacy/trash", HOUSEKEEPING);
 
             // DEPRECATED
