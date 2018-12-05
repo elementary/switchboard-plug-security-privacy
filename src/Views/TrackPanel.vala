@@ -26,7 +26,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     public TrackPanel () {
         Object (
             activatable: true,
-            description: (_("%s can store local usage data to provide extra functionality like offering recently-used files and more relevant local search. Regardless of this setting, usage data is never transmitted off of this device or to third parties.").printf (get_operating_system_name ())),
+            description: _("%s can store local usage data to provide extra functionality like offering recently-used files and more relevant local search. Regardless of this setting, usage data is never transmitted off of this device or to third parties.").printf (get_operating_system_name ()),
             icon_name: "document-open-recent",
             title: _("History")
         );
