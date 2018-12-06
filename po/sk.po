@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:39-0700\n"
+"POT-Creation-Date: 2018-12-06 07:12-0800\n"
 "PO-Revision-Date: 2016-12-12 22:07+0000\n"
 "Last-Translator: Martin Korpala <Unknown>\n"
 "Language-Team: Slovak <>\n"
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Location Services"
 msgstr ""
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr ""
@@ -93,12 +93,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Je vyžadované overenie pre spustenie konfigurovania Firewallu"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr ""
@@ -225,45 +225,42 @@ msgstr "Zamknúť pri spánku:"
 msgid "Lock after screen turns off:"
 msgstr "Zamknúť po vypnutí obrazovky:"
 
-#: src/Views/TrackPanel.vala:28
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Tento operačný systém môže zhromaždiť užitočné štatistiky o používaní "
-"súborov a aplikácií pre poskytovanie ďalších funkcií. Ak ostatní ľudia môžu "
-"vidieť alebo pristupovať k vášmu účtu, môžete obmedziť, ktoré položky sú "
-"zaznamenané."
-
-#: src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
-"%s won't retain any further data or statistics about file and application "
-"usage."
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
 msgstr ""
 
-#: src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:37
+#, c-format
+msgid "%s won't retain any further usage data."
+msgstr ""
+
+#: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Ďalšie funkcie, ktoré tieto dáta poskytujú, budú ovplyvnené."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:39
+#, fuzzy
 msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
 msgstr ""
 "Nezabráni to aplikáciám v nahrávaní svojich vlastných údajov o používaní ako "
 "je napríklad história prehliadača"
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
 msgstr ""
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
 msgstr ""
 
-#: src/Views/TrackPanel.vala:94
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "Váš systém"
 
@@ -407,6 +404,16 @@ msgstr "Videá"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr ""
+
+#~ msgid ""
+#~ "This operating system can gather useful statistics about file and app "
+#~ "usage to provide extra functionality. If other people can see or access "
+#~ "your account, you may wish to limit which items are recorded."
+#~ msgstr ""
+#~ "Tento operačný systém môže zhromaždiť užitočné štatistiky o používaní "
+#~ "súborov a aplikácií pre poskytovanie ďalších funkcií. Ak ostatní ľudia "
+#~ "môžu vidieť alebo pristupovať k vášmu účtu, môžete obmedziť, ktoré "
+#~ "položky sú zaznamenané."
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Súkromný mód"

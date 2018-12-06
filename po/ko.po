@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:39-0700\n"
+"POT-Creation-Date: 2018-12-06 07:12-0800\n"
 "PO-Revision-Date: 2018-10-20 03:02+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
@@ -57,7 +57,7 @@ msgstr "가정용"
 msgid "Location Services"
 msgstr "위치 서비스"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "사용 기록"
@@ -91,12 +91,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "방화벽 설정을 사용하시는 데에 인증이 요구됩니다"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "사용함"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "사용 안 함"
@@ -221,44 +221,42 @@ msgstr "슬립모드 일 때 잠금:"
 msgid "Lock after screen turns off:"
 msgstr "화면이 꺼진 후에 잠금:"
 
-#: src/Views/TrackPanel.vala:28
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"이 운영체제는 추가적인 기능을 제공하기 위해 파일과 앱 사용에 대한 유용한 통계"
-"를 수집할 수 있습니다. 만약 다른 사람이 계정에 접근하거나 볼 수 있는 경우, 어"
-"떤 항목을 기록할지 제한할 수 있습니다."
-
-#: src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
-"%s won't retain any further data or statistics about file and application "
-"usage."
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
+msgstr ""
+
+#: src/Views/TrackPanel.vala:37
+#, fuzzy, c-format
+msgid "%s won't retain any further usage data."
 msgstr "%s는 파일과 애플리케이션 사용에 대한 추가 데이터를 보관하지 않습니다."
 
-#: src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "이 데이터가 제공하는 추가 기능이 영향을 받습니다."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:39
+#, fuzzy
 msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
 msgstr ""
 "브라우저 방문 기록 같은 애플리케이션 자신의 사용 데이터를 기록하는 것을 막지"
 "는 않습니다."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
 msgstr "사용 기록을 사용하지 않습니다"
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
 msgstr "사용 기록 청소…"
 
-#: src/Views/TrackPanel.vala:94
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "사용자 시스템"
 
@@ -406,6 +404,15 @@ msgstr "비디오"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "부분 활성화"
+
+#~ msgid ""
+#~ "This operating system can gather useful statistics about file and app "
+#~ "usage to provide extra functionality. If other people can see or access "
+#~ "your account, you may wish to limit which items are recorded."
+#~ msgstr ""
+#~ "이 운영체제는 추가적인 기능을 제공하기 위해 파일과 앱 사용에 대한 유용한 "
+#~ "통계를 수집할 수 있습니다. 만약 다른 사람이 계정에 접근하거나 볼 수 있는 "
+#~ "경우, 어떤 항목을 기록할지 제한할 수 있습니다."
 
 #~ msgid "Privacy Mode"
 #~ msgstr "사생활 보호 모드"
