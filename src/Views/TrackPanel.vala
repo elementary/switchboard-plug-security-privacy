@@ -34,7 +34,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
 
     construct {
         var description = ("%s %s\n\n%s".printf (
-            _("%s won't retain any usage data.").printf (get_operating_system_name ()),
+            _("%s won't retain any further usage data.").printf (get_operating_system_name ()),
             _("The additional functionality that this data provides will be affected."),
             _("This may not prevent apps from recording their own usage data, such as browser history.")
         ));
