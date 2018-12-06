@@ -54,12 +54,20 @@ namespace SecurityPrivacy {
 
             location_agent_installed = SecurityPrivacy.LocationPanel.location_agent_installed ();
             supported_settings.set ("security", null);
-            supported_settings.set ("security/privacy", HISTORY);
             supported_settings.set ("security/firewall", FIREWALL);
+            supported_settings.set ("security/locking", LOCKING);
+            supported_settings.set ("privacy", HISTORY);
+            supported_settings.set ("privacy/trash", HOUSEKEEPING);
+
+            // DEPRECATED
+            supported_settings.set ("security/privacy", HISTORY);
             supported_settings.set ("security/housekeeping", HOUSEKEEPING);
             supported_settings.set ("security/screensaver", LOCKING);
-            
+
             if (location_agent_installed) {
+                supported_settings.set ("privacy/location", LOCATION);
+
+                // DEPRECATED
                 supported_settings.set ("security/privacy/location", LOCATION);
             }
             plug = this;
@@ -159,7 +167,7 @@ namespace SecurityPrivacy {
         }
 
         public override void hidden () {
-            
+
         }
 
         public override void search_callback (string location) {
@@ -197,3 +205,4 @@ public Switchboard.Plug get_plug (Module module) {
     var plug = new SecurityPrivacy.Plug ();
     return plug;
 }
+
