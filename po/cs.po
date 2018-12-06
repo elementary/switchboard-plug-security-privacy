@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:39-0700\n"
+"POT-Creation-Date: 2018-12-06 07:12-0800\n"
 "PO-Revision-Date: 2018-10-18 07:17+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
@@ -57,7 +57,7 @@ msgstr "Údržba"
 msgid "Location Services"
 msgstr "Služby polohy"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historie"
@@ -91,12 +91,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Pro změnu nastavení Firewallu je potřeba ověření"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Zapnuto"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Vypnuto"
@@ -221,46 +221,44 @@ msgstr "Uzamknout v režimu spánku:"
 msgid "Lock after screen turns off:"
 msgstr "Uzamknout při vypnutí obrazovky:"
 
-#: src/Views/TrackPanel.vala:28
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Tento operační systém může sbírat užitečné statistiky o používání souborů a "
-"aplikací pro zajištění vylepšení funkcí. Pokud tento účet sdílíte  s "
-"ostatními lidmi, potom si možná přejete omezit některé záznamy."
-
-#: src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
-"%s won't retain any further data or statistics about file and application "
-"usage."
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
+msgstr ""
+
+#: src/Views/TrackPanel.vala:37
+#, fuzzy, c-format
+msgid "%s won't retain any further usage data."
 msgstr ""
 "%s již nebude v budoucnu sbírat data nebo statistky o používání souborů a "
 "aplikací."
 
-#: src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Doplňkové funkce, které tato data umožňují, budou ovlivněny."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:39
+#, fuzzy
 msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
 msgstr ""
 "Toto nezabrání aplikacím v uchovávání jejich vlastních dat jako například "
 "historie prohlížení."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
 msgstr "Historie je vypnutá"
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
 msgstr "Vymazat historii…"
 
-#: src/Views/TrackPanel.vala:94
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "Váš systém"
 
@@ -412,6 +410,15 @@ msgstr "Videa"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Částečně povoleno"
+
+#~ msgid ""
+#~ "This operating system can gather useful statistics about file and app "
+#~ "usage to provide extra functionality. If other people can see or access "
+#~ "your account, you may wish to limit which items are recorded."
+#~ msgstr ""
+#~ "Tento operační systém může sbírat užitečné statistiky o používání souborů "
+#~ "a aplikací pro zajištění vylepšení funkcí. Pokud tento účet sdílíte  s "
+#~ "ostatními lidmi, potom si možná přejete omezit některé záznamy."
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Soukromý režim"

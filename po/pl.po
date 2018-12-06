@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:39-0700\n"
+"POT-Creation-Date: 2018-12-06 07:12-0800\n"
 "PO-Revision-Date: 2018-10-17 18:48+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
@@ -59,7 +59,7 @@ msgstr "Gospodarowanie"
 msgid "Location Services"
 msgstr "Usługi lokalizacji"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historia"
@@ -94,12 +94,12 @@ msgstr ""
 "Aby uruchomić konfigurację zapory sieciowej konieczne jest uwierzytelnienie"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Włączone"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Wyłączone"
@@ -224,47 +224,44 @@ msgstr "Zablokuj w trybie uśpienia:"
 msgid "Lock after screen turns off:"
 msgstr "Zablokuj po wyłączeniu ekranu:"
 
-#: src/Views/TrackPanel.vala:28
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Ten system operacyjny może zbierać użyteczne dane o plikach i programach, "
-"aby zapewnić dodatkową funkcjonalność. Jeśli inne osoby mogą zobaczyć lub "
-"uzyskać dostęp do Twojego konta, możesz chcieć ograniczyć zakres "
-"rejestrowanych danych."
-
-#: src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
-"%s won't retain any further data or statistics about file and application "
-"usage."
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
+msgstr ""
+
+#: src/Views/TrackPanel.vala:37
+#, fuzzy, c-format
+msgid "%s won't retain any further usage data."
 msgstr ""
 "%s nie zachowa żadnych danych lub statystyk dotyczących plików i korzystania "
 "z programów."
 
-#: src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "To wpłynie na dodatkowe funkcjonalności które te dane dostarczają."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:39
+#, fuzzy
 msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
 msgstr ""
 "To nie zabroni aplikacjom na zbieranie własnych danych na temat użytku jak "
 "np. historia przeglądarki www."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
 msgstr "Historia jest wyłączona"
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
 msgstr "Wyczyść historię…"
 
-#: src/Views/TrackPanel.vala:94
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "Twój system"
 
@@ -416,6 +413,16 @@ msgstr "Filmy"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Częściowo włączone"
+
+#~ msgid ""
+#~ "This operating system can gather useful statistics about file and app "
+#~ "usage to provide extra functionality. If other people can see or access "
+#~ "your account, you may wish to limit which items are recorded."
+#~ msgstr ""
+#~ "Ten system operacyjny może zbierać użyteczne dane o plikach i programach, "
+#~ "aby zapewnić dodatkową funkcjonalność. Jeśli inne osoby mogą zobaczyć lub "
+#~ "uzyskać dostęp do Twojego konta, możesz chcieć ograniczyć zakres "
+#~ "rejestrowanych danych."
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Tryb prywatny"

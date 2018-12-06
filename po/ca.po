@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:39-0700\n"
+"POT-Creation-Date: 2018-12-06 07:12-0800\n"
 "PO-Revision-Date: 2018-10-26 15:02+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
@@ -58,7 +58,7 @@ msgstr "Manteniment"
 msgid "Location Services"
 msgstr "Serveis d'ubicació"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historial"
@@ -92,12 +92,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Cal autenticació per executar la configuració del tallafoc"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Habilitat"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Inhabilitat"
@@ -222,48 +222,45 @@ msgstr "Bloqueja't en aturar temporalment:"
 msgid "Lock after screen turns off:"
 msgstr "Bloqueja't després d'apagar la pantalla:"
 
-#: src/Views/TrackPanel.vala:28
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Aquest sistema operatiu pot recopilar estadístiques útils sobre fitxers i ús "
-"d'aplicacions per proporcionar funcionalitat addicional. Si altres persones "
-"poden veure o accedir al vostre compte, és possible que vulgueu limitar els "
-"elements que es registren."
-
-#: src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
-"%s won't retain any further data or statistics about file and application "
-"usage."
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
+msgstr ""
+
+#: src/Views/TrackPanel.vala:37
+#, fuzzy, c-format
+msgid "%s won't retain any further usage data."
 msgstr ""
 "%s no retindrà més dades o estadístiques sobre l'ús de fitxers i "
 "d'aplicacions."
 
-#: src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr ""
 "Això afectarà la funcionalitat addicional que aquestes dades proporcionen."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:39
+#, fuzzy
 msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
 msgstr ""
 "Això no evitarà que algunes aplicacions guardin dades d'ús pròpies com ara "
 "l'historial de navegació."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
 msgstr "L'historial està inhabilitat"
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
 msgstr "Neteja l'historial…"
 
-#: src/Views/TrackPanel.vala:94
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "El vostre sistema"
 
@@ -322,7 +319,8 @@ msgstr "Cerca aplicacions"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
-msgstr "Suprimeix les dades d'ús de fitxers i aplicacions recopilades des de..."
+msgstr ""
+"Suprimeix les dades d'ús de fitxers i aplicacions recopilades des de..."
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
@@ -415,6 +413,16 @@ msgstr "Vídeos"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Habilitat parcialment"
+
+#~ msgid ""
+#~ "This operating system can gather useful statistics about file and app "
+#~ "usage to provide extra functionality. If other people can see or access "
+#~ "your account, you may wish to limit which items are recorded."
+#~ msgstr ""
+#~ "Aquest sistema operatiu pot recopilar estadístiques útils sobre fitxers i "
+#~ "ús d'aplicacions per proporcionar funcionalitat addicional. Si altres "
+#~ "persones poden veure o accedir al vostre compte, és possible que vulgueu "
+#~ "limitar els elements que es registren."
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Mode privat"

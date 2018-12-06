@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:39-0700\n"
+"POT-Creation-Date: 2018-12-06 07:12-0800\n"
 "PO-Revision-Date: 2018-12-02 06:49+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
@@ -57,7 +57,7 @@ msgstr "自動削除"
 msgid "Location Services"
 msgstr "位置情報サービス"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "履歴"
@@ -91,12 +91,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "ファイアウォールの設定を実行するには認証が必要です"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "有効"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "無効"
@@ -221,45 +221,44 @@ msgstr "スリープ時にロック:"
 msgid "Lock after screen turns off:"
 msgstr "画面の電源がオフのときにロック:"
 
-#: src/Views/TrackPanel.vala:28
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"この OS は、追加機能を提供するために、ファイルとアプリの使用状況に関する有用な統計情報を収集できます。他の人がお使いのアカウントを見たりアクセスできた"
-"りする場合は、記録される項目を制限することもできます。"
-
-#: src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
-"%s won't retain any further data or statistics about file and application "
-"usage."
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
+msgstr ""
+
+#: src/Views/TrackPanel.vala:37
+#, fuzzy, c-format
+msgid "%s won't retain any further usage data."
 msgstr ""
 "%s はファイルとアプリケーションに関するデータや統計情報をこれ以上保持しませ"
 "ん。"
 
-#: src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "このデータが提供する追加の機能が影響を受けます。"
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:39
+#, fuzzy
 msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
 msgstr ""
 "これは、ブラウザの履歴のように、アプリ自身の利用状況データを記録することを防"
 "ぐことはできません。"
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
 msgstr "履歴は無効になっています"
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
 msgstr "履歴を削除…"
 
-#: src/Views/TrackPanel.vala:94
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "お使いのシステム"
 
@@ -409,6 +408,15 @@ msgstr "動画"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "部分的に有効"
+
+#~ msgid ""
+#~ "This operating system can gather useful statistics about file and app "
+#~ "usage to provide extra functionality. If other people can see or access "
+#~ "your account, you may wish to limit which items are recorded."
+#~ msgstr ""
+#~ "この OS は、追加機能を提供するために、ファイルとアプリの使用状況に関する有"
+#~ "用な統計情報を収集できます。他の人がお使いのアカウントを見たりアクセスでき"
+#~ "たりする場合は、記録される項目を制限することもできます。"
 
 #~ msgid "Privacy Mode"
 #~ msgstr "プライバシーモード"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:39-0700\n"
+"POT-Creation-Date: 2018-12-06 07:12-0800\n"
 "PO-Revision-Date: 2018-07-07 18:53+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
@@ -58,7 +58,7 @@ msgstr "Vzdrževanje"
 msgid "Location Services"
 msgstr "Lokacijske storitve"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:30
+#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Zgodovina"
@@ -98,12 +98,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Za zagon nastavitev požarnega zidu je zahtevana overitev"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
-#: src/Views/TrackPanel.vala:110 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Omogočeno"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:114
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Onemogočeno"
@@ -228,44 +228,42 @@ msgstr "Zakleni ob spanju:"
 msgid "Lock after screen turns off:"
 msgstr "Zakleni po izklopu zaslona:"
 
-#: src/Views/TrackPanel.vala:28
-msgid ""
-"This operating system can gather useful statistics about file and app usage "
-"to provide extra functionality. If other people can see or access your "
-"account, you may wish to limit which items are recorded."
-msgstr ""
-"Ta operacijski sistem lahko za dodatne funkcije zbira uporabne statistike o "
-"uporabi aplikacij in datotek. Če lahko drugi ljudje dostopajo do vašega "
-"računa, si morda želite omejiti zbiranje podatkov."
-
-#: src/Views/TrackPanel.vala:35
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
-"%s won't retain any further data or statistics about file and application "
-"usage."
+"%s can store local usage data to provide extra functionality like offering "
+"recently-used files and more relevant local search. Regardless of this "
+"setting, usage data is never transmitted off of this device or to third "
+"parties."
+msgstr ""
+
+#: src/Views/TrackPanel.vala:37
+#, fuzzy, c-format
+msgid "%s won't retain any further usage data."
 msgstr "%s ne bo več shranjeval podatkov o uporabi datotek in aplikacij."
 
-#: src/Views/TrackPanel.vala:36
+#: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Dodatne funkcije, ki se zanašajo na te podatke ne bodo delovale."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:39
+#, fuzzy
 msgid ""
-"This will not prevent apps from recording their own usage data like browser "
-"history."
+"This may not prevent apps from recording their own usage data, such as "
+"browser history."
 msgstr ""
 "To ne bo preprečilo aplikacijam zbirati svoje podatke (npr. zgodovina strani "
 "v brskalniku)."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
 msgstr "Zgodovina je onemogočena"
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
 msgstr "Izbriši zgodovino…"
 
-#: src/Views/TrackPanel.vala:94
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "Vaš sistem"
 
@@ -413,6 +411,15 @@ msgstr "Videoposnetki"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Delno omogočeno"
+
+#~ msgid ""
+#~ "This operating system can gather useful statistics about file and app "
+#~ "usage to provide extra functionality. If other people can see or access "
+#~ "your account, you may wish to limit which items are recorded."
+#~ msgstr ""
+#~ "Ta operacijski sistem lahko za dodatne funkcije zbira uporabne statistike "
+#~ "o uporabi aplikacij in datotek. Če lahko drugi ljudje dostopajo do vašega "
+#~ "računa, si morda želite omejiti zbiranje podatkov."
 
 #~ msgid "Privacy Mode"
 #~ msgstr "Zasebni način"
