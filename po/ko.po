@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2018-10-20 03:02+0000\n"
+"PO-Revision-Date: 2018-12-22 10:41+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ko/>\n"
@@ -229,24 +229,23 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s의 로컬 사용 데이터를 저장하여 최근에 사용한 파일 및 관련 로컬 검색과 같은 추가 기능을 제공할 수 있습니다. 이 설정과 관계없이 "
+"사용 데이터는 이 장치 또는 써드 파티에게 절대 전송되지 않습니다."
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr "%s는 파일과 애플리케이션 사용에 대한 추가 데이터를 보관하지 않습니다."
+msgstr "%s의 추가 데이터를 보관하지 않습니다."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "이 데이터가 제공하는 추가 기능이 영향을 받습니다."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
-msgstr ""
-"브라우저 방문 기록 같은 애플리케이션 자신의 사용 데이터를 기록하는 것을 막지"
-"는 않습니다."
+msgstr "브라우저 방문 기록 같은 애플리케이션 자신의 사용 데이터를 기록하는 것을 막지는 않습니다."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
