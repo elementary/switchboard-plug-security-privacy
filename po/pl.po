@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2018-10-17 18:48+0000\n"
+"PO-Revision-Date: 2019-01-01 00:41+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pl/>\n"
@@ -232,26 +232,28 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s może przechowywać lokalne dane o użytkowaniu, aby zapewnić dodatkowe "
+"funkcje, takie jak oferowanie ostatnio używanych plików i bardziej "
+"odpowiednie wyszukiwanie lokalne. Niezależnie od tego ustawienia, dane "
+"dotyczące użytkowania nie są nigdy przekazywane z tego urządzenia lub "
+"stronom trzecim."
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"%s nie zachowa żadnych danych lub statystyk dotyczących plików i korzystania "
-"z programów."
+msgstr "%s nie zachowa żadnych danych o użytkowaniu."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "To wpłynie na dodatkowe funkcjonalności które te dane dostarczają."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"To nie zabroni aplikacjom na zbieranie własnych danych na temat użytku jak "
-"np. historia przeglądarki www."
+"Może to nie zapobiegać programom w zapisywaniu ich własnych danych "
+"użytkowania, takich jak historia przeglądania."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
