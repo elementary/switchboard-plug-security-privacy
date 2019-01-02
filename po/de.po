@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2018-09-10 00:08+0000\n"
+"PO-Revision-Date: 2019-01-02 21:30+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
@@ -66,35 +66,29 @@ msgid "History"
 msgstr "Verlauf"
 
 #: src/Plug.vala:178
-#, fuzzy
 msgid "Clear History"
-msgstr "Verlauf löschen…"
+msgstr "Verlauf löschen"
 
 #: src/Plug.vala:180
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Im Schlafmodus sperren:"
+msgstr "Im Schlafmodus sperren"
 
 #: src/Plug.vala:181
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Nach dem Ausschalten des Bildschirms sperren:"
+msgstr "Nach dem Ausschalten des Bildschirms sperren"
 
 #: src/Plug.vala:184
-#, fuzzy
 msgid "Automatically delete old temporary files"
-msgstr "Ältere temporäre Dateien automatisch löschen:"
+msgstr "Ältere temporäre Dateien automatisch entfernen"
 
 #: src/Plug.vala:185
-#, fuzzy
 msgid "Automatically delete old trashed files"
-msgstr "Ältere Dateien im Papierkorb automatisch löschen:"
+msgstr "Ältere Dateien automatisch aus dem Papierkorb entfernen"
 
 #: src/Plug.vala:186
-#, fuzzy
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
-"Anzahl der Tage, in denen gelöschte und temporäre Dateien aufbewahrt werden:"
+"Anzahl der Tage, in denen gelöschte und temporäre Dateien aufbewahrt werden"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -240,13 +234,15 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s kann lokale Nutzungsdaten speichern, um zusätzliche Funktionen wie das "
+"Angebot von kürzlich verwendeten Dateien und eine relevantere lokale Suche "
+"bereitzustellen. Unabhängig von dieser Einstellung werden die Nutzungsdaten "
+"niemals von diesem Gerät oder an Dritte weitergegeben."
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"%s speichert in Zukunft keine Daten oder Statistiken über die Verwendung von "
-"Dateien und Anwendungen."
+msgstr "%s speichert keine weiteren Nutzungsdaten."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
@@ -255,13 +251,12 @@ msgstr ""
 "beeinträchtigt."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Diese Einstellung kann nicht verhindern, dass Anwendungen eigene Daten, wie "
-"beispielsweise den Browserverlauf, aufzeichnen."
+"Dies kann jedoch nicht ausschließen, dass Apps ihre eigenen Nutzungsdaten, "
+"wie z.B. den Browser-Verlauf, erfassen."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
