@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2018-11-16 08:18+0000\n"
+"PO-Revision-Date: 2019-01-04 00:08+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fr/>\n"
@@ -234,11 +234,9 @@ msgid ""
 msgstr ""
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"%s ne retiendra plus de données ou statistiques concernant l'utilisation de "
-"fichiers et d'applications."
+msgstr "%s ne retiendra plus de données d'utilisation."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
@@ -246,7 +244,6 @@ msgstr ""
 "La fonctionnalité supplémentaire que cette donnée fournit sera affectée."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
