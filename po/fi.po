@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2018-10-18 10:08+0000\n"
+"PO-Revision-Date: 2019-01-07 00:03+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fi/>\n"
@@ -233,23 +233,20 @@ msgid ""
 msgstr ""
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"%s ei enää jatkossa säilytä tietoja tai tilastoja tiedostojen ja sovellusten "
-"käytöstä."
+msgstr "%s ei säilytä enää jatkossa käyttötietoa."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Tämän tiedon tuottamat lisäominaisuudet ovat vaikutuksen alaisia."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Tämä ei kuitenkaan estä sovelluksia tallentamasta niiden omia käyttötietoja, "
+"Tämä saattaa estää sovelluksia tallentamasta niiden omia käyttötietoja, "
 "kuten selaimen selaushistoriaa."
 
 #: src/Views/TrackPanel.vala:42
