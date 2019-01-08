@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2018-10-18 17:27+0000\n"
+"PO-Revision-Date: 2019-01-10 00:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/nb/>\n"
@@ -229,12 +229,15 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s kan lagre lokal bruksdata for å tilby ekstra funksjonalitet som nylig "
+"brukte filer, og mer relevant lokalt søk.\n"
+"Uavhengig av denne innstillinger, forlater bruksdata aldri denne enheten pg "
+"blir ei heller sendt til tredjeparter."
 
 #: src/Views/TrackPanel.vala:37
 #, fuzzy, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"%s vil ikke beholde framtidig data eller statistikk om fil og programbruk."
+msgstr "%s vil ikke beholde ytterligere bruksdata."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
@@ -246,7 +249,7 @@ msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Dette vil ikke forhindre applikasjoner fra å loggføre egne brukerdata som "
+"Dette vil ikke forhindre programmer fra å loggføre egne brukerdata, som "
 "historikk i nettleser."
 
 #: src/Views/TrackPanel.vala:42
