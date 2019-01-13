@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2019-01-11 09:28+0000\n"
+"PO-Revision-Date: 2019-01-14 00:10+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fr/>\n"
@@ -22,12 +22,13 @@ msgstr ""
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Sécurité & vie privée"
+msgstr "Sécurité & Confidentialité"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
-"Configurer le pare-feu, l'écran de verouillage et les informations d'activité"
+"Configurer le pare-feu, l'écran de verrouillage et les informations "
+"d'activité"
 
 #: src/Plug.vala:93
 msgid "Some settings require administrator rights to be changed"
@@ -329,15 +330,15 @@ msgstr ""
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "L'heure passée"
+msgstr "La dernière heure"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr "Le jour passé"
+msgstr "Le dernier jour"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr "La semaine dernière"
+msgstr "La dernière semaine"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
