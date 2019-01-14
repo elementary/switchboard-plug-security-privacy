@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2019-01-14 13:03+0000\n"
+"PO-Revision-Date: 2019-01-15 00:06+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/zh_Hans/>\n"
@@ -68,23 +68,23 @@ msgstr "清除历史"
 
 #: src/Plug.vala:180
 msgid "Lock on sleep"
-msgstr "睡眠时锁定："
+msgstr "睡眠时锁定"
 
 #: src/Plug.vala:181
 msgid "Lock after sceen turns off"
-msgstr "熄屏后锁定："
+msgstr "熄屏后锁定"
 
 #: src/Plug.vala:184
 msgid "Automatically delete old temporary files"
-msgstr "自动删除过期的临时文件："
+msgstr "自动删除过期的临时文件"
 
 #: src/Plug.vala:185
 msgid "Automatically delete old trashed files"
-msgstr "自动清理回收站："
+msgstr "自动清理回收站"
 
 #: src/Plug.vala:186
 msgid "Number of days to keep trashed and temporary files"
-msgstr "临时文件及回收站内容保留周期："
+msgstr "临时文件及回收站内容保留周期"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -158,11 +158,11 @@ msgstr "方向"
 
 #: src/Views/FirewallPanel.vala:284
 msgid "To"
-msgstr "结束日期："
+msgstr "结束日期"
 
 #: src/Views/FirewallPanel.vala:285
 msgid "From"
-msgstr "起始日期："
+msgstr "起始日期"
 
 #: src/Views/FirewallPanel.vala:323
 msgid "Action:"
