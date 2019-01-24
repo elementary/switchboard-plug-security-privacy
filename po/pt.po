@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2019-01-10 00:07+0000\n"
+"PO-Revision-Date: 2019-01-25 00:01+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/pt/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Segurança & Privacidade"
+msgstr "Segurança e Privacidade"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
@@ -345,7 +345,7 @@ msgstr "Desde sempre"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "Para:"
+msgstr "Até:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
