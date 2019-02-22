@@ -70,16 +70,22 @@ public class ExcludeTreeView : Gtk.Grid {
         var add_folder_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("folder-new-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
         add_folder_button.tooltip_text = _("Add Folder…");
         add_folder_button.clicked.connect (() => {
-            var chooser = new Gtk.FileChooserDialog (_("Select a folder to blacklist"), null, Gtk.FileChooserAction.SELECT_FOLDER);
-            chooser.add_buttons (_("Cancel"), Gtk.ResponseType.CANCEL, _("Add"), Gtk.ResponseType.OK);
-            int res = chooser.run ();
-            chooser.hide ();
-            if (res == Gtk.ResponseType.OK) {
+            var chooser = new Gtk.FileChooserNative (
+                _("Select a folder to blacklist"),
+                null,
+                Gtk.FileChooserAction.SELECT_FOLDER,
+                _("Add"),
+                _("Cancel")
+            );
+
+            if (chooser.run () == Gtk.ResponseType.ACCEPT) {
                 string folder = chooser.get_filename ();
                 if (this.path_blacklist.is_duplicate (folder) == false) {
                     path_blacklist.block (folder);
                 }
             }
+
+            chooser.destroy ();
         });
 
         var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
