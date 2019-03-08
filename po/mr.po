@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2018-12-24 00:07+0000\n"
+"PO-Revision-Date: 2019-03-09 13:31+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.4\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -321,7 +321,7 @@ msgstr ""
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
-msgstr "तर्फे :"
+msgstr "पासून:"
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
@@ -329,7 +329,7 @@ msgstr ""
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "प्रति:"
+msgstr "पर्यंत:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
@@ -353,7 +353,7 @@ msgstr "रद्द करा"
 
 #: src/Widgets/ExcludeTreeView.vala:74
 msgid "Add"
-msgstr ""
+msgstr "वाढवा"
 
 #: src/Widgets/ExcludeTreeView.vala:86
 msgid "Delete"
@@ -377,7 +377,7 @@ msgstr ""
 
 #: src/Widgets/IncludeTreeView.vala:84
 msgid "Music"
-msgstr ""
+msgstr "संगीत"
 
 #: src/Widgets/IncludeTreeView.vala:85
 msgid "Pictures"
