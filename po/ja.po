@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2018-12-20 00:10+0000\n"
+"PO-Revision-Date: 2019-03-17 01:27+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.4\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 
 #: src/Plug.vala:50
@@ -229,8 +229,8 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s は、最近使用したファイルやその他の関連するローカル検索の提案といった追加機能を提供するために、ローカルの使用状況データを保存できます。この設定にかか"
-"わらず、使用状況データがこのデバイスから転送されたり、サードパーティに転送されることはありません。"
+"%s は、最近使用したファイルやその他の関連するローカル検索の提案といった追加機能を提供するために、ローカルの使用状況データを保存できます。この設定が有効"
+"であっても、使用状況データがこのデバイスから転送されたり、サードパーティーに転送されたりすることはありません。"
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
@@ -245,7 +245,7 @@ msgstr "このデータが提供する追加の機能が影響を受けます。
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
-msgstr "これは、ブラウザの履歴など、アプリ自身の使用状況データの記録を防げない可能性があります。"
+msgstr "これは、ブラウザの履歴など、アプリ独自の使用状況データが記録されることを防げない可能性があります。"
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
