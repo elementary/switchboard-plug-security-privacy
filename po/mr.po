@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2019-03-21 10:12+0000\n"
+"PO-Revision-Date: 2019-03-29 02:49+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/mr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -108,45 +108,45 @@ msgstr "अज्ञात"
 
 #: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
 msgid "Allow"
-msgstr ""
+msgstr "परवानगी द्या"
 
 #: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
 msgid "Deny"
-msgstr ""
+msgstr "नाकारा"
 
 #: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
 msgid "Reject"
-msgstr ""
+msgstr "नाकारा"
 
 #: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
 msgid "Limit"
-msgstr ""
+msgstr "मर्यादित करा"
 
 #: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
 msgid "In"
-msgstr ""
+msgstr "मध्ये"
 
 #: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
 msgid "Out"
-msgstr ""
+msgstr "बाहेर"
 
 #: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
 #, c-format
 msgid "%s Ports %s"
-msgstr ""
+msgstr "%s पोर्ट %s"
 
 #: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
 #, c-format
 msgid "%s Port %s"
-msgstr ""
+msgstr "%s पोर्ट %s"
 
 #: src/Views/FirewallPanel.vala:280
 msgid "Version"
-msgstr ""
+msgstr "आवृत्ती"
 
 #: src/Views/FirewallPanel.vala:281
 msgid "Action"
-msgstr ""
+msgstr "क्रिया"
 
 #: src/Views/FirewallPanel.vala:282
 msgid "Protocol"
