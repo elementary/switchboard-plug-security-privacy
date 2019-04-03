@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2019-03-29 02:49+0000\n"
+"PO-Revision-Date: 2019-04-04 12:52+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/mr/>\n"
@@ -150,77 +150,76 @@ msgstr "क्रिया"
 
 #: src/Views/FirewallPanel.vala:282
 msgid "Protocol"
-msgstr ""
+msgstr "प्रोटोकॉल"
 
 #: src/Views/FirewallPanel.vala:283
 msgid "Direction"
-msgstr ""
+msgstr "दिशा"
 
 #: src/Views/FirewallPanel.vala:284
-#, fuzzy
 msgid "To"
-msgstr "प्रति:"
+msgstr "च्याकडे"
 
 #: src/Views/FirewallPanel.vala:285
 msgid "From"
-msgstr ""
+msgstr "पासून"
 
 #: src/Views/FirewallPanel.vala:323
 msgid "Action:"
-msgstr ""
+msgstr "क्रिया:"
 
 #: src/Views/FirewallPanel.vala:332
 msgid "Protocol:"
-msgstr ""
+msgstr "प्रोटोकॉल:"
 
 #: src/Views/FirewallPanel.vala:339
 msgid "Version:"
-msgstr ""
+msgstr "आवृत्ती:"
 
 #: src/Views/FirewallPanel.vala:344
 msgid "Both"
-msgstr ""
+msgstr "दोन्ही"
 
 #: src/Views/FirewallPanel.vala:347
 msgid "Direction:"
-msgstr ""
+msgstr "दिशा:"
 
 #: src/Views/FirewallPanel.vala:354
 msgid "Ports:"
-msgstr ""
+msgstr "पोर्ट:"
 
 #: src/Views/FirewallPanel.vala:358
 #, c-format
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d किंवा %d-%d"
 
 #: src/Views/FirewallPanel.vala:360
 msgid "Add Rule"
-msgstr ""
+msgstr "नियम जोडा"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr ""
+msgstr "जुन्या तात्पुरत्या फायली स्वयंचलितपणे हटवा:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr ""
+msgstr "जुन्या ट्रॅश केलेल्या फायली स्वयंचलितपणे हटवा:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
-msgstr ""
+msgstr "ट्रॅश केलेल्या आणि तात्पुरत्या फायली ठेवण्यासाठी दिवसांची संख्या:"
 
 #: src/Views/HouseKeepingPanel.vala:59
 msgid "Open Trash…"
-msgstr ""
+msgstr "कचरापेटी उघडा…"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
-msgstr ""
+msgstr "स्लीप मोडे वर गेल्यावर लॉक करा:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "स्क्रीन बंद केल्यानंतर लॉक करा:"
 
 #: src/Views/TrackPanel.vala:29
 #, c-format
@@ -230,33 +229,39 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s स्थानिक वापराचा डेटा संचयित करू शकते ज्याने अलीकडे-वापरल्या जाणाऱ्या फाइल्"
+"स आणि अधिक संबंधित स्थानिक शोध करण्यासारख्या अतिरिक्त कार्यक्षमता प्रदान "
+"केल्या जातात. या सेटिंगशिवाय, या डिव्हाइसबाहेर किंवा तृतीय पक्षांना वापराचा "
+"डेटा कधीही प्रसारित केला जात नाही."
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
+msgstr "%s कोणताही पुढील वापराचा डेटा सांभाळून ठेवणार नाही."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "या डेटाद्वारे प्रदान केलेली अतिरिक्त कार्यक्षमता प्रभावित होईल."
 
 #: src/Views/TrackPanel.vala:39
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
+"हे अॅप्सला ब्राउझर इतिहास म्हणून त्यांचे स्वत: चा वापर डेटा रेकॉर्ड "
+"करण्यापासून प्रतिबंधित करू शकत नाही."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
-msgstr ""
+msgstr "इतिहास अक्षम आहे"
 
 #: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
-msgstr ""
+msgstr "इतिहास साफ करा…"
 
 #: src/Views/TrackPanel.vala:97
 msgid "Your system"
-msgstr ""
+msgstr "तुमची यंत्रणा"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
