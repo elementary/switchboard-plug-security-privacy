@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2019-04-04 12:52+0000\n"
+"PO-Revision-Date: 2019-04-07 09:07+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/mr/>\n"
@@ -265,64 +265,72 @@ msgstr "तुमची यंत्रणा"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "आपले स्थान निर्धारित करण्यासाठी खालील अॅप्सना अनुमती द्या"
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr ""
+msgstr "कोणतीही अॅप्स स्थान सेवा वापरत नाहीत"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"जेव्हा स्थान सेवा वापरणारे अॅप्स स्थापित केले जातात तेव्हा ते आपोआप येथे "
+"दिसतील."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "स्थान सेवा अक्षम आहेत"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"स्थान सेवा अक्षम असताना, अॅप्सवरील स्थान विनंत्या स्वयंचलितपणे नाकारल्या "
+"जातील."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"त्या अॅप्समध्ये स्थान प्रवेश प्रदान करणारी अतिरिक्त कार्यक्षमता प्रभावित "
+"होईल."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"हे अॅप्सना IP पत्त्यावर आधारित आपले स्थान निर्धारित करण्याचा प्रयत्न "
+"करण्यापासून प्रतिबंधित करणार नाही."
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr ""
+msgstr "स्थान सेवा वापरण्यासाठी %sला परवानगी द्या"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr ""
+msgstr "अप्लिकेशन शोधा"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
-msgstr ""
+msgstr "सिस्टम-संकलित फाइल आणि अप्लिकेशन वापर डेटा येथून काढून टाका:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr ""
+msgstr "मागील तास"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr ""
+msgstr "मागील दिवशी"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr ""
+msgstr "मागील आठवडा"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
@@ -330,7 +338,7 @@ msgstr "पासून:"
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
-msgstr ""
+msgstr "संपूर्ण वेळ"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
@@ -338,19 +346,19 @@ msgstr "पर्यंत:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
-msgstr ""
+msgstr "डेटा पुसून टाका"
 
 #: src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr ""
+msgstr "अप्लिकेशन जोडा…"
 
 #: src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr ""
+msgstr "फोल्डर जोडा…"
 
 #: src/Widgets/ExcludeTreeView.vala:73
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "ब्लॅकलिस्टमध्ये टाकण्यासाठी एक फोल्डर निवडा"
 
 #: src/Widgets/ExcludeTreeView.vala:74
 msgid "Cancel"
@@ -362,23 +370,23 @@ msgstr "वाढवा"
 
 #: src/Widgets/ExcludeTreeView.vala:86
 msgid "Delete"
-msgstr ""
+msgstr "हटवा"
 
 #: src/Widgets/ExcludeTreeView.vala:131
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "खालील डेटा गोळा करू नका:"
 
 #: src/Widgets/IncludeTreeView.vala:76
 msgid "Data Sources:"
-msgstr ""
+msgstr "डेटा स्रोत:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
-msgstr ""
+msgstr "गप्पा लॉग"
 
 #: src/Widgets/IncludeTreeView.vala:83
 msgid "Documents"
-msgstr ""
+msgstr "कागदपत्रे"
 
 #: src/Widgets/IncludeTreeView.vala:84
 msgid "Music"
@@ -386,15 +394,15 @@ msgstr "संगीत"
 
 #: src/Widgets/IncludeTreeView.vala:85
 msgid "Pictures"
-msgstr ""
+msgstr "चित्रे"
 
 #: src/Widgets/IncludeTreeView.vala:86
 msgid "Presentations"
-msgstr ""
+msgstr "सादरीकरणे"
 
 #: src/Widgets/IncludeTreeView.vala:87
 msgid "Spreadsheets"
-msgstr ""
+msgstr "स्प्रेडशीट्स"
 
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
@@ -402,4 +410,4 @@ msgstr "व्हिडिओ"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "अंशतः सक्षम"
