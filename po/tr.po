@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
 "PO-Revision-Date: 2019-04-13 21:16+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Last-Translator: Ümit Seyhan <btc.umit@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/tr/>\n"
 "Language: tr\n"
@@ -202,11 +202,11 @@ msgstr "Kural Ekle"
 
 #: src/Views/HouseKeepingPanel.vala:33
 msgid "Automatically delete old temporary files:"
-msgstr "Eskiyen geçici dosyaları otomatik olarak sil:"
+msgstr "Eski geçici dosyaları otomatik olarak sil:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr "Eski çöp dosyalarını otomatik olarak sil:"
+msgstr "Çöpe taşınmış eski dosyaları otomatik olarak sil:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
