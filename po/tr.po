@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-12-06 07:12-0800\n"
-"PO-Revision-Date: 2019-04-16 21:53+0000\n"
+"PO-Revision-Date: 2019-04-21 17:59+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/tr/>\n"
@@ -81,7 +81,7 @@ msgstr "Eski geçici dosyaları otomatik olarak sil"
 
 #: src/Plug.vala:185
 msgid "Automatically delete old trashed files"
-msgstr "Çöpe gönderilmiş eski dosyaları otomatik olarak sil"
+msgstr "Çöp kutusundaki eski dosyaları otomatik olarak sil"
 
 #: src/Plug.vala:186
 msgid "Number of days to keep trashed and temporary files"
@@ -206,7 +206,7 @@ msgstr "Eski geçici dosyaları otomatik olarak sil:"
 
 #: src/Views/HouseKeepingPanel.vala:39
 msgid "Automatically delete old trashed files:"
-msgstr "Çöpe gönderilmiş eski dosyaları otomatik olarak sil:"
+msgstr "Çöp kutusundaki eski dosyaları otomatik olarak sil:"
 
 #: src/Views/HouseKeepingPanel.vala:45
 msgid "Number of days to keep trashed and temporary files:"
