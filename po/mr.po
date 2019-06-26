@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-06 07:12-0800\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2019-04-07 09:07+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -28,61 +28,61 @@ msgstr "सुरक्षा आणि गोपनीयता"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "फायरवॉल, स्क्रीन लॉक आणि क्रियाकलाप माहिती कॉन्फिगर करा"
 
-#: src/Plug.vala:93
+#: src/Plug.vala:101
 msgid "Some settings require administrator rights to be changed"
 msgstr "काही सेटिंग्जसाठी प्रशासकीय अधिकार बदलण्याची आवश्यकता आहे"
 
-#: src/Plug.vala:135
+#: src/Plug.vala:143
 msgid "Privacy"
 msgstr "गोपनीयता"
 
-#: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
+#: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "लॉकिंग"
 
-#: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "फ़ायरवॉल"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Plug.vala:184 src/Plug.vala:185
-#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
+#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr "हाऊसकीपिंग"
 
-#: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "स्थान सेवा"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:185 src/Plug.vala:186 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "इतिहास"
 
-#: src/Plug.vala:178
+#: src/Plug.vala:186
 msgid "Clear History"
 msgstr "इतिहास मिटवा"
 
-#: src/Plug.vala:180
+#: src/Plug.vala:188
 msgid "Lock on sleep"
 msgstr "निष्क्रिय असताना लॉक करा"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:189
 msgid "Lock after sceen turns off"
 msgstr "स्क्रीन बंद केल्यानंतर लॉक"
 
-#: src/Plug.vala:184
+#: src/Plug.vala:192
 msgid "Automatically delete old temporary files"
 msgstr "जुन्या तात्पुरत्या फायली स्वयंचलितपणे हटवा"
 
-#: src/Plug.vala:185
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr "जुन्या ट्रॅश केलेल्या फायली स्वयंचलितपणे हटवा"
 
-#: src/Plug.vala:186
+#: src/Plug.vala:194
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ट्रॅश केलेल्या आणि तात्पुरत्या फायली ठेवण्यासाठी दिवसाची संख्या"
 
@@ -229,10 +229,10 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s स्थानिक वापराचा डेटा संचयित करू शकते ज्याने अलीकडे-वापरल्या जाणाऱ्या फाइल्"
-"स आणि अधिक संबंधित स्थानिक शोध करण्यासारख्या अतिरिक्त कार्यक्षमता प्रदान "
-"केल्या जातात. या सेटिंगशिवाय, या डिव्हाइसबाहेर किंवा तृतीय पक्षांना वापराचा "
-"डेटा कधीही प्रसारित केला जात नाही."
+"%s स्थानिक वापराचा डेटा संचयित करू शकते ज्याने अलीकडे-वापरल्या जाणाऱ्या फाइल्स आणि अधिक "
+"संबंधित स्थानिक शोध करण्यासारख्या अतिरिक्त कार्यक्षमता प्रदान केल्या जातात. या "
+"सेटिंगशिवाय, या डिव्हाइसबाहेर किंवा तृतीय पक्षांना वापराचा डेटा कधीही प्रसारित केला जात "
+"नाही."
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
@@ -248,8 +248,8 @@ msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"हे अॅप्सला ब्राउझर इतिहास म्हणून त्यांचे स्वत: चा वापर डेटा रेकॉर्ड "
-"करण्यापासून प्रतिबंधित करू शकत नाही."
+"हे अॅप्सला ब्राउझर इतिहास म्हणून त्यांचे स्वत: चा वापर डेटा रेकॉर्ड करण्यापासून प्रतिबंधित करू "
+"शकत नाही."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
@@ -275,9 +275,7 @@ msgstr "कोणतीही अॅप्स स्थान सेवा व�
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
-msgstr ""
-"जेव्हा स्थान सेवा वापरणारे अॅप्स स्थापित केले जातात तेव्हा ते आपोआप येथे "
-"दिसतील."
+msgstr "जेव्हा स्थान सेवा वापरणारे अॅप्स स्थापित केले जातात तेव्हा ते आपोआप येथे दिसतील."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
@@ -287,25 +285,21 @@ msgstr "स्थान सेवा अक्षम आहेत"
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
-msgstr ""
-"स्थान सेवा अक्षम असताना, अॅप्सवरील स्थान विनंत्या स्वयंचलितपणे नाकारल्या "
-"जातील."
+msgstr "स्थान सेवा अक्षम असताना, अॅप्सवरील स्थान विनंत्या स्वयंचलितपणे नाकारल्या जातील."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
-msgstr ""
-"त्या अॅप्समध्ये स्थान प्रवेश प्रदान करणारी अतिरिक्त कार्यक्षमता प्रभावित "
-"होईल."
+msgstr "त्या अॅप्समध्ये स्थान प्रवेश प्रदान करणारी अतिरिक्त कार्यक्षमता प्रभावित होईल."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
-"हे अॅप्सना IP पत्त्यावर आधारित आपले स्थान निर्धारित करण्याचा प्रयत्न "
-"करण्यापासून प्रतिबंधित करणार नाही."
+"हे अॅप्सना IP पत्त्यावर आधारित आपले स्थान निर्धारित करण्याचा प्रयत्न करण्यापासून प्रतिबंधित "
+"करणार नाही."
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
@@ -356,23 +350,23 @@ msgstr "अप्लिकेशन जोडा…"
 msgid "Add Folder…"
 msgstr "फोल्डर जोडा…"
 
-#: src/Widgets/ExcludeTreeView.vala:73
+#: src/Widgets/ExcludeTreeView.vala:74
 msgid "Select a folder to blacklist"
 msgstr "ब्लॅकलिस्टमध्ये टाकण्यासाठी एक फोल्डर निवडा"
 
-#: src/Widgets/ExcludeTreeView.vala:74
-msgid "Cancel"
-msgstr "रद्द करा"
-
-#: src/Widgets/ExcludeTreeView.vala:74
+#: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add"
 msgstr "वाढवा"
 
-#: src/Widgets/ExcludeTreeView.vala:86
+#: src/Widgets/ExcludeTreeView.vala:78
+msgid "Cancel"
+msgstr "रद्द करा"
+
+#: src/Widgets/ExcludeTreeView.vala:92
 msgid "Delete"
 msgstr "हटवा"
 
-#: src/Widgets/ExcludeTreeView.vala:131
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "खालील डेटा गोळा करू नका:"
 

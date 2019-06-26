@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-06 07:12-0800\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2019-01-01 00:41+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
@@ -30,61 +30,61 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 "Konfiguruj zaporę sieciową, blokadę ekranu oraz informacje o aktywności"
 
-#: src/Plug.vala:93
+#: src/Plug.vala:101
 msgid "Some settings require administrator rights to be changed"
 msgstr "Zmiana niektórych ustawień wymaga uprawnień administratora"
 
-#: src/Plug.vala:135
+#: src/Plug.vala:143
 msgid "Privacy"
 msgstr "Prywatność"
 
-#: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
+#: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Blokowanie"
 
-#: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Zapora sieciowa"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Plug.vala:184 src/Plug.vala:185
-#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
+#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr "Gospodarowanie"
 
-#: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "Usługi lokalizacji"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:185 src/Plug.vala:186 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historia"
 
-#: src/Plug.vala:178
+#: src/Plug.vala:186
 msgid "Clear History"
 msgstr "Wyczyść historię"
 
-#: src/Plug.vala:180
+#: src/Plug.vala:188
 msgid "Lock on sleep"
 msgstr "Zablokuj w trybie uśpienia"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:189
 msgid "Lock after sceen turns off"
 msgstr "Zablokuj po wyłączeniu ekranu"
 
-#: src/Plug.vala:184
+#: src/Plug.vala:192
 msgid "Automatically delete old temporary files"
 msgstr "Usuwaj automatycznie stare pliki tymczasowe"
 
-#: src/Plug.vala:185
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr "Usuwaj automatycznie stare pliki z kosza"
 
-#: src/Plug.vala:186
+#: src/Plug.vala:194
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Ilość dni przechowywania plików tymczasowych i plików w koszu"
 
@@ -360,23 +360,23 @@ msgstr "Dodaj program…"
 msgid "Add Folder…"
 msgstr "Dodaj katalog…"
 
-#: src/Widgets/ExcludeTreeView.vala:73
+#: src/Widgets/ExcludeTreeView.vala:74
 msgid "Select a folder to blacklist"
 msgstr "Wybierz katalog, który powinien zostać dodany do czarnej listy"
 
-#: src/Widgets/ExcludeTreeView.vala:74
-msgid "Cancel"
-msgstr "Anuluj"
-
-#: src/Widgets/ExcludeTreeView.vala:74
+#: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add"
 msgstr "Dodaj"
 
-#: src/Widgets/ExcludeTreeView.vala:86
+#: src/Widgets/ExcludeTreeView.vala:78
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: src/Widgets/ExcludeTreeView.vala:92
 msgid "Delete"
 msgstr "Usuń"
 
-#: src/Widgets/ExcludeTreeView.vala:131
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "Nie zbieraj danych z następujacych źródeł:"
 

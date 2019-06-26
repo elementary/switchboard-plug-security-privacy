@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-06 07:12-0800\n"
+"POT-Creation-Date: 2019-06-26 22:46+0200\n"
 "PO-Revision-Date: 2018-02-13 09:49+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -28,64 +28,64 @@ msgstr "安全與隱私"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "調整防火牆、螢幕鎖定、和活動資訊"
 
-#: src/Plug.vala:93
+#: src/Plug.vala:101
 msgid "Some settings require administrator rights to be changed"
 msgstr "有些設定值需要管理員權利才能修改"
 
-#: src/Plug.vala:135
+#: src/Plug.vala:143
 msgid "Privacy"
 msgstr "隱私"
 
-#: src/Plug.vala:136 src/Plug.vala:179 src/Plug.vala:180 src/Plug.vala:181
+#: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "鎖定"
 
-#: src/Plug.vala:137 src/Plug.vala:182 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "防火牆"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Plug.vala:184 src/Plug.vala:185
-#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
+#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:28
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:142 src/Plug.vala:188 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
 msgid "Location Services"
 msgstr "位置服務"
 
-#: src/Plug.vala:177 src/Plug.vala:178 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:185 src/Plug.vala:186 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "歷史"
 
-#: src/Plug.vala:178
+#: src/Plug.vala:186
 #, fuzzy
 msgid "Clear History"
 msgstr "清除歷史…"
 
-#: src/Plug.vala:180
+#: src/Plug.vala:188
 #, fuzzy
 msgid "Lock on sleep"
 msgstr "睡眠時鎖定："
 
-#: src/Plug.vala:181
+#: src/Plug.vala:189
 #, fuzzy
 msgid "Lock after sceen turns off"
 msgstr "螢幕關閉時鎖定："
 
-#: src/Plug.vala:184
+#: src/Plug.vala:192
 msgid "Automatically delete old temporary files"
 msgstr ""
 
-#: src/Plug.vala:185
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr ""
 
-#: src/Plug.vala:186
+#: src/Plug.vala:194
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
@@ -347,23 +347,23 @@ msgstr "加入應用程式…"
 msgid "Add Folder…"
 msgstr "加入資料夾…"
 
-#: src/Widgets/ExcludeTreeView.vala:73
+#: src/Widgets/ExcludeTreeView.vala:74
 msgid "Select a folder to blacklist"
 msgstr "選取資料夾加入黑名單中"
 
-#: src/Widgets/ExcludeTreeView.vala:74
-msgid "Cancel"
-msgstr "取消"
-
-#: src/Widgets/ExcludeTreeView.vala:74
+#: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add"
 msgstr "加入"
 
-#: src/Widgets/ExcludeTreeView.vala:86
+#: src/Widgets/ExcludeTreeView.vala:78
+msgid "Cancel"
+msgstr "取消"
+
+#: src/Widgets/ExcludeTreeView.vala:92
 msgid "Delete"
 msgstr "刪除"
 
-#: src/Widgets/ExcludeTreeView.vala:131
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "不要從下列項目中收集資料："
 
