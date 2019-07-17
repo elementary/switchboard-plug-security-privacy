@@ -357,7 +357,6 @@ msgstr "Aldoni dosierujon…"
 msgid "Select a folder to blacklist"
 msgstr "Elektu dosierujon nigralistota"
 
-<<<<<<< HEAD
 #: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add"
 msgstr "Aldoni"
