@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
-"PO-Revision-Date: 2018-10-17 02:44+0000\n"
-"Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
+"POT-Creation-Date: 2018-12-06 07:12-0800\n"
+"PO-Revision-Date: 2019-07-02 15:28+0000\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
+"Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
 #: src/Plug.vala:50
@@ -234,13 +234,15 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s può memorizzare dati di utilizzo locali per fornire funzionalità "
+"aggiuntive come proporti file usati di recente e la ricerca locale più "
+"pertinente. Indipendentemente da questa impostazione, i dati di utilizzo non "
+"vengono mai trasmessi da questo dispositivo o a terze parti."
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"%s non conserverà alcun ulteriore dato o statistica sui file e sull'utilizzo "
-"delle applicazioni."
+msgstr "%s non conserverà ulteriori dati di utilizzo."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
@@ -248,7 +250,6 @@ msgstr ""
 "Le funzionalità aggiuntive che questi dati forniscono saranno interessate."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
