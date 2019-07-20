@@ -32,7 +32,7 @@ public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
     construct {
         locker = new Settings ("apps.light-locker");
 
-        var lock_suspend_label = new Gtk.Label (_("Lock on sleep:"));
+        var lock_suspend_label = new Gtk.Label (_("Lock on suspend:"));
         var lock_suspend_switch = new Gtk.Switch ();
         var lock_sleep_label = new Gtk.Label (_("Lock after screen turns off:"));
         var lock_sleep_switch = new Gtk.Switch ();
