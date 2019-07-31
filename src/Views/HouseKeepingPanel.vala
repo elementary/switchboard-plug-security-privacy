@@ -24,6 +24,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
     public HouseKeepingPanel () {
         Object (
+            description: "",
             icon_name: "preferences-system-privacy-housekeeping",
             title: _("Housekeeping")
         );
@@ -68,6 +69,12 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         temp_files_switch.notify["active"].connect (update_status);
         trash_files_switch.notify["active"].connect (update_status);
 
+        update_description (privacy_settings.get_uint ("old-files-age"));
+
+        privacy_settings.changed["old-files-age"].connect (() => {
+            update_description (privacy_settings.get_uint ("old-files-age"));
+        });
+
         view_trash_button.clicked.connect (() => {
             try {
                 AppInfo.launch_default_for_uri ("trash:///", null);
@@ -77,6 +84,14 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         });
 
         update_status ();
+    }
+
+    private void update_description (uint age) {
+        description = ngettext (
+            _("Old files can be automatically deleted after %u day to save space and help protect your privacy.").printf (age),
+            _("Old files can be automatically deleted after %u days to save space and help protect your privacy.").printf (age),
+            age
+        );
     }
 
     private void update_status () {
