@@ -17,44 +17,49 @@
  */
 
 public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
+    private Granite.HeaderLabel spin_header_label;
     private Gtk.Label file_age_label;
     private Gtk.SpinButton file_age_spinbutton;
-    private Gtk.Switch temp_files_switch;
-    private Gtk.Switch trash_files_switch;
+    private Gtk.CheckButton temp_files_switch;
+    private Gtk.CheckButton trash_files_switch;
 
     public HouseKeepingPanel () {
         Object (
+            description: "",
             icon_name: "preferences-system-privacy-housekeeping",
             title: _("Housekeeping")
         );
     }
 
     construct {
-        var temp_files_label = new Gtk.Label (_("Automatically delete old temporary files:"));
-        temp_files_label.xalign = 1;
+        var switch_header_label = new Granite.HeaderLabel (_("Automatically Delete:"));
 
-        temp_files_switch = new Gtk.Switch ();
-        temp_files_switch.halign = Gtk.Align.START;
+        temp_files_switch = new Gtk.CheckButton.with_label (_("Temporary files"));
+        temp_files_switch.margin_start = 12;
 
-        var trash_files_label = new Gtk.Label (_("Automatically delete old trashed files:"));
-        trash_files_label.xalign = 1;
+        trash_files_switch = new Gtk.CheckButton.with_label (_("Trashed files"));
+        trash_files_switch.margin_bottom = 18;
+        trash_files_switch.margin_start = 12;
 
-        trash_files_switch = new Gtk.Switch ();
-        trash_files_switch.halign = Gtk.Align.START;
-
-        file_age_label = new Gtk.Label (_("Number of days to keep trashed and temporary files:"));
-        file_age_label.xalign = 1;
+        spin_header_label = new Granite.HeaderLabel (_("Delete Trashed and Temporary Files After:"));
 
         file_age_spinbutton = new Gtk.SpinButton.with_range (0, 90, 5);
+        file_age_spinbutton.margin_start = 12;
+        file_age_spinbutton.max_length = 2;
+        file_age_spinbutton.xalign = 1;
 
-        content_area.hexpand = true;
-        content_area.halign = Gtk.Align.CENTER;
-        content_area.attach (temp_files_label, 0, 0);
-        content_area.attach (temp_files_switch, 1, 0);
-        content_area.attach (trash_files_label, 0, 1);
-        content_area.attach (trash_files_switch, 1, 1);
-        content_area.attach (file_age_label, 0, 2);
-        content_area.attach (file_age_spinbutton, 1, 2);
+        file_age_label = new Gtk.Label (null);
+        file_age_label.halign = Gtk.Align.START;
+        file_age_label.hexpand = true;
+
+        content_area.column_spacing = content_area.row_spacing = 6;
+        content_area.margin_start = 60;
+        content_area.attach (switch_header_label, 0, 0, 2);
+        content_area.attach (temp_files_switch, 0, 1, 2);
+        content_area.attach (trash_files_switch, 0, 2, 2);
+        content_area.attach (spin_header_label, 0, 3, 2);
+        content_area.attach (file_age_label, 1, 4);
+        content_area.attach (file_age_spinbutton, 0, 4);
 
         var view_trash_button = new Gtk.Button.with_label (_("Open Trash…"));
 
@@ -64,6 +69,12 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         privacy_settings.bind ("remove-old-temp-files", temp_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         privacy_settings.bind ("remove-old-trash-files", trash_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         privacy_settings.bind ("old-files-age", file_age_spinbutton, "value", GLib.SettingsBindFlags.DEFAULT);
+
+        update_days (privacy_settings.get_uint ("old-files-age"));
+
+        privacy_settings.changed["old-files-age"].connect (() => {
+            update_days (privacy_settings.get_uint ("old-files-age"));
+        });
 
         temp_files_switch.notify["active"].connect (update_status);
         trash_files_switch.notify["active"].connect (update_status);
@@ -79,6 +90,20 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         update_status ();
     }
 
+    private void update_days (uint age) {
+        description = ngettext (
+            _("Old files can be automatically deleted after %u day to save space and help protect your privacy.").printf (age),
+            _("Old files can be automatically deleted after %u days to save space and help protect your privacy.").printf (age),
+            age
+        );
+
+        file_age_label.label = ngettext (
+            _("Day"),
+            _("Days"),
+            age
+        );
+    }
+
     private void update_status () {
         var either_active = temp_files_switch.active || trash_files_switch.active;
 
@@ -92,5 +117,6 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
         file_age_label.sensitive = either_active;
         file_age_spinbutton.sensitive = either_active;
+        spin_header_label.sensitive = either_active;
     }
 }
