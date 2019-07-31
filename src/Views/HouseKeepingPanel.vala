@@ -24,7 +24,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
     public HouseKeepingPanel () {
         Object (
-            icon_name: "edit-clear",
+            icon_name: "preferences-system-privacy-housekeeping",
             title: _("Housekeeping")
         );
     }
