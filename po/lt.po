@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"POT-Creation-Date: 2019-07-31 11:52-0700\n"
 "PO-Revision-Date: 2019-05-15 17:14+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,7 @@ msgid "Firewall"
 msgstr "Užkarda"
 
 #: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
-#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr "Namų ūkis"
@@ -199,21 +199,49 @@ msgstr "%d arba %d-%d"
 msgid "Add Rule"
 msgstr "Pridėti taisyklę"
 
-#: src/Views/HouseKeepingPanel.vala:33
-msgid "Automatically delete old temporary files:"
-msgstr "Automatiškai ištrinti senus laikinuosius failus:"
-
-#: src/Views/HouseKeepingPanel.vala:39
-msgid "Automatically delete old trashed files:"
+#: src/Views/HouseKeepingPanel.vala:35
+#, fuzzy
+msgid "Automatically Delete:"
 msgstr "Automatiškai ištrinti senus failus šiukšlinėje:"
 
-#: src/Views/HouseKeepingPanel.vala:45
-msgid "Number of days to keep trashed and temporary files:"
+#: src/Views/HouseKeepingPanel.vala:37
+msgid "Temporary files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:40
+msgid "Trashed files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:44
+#, fuzzy
+msgid "Delete Trashed and Temporary Files After:"
 msgstr "Kiek dienų laikyti failus šiukšlinėje ir laikinuosius failus:"
 
-#: src/Views/HouseKeepingPanel.vala:59
+#: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
 msgstr "Atverti šiukšlinę…"
+
+#: src/Views/HouseKeepingPanel.vala:95
+#, c-format
+msgid ""
+"Old files can be automatically deleted after %u day to save space and help "
+"protect your privacy."
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:96
+#, c-format
+msgid ""
+"Old files can be automatically deleted after %u days to save space and help "
+"protect your privacy."
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:101
+msgid "Day"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:102
+msgid "Days"
+msgstr ""
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -413,6 +441,9 @@ msgstr "Vaizdo įrašai"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Iš dalies įjungta"
+
+#~ msgid "Automatically delete old temporary files:"
+#~ msgstr "Automatiškai ištrinti senus laikinuosius failus:"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "

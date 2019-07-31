@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-06 07:12-0800\n"
+"POT-Creation-Date: 2019-07-31 11:52-0700\n"
 "PO-Revision-Date: 2019-07-02 15:28+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -50,7 +50,7 @@ msgid "Firewall"
 msgstr "Firewall"
 
 #: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
-#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr "Manutenzione"
@@ -202,21 +202,49 @@ msgstr "%d o %d-%d"
 msgid "Add Rule"
 msgstr "Aggiungi regola"
 
-#: src/Views/HouseKeepingPanel.vala:33
-msgid "Automatically delete old temporary files:"
-msgstr "Eliminare automaticamente i file temporanei più vecchi:"
-
-#: src/Views/HouseKeepingPanel.vala:39
-msgid "Automatically delete old trashed files:"
+#: src/Views/HouseKeepingPanel.vala:35
+#, fuzzy
+msgid "Automatically Delete:"
 msgstr "Eliminare automaticamente i file più vecchi nel cestino:"
 
-#: src/Views/HouseKeepingPanel.vala:45
-msgid "Number of days to keep trashed and temporary files:"
+#: src/Views/HouseKeepingPanel.vala:37
+msgid "Temporary files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:40
+msgid "Trashed files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:44
+#, fuzzy
+msgid "Delete Trashed and Temporary Files After:"
 msgstr "Numero di giorni nei quali conservare i file temporanei e nel cestino:"
 
-#: src/Views/HouseKeepingPanel.vala:59
+#: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
 msgstr "Apri il cestino…"
+
+#: src/Views/HouseKeepingPanel.vala:95
+#, c-format
+msgid ""
+"Old files can be automatically deleted after %u day to save space and help "
+"protect your privacy."
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:96
+#, c-format
+msgid ""
+"Old files can be automatically deleted after %u days to save space and help "
+"protect your privacy."
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:101
+msgid "Day"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:102
+msgid "Days"
+msgstr ""
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -417,6 +445,9 @@ msgstr "Video"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Abilitato parzialmente"
+
+#~ msgid "Automatically delete old temporary files:"
+#~ msgstr "Eliminare automaticamente i file temporanei più vecchi:"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "

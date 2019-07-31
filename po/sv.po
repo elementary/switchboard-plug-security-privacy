@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:46+0200\n"
+"POT-Creation-Date: 2019-07-31 11:52-0700\n"
 "PO-Revision-Date: 2018-10-25 13:10+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -47,7 +47,7 @@ msgid "Firewall"
 msgstr "Brandvägg"
 
 #: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
-#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:28
+#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
 msgstr "Hushållning"
@@ -197,22 +197,50 @@ msgstr "%d eller %d-%d"
 msgid "Add Rule"
 msgstr "Lägg till regel"
 
-#: src/Views/HouseKeepingPanel.vala:33
-msgid "Automatically delete old temporary files:"
-msgstr "Radera automatiskt gamla temporära filer:"
-
-#: src/Views/HouseKeepingPanel.vala:39
-msgid "Automatically delete old trashed files:"
+#: src/Views/HouseKeepingPanel.vala:35
+#, fuzzy
+msgid "Automatically Delete:"
 msgstr "Radera automatiskt gamla filer från papperskorgen:"
 
-#: src/Views/HouseKeepingPanel.vala:45
-msgid "Number of days to keep trashed and temporary files:"
+#: src/Views/HouseKeepingPanel.vala:37
+msgid "Temporary files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:40
+msgid "Trashed files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:44
+#, fuzzy
+msgid "Delete Trashed and Temporary Files After:"
 msgstr ""
 "Antal dagar som temporära filer och filer i papperskorgen ska behållas:"
 
-#: src/Views/HouseKeepingPanel.vala:59
+#: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
 msgstr "Öppna papperskorgen…"
+
+#: src/Views/HouseKeepingPanel.vala:95
+#, c-format
+msgid ""
+"Old files can be automatically deleted after %u day to save space and help "
+"protect your privacy."
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:96
+#, c-format
+msgid ""
+"Old files can be automatically deleted after %u days to save space and help "
+"protect your privacy."
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:101
+msgid "Day"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:102
+msgid "Days"
+msgstr ""
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on sleep:"
@@ -415,6 +443,9 @@ msgstr "Videor"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Delvis aktiverat"
+
+#~ msgid "Automatically delete old temporary files:"
+#~ msgstr "Radera automatiskt gamla temporära filer:"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "
