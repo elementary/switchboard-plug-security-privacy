@@ -53,8 +53,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         file_age_label.hexpand = true;
 
         content_area.column_spacing = content_area.row_spacing = 6;
-        content_area.hexpand = true;
-        content_area.halign = Gtk.Align.CENTER;
+        content_area.margin_start = 60;
         content_area.attach (switch_header_label, 0, 0, 2);
         content_area.attach (temp_files_switch, 0, 1, 2);
         content_area.attach (trash_files_switch, 0, 2, 2);
