@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 11:52-0700\n"
+"POT-Creation-Date: 2019-08-06 08:42-0700\n"
 "PO-Revision-Date: 2018-02-13 09:49+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -243,7 +243,8 @@ msgid "Days"
 msgstr ""
 
 #: src/Views/LockPanel.vala:35
-msgid "Lock on sleep:"
+#, fuzzy
+msgid "Lock on suspend:"
 msgstr "睡眠時鎖定："
 
 #: src/Views/LockPanel.vala:37

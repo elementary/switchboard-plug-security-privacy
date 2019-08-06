@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 11:52-0700\n"
+"POT-Creation-Date: 2019-08-06 08:42-0700\n"
 "PO-Revision-Date: 2019-05-15 17:14+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -242,7 +242,8 @@ msgid "Days"
 msgstr ""
 
 #: src/Views/LockPanel.vala:35
-msgid "Lock on sleep:"
+#, fuzzy
+msgid "Lock on suspend:"
 msgstr "슬립모드 일 때 잠금:"
 
 #: src/Views/LockPanel.vala:37
