@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-06 08:42-0700\n"
-"PO-Revision-Date: 2019-05-15 17:14+0000\n"
+"PO-Revision-Date: 2019-08-07 18:21+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/lt/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
-"X-Generator: Weblate 3.6.1\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 
 #: src/Plug.vala:50
@@ -200,22 +200,20 @@ msgid "Add Rule"
 msgstr "Pridėti taisyklę"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Automatiškai ištrinti senus failus šiukšlinėje:"
+msgstr "Automatiškai ištrinti:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "Laikinuosius failus"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Failus šiukšlinėje"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "Kiek dienų laikyti failus šiukšlinėje ir laikinuosius failus:"
+msgstr "Ištrinti failus šiukšlinėje ir laikinuosius failus po:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -227,6 +225,8 @@ msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
 msgstr ""
+"Seni failai gali būti automatiškai ištrinti po %u d., kad būtų sutaupyta "
+"vietos ir apsaugotas jūsų privatumas."
 
 #: src/Views/HouseKeepingPanel.vala:96
 #, c-format
@@ -234,17 +234,18 @@ msgid ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr ""
+"Seni failai gali būti automatiškai ištrinti po %u d., kad būtų sutaupyta "
+"vietos ir apsaugotas jūsų privatumas."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
-msgstr ""
+msgstr "d."
 
 #: src/Views/HouseKeepingPanel.vala:102
 msgid "Days"
-msgstr ""
+msgstr "d."
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
 msgstr "Užrakinti, pristabdant kompiuterį:"
 
