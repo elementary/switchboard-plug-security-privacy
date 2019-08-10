@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-06 08:42-0700\n"
-"PO-Revision-Date: 2019-05-15 17:14+0000\n"
+"PO-Revision-Date: 2019-08-12 17:22+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:39+0000\n"
 
 #: src/Plug.vala:50
@@ -200,22 +200,20 @@ msgid "Add Rule"
 msgstr "Afegeix una regla"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Suprimeix automàticament els fitxers enviats a la paperera:"
+msgstr "Supressió automàtica:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "Fitxers temporals"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Fitxers a la paperera"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "Nombre de dies per mantenir els fitxers temporals i a la paperera:"
+msgstr "Suprimeix els fitxers temporals i els de la paperera al cap de:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -227,6 +225,8 @@ msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
 msgstr ""
+"Els fitxers antics es poden suprimir automàticament al cap d'%u dia per "
+"estalviar espai i ajudar a protegir la privacitat."
 
 #: src/Views/HouseKeepingPanel.vala:96
 #, c-format
@@ -234,19 +234,20 @@ msgid ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr ""
+"Els fitxers antics es poden suprimir automàticament al cap de %u dies per "
+"estalviar espai i ajudar a protegir la privacitat."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
-msgstr ""
+msgstr "dia"
 
 #: src/Views/HouseKeepingPanel.vala:102
 msgid "Days"
-msgstr ""
+msgstr "dies"
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Bloqueja't en aturar temporalment:"
+msgstr "Bloqueja't amb la suspensió:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
