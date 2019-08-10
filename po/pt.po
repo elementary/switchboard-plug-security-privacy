@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-06 08:42-0700\n"
-"PO-Revision-Date: 2019-05-15 17:14+0000\n"
+"PO-Revision-Date: 2019-08-12 17:22+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -200,23 +200,20 @@ msgid "Add Rule"
 msgstr "Adicionar Regra"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Apagar automaticamente os ficheiros antigos colocados no lixo:"
+msgstr "Eliminar automaticamente:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "Ficheiros temporários"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Ficheiros no lixo"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr ""
-"Número de dias para manter os ficheiros no lixo e os ficheiros temporários:"
+msgstr "Eliminar o lixo e ficheiros temporários depois:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -228,6 +225,8 @@ msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
 msgstr ""
+"Ficheiros antigos podem ser eliminados automaticamente após %u dia para "
+"economizar espaço e ajudar a proteger sua privacidade."
 
 #: src/Views/HouseKeepingPanel.vala:96
 #, c-format
@@ -235,19 +234,20 @@ msgid ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr ""
+"Ficheiros antigos podem ser eliminados automaticamente após %u dias para "
+"economizar espaço e ajudar a proteger sua privacidade."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
-msgstr ""
+msgstr "Dia"
 
 #: src/Views/HouseKeepingPanel.vala:102
 msgid "Days"
-msgstr ""
+msgstr "Dias"
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Bloquear quando suspenso:"
+msgstr "Bloquear ao suspender:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
