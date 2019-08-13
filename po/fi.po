@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-06 08:42-0700\n"
+"POT-Creation-Date: 2019-08-13 09:01-0700\n"
 "PO-Revision-Date: 2019-08-12 17:22+0000\n"
 "Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -220,30 +220,26 @@ msgid "Open Trash…"
 msgstr "Avaa roskakori…"
 
 #: src/Views/HouseKeepingPanel.vala:95
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
-msgstr ""
-"Vanhat tiedostot voidaan automaattisesti poistaa %u päivän jälkeen tilan "
-"säästämiseksi ja yksityisyyden suojaamiseksi."
-
-#: src/Views/HouseKeepingPanel.vala:96
-#, c-format
-msgid ""
+msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr ""
+msgstr[0] ""
+"Vanhat tiedostot voidaan automaattisesti poistaa %u päivän jälkeen tilan "
+"säästämiseksi ja yksityisyyden suojaamiseksi."
+msgstr[1] ""
 "Vanhat tiedostot voidaan automaattisesti poistaa %u päivän jälkeen tilan "
 "säästämiseksi ja yksityisyyden suojaamiseksi."
 
 #: src/Views/HouseKeepingPanel.vala:101
+#, fuzzy
 msgid "Day"
-msgstr "Päivä"
-
-#: src/Views/HouseKeepingPanel.vala:102
-msgid "Days"
-msgstr "Päivää"
+msgid_plural "Days"
+msgstr[0] "Päivä"
+msgstr[1] "Päivä"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
@@ -444,6 +440,16 @@ msgstr "Videot"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Osittain käytössä"
+
+#~ msgid ""
+#~ "Old files can be automatically deleted after %u days to save space and "
+#~ "help protect your privacy."
+#~ msgstr ""
+#~ "Vanhat tiedostot voidaan automaattisesti poistaa %u päivän jälkeen tilan "
+#~ "säästämiseksi ja yksityisyyden suojaamiseksi."
+
+#~ msgid "Days"
+#~ msgstr "Päivää"
 
 #~ msgid "Automatically delete old temporary files:"
 #~ msgstr "Poista automaattisesti vanhat väliaikaistiedostot:"

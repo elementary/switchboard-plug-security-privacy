@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-06 08:42-0700\n"
+"POT-Creation-Date: 2019-08-13 09:01-0700\n"
 "PO-Revision-Date: 2019-08-12 17:22+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -220,30 +220,26 @@ msgid "Open Trash…"
 msgstr "Åpne papirkurv…"
 
 #: src/Views/HouseKeepingPanel.vala:95
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
-msgstr ""
+msgid_plural ""
+"Old files can be automatically deleted after %u days to save space and help "
+"protect your privacy."
+msgstr[0] ""
+"Gamle filer kan slettes etter %u dag for å spare plass og hjelpe deg å hegne "
+"om personvernet."
+msgstr[1] ""
 "Gamle filer kan slettes etter %u dag for å spare plass og hjelpe deg å hegne "
 "om personvernet."
 
-#: src/Views/HouseKeepingPanel.vala:96
-#, c-format
-msgid ""
-"Old files can be automatically deleted after %u days to save space and help "
-"protect your privacy."
-msgstr ""
-"Gamle filer kan slettes etter %u dager for å spare plass og hjelpe deg å "
-"hegne om personvernet."
-
 #: src/Views/HouseKeepingPanel.vala:101
+#, fuzzy
 msgid "Day"
-msgstr "Dag"
-
-#: src/Views/HouseKeepingPanel.vala:102
-msgid "Days"
-msgstr "Dager"
+msgid_plural "Days"
+msgstr[0] "Dag"
+msgstr[1] "Dag"
 
 #: src/Views/LockPanel.vala:35
 #, fuzzy
@@ -445,6 +441,16 @@ msgstr "Videoer"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Delvis påslått"
+
+#~ msgid ""
+#~ "Old files can be automatically deleted after %u days to save space and "
+#~ "help protect your privacy."
+#~ msgstr ""
+#~ "Gamle filer kan slettes etter %u dager for å spare plass og hjelpe deg å "
+#~ "hegne om personvernet."
+
+#~ msgid "Days"
+#~ msgstr "Dager"
 
 #~ msgid "Automatically delete old temporary files:"
 #~ msgstr "Slett gamle filer automatisk:"

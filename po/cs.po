@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-06 08:42-0700\n"
+"POT-Creation-Date: 2019-08-13 09:01-0700\n"
 "PO-Revision-Date: 2019-04-22 18:59+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -224,22 +224,19 @@ msgstr "Otevřít koš…"
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
-msgstr ""
-
-#: src/Views/HouseKeepingPanel.vala:96
-#, c-format
-msgid ""
+msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr ""
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
-msgstr ""
-
-#: src/Views/HouseKeepingPanel.vala:102
-msgid "Days"
-msgstr ""
+msgid_plural "Days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/Views/LockPanel.vala:35
 #, fuzzy

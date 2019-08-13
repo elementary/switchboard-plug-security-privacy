@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-06 08:42-0700\n"
+"POT-Creation-Date: 2019-08-13 09:01-0700\n"
 "PO-Revision-Date: 2019-06-26 18:53+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -214,22 +214,19 @@ msgstr ""
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
-msgstr ""
-
-#: src/Views/HouseKeepingPanel.vala:96
-#, c-format
-msgid ""
+msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr ""
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
-msgstr ""
-
-#: src/Views/HouseKeepingPanel.vala:102
-msgid "Days"
-msgstr ""
+msgid_plural "Days"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
