@@ -98,8 +98,8 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         ).printf (age);
 
         file_age_label.label = ngettext (
-            _("Day"),
-            _("Days"),
+            "Day",
+            "Days",
             age
         );
     }
