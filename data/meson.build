@@ -9,7 +9,7 @@ i18n.merge_file(
     output: '@BASENAME@',
     po_dir: join_paths(meson.source_root(), 'po', 'extra'),
     install: true,
-    install_dir: join_paths(datadir, 'polkit-1', 'actions')
+    install_dir: polkit_actiondir
 )
 
 i18n.merge_file(

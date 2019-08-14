@@ -16,6 +16,9 @@ switchboard_dep = dependency('switchboard-2.0')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 pkgdatadir = join_paths(switchboard_plugsdir, 'personal')
 
+polkit_dep = dependency('polkit-gobject-1')
+polkit_actiondir = polkit_dep.get_pkgconfig_variable('actiondir', define_variable: ['prefix', prefix])
+
 add_project_arguments(
     '-DGETTEXT_PACKAGE="@0@"'.format(gettext_name),
     language:'c'
