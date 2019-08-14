@@ -4,12 +4,16 @@ project(
     meson_version: '>= 0.46.1',
     version: '2.2.1'
 )
-
-switchboard_dep = dependency('switchboard-2.0')
+i18n = import('i18n')
 
 gettext_name = meson.project_name() + '-plug'
+
+prefix = get_option('prefix')
+datadir = join_paths(prefix, get_option('datadir'))
+libdir = join_paths(prefix, get_option('libdir'))
+
+switchboard_dep = dependency('switchboard-2.0')
 pkgdatadir = join_paths(switchboard_dep.get_pkgconfig_variable('plugsdir'), 'personal')
-i18n = import('i18n')
 
 add_project_arguments(
     '-DGETTEXT_PACKAGE="@0@"'.format(gettext_name),
