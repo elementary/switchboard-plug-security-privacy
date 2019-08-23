@@ -4,12 +4,20 @@ project(
     meson_version: '>= 0.46.1',
     version: '2.2.1'
 )
-
-switchboard_dep = dependency('switchboard-2.0')
+i18n = import('i18n')
 
 gettext_name = meson.project_name() + '-plug'
-pkgdatadir = join_paths(switchboard_dep.get_pkgconfig_variable('plugsdir'), 'personal')
-i18n = import('i18n')
+
+prefix = get_option('prefix')
+datadir = join_paths(prefix, get_option('datadir'))
+libdir = join_paths(prefix, get_option('libdir'))
+
+switchboard_dep = dependency('switchboard-2.0')
+switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
+pkgdatadir = join_paths(switchboard_plugsdir, 'personal')
+
+polkit_dep = dependency('polkit-gobject-1')
+polkit_actiondir = polkit_dep.get_pkgconfig_variable('actiondir', define_variable: ['prefix', prefix])
 
 add_project_arguments(
     '-DGETTEXT_PACKAGE="@0@"'.format(gettext_name),
