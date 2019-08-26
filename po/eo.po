@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-06 08:42-0700\n"
-"PO-Revision-Date: 2019-08-26 05:22+0000\n"
+"PO-Revision-Date: 2019-08-26 23:17+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/eo/>\n"
@@ -30,7 +30,7 @@ msgstr "Agordi fajroŝirmilon, ekranan ŝloson, kaj aktivadajn informojn"
 
 #: src/Plug.vala:101
 msgid "Some settings require administrator rights to be changed"
-msgstr "Kelkaj agordaj ŝanĝoj postulas administrajn permesojn"
+msgstr "Kelkaj agordoj postulas administrajn permesojn por esti ŝanĝitaj"
 
 #: src/Plug.vala:143
 msgid "Privacy"
@@ -203,11 +203,11 @@ msgstr "Aŭtomate forigi:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "Portempaj dosieroj"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Enrubujigitaj dosieroj"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
@@ -223,6 +223,8 @@ msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
 msgstr ""
+"Eblas aŭtomate forigi malnovajn dosierojn post %u tago por ŝpari spacon kaj "
+"protekti vian privatecon."
 
 #: src/Views/HouseKeepingPanel.vala:96
 #, c-format
@@ -230,14 +232,16 @@ msgid ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr ""
+"Eblas aŭtomate forigi malnovajn dosierojn post %u tagoj por ŝpari spacon kaj "
+"protekti vian privatecon."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
-msgstr ""
+msgstr "Tago"
 
 #: src/Views/HouseKeepingPanel.vala:102
 msgid "Days"
-msgstr ""
+msgstr "Tagoj"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
