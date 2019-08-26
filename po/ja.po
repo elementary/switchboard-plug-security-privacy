@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-13 09:01-0700\n"
+"POT-Creation-Date: 2019-08-26 16:26-0700\n"
 "PO-Revision-Date: 2019-08-16 02:22+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -218,26 +218,22 @@ msgid "Open Trash…"
 msgstr "ゴミ箱を開く…"
 
 #: src/Views/HouseKeepingPanel.vala:95
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
-msgstr "古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保でき、プライバシーの保護に役立ちます。"
-
-#: src/Views/HouseKeepingPanel.vala:96
-#, c-format
-msgid ""
+msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr "古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保でき、プライバシーの保護に役立ちます。"
+msgstr[0] ""
+"古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保で"
+"き、プライバシーの保護に役立ちます。"
 
 #: src/Views/HouseKeepingPanel.vala:101
+#, fuzzy
 msgid "Day"
-msgstr "日"
-
-#: src/Views/HouseKeepingPanel.vala:102
-msgid "Days"
-msgstr "日"
+msgid_plural "Days"
+msgstr[0] "日"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
@@ -435,6 +431,16 @@ msgstr "動画"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "部分的に有効"
+
+#~ msgid ""
+#~ "Old files can be automatically deleted after %u days to save space and "
+#~ "help protect your privacy."
+#~ msgstr ""
+#~ "古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保で"
+#~ "き、プライバシーの保護に役立ちます。"
+
+#~ msgid "Days"
+#~ msgstr "日"
 
 #~ msgid "Automatically delete old temporary files:"
 #~ msgstr "古い一時ファイルを自動的に削除:"

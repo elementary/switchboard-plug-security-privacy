@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-13 09:01-0700\n"
+"POT-Creation-Date: 2019-08-26 16:26-0700\n"
 "PO-Revision-Date: 2019-08-20 03:22+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -220,30 +220,26 @@ msgid "Open Trash…"
 msgstr "Abrir Lixeira…"
 
 #: src/Views/HouseKeepingPanel.vala:95
-#, c-format
+#, fuzzy, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
-msgstr ""
+msgid_plural ""
+"Old files can be automatically deleted after %u days to save space and help "
+"protect your privacy."
+msgstr[0] ""
+"Arquivos antigos podem ser excluídos automaticamente após %u dia para "
+"economizar espaço e ajudar a proteger sua privacidade."
+msgstr[1] ""
 "Arquivos antigos podem ser excluídos automaticamente após %u dia para "
 "economizar espaço e ajudar a proteger sua privacidade."
 
-#: src/Views/HouseKeepingPanel.vala:96
-#, c-format
-msgid ""
-"Old files can be automatically deleted after %u days to save space and help "
-"protect your privacy."
-msgstr ""
-"Arquivos antigos podem ser excluídos automaticamente após %u dias para "
-"economizar espaço e ajudar a proteger sua privacidade."
-
 #: src/Views/HouseKeepingPanel.vala:101
+#, fuzzy
 msgid "Day"
-msgstr "Dia"
-
-#: src/Views/HouseKeepingPanel.vala:102
-msgid "Days"
-msgstr "Dias"
+msgid_plural "Days"
+msgstr[0] "Dia"
+msgstr[1] "Dia"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
@@ -443,6 +439,16 @@ msgstr "Vídeos"
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
 msgstr "Parcialmente habilitado"
+
+#~ msgid ""
+#~ "Old files can be automatically deleted after %u days to save space and "
+#~ "help protect your privacy."
+#~ msgstr ""
+#~ "Arquivos antigos podem ser excluídos automaticamente após %u dias para "
+#~ "economizar espaço e ajudar a proteger sua privacidade."
+
+#~ msgid "Days"
+#~ msgstr "Dias"
 
 #~ msgid "Automatically delete old temporary files:"
 #~ msgstr "Excluir automaticamente arquivos temporários antigos:"
