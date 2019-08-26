@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-13 09:01-0700\n"
-"PO-Revision-Date: 2019-07-15 23:12+0000\n"
+"PO-Revision-Date: 2019-08-26 05:22+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/eo/>\n"
@@ -198,9 +198,8 @@ msgid "Add Rule"
 msgstr "Aldoni regulon"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Aŭtomate forigi malnovajn rubujajn dosierojn:"
+msgstr "Aŭtomate forigi:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
@@ -211,9 +210,8 @@ msgid "Trashed files"
 msgstr ""
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "Nombro de tagoj dum kiuj konservi rubujajn kaj portempajn dosierojn:"
+msgstr "Forigi rubujajn kaj portempajn dosierojn post:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -237,9 +235,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Ŝloso ĉe dormigo:"
+msgstr "Ŝloso ĉe paŭzigo:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"

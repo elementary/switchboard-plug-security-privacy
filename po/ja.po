@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-13 09:01-0700\n"
-"PO-Revision-Date: 2019-03-17 01:27+0000\n"
+"PO-Revision-Date: 2019-08-16 02:22+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 
 #: src/Plug.vala:50
@@ -198,22 +198,20 @@ msgid "Add Rule"
 msgstr "ルールを追加"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "ゴミ箱に移動した古いファイルを自動的に削除:"
+msgstr "以下のファイルを自動的に削除:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "一時ファイル"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "ゴミ箱の中のファイル"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する日数:"
+msgstr "ゴミ箱の中のファイルと一時ファイルを次の期間が過ぎたら削除:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -224,20 +222,26 @@ msgstr "ゴミ箱を開く…"
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
-msgid_plural ""
+msgstr "古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保でき、プライバシーの保護に役立ちます。"
+
+#: src/Views/HouseKeepingPanel.vala:96
+#, c-format
+msgid ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr[0] ""
+msgstr "古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保でき、プライバシーの保護に役立ちます。"
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
-msgid_plural "Days"
-msgstr[0] ""
+msgstr "日"
+
+#: src/Views/HouseKeepingPanel.vala:102
+msgid "Days"
+msgstr "日"
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "スリープ時にロック:"
+msgstr "サスペンド時にロック:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
