@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-08-26 23:17+0000\n"
+"PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/eo/>\n"
@@ -218,7 +218,7 @@ msgid "Open Trash…"
 msgstr "Malfermi la rubujon…"
 
 #: src/Views/HouseKeepingPanel.vala:95
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
@@ -229,15 +229,14 @@ msgstr[0] ""
 "Eblas aŭtomate forigi malnovajn dosierojn post %u tago por ŝpari spacon kaj "
 "protekti vian privatecon."
 msgstr[1] ""
-"Eblas aŭtomate forigi malnovajn dosierojn post %u tago por ŝpari spacon kaj "
+"Eblas aŭtomate forigi malnovajn dosierojn post %u tagoj por ŝpari spacon kaj "
 "protekti vian privatecon."
 
 #: src/Views/HouseKeepingPanel.vala:101
-#, fuzzy
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "Tago"
-msgstr[1] "Tago"
+msgstr[1] "Tagoj"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
