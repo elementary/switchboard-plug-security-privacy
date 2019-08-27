@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-08-12 17:22+0000\n"
+"PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ca/>\n"
@@ -220,7 +220,7 @@ msgid "Open Trash…"
 msgstr "Obre la paperera…"
 
 #: src/Views/HouseKeepingPanel.vala:95
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
@@ -228,18 +228,17 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
-"Els fitxers antics es poden suprimir automàticament al cap d'%u dia per "
-"estalviar espai i ajudar a protegir la privacitat."
+"Els fitxers antics es poden suprimir automàticament quan hagi passat %u dia "
+"per estalviar espai i ajudar a protegir la privacitat."
 msgstr[1] ""
-"Els fitxers antics es poden suprimir automàticament al cap d'%u dia per "
-"estalviar espai i ajudar a protegir la privacitat."
+"Els fitxers antics es poden suprimir automàticament quan hagin passat %u "
+"dies per estalviar espai i ajudar a protegir la privacitat."
 
 #: src/Views/HouseKeepingPanel.vala:101
-#, fuzzy
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] "dia"
-msgstr[1] "dia"
+msgstr[0] "Dia"
+msgstr[1] "Dies"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
