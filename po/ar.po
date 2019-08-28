@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-08-26 05:22+0000\n"
+"PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ar/>\n"
@@ -23,15 +23,15 @@ msgstr ""
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "الأمن والخصوصية"
+msgstr "الأمن و الخصوصية"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "قم بتعديل جدار الحماية وقفل الشاشة و المعلومات حول النشاط"
+msgstr "قم بتعديل جدار الحماية, قفل الشاشة و المعلومات حول نشاطك"
 
 #: src/Plug.vala:101
 msgid "Some settings require administrator rights to be changed"
-msgstr "تطلب بعض الإعدادات تغيير حقوق المسؤول"
+msgstr "تتطلب بعض الإعدادات تغيير الصلاحيات للمسؤول"
 
 #: src/Plug.vala:143
 msgid "Privacy"
@@ -158,14 +158,12 @@ msgid "Direction"
 msgstr ""
 
 #: src/Views/FirewallPanel.vala:284
-#, fuzzy
 msgid "To"
-msgstr "إلى:"
+msgstr "إلى"
 
 #: src/Views/FirewallPanel.vala:285
-#, fuzzy
 msgid "From"
-msgstr "من:"
+msgstr "من"
 
 #: src/Views/FirewallPanel.vala:323
 msgid "Action:"
@@ -189,7 +187,7 @@ msgstr ""
 
 #: src/Views/FirewallPanel.vala:354
 msgid "Ports:"
-msgstr ""
+msgstr "المنافذ:"
 
 #: src/Views/FirewallPanel.vala:358
 #, c-format
@@ -198,27 +196,27 @@ msgstr ""
 
 #: src/Views/FirewallPanel.vala:360
 msgid "Add Rule"
-msgstr ""
+msgstr "إضافة قاعدة"
 
 #: src/Views/HouseKeepingPanel.vala:35
 msgid "Automatically Delete:"
-msgstr ""
+msgstr "حذف تلقائي:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "الملفات المؤقتة"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "الملفات المحذوفة"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
-msgstr ""
+msgstr "احذف الملفات المحذوفة و المؤقتة بعد:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
-msgstr ""
+msgstr "افتح سلة المهملات"
 
 #: src/Views/HouseKeepingPanel.vala:95
 #, c-format
@@ -271,11 +269,11 @@ msgstr ""
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
-msgstr ""
+msgstr "التاريخ معطل"
 
 #: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
-msgstr ""
+msgstr "امسح التاريخ…"
 
 #: src/Views/TrackPanel.vala:97
 msgid "Your system"
@@ -324,7 +322,7 @@ msgstr ""
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr ""
+msgstr "تطبيق البحث"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
@@ -360,15 +358,15 @@ msgstr "مسح البيانات"
 
 #: src/Widgets/ExcludeTreeView.vala:56
 msgid "Add Application…"
-msgstr ""
+msgstr "أضف تطبيق…"
 
 #: src/Widgets/ExcludeTreeView.vala:71
 msgid "Add Folder…"
-msgstr "أضف تطبيق…"
+msgstr "أضف مجلد…"
 
 #: src/Widgets/ExcludeTreeView.vala:74
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "اختر مجلدا لاضافته في القائمة السوداء"
 
 #: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add"
@@ -384,19 +382,19 @@ msgstr "حذف"
 
 #: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "لا تجمع بيانات من التالي:"
 
 #: src/Widgets/IncludeTreeView.vala:76
 msgid "Data Sources:"
-msgstr ""
+msgstr "مصادر البيانات:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
-msgstr ""
+msgstr "سجل الدردشات"
 
 #: src/Widgets/IncludeTreeView.vala:83
 msgid "Documents"
-msgstr ""
+msgstr "المستندات"
 
 #: src/Widgets/IncludeTreeView.vala:84
 msgid "Music"
@@ -408,7 +406,7 @@ msgstr "الصور"
 
 #: src/Widgets/IncludeTreeView.vala:86
 msgid "Presentations"
-msgstr ""
+msgstr "العروض التقديمية"
 
 #: src/Widgets/IncludeTreeView.vala:87
 msgid "Spreadsheets"
@@ -416,7 +414,7 @@ msgstr ""
 
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
-msgstr ""
+msgstr "مقاطع الفيديو"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
