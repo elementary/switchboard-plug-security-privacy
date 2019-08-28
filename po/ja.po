@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-08-16 02:22+0000\n"
+"PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -218,19 +218,16 @@ msgid "Open Trash…"
 msgstr "ゴミ箱を開く…"
 
 #: src/Views/HouseKeepingPanel.vala:95
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
 "protect your privacy."
 msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr[0] ""
-"古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保で"
-"き、プライバシーの保護に役立ちます。"
+msgstr[0] "古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保でき、プライバシーの保護に役立ちます。"
 
 #: src/Views/HouseKeepingPanel.vala:101
-#, fuzzy
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "日"
