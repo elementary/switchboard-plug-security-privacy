@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-08-29 04:22+0000\n"
+"PO-Revision-Date: 2019-09-01 15:22+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pt/>\n"
@@ -77,16 +77,16 @@ msgstr "Bloquear depois do ecrã desligar"
 
 #: src/Plug.vala:192
 msgid "Automatically delete old temporary files"
-msgstr "Apagar automaticamente todos os ficheiros temporários antigos"
+msgstr "Eliminar automaticamente ficheiros temporários antigos"
 
 #: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
-msgstr "Apagar automaticamente os ficheiros antigos colocados no lixo"
+msgstr "Eliminar automaticamente ficheiros antigos colocados no lixo"
 
 #: src/Plug.vala:194
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
-"Número de dias para manter os os ficheiros temporários e os ficheiros no lixo"
+"Número de dias para manter os ficheiros temporários e os ficheiros do lixo"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -264,7 +264,7 @@ msgstr ""
 #: src/Views/TrackPanel.vala:37
 #, c-format
 msgid "%s won't retain any further usage data."
-msgstr "%s não irão guardar mais dados de utilização."
+msgstr "%s não irá guardar mais dados de utilização."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
@@ -280,7 +280,7 @@ msgstr ""
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
-msgstr "O Histórico Está Desativado"
+msgstr "O histórico está desativado"
 
 #: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
@@ -308,15 +308,15 @@ msgstr ""
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr "Os Serviços de Localização Estão Desativados"
+msgstr "Os serviços de localização estão desativados"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
-"Enquanto os serviços de localização estiverem desativados, os pedidos de "
-"localização por parte das aplicações serão automaticamente rejeitados."
+"Enquanto os serviços de localização estiverem desativados, as solicitações "
+"de localização das aplicações serão automaticamente rejeitadas."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
@@ -397,7 +397,7 @@ msgstr "Cancelar"
 
 #: src/Widgets/ExcludeTreeView.vala:92
 msgid "Delete"
-msgstr "Apagar"
+msgstr "Eliminar"
 
 #: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
@@ -409,7 +409,7 @@ msgstr "Fontes de Dados:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Chat Logs"
-msgstr "Conversações"
+msgstr "Registos de Conversações"
 
 #: src/Widgets/IncludeTreeView.vala:83
 msgid "Documents"
