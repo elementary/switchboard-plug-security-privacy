@@ -63,8 +63,9 @@ namespace SecurityPrivacy {
 
         public HashTable<string, Zeitgeist.Event> all_templates {
             get {
-                if (blacklists == null)
+                if (blacklists == null) {
                     this.get_templates ();
+                }
                 return blacklists;
             }
         }
@@ -75,7 +76,7 @@ namespace SecurityPrivacy {
 
         public void add_template (string blacklist_id, Zeitgeist.Event blacklist_template) {
             try {
-                blacklist.add_template (blacklist_id, blacklist_template.to_variant());
+                blacklist.add_template (blacklist_id, blacklist_template.to_variant ());
             } catch (Error e) {
                 critical (e.message);
             }
@@ -91,10 +92,11 @@ namespace SecurityPrivacy {
 
         // If status is true, means we want incognito to be set
         public void set_incognito (bool status) {
-            if (status)
+            if (status) {
                 this.add_template (incognito_id, incognito_event);
-            else
+            } else {
                 this.remove_template (incognito_id);
+            }
         }
 
         public HashTable<string, Zeitgeist.Event> get_templates () {
@@ -112,8 +114,9 @@ namespace SecurityPrivacy {
             try {
                 var ev = new Zeitgeist.Event.from_variant (blacklist_template);
                 template_added (blacklist_id, ev);
-                if (blacklist_id == incognito_id)
+                if (blacklist_id == incognito_id) {
                     incognito_toggled (true);
+                }
 
                 blacklists.insert (blacklist_id, ev);
             } catch (Error e) {
@@ -129,20 +132,24 @@ namespace SecurityPrivacy {
                 critical (e.message);
             }
 
-            if (blacklist_id == incognito_id)
+            if (blacklist_id == incognito_id) {
                 incognito_toggled (false);
+            }
 
-            if (blacklists.lookup (blacklist_id) != null)
+            if (blacklists.lookup (blacklist_id) != null) {
                 blacklists.remove (blacklist_id);
+            }
         }
 
         public bool get_incognito () {
-            if (blacklists == null)
+            if (blacklists == null) {
                 this.get_templates ();
+            }
 
             foreach (var ev in all_templates.get_values ()) {
-                if (Utilities.matches_event_template (ev, incognito_event))
+                if (Utilities.matches_event_template (ev, incognito_event)) {
                     return true;
+                }
             }
 
             return false;
@@ -152,18 +159,18 @@ namespace SecurityPrivacy {
             var event = new Zeitgeist.Event ();
             event.manifestation = Zeitgeist.ZG.USER_ACTIVITY;
             event.actor = "application://%s".printf (id);
-            
+
             var events = new GenericArray<Zeitgeist.Event> ();
             events.add (event);
-            
+
             var event2 = new Zeitgeist.Event ();
             event2.manifestation = Zeitgeist.ZG.USER_ACTIVITY;
             var subj = new Zeitgeist.Subject ();
             subj.uri = "application://%s".printf (id);
             event2.add_subject (subj);
-            
+
             events.add (event2);
-            
+
             try {
                 uint32[] results = yield log.find_event_ids (new Zeitgeist.TimeRange.anytime (),
                                                     events,
@@ -171,8 +178,8 @@ namespace SecurityPrivacy {
                                                     0,
                                                     Zeitgeist.ResultType.MOST_RECENT_EVENTS,
                                                     null);
-                                                    
-                var counter = results.length/100;
+
+                var counter = results.length / 100;
                 store.set_value (iter, 5, counter);
             } catch (Error e) {
                 warning (e.message);
@@ -206,7 +213,7 @@ namespace SecurityPrivacy {
 
         private string get_name (string interpretation) {
             var names = interpretation.split ("#");
-            var name = names[names.length-1].down ();
+            var name = names[names.length - 1].down ();
             return "%s%s".printf (interpretation_prefix, name);
         }
 
@@ -228,7 +235,7 @@ namespace SecurityPrivacy {
         }
 
         public void unblock (string interpretation) {
-            blacklist_interface.remove_template (this.get_name(interpretation));
+            blacklist_interface.remove_template (this.get_name (interpretation));
         }
 
         private void on_blacklist_added (string blacklist_id, Zeitgeist.Event ev) {
@@ -276,11 +283,12 @@ namespace SecurityPrivacy {
 
         private void get_blocked_folder () {
             all_blocked_folder = new Gee.HashSet<string> ();
-            foreach (string key in blacklist_interface.all_templates.get_keys()) {
+            foreach (string key in blacklist_interface.all_templates.get_keys ()) {
                 if (key.has_prefix (folder_prefix) == true) {
                     string folder = get_folder (blacklist_interface.all_templates.get (key));
-                    if (folder != null)
+                    if (folder != null) {
                         all_blocked_folder.add (folder);
+                    }
                 }
             }
         }
@@ -290,8 +298,9 @@ namespace SecurityPrivacy {
                 string uri = get_folder (ev);
                 if (uri != null) {
                     folder_added (uri);
-                    if (all_blocked_folder.contains (uri) == false)
+                    if (all_blocked_folder.contains (uri) == false) {
                         all_blocked_folder.add (uri);
+                    }
                 }
             }
         }
@@ -301,18 +310,20 @@ namespace SecurityPrivacy {
                 string uri = get_folder (ev);
                 if (uri != null) {
                     folder_removed (uri);
-                    if (all_blocked_folder.contains (uri) == true)
+                    if (all_blocked_folder.contains (uri) == true) {
                         all_blocked_folder.remove (uri);
+                    }
                 }
             }
         }
 
         private string? get_folder (Zeitgeist.Event ev) {
-            Zeitgeist.Subject sub = ev.get_subject(0);
+            Zeitgeist.Subject sub = ev.get_subject (0);
             string uri = sub.uri.replace (suffix, "");
             var blocked_uri = File.new_for_uri (uri);
-            if (blocked_uri.query_exists (null) == true)
+            if (blocked_uri.query_exists (null) == true) {
                 return blocked_uri.get_path ();
+            }
 
             return null;
         }
@@ -328,14 +339,16 @@ namespace SecurityPrivacy {
 
             blacklist_interface.add_template ("%s%s".printf (folder_prefix, folder), ev);
 
-            if (all_blocked_folder.contains (folder) == false)
+            if (all_blocked_folder.contains (folder) == false) {
                 all_blocked_folder.add (folder);
+            }
         }
 
         public void unblock (string folder) {
             blacklist_interface.remove_template ("%s%s".printf (folder_prefix, folder));
-            if (all_blocked_folder.contains (folder) == true)
+            if (all_blocked_folder.contains (folder) == true) {
                 all_blocked_folder.remove (folder);
+            }
         }
     }
 
@@ -353,7 +366,7 @@ namespace SecurityPrivacy {
             this.blacklist_interface = blacklist;
             this.blacklist_interface.template_added.connect (on_blacklist_added);
             this.blacklist_interface.template_removed.connect (on_blacklist_removed);
-            this.get_blocked_apps();
+            this.get_blocked_apps ();
         }
 
         public Gee.HashSet<string> all_apps {
@@ -363,12 +376,12 @@ namespace SecurityPrivacy {
         }
 
         public void get_count_for_app (string id, Gtk.TreeIter iter, Gtk.ListStore store) {
-            this.blacklist_interface.get_count_for_app(id, iter, store);
+            this.blacklist_interface.get_count_for_app (id, iter, store);
         }
 
         private Gee.HashSet<string> get_blocked_apps () {
-            all_blocked_apps = new Gee.HashSet<string>();
-            foreach (string key in blacklist_interface.all_templates.get_keys()) {
+            all_blocked_apps = new Gee.HashSet<string> ();
+            foreach (string key in blacklist_interface.all_templates.get_keys ()) {
                 if (key.has_prefix (interpretation_prefix) == true) {
                     var app = key.substring (4);
                     all_blocked_apps.add (app);
@@ -382,8 +395,9 @@ namespace SecurityPrivacy {
             if (blacklist_id.has_prefix (interpretation_prefix) == true) {
                 string app = blacklist_id.substring (4);
                 application_added (app, ev);
-                if (all_apps.contains(app) == false)
-                    all_apps.add(app);
+                if (all_apps.contains (app) == false) {
+                    all_apps.add (app);
+                }
             }
         }
 
@@ -391,8 +405,9 @@ namespace SecurityPrivacy {
             if (blacklist_id.has_prefix (interpretation_prefix) == true) {
                 string app = blacklist_id.substring (4);
                 application_removed (app, ev);
-                if (all_apps.contains(app) == true)
+                if (all_apps.contains (app) == true) {
                     all_apps.remove (app);
+                }
             }
         }
 
@@ -400,7 +415,7 @@ namespace SecurityPrivacy {
             var ev = new Zeitgeist.Event ();
             ev.actor = "application://%s".printf (application);
             var sub = new Zeitgeist.Subject ();
-            ev.add_subject(sub);
+            ev.add_subject (sub);
 
             var launch_ev = new Zeitgeist.Event ();
             var launch_sub = new Zeitgeist.Subject ();
@@ -409,16 +424,18 @@ namespace SecurityPrivacy {
 
             blacklist_interface.add_template ("%s%s".printf (interpretation_prefix, application), ev);
             blacklist_interface.add_template ("%s%s".printf (launcher_prefix, application), launch_ev);
-            if (all_apps.contains (application) == false)
+            if (all_apps.contains (application) == false) {
                 all_apps.add (application);
+            }
         }
 
         public void unblock (string application) {
             blacklist_interface.remove_template ("%s%s".printf (interpretation_prefix, application));
             blacklist_interface.remove_template ("%s%s".printf (launcher_prefix, application));
 
-            if (all_apps.contains (application) == true)
+            if (all_apps.contains (application) == true) {
                 all_apps.remove (application);
+            }
         }
     }
 }
