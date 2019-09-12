@@ -1,5 +1,5 @@
 # Switchboard Security & Privacy Plug
-[![Translation status](https://l10n.elementary.io/widgets/switchboard/switchboard-plug-security-privacy/svg-badge.svg)](https://l10n.elementary.io/projects/switchboard/switchboard-plug-security-privacy/?utm_source=widget)
+[![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-security-privacy/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
 ![screenshot](data/screenshot.png?raw=true)
 
