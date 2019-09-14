@@ -107,8 +107,9 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
 
                 try {
                     foreach (var item in items) {
-                        if (item.get_added () >= start/1000)
+                        if (item.get_added () >= start / 1000) {
                             recent.remove_item (item.get_uri ());
+                        }
                     }
                 } catch (Error err) {
                     critical (err.message);
@@ -127,8 +128,9 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
 
                 try {
                     foreach (var item in items) {
-                        if (item.get_age () <= 1)
+                        if (item.get_age () <= 1) {
                             recent.remove_item (item.get_uri ());
+                        }
                     }
                 } catch (Error err) {
                     critical (err.message);
@@ -147,16 +149,17 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
 
                 try {
                     foreach (var item in items) {
-                        if (item.get_age () <= 7)
+                        if (item.get_age () <= 7) {
                             recent.remove_item (item.get_uri ());
+                        }
                     }
                 } catch (Error err) {
                     critical (err.message);
                 }
             }
         } else if (from_radio.active == true) {
-            int64 start = from_datepicker.date.to_unix ()*1000;
-            int64 end = to_datepicker.date.to_unix ()*1000;
+            int64 start = from_datepicker.date.to_unix () * 1000;
+            int64 end = to_datepicker.date.to_unix () * 1000;
             tr = new Zeitgeist.TimeRange (start, end);
             delete_history.begin (tr);
 
@@ -166,8 +169,9 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
 
                 try {
                     foreach (var item in items) {
-                        if (item.get_added () >= start/1000 && item.get_added () <= end/1000)
+                        if (item.get_added () >= start / 1000 && item.get_added () <= end / 1000) {
                             recent.remove_item (item.get_uri ());
+                        }
                     }
                 } catch (Error err) {
                     critical (err.message);
