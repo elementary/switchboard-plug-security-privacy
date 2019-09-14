@@ -99,7 +99,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             ((LocationRow) row).on_active_changed ();
         });
 
-        location_settings.changed.connect((key) => {
+        location_settings.changed.connect ((key) => {
             populate_app_listbox ();
         });
     }
@@ -118,7 +118,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
     }
 
-    private void populate_app_listbox  () {
+    private void populate_app_listbox () {
         load_remembered_apps ();
 
         foreach (var row in listbox.get_children ()) {
@@ -141,19 +141,19 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
     }
 
-	private void load_remembered_apps () {
-	    remembered_apps = location_settings.get_value ("remembered-apps");
+    private void load_remembered_apps () {
+        remembered_apps = location_settings.get_value ("remembered-apps");
         remembered_apps_dict = new VariantDict (location_settings.get_value ("remembered-apps"));
-	}
+    }
 
-	private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
-		Variant[2] tuple_vals = new Variant[2];
-		tuple_vals[0] = new Variant.boolean (authorized);
-		tuple_vals[1] = new Variant.uint32 (accuracy_level);
-		remembered_apps_dict.insert_value (desktop_id, new Variant.tuple (tuple_vals));
-		location_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
+    private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
+        Variant[2] tuple_vals = new Variant[2];
+        tuple_vals[0] = new Variant.boolean (authorized);
+        tuple_vals[1] = new Variant.uint32 (accuracy_level);
+        remembered_apps_dict.insert_value (desktop_id, new Variant.tuple (tuple_vals));
+        location_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
         load_remembered_apps ();
-	}
+    }
 
     private uint32 get_app_level (string desktop_id) {
         return remembered_apps.lookup_value (desktop_id, GLib.VariantType.TUPLE).get_child_value (1).get_uint32 ();
