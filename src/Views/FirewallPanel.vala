@@ -98,7 +98,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         var rules = settings.get_value ("disabled-firewall-rules");
         VariantIter iter = rules.iterator ();
         while (iter.next ("(ssssiiii)", ref to, ref to_ports, ref from, ref from_ports, ref action, ref protocol, ref direction, ref version)) {
-        UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
+            UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
             new_rule.to = to;
             new_rule.to_ports = to_ports;
             new_rule.from = from;
@@ -129,17 +129,17 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             Gtk.TreeModelForeachFunc update_row = (model, path, iter) => {
                 Value val;
 
-            list_store.get_value (iter, Columns.RULE, out val);
+                list_store.get_value (iter, Columns.RULE, out val);
                 var tree_rule = (UFWHelpers.Rule)val;
                 string tree_hash = generate_hash_for_rule (tree_rule);
-            if (ufw_hash == tree_hash) {
+                if (ufw_hash == tree_hash) {
                     tree_rule.number = rule.number;
                     list_store.set_value (iter, Columns.RULE, tree_rule);
                     return true;
                 }
 
-            return false;
-          };
+                return false;
+            };
             list_store.foreach (update_row);
         }
     }
