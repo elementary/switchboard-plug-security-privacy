@@ -52,7 +52,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         settings = new Settings ("io.elementary.switchboard.security-privacy");
         disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
         load_disabled_rules ();
-        
+
         status_switch.notify["active"].connect (() => {
             if (loading == false) {
                 view.sensitive = status_switch.active;
@@ -98,7 +98,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         var rules = settings.get_value ("disabled-firewall-rules");
         VariantIter iter = rules.iterator ();
         while (iter.next ("(ssssiiii)", ref to, ref to_ports, ref from, ref from_ports, ref action, ref protocol, ref direction, ref version)) {
-		    UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
+        UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
             new_rule.to = to;
             new_rule.to_ports = to_ports;
             new_rule.from = from;
@@ -109,39 +109,39 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             new_rule.version = (UFWHelpers.Rule.Version)version;
             string hash = generate_hash_for_rule (new_rule);
             disabled_rules.set (hash, new_rule);
-        }    
+        }
     }
 
     private string generate_hash_for_rule (UFWHelpers.Rule r) {
-        return r.to + 
-               r.to_ports + 
-               r.from + 
-               r.from_ports + 
-               r.action.to_string () + 
-               r.protocol.to_string () + 
-               r.direction.to_string () + 
+        return r.to +
+               r.to_ports +
+               r.from +
+               r.from_ports +
+               r.action.to_string () +
+               r.protocol.to_string () +
+               r.direction.to_string () +
                r.version.to_string ();
     }
-    
+
     private void reload_rule_numbers () {
         foreach (var rule in UFWHelpers.get_rules ()) {
             string ufw_hash = generate_hash_for_rule (rule);
             Gtk.TreeModelForeachFunc update_row = (model, path, iter) => {
                 Value val;
 
-		        list_store.get_value (iter, Columns.RULE, out val);
+            list_store.get_value (iter, Columns.RULE, out val);
                 var tree_rule = (UFWHelpers.Rule)val;
                 string tree_hash = generate_hash_for_rule (tree_rule);
-		        if (ufw_hash == tree_hash) {
+            if (ufw_hash == tree_hash) {
                     tree_rule.number = rule.number;
                     list_store.set_value (iter, Columns.RULE, tree_rule);
                     return true;
                 }
-                
-		        return false;
-	        };
+
+            return false;
+          };
             list_store.foreach (update_row);
-        }    
+        }
     }
 
     private void show_rules () {
@@ -150,7 +150,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         foreach (var rule in UFWHelpers.get_rules ()) {
             add_rule (rule);
         }
-        
+
         load_disabled_rules ();
         foreach (var rule in disabled_rules.entries) {
             add_rule (rule.value, false, rule.key);
@@ -164,7 +164,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
     private void enable_rule (string hash) {
         UFWHelpers.add_rule (disabled_rules.get (hash));
-        delete_disabled_rule (hash);        
+        delete_disabled_rule (hash);
     }
 
     private void delete_disabled_rule (string hash) {
@@ -173,25 +173,25 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     }
 
     private void save_disabled_rules (UFWHelpers.Rule? additional_rule = null) {
-        VariantBuilder builder = new VariantBuilder (new VariantType("a(ssssiiii)"));
+        VariantBuilder builder = new VariantBuilder (new VariantType ("a(ssssiiii)"));
         foreach (var existing_rule in disabled_rules.values) {
-            builder.add ("(ssssiiii)", existing_rule.to, 
-                                       existing_rule.to_ports, 
-                                       existing_rule.from, 
+            builder.add ("(ssssiiii)", existing_rule.to,
+                                       existing_rule.to_ports,
+                                       existing_rule.from,
                                        existing_rule.from_ports,
-                                       existing_rule.action, 
-                                       existing_rule.protocol, 
-                                       existing_rule.direction, 
+                                       existing_rule.action,
+                                       existing_rule.protocol,
+                                       existing_rule.direction,
                                        existing_rule.version);
         }
         if (additional_rule != null) {
-            builder.add ("(ssssiiii)", additional_rule.to, 
-                                       additional_rule.to_ports, 
-                                       additional_rule.from, 
+            builder.add ("(ssssiiii)", additional_rule.to,
+                                       additional_rule.to_ports,
+                                       additional_rule.from,
                                        additional_rule.from_ports,
-                                       additional_rule.action, 
-                                       additional_rule.protocol, 
-                                       additional_rule.direction, 
+                                       additional_rule.action,
+                                       additional_rule.protocol,
+                                       additional_rule.direction,
                                        additional_rule.version);
         }
         settings.set_value ("disabled-firewall-rules", builder.end ());
@@ -230,7 +230,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         } else if (rule.version == UFWHelpers.Rule.Version.IPV4) {
             version = "IPv4";
         }
-        
+
         string from = "";
         string to = "";
         if (rule.from_ports != "") {
@@ -252,21 +252,21 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         } else {
             to = rule.to;
         }
- 
+
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
-                Columns.DIRECTION, direction, Columns.V6, version, Columns.ENABLED, enabled, 
+                Columns.DIRECTION, direction, Columns.V6, version, Columns.ENABLED, enabled,
                 Columns.RULE, rule, Columns.TO, to.strip (), Columns.FROM, from.strip ());
     }
 
     private void create_treeview () {
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (string),
-                                                           typeof (string), 
-                                                           typeof (string),     
                                                            typeof (string),
-                                                           typeof (string), 
-                                                           typeof (string), 
-                                                           typeof (bool), 
+                                                           typeof (string),
+                                                           typeof (string),
+                                                           typeof (string),
+                                                           typeof (string),
+                                                           typeof (bool),
                                                            typeof (UFWHelpers.Rule));
 
         // The View:
@@ -287,7 +287,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         celltoggle.toggled.connect ((path) => {
             Value active;
             Gtk.TreeIter iter;
-            list_store.get_iter (out iter, new Gtk.TreePath.from_string(path));
+            list_store.get_iter (out iter, new Gtk.TreePath.from_string (path));
             list_store.get_value (iter, Columns.ENABLED, out active);
             var is_active = !active.get_boolean ();
             list_store.set (iter, Columns.ENABLED, is_active);
@@ -427,7 +427,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             string gen_hash = generate_hash_for_rule (rule);
             Value active;
             list_store.get_value (iter, Columns.ENABLED, out active);
-            if (active.get_boolean ()) {                
+            if (active.get_boolean ()) {
                 UFWHelpers.remove_rule (rule);
             } else {
                 delete_disabled_rule (gen_hash);
