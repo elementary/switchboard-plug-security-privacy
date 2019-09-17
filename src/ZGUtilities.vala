@@ -26,22 +26,29 @@
 
 namespace SecurityPrivacy.Utilities {
     public static bool matches_event_template (Zeitgeist.Event event, Zeitgeist.Event template_event) {
-        if (!check_field_match (event.interpretation, template_event.interpretation, "ev-int"))
+        if (!check_field_match (event.interpretation, template_event.interpretation, "ev-int")) {
             return false;
-        //Check if manifestation is child of template_event or same
-        if (!check_field_match (event.manifestation, template_event.manifestation, "ev-mani"))
-            return false;
-        //Check if actor is equal to template_event actor
-        if (!check_field_match (event.actor, template_event.actor, "ev-actor"))
-            return false;
+        }
 
-        if (event.num_subjects () == 0)
+        //Check if manifestation is child of template_event or same
+        if (!check_field_match (event.manifestation, template_event.manifestation, "ev-mani")) {
+            return false;
+        }
+
+        //Check if actor is equal to template_event actor
+        if (!check_field_match (event.actor, template_event.actor, "ev-actor")) {
+            return false;
+        }
+
+        if (event.num_subjects () == 0) {
             return true;
+        }
 
         for (int i = 0; i < event.num_subjects (); i++) {
             for (int j = 0; j < template_event.num_subjects (); j++) {
-                if (matches_subject_template (event.get_subject (i), template_event.get_subject (j)))
+                if (matches_subject_template (event.get_subject (i), template_event.get_subject (j))) {
                     return true;
+                }
             }
         }
 
@@ -49,16 +56,25 @@ namespace SecurityPrivacy.Utilities {
     }
 
     public static bool matches_subject_template (Zeitgeist.Subject subject, Zeitgeist.Subject template_subject) {
-        if (!check_field_match (subject.uri, template_subject.uri, "sub-uri"))
+        if (!check_field_match (subject.uri, template_subject.uri, "sub-uri")) {
             return false;
-        if (!check_field_match (subject.interpretation, template_subject.interpretation, "sub-int"))
+        }
+
+        if (!check_field_match (subject.interpretation, template_subject.interpretation, "sub-int")) {
             return false;
-        if (!check_field_match (subject.manifestation, template_subject.manifestation, "sub-mani"))
+        }
+
+        if (!check_field_match (subject.manifestation, template_subject.manifestation, "sub-mani")) {
             return false;
-        if (!check_field_match (subject.origin, template_subject.origin, "sub-origin"))
+        }
+
+        if (!check_field_match (subject.origin, template_subject.origin, "sub-origin")) {
             return false;
-        if (!check_field_match (subject.mimetype, template_subject.mimetype, "sub-mime"))
+        }
+
+        if (!check_field_match (subject.mimetype, template_subject.mimetype, "sub-mime")) {
             return false;
+        }
 
         return true;
     }
@@ -77,8 +93,10 @@ namespace SecurityPrivacy.Utilities {
     }
 
     public static bool parse_negation (ref string val) {
-        if (!val.has_prefix ("!"))
+        if (!val.has_prefix ("!")) {
             return false;
+        }
+
         val = val.substring (1);
         return true;
     }
@@ -100,21 +118,5 @@ namespace SecurityPrivacy.Utilities {
         }
 
         return blacklist;
-    }
-
-    public static Variant to_variant (HashTable<string, Zeitgeist.Event> blacklist) {
-        var vb = new VariantBuilder (new VariantType (SIG_BLACKLIST)); {
-            var iter = HashTableIter<string, Zeitgeist.Event> (blacklist);
-            string template_id;
-            Zeitgeist.Event event_template;
-            while (iter.next (out template_id, out event_template)) {
-                vb.open (new VariantType ("{s(%s)}".printf (SIG_EVENT)));
-                vb.add ("s", template_id);
-                vb.add_value (event_template.to_variant ());
-                vb.close ();
-            }
-        }
-
-        return vb.end ();
     }
 }
