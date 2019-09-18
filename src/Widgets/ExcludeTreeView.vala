@@ -36,7 +36,13 @@ public class ExcludeTreeView : Gtk.Grid {
         app_blacklist = new SecurityPrivacy.ApplicationBlacklist (SecurityPrivacy.blacklist);
         path_blacklist = new SecurityPrivacy.PathBlacklist (SecurityPrivacy.blacklist);
 
-        var list_store = new Gtk.ListStore (NotColumns.N_COLUMNS, typeof (string), typeof (Icon), typeof (string), typeof (bool));
+        var list_store = new Gtk.ListStore (
+            NotColumns.N_COLUMNS,
+            typeof (string),
+            typeof (Icon),
+            typeof (string),
+            typeof (bool)
+        );
 
         var view = new Gtk.TreeView.with_model (list_store);
         view.vexpand = true;
@@ -52,7 +58,10 @@ public class ExcludeTreeView : Gtk.Grid {
         scrolled.expand = true;
         scrolled.add (view);
 
-        var add_app_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        var add_app_button = new Gtk.ToolButton (
+            new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            null
+        );
         add_app_button.tooltip_text = _("Add Application…");
         add_app_button.clicked.connect (() => {
             if (app_chooser.visible == false) {
@@ -67,7 +76,10 @@ public class ExcludeTreeView : Gtk.Grid {
             app_blacklist.block (file.get_basename ());
         });
 
-        var add_folder_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("folder-new-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        var add_folder_button = new Gtk.ToolButton (
+            new Gtk.Image.from_icon_name ("folder-new-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            null
+        );
         add_folder_button.tooltip_text = _("Add Folder…");
         add_folder_button.clicked.connect (() => {
             var chooser = new Gtk.FileChooserNative (
@@ -88,7 +100,10 @@ public class ExcludeTreeView : Gtk.Grid {
             chooser.destroy ();
         });
 
-        var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        var remove_button = new Gtk.ToolButton (
+            new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            null
+        );
         remove_button.tooltip_text = _("Delete");
         remove_button.sensitive = false;
         remove_button.clicked.connect (() => {

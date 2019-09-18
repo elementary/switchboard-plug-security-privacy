@@ -57,7 +57,7 @@ namespace SecurityPrivacy.UFWHelpers {
         try {
             string standard_output;
             Process.spawn_command_line_sync ("pkexec %s -4".printf (get_helper_path ()), out standard_output);
-            var lines = standard_output.split("\n");
+            var lines = standard_output.split ("\n");
             foreach (var line in lines) {
                 if ("ALLOW" in line || "DENY" in line || "LIMIT" in line || "REJECT" in line) {
                     var rule = new Rule.from_line (line);
@@ -103,7 +103,7 @@ namespace SecurityPrivacy.UFWHelpers {
                 default:
                     rule_str = "%s in".printf (rule_str);
                     break;
-            } 
+            }
 
             switch (rule.protocol) {
                 case Rule.Protocol.UDP:
@@ -119,11 +119,11 @@ namespace SecurityPrivacy.UFWHelpers {
             if (rule.to != "" && !rule.to.contains ("Anywhere")) {
                 rule_str = "%s to %s".printf (rule_str, rule.to);
                 if (rule.to_ports != "") {
-                    rule_str = "%s port %s".printf (rule_str, rule.to_ports);                    
-                }            
+                    rule_str = "%s port %s".printf (rule_str, rule.to_ports);
+                }
             } else {
                 if (rule.version == Rule.Version.BOTH) {
-                    rule_str = "%s to any".printf (rule_str);                
+                    rule_str = "%s to any".printf (rule_str);
                 } else if (rule.version == Rule.Version.IPV6) {
                     rule_str = "%s to ::/0".printf (rule_str);
                 } else if (rule.version == Rule.Version.IPV4) {
@@ -138,10 +138,10 @@ namespace SecurityPrivacy.UFWHelpers {
                 rule_str = "%s from %s".printf (rule_str, rule.from);
                 if (rule.from_ports != "") {
                     rule_str = "%s port %s".printf (rule_str, rule.from_ports);
-                }            
+                }
             } else {
                 if (rule.version == Rule.Version.BOTH) {
-                    rule_str = "%s from any".printf (rule_str);                
+                    rule_str = "%s from any".printf (rule_str);
                 } else if (rule.version == Rule.Version.IPV6) {
                     rule_str = "%s from ::/0".printf (rule_str);
                 } else if (rule.version == Rule.Version.IPV4) {
@@ -193,14 +193,14 @@ namespace SecurityPrivacy.UFWHelpers {
         public int number;
 
         public Rule () {
-            
+
         }
 
         private void get_address_and_port (string input, ref Version version, ref string ports, ref string address) {
             try {
                 var parts = input.split (" ");
                 if (parts.length > 1) {
-                    ports = parts[1].split("/")[0];
+                    ports = parts[1].split ("/")[0];
                     address = parts[0];
                     var ip = new InetAddress.from_string (parts[0].split ("/")[0]);
                     if (ip != null) {
@@ -242,11 +242,11 @@ namespace SecurityPrivacy.UFWHelpers {
                             version = Version.IPV4;
                         }
                     }
-                }  
+                }
             } catch (Error e) {
                 warning ("Error parsing to/from address: %s".printf (input));
                 warning (e.message);
-            }  
+            }
         }
 
         public Rule.from_line (string line) {
@@ -265,11 +265,11 @@ namespace SecurityPrivacy.UFWHelpers {
             }
 
             try {
-                               
+
                 var r = new Regex ("""\[\s*(\d+)\]\s{1}([A-Za-z0-9 \(\)/\.:,]+?)\s{2,}([A-Z ]+?)\s{2,}([A-Za-z0-9 \(\)/\.:,]+?)(?:\s{2,}.*)?$""");
                 MatchInfo info;
                 r.match (line, 0, out info);
-                
+
                 number = int.parse (info.fetch (1));
 
                 string to_match = info.fetch (2).replace (" (v6)", "");
@@ -277,7 +277,7 @@ namespace SecurityPrivacy.UFWHelpers {
 
                 get_address_and_port (to_match, ref version, ref to_ports, ref to);
                 get_address_and_port (from_match, ref version, ref from_ports, ref from);
-                
+
                 string type = info.fetch (3);
 
                 if ("ALLOW" in type) {

@@ -26,16 +26,25 @@
 
 namespace SecurityPrivacy {
     private const string SIG_EVENT = "asaasay";
-    private const string SIG_BLACKLIST = "a{s("+SIG_EVENT+")}";
+    private const string SIG_BLACKLIST = "a{s("+SIG_EVENT+")}"; //vala-lint=no-space
 
     [DBus (name = "org.gnome.zeitgeist.Blacklist")]
     interface BlacklistInterface : Object {
-        public signal void template_added (string blacklist_id, [DBus (signature = "(asaasay)")] Variant blacklist_template);
-        public signal void template_removed (string blacklist_id, [DBus (signature = "(asaasay)")] Variant blacklist_template);
+        public signal void template_added (
+            string blacklist_id,
+            [DBus (signature = "(asaasay)")] Variant blacklist_template
+        );
+        public signal void template_removed (
+            string blacklist_id,
+            [DBus (signature = "(asaasay)")] Variant blacklist_template
+        );
 
         [DBus (signature = "a{s(asaasay)}")]
         public abstract Variant get_templates () throws IOError;
-        public abstract void add_template (string blacklist_id, [DBus (signature = "(asaasay)")] Variant blacklist_template) throws IOError;
+        public abstract void add_template (
+            string blacklist_id,
+            [DBus (signature = "(asaasay)")] Variant blacklist_template
+        ) throws IOError;
         public abstract void remove_template (string blacklist_id) throws IOError;
     }
 
@@ -51,7 +60,11 @@ namespace SecurityPrivacy {
 
         public Blacklist () {
             try {
-                blacklist = Bus.get_proxy_sync (BusType.SESSION, "org.gnome.zeitgeist.Engine", "/org/gnome/zeitgeist/blacklist");
+                blacklist = Bus.get_proxy_sync (
+                    BusType.SESSION,
+                    "org.gnome.zeitgeist.Engine",
+                    "/org/gnome/zeitgeist/blacklist"
+                );
                 blacklist.template_added.connect (on_template_added);
                 blacklist.template_removed.connect (on_template_removed);
             } catch (Error e) {
