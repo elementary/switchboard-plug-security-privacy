@@ -31,7 +31,11 @@ public class ServiceList : Gtk.ListBox {
         var privacy_item = new ServiceItem ("document-open-recent", "tracking", _("History"));
         var lock_item = new ServiceItem ("system-lock-screen", "locking", _("Locking"));
         var firewall_item = new ServiceItem ("network-firewall", "firewall", _("Firewall"));
-        housekeeping_item = new ServiceItem ("preferences-system-privacy-housekeeping", "housekeeping", _("Housekeeping"));
+        housekeeping_item = new ServiceItem (
+            "preferences-system-privacy-housekeeping",
+            "housekeeping",
+            _("Housekeeping")
+        );
 
         add_service (privacy_item);
         add_service (lock_item);
@@ -62,7 +66,7 @@ public class ServiceList : Gtk.ListBox {
             SecurityPrivacy.location.status_switch.notify["active"].connect (() => {
                 update_service_status (location_item, SecurityPrivacy.location.status_switch.active);
             });
-        }      
+        }
     }
 
     private void update_service_status (ServiceItem service_item, bool service_status) {
@@ -70,7 +74,7 @@ public class ServiceList : Gtk.ListBox {
             service_item.status = ServiceItem.Status.ENABLED;
         } else {
             service_item.status = ServiceItem.Status.DISABLED;
-        }    
+        }
     }
 
     private void update_housekeeping_status () {

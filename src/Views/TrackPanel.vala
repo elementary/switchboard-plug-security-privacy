@@ -119,4 +119,3 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         }
     }
 }
-
