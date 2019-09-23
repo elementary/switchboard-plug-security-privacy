@@ -37,7 +37,13 @@ public class IncludeTreeView : Gtk.Grid {
     construct {
         filetype_blacklist = new SecurityPrivacy.FileTypeBlacklist (SecurityPrivacy.blacklist);
 
-        var list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (bool), typeof (string), typeof (string), typeof (string));
+        var list_store = new Gtk.ListStore (
+            Columns.N_COLUMNS,
+            typeof (bool),
+            typeof (string),
+            typeof (string),
+            typeof (string)
+        );
 
         var view = new Gtk.TreeView.with_model (list_store);
         view.vexpand = true;
@@ -83,8 +89,18 @@ public class IncludeTreeView : Gtk.Grid {
         set_inclue_iter_to_liststore (list_store, _("Documents"), "x-office-document", Zeitgeist.NFO.DOCUMENT);
         set_inclue_iter_to_liststore (list_store, _("Music"), "audio-x-generic", Zeitgeist.NFO.AUDIO);
         set_inclue_iter_to_liststore (list_store, _("Pictures"), "image-x-generic", Zeitgeist.NFO.IMAGE);
-        set_inclue_iter_to_liststore (list_store, _("Presentations"), "x-office-presentation", Zeitgeist.NFO.PRESENTATION);
-        set_inclue_iter_to_liststore (list_store, _("Spreadsheets"), "x-office-spreadsheet", Zeitgeist.NFO.SPREADSHEET);
+        set_inclue_iter_to_liststore (
+            list_store,
+            _("Presentations"),
+            "x-office-presentation",
+            Zeitgeist.NFO.PRESENTATION
+        );
+        set_inclue_iter_to_liststore (
+            list_store,
+            _("Spreadsheets"),
+            "x-office-spreadsheet",
+            Zeitgeist.NFO.SPREADSHEET
+        );
         set_inclue_iter_to_liststore (list_store, _("Videos"), "video-x-generic", Zeitgeist.NFO.VIDEO);
     }
 

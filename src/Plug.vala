@@ -96,7 +96,10 @@ namespace SecurityPrivacy {
             grid.attach (stack, 0, 3, 1, 1);
 
             try {
-                var permission = new Polkit.Permission.sync ("io.elementary.switchboard.security-privacy", new Polkit.UnixProcess (Posix.getpid ()));
+                var permission = new Polkit.Permission.sync (
+                    "io.elementary.switchboard.security-privacy",
+                    new Polkit.UnixProcess (Posix.getpid ())
+                );
 
                 var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
 
@@ -189,9 +192,21 @@ namespace SecurityPrivacy {
             map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Lock after sceen turns off")), HISTORY);
             map.set ("%s → %s".printf (display_name, _("Firewall")), FIREWALL);
             map.set ("%s → %s".printf (display_name, _("Housekeeping")), HOUSEKEEPING);
-            map.set ("%s → %s → %s".printf (display_name, _("Housekeeping"), _("Automatically delete old temporary files")), HOUSEKEEPING);
-            map.set ("%s → %s → %s".printf (display_name, _("Housekeeping"), _("Automatically delete old trashed files")), HOUSEKEEPING);
-            map.set ("%s → %s → %s".printf (display_name, _("Housekeeping"), _("Number of days to keep trashed and temporary files")), HOUSEKEEPING);
+            map.set ("%s → %s → %s".printf (
+                display_name,
+                _("Housekeeping"),
+                _("Automatically delete old temporary files")
+            ), HOUSEKEEPING);
+            map.set ("%s → %s → %s".printf (
+                display_name,
+                _("Housekeeping"),
+                _("Automatically delete old trashed files")
+            ), HOUSEKEEPING);
+            map.set ("%s → %s → %s".printf (
+                display_name,
+                _("Housekeeping"),
+                _("Number of days to keep trashed and temporary files")
+            ), HOUSEKEEPING);
             if (location_agent_installed) {
                 map.set ("%s → %s".printf (display_name, _("Location Services")), LOCATION);
             }
@@ -205,4 +220,3 @@ public Switchboard.Plug get_plug (Module module) {
     var plug = new SecurityPrivacy.Plug ();
     return plug;
 }
-

@@ -97,7 +97,17 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         int action = 0, protocol = 0, direction = 0, version = 0;
         var rules = settings.get_value ("disabled-firewall-rules");
         VariantIter iter = rules.iterator ();
-        while (iter.next ("(ssssiiii)", ref to, ref to_ports, ref from, ref from_ports, ref action, ref protocol, ref direction, ref version)) {
+        while (iter.next (
+            "(ssssiiii)",
+            ref to,
+            ref to_ports,
+            ref from,
+            ref from_ports,
+            ref action,
+            ref protocol,
+            ref direction,
+            ref version
+        )) {
             UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
             new_rule.to = to;
             new_rule.to_ports = to_ports;
@@ -308,7 +318,10 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         list_toolbar = new Gtk.Toolbar ();
         list_toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         list_toolbar.set_icon_size (Gtk.IconSize.SMALL_TOOLBAR);
-        var add_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        var add_button = new Gtk.ToolButton (
+            new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            null
+        );
         add_button.clicked.connect (() => {
             var popover_grid = new Gtk.Grid ();
             popover_grid.margin = 6;
@@ -413,7 +426,10 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         });
 
         list_toolbar.insert (add_button, -1);
-        remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR), null);
+        remove_button = new Gtk.ToolButton (
+            new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            null
+        );
         remove_button.sensitive = false;
         remove_button.clicked.connect (() => {
             Gtk.TreePath path;
