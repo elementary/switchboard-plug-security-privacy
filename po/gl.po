@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-09-23 16:23+0000\n"
+"PO-Revision-Date: 2019-09-30 14:23+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/gl/>\n"
@@ -26,7 +26,7 @@ msgstr "Seguranza e intimidade"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "Configurar devasa, pantalla de bloqueo e información da actividade"
 
 #: src/Plug.vala:101
 msgid "Some settings require administrator rights to be changed"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Precísase autenticación para configurar a devasa"
+msgstr "Requírese autenticación para executar a configuración da devasa"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
