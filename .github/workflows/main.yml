@@ -17,9 +17,12 @@ jobs:
         apt update
         apt install -y libgranite-dev libpolkit-gobject-1-dev libswitchboard-2.0-dev libzeitgeist-2.0-dev meson policykit-1 valac
     - name: Build
+      env:
+        DESTDIR: out
       run: |
         meson build
         ninja -C build
+        ninja -C build install
 
   lint:
 
