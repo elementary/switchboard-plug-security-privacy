@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-06-06 08:20+0000\n"
+"PO-Revision-Date: 2019-10-05 09:23+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -201,23 +201,21 @@ msgid "Add Rule"
 msgstr "Ajouter une règle"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr ""
-"Supprimer automatiquement les anciens fichiers déplacés à la corbeille :"
+msgstr "Supprimer automatiquement :"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "Fichiers temporaires"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Fichiers dans la corbeille"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "Nombre de jours pour considérer un fichier comme ancien :"
+msgstr ""
+"Supprimer les fichiers dans la corbeille et les fichiers temporaires après :"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -232,18 +230,21 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"Les vieux fichiers peuvent être automatiquement supprimés après %u jour pour "
+"gagner de l'espace et vous aider à protéger votre vie privée."
 msgstr[1] ""
+"Les vieux fichiers peuvent être automatiquement supprimés après %u jours "
+"pour gagner de l'espace et vous aider à protéger votre vie privée."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Jour"
+msgstr[1] "Jours"
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Verrouiller en veille :"
+msgstr "Verrouiller à l'hibernation :"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
