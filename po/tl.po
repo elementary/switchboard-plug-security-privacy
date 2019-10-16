@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2018-09-25 00:02+0000\n"
-"Last-Translator: Axel Philip Advento <badwolf.bloodseeker.rev@gmail.com>\n"
-"Language-Team: Tagalog <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2019-10-17 17:24+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: Tagalog <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/tl/>\n"
 "Language: tl\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1 && n != 2 && n != 3 && (n % 10 == 4 "
 "|| n % 10 == 6 || n % 10 == 9);\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -101,7 +101,7 @@ msgstr ""
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr ""
+msgstr "Hindi pinagana"
 
 #: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
 #: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
