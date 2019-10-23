@@ -4,6 +4,16 @@
   <extends>io.elementary.switchboard</extends>
   <name>Security &amp; Privacy</name>
   <summary>Configure firewall, screen lock, and activity information</summary>
+  <releases>
+    <release version="2.2.2" date="2019-10-21" urgency="medium">
+      <description>
+        <ul>
+          <li>Redesigned "Housekeeping" page</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
   <screenshots>
       <screenshot type="default">
           <image>https://raw.githubusercontent.com/elementary/switchboard-plug-security-privacy/master/data/screenshot.png</image>
