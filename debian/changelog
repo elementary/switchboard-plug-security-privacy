@@ -1,3 +1,38 @@
+switchboard-plug-security-privacy (2.2.2) bionic; urgency=medium
+
+  * Release 2.2.2 (#92)
+  * Delete AUTHORS
+  * Remove deb packaging from master (#91)
+  * Add Release to Actions (#90)
+  * Update translation files
+  * AppData: Add release data (#89)
+  * run installation in CI (#88)
+  * Add Lint to CI (#80)
+  * :shirt: lint the src directory with vala-lint (#86)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * ZGUtilities: remove ununused method and code style (#82)
+  * Firewall panel lint (#85)
+  * ClearUsagePopover: Code style cleanup (#83)
+  * LocationPanel: Code style cleanup (#84)
+  * BlackList.vala: lint (#81)
+  * Use GitHub CI (#79)
+  * fix conflicts again
+  * build: fix install path for switchboard plug (#78)
+  * Update translation files
+  * Make ngettext work correctly (#77)
+  * Update translation files
+  * Change "sleep" to "suspend" to unify the notation (#72)
+  * Plug: Change code name to RDNN
+  * Update translation files
+  * HouseKeepingPanel: Redesign after Onboarding (#76)
+  * Use housekeeping icon (#71)
+  * Fix eo.po
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+
+ -- Corentin Noël <tintou@mailoo.org>  Tue, 29 Oct 2019 22:11:57 +0000
+
 switchboard-plug-security-privacy (2.2.1) bionic; urgency=medium
 
   * New upstream release.
