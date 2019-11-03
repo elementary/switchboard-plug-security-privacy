@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-09-01 15:22+0000\n"
+"PO-Revision-Date: 2019-11-04 20:24+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pt/>\n"
@@ -213,7 +213,7 @@ msgstr "Ficheiros no lixo"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "Eliminar o lixo e ficheiros temporários depois:"
+msgstr "Eliminar o lixo e ficheiros temporários após:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
