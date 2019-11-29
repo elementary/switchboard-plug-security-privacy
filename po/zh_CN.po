@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-09-17 09:23+0000\n"
+"PO-Revision-Date: 2019-11-30 08:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/zh_Hans/>\n"
@@ -211,7 +211,7 @@ msgstr "已删文件"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "临时文件和已删文件的清理周期："
+msgstr "清理周期："
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -248,8 +248,7 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s 会储存本地使用数据以提供额外功能，如最近使用的文件、本地搜索等。无论此功能"
-"启用与否，数据都只储存在此设备上，不能被转移至外部设备或第三方群体。"
+"%s 会储存本地使用数据以提供额外功能，如最近使用的文件、本地搜索等。无论此功能启用与否，数据都只储存在此设备上，不能被转移至外部设备或第三方。"
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
