@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-11-30 08:25+0000\n"
+"PO-Revision-Date: 2019-12-05 05:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/zh_Hans/>\n"
@@ -104,7 +104,7 @@ msgstr "已禁用"
 #: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
 #: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
 msgid "Unknown"
-msgstr "未知"
+msgstr "未知设备"
 
 #: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
 msgid "Allow"
