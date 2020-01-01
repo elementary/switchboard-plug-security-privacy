@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2020-01-01 21:07+0000\n"
+"PO-Revision-Date: 2020-01-01 23:08+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/nl/>\n"
@@ -63,19 +63,16 @@ msgid "History"
 msgstr "Geschiedenis"
 
 #: src/Plug.vala:186
-#, fuzzy
 msgid "Clear History"
-msgstr "Verwijder geschiedenis…"
+msgstr "Verwijder geschiedenis"
 
 #: src/Plug.vala:188
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Vergrendelen in slaapstand:"
+msgstr "Vergrendelen in slaapstand"
 
 #: src/Plug.vala:189
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Vergrendelen nadat het scherm zich uitgeschakeld heeft:"
+msgstr "Vergrendelen nadat het scherm zich uitgeschakeld heeft"
 
 #: src/Plug.vala:192
 msgid "Automatically delete old temporary files"
@@ -238,7 +235,6 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
 msgstr "Vergrendelen in slaapstand:"
 
@@ -256,7 +252,7 @@ msgid ""
 msgstr ""
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
 msgstr ""
 "%s bewaart geen verdere gegevens of statistieken over het gebruik van "
@@ -268,7 +264,6 @@ msgstr ""
 "De toegevoegde functionaliteit die deze data geeft zal worden beïnvloed."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
