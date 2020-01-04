@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-23 09:57-0700\n"
-"PO-Revision-Date: 2020-01-01 23:08+0000\n"
+"PO-Revision-Date: 2020-01-05 17:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/nl/>\n"
@@ -25,7 +25,7 @@ msgstr "Authenticatie is vereist om de firewall configuratie te starten"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
 msgid "Security &amp; Privacy"
-msgstr ""
+msgstr "Beveiliging &amp; Privacy"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
@@ -33,8 +33,8 @@ msgstr "Configureer firewall-, schermvergrendeling- en activiteitsinformatie"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:11
 msgid "Redesigned \"Housekeeping\" page"
-msgstr ""
+msgstr "De “Schoonmaken” pagina is opnieuw ontworpen"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
 msgid "Translation updates"
-msgstr ""
+msgstr "Bijgewerkt vertalingen"
