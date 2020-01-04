@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2020-01-01 23:08+0000\n"
+"PO-Revision-Date: 2020-01-05 17:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/nl/>\n"
@@ -50,7 +50,7 @@ msgstr "Firewall"
 #: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "Schoonmaken"
 
 #: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -76,15 +76,15 @@ msgstr "Vergrendelen nadat het scherm zich uitgeschakeld heeft"
 
 #: src/Plug.vala:192
 msgid "Automatically delete old temporary files"
-msgstr ""
+msgstr "Verwijder automatisch oude tijdelijke bestanden"
 
 #: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
-msgstr ""
+msgstr "Verwijder automatisch oude bestanden in de prullenbak"
 
 #: src/Plug.vala:194
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
+msgstr "Aantal dagen dat verwijderde en tijdelijke bestanden worden bewaard"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -199,23 +199,23 @@ msgstr "Regel toevoegen"
 
 #: src/Views/HouseKeepingPanel.vala:35
 msgid "Automatically Delete:"
-msgstr ""
+msgstr "Automatisch verwijderen:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "Tijdelijke bestanden"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Bestanden in de prullenbak"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
-msgstr ""
+msgstr "Verwijder tijdelijke bestanden en bestanden in de prullenbak na:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
-msgstr ""
+msgstr "Prullenbak openen…"
 
 #: src/Views/HouseKeepingPanel.vala:95
 #, c-format
@@ -226,13 +226,17 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"Oude bestanden kunnen automatisch verwijderd worden na %u dag om "
+"opslagruimte te besparen en uw privacy te beschermen."
 msgstr[1] ""
+"Oude bestanden kunnen automatisch verwijderd worden na %u dagen om "
+"opslagruimte te besparen en uw privacy te beschermen."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "dag"
+msgstr[1] "dagen"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
@@ -250,6 +254,10 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s kan gebruikmaken van lokale data om extra functionaliteit aan te bieden, "
+"zoals het tonen van recente bestanden en een relevantere zoekfunctie. "
+"Ongeacht de instelling zal de data nooit vanaf dit apparaat verzonden worden "
+"of gedeeld worden met anderen."
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
@@ -296,6 +304,8 @@ msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Als er toepassingen zijn geïnstalleerd die gebruik maken van "
+"locatievoorzieningen, dan verschijnen ze automatisch hier."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
@@ -362,7 +372,7 @@ msgstr "Altijd"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "Aan:"
+msgstr "Tot:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
@@ -430,7 +440,7 @@ msgstr "Video's"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Deels ingeschakeld"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "
