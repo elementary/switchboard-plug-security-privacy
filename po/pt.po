@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-11-04 20:24+0000\n"
+"PO-Revision-Date: 2020-02-06 23:08+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -31,7 +31,7 @@ msgstr "Configurar a firewall, o bloqueio de ecrã e informações de atividade"
 #: src/Plug.vala:101
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
-"Algumas definições requerem privilégios administrativos para serem alteradas"
+"Algumas definições requerem privilégios de administrador para serem alteradas"
 
 #: src/Plug.vala:143
 msgid "Privacy"
