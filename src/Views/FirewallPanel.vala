@@ -56,7 +56,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         status_switch.notify["active"].connect (() => {
             if (loading == false) {
                 view.sensitive = status_switch.active;
-                UFWHelpers.set_status (status_switch.active);
+                Firewalld.get_default ().set_status (status_switch.active);
             }
 
             if (status_switch.active) {
@@ -78,7 +78,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         lock_button.get_permission ().notify["allowed"].connect (() => {
             loading = true;
             sensitive = lock_button.get_permission ().allowed;
-            status_switch.active = UFWHelpers.get_status ();
+            status_switch.active = Firewalld.get_default ().get_status ();
             list_store.clear ();
             remove_button.sensitive = false;
             if (status_switch.active == true) {
