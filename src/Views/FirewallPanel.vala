@@ -23,10 +23,10 @@
 public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
-    private Gtk.Toolbar list_toolbar;
+    private Gtk.ActionBar actionbar;
     private bool loading = false;
     private Gtk.Popover add_popover;
-    private Gtk.ToolButton remove_button;
+    private Gtk.Button remove_button;
     private Settings settings;
     private Gee.HashMap<string, UFWHelpers.Rule> disabled_rules;
 
@@ -315,13 +315,11 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             reload_rule_numbers ();
         });
 
-        list_toolbar = new Gtk.Toolbar ();
-        list_toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        list_toolbar.set_icon_size (Gtk.IconSize.SMALL_TOOLBAR);
-        var add_button = new Gtk.ToolButton (
-            new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
-            null
-        );
+        actionbar = new Gtk.ActionBar ();
+        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+
+        var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON);
+
         add_button.clicked.connect (() => {
             var popover_grid = new Gtk.Grid ();
             popover_grid.margin = 6;
@@ -425,11 +423,8 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             add_popover.show_all ();
         });
 
-        list_toolbar.insert (add_button, -1);
-        remove_button = new Gtk.ToolButton (
-            new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
-            null
-        );
+        actionbar.add (add_button);
+        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
         remove_button.sensitive = false;
         remove_button.clicked.connect (() => {
             Gtk.TreePath path;
@@ -450,7 +445,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             }
             show_rules ();
         });
-        list_toolbar.insert (remove_button, -1);
+        actionbar.add (remove_button);
 
         view.cursor_changed.connect (() => {
             remove_button.sensitive = true;
@@ -463,7 +458,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         scrolled.add (view);
 
         view_grid.attach (scrolled, 0, 0, 1, 1);
-        view_grid.attach (list_toolbar, 0, 1, 1, 1);
+        view_grid.attach (actionbar, 0, 1, 1, 1);
 
         var frame = new Gtk.Frame (null);
         frame.add (view_grid);
