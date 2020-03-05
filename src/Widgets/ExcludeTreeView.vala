@@ -58,10 +58,7 @@ public class ExcludeTreeView : Gtk.Grid {
         scrolled.expand = true;
         scrolled.add (view);
 
-        var add_app_button = new Gtk.ToolButton (
-            new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
-            null
-        );
+        var add_app_button = new Gtk.Button.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON);
         add_app_button.tooltip_text = _("Add Application…");
         add_app_button.clicked.connect (() => {
             if (app_chooser.visible == false) {
@@ -76,10 +73,7 @@ public class ExcludeTreeView : Gtk.Grid {
             app_blacklist.block (file.get_basename ());
         });
 
-        var add_folder_button = new Gtk.ToolButton (
-            new Gtk.Image.from_icon_name ("folder-new-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
-            null
-        );
+        var add_folder_button = new Gtk.Button.from_icon_name ("folder-new-symbolic", Gtk.IconSize.BUTTON);
         add_folder_button.tooltip_text = _("Add Folder…");
         add_folder_button.clicked.connect (() => {
             var chooser = new Gtk.FileChooserNative (
@@ -100,10 +94,7 @@ public class ExcludeTreeView : Gtk.Grid {
             chooser.destroy ();
         });
 
-        var remove_button = new Gtk.ToolButton (
-            new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
-            null
-        );
+        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
         remove_button.tooltip_text = _("Delete");
         remove_button.sensitive = false;
         remove_button.clicked.connect (() => {
@@ -134,17 +125,16 @@ public class ExcludeTreeView : Gtk.Grid {
 #endif
         });
 
-        var list_toolbar = new Gtk.Toolbar ();
-        list_toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        list_toolbar.set_icon_size (Gtk.IconSize.SMALL_TOOLBAR);
-        list_toolbar.insert (add_app_button, -1);
-        list_toolbar.insert (add_folder_button, -1);
-        list_toolbar.insert (remove_button, -1);
+        var actionbar = new Gtk.ActionBar ();
+        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.add (add_app_button);
+        actionbar.add (add_folder_button);
+        actionbar.add (remove_button);
 
         var frame_grid = new Gtk.Grid ();
         frame_grid.orientation = Gtk.Orientation.VERTICAL;
         frame_grid.add (scrolled);
-        frame_grid.add (list_toolbar);
+        frame_grid.add (actionbar);
 
         var frame = new Gtk.Frame (null);
         frame.add (frame_grid);
