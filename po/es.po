@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2020-03-06 05:06+0000\n"
+"PO-Revision-Date: 2020-03-10 17:09+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/es/>\n"
@@ -30,8 +30,7 @@ msgstr "Configurar cortafuegos, bloqueo de pantalla e información de actividad"
 
 #: src/Plug.vala:101
 msgid "Some settings require administrator rights to be changed"
-msgstr ""
-"Algunos ajustes requieren permisos de administrador para ser modificados"
+msgstr "Se necesitan privilegios administrativos para cambiar algunas opciones"
 
 #: src/Plug.vala:143
 msgid "Privacy"
@@ -95,7 +94,7 @@ msgstr "Para configurar el cortafuegos necesita autenticarse"
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
-msgstr "Habilitado"
+msgstr "Activado"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
