@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2019-12-15 02:07+0000\n"
+"PO-Revision-Date: 2020-03-19 19:09+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ar/>\n"
@@ -40,7 +40,7 @@ msgstr "الخصوصية"
 #: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
-msgstr ""
+msgstr "قفل"
 
 #: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
@@ -51,7 +51,7 @@ msgstr "جدار الحماية"
 #: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:34
 msgid "Housekeeping"
-msgstr ""
+msgstr "تنظيف النظام"
 
 #: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:58
@@ -117,11 +117,11 @@ msgstr "رفض"
 
 #: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
 msgid "Reject"
-msgstr ""
+msgstr "رفض"
 
 #: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
 msgid "Limit"
-msgstr ""
+msgstr "الحد"
 
 #: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
 msgid "In"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: src/Views/FirewallPanel.vala:280
 msgid "Version"
-msgstr ""
+msgstr "الإصدار"
 
 #: src/Views/FirewallPanel.vala:281
 msgid "Action"
@@ -175,7 +175,7 @@ msgstr ""
 
 #: src/Views/FirewallPanel.vala:339
 msgid "Version:"
-msgstr ""
+msgstr "الإصدار:"
 
 #: src/Views/FirewallPanel.vala:344
 msgid "Both"
@@ -192,7 +192,7 @@ msgstr "المنافذ:"
 #: src/Views/FirewallPanel.vala:358
 #, c-format
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d أو %d-%d"
 
 #: src/Views/FirewallPanel.vala:360
 msgid "Add Rule"
@@ -200,7 +200,7 @@ msgstr "إضافة قاعدة"
 
 #: src/Views/HouseKeepingPanel.vala:35
 msgid "Automatically Delete:"
-msgstr "حذف تلقائي:"
+msgstr "الحذف تلقائيًا:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
@@ -227,21 +227,41 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"يمكن حذف الملفات القديمة تلقائيًا بعد%u يوم لتوفير مساحة والمساعدة في حماية "
+"خصوصيتك."
 msgstr[1] ""
+"يمكن حذف الملفات القديمة تلقائيًا بعد%u يوم لتوفير مساحة والمساعدة في حماية "
+"خصوصيتك."
+msgstr[2] ""
+"يمكن حذف الملفات القديمة تلقائيًا بعد%u يوم لتوفير مساحة والمساعدة في حماية "
+"خصوصيتك."
+msgstr[3] ""
+"يمكن حذف الملفات القديمة تلقائيًا بعد%u يوم لتوفير مساحة والمساعدة في حماية "
+"خصوصيتك."
+msgstr[4] ""
+"يمكن حذف الملفات القديمة تلقائيًا بعد%u يوم لتوفير مساحة والمساعدة في حماية "
+"خصوصيتك."
+msgstr[5] ""
+"يمكن حذف الملفات القديمة تلقائيًا بعد%u يوم لتوفير مساحة والمساعدة في حماية "
+"خصوصيتك."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "يوم"
+msgstr[1] "يوم"
+msgstr[2] "يومان"
+msgstr[3] "يوم"
+msgstr[4] "بوم"
+msgstr[5] "يوم"
 
 #: src/Views/LockPanel.vala:35
 msgid "Lock on suspend:"
-msgstr ""
+msgstr "قفل عند السكون:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "القفل بعد إيقاف تشغيل الشاشة:"
 
 #: src/Views/TrackPanel.vala:29
 #, c-format
@@ -251,21 +271,26 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s يمكن تخزين بيانات الاستخدام المحلي لتوفير وظائف إضافية مثل عرض الملفات "
+"المستخدمة مؤخرًا والبحث المحلي الأكثر صلة. بغض النظر عن هذا الإعداد، فلن يتم "
+"إرسال بيانات الاستخدام خارج هذا الجهاز أو لأطراف ثالثة."
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
+msgstr "%s لن يحتفظ بأي بيانات استخدام أخرى."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
-msgstr ""
+msgstr "ستتأثر الوظيفة الإضافية التي توفرها هذه البيانات."
 
 #: src/Views/TrackPanel.vala:39
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
+"قد لا يمنع هذا التطبيقات من تسجيل بيانات الاستخدام الخاصة بها ، مثل سجل "
+"المتصفح."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
@@ -281,44 +306,44 @@ msgstr "نظامك"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "اسمح للتطبيقات أدناه بتحديد موقعك"
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr ""
+msgstr "لا توجد تطبيقات تستخدم خدمات الموقع"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
-msgstr ""
+msgstr "عند تثبيت التطبيقات التي تستخدم خدمات الموقع ، ستظهر تلقائيًا هنا."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "تم تعطيل خدمات الموقع"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
-msgstr ""
+msgstr "أثناء تعطيل خدمات الموقع ، سيتم رفض طلبات الموقع من التطبيقات تلقائيًا."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
-msgstr ""
+msgstr "ستتأثر الوظائف الإضافية التي يوفرها الوصول إلى الموقع في هذه التطبيقات."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
-msgstr ""
+msgstr "لن يمنع هذا التطبيقات من محاولة تحديد موقعك بناءً على عنوان IP."
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr ""
+msgstr "اسمح لـ%s بإستخدام خدمات الموقع"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
@@ -326,7 +351,7 @@ msgstr "تطبيق البحث"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
-msgstr ""
+msgstr "إزالة الملفات التي تم جمعها من النظام وبيانات استخدام التطبيق من:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
@@ -410,7 +435,7 @@ msgstr "العروض التقديمية"
 
 #: src/Widgets/IncludeTreeView.vala:87
 msgid "Spreadsheets"
-msgstr ""
+msgstr "جداول البيانات"
 
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Videos"
