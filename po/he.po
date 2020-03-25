@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-26 16:26-0700\n"
-"PO-Revision-Date: 2018-12-20 00:10+0000\n"
+"PO-Revision-Date: 2020-03-26 23:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -131,14 +131,14 @@ msgid "Out"
 msgstr "יוצא"
 
 #: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
-#, fuzzy, c-format
+#, c-format
 msgid "%s Ports %s"
-msgstr "פתחות"
+msgstr "%s פתחות %s"
 
 #: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
-#, fuzzy, c-format
+#, c-format
 msgid "%s Port %s"
-msgstr "פתחות"
+msgstr "%s פתחה %s"
 
 #: src/Views/FirewallPanel.vala:280
 msgid "Version"
@@ -198,22 +198,20 @@ msgid "Add Rule"
 msgstr "הוספת כלל"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "מחיקה אוטומטית של קבצים ישנים שהושלכו לאשפה:"
+msgstr "מחיקה אוטומטית:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "קבצים זמניים"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "קבצים שהושלכו לאשפה"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "מספר הימים לשמירת קבצים זמניים וכאלו שבאשפה:"
+msgstr "מחיקת קבצים שהושלכו לאשפה וזמניים לאחר:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -228,18 +226,21 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"ניתן למחוק קבצים ישנים אוטומטית לאחר יום כדי לחסוך במקום ולסייע בהגנה על "
+"הפרטיות שלך."
 msgstr[1] ""
+"ניתן למחוק קבצים ישנים אוטומטית לאחר %u ימים כדי לחסוך במקום ולסייע בהגנה על "
+"הפרטיות שלך."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "יום"
+msgstr[1] "ימים"
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "נעילה עם שינה:"
+msgstr "נעילה עם השהיה:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
