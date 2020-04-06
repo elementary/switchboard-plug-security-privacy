@@ -5,7 +5,7 @@
   <name>Security &amp; Privacy</name>
   <summary>Configure firewall, screen lock, and activity information</summary>
   <releases>
-    <release version="2.2.3" date="2020-04-05" urgency="medium">
+    <release version="2.2.3" date="2020-04-06" urgency="medium">
       <description>
         <ul>
           <li>Translation updates</li>
