@@ -5,6 +5,13 @@
   <name>Security &amp; Privacy</name>
   <summary>Configure firewall, screen lock, and activity information</summary>
   <releases>
+    <release version="2.2.3" date="2020-04-05" urgency="medium">
+      <description>
+        <ul>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.2.2" date="2019-10-29" urgency="medium">
       <description>
         <ul>
