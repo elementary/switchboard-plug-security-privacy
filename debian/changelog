@@ -1,3 +1,17 @@
+switchboard-plug-security-privacy (2.2.3) bionic; urgency=medium
+
+  * Release 2.2.3 (#100)
+  * Update translation files
+  * Update translation files
+  * Update translation template
+  * Update io.elementary.switchboard.security-privacy.appdata.xml.in
+  * Switch to ActionBar (#99)
+  * Switch from Toolbar to Actionbar (#98)
+  * Remove unused pot file (#94)
+  * Add Gettext Updates to Actions
+
+ -- Corentin Noël <tintou@mailoo.org>  Wed, 08 Apr 2020 20:08:10 +0000
+
 switchboard-plug-security-privacy (2.2.2) bionic; urgency=medium
 
   * Release 2.2.2 (#92)
