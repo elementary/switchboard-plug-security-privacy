@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-23 09:57-0700\n"
+"POT-Creation-Date: 2020-04-06 17:05+0000\n"
 "PO-Revision-Date: 2019-12-20 16:09+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -34,9 +34,10 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "Güvenlik duvarı, ekran kilidi ve aktivite bilgisini yapılandırın"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:11
-msgid "Redesigned \"Housekeeping\" page"
-msgstr "\"Bakım ve Temizlik\" sayfası yeniden tasarlandı"
-
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:19
 msgid "Translation updates"
 msgstr "Çeviriler güncellendi"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
+msgid "Redesigned \"Housekeeping\" page"
+msgstr "\"Bakım ve Temizlik\" sayfası yeniden tasarlandı"

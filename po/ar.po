@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-26 16:26-0700\n"
+"POT-Creation-Date: 2020-04-06 17:05+0000\n"
 "PO-Revision-Date: 2020-03-19 19:09+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -29,61 +29,61 @@ msgstr "الأمن و الخصوصية"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "قم بتعديل جدار الحماية, قفل الشاشة و المعلومات حول نشاطك"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
 msgstr "تتطلب بعض الإعدادات تغيير الصلاحيات للمسؤول"
 
-#: src/Plug.vala:143
+#: src/Plug.vala:146
 msgid "Privacy"
 msgstr "الخصوصية"
 
-#: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
+#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "قفل"
 
-#: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "جدار الحماية"
 
-#: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
-#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
-#: src/Widgets/ServiceList.vala:34
+#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
+#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "تنظيف النظام"
 
-#: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:58
+#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "خدمات الموقع"
 
-#: src/Plug.vala:185 src/Plug.vala:186 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "التاريخ"
 
-#: src/Plug.vala:186
+#: src/Plug.vala:189
 msgid "Clear History"
 msgstr "مسح التاريخ"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:191
 msgid "Lock on sleep"
 msgstr "اقفل عند السكون"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:192
 msgid "Lock after sceen turns off"
 msgstr "قفل بعد إيقاف تشغيل الشاشة"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
 msgstr "حذف الملفات المؤقتة القديمة تلقائيًا"
 
-#: src/Plug.vala:193
+#: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
 msgstr "حذف الملفات القديمة في المهملات تلقائيًا"
 
-#: src/Plug.vala:194
+#: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
 msgstr "عدد الأيام للاحتفاظ بالملفات المحذوفة والمؤقتة"
 
@@ -91,7 +91,7 @@ msgstr "عدد الأيام للاحتفاظ بالملفات المحذوفة �
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "مطلوب المصادقة لتشغيل اعداد جدار الحماية"
 
-#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
@@ -102,99 +102,99 @@ msgstr "مفعل"
 msgid "Disabled"
 msgstr "غير مفعل"
 
-#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
-#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
+#: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
 msgid "Unknown"
 msgstr "غير معروف"
 
-#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+#: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
 msgid "Allow"
 msgstr "اسمح"
 
-#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+#: src/Views/FirewallPanel.vala:217 src/Views/FirewallPanel.vala:338
 msgid "Deny"
 msgstr "رفض"
 
-#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:339
 msgid "Reject"
 msgstr "رفض"
 
-#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:340
 msgid "Limit"
 msgstr "الحد"
 
-#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:361
 msgid "In"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:362
 msgid "Out"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
 #, c-format
 msgid "%s Ports %s"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
 #, c-format
 msgid "%s Port %s"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:280
+#: src/Views/FirewallPanel.vala:290
 msgid "Version"
 msgstr "الإصدار"
 
-#: src/Views/FirewallPanel.vala:281
+#: src/Views/FirewallPanel.vala:291
 msgid "Action"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:282
+#: src/Views/FirewallPanel.vala:292
 msgid "Protocol"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:283
+#: src/Views/FirewallPanel.vala:293
 msgid "Direction"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:284
+#: src/Views/FirewallPanel.vala:294
 msgid "To"
 msgstr "إلى"
 
-#: src/Views/FirewallPanel.vala:285
+#: src/Views/FirewallPanel.vala:295
 msgid "From"
 msgstr "من"
 
-#: src/Views/FirewallPanel.vala:323
+#: src/Views/FirewallPanel.vala:334
 msgid "Action:"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:332
+#: src/Views/FirewallPanel.vala:343
 msgid "Protocol:"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:350
 msgid "Version:"
 msgstr "الإصدار:"
 
-#: src/Views/FirewallPanel.vala:344
+#: src/Views/FirewallPanel.vala:355
 msgid "Both"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:347
+#: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:354
+#: src/Views/FirewallPanel.vala:365
 msgid "Ports:"
 msgstr "المنافذ:"
 
-#: src/Views/FirewallPanel.vala:358
+#: src/Views/FirewallPanel.vala:369
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d أو %d-%d"
 
-#: src/Views/FirewallPanel.vala:360
+#: src/Views/FirewallPanel.vala:371
 msgid "Add Rule"
 msgstr "إضافة قاعدة"
 
@@ -332,7 +332,8 @@ msgstr "أثناء تعطيل خدمات الموقع ، سيتم رفض طلب�
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
-msgstr "ستتأثر الوظائف الإضافية التي يوفرها الوصول إلى الموقع في هذه التطبيقات."
+msgstr ""
+"ستتأثر الوظائف الإضافية التي يوفرها الوصول إلى الموقع في هذه التطبيقات."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
@@ -381,63 +382,63 @@ msgstr "إلى:"
 msgid "Clear Data"
 msgstr "مسح البيانات"
 
-#: src/Widgets/ExcludeTreeView.vala:56
+#: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
 msgstr "أضف تطبيق…"
 
-#: src/Widgets/ExcludeTreeView.vala:71
+#: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
 msgstr "أضف مجلد…"
 
-#: src/Widgets/ExcludeTreeView.vala:74
+#: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
 msgstr "اختر مجلدا لاضافته في القائمة السوداء"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
 msgstr "أضف"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
 msgstr "الغاء"
 
-#: src/Widgets/ExcludeTreeView.vala:92
+#: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
 msgstr "حذف"
 
-#: src/Widgets/ExcludeTreeView.vala:137
+#: src/Widgets/ExcludeTreeView.vala:142
 msgid "Do not collect data from the following:"
 msgstr "لا تجمع بيانات من التالي:"
 
-#: src/Widgets/IncludeTreeView.vala:76
+#: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
 msgstr "مصادر البيانات:"
 
-#: src/Widgets/IncludeTreeView.vala:82
+#: src/Widgets/IncludeTreeView.vala:88
 msgid "Chat Logs"
 msgstr "سجل الدردشات"
 
-#: src/Widgets/IncludeTreeView.vala:83
+#: src/Widgets/IncludeTreeView.vala:89
 msgid "Documents"
 msgstr "المستندات"
 
-#: src/Widgets/IncludeTreeView.vala:84
+#: src/Widgets/IncludeTreeView.vala:90
 msgid "Music"
 msgstr "الموسيقى"
 
-#: src/Widgets/IncludeTreeView.vala:85
+#: src/Widgets/IncludeTreeView.vala:91
 msgid "Pictures"
 msgstr "الصور"
 
-#: src/Widgets/IncludeTreeView.vala:86
+#: src/Widgets/IncludeTreeView.vala:94
 msgid "Presentations"
 msgstr "العروض التقديمية"
 
-#: src/Widgets/IncludeTreeView.vala:87
+#: src/Widgets/IncludeTreeView.vala:100
 msgid "Spreadsheets"
 msgstr "جداول البيانات"
 
-#: src/Widgets/IncludeTreeView.vala:88
+#: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "مقاطع الفيديو"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-26 16:26-0700\n"
+"POT-Creation-Date: 2020-04-06 17:05+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Albanian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,65 +28,65 @@ msgstr "Siguria dhe Privatësia"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "Disa parametra kanë nevojë për të drejtat e administratorit për tu ndryshuar"
 
-#: src/Plug.vala:143
+#: src/Plug.vala:146
 msgid "Privacy"
 msgstr "Privatësia"
 
-#: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
+#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Bllokimi"
 
-#: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Firewall"
 
-#: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
-#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
-#: src/Widgets/ServiceList.vala:34
+#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
+#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:58
+#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr ""
 
-#: src/Plug.vala:185 src/Plug.vala:186 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr ""
 
-#: src/Plug.vala:186
+#: src/Plug.vala:189
 #, fuzzy
 msgid "Clear History"
 msgstr "Pastro të dhënat"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:191
 #, fuzzy
 msgid "Lock on sleep"
 msgstr "Bllokoje kur të pezullohet:"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:192
 #, fuzzy
 msgid "Lock after sceen turns off"
 msgstr "Bllokoje kur të fiket ekrani:"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
 msgstr ""
 
-#: src/Plug.vala:193
+#: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
 msgstr ""
 
-#: src/Plug.vala:194
+#: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
@@ -105,101 +105,101 @@ msgstr ""
 msgid "Disabled"
 msgstr "Çaktivizuar"
 
-#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
-#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
+#: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
 msgid "Unknown"
 msgstr "E panjohur"
 
-#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+#: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
 msgid "Allow"
 msgstr "Lejo"
 
-#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+#: src/Views/FirewallPanel.vala:217 src/Views/FirewallPanel.vala:338
 msgid "Deny"
 msgstr "Moho"
 
-#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:339
 msgid "Reject"
 msgstr "Refuzo"
 
-#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:340
 msgid "Limit"
 msgstr "Kufizo"
 
-#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:361
 msgid "In"
 msgstr "Hyrje"
 
-#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:362
 msgid "Out"
 msgstr "Dalje"
 
-#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
 #, c-format
 msgid "%s Ports %s"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
 #, c-format
 msgid "%s Port %s"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:280
+#: src/Views/FirewallPanel.vala:290
 msgid "Version"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:281
+#: src/Views/FirewallPanel.vala:291
 msgid "Action"
 msgstr "Veprimi"
 
-#: src/Views/FirewallPanel.vala:282
+#: src/Views/FirewallPanel.vala:292
 msgid "Protocol"
 msgstr "Protokolli"
 
-#: src/Views/FirewallPanel.vala:283
+#: src/Views/FirewallPanel.vala:293
 msgid "Direction"
 msgstr "Drejtimi"
 
-#: src/Views/FirewallPanel.vala:284
+#: src/Views/FirewallPanel.vala:294
 #, fuzzy
 msgid "To"
 msgstr "Deri më"
 
-#: src/Views/FirewallPanel.vala:285
+#: src/Views/FirewallPanel.vala:295
 #, fuzzy
 msgid "From"
 msgstr "Nga:"
 
-#: src/Views/FirewallPanel.vala:323
+#: src/Views/FirewallPanel.vala:334
 msgid "Action:"
 msgstr "Veprimi:"
 
-#: src/Views/FirewallPanel.vala:332
+#: src/Views/FirewallPanel.vala:343
 msgid "Protocol:"
 msgstr "Protokolli:"
 
-#: src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:350
 msgid "Version:"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:344
+#: src/Views/FirewallPanel.vala:355
 msgid "Both"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:347
+#: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
 msgstr "Drejtimi:"
 
-#: src/Views/FirewallPanel.vala:354
+#: src/Views/FirewallPanel.vala:365
 msgid "Ports:"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:358
+#: src/Views/FirewallPanel.vala:369
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d ose %d-%d"
 
-#: src/Views/FirewallPanel.vala:360
+#: src/Views/FirewallPanel.vala:371
 msgid "Add Rule"
 msgstr "Shto rregull"
 
@@ -365,63 +365,63 @@ msgstr "Deri më"
 msgid "Clear Data"
 msgstr "Pastro të dhënat"
 
-#: src/Widgets/ExcludeTreeView.vala:56
+#: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
 msgstr "Shto program..."
 
-#: src/Widgets/ExcludeTreeView.vala:71
+#: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
 msgstr "Shto dosje..."
 
-#: src/Widgets/ExcludeTreeView.vala:74
+#: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
 msgstr "Zgjidh dosjen që do ta përjashtosh"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
 msgstr "Shto"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
 msgstr "Anulo"
 
-#: src/Widgets/ExcludeTreeView.vala:92
+#: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
 msgstr "Fshij"
 
-#: src/Widgets/ExcludeTreeView.vala:137
+#: src/Widgets/ExcludeTreeView.vala:142
 msgid "Do not collect data from the following:"
 msgstr "Mos mbledh të dhëna nga:"
 
-#: src/Widgets/IncludeTreeView.vala:76
+#: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
 msgstr "Burimet e të dhënave:"
 
-#: src/Widgets/IncludeTreeView.vala:82
+#: src/Widgets/IncludeTreeView.vala:88
 msgid "Chat Logs"
 msgstr ""
 
-#: src/Widgets/IncludeTreeView.vala:83
+#: src/Widgets/IncludeTreeView.vala:89
 msgid "Documents"
 msgstr "Dokumentet"
 
-#: src/Widgets/IncludeTreeView.vala:84
+#: src/Widgets/IncludeTreeView.vala:90
 msgid "Music"
 msgstr "Muzikë"
 
-#: src/Widgets/IncludeTreeView.vala:85
+#: src/Widgets/IncludeTreeView.vala:91
 msgid "Pictures"
 msgstr "Fotot"
 
-#: src/Widgets/IncludeTreeView.vala:86
+#: src/Widgets/IncludeTreeView.vala:94
 msgid "Presentations"
 msgstr "Prezantimet"
 
-#: src/Widgets/IncludeTreeView.vala:87
+#: src/Widgets/IncludeTreeView.vala:100
 msgid "Spreadsheets"
 msgstr "Fletët elektronike"
 
-#: src/Widgets/IncludeTreeView.vala:88
+#: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Videot"
 

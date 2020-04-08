@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-23 09:57-0700\n"
+"POT-Creation-Date: 2020-04-06 17:05+0000\n"
 "PO-Revision-Date: 2019-10-28 19:24+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -32,9 +32,10 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "Agordi fajroŝirmilon, ekranan ŝloson, kaj aktivadajn informojn"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:11
-msgid "Redesigned \"Housekeeping\" page"
-msgstr "Refasonado de la paĝo „Mastrumado“"
-
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:19
 msgid "Translation updates"
 msgstr "Tradukaj ĝisdatigoj"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
+msgid "Redesigned \"Housekeeping\" page"
+msgstr "Refasonado de la paĝo „Mastrumado“"

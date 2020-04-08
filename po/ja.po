@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-26 16:26-0700\n"
+"POT-Creation-Date: 2020-04-06 17:05+0000\n"
 "PO-Revision-Date: 2020-01-25 15:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -28,61 +28,61 @@ msgstr "セキュリティーとプライバシー"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "ファイアウォール、スクリーンロックとアクティビティ情報を設定します"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
 msgstr "一部の設定変更には管理者権限が必要です"
 
-#: src/Plug.vala:143
+#: src/Plug.vala:146
 msgid "Privacy"
 msgstr "プライバシー"
 
-#: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
+#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "ロック"
 
-#: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "ファイアウォール"
 
-#: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
-#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
-#: src/Widgets/ServiceList.vala:34
+#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
+#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "自動削除"
 
-#: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:58
+#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "位置情報サービス"
 
-#: src/Plug.vala:185 src/Plug.vala:186 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "履歴"
 
-#: src/Plug.vala:186
+#: src/Plug.vala:189
 msgid "Clear History"
 msgstr "履歴を削除"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:191
 msgid "Lock on sleep"
 msgstr "スリープ時にロック"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:192
 msgid "Lock after sceen turns off"
 msgstr "画面の電源がオフのときにロック"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
 msgstr "古い一時ファイルを自動的に削除"
 
-#: src/Plug.vala:193
+#: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
 msgstr "ゴミ箱に移動した古いファイルを自動的に削除"
 
-#: src/Plug.vala:194
+#: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する日数"
 
@@ -90,7 +90,7 @@ msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "ファイアウォールの設定を実行するには認証が必要です"
 
-#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
@@ -101,99 +101,99 @@ msgstr "有効"
 msgid "Disabled"
 msgstr "無効"
 
-#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
-#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
+#: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
 msgid "Unknown"
 msgstr "不明"
 
-#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+#: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
 msgid "Allow"
 msgstr "許可"
 
-#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+#: src/Views/FirewallPanel.vala:217 src/Views/FirewallPanel.vala:338
 msgid "Deny"
 msgstr "拒否"
 
-#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:339
 msgid "Reject"
 msgstr "却下"
 
-#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:340
 msgid "Limit"
 msgstr "制限"
 
-#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:361
 msgid "In"
 msgstr "入力"
 
-#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:362
 msgid "Out"
 msgstr "出力"
 
-#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
 #, c-format
 msgid "%s Ports %s"
 msgstr "%s ポート %s"
 
-#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
 #, c-format
 msgid "%s Port %s"
 msgstr "%s ポート %s"
 
-#: src/Views/FirewallPanel.vala:280
+#: src/Views/FirewallPanel.vala:290
 msgid "Version"
 msgstr "バージョン"
 
-#: src/Views/FirewallPanel.vala:281
+#: src/Views/FirewallPanel.vala:291
 msgid "Action"
 msgstr "動作"
 
-#: src/Views/FirewallPanel.vala:282
+#: src/Views/FirewallPanel.vala:292
 msgid "Protocol"
 msgstr "プロトコル"
 
-#: src/Views/FirewallPanel.vala:283
+#: src/Views/FirewallPanel.vala:293
 msgid "Direction"
 msgstr "方向"
 
-#: src/Views/FirewallPanel.vala:284
+#: src/Views/FirewallPanel.vala:294
 msgid "To"
 msgstr "宛先"
 
-#: src/Views/FirewallPanel.vala:285
+#: src/Views/FirewallPanel.vala:295
 msgid "From"
 msgstr "送信元"
 
-#: src/Views/FirewallPanel.vala:323
+#: src/Views/FirewallPanel.vala:334
 msgid "Action:"
 msgstr "操作:"
 
-#: src/Views/FirewallPanel.vala:332
+#: src/Views/FirewallPanel.vala:343
 msgid "Protocol:"
 msgstr "プロトコル:"
 
-#: src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:350
 msgid "Version:"
 msgstr "バージョン:"
 
-#: src/Views/FirewallPanel.vala:344
+#: src/Views/FirewallPanel.vala:355
 msgid "Both"
 msgstr "両方"
 
-#: src/Views/FirewallPanel.vala:347
+#: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
 msgstr "方向:"
 
-#: src/Views/FirewallPanel.vala:354
+#: src/Views/FirewallPanel.vala:365
 msgid "Ports:"
 msgstr "ポート:"
 
-#: src/Views/FirewallPanel.vala:358
+#: src/Views/FirewallPanel.vala:369
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d または %d-%d"
 
-#: src/Views/FirewallPanel.vala:360
+#: src/Views/FirewallPanel.vala:371
 msgid "Add Rule"
 msgstr "ルールを追加"
 
@@ -225,7 +225,9 @@ msgid ""
 msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr[0] "古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保でき、プライバシーの保護に役立ちます。"
+msgstr[0] ""
+"古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保で"
+"き、プライバシーの保護に役立ちます。"
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
@@ -248,8 +250,10 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s は、最近使用したファイルやそのほかの関連するローカル検索の提案といった追加機能を提供するために、ローカルの使用状況データを保存できます。この設定が有"
-"効であっても、使用状況データがこのデバイスから転送されたり、サードパーティーに転送されたりすることはありません。"
+"%s は、最近使用したファイルやそのほかの関連するローカル検索の提案といった追加"
+"機能を提供するために、ローカルの使用状況データを保存できます。この設定が有効"
+"であっても、使用状況データがこのデバイスから転送されたり、サードパーティーに"
+"転送されたりすることはありません。"
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
@@ -363,63 +367,63 @@ msgstr "終了:"
 msgid "Clear Data"
 msgstr "データを削除"
 
-#: src/Widgets/ExcludeTreeView.vala:56
+#: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
 msgstr "アプリケーションを追加…"
 
-#: src/Widgets/ExcludeTreeView.vala:71
+#: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
 msgstr "フォルダーを追加…"
 
-#: src/Widgets/ExcludeTreeView.vala:74
+#: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
 msgstr "除外リストに追加するフォルダーを選択"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
 msgstr "追加"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/Widgets/ExcludeTreeView.vala:92
+#: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
 msgstr "削除"
 
-#: src/Widgets/ExcludeTreeView.vala:137
+#: src/Widgets/ExcludeTreeView.vala:142
 msgid "Do not collect data from the following:"
 msgstr "以下からデータを収集しない:"
 
-#: src/Widgets/IncludeTreeView.vala:76
+#: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
 msgstr "データソース:"
 
-#: src/Widgets/IncludeTreeView.vala:82
+#: src/Widgets/IncludeTreeView.vala:88
 msgid "Chat Logs"
 msgstr "チャットログ"
 
-#: src/Widgets/IncludeTreeView.vala:83
+#: src/Widgets/IncludeTreeView.vala:89
 msgid "Documents"
 msgstr "ドキュメント"
 
-#: src/Widgets/IncludeTreeView.vala:84
+#: src/Widgets/IncludeTreeView.vala:90
 msgid "Music"
 msgstr "音楽"
 
-#: src/Widgets/IncludeTreeView.vala:85
+#: src/Widgets/IncludeTreeView.vala:91
 msgid "Pictures"
 msgstr "写真"
 
-#: src/Widgets/IncludeTreeView.vala:86
+#: src/Widgets/IncludeTreeView.vala:94
 msgid "Presentations"
 msgstr "プレゼンテーション"
 
-#: src/Widgets/IncludeTreeView.vala:87
+#: src/Widgets/IncludeTreeView.vala:100
 msgid "Spreadsheets"
 msgstr "スプレッドシート"
 
-#: src/Widgets/IncludeTreeView.vala:88
+#: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "動画"
 

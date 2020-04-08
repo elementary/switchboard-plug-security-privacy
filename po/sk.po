@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-26 16:26-0700\n"
+"POT-Creation-Date: 2020-04-06 17:05+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -29,64 +29,64 @@ msgstr "Bezpečnosť & Súkromie"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Nastav firewall, zámok obrazovky a informácie o aktivite"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
 msgstr "Niektoré nastavenia vyžadujú zmenu administrátorských práv"
 
-#: src/Plug.vala:143
+#: src/Plug.vala:146
 msgid "Privacy"
 msgstr "Súkromie"
 
-#: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
+#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Uzamknutie"
 
-#: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Firewall"
 
-#: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
-#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
-#: src/Widgets/ServiceList.vala:34
+#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
+#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:58
+#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr ""
 
-#: src/Plug.vala:185 src/Plug.vala:186 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr ""
 
-#: src/Plug.vala:186
+#: src/Plug.vala:189
 #, fuzzy
 msgid "Clear History"
 msgstr "Vymazať údaje"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:191
 #, fuzzy
 msgid "Lock on sleep"
 msgstr "Zamknúť pri spánku:"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:192
 #, fuzzy
 msgid "Lock after sceen turns off"
 msgstr "Zamknúť po vypnutí obrazovky:"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
 msgstr ""
 
-#: src/Plug.vala:193
+#: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
 msgstr ""
 
-#: src/Plug.vala:194
+#: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Je vyžadované overenie pre spustenie konfigurovania Firewallu"
 
-#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
@@ -105,101 +105,101 @@ msgstr ""
 msgid "Disabled"
 msgstr "Zakázané"
 
-#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
-#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
+#: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
 msgid "Unknown"
 msgstr "Neznámy"
 
-#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+#: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
 msgid "Allow"
 msgstr "Povoliť"
 
-#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+#: src/Views/FirewallPanel.vala:217 src/Views/FirewallPanel.vala:338
 msgid "Deny"
 msgstr "Zakázať"
 
-#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:339
 msgid "Reject"
 msgstr "Zamietnuť"
 
-#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:340
 msgid "Limit"
 msgstr "Obmedzenie"
 
-#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:361
 msgid "In"
 msgstr "Vstup"
 
-#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:362
 msgid "Out"
 msgstr "Výstup"
 
-#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
 #, fuzzy, c-format
 msgid "%s Ports %s"
 msgstr "Porty"
 
-#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
 #, fuzzy, c-format
 msgid "%s Port %s"
 msgstr "Porty"
 
-#: src/Views/FirewallPanel.vala:280
+#: src/Views/FirewallPanel.vala:290
 msgid "Version"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:281
+#: src/Views/FirewallPanel.vala:291
 msgid "Action"
 msgstr "Akcia"
 
-#: src/Views/FirewallPanel.vala:282
+#: src/Views/FirewallPanel.vala:292
 msgid "Protocol"
 msgstr "Protokol"
 
-#: src/Views/FirewallPanel.vala:283
+#: src/Views/FirewallPanel.vala:293
 msgid "Direction"
 msgstr "Smer"
 
-#: src/Views/FirewallPanel.vala:284
+#: src/Views/FirewallPanel.vala:294
 #, fuzzy
 msgid "To"
 msgstr "Do:"
 
-#: src/Views/FirewallPanel.vala:285
+#: src/Views/FirewallPanel.vala:295
 #, fuzzy
 msgid "From"
 msgstr "Od:"
 
-#: src/Views/FirewallPanel.vala:323
+#: src/Views/FirewallPanel.vala:334
 msgid "Action:"
 msgstr "Akcia:"
 
-#: src/Views/FirewallPanel.vala:332
+#: src/Views/FirewallPanel.vala:343
 msgid "Protocol:"
 msgstr "Protokol:"
 
-#: src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:350
 msgid "Version:"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:344
+#: src/Views/FirewallPanel.vala:355
 msgid "Both"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:347
+#: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
 msgstr "Inštrukcie:"
 
-#: src/Views/FirewallPanel.vala:354
+#: src/Views/FirewallPanel.vala:365
 msgid "Ports:"
 msgstr "Porty:"
 
-#: src/Views/FirewallPanel.vala:358
+#: src/Views/FirewallPanel.vala:369
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d alebo %d-%d"
 
-#: src/Views/FirewallPanel.vala:360
+#: src/Views/FirewallPanel.vala:371
 msgid "Add Rule"
 msgstr "Pridať pravidlo"
 
@@ -365,63 +365,63 @@ msgstr "Do:"
 msgid "Clear Data"
 msgstr "Vymazať údaje"
 
-#: src/Widgets/ExcludeTreeView.vala:56
+#: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
 msgstr "Pridať aplikáciu..."
 
-#: src/Widgets/ExcludeTreeView.vala:71
+#: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
 msgstr "Pridať Priečinok..."
 
-#: src/Widgets/ExcludeTreeView.vala:74
+#: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
 msgstr "Vyberte priečinok na pridanie do čiernej listiny"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
 msgstr "Pridať"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
 msgstr "Zrušiť"
 
-#: src/Widgets/ExcludeTreeView.vala:92
+#: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
 msgstr "Vymazať"
 
-#: src/Widgets/ExcludeTreeView.vala:137
+#: src/Widgets/ExcludeTreeView.vala:142
 msgid "Do not collect data from the following:"
 msgstr "Nezhromažďovať údaje z nasledujúcich aplikácií:"
 
-#: src/Widgets/IncludeTreeView.vala:76
+#: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
 msgstr "Zdroje údajov:"
 
-#: src/Widgets/IncludeTreeView.vala:82
+#: src/Widgets/IncludeTreeView.vala:88
 msgid "Chat Logs"
 msgstr "Záznamy rozhovorov"
 
-#: src/Widgets/IncludeTreeView.vala:83
+#: src/Widgets/IncludeTreeView.vala:89
 msgid "Documents"
 msgstr "Dokumenty"
 
-#: src/Widgets/IncludeTreeView.vala:84
+#: src/Widgets/IncludeTreeView.vala:90
 msgid "Music"
 msgstr "Hudba"
 
-#: src/Widgets/IncludeTreeView.vala:85
+#: src/Widgets/IncludeTreeView.vala:91
 msgid "Pictures"
 msgstr "Obrázky"
 
-#: src/Widgets/IncludeTreeView.vala:86
+#: src/Widgets/IncludeTreeView.vala:94
 msgid "Presentations"
 msgstr "Prezentácie"
 
-#: src/Widgets/IncludeTreeView.vala:87
+#: src/Widgets/IncludeTreeView.vala:100
 msgid "Spreadsheets"
 msgstr "Tabuľky"
 
-#: src/Widgets/IncludeTreeView.vala:88
+#: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Videá"
 

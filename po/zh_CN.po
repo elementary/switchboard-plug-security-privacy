@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-26 16:26-0700\n"
+"POT-Creation-Date: 2020-04-06 17:05+0000\n"
 "PO-Revision-Date: 2019-12-05 05:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -28,61 +28,61 @@ msgstr "安全与隐私"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "配置防火墙、屏幕锁和活动记录"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
 msgstr "某些设置需要管理员权限才能更改"
 
-#: src/Plug.vala:143
+#: src/Plug.vala:146
 msgid "Privacy"
 msgstr "隐私"
 
-#: src/Plug.vala:144 src/Plug.vala:187 src/Plug.vala:188 src/Plug.vala:189
+#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "锁定"
 
-#: src/Plug.vala:145 src/Plug.vala:190 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "防火墙"
 
-#: src/Plug.vala:146 src/Plug.vala:191 src/Plug.vala:192 src/Plug.vala:193
-#: src/Plug.vala:194 src/Views/HouseKeepingPanel.vala:30
-#: src/Widgets/ServiceList.vala:34
+#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
+#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "清理"
 
-#: src/Plug.vala:150 src/Plug.vala:196 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:58
+#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "位置服务"
 
-#: src/Plug.vala:185 src/Plug.vala:186 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "历史"
 
-#: src/Plug.vala:186
+#: src/Plug.vala:189
 msgid "Clear History"
 msgstr "清除历史"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:191
 msgid "Lock on sleep"
 msgstr "睡眠时锁定"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:192
 msgid "Lock after sceen turns off"
 msgstr "熄屏后锁定"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
 msgstr "自动删除过期的临时文件"
 
-#: src/Plug.vala:193
+#: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
 msgstr "自动清理回收站"
 
-#: src/Plug.vala:194
+#: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
 msgstr "临时文件及回收站内容保留周期"
 
@@ -90,7 +90,7 @@ msgstr "临时文件及回收站内容保留周期"
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "运行防火墙配置需要管理员认证"
 
-#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:279
+#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
@@ -101,99 +101,99 @@ msgstr "已启用"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:213
-#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:227
+#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
+#: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
 msgid "Unknown"
 msgstr "未知设备"
 
-#: src/Views/FirewallPanel.vala:205 src/Views/FirewallPanel.vala:326
+#: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
 msgid "Allow"
 msgstr "允许"
 
-#: src/Views/FirewallPanel.vala:207 src/Views/FirewallPanel.vala:327
+#: src/Views/FirewallPanel.vala:217 src/Views/FirewallPanel.vala:338
 msgid "Deny"
 msgstr "禁止"
 
-#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:328
+#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:339
 msgid "Reject"
 msgstr "拒绝"
 
-#: src/Views/FirewallPanel.vala:211 src/Views/FirewallPanel.vala:329
+#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:340
 msgid "Limit"
 msgstr "限制"
 
-#: src/Views/FirewallPanel.vala:223 src/Views/FirewallPanel.vala:350
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:361
 msgid "In"
 msgstr "数据传入"
 
-#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:351
+#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:362
 msgid "Out"
 msgstr "数据传出"
 
-#: src/Views/FirewallPanel.vala:238 src/Views/FirewallPanel.vala:248
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
 #, c-format
 msgid "%s Ports %s"
 msgstr "%s 端口 %s"
 
-#: src/Views/FirewallPanel.vala:240 src/Views/FirewallPanel.vala:250
+#: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
 #, c-format
 msgid "%s Port %s"
 msgstr "%s 端口 %s"
 
-#: src/Views/FirewallPanel.vala:280
+#: src/Views/FirewallPanel.vala:290
 msgid "Version"
 msgstr "版本"
 
-#: src/Views/FirewallPanel.vala:281
+#: src/Views/FirewallPanel.vala:291
 msgid "Action"
 msgstr "行为"
 
-#: src/Views/FirewallPanel.vala:282
+#: src/Views/FirewallPanel.vala:292
 msgid "Protocol"
 msgstr "协议"
 
-#: src/Views/FirewallPanel.vala:283
+#: src/Views/FirewallPanel.vala:293
 msgid "Direction"
 msgstr "方向"
 
-#: src/Views/FirewallPanel.vala:284
+#: src/Views/FirewallPanel.vala:294
 msgid "To"
 msgstr "结束日期"
 
-#: src/Views/FirewallPanel.vala:285
+#: src/Views/FirewallPanel.vala:295
 msgid "From"
 msgstr "起始日期"
 
-#: src/Views/FirewallPanel.vala:323
+#: src/Views/FirewallPanel.vala:334
 msgid "Action:"
 msgstr "行为："
 
-#: src/Views/FirewallPanel.vala:332
+#: src/Views/FirewallPanel.vala:343
 msgid "Protocol:"
 msgstr "协议："
 
-#: src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:350
 msgid "Version:"
 msgstr "版本："
 
-#: src/Views/FirewallPanel.vala:344
+#: src/Views/FirewallPanel.vala:355
 msgid "Both"
 msgstr "所有"
 
-#: src/Views/FirewallPanel.vala:347
+#: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
 msgstr "方向："
 
-#: src/Views/FirewallPanel.vala:354
+#: src/Views/FirewallPanel.vala:365
 msgid "Ports:"
 msgstr "端口："
 
-#: src/Views/FirewallPanel.vala:358
+#: src/Views/FirewallPanel.vala:369
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d 或 %d-%d"
 
-#: src/Views/FirewallPanel.vala:360
+#: src/Views/FirewallPanel.vala:371
 msgid "Add Rule"
 msgstr "添加规则"
 
@@ -248,7 +248,8 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s 会储存本地使用数据以提供额外功能，如最近使用的文件、本地搜索等。无论此功能启用与否，数据都只储存在此设备上，不能被转移至外部设备或第三方。"
+"%s 会储存本地使用数据以提供额外功能，如最近使用的文件、本地搜索等。无论此功能"
+"启用与否，数据都只储存在此设备上，不能被转移至外部设备或第三方。"
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
@@ -354,63 +355,63 @@ msgstr "结束时间："
 msgid "Clear Data"
 msgstr "清除数据"
 
-#: src/Widgets/ExcludeTreeView.vala:56
+#: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
 msgstr "添加应用程序…"
 
-#: src/Widgets/ExcludeTreeView.vala:71
+#: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
 msgstr "添加文件夹…"
 
-#: src/Widgets/ExcludeTreeView.vala:74
+#: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
 msgstr "选择要加入黑名单的文件夹"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
 msgstr "添加"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Widgets/ExcludeTreeView.vala:92
+#: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
 msgstr "删除"
 
-#: src/Widgets/ExcludeTreeView.vala:137
+#: src/Widgets/ExcludeTreeView.vala:142
 msgid "Do not collect data from the following:"
 msgstr "以下项目不收集数据："
 
-#: src/Widgets/IncludeTreeView.vala:76
+#: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
 msgstr "数据来源："
 
-#: src/Widgets/IncludeTreeView.vala:82
+#: src/Widgets/IncludeTreeView.vala:88
 msgid "Chat Logs"
 msgstr "聊天"
 
-#: src/Widgets/IncludeTreeView.vala:83
+#: src/Widgets/IncludeTreeView.vala:89
 msgid "Documents"
 msgstr "文档"
 
-#: src/Widgets/IncludeTreeView.vala:84
+#: src/Widgets/IncludeTreeView.vala:90
 msgid "Music"
 msgstr "音乐"
 
-#: src/Widgets/IncludeTreeView.vala:85
+#: src/Widgets/IncludeTreeView.vala:91
 msgid "Pictures"
 msgstr "图片"
 
-#: src/Widgets/IncludeTreeView.vala:86
+#: src/Widgets/IncludeTreeView.vala:94
 msgid "Presentations"
 msgstr "演示"
 
-#: src/Widgets/IncludeTreeView.vala:87
+#: src/Widgets/IncludeTreeView.vala:100
 msgid "Spreadsheets"
 msgstr "表格"
 
-#: src/Widgets/IncludeTreeView.vala:88
+#: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "视频"
 
