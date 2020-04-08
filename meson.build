@@ -2,7 +2,7 @@ project(
     'security-privacy',
     'vala', 'c',
     meson_version: '>= 0.46.1',
-    version: '2.2.1'
+    version: '2.2.3'
 )
 i18n = import('i18n')
 
