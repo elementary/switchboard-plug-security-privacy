@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 17:05+0000\n"
-"PO-Revision-Date: 2020-04-09 13:28+0000\n"
+"PO-Revision-Date: 2020-04-09 14:02+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pt/>\n"
@@ -65,7 +65,7 @@ msgstr "Histórico"
 
 #: src/Plug.vala:189
 msgid "Clear History"
-msgstr "Limpar Histórico"
+msgstr "Limpar histórico"
 
 #: src/Plug.vala:191
 msgid "Lock on sleep"
@@ -160,7 +160,7 @@ msgstr "Direção"
 
 #: src/Views/FirewallPanel.vala:294
 msgid "To"
-msgstr "Até"
+msgstr "Para"
 
 #: src/Views/FirewallPanel.vala:295
 msgid "From"
@@ -197,7 +197,7 @@ msgstr "%d ou %d-%d"
 
 #: src/Views/FirewallPanel.vala:371
 msgid "Add Rule"
-msgstr "Adicionar Regra"
+msgstr "Adicionar regra"
 
 #: src/Views/HouseKeepingPanel.vala:35
 msgid "Automatically Delete:"
@@ -217,7 +217,7 @@ msgstr "Eliminar o lixo e ficheiros temporários após:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
-msgstr "Abrir Lixo…"
+msgstr "Abrir lixo…"
 
 #: src/Views/HouseKeepingPanel.vala:95
 #, c-format
@@ -264,7 +264,7 @@ msgstr ""
 #: src/Views/TrackPanel.vala:37
 #, c-format
 msgid "%s won't retain any further usage data."
-msgstr "%s não irá guardar mais dados de utilização."
+msgstr "O %s não irá guardar mais dados de utilização."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
@@ -341,7 +341,7 @@ msgstr "Permitir que %s utilize Serviços de Localização"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr "Procurar Aplicação"
+msgstr "Procurar aplicação"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
@@ -369,23 +369,23 @@ msgstr "Desde sempre"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr "Até:"
+msgstr "Para:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
-msgstr "Limpar Dados"
+msgstr "Limpar dados"
 
 #: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
-msgstr "Adicionar Aplicação…"
+msgstr "Adicionar aplicação…"
 
 #: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
-msgstr "Adicionar Pasta…"
+msgstr "Adicionar pasta…"
 
 #: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
-msgstr "Selecionar uma pasta a lista negra"
+msgstr "Selecionar uma pasta à lista negra"
 
 #: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
@@ -405,11 +405,11 @@ msgstr "Não recolher informações das seguintes:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
-msgstr "Fontes de Dados:"
+msgstr "Fontes de dados:"
 
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Chat Logs"
-msgstr "Registos de Conversações"
+msgstr "Registos de conversações"
 
 #: src/Widgets/IncludeTreeView.vala:89
 msgid "Documents"
