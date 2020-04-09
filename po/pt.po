@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 17:05+0000\n"
-"PO-Revision-Date: 2020-02-06 23:08+0000\n"
+"PO-Revision-Date: 2020-04-09 13:28+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pt/>\n"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Autenticação necessária para executar a configuração da Firewall"
+msgstr "É necessária a autenticação para executar a configuração da Firewall"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
@@ -256,9 +256,9 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s pode armazenar dados de utilização local para fornecer funcionalidades "
-"extra como disponibilizar ficheiros usados recentemente e buscas locais mais "
-"relevantes. Apesar desta opção, os dados de utilização nunca são "
+"O %s pode armazenar dados de utilização local para fornecer funcionalidades "
+"extra como disponibilizar ficheiros usados recentemente e pesquisas locais "
+"mais relevantes. Apesar desta opção, os dados de utilização nunca são "
 "transmitidos para fora deste dispositivo ou para terceiros."
 
 #: src/Views/TrackPanel.vala:37
@@ -275,7 +275,7 @@ msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Isto pode não impedir as aplicações de guardar os seus prórios dados de "
+"Isto pode não impedir as aplicações de guardar os seus próprios dados de "
 "utilização, como o histórico de navegação."
 
 #: src/Views/TrackPanel.vala:42
@@ -284,7 +284,7 @@ msgstr "O histórico está desativado"
 
 #: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
-msgstr "Limpar Histórico…"
+msgstr "Limpar histórico…"
 
 #: src/Views/TrackPanel.vala:97
 msgid "Your system"
@@ -304,7 +304,7 @@ msgid ""
 "appear here."
 msgstr ""
 "Quando são instaladas aplicações que utilizam os serviços de localização, "
-"aparecem automaticamente aqui."
+"estas aparecem automaticamente aqui."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
@@ -385,7 +385,7 @@ msgstr "Adicionar Pasta…"
 
 #: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
-msgstr "Selecionar pasta a excluir"
+msgstr "Selecionar uma pasta a lista negra"
 
 #: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
@@ -401,7 +401,7 @@ msgstr "Eliminar"
 
 #: src/Widgets/ExcludeTreeView.vala:142
 msgid "Do not collect data from the following:"
-msgstr "Não colectar informações dos seguintes:"
+msgstr "Não recolher informações das seguintes:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
