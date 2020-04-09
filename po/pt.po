@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 17:05+0000\n"
-"PO-Revision-Date: 2020-04-09 14:02+0000\n"
+"PO-Revision-Date: 2020-04-09 14:07+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pt/>\n"
@@ -337,7 +337,7 @@ msgstr ""
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr "Permitir que %s utilize Serviços de Localização"
+msgstr "Permitir que %s utilize os Serviços de Localização"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
