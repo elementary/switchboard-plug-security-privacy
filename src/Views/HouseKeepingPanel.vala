@@ -91,13 +91,13 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     }
 
     private void update_days (uint age) {
-        description = ngettext (
+        description = dngettext (Build.GETTEXT_PACKAGE,
             "Old files can be automatically deleted after %u day to save space and help protect your privacy.",
             "Old files can be automatically deleted after %u days to save space and help protect your privacy.",
             age
         ).printf (age);
 
-        file_age_label.label = ngettext (
+        file_age_label.label = dngettext (Build.GETTEXT_PACKAGE,
             "Day",
             "Days",
             age
