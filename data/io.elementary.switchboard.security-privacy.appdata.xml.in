@@ -4,6 +4,8 @@
   <extends>io.elementary.switchboard</extends>
   <name>Security &amp; Privacy</name>
   <summary>Configure firewall, screen lock, and activity information</summary>
+  <icon type="stock">preferences-system-privacy</icon>
+  <translation type="gettext">security-privacy-plug</translation>
   <releases>
     <release version="2.2.3" date="2020-04-08" urgency="medium">
       <description>
