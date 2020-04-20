@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 17:05+0000\n"
-"PO-Revision-Date: 2019-11-03 15:24+0000\n"
+"PO-Revision-Date: 2020-04-21 01:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -38,4 +38,4 @@ msgstr "翻訳の更新"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
 msgid "Redesigned \"Housekeeping\" page"
-msgstr "\"自動削除\"ペインを再設計"
+msgstr "\"自動削除\"ペインのデザインを変更"
