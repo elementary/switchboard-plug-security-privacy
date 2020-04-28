@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2019-09-30 14:23+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
@@ -24,18 +24,20 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Requírese autenticación para executar a configuración da devasa"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
-msgid "Security &amp; Privacy"
+#, fuzzy
+#| msgid "Security &amp; Privacy"
+msgid "Security &amp; Privacy Settings"
 msgstr "Seguridade e privacidade"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Configurar devasa, pantalla de bloqueo e información da actividade"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:11
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:19
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
 msgid "Translation updates"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
 msgid "Redesigned \"Housekeeping\" page"
 msgstr ""

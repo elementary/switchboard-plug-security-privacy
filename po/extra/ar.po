@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -25,18 +25,18 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "مطلوب المصادقة لتشغيل اعداد جدار الحماية"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
-msgid "Security &amp; Privacy"
+msgid "Security &amp; Privacy Settings"
 msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "قم بتعديل جدار الحماية, قفل الشاشة و المعلومات حول نشاطك"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:11
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:19
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
 msgid "Translation updates"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
 msgid "Redesigned \"Housekeeping\" page"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2019-11-05 20:24+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -24,7 +24,9 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Il est nécessaire de s'authentifier pour configurer le pare-feu"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
-msgid "Security &amp; Privacy"
+#, fuzzy
+#| msgid "Security &amp; Privacy"
+msgid "Security &amp; Privacy Settings"
 msgstr "Sécurité et confidentialité"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
@@ -33,11 +35,11 @@ msgstr ""
 "Configurer le pare-feu, le verrouillage de l'écran et les informations de "
 "l'activité de l'utilisateur"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:11
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:19
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
 msgid "Translation updates"
 msgstr "Mise à jour des traductions"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "Refonte de la page « Nettoyage »"
