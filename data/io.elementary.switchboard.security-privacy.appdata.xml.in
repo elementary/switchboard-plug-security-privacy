@@ -2,7 +2,7 @@
 <component type="addon">
   <id>io.elementary.switchboard.security-privacy</id>
   <extends>io.elementary.switchboard</extends>
-  <name>Security &amp; Privacy</name>
+  <name>Security &amp; Privacy Settings</name>
   <summary>Configure firewall, screen lock, and activity information</summary>
   <icon type="stock">preferences-system-privacy</icon>
   <translation type="gettext">security-privacy-plug</translation>
