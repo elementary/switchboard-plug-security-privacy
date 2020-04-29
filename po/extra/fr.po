@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2019-11-05 20:24+0000\n"
+"PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/fr/>\n"
@@ -17,17 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Il est nécessaire de s'authentifier pour configurer le pare-feu"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
-#, fuzzy
-#| msgid "Security &amp; Privacy"
 msgid "Security &amp; Privacy Settings"
-msgstr "Sécurité et confidentialité"
+msgstr "Paramètres de sécurité et de confidentialité"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
