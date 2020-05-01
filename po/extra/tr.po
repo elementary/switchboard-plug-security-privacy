@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2019-12-20 16:09+0000\n"
+"PO-Revision-Date: 2020-05-02 11:10+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/tr/>\n"
@@ -26,10 +26,8 @@ msgstr ""
 "gerekiyor"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
-#, fuzzy
-#| msgid "Security &amp; Privacy"
 msgid "Security &amp; Privacy Settings"
-msgstr "Güvenlik ve Gizlilik"
+msgstr "Güvenlik ve Gizlilik Ayarları"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
