@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 17:05+0000\n"
-"PO-Revision-Date: 2019-04-22 18:59+0000\n"
-"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
+"PO-Revision-Date: 2020-05-11 20:10+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/cs/>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -26,7 +26,7 @@ msgstr "Bezpečnost a soukromí"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Nastavte firewall, zámek obrazovky a informace o aktivitě"
+msgstr "Nastavení brány firewall, zámku obrazovky a informace o aktivitě"
 
 #: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
@@ -88,7 +88,7 @@ msgstr "Počet dnů pro uchování dočasných souborů a souborů v koši"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Pro změnu nastavení Firewallu je potřeba ověření"
+msgstr "Pro spuštění nastavení brány firewall je zapotřebí se ověřit"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
@@ -198,22 +198,20 @@ msgid "Add Rule"
 msgstr "Přidat pravidlo"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Automaticky mazat staré soubory v koši:"
+msgstr "Automaticky mazat:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "Dočasné soubory"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Soubory v koši"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "Počet dnů pro uchování dočasných souborů a souborů v koši:"
+msgstr "Mazat dočasné soubory a soubory v koši po uplynutí:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -228,20 +226,25 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"Staré soubory je možné automaticky mazat po uplynutí %u dne aby se šetřilo "
+"prostorem na úložišti a chránilo vaše soukromí."
 msgstr[1] ""
+"Staré soubory je možné automaticky mazat po uplynutí %u dnů aby se šetřilo "
+"prostorem na úložišti a chránilo vaše soukromí."
 msgstr[2] ""
+"Staré soubory je možné automaticky mazat po uplynutí %u dní aby se šetřilo "
+"prostorem na úložišti a chránilo vaše soukromí."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Den"
+msgstr[1] "Dny"
+msgstr[2] "Dnů"
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Uzamknout v režimu spánku:"
+msgstr "Uzamknout při uspání:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
@@ -392,7 +395,7 @@ msgstr "Přidat"
 
 #: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr "Storno"
 
 #: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
