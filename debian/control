@@ -18,7 +18,7 @@ Homepage: https://github.com/elementary/switchboard-plug-security-privacy
 
 Package: switchboard-plug-security-privacy
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, light-locker
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Enhances: switchboard
 Description: Manage security and privacy
  Switchboard plug for managing the security and privacy of your system.
