@@ -1,3 +1,15 @@
+switchboard-plug-security-privacy (2.2.4) bionic; urgency=medium
+
+  * Release 2.2.4 (#109)
+  * Update translation files
+  * Update translation template
+  * AppData: Add "Settings" to name (#104)
+  * AppData: Add Icon & Gettext domain (#103)
+  * HouseKeeping: use dngettext instead of ngettext as we are inside the
+    domain of the plug and not the application itself (#102)
+
+ -- Corentin Noël <tintou@mailoo.org>  Mon, 25 May 2020 18:12:47 +0000
+
 switchboard-plug-security-privacy (2.2.3) bionic; urgency=medium
 
   * Release 2.2.3 (#100)
