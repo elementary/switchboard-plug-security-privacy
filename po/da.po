@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 17:05+0000\n"
-"PO-Revision-Date: 2018-10-21 09:46+0000\n"
-"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
-"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-05-27 13:11+0000\n"
+"Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
+"Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:46+0000\n"
 
 #: src/Plug.vala:50
@@ -199,22 +199,20 @@ msgid "Add Rule"
 msgstr "Tilføj regel"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Slet automatisk gamle udsmidte filer:"
+msgstr "Slet Automatisk:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Temporary files"
-msgstr ""
+msgstr "Midlertidige filer"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Slettede filer"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "Antal dage at beholde udmidte og midlertidige filer:"
+msgstr "Slet Udsmidte og Midlertidige Filer Efter:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -229,16 +227,19 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"Gamle filer kan slettes automatisk efter %u dag for at spare plads og hjælpe "
+"med at beskytte dit privatliv."
 msgstr[1] ""
+"Gamle filer kan slettes automatisk efter %u dage for at spare plads og "
+"hjælpe med at beskytte dit privatliv."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Dag"
+msgstr[1] "Dage"
 
 #: src/Views/LockPanel.vala:35
-#, fuzzy
 msgid "Lock on suspend:"
 msgstr "Lås ved hvile:"
 
@@ -254,13 +255,14 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s kan gemme lokale brugsdata for at give ekstra funktionalitet som at "
+"tilbyde nyligt anvendte filer og mere relevant lokal søgning. Uanset denne "
+"indstilling overføres brugsdata aldrig fra denne enhed eller til tredjepart."
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"%s vil ikke bibeholde yderligere data eller statistik om brug af filer og "
-"programmer."
+msgstr "%s vil ikke bibeholde yderligere brugsdata."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
@@ -268,13 +270,12 @@ msgstr ""
 "Den udvidede funktionalitet som denne data bruges til vil blive påvirket."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Dette vil ikke forhindre programmer i at gemme deres egen data - f.eks. din "
-"browsers historik."
+"Dette vil ikke forhindre programmer i at gemme deres egen data som f.eks. "
+"din browsers historik."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
