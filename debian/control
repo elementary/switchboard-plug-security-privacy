@@ -18,7 +18,13 @@ Homepage: https://github.com/elementary/switchboard-plug-security-privacy
 
 Package: switchboard-plug-security-privacy
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, light-locker
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         gala,
+         gnome-settings-daemon-common,
+         pantheon-agent-geoclue2,
+         ufw,
+         zeitgeist
 Enhances: switchboard
 Description: Manage security and privacy
  Switchboard plug for managing the security and privacy of your system.
