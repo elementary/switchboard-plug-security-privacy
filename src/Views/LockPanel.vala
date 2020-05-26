@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2014-2018 elementary LLC. (https://elementary.io)
+ * Copyright 2014-2020 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -21,57 +20,35 @@
  */
 
 public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
-
-    Settings locker;
-
     public LockPanel () {
-        Object (icon_name: "system-lock-screen",
-                title: _("Locking"));
+        Object (
+            icon_name: "system-lock-screen",
+            title: _("Locking")
+        );
     }
 
     construct {
-        locker = new Settings ("apps.light-locker");
-
         var lock_suspend_label = new Gtk.Label (_("Lock on suspend:"));
-        var lock_suspend_switch = new Gtk.Switch ();
-        var lock_sleep_label = new Gtk.Label (_("Lock after screen turns off:"));
-        var lock_sleep_switch = new Gtk.Switch ();
-
-        /* Synchronize lock_suspend_switch and GSettings value */
-        lock_suspend_switch.active = locker.get_boolean ("lock-on-suspend");
-        locker.bind ("lock-on-suspend", lock_suspend_switch, "active", SettingsBindFlags.DEFAULT);
-
-        if (locker.get_uint ("lock-after-screensaver") > 0)
-            lock_sleep_switch.active = true;
-        else
-            lock_sleep_switch.active = false;
-
-        locker.changed["lock-after-screensaver"].connect (() => {
-            if (locker.get_uint ("lock-after-screensaver") > 0)
-                lock_sleep_switch.active = true;
-            else
-                lock_sleep_switch.active = false;
-        });
-
-        lock_sleep_switch.notify["active"].connect (() => {
-            if (lock_sleep_switch.active)
-                locker.set_uint ("lock-after-screensaver", 1);
-            else
-                locker.set_uint ("lock-after-screensaver", 0);
-        });
-
         lock_suspend_label.halign = Gtk.Align.END;
-        lock_sleep_label.halign = Gtk.Align.END;
-        lock_suspend_label.valign = Gtk.Align.CENTER;
-        lock_sleep_label.valign = Gtk.Align.CENTER;
+
+        var lock_suspend_switch = new Gtk.Switch ();
         lock_suspend_switch.halign = Gtk.Align.START;
+
+        var lock_sleep_label = new Gtk.Label (_("Lock after screen turns off:"));
+        lock_sleep_label.halign = Gtk.Align.END;
+
+        var lock_sleep_switch = new Gtk.Switch ();
         lock_sleep_switch.halign = Gtk.Align.START;
 
         content_area.hexpand = true;
         content_area.halign = Gtk.Align.CENTER;
-        content_area.attach (lock_suspend_label, 0, 0, 1, 1);
-        content_area.attach (lock_sleep_label, 0, 1, 1, 1);
-        content_area.attach (lock_suspend_switch, 1, 0, 1, 1);
-        content_area.attach (lock_sleep_switch, 1, 1, 1, 1);
+        content_area.attach (lock_suspend_label, 0, 0);
+        content_area.attach (lock_suspend_switch, 1, 0);
+        content_area.attach (lock_sleep_label, 0, 1);
+        content_area.attach (lock_sleep_switch, 1, 1);
+
+        var screensaver_settings = new GLib.Settings ("io.elementary.desktop.screensaver");
+        screensaver_settings.bind ("lock-on-screen-off", lock_sleep_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        screensaver_settings.bind ("lock-on-suspend", lock_suspend_switch, "active", GLib.SettingsBindFlags.DEFAULT);
     }
 }
