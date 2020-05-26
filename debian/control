@@ -1,7 +1,7 @@
 Source: switchboard-plug-security-privacy
 Section: x11
 Priority: optional
-Maintainer: Corentin Noël <tintou@mailoo.org>
+Maintainer: elementary, Inc. <builds@elementary.io>
 Build-Depends: debhelper (>= 10.5.1),
                gettext,
                libglib2.0-dev,
