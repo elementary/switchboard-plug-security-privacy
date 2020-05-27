@@ -1,5 +1,5 @@
 # Why?
-This switchboard plug depends on light-locker, which is a bummer if you suffer from (elementary/greeter#401)[https://github.com/elementary/greeter/issues/401] and decided to replace it with something else (like xscreensaver). This fork removes the "Locking" page entirely from the plug, letting you use your own tool for configuring your screen locker.
+This switchboard plug depends on light-locker, which is a bummer if you suffer from [elementary/greeter#401](https://github.com/elementary/greeter/issues/401) and decided to replace it with something else (like xscreensaver). This fork removes the "Locking" page entirely from the plug, letting you use your own tool for configuring your screen locker
 
 Below the original README.md contents (with modified screenshot):
 
