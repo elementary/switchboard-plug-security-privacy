@@ -47,8 +47,9 @@ public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
         content_area.attach (lock_sleep_label, 0, 1);
         content_area.attach (lock_sleep_switch, 1, 1);
 
+        var gnome_screensaver_settings = new GLib.Settings ("org.gnome.desktop.screensaver");
         var screensaver_settings = new GLib.Settings ("io.elementary.desktop.screensaver");
-        screensaver_settings.bind ("lock-on-screen-off", lock_sleep_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        gnome_screensaver_settings.bind ("lock-enabled", lock_sleep_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         screensaver_settings.bind ("lock-on-suspend", lock_suspend_switch, "active", GLib.SettingsBindFlags.DEFAULT);
     }
 }
