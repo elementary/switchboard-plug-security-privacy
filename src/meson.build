@@ -11,7 +11,6 @@ plug_files = files(
     'ZGUtilities.vala',
     'Views/FirewallPanel.vala',
     'Views/HouseKeepingPanel.vala',
-    'Views/LockPanel.vala',
     'Views/TrackPanel.vala',
     'Views/LocationPanel.vala',
     'Widgets/AppChooser.vala',

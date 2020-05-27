@@ -29,7 +29,6 @@ public class ServiceList : Gtk.ListBox {
 
     construct {
         var privacy_item = new ServiceItem ("document-open-recent", "tracking", _("History"));
-        var lock_item = new ServiceItem ("system-lock-screen", "locking", _("Locking"));
         var firewall_item = new ServiceItem ("network-firewall", "firewall", _("Firewall"));
         housekeeping_item = new ServiceItem (
             "preferences-system-privacy-housekeeping",
@@ -38,7 +37,6 @@ public class ServiceList : Gtk.ListBox {
         );
 
         add_service (privacy_item);
-        add_service (lock_item);
         add_service (firewall_item);
         add_service (housekeeping_item);
 

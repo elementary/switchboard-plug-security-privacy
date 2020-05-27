@@ -41,7 +41,6 @@ namespace SecurityPrivacy {
         private const string FIREWALL = "firewall";
         private const string HOUSEKEEPING = "housekeeping";
         private const string HISTORY = "tracking";
-        private const string LOCKING = "locking";
         private const string LOCATION = "location";
 
         public Plug () {
@@ -55,14 +54,12 @@ namespace SecurityPrivacy {
             location_agent_installed = SecurityPrivacy.LocationPanel.location_agent_installed ();
             supported_settings.set ("security", null);
             supported_settings.set ("security/firewall", FIREWALL);
-            supported_settings.set ("security/locking", LOCKING);
             supported_settings.set ("privacy", HISTORY);
             supported_settings.set ("privacy/trash", HOUSEKEEPING);
 
             // DEPRECATED
             supported_settings.set ("security/privacy", HISTORY);
             supported_settings.set ("security/housekeeping", HOUSEKEEPING);
-            supported_settings.set ("security/screensaver", LOCKING);
 
             if (location_agent_installed) {
                 supported_settings.set ("privacy/location", LOCATION);
@@ -139,12 +136,10 @@ namespace SecurityPrivacy {
             }
 
             tracking = new TrackPanel ();
-            var locking = new LockPanel ();
             firewall = new FirewallPanel ();
             housekeeping = new HouseKeepingPanel ();
 
             stack.add_titled (tracking, HISTORY, _("Privacy"));
-            stack.add_titled (locking, LOCKING, _("Locking"));
             stack.add_titled (firewall, FIREWALL, _("Firewall"));
             stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
 
@@ -187,9 +182,6 @@ namespace SecurityPrivacy {
             var map = new Gee.TreeMap<string, string> (null, null);
             map.set ("%s → %s".printf (display_name, _("History")), HISTORY);
             map.set ("%s → %s → %s".printf (display_name, _("History"), _("Clear History")), HISTORY);
-            map.set ("%s → %s".printf (display_name, _("Locking")), LOCKING);
-            map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Lock on sleep")), HISTORY);
-            map.set ("%s → %s → %s".printf (display_name, _("Locking"), _("Lock after sceen turns off")), HISTORY);
             map.set ("%s → %s".printf (display_name, _("Firewall")), FIREWALL);
             map.set ("%s → %s".printf (display_name, _("Housekeeping")), HOUSEKEEPING);
             map.set ("%s → %s → %s".printf (
