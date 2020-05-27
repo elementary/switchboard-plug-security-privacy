@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:16+0000\n"
-"PO-Revision-Date: 2020-05-27 13:11+0000\n"
+"PO-Revision-Date: 2020-05-27 22:10+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/da/>\n"
@@ -25,7 +25,7 @@ msgstr "Godkendelse er påkrævet for at køre konfiguration af Firewall"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
 msgid "Security &amp; Privacy Settings"
-msgstr ""
+msgstr "Sikkerhed &amp; Privatlivs Indstillinger"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
@@ -34,8 +34,8 @@ msgstr "Konfigurer firewall, skærmlås og aktivitetsdata"
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
 msgid "Translation updates"
-msgstr ""
+msgstr "Opdaterede oversættelser"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
 msgid "Redesigned \"Housekeeping\" page"
-msgstr ""
+msgstr "Omdesignet \"Husholdning\"'s siden"
