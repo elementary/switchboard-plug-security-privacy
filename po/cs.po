@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-06 17:05+0000\n"
-"PO-Revision-Date: 2020-05-11 20:10+0000\n"
+"PO-Revision-Date: 2020-05-29 15:23+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/cs/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Bezpečnost a soukromí"
+msgstr "Zabezpečení  a soukromí"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
@@ -30,7 +30,7 @@ msgstr "Nastavení brány firewall, zámku obrazovky a informace o aktivitě"
 
 #: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
-msgstr "Některá nastavení vyžadují administrátorská oprávnění"
+msgstr "Některá nastavení vyžadují oprávnění na úrovni správce systému"
 
 #: src/Plug.vala:146
 msgid "Privacy"
@@ -55,7 +55,7 @@ msgstr "Údržba"
 #: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
-msgstr "Služby polohy"
+msgstr "Služby určování polohy"
 
 #: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
@@ -68,7 +68,7 @@ msgstr "Vymazat historii"
 
 #: src/Plug.vala:191
 msgid "Lock on sleep"
-msgstr "Uzamknout ve spánku"
+msgstr "Uzamknout při spánku"
 
 #: src/Plug.vala:192
 msgid "Lock after sceen turns off"
@@ -387,7 +387,7 @@ msgstr "Přidat složku…"
 
 #: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
-msgstr "Přidat složku do blacklistu"
+msgstr "Přidat složku na seznam vyloučených"
 
 #: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
