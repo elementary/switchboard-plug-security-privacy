@@ -147,7 +147,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     }
 
     private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
-        Variant[2] tuple_vals = new Variant[2];
+        Variant[] tuple_vals = new Variant[2];
         tuple_vals[0] = new Variant.boolean (authorized);
         tuple_vals[1] = new Variant.uint32 (accuracy_level);
         remembered_apps_dict.insert_value (desktop_id, new Variant.tuple (tuple_vals));
