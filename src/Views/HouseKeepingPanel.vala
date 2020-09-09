@@ -34,7 +34,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     construct {
         var switch_header_label = new Granite.HeaderLabel (_("Automatically Delete:"));
 
-        temp_files_switch = new Gtk.CheckButton.with_label (_("Unneeded temporary files"));
+        temp_files_switch = new Gtk.CheckButton.with_label (_("Old temporary files"));
         temp_files_switch.margin_start = 12;
 
         trash_files_switch = new Gtk.CheckButton.with_label (_("Trashed files"));
