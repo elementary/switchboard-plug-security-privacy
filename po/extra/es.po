@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2020-05-11 20:10+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -32,10 +32,11 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "Configurar cortafuegos, bloqueo de pantalla e información de actividad"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Translation updates"
 msgstr "Actualizaciones de traducción"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "Página de \"Housekeeping\" rediseñada"

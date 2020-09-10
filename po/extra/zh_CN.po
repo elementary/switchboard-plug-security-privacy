@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2019-09-17 09:23+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -34,10 +34,11 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "配置防火墙、屏幕锁和活动记录"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Translation updates"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
 msgid "Redesigned \"Housekeeping\" page"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -32,10 +32,11 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "הגדרת חומת אש, נעילת מסך ופירוט על פעילות"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Translation updates"
 msgstr "תרגומים עודכנו"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "עמוד ה„תחזוקה” עוצב מחדש"

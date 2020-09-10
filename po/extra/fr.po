@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -34,10 +34,11 @@ msgstr ""
 "l'activité de l'utilisateur"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Translation updates"
 msgstr "Mise à jour des traductions"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "Refonte de la page « Nettoyage »"
