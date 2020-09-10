@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2020-05-25 18:11+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -40,7 +40,7 @@ msgid "Privacy"
 msgstr "Confidentialité"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
-#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
+#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Verrouillage"
 
@@ -205,7 +205,9 @@ msgid "Automatically Delete:"
 msgstr "Supprimer automatiquement :"
 
 #: src/Views/HouseKeepingPanel.vala:37
-msgid "Temporary files"
+#, fuzzy
+#| msgid "Temporary files"
+msgid "Old temporary files"
 msgstr "Fichiers temporaires"
 
 #: src/Views/HouseKeepingPanel.vala:40
@@ -242,7 +244,7 @@ msgid_plural "Days"
 msgstr[0] "Jour"
 msgstr[1] "Jours"
 
-#: src/Views/LockPanel.vala:35
+#: src/Views/LockPanel.vala:31
 msgid "Lock on suspend:"
 msgstr "Verrouiller à l'hibernation :"
 

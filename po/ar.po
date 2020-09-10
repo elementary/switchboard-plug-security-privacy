@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2020-03-19 19:09+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -38,7 +38,7 @@ msgid "Privacy"
 msgstr "الخصوصية"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
-#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
+#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "قفل"
 
@@ -203,7 +203,9 @@ msgid "Automatically Delete:"
 msgstr "الحذف تلقائيًا:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-msgid "Temporary files"
+#, fuzzy
+#| msgid "Temporary files"
+msgid "Old temporary files"
 msgstr "الملفات المؤقتة"
 
 #: src/Views/HouseKeepingPanel.vala:40
@@ -255,7 +257,7 @@ msgstr[3] "يوم"
 msgstr[4] "بوم"
 msgstr[5] "يوم"
 
-#: src/Views/LockPanel.vala:35
+#: src/Views/LockPanel.vala:31
 msgid "Lock on suspend:"
 msgstr "قفل عند السكون:"
 

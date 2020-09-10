@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: security-privacy-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2018-06-04 09:37-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -34,7 +34,7 @@ msgid "Privacy"
 msgstr ""
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
-#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
+#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgid "Automatically Delete:"
 msgstr ""
 
 #: src/Views/HouseKeepingPanel.vala:37
-msgid "Temporary files"
+msgid "Old temporary files"
 msgstr ""
 
 #: src/Views/HouseKeepingPanel.vala:40
@@ -231,7 +231,7 @@ msgid_plural "Days"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/Views/LockPanel.vala:35
+#: src/Views/LockPanel.vala:31
 msgid "Lock on suspend:"
 msgstr ""
 

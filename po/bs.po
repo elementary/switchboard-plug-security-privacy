@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2018-11-05 22:15+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -39,7 +39,7 @@ msgid "Privacy"
 msgstr "Privatnost"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
-#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
+#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Zaključavanje"
 
@@ -206,8 +206,10 @@ msgid "Automatically Delete:"
 msgstr "Automatski izbriši stare datoteke u otpadu:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-msgid "Temporary files"
-msgstr ""
+#, fuzzy
+#| msgid "Automatically delete old temporary files"
+msgid "Old temporary files"
+msgstr "Automatski izbriši stare privremene datoteke"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
@@ -241,7 +243,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Views/LockPanel.vala:35
+#: src/Views/LockPanel.vala:31
 #, fuzzy
 msgid "Lock on suspend:"
 msgstr "Zaključaj kada uređaj spava:"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2019-04-07 09:06+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
@@ -36,7 +36,7 @@ msgid "Privacy"
 msgstr "Privasi"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
-#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
+#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Penguncian"
 
@@ -203,8 +203,10 @@ msgid "Automatically Delete:"
 msgstr "Hapus berkas lama yang telah dibuang secara otomatis:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-msgid "Temporary files"
-msgstr ""
+#, fuzzy
+#| msgid "Automatically delete old temporary files"
+msgid "Old temporary files"
+msgstr "Hapus berkas lama sementara secara otomatis"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
@@ -235,7 +237,7 @@ msgid "Day"
 msgid_plural "Days"
 msgstr[0] ""
 
-#: src/Views/LockPanel.vala:35
+#: src/Views/LockPanel.vala:31
 #, fuzzy
 msgid "Lock on suspend:"
 msgstr "Kunci saat tidur:"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2020-05-27 13:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -38,7 +38,7 @@ msgid "Privacy"
 msgstr "Privatliv"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
-#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
+#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Låsning"
 
@@ -203,7 +203,9 @@ msgid "Automatically Delete:"
 msgstr "Slet Automatisk:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-msgid "Temporary files"
+#, fuzzy
+#| msgid "Temporary files"
+msgid "Old temporary files"
 msgstr "Midlertidige filer"
 
 #: src/Views/HouseKeepingPanel.vala:40
@@ -239,7 +241,7 @@ msgid_plural "Days"
 msgstr[0] "Dag"
 msgstr[1] "Dage"
 
-#: src/Views/LockPanel.vala:35
+#: src/Views/LockPanel.vala:31
 msgid "Lock on suspend:"
 msgstr "Lås ved hvile:"
 

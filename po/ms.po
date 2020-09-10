@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-06 17:05+0000\n"
+"POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2017-09-08 17:22+0000\n"
 "Last-Translator: M Aiman <m.aimanismail@gmail.com>\n"
 "Language-Team: Malay <https://weblate.elementary.io/projects/switchboard/"
@@ -37,7 +37,7 @@ msgid "Privacy"
 msgstr "Kerahsiaan"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
-#: src/Views/LockPanel.vala:29 src/Widgets/ServiceList.vala:32
+#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Penguncian"
 
@@ -205,7 +205,7 @@ msgid "Automatically Delete:"
 msgstr ""
 
 #: src/Views/HouseKeepingPanel.vala:37
-msgid "Temporary files"
+msgid "Old temporary files"
 msgstr ""
 
 #: src/Views/HouseKeepingPanel.vala:40
@@ -235,7 +235,7 @@ msgid "Day"
 msgid_plural "Days"
 msgstr[0] ""
 
-#: src/Views/LockPanel.vala:35
+#: src/Views/LockPanel.vala:31
 msgid "Lock on suspend:"
 msgstr ""
 
