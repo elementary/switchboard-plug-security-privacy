@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-01-25 15:08+0000\n"
+"PO-Revision-Date: 2020-09-12 05:14+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -202,10 +202,8 @@ msgid "Automatically Delete:"
 msgstr "以下のファイルを自動的に削除:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-#, fuzzy
-#| msgid "Temporary files"
 msgid "Old temporary files"
-msgstr "一時ファイル"
+msgstr "不要な一時ファイル"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
