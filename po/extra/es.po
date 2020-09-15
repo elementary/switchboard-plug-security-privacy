@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-05-11 20:10+0000\n"
+"PO-Revision-Date: 2020-09-16 15:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/es/>\n"
@@ -29,7 +29,9 @@ msgstr "Configuración de seguridad y privacidad"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Configurar cortafuegos, bloqueo de pantalla e información de actividad"
+msgstr ""
+"Configure el cortafuegos, el bloqueo de pantalla y la información de "
+"actividad"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
@@ -39,4 +41,4 @@ msgstr "Actualizaciones de traducción"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
 msgid "Redesigned \"Housekeeping\" page"
-msgstr "Página de \"Housekeeping\" rediseñada"
+msgstr "Página «Mantenimiento» rediseñada"
