@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-03-10 17:09+0000\n"
+"PO-Revision-Date: 2020-09-16 15:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/es/>\n"
@@ -26,7 +26,9 @@ msgstr "Seguridad y privacidad"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Configurar cortafuegos, bloqueo de pantalla e información de actividad"
+msgstr ""
+"Configure el cortafuegos, el bloqueo de pantalla y la información de "
+"actividad"
 
 #: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
@@ -50,7 +52,7 @@ msgstr "Cortafuegos"
 #: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
-msgstr "Limpieza y mantenimiento"
+msgstr "Mantenimiento"
 
 #: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
@@ -76,15 +78,15 @@ msgstr "Bloquear tras apagado de pantalla"
 
 #: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
-msgstr "Eliminar ficheros antiguos automáticamente"
+msgstr "Eliminar archivos temporales antiguos automáticamente"
 
 #: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
-msgstr "Eliminar automáticamente archivos antiguos en la papelera"
+msgstr "Eliminar archivos antiguos en papelera automáticamente"
 
 #: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
-msgstr "Número de días para mantener archivos temporales y en la papelera"
+msgstr "Días que conservar archivos temporales y de la papelera"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -178,7 +180,7 @@ msgstr "Versión:"
 
 #: src/Views/FirewallPanel.vala:355
 msgid "Both"
-msgstr "Ambos"
+msgstr "Ambas"
 
 #: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
@@ -202,10 +204,8 @@ msgid "Automatically Delete:"
 msgstr "Eliminar automáticamente:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-#, fuzzy
-#| msgid "Temporary files"
 msgid "Old temporary files"
-msgstr "Archivos temporales"
+msgstr "Archivos temporales antiguos"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
@@ -282,7 +282,7 @@ msgstr ""
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
-msgstr "El historial está deshabilitado"
+msgstr "El historial está desactivado"
 
 #: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
@@ -298,7 +298,7 @@ msgstr "Permitir a estas aplicaciones determinar su ubicación"
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr "No hay aplicaciones usando servicios de ubicación"
+msgstr "Ninguna aplicación utiliza los servicios de ubicación"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
@@ -310,24 +310,23 @@ msgstr ""
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr "Los servicios de ubicación están deshabilitados"
+msgstr "Los servicios de ubicación están desactivados"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
-"Mientras los servicios de ubicación estén deshabilitados, los requerimientos "
-"de ubicación realizados por las aplicaciones serán rechazados de manera "
-"automática."
+"Mientras los servicios de ubicación estén desactivados, las solicitudes de "
+"acceso a la ubicación de las aplicaciones se rechazarán automáticamente."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
-"La funcionalidad que provee el servicio de localización de estas "
-"aplicaciones se verá afectada. ."
+"Se verá afectada la funcionalidad adicional que provee el acceso a la "
+"ubicación en esas aplicaciones."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
@@ -442,7 +441,7 @@ msgstr "Vídeos"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr "Habilitado parcialmente"
+msgstr "Activado parcialmente"
 
 #~ msgid "Automatically delete old temporary files:"
 #~ msgstr "Eliminar ficheros antiguos automáticamente:"
