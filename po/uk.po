@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-09-16 15:14+0000\n"
+"PO-Revision-Date: 2020-09-19 01:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/uk/>\n"
@@ -62,7 +62,7 @@ msgstr ""
 #: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
-msgstr ""
+msgstr "Історія"
 
 #: src/Plug.vala:189
 #, fuzzy
@@ -99,12 +99,12 @@ msgstr "Необхідна авторізація для налаштуванн�
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
-msgstr ""
+msgstr "Увімкнено"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr ""
+msgstr "Вимкнено"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
 #: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
@@ -147,7 +147,7 @@ msgstr "Порти"
 
 #: src/Views/FirewallPanel.vala:290
 msgid "Version"
-msgstr ""
+msgstr "Версія"
 
 #: src/Views/FirewallPanel.vala:291
 msgid "Action"
