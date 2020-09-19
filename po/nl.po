@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-01-05 17:07+0000\n"
+"PO-Revision-Date: 2020-09-20 09:14+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/nl/>\n"
@@ -202,10 +202,8 @@ msgid "Automatically Delete:"
 msgstr "Automatisch verwijderen:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-#, fuzzy
-#| msgid "Temporary files"
 msgid "Old temporary files"
-msgstr "Tijdelijke bestanden"
+msgstr "Oude tijdelijke bestanden"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
