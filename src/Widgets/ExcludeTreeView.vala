@@ -33,8 +33,8 @@ public class ExcludeTreeView : Gtk.Grid {
     }
 
     construct {
-        app_blacklist = new SecurityPrivacy.ApplicationBlacklist (SecurityPrivacy.blacklist);
-        path_blacklist = new SecurityPrivacy.PathBlacklist (SecurityPrivacy.blacklist);
+        app_blacklist = new SecurityPrivacy.ApplicationBlacklist (SecurityPrivacy.TrackPanel.blacklist);
+        path_blacklist = new SecurityPrivacy.PathBlacklist (SecurityPrivacy.TrackPanel.blacklist);
 
         var list_store = new Gtk.ListStore (
             NotColumns.N_COLUMNS,
