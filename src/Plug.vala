@@ -89,8 +89,16 @@ namespace SecurityPrivacy {
 
             stack = new Gtk.Stack ();
 
+            var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
+
+            var infobar = new Gtk.InfoBar () {
+                message_type = Gtk.MessageType.INFO
+            };
+            infobar.get_content_area ().add (label);
+
             var grid = new Gtk.Grid ();
-            grid.attach (stack, 0, 3, 1, 1);
+            grid.attach (infobar, 0, 0);
+            grid.attach (stack, 0, 1);
 
             try {
                 var permission = new Polkit.Permission.sync (
@@ -98,37 +106,24 @@ namespace SecurityPrivacy {
                     new Polkit.UnixProcess (Posix.getpid ())
                 );
 
-                var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
-
-                var infobar = new Gtk.InfoBar ();
-                infobar.message_type = Gtk.MessageType.INFO;
-                infobar.no_show_all = true;
-                infobar.get_content_area ().add (label);
-
-                grid.attach (infobar, 0, 0, 1, 1);
-
                 lock_button = new Gtk.LockButton (permission);
 
-                var area = infobar.get_action_area () as Gtk.Container;
-                area.add (lock_button);
+                infobar.revealed = false;
+                infobar.get_action_area ().add (lock_button);
 
                 stack.notify["visible-child-name"].connect (() => {
                     if (permission.allowed == false && stack.visible_child_name == "firewall") {
-                        infobar.no_show_all = false;
-                        infobar.show_all ();
+                        infobar.revealed = true;
                     } else {
-                        infobar.no_show_all = true;
-                        infobar.hide ();
+                        infobar.revealed = false;
                     }
                 });
 
                 permission.notify["allowed"].connect (() => {
                     if (permission.allowed == false && stack.visible_child_name == "firewall") {
-                        infobar.no_show_all = false;
-                        infobar.show_all ();
+                        infobar.revealed = true;
                     } else {
-                        infobar.no_show_all = true;
-                        infobar.hide ();
+                        infobar.revealed = false;
                     }
                 });
             } catch (Error e) {
