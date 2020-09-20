@@ -21,9 +21,6 @@
  */
 
 namespace SecurityPrivacy {
-
-    public static Plug plug;
-    public static Gtk.LockButton lock_button;
     public static Blacklist blacklist;
     public static LocationPanel location;
     public static FirewallPanel firewall;
@@ -31,12 +28,12 @@ namespace SecurityPrivacy {
     public static TrackPanel tracking;
 
     public class Plug : Switchboard.Plug {
-        Gtk.Grid main_grid;
-        Gtk.Stack stack;
+        public static Polkit.Permission permission;
 
-        ServiceList service_list;
-
-        bool location_agent_installed = false;
+        private Gtk.Grid main_grid;
+        private Gtk.Stack stack;
+        private ServiceList service_list;
+        private bool location_agent_installed = false;
 
         private const string FIREWALL = "firewall";
         private const string HOUSEKEEPING = "housekeeping";
@@ -70,7 +67,6 @@ namespace SecurityPrivacy {
                 // DEPRECATED
                 supported_settings.set ("security/privacy/location", LOCATION);
             }
-            plug = this;
         }
 
         public override Gtk.Widget get_widget () {
@@ -90,59 +86,12 @@ namespace SecurityPrivacy {
                 return;
             }
 
-            stack = new Gtk.Stack ();
-
-            var grid = new Gtk.Grid ();
-            grid.attach (stack, 0, 3, 1, 1);
-
-            try {
-                var permission = new Polkit.Permission.sync (
-                    "io.elementary.switchboard.security-privacy",
-                    new Polkit.UnixProcess (Posix.getpid ())
-                );
-
-                var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
-
-                var infobar = new Gtk.InfoBar ();
-                infobar.message_type = Gtk.MessageType.INFO;
-                infobar.no_show_all = true;
-                infobar.get_content_area ().add (label);
-
-                grid.attach (infobar, 0, 0, 1, 1);
-
-                lock_button = new Gtk.LockButton (permission);
-
-                var area = infobar.get_action_area () as Gtk.Container;
-                area.add (lock_button);
-
-                stack.notify["visible-child-name"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
-                        infobar.no_show_all = false;
-                        infobar.show_all ();
-                    } else {
-                        infobar.no_show_all = true;
-                        infobar.hide ();
-                    }
-                });
-
-                permission.notify["allowed"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
-                        infobar.no_show_all = false;
-                        infobar.show_all ();
-                    } else {
-                        infobar.no_show_all = true;
-                        infobar.hide ();
-                    }
-                });
-            } catch (Error e) {
-                critical (e.message);
-            }
-
             tracking = new TrackPanel ();
             var locking = new LockPanel ();
             firewall = new FirewallPanel ();
             housekeeping = new HouseKeepingPanel ();
 
+            stack = new Gtk.Stack ();
             stack.add_titled (tracking, HISTORY, _("Privacy"));
             stack.add_titled (locking, LOCKING, _("Locking"));
             stack.add_titled (firewall, FIREWALL, _("Firewall"));
@@ -153,10 +102,22 @@ namespace SecurityPrivacy {
                 stack.add_titled (location, LOCATION, _("Location Services"));
             }
 
+            var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
+
+            var infobar = new Gtk.InfoBar () {
+                message_type = Gtk.MessageType.INFO
+            };
+            infobar.get_content_area ().add (label);
+
+            var grid = new Gtk.Grid ();
+            grid.attach (infobar, 0, 0);
+            grid.attach (stack, 0, 1);
+
             service_list = new ServiceList ();
 
-            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
-            paned.position = 200;
+            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
+                position = 200
+            };
             paned.add1 (service_list);
             paned.add2 (grid);
 
@@ -167,6 +128,36 @@ namespace SecurityPrivacy {
                 var title = ((ServiceItem)row).title;
                 stack.visible_child_name = title;
             });
+
+            try {
+                permission = new Polkit.Permission.sync (
+                    "io.elementary.switchboard.security-privacy",
+                    new Polkit.UnixProcess (Posix.getpid ())
+                );
+
+                var lock_button = new Gtk.LockButton (permission);
+
+                infobar.get_action_area ().add (lock_button);
+                infobar.revealed = false;
+
+                stack.notify["visible-child-name"].connect (() => {
+                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
+                        infobar.revealed = true;
+                    } else {
+                        infobar.revealed = false;
+                    }
+                });
+
+                permission.notify["allowed"].connect (() => {
+                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
+                        infobar.revealed = true;
+                    } else {
+                        infobar.revealed = false;
+                    }
+                });
+            } catch (Error e) {
+                critical (e.message);
+            }
         }
 
         public override void hidden () {
