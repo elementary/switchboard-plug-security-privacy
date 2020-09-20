@@ -21,8 +21,6 @@
  */
 
 namespace SecurityPrivacy {
-
-    public static Plug plug;
     public static Gtk.LockButton lock_button;
     public static Blacklist blacklist;
     public static LocationPanel location;
@@ -70,7 +68,6 @@ namespace SecurityPrivacy {
                 // DEPRECATED
                 supported_settings.set ("security/privacy/location", LOCATION);
             }
-            plug = this;
         }
 
         public override Gtk.Widget get_widget () {
