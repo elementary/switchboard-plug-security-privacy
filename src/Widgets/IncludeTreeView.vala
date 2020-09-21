@@ -35,7 +35,7 @@ public class IncludeTreeView : Gtk.Grid {
     }
 
     construct {
-        filetype_blacklist = new SecurityPrivacy.FileTypeBlacklist (SecurityPrivacy.blacklist);
+        filetype_blacklist = new SecurityPrivacy.FileTypeBlacklist (SecurityPrivacy.TrackPanel.blacklist);
 
         var list_store = new Gtk.ListStore (
             Columns.N_COLUMNS,

@@ -21,6 +21,8 @@
  */
 
 public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
+    public static SecurityPrivacy.Blacklist blacklist { get; private set; }
+
     private Widgets.ClearUsagePopover remove_popover;
 
     public TrackPanel () {
@@ -30,6 +32,10 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
             icon_name: "document-open-recent",
             title: _("History")
         );
+    }
+
+    static construct {
+        blacklist = new Blacklist ();
     }
 
     construct {
