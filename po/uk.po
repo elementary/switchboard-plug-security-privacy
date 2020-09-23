@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-09-19 01:14+0000\n"
+"PO-Revision-Date: 2020-09-24 16:44+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/uk/>\n"
@@ -27,8 +27,7 @@ msgstr "Безпека і конфіденційність"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
-"Налаштування брандмауера, блокування екрану і інформації про активність"
+msgstr "Налаштування фаєрволу, блокування екрана та подробиць про діяльність"
 
 #: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
@@ -52,12 +51,12 @@ msgstr "Фаєрвол"
 #: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
-msgstr ""
+msgstr "Домоведення"
 
 #: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
-msgstr ""
+msgstr "Служби розташування"
 
 #: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
@@ -65,9 +64,8 @@ msgid "History"
 msgstr "Історія"
 
 #: src/Plug.vala:189
-#, fuzzy
 msgid "Clear History"
-msgstr "Очистити Дані"
+msgstr "Очистити історію"
 
 #: src/Plug.vala:191
 #, fuzzy
@@ -93,7 +91,7 @@ msgstr ""
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Необхідна авторізація для налаштування Брендмауера"
+msgstr "Необхідна авторизація для налаштування фаєрволу"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
