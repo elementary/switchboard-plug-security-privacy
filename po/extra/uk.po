@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-09-24 16:44+0000\n"
+"PO-Revision-Date: 2020-10-02 21:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/uk/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Необхідна авторизація для налаштування фаєрволу"
+msgstr "Необхідна автентифікація для налаштування фаєрволу"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
 msgid "Security &amp; Privacy Settings"
