@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2019-07-02 15:28+0000\n"
+"PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
 #: src/Plug.vala:50
@@ -32,7 +32,7 @@ msgstr ""
 #: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
-"Alcune impostazioni richiedono i diritti di amministratore per essere "
+"Alcune impostazioni richiedono i permessi di amministratore per essere "
 "modificate"
 
 #: src/Plug.vala:146
@@ -79,11 +79,11 @@ msgstr "Blocca quando lo schermo si spegne"
 
 #: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
-msgstr "Eliminare automaticamente i file temporanei più vecchi"
+msgstr "Elimina automaticamente i vecchi file temporanei"
 
 #: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
-msgstr "Eliminare automaticamente i file più vecchi nel cestino"
+msgstr "Elimina automaticamente i vecchi file nel cestino"
 
 #: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
@@ -203,24 +203,20 @@ msgid "Add Rule"
 msgstr "Aggiungi regola"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Eliminare automaticamente i file più vecchi nel cestino:"
+msgstr "Elimina automaticamente:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-#, fuzzy
-#| msgid "Automatically delete old temporary files"
 msgid "Old temporary files"
-msgstr "Eliminare automaticamente i file temporanei più vecchi"
+msgstr "Vecchi file temporanei"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "File eliminati"
 
 #: src/Views/HouseKeepingPanel.vala:44
-#, fuzzy
 msgid "Delete Trashed and Temporary Files After:"
-msgstr "Numero di giorni nei quali conservare i file temporanei e nel cestino:"
+msgstr "Elimina i file nel cestino e quelli temporanei dopo:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -235,16 +231,19 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"I vecchi file possono essere eliminati automaticamente dopo %u giorno per "
+"risparmiare spazio e proteggere la tua privacy."
 msgstr[1] ""
+"I vecchi file possono essere eliminati automaticamente dopo %u giorni per "
+"risparmiare spazio e proteggere la tua privacy."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Giorno"
+msgstr[1] "Giorni"
 
 #: src/Views/LockPanel.vala:31
-#, fuzzy
 msgid "Lock on suspend:"
 msgstr "Blocca su sospensione:"
 
@@ -260,10 +259,10 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s può memorizzare dati di utilizzo locali per fornire funzionalità "
-"aggiuntive come proporti file usati di recente e la ricerca locale più "
-"pertinente. Indipendentemente da questa impostazione, i dati di utilizzo non "
-"vengono mai trasmessi da questo dispositivo o a terze parti."
+"%s può memorizzare i dati di utilizzo locali per fornire funzionalità "
+"aggiuntive come i file usati di recente e una ricerca locale più pertinente. "
+"Indipendentemente da questa impostazione comunque, i dati di utilizzo non "
+"vengono mai trasmessi da questo dispositivo a terze parti."
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
@@ -342,7 +341,7 @@ msgstr ""
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr "Autorizzare %s ad usare i servizi di localizzazione"
+msgstr "Autorizza %s a usare i servizi di localizzazione"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
@@ -402,7 +401,7 @@ msgstr "Annulla"
 
 #: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
-msgstr "Rimuovi"
+msgstr "Elimina"
 
 #: src/Widgets/ExcludeTreeView.vala:142
 msgid "Do not collect data from the following:"
