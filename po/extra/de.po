@@ -8,32 +8,35 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2018-06-11 13:07-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-10-28 00:15+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
+"security-privacy-plug-extra/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
+"Zum Ausführen von »Firewall-Einrichtung« ist eine Authentifizierung nötig."
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
 msgid "Security &amp; Privacy Settings"
-msgstr ""
+msgstr "Sicherheit- &amp; Datenschutzeinstellungen"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "Firewall, Bildschirmsperre und Aktivitätsinformationen einrichten"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Translation updates"
-msgstr ""
+msgstr "Übersetzungsaktualisierungen"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
 msgid "Redesigned \"Housekeeping\" page"
