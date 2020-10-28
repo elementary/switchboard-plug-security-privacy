@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2019-10-27 09:24+0000\n"
+"PO-Revision-Date: 2020-10-29 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/mr/>\n"
@@ -17,17 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "फायरवॉल कॉन्फिगरेशन चालविण्यासाठी प्रमाणीकरण आवश्यक आहे"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
-#, fuzzy
-#| msgid "Security &amp; Privacy"
 msgid "Security &amp; Privacy Settings"
-msgstr "सुरक्षा &amp; गोपनीयता"
+msgstr "सुरक्षा &amp; गोपनीयता सेटिंग्ज"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
