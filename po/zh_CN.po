@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-11-18 07:15+0000\n"
+"PO-Revision-Date: 2020-11-21 04:15+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/zh_Hans/>\n"
@@ -312,7 +312,7 @@ msgstr "需要地理位置服务支持的附加功能会受到影响。"
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
-msgstr "应用程序通过 IP 地址解析位置的功能将不会受到影响。"
+msgstr "应用程序通过 IP 地址解析位置的功能不会受到影响。"
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
