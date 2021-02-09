@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2019-09-02 20:22+0000\n"
+"PO-Revision-Date: 2021-02-09 09:53+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
 #: src/Plug.vala:50
@@ -203,10 +203,8 @@ msgid "Automatically Delete:"
 msgstr "Poista automaattisesti:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-#, fuzzy
-#| msgid "Temporary files"
 msgid "Old temporary files"
-msgstr "Väliaikaiset tiedostot"
+msgstr "Vanhat väliaikaiset tiedostot"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
