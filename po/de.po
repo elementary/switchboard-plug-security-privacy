@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-02-15 11:20+0000\n"
+"PO-Revision-Date: 2021-02-15 21:09+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
@@ -92,7 +92,7 @@ msgstr ""
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
-"Zum Ausführen von »Firewall-Einrichtung« ist eine Authentifizierung nötig."
+"Zum Ausführen von »Firewall-Einrichtung« ist eine Authentifizierung nötig"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
@@ -230,11 +230,11 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
-"Alte Dateien können automatisch nach %u Tagen gelöscht werden um "
-"Speicherplatz zu sparen und ihre Privatsphäre zu schützen"
+"Alte Dateien können automatisch nach %u Tag gelöscht werden, um "
+"Speicherplatz freizugeben und Ihre Privatsphäre zu schützen."
 msgstr[1] ""
-"Alte Dateien können automatisch nach %u Tagen gelöscht werden um "
-"Speicherplatz zu sparen und ihre Privatsphäre zu schützen"
+"Alte Dateien können automatisch nach %u Tagen gelöscht werden, um "
+"Speicherplatz freizugeben und Ihre Privatsphäre zu schützen."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
@@ -243,9 +243,8 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: src/Views/LockPanel.vala:31
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Im Schlafmodus sperren:"
+msgstr "Im Bereitschaftsmodus sperren:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
