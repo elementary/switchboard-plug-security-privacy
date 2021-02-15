@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2020-10-28 00:15+0000\n"
+"PO-Revision-Date: 2021-02-15 21:09+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/de/>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
-"Zum Ausführen von »Firewall-Einrichtung« ist eine Authentifizierung nötig."
+"Zum Ausführen von »Firewall-Einrichtung« ist eine Authentifizierung nötig"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
 msgid "Security &amp; Privacy Settings"
