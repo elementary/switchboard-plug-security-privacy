@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2021-02-15 11:18+0000\n"
-"Last-Translator: Jenga500 <Wolfgang-Z@gmx.at>\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
 "Language: de\n"
@@ -202,15 +202,12 @@ msgid "Add Rule"
 msgstr "Regel hinzufügen"
 
 #: src/Views/HouseKeepingPanel.vala:35
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Ältere Dateien im Papierkorb automatisch löschen:"
+msgstr "Automatisch löschen:"
 
 #: src/Views/HouseKeepingPanel.vala:37
-#, fuzzy
-#| msgid "Automatically delete old temporary files"
 msgid "Old temporary files"
-msgstr "Ältere temporäre Dateien automatisch entfernen"
+msgstr "Alte temporäre Dateien"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
