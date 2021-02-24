@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-02-15 21:09+0000\n"
-"Last-Translator: Jenga500 <Wolfgang-Z@gmx.at>\n"
+"PO-Revision-Date: 2021-02-24 23:37+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
 "Language: de\n"
@@ -219,7 +219,7 @@ msgstr "Dateien im Papierkorb und temporäre Dateien löschen nach:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
-msgstr "Öffne Papierkorb…"
+msgstr "Papierkorb öffnen …"
 
 #: src/Views/HouseKeepingPanel.vala:95
 #, c-format
@@ -258,7 +258,7 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s kann lokale Nutzungsdaten speichern, um zusätzliche Funktionen wie das "
+"%s darf lokale Nutzungsdaten speichern, um zusätzliche Funktionen wie das "
 "Angebot von kürzlich verwendeten Dateien und eine relevantere lokale Suche "
 "bereitzustellen. Unabhängig von dieser Einstellung werden die Nutzungsdaten "
 "niemals von diesem Gerät oder an Dritte weitergegeben."
@@ -279,16 +279,16 @@ msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Dies kann jedoch nicht ausschließen, dass Apps ihre eigenen Nutzungsdaten, "
-"wie z.B. den Browser-Verlauf, erfassen."
+"Dies kann jedoch nicht verhindern, dass Anwendungen ihre eigenen "
+"Nutzungsdaten, wie z.B. den Browser-Verlauf, erfassen."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
-msgstr "Die Verlaufsspeicherung ist deaktiviert"
+msgstr "Verlaufsspeicherung ist deaktiviert"
 
 #: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
-msgstr "Verlauf löschen…"
+msgstr "Verlauf löschen …"
 
 #: src/Views/TrackPanel.vala:97
 msgid "Your system"
@@ -340,7 +340,7 @@ msgstr ""
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr "Erlaube %s Ortungsdienste zu benutzen"
+msgstr "%s erlauben, Ortungsdienste zu nutzen"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
@@ -389,7 +389,7 @@ msgstr "Ordner hinzufügen …"
 
 #: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
-msgstr "Wählen Sie einen auszuschließenden Ordner"
+msgstr "Auszuschließenden Ordner wählen"
 
 #: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
