@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-03-02 21:07+0000\n"
+"PO-Revision-Date: 2021-03-04 07:57+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ru/>\n"
@@ -35,12 +35,12 @@ msgstr "Для изменения некоторых настроек требу
 
 #: src/Plug.vala:146
 msgid "Privacy"
-msgstr "Файлы и приложения"
+msgstr "Конфиденциальность"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
-msgstr "Безопасность"
+msgstr "Блокировка"
 
 #: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
