@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-03-04 07:57+0000\n"
+"PO-Revision-Date: 2021-03-08 04:48+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ru/>\n"
@@ -398,7 +398,7 @@ msgstr "Добавить"
 
 #: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
-msgstr "Отмена"
+msgstr "Отменить"
 
 #: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
