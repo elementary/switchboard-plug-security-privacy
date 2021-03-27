@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-03-16 16:50+0000\n"
+"PO-Revision-Date: 2021-03-27 07:58+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -339,15 +339,15 @@ msgstr "システム収集ファイルとアプリケーションの使用状況
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "過去 1 時間"
+msgstr "過去1時間"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr "過去 1 日"
+msgstr "過去1日"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr "過去 1 週間"
+msgstr "過去1週間"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
