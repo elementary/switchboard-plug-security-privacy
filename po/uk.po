@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-05-01 19:43+0000\n"
+"PO-Revision-Date: 2021-05-03 15:59+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/uk/>\n"
@@ -73,7 +73,7 @@ msgstr "Блокувати у режимі сну"
 
 #: src/Plug.vala:192
 msgid "Lock after sceen turns off"
-msgstr "Блокувати після вимкнення екрану"
+msgstr "Блокувати після вимкнення екрана"
 
 #: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
@@ -249,7 +249,7 @@ msgstr "Блокувати коли призупинено:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr "Блокувати після вимкнення екрану:"
+msgstr "Блокувати після вимкнення екрана:"
 
 #: src/Views/TrackPanel.vala:29
 #, c-format
