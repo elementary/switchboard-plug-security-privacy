@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-02-09 09:53+0000\n"
+"PO-Revision-Date: 2021-05-05 17:22+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fi/>\n"
@@ -85,7 +85,7 @@ msgstr "Poista automaattisesti vanhat roskakorissa olevat tiedostot"
 #: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
-"Montako päivää väliaikaistiedostoja ja roskakorin tiedostoja säilytetään"
+"Kuinka monta päivää väliaikaistiedostoja ja roskakorin tiedostoja säilytetään"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -212,8 +212,7 @@ msgstr "Roskakoriin siirretyt tiedostot"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
-msgstr ""
-"Montako päivää väliaikaistiedostoja ja roskakorin tiedostoja säilytetään:"
+msgstr "Säilytä väliaikaistiedostoja ja roskakorin tiedostoja:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
