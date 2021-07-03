@@ -32,7 +32,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     }
 
     construct {
-        var switch_header_label = new Granite.HeaderLabel (_("Automatically Delete:"));
+        var switch_header_label = new Granite.HeaderLabel (_("Auto-deletion:"));
 
         temp_files_switch = new Gtk.CheckButton.with_label (_("Old temporary files"));
         temp_files_switch.margin_start = 12;
@@ -41,7 +41,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         trash_files_switch.margin_bottom = 18;
         trash_files_switch.margin_start = 12;
 
-        spin_header_label = new Granite.HeaderLabel (_("Delete Trashed and Temporary Files After:"));
+        spin_header_label = new Granite.HeaderLabel (_("Delete trashed and temporary files after:"));
 
         file_age_spinbutton = new Gtk.SpinButton.with_range (0, 90, 5);
         file_age_spinbutton.margin_start = 12;
@@ -92,8 +92,8 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
     private void update_days (uint age) {
         description = dngettext (Build.GETTEXT_PACKAGE,
-            "Old files can be automatically deleted after %u day to save space and help protect your privacy.",
-            "Old files can be automatically deleted after %u days to save space and help protect your privacy.",
+            "Old files can be auto-deleted after %u day to save space and help protect your privacy.",
+            "Old files can be auto-deleted after %u days to save space and help protect your privacy.",
             age
         ).printf (age);
 
