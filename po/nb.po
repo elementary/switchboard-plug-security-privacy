@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-06-03 15:50+0000\n"
+"PO-Revision-Date: 2021-07-03 07:44+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/nb/>\n"
@@ -200,7 +200,7 @@ msgstr "Legg til regel"
 #: src/Views/HouseKeepingPanel.vala:35
 #, fuzzy
 msgid "Automatically Delete:"
-msgstr "Automatisk slett gamle filer fra papirkurven:"
+msgstr "Automatisk ssletting:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Old temporary files"
