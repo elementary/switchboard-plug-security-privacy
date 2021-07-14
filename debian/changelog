@@ -1,3 +1,20 @@
+switchboard-plug-security-privacy (2.2.5) bionic; urgency=medium
+
+  * Release 2.2.5 (#129)
+  * LINGUAS: sort, remove en_US
+  * Update translation files
+  * Construct blacklist in track panel (#123)
+  * Plug: Always show infobar, use revealed (#122)
+  * Plug: remove static self (#121)
+  * Update translation template
+  * Specify that temp files are unneeded (#118)
+  * Don't use invalid vala syntax (#116)
+  * Use GNOME key to enable screen locking (#115)
+  * Release: change branch to Odin (#110)
+  * LockPanel: Rewrite using new gala gsettings (#111)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 14 Jul 2021 22:03:42 +0000
+
 switchboard-plug-security-privacy (2.2.4) bionic; urgency=medium
 
   * Release 2.2.4 (#109)
