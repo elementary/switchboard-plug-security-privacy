@@ -6,6 +6,9 @@ pkgdatadir_declaration = configure_file(
 
 plug_files = files(
     'BlackList.vala',
+    'Services/Device.vala',
+    'Interfaces.vala',
+    'Permission.vala',
     'Plug.vala',
     'UFWHelpers.vala',
     'ZGUtilities.vala',
