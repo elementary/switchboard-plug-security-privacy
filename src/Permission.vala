@@ -18,16 +18,16 @@
  */
 
  namespace SecurityPrivacy {
-    public static Polkit.Permission? permission = null;
+    public static Polkit.Permission? permission_fingerprint = null;
 
     public static Polkit.Permission? get_permission () {
-        if (permission != null) {
-            return permission;
+        if (permission_fingerprint != null) {
+            return permission_fingerprint;
         }
 
         try {
-            permission = new Polkit.Permission.sync ("io.elementary.switchboard.security-privacy", new Polkit.UnixProcess (Posix.getpid ()));
-            return permission;
+            permission_fingerprint = new Polkit.Permission.sync ("io.elementary.switchboard.security-privacy.administrator", new Polkit.UnixProcess (Posix.getpid ()));
+            return permission_fingerprint;
         } catch (Error e) {
             critical (e.message);
             return null;
