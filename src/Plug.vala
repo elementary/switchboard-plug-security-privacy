@@ -27,6 +27,8 @@ namespace SecurityPrivacy {
     public static HouseKeepingPanel housekeeping;
     public static TrackPanel tracking;
 
+    public Polkit.Permission permission;
+
     public class Plug : Switchboard.Plug {
         Gtk.Grid main_grid;
         Gtk.Stack stack;
@@ -95,35 +97,28 @@ namespace SecurityPrivacy {
             grid.attach (infobar, 0, 0);
             grid.attach (stack, 0, 1);
 
-            try {
-                var permission = new Polkit.Permission.sync (
-                    "io.elementary.switchboard.security-privacy",
-                    new Polkit.UnixProcess (Posix.getpid ())
-                );
+            permission = get_permission ();
 
-                lock_button = new Gtk.LockButton (permission);
+            lock_button = new Gtk.LockButton (permission);
 
-                infobar.revealed = false;
-                infobar.get_action_area ().add (lock_button);
+            infobar.revealed = false;
+            infobar.get_action_area ().add (lock_button);
 
-                stack.notify["visible-child-name"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
-                        infobar.revealed = true;
-                    } else {
-                        infobar.revealed = false;
-                    }
-                });
+            stack.notify["visible-child-name"].connect (() => {
+                if (!permission.allowed && (stack.visible_child_name == "firewall" || stack.visible_child_name == "locking")) {
+                    infobar.revealed = true;
+                } else {
+                    infobar.revealed = false;
+                }
+            });
 
-                permission.notify["allowed"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
-                        infobar.revealed = true;
-                    } else {
-                        infobar.revealed = false;
-                    }
-                });
-            } catch (Error e) {
-                critical (e.message);
-            }
+            permission.notify["allowed"].connect (() => {
+                if (permission.allowed == false && stack.visible_child_name == "firewall") {
+                    infobar.revealed = true;
+                } else {
+                    infobar.revealed = false;
+                }
+            });
 
             tracking = new TrackPanel ();
             var locking = new LockPanel ();

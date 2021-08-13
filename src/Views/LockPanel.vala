@@ -33,26 +33,19 @@ public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
     }
 
     construct {
-        var permission = get_permission ();
-        print (permission.allowed.to_string ());
-        try {
-            fprint = Bus.get_proxy_sync (BusType.SYSTEM, DBUS_FPRINT_NAME, DBUS_FPRINT_PATH, DBusProxyFlags.NONE);
+        permission.notify["allowed"].connect (() => {
+            try {
+                fprint = Bus.get_proxy_sync (BusType.SYSTEM, DBUS_FPRINT_NAME, DBUS_FPRINT_PATH, DBusProxyFlags.NONE);
+                print ("Connection to Fprint DBus  established");
 
-            print (("Connection to Fprint device %s established").printf (device_path));
-        } catch (Error e) {
-            critical ("Connecting to UPower device failed: %s", e.message);
-        }
-
-        //  try {
-        //      var fp_path = fprint.GetDefaultDevice ();
-        //      print (fp_path);
-        //  } catch (Error e) {
-        //      print ("error" + e.message);
-        //  }
-
-        //  foreach (var device_path in fprint.GetDevices ()) {
-        //      print (device_path.to_string ());
-        //  };
+                foreach (var device_path in fprint.GetDevices ()) {
+                    print (device_path.to_string ());
+                };
+            } catch (Error e) {
+                print ("error" + e.message);
+            }
+        });
+        
         var lock_suspend_label = new Gtk.Label (_("Lock on suspend:"));
         lock_suspend_label.halign = Gtk.Align.END;
 
