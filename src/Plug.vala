@@ -44,6 +44,9 @@ namespace SecurityPrivacy {
         private const string LOCATION = "location";
 
         public Plug () {
+            GLib.Intl.bindtextdomain (Build.GETTEXT_PACKAGE, Build.LOCALEDIR);
+            GLib.Intl.bind_textdomain_codeset (Build.GETTEXT_PACKAGE, "UTF-8");
+
             Object (category: Category.PERSONAL,
                     code_name: "io.elementary.switchboard.security-privacy",
                     display_name: _("Security & Privacy"),
