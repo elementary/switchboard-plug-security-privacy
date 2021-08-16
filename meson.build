@@ -27,6 +27,7 @@ add_project_arguments(
 configuration_data = configuration_data()
 configuration_data.set('PKGDATADIR', pkgdatadir)
 configuration_data.set('GETTEXT_PACKAGE', gettext_name)
+configuration_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 
 dbus_dep = dependency('dbus-1')
 
