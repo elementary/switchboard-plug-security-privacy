@@ -21,9 +21,8 @@
 
 public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
     private Fprint? fprint;
-    private FprintDevice? fprint_device;
-
-    private string device_path = "/net/reactivated/Fprint/Device/0";
+    private FprintDevice fprint_device;
+    private string fprint_device_path = "";
 
     public LockPanel () {
         Object (
@@ -33,19 +32,18 @@ public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
     }
 
     construct {
-        permission.notify["allowed"].connect (() => {
-            try {
-                fprint = Bus.get_proxy_sync (BusType.SYSTEM, DBUS_FPRINT_NAME, DBUS_FPRINT_PATH, DBusProxyFlags.NONE);
-                print ("Connection to Fprint DBus  established");
-
-                foreach (var device_path in fprint.GetDevices ()) {
-                    print (device_path.to_string ());
-                };
-            } catch (Error e) {
-                print ("error" + e.message);
+        try {
+            fprint = Bus.get_proxy_sync (BusType.SYSTEM, DBUS_FPRINT_NAME, DBUS_FPRINT_PATH, DBusProxyFlags.NONE);
+            print ("Connection to Fprint DBus established \n");
+            fprint_device_path = fprint.GetDefaultDevice ();
+            if (fprint_device_path != "") {
+                fprint_device = Bus.get_proxy_sync (BusType.SYSTEM, DBUS_FPRINT_NAME, fprint_device_path, DBusProxyFlags.NONE);
+                print ("Connection to Fprint Default Device %s established \n".printf (fprint_device_path));
             }
-        });
-        
+        } catch (Error e) {
+            print ("error" + e.message);
+        }
+
         var lock_suspend_label = new Gtk.Label (_("Lock on suspend:"));
         lock_suspend_label.halign = Gtk.Align.END;
 

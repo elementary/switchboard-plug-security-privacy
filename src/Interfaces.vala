@@ -1,6 +1,6 @@
 namespace SecurityPrivacy {
     public const string DBUS_FPRINT_NAME = "net.reactivated.Fprint";
-    public const string DBUS_FPRINT_PATH = "/net/reactivated/Fprint";
+    public const string DBUS_FPRINT_PATH = "/net/reactivated/Fprint/Manager";
     
     public enum EnrollStatus {
         ENROLL_COMPLETED,
@@ -18,7 +18,7 @@ namespace SecurityPrivacy {
         //  enroll-unknown-error: An unknown error occurred (usually a driver problem), Device.EnrollStop should now be called.
     }
 
-    [DBus (name = "net.reactivated.Fprint")]
+    [DBus (name = "net.reactivated.Fprint.Manager")]
     interface Fprint : Object {
         public abstract ObjectPath[] GetDevices () throws GLib.Error;
         public abstract ObjectPath GetDefaultDevice () throws GLib.Error;
@@ -42,11 +42,16 @@ namespace SecurityPrivacy {
         public signal void VerifyStatus (string result, bool done);
         public signal void EnrollStatus (string result, bool done);
 
-        public abstract string name { owned get; }
-        public abstract int num_enroll_stages { owned get; }
-        public abstract string scan_type { owned get; }
-        public abstract bool finger_present { owned get; }
-        public abstract bool finger_needed { owned get; }
+        [DBus (name = "name")]
+        public abstract string name { public owned get; }
+        [DBus (name = "num-enroll-stages")]
+        public abstract int num_enroll_stages { public owned get; }
+        [DBus (name = "scan-type")]
+        public abstract string scan_type { public owned get; }
+        [DBus (name = "finger-present")]
+        public abstract bool finger_present { public owned get; }
+        [DBus (name = "finger-needed")]
+        public abstract bool finger_needed { public owned get; }
 
     }
 }

@@ -28,6 +28,8 @@ configuration_data = configuration_data()
 configuration_data.set('PKGDATADIR', pkgdatadir)
 configuration_data.set('GETTEXT_PACKAGE', gettext_name)
 
+dbus_dep = dependency('dbus-1')
+
 subdir('data')
 subdir('src')
 subdir('po')
