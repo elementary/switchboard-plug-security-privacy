@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-08-23 13:11+0000\n"
+"PO-Revision-Date: 2021-08-23 14:23+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/sk/>\n"
@@ -103,7 +103,7 @@ msgstr ""
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr "Zakázané"
+msgstr "Vypnutý"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
 #: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
