@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-08-23 13:11+0000\n"
+"PO-Revision-Date: 2021-08-24 21:51+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/hu/>\n"
@@ -98,12 +98,12 @@ msgstr "Hitelesítés szükséges a tűzfal beállításához"
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
-msgstr "Bekapcsolva"
+msgstr "Engedélyezve"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr "Kikapcsolva"
+msgstr "Letiltva"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
 #: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
@@ -178,7 +178,7 @@ msgstr "Protokoll:"
 
 #: src/Views/FirewallPanel.vala:350
 msgid "Version:"
-msgstr "Típus:"
+msgstr "Verzió:"
 
 #: src/Views/FirewallPanel.vala:355
 msgid "Both"
