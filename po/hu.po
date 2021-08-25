@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-08-25 19:58+0000\n"
+"PO-Revision-Date: 2021-08-26 00:26+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/hu/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Biztonság és magánszféra"
+msgstr "Biztonság és adatvédelem"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: src/Plug.vala:146
 msgid "Privacy"
-msgstr "Magánszféra"
+msgstr "Adatvédelem"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
@@ -51,7 +51,7 @@ msgstr "Tűzfal"
 #: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
-msgstr "háztartás"
+msgstr "Takarítás"
 
 #: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
@@ -143,7 +143,7 @@ msgstr "%s Port %s"
 
 #: src/Views/FirewallPanel.vala:290
 msgid "Version"
-msgstr "Típus"
+msgstr "Verzió"
 
 #: src/Views/FirewallPanel.vala:291
 msgid "Action"
@@ -200,19 +200,19 @@ msgstr "Szabály hozzáadása"
 
 #: src/Views/HouseKeepingPanel.vala:35
 msgid "Automatically Delete:"
-msgstr ""
+msgstr "Automatikus törlés:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Old temporary files"
-msgstr ""
+msgstr "Régi ideiglenes fájlok"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Kukába helyezett fájlok"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
-msgstr ""
+msgstr "Kukába helyezett és ideiglenes fájlok törlése ennyi idő után:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
@@ -227,18 +227,21 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"A régi fájlok automatikusan törölve lehetnek %u nap után tárhely "
+"felszabadítása és adatvédelmi célból."
 msgstr[1] ""
+"A régi fájlok automatikusan törölve lehetnek %u nap után tárhely "
+"felszabadítása és adatvédelmi célból."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Nap"
+msgstr[1] "Nap"
 
 #: src/Views/LockPanel.vala:31
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Zárolás alváskor:"
+msgstr "Zárolás felfüggesztéskor:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
@@ -258,18 +261,15 @@ msgstr ""
 "ezen készülékről harmadik személy részére."
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"A(z) %s nem tárol további adatokat vagy statisztikákat a fájlok és az "
-"alkalmazások használatáról."
+msgstr "A(z) %s nem fog tárolni további használati adatokat."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Ez hatással lesz az általuk szolgáltatott további funkciókra."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -315,7 +315,7 @@ msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
-"Amíg helymeghatározási szolgáltatások ki vannak kapcsolva, az alkalmazások "
+"Amíg a helymeghatározási szolgáltatások ki vannak kapcsolva, az alkalmazások "
 "helykérései automatikusan elutasításra kerülnek."
 
 #: src/Views/LocationPanel.vala:74
@@ -349,15 +349,15 @@ msgstr ""
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "Az elmúlt óra"
+msgstr "Az elmúlt óráról"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr "Az elmúlt nap"
+msgstr "Az elmúlt napról"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr "Az elmúlt hét"
+msgstr "Az elmúlt hétről"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
