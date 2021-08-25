@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2021-08-25 19:52+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/hu/>\n"
 "Language: hu\n"
@@ -88,7 +88,7 @@ msgstr "Korábban kukába helyezett fájlok automatikus törlése"
 
 #: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
-msgstr "Ideiglenes és törölt fájlok megőrzése ...napig"
+msgstr "Ideiglenes és kukába helyezett fájlok megőrzésének időtartama"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
