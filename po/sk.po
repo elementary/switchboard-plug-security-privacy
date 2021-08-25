@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-08-25 17:20+0000\n"
+"PO-Revision-Date: 2021-08-25 18:30+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/sk/>\n"
@@ -31,7 +31,7 @@ msgstr "Nastavujte bránu Firewall, zámok obrazovky a informácie o aktivite"
 
 #: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
-msgstr "Niektoré nastavenia vyžadujú zmenu administrátorských práv"
+msgstr "Na zmenu niektorých nastavení sú potrebné administrátorské práva"
 
 #: src/Plug.vala:146
 msgid "Privacy"
