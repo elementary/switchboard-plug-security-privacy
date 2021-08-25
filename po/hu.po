@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2021-08-25 19:56+0000\n"
-"Last-Translator: Papp Gábor <pgabee@gmail.com>\n"
+"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/hu/>\n"
 "Language: hu\n"
@@ -380,11 +380,11 @@ msgstr "Adatok törlése"
 
 #: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
-msgstr "Alkalmazás hozzáadása"
+msgstr "Alkalmazás hozzáadása…"
 
 #: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
-msgstr "Mappa hozzáadása"
+msgstr "Mappa hozzáadása…"
 
 #: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
