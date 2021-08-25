@@ -440,7 +440,7 @@ msgstr "Videók"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Részben bekapcsolva"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "
