@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2021-08-25 19:58+0000\n"
-"Last-Translator: Papp Gábor <pgabee@gmail.com>\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/hu/>\n"
 "Language: hu\n"
@@ -64,19 +64,16 @@ msgid "History"
 msgstr "Előzmények"
 
 #: src/Plug.vala:189
-#, fuzzy
 msgid "Clear History"
-msgstr "Előzmények törlése…"
+msgstr "Előzmények törlése"
 
 #: src/Plug.vala:191
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Zárolás alváskor:"
+msgstr "Zárolás alváskor"
 
 #: src/Plug.vala:192
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Zárolás mikor a képernyő kikapcsol:"
+msgstr "Zárolás mikor a képernyő kikapcsol"
 
 #: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
@@ -440,7 +437,7 @@ msgstr "Videók"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr "Részben bekapcsolva"
+msgstr "Részben engedélyezett"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "
