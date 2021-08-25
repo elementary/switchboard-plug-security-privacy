@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2021-08-24 16:30+0000\n"
+"PO-Revision-Date: 2021-08-25 17:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/sk/>\n"
@@ -27,7 +27,7 @@ msgstr "Bezpečnosť & Súkromie"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Nastav firewall, zámok obrazovky a informácie o aktivite"
+msgstr "Nastavujte bránu Firewall, zámok obrazovky a informácie o aktivite"
 
 #: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
@@ -92,7 +92,7 @@ msgstr ""
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Je vyžadované overenie pre spustenie konfigurovania Firewallu"
+msgstr "Pre spustenie brány Firewall je potrebné overenie"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
