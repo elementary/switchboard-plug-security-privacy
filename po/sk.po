@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
 "PO-Revision-Date: 2021-08-28 17:13+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/sk/>\n"
 "Language: sk\n"
@@ -275,21 +275,20 @@ msgstr ""
 "Doplnkové funkcie, ktoré tieto údaje umožňujú, budú nastavením ovplyvnené."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Nezabráni to aplikáciám v nahrávaní svojich vlastných údajov o používaní ako "
-"je napríklad história prehliadača"
+"Toto nemusí zabrániť aplikáciám v uchovávaní svojich vlastných údajov, ako "
+"napríklad históriu prehliadača."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
-msgstr ""
+msgstr "História je vypnutá"
 
 #: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
-msgstr ""
+msgstr "Vymazať históriu…"
 
 #: src/Views/TrackPanel.vala:97
 msgid "Your system"
@@ -297,52 +296,59 @@ msgstr "Váš systém"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Povoľte aplikáciam nižšie zistiť vašu polohu"
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr ""
+msgstr "Žiadne aplikácie nepoužívajú služby určovania polohy"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Po inštalácii aplikácií používajúcich služby určovania polohy sa tu tieto "
+"aplikácie automaticky zobrazia."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Služby určovania polohy sú vypnuté"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Keď sú služby určovania polohy vypnuté, požiadavky o určení polohy z "
+"aplikácií budú automaticky odmietnuté."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Doplnkové funkcie, ktoré v týchto aplikáciách určovanie polohy umožňujú, "
+"budú nastavením ovplyvnené."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Toto nezabráni aplikáciám v pokusoch zistiť vašu polohu na základe IP adresy."
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr ""
+msgstr "Povoliť %s používať služby určovania polohy"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr "Hľadať aplikáciu"
+msgstr "Vyhľadať aplikáciu"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
-msgstr "Odstrániť systémom nazbierané súbory a dáta používania aplikácií z:"
+msgstr "Odstrániť systémom nazbierané súbory a údaje o používaní aplikácií z:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
