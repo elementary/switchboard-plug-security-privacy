@@ -94,10 +94,12 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
         privacy_settings.bind ("remove-old-temp-files", temp_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         privacy_settings.bind ("remove-old-trash-files", trash_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        privacy_settings.changed.connect (update_status);
 
         var housekeeping_settings = new Settings ("io.elementary.settings-daemon.housekeeping");
         housekeeping_settings.bind ("cleanup-downloads-folder", download_files_check, "active", GLib.SettingsBindFlags.DEFAULT);
-        housekeeping_settings.bind ("downloads-max-age-days", file_age_spinbutton, "value", GLib.SettingsBindFlags.DEFAULT);
+        housekeeping_settings.bind ("old-files-age", file_age_spinbutton, "value", GLib.SettingsBindFlags.DEFAULT);
+        housekeeping_settings.changed.connect (update_status);
 
         update_days ((uint) file_age_spinbutton.value);
 
@@ -105,9 +107,6 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
             update_days ((uint) file_age_spinbutton.value);
             privacy_settings.set_uint ("old-files-age", (uint) file_age_spinbutton.value);
         });
-
-        temp_files_switch.notify["active"].connect (update_status);
-        trash_files_switch.notify["active"].connect (update_status);
 
         view_trash_button.clicked.connect (() => {
             try {
