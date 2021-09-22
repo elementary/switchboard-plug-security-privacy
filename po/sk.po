@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2019-10-17 17:24+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2021-08-28 17:31+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/sk/>\n"
 "Language: sk\n"
@@ -18,20 +18,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Bezpečnosť & Súkromie"
+msgstr "Bezpečnosť a súkromie"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Nastav firewall, zámok obrazovky a informácie o aktivite"
+msgstr "Nastavujte bránu Firewall, zámok obrazovky a informácie o aktivite"
 
 #: src/Plug.vala:104
 msgid "Some settings require administrator rights to be changed"
-msgstr "Niektoré nastavenia vyžadujú zmenu administrátorských práv"
+msgstr "Na zmenu niektorých nastavení sú potrebné administrátorské práva"
 
 #: src/Plug.vala:146
 msgid "Privacy"
@@ -40,7 +40,7 @@ msgstr "Súkromie"
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
-msgstr "Uzamknutie"
+msgstr "Zamykanie"
 
 #: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
@@ -51,64 +51,61 @@ msgstr "Firewall"
 #: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
-msgstr ""
+msgstr "Upratovanie"
 
 #: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
-msgstr ""
+msgstr "Služby určovania polohy"
 
 #: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
-msgstr ""
+msgstr "História"
 
 #: src/Plug.vala:189
-#, fuzzy
 msgid "Clear History"
-msgstr "Vymazať údaje"
+msgstr "Vymazať históriu"
 
 #: src/Plug.vala:191
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Zamknúť pri spánku:"
+msgstr "Uzamknúť pri spánku"
 
 #: src/Plug.vala:192
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Zamknúť po vypnutí obrazovky:"
+msgstr "Uzamknúť po vypnutí obrazovky"
 
 #: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
-msgstr ""
+msgstr "Automaticky vymazávať staré dočasné súbory"
 
 #: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
-msgstr ""
+msgstr "Automaticky vymazávať staré súbory v koši"
 
 #: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
+msgstr "Počet dní pre zachovanie dočasných súborov a súborov v koši"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Je vyžadované overenie pre spustenie konfigurovania Firewallu"
+msgstr "Pre spustenie brány Firewall je potrebné overenie"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
-msgstr ""
+msgstr "Zapnuté"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr "Zakázané"
+msgstr "Vypnuté"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
 #: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
 msgid "Unknown"
-msgstr "Neznámy"
+msgstr "Neznáme"
 
 #: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
 msgid "Allow"
@@ -135,18 +132,18 @@ msgid "Out"
 msgstr "Výstup"
 
 #: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
-#, fuzzy, c-format
+#, c-format
 msgid "%s Ports %s"
-msgstr "Porty"
+msgstr "%s porty %s"
 
 #: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
-#, fuzzy, c-format
+#, c-format
 msgid "%s Port %s"
-msgstr "Porty"
+msgstr "%s port %s"
 
 #: src/Views/FirewallPanel.vala:290
 msgid "Version"
-msgstr ""
+msgstr "Verzia"
 
 #: src/Views/FirewallPanel.vala:291
 msgid "Action"
@@ -161,14 +158,12 @@ msgid "Direction"
 msgstr "Smer"
 
 #: src/Views/FirewallPanel.vala:294
-#, fuzzy
 msgid "To"
-msgstr "Do:"
+msgstr "Do"
 
 #: src/Views/FirewallPanel.vala:295
-#, fuzzy
 msgid "From"
-msgstr "Od:"
+msgstr "Od"
 
 #: src/Views/FirewallPanel.vala:334
 msgid "Action:"
@@ -180,15 +175,15 @@ msgstr "Protokol:"
 
 #: src/Views/FirewallPanel.vala:350
 msgid "Version:"
-msgstr ""
+msgstr "Verzia:"
 
 #: src/Views/FirewallPanel.vala:355
 msgid "Both"
-msgstr ""
+msgstr "Oboje"
 
 #: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
-msgstr "Inštrukcie:"
+msgstr "Smer:"
 
 #: src/Views/FirewallPanel.vala:365
 msgid "Ports:"
@@ -205,23 +200,23 @@ msgstr "Pridať pravidlo"
 
 #: src/Views/HouseKeepingPanel.vala:35
 msgid "Automatically Delete:"
-msgstr ""
+msgstr "Automaticky vymazávať:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Old temporary files"
-msgstr ""
+msgstr "Staré dočasné súbory"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Súbory v koši"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
-msgstr ""
+msgstr "Vymazať dočasné súbory a súbory v koši po uplynutí:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
-msgstr ""
+msgstr "Otvoriť kôš…"
 
 #: src/Views/HouseKeepingPanel.vala:95
 #, c-format
@@ -232,22 +227,29 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"Staré súbory je možné automaticky vymazávať po uplynutí %u dňa aby sa "
+"šetrilo priestorom na úložisku a chránilo vaše súkromie."
 msgstr[1] ""
+"Staré súbory je možné automaticky vymazávať po uplynutí %u dní aby sa "
+"šetrilo priestorom na úložisku a chránilo vaše súkromie."
+msgstr[2] ""
+"Staré súbory je možné automaticky vymazávať po uplynutí %u dní aby sa "
+"šetrilo priestorom na úložisku a chránilo vaše súkromie."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Dňa"
+msgstr[1] "Dní"
+msgstr[2] "Dní"
 
 #: src/Views/LockPanel.vala:31
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Zamknúť pri spánku:"
+msgstr "Uzamknúť pri uspaní:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr "Zamknúť po vypnutí obrazovky:"
+msgstr "Uzamknúť po vypnutí obrazovky:"
 
 #: src/Views/TrackPanel.vala:29
 #, c-format
@@ -257,32 +259,36 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s môže ukladať miestne údaje o používaní aby mohla byť poskytovaná "
+"funkcionalita, ako napríklad ponuka nedávno použitých súborov a presnejšie "
+"miestne vyhľadávanie. Bez ohľadu na toto nastavenie sa údaje o používaní "
+"nikdy neprenášajú mimo toto zariadenie, ani nepredávajú tretím stranám."
 
 #: src/Views/TrackPanel.vala:37
 #, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
+msgstr "%s už naďalej nebude zbierať údaje o používaní."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
-msgstr "Ďalšie funkcie, ktoré tieto dáta poskytujú, budú ovplyvnené."
+msgstr ""
+"Doplnkové funkcie, ktoré tieto údaje umožňujú, budú nastavením ovplyvnené."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Nezabráni to aplikáciám v nahrávaní svojich vlastných údajov o používaní ako "
-"je napríklad história prehliadača"
+"Toto nemusí zabrániť aplikáciám v uchovávaní svojich vlastných údajov, ako "
+"napríklad históriu prehliadača."
 
 #: src/Views/TrackPanel.vala:42
 msgid "History Is Disabled"
-msgstr ""
+msgstr "História je vypnutá"
 
 #: src/Views/TrackPanel.vala:51
 msgid "Clear History…"
-msgstr ""
+msgstr "Vymazať históriu…"
 
 #: src/Views/TrackPanel.vala:97
 msgid "Your system"
@@ -290,52 +296,59 @@ msgstr "Váš systém"
 
 #: src/Views/LocationPanel.vala:43
 msgid "Allow the apps below to determine your location"
-msgstr ""
+msgstr "Povoľte aplikáciam nižšie zistiť vašu polohu"
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr ""
+msgstr "Žiadne aplikácie nepoužívajú služby určovania polohy"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"Po inštalácii aplikácií používajúcich služby určovania polohy sa tu tieto "
+"aplikácie automaticky zobrazia."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "Služby určovania polohy sú vypnuté"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"Keď sú služby určovania polohy vypnuté, požiadavky o určení polohy z "
+"aplikácií budú automaticky odmietnuté."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"Doplnkové funkcie, ktoré v týchto aplikáciách určovanie polohy umožňujú, "
+"budú nastavením ovplyvnené."
 
 #: src/Views/LocationPanel.vala:75
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"Toto nezabráni aplikáciám v pokusoch zistiť vašu polohu na základe IP adresy."
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr ""
+msgstr "Povoliť %s používať služby určovania polohy"
 
 #: src/Widgets/AppChooser.vala:39
 msgid "Search Application"
-msgstr "Hľadať aplikáciu"
+msgstr "Vyhľadať aplikáciu"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
-msgstr "Odstrániť systémom nazbierané súbory a dáta používania aplikácií z:"
+msgstr "Odstrániť systémom nazbierané súbory a údaje o používaní aplikácií z:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
@@ -367,11 +380,11 @@ msgstr "Vymazať údaje"
 
 #: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
-msgstr "Pridať aplikáciu..."
+msgstr "Pridať aplikáciu…"
 
 #: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
-msgstr "Pridať Priečinok..."
+msgstr "Pridať priečinok…"
 
 #: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
@@ -391,7 +404,7 @@ msgstr "Vymazať"
 
 #: src/Widgets/ExcludeTreeView.vala:142
 msgid "Do not collect data from the following:"
-msgstr "Nezhromažďovať údaje z nasledujúcich aplikácií:"
+msgstr "Nezhromažďovať údaje z nasledujúcich:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
@@ -399,7 +412,7 @@ msgstr "Zdroje údajov:"
 
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Chat Logs"
-msgstr "Záznamy rozhovorov"
+msgstr "Záznamy konverzácií"
 
 #: src/Widgets/IncludeTreeView.vala:89
 msgid "Documents"
@@ -427,7 +440,7 @@ msgstr "Videá"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Čiastočne povolené"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "

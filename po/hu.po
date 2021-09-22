@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-10 16:55+0000\n"
-"PO-Revision-Date: 2018-06-18 00:05+0000\n"
-"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2021-08-26 00:26+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Biztonság és magánszféra"
+msgstr "Biztonság és adatvédelem"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: src/Plug.vala:146
 msgid "Privacy"
-msgstr "Magánszféra"
+msgstr "Adatvédelem"
 
 #: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
@@ -51,7 +51,7 @@ msgstr "Tűzfal"
 #: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
-msgstr ""
+msgstr "Takarítás"
 
 #: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
@@ -64,46 +64,43 @@ msgid "History"
 msgstr "Előzmények"
 
 #: src/Plug.vala:189
-#, fuzzy
 msgid "Clear History"
-msgstr "Előzmények törlése…"
+msgstr "Előzmények törlése"
 
 #: src/Plug.vala:191
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "Zárolás alváskor:"
+msgstr "Zárolás alváskor"
 
 #: src/Plug.vala:192
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "Zárolás mikor a képernyő kikapcsol:"
+msgstr "Zárolás mikor a képernyő kikapcsol"
 
 #: src/Plug.vala:198
 msgid "Automatically delete old temporary files"
-msgstr ""
+msgstr "Régi ideiglenes fájlok automatikus törlése"
 
 #: src/Plug.vala:203
 msgid "Automatically delete old trashed files"
-msgstr ""
+msgstr "Korábban kukába helyezett fájlok automatikus törlése"
 
 #: src/Plug.vala:208
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
+msgstr "Ideiglenes és kukába helyezett fájlok megőrzésének időtartama"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Hitelesítés szükséges a tűzfal beállításokhoz"
+msgstr "Hitelesítés szükséges a tűzfal beállításához"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
-msgstr "Bekapcsolva"
+msgstr "Engedélyezve"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr "Kikapcsolva"
+msgstr "Letiltva"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
 #: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
@@ -146,7 +143,7 @@ msgstr "%s Port %s"
 
 #: src/Views/FirewallPanel.vala:290
 msgid "Version"
-msgstr "Típus"
+msgstr "Verzió"
 
 #: src/Views/FirewallPanel.vala:291
 msgid "Action"
@@ -178,7 +175,7 @@ msgstr "Protokoll:"
 
 #: src/Views/FirewallPanel.vala:350
 msgid "Version:"
-msgstr "Típus:"
+msgstr "Verzió:"
 
 #: src/Views/FirewallPanel.vala:355
 msgid "Both"
@@ -186,7 +183,7 @@ msgstr "Mindkét"
 
 #: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
-msgstr "Irány"
+msgstr "Irány:"
 
 #: src/Views/FirewallPanel.vala:365
 msgid "Ports:"
@@ -203,23 +200,23 @@ msgstr "Szabály hozzáadása"
 
 #: src/Views/HouseKeepingPanel.vala:35
 msgid "Automatically Delete:"
-msgstr ""
+msgstr "Automatikus törlés:"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Old temporary files"
-msgstr ""
+msgstr "Régi ideiglenes fájlok"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Trashed files"
-msgstr ""
+msgstr "Kukába helyezett fájlok"
 
 #: src/Views/HouseKeepingPanel.vala:44
 msgid "Delete Trashed and Temporary Files After:"
-msgstr ""
+msgstr "Kukába helyezett és ideiglenes fájlok törlése ennyi idő után:"
 
 #: src/Views/HouseKeepingPanel.vala:64
 msgid "Open Trash…"
-msgstr ""
+msgstr "Kuka megnyitása…"
 
 #: src/Views/HouseKeepingPanel.vala:95
 #, c-format
@@ -230,18 +227,21 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"A régi fájlok automatikusan törölve lehetnek %u nap után tárhely "
+"felszabadítása és adatvédelmi célból."
 msgstr[1] ""
+"A régi fájlok automatikusan törölve lehetnek %u nap után tárhely "
+"felszabadítása és adatvédelmi célból."
 
 #: src/Views/HouseKeepingPanel.vala:101
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Nap"
+msgstr[1] "Nap"
 
 #: src/Views/LockPanel.vala:31
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Zárolás alváskor:"
+msgstr "Zárolás felfüggesztéskor:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
@@ -255,20 +255,21 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"A(z) %s helyi használati adatokat tárolhat, hogy további funkcionalitást "
+"kínáljon, mint a legutóbb használt fájlok és hasznosabb helyi keresés. "
+"Beállítástól függetlenül a használati adatok sosem kerülnek továbbításra "
+"ezen készülékről harmadik személy részére."
 
 #: src/Views/TrackPanel.vala:37
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
-"A(z) %s nem tárol további adatokat vagy statisztikákat a fájlok és az "
-"alkalmazások használatáról."
+msgstr "A(z) %s nem fog tárolni további használati adatokat."
 
 #: src/Views/TrackPanel.vala:38
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Ez hatással lesz az általuk szolgáltatott további funkciókra."
 
 #: src/Views/TrackPanel.vala:39
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -314,7 +315,7 @@ msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
-"Amíg helymeghatározási szolgáltatások ki vannak kapcsolva, az alkalmazások "
+"Amíg a helymeghatározási szolgáltatások ki vannak kapcsolva, az alkalmazások "
 "helykérései automatikusan elutasításra kerülnek."
 
 #: src/Views/LocationPanel.vala:74
@@ -348,15 +349,15 @@ msgstr ""
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr "Az elmúlt óra"
+msgstr "Az elmúlt óráról"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr "Az elmúlt nap"
+msgstr "Az elmúlt napról"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr "Az elmúlt hét"
+msgstr "Az elmúlt hétről"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
@@ -376,11 +377,11 @@ msgstr "Adatok törlése"
 
 #: src/Widgets/ExcludeTreeView.vala:62
 msgid "Add Application…"
-msgstr "Alkalmazás hozzáadása"
+msgstr "Alkalmazás hozzáadása…"
 
 #: src/Widgets/ExcludeTreeView.vala:77
 msgid "Add Folder…"
-msgstr "Mappa hozzáadása"
+msgstr "Mappa hozzáadása…"
 
 #: src/Widgets/ExcludeTreeView.vala:80
 msgid "Select a folder to blacklist"
@@ -392,7 +393,7 @@ msgstr "Hozzáadás"
 
 #: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
-msgstr "Mégsem"
+msgstr "Mégse"
 
 #: src/Widgets/ExcludeTreeView.vala:98
 msgid "Delete"
@@ -436,7 +437,7 @@ msgstr "Videók"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "Részben engedélyezett"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "

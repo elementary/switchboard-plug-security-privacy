@@ -2,7 +2,7 @@ project(
     'security-privacy',
     'vala', 'c',
     meson_version: '>= 0.46.1',
-    version: '2.2.4'
+    version: '2.2.5'
 )
 i18n = import('i18n')
 
@@ -27,6 +27,7 @@ add_project_arguments(
 configuration_data = configuration_data()
 configuration_data.set('PKGDATADIR', pkgdatadir)
 configuration_data.set('GETTEXT_PACKAGE', gettext_name)
+configuration_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
 
 subdir('data')
 subdir('src')
