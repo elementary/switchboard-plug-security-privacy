@@ -20,6 +20,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     private Granite.HeaderLabel spin_header_label;
     private Gtk.Label file_age_label;
     private Gtk.SpinButton file_age_spinbutton;
+    private Gtk.CheckButton download_files_check;
     private Gtk.CheckButton temp_files_switch;
     private Gtk.CheckButton trash_files_switch;
 
@@ -34,14 +35,38 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     construct {
         var switch_header_label = new Granite.HeaderLabel (_("Automatically Delete:"));
 
-        temp_files_switch = new Gtk.CheckButton.with_label (_("Old temporary files"));
-        temp_files_switch.margin_start = 12;
+        var temp_files_grid = new Gtk.Grid ();
+        temp_files_grid.add (new Gtk.Image.from_icon_name ("folder", Gtk.IconSize.LARGE_TOOLBAR));
+        temp_files_grid.add (new Gtk.Label (_("Old temporary files")));
 
-        trash_files_switch = new Gtk.CheckButton.with_label (_("Trashed files"));
-        trash_files_switch.margin_bottom = 18;
-        trash_files_switch.margin_start = 12;
+        temp_files_switch = new Gtk.CheckButton () {
+            halign = Gtk.Align.START,
+            margin_start = 12
+        };
+        temp_files_switch.add (temp_files_grid);
 
-        spin_header_label = new Granite.HeaderLabel (_("Delete Trashed and Temporary Files After:"));
+        var download_files_grid = new Gtk.Grid ();
+        download_files_grid.add (new Gtk.Image.from_icon_name ("folder-download", Gtk.IconSize.LARGE_TOOLBAR));
+        download_files_grid.add (new Gtk.Label (_("Downloaded files")));
+
+        download_files_check = new Gtk.CheckButton () {
+            halign = Gtk.Align.START,
+            margin_start = 12
+        };
+        download_files_check.add (download_files_grid);
+
+        var trash_files_grid = new Gtk.Grid ();
+        trash_files_grid.add (new Gtk.Image.from_icon_name ("user-trash-full", Gtk.IconSize.LARGE_TOOLBAR));
+        trash_files_grid.add (new Gtk.Label (_("Trashed files")));
+
+        trash_files_switch = new Gtk.CheckButton () {
+            halign = Gtk.Align.START,
+            margin_start = 12,
+            margin_bottom = 18
+        };
+        trash_files_switch.add (trash_files_grid);
+
+        spin_header_label = new Granite.HeaderLabel (_("Delete Old Files After:"));
 
         file_age_spinbutton = new Gtk.SpinButton.with_range (0, 90, 5);
         file_age_spinbutton.margin_start = 12;
@@ -55,11 +80,12 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         content_area.column_spacing = content_area.row_spacing = 6;
         content_area.margin_start = 60;
         content_area.attach (switch_header_label, 0, 0, 2);
-        content_area.attach (temp_files_switch, 0, 1, 2);
-        content_area.attach (trash_files_switch, 0, 2, 2);
-        content_area.attach (spin_header_label, 0, 3, 2);
-        content_area.attach (file_age_label, 1, 4);
-        content_area.attach (file_age_spinbutton, 0, 4);
+        content_area.attach (download_files_check, 0, 1, 2);
+        content_area.attach (temp_files_switch, 0, 2, 2);
+        content_area.attach (trash_files_switch, 0, 3, 2);
+        content_area.attach (spin_header_label, 0, 4, 2);
+        content_area.attach (file_age_spinbutton, 0, 5);
+        content_area.attach (file_age_label, 1, 5);
 
         var view_trash_button = new Gtk.Button.with_label (_("Open Trash…"));
 
@@ -68,16 +94,19 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
         privacy_settings.bind ("remove-old-temp-files", temp_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         privacy_settings.bind ("remove-old-trash-files", trash_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
-        privacy_settings.bind ("old-files-age", file_age_spinbutton, "value", GLib.SettingsBindFlags.DEFAULT);
+        privacy_settings.changed.connect (update_status);
 
-        update_days (privacy_settings.get_uint ("old-files-age"));
+        var housekeeping_settings = new Settings ("io.elementary.settings-daemon.housekeeping");
+        housekeeping_settings.bind ("cleanup-downloads-folder", download_files_check, "active", GLib.SettingsBindFlags.DEFAULT);
+        housekeeping_settings.bind ("old-files-age", file_age_spinbutton, "value", GLib.SettingsBindFlags.DEFAULT);
+        housekeeping_settings.changed.connect (update_status);
 
-        privacy_settings.changed["old-files-age"].connect (() => {
-            update_days (privacy_settings.get_uint ("old-files-age"));
+        update_days ((uint) file_age_spinbutton.value);
+
+        file_age_spinbutton.value_changed.connect (() => {
+            update_days ((uint) file_age_spinbutton.value);
+            privacy_settings.set_uint ("old-files-age", (uint) file_age_spinbutton.value);
         });
-
-        temp_files_switch.notify["active"].connect (update_status);
-        trash_files_switch.notify["active"].connect (update_status);
 
         view_trash_button.clicked.connect (() => {
             try {
@@ -105,18 +134,19 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     }
 
     private void update_status () {
-        var either_active = temp_files_switch.active || trash_files_switch.active;
+        var all_active = temp_files_switch.active && trash_files_switch.active && download_files_check.active;
+        var any_active = temp_files_switch.active || trash_files_switch.active || download_files_check.active;
 
-        if (temp_files_switch.active && trash_files_switch.active) {
+        if (all_active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
-        } else if (either_active) {
+        } else if (any_active) {
             status_type = Granite.SettingsPage.StatusType.WARNING;
         } else {
             status_type = Granite.SettingsPage.StatusType.OFFLINE;
         }
 
-        file_age_label.sensitive = either_active;
-        file_age_spinbutton.sensitive = either_active;
-        spin_header_label.sensitive = either_active;
+        file_age_label.sensitive = any_active;
+        file_age_spinbutton.sensitive = any_active;
+        spin_header_label.sensitive = any_active;
     }
 }
