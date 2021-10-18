@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2019-05-15 17:14+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -28,61 +28,61 @@ msgstr "보안 & 프라이버시"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "방화벽, 화면 잠금, 활동 정보 등을 설정합니다"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "일부 설정은 변경할 때 관리자 권한이 필요합니다"
 
-#: src/Plug.vala:146
+#: src/Plug.vala:136
 msgid "Privacy"
 msgstr "프라이버시"
 
-#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
+#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "잠금"
 
-#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "방화벽"
 
-#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
-#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
+#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "가정용"
 
-#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "위치 서비스"
 
-#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "사용 기록"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:179
 msgid "Clear History"
 msgstr "사용 기록 청소"
 
-#: src/Plug.vala:191
+#: src/Plug.vala:181
 msgid "Lock on sleep"
 msgstr "슬립모드 일 때 잠금"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:182
 msgid "Lock after sceen turns off"
 msgstr "화면이 꺼진 후에 잠금"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:188
 msgid "Automatically delete old temporary files"
 msgstr "오래된 임시 파일 자동 삭제"
 
-#: src/Plug.vala:203
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr "휴지통에 보낸 지 오래된 파일 자동 삭제"
 
-#: src/Plug.vala:208
+#: src/Plug.vala:198
 msgid "Number of days to keep trashed and temporary files"
 msgstr "휴지통 및 임시 파일 보관 일 수"
 
@@ -91,12 +91,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "방화벽 설정을 실행하려면 인증이 필요합니다"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "사용함"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "사용 안 함"
@@ -197,31 +197,35 @@ msgstr "%d 또는 %d-%d"
 msgid "Add Rule"
 msgstr "규칙 추가"
 
-#: src/Views/HouseKeepingPanel.vala:35
+#: src/Views/HouseKeepingPanel.vala:36
 #, fuzzy
 msgid "Automatically Delete:"
 msgstr "휴지통에 보낸 지 오래된 파일 자동 삭제:"
 
-#: src/Views/HouseKeepingPanel.vala:37
+#: src/Views/HouseKeepingPanel.vala:40
 #, fuzzy
 #| msgid "Automatically delete old temporary files"
 msgid "Old temporary files"
 msgstr "오래된 임시 파일 자동 삭제"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:50
+msgid "Downloaded files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:44
+#: src/Views/HouseKeepingPanel.vala:69
 #, fuzzy
-msgid "Delete Trashed and Temporary Files After:"
+msgid "Delete Old Files After:"
 msgstr "휴지통 및 임시 파일 보관 일 수:"
 
-#: src/Views/HouseKeepingPanel.vala:64
+#: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
 msgstr "휴지통 열기…"
 
-#: src/Views/HouseKeepingPanel.vala:95
+#: src/Views/HouseKeepingPanel.vala:124
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -231,7 +235,7 @@ msgid_plural ""
 "protect your privacy."
 msgstr[0] ""
 
-#: src/Views/HouseKeepingPanel.vala:101
+#: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] ""
@@ -245,7 +249,7 @@ msgstr "슬립모드 일 때 잠금:"
 msgid "Lock after screen turns off:"
 msgstr "화면이 꺼진 후에 잠금:"
 
-#: src/Views/TrackPanel.vala:29
+#: src/Views/TrackPanel.vala:31
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -257,16 +261,16 @@ msgstr ""
 "추가 기능을 제공할 수 있습니다. 이 설정과 관계없이 사용 데이터는 이 장치 또"
 "는 써드 파티에게 절대 전송되지 않습니다."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:43
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s의 추가 데이터를 보관하지 않습니다."
 
-#: src/Views/TrackPanel.vala:38
+#: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
 msgstr "이 데이터가 제공하는 추가 기능이 영향을 받습니다."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:45
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -274,15 +278,15 @@ msgstr ""
 "브라우저 방문 기록 같은 애플리케이션 자신의 사용 데이터를 기록하는 것을 막지"
 "는 않습니다."
 
-#: src/Views/TrackPanel.vala:42
+#: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
 msgstr "사용 기록을 사용하지 않습니다"
 
-#: src/Views/TrackPanel.vala:51
+#: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
 msgstr "사용 기록 청소…"
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:103
 msgid "Your system"
 msgstr "사용자 시스템"
 

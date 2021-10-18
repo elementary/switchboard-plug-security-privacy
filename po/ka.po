@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2018-02-11 00:09+0000\n"
 "Last-Translator: Lasha-Giorgi Esebua <lashagiorgiesebua@gmail.com>\n"
 "Language-Team: Georgian <https://weblate.elementary.io/projects/switchboard/"
@@ -29,64 +29,64 @@ msgstr "უსაფრთხოება & კონფიდენციალ
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "ფაიარვოლის, ეკრანის საკეტის და აქტივობაზე ინფორმაციის კონფიგურაცია"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "ზოგიერთი პარამეტრი, შესაცვლელად საჭიროებს ადმინისტრატორის უფლებებს"
 
-#: src/Plug.vala:146
+#: src/Plug.vala:136
 msgid "Privacy"
 msgstr "კონფიდენციალობა"
 
-#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
+#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "ჩაკეტვა"
 
-#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "ფაიერვოლი"
 
-#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
-#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
+#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr ""
 
-#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr ""
 
-#: src/Plug.vala:189
+#: src/Plug.vala:179
 #, fuzzy
 msgid "Clear History"
 msgstr "მონაცემების გასუფთავება"
 
-#: src/Plug.vala:191
+#: src/Plug.vala:181
 #, fuzzy
 msgid "Lock on sleep"
 msgstr "ჩაკეტვა დაძინებისას:"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:182
 #, fuzzy
 msgid "Lock after sceen turns off"
 msgstr "ჩაკეტვა ეკრანის გამორთვის შემდეგ:"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:188
 msgid "Automatically delete old temporary files"
 msgstr ""
 
-#: src/Plug.vala:203
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr ""
 
-#: src/Plug.vala:208
+#: src/Plug.vala:198
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
@@ -95,12 +95,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "ფაიერვოლის კონფიგურაციის გასაშვებად საჭიროა ავტენთიფიკაცია"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "ჩართულია"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "გამორთულია"
@@ -201,27 +201,31 @@ msgstr "%d ან %d-%d"
 msgid "Add Rule"
 msgstr "წესის დამატება"
 
-#: src/Views/HouseKeepingPanel.vala:35
+#: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:37
+#: src/Views/HouseKeepingPanel.vala:40
 msgid "Old temporary files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:50
+msgid "Downloaded files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:44
-msgid "Delete Trashed and Temporary Files After:"
+#: src/Views/HouseKeepingPanel.vala:69
+msgid "Delete Old Files After:"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:64
+#: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:95
+#: src/Views/HouseKeepingPanel.vala:124
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -231,7 +235,7 @@ msgid_plural ""
 "protect your privacy."
 msgstr[0] ""
 
-#: src/Views/HouseKeepingPanel.vala:101
+#: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] ""
@@ -245,7 +249,7 @@ msgstr "ჩაკეტვა დაძინებისას:"
 msgid "Lock after screen turns off:"
 msgstr "ჩაკეტვა ეკრანის გამორთვის შემდეგ:"
 
-#: src/Views/TrackPanel.vala:29
+#: src/Views/TrackPanel.vala:31
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -254,18 +258,18 @@ msgid ""
 "parties."
 msgstr ""
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:43
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr ""
 
-#: src/Views/TrackPanel.vala:38
+#: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
 msgstr ""
 "ზეგავლენა მოხდება დამატებით ფუნქციონალურობაზე, რომელსაც ეს მონაცემები "
 "უზრუნველყოფს."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:45
 #, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
@@ -274,15 +278,15 @@ msgstr ""
 "ეს არ აღკვეთს პროგრამების მიერ საკუთარი გამოყენებული მონაცემების ჩაწერას, "
 "მაგალითად ბრაუზინგის ისტორიის."
 
-#: src/Views/TrackPanel.vala:42
+#: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
 msgstr ""
 
-#: src/Views/TrackPanel.vala:51
+#: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
 msgstr ""
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:103
 msgid "Your system"
 msgstr "თქვენი სისტემა"
 

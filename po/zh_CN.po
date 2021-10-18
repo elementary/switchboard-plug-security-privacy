@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2021-01-25 07:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -28,61 +28,61 @@ msgstr "安全与隐私"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "配置防火墙、屏幕锁和活动记录"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "某些设置需要管理员权限才能更改"
 
-#: src/Plug.vala:146
+#: src/Plug.vala:136
 msgid "Privacy"
 msgstr "隐私"
 
-#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
+#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "锁定"
 
-#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "防火墙"
 
-#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
-#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
+#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "自动清理"
 
-#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "位置服务"
 
-#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "历史"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:179
 msgid "Clear History"
 msgstr "清除历史"
 
-#: src/Plug.vala:191
+#: src/Plug.vala:181
 msgid "Lock on sleep"
 msgstr "睡眠时锁定"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:182
 msgid "Lock after sceen turns off"
 msgstr "熄屏后锁定"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:188
 msgid "Automatically delete old temporary files"
 msgstr "自动删除旧的临时文件"
 
-#: src/Plug.vala:203
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr "自动清理回收站"
 
-#: src/Plug.vala:208
+#: src/Plug.vala:198
 msgid "Number of days to keep trashed and temporary files"
 msgstr "临时文件及回收站内容保留周期"
 
@@ -91,12 +91,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "运行防火墙配置需要管理员认证"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "已启用"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "已禁用"
@@ -197,27 +197,35 @@ msgstr "%d 或 %d-%d"
 msgid "Add Rule"
 msgstr "添加规则"
 
-#: src/Views/HouseKeepingPanel.vala:35
+#: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
 msgstr "自动清理："
 
-#: src/Views/HouseKeepingPanel.vala:37
+#: src/Views/HouseKeepingPanel.vala:40
 msgid "Old temporary files"
 msgstr "旧的临时文件"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:50
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Downloaded files"
+msgstr "回收站文件"
+
+#: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr "回收站文件"
 
-#: src/Views/HouseKeepingPanel.vala:44
-msgid "Delete Trashed and Temporary Files After:"
+#: src/Views/HouseKeepingPanel.vala:69
+#, fuzzy
+#| msgid "Delete Trashed and Temporary Files After:"
+msgid "Delete Old Files After:"
 msgstr "清理周期："
 
-#: src/Views/HouseKeepingPanel.vala:64
+#: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
 msgstr "打开回收站…"
 
-#: src/Views/HouseKeepingPanel.vala:95
+#: src/Views/HouseKeepingPanel.vala:124
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -227,7 +235,7 @@ msgid_plural ""
 "protect your privacy."
 msgstr[0] "可将过期文件将设置为在 %u 天后自动清除，以节省空间和保护您的隐私。"
 
-#: src/Views/HouseKeepingPanel.vala:101
+#: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "天"
@@ -240,7 +248,7 @@ msgstr "挂起后锁定："
 msgid "Lock after screen turns off:"
 msgstr "熄屏后锁定："
 
-#: src/Views/TrackPanel.vala:29
+#: src/Views/TrackPanel.vala:31
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -251,30 +259,30 @@ msgstr ""
 "%s 会储存本地使用数据以提供额外功能，如最近使用的文件、本地搜索等。无论此功能"
 "启用与否，数据都只储存在此设备上，不能被转移至外部设备或第三方。"
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:43
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s 不会保留任何文件及应用程序的使用数据和状态。"
 
-#: src/Views/TrackPanel.vala:38
+#: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
 msgstr "正在使用这些数据的附加功能可能会受影响。"
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:45
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr "此功能不会影响应用程序收集自身的使用数据如浏览历史等。"
 
-#: src/Views/TrackPanel.vala:42
+#: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
 msgstr "历史已禁用"
 
-#: src/Views/TrackPanel.vala:51
+#: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
 msgstr "清除历史…"
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:103
 msgid "Your system"
 msgstr "您的系统"
 

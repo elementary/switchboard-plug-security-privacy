@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2020-05-29 15:23+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -28,61 +28,61 @@ msgstr "Zabezpečení  a soukromí"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Nastavení brány firewall, zámku obrazovky a informace o aktivitě"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "Některá nastavení vyžadují oprávnění na úrovni správce systému"
 
-#: src/Plug.vala:146
+#: src/Plug.vala:136
 msgid "Privacy"
 msgstr "Soukromí"
 
-#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
+#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Zamykání"
 
-#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Firewall"
 
-#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
-#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
+#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "Údržba"
 
-#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "Služby určování polohy"
 
-#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historie"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:179
 msgid "Clear History"
 msgstr "Vymazat historii"
 
-#: src/Plug.vala:191
+#: src/Plug.vala:181
 msgid "Lock on sleep"
 msgstr "Uzamknout při spánku"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:182
 msgid "Lock after sceen turns off"
 msgstr "Uzamknout při vypnutí obrazovky"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:188
 msgid "Automatically delete old temporary files"
 msgstr "Automaticky mazat staré dočasné soubory"
 
-#: src/Plug.vala:203
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr "Automaticky mazat staré soubory v koši"
 
-#: src/Plug.vala:208
+#: src/Plug.vala:198
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Počet dnů pro uchování dočasných souborů a souborů v koši"
 
@@ -91,12 +91,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Pro spuštění nastavení brány firewall je zapotřebí se ověřit"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Zapnuto"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Vypnuto"
@@ -197,29 +197,37 @@ msgstr "%d or %d-%d"
 msgid "Add Rule"
 msgstr "Přidat pravidlo"
 
-#: src/Views/HouseKeepingPanel.vala:35
+#: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
 msgstr "Automaticky mazat:"
 
-#: src/Views/HouseKeepingPanel.vala:37
+#: src/Views/HouseKeepingPanel.vala:40
 #, fuzzy
 #| msgid "Temporary files"
 msgid "Old temporary files"
 msgstr "Dočasné soubory"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:50
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Downloaded files"
+msgstr "Soubory v koši"
+
+#: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr "Soubory v koši"
 
-#: src/Views/HouseKeepingPanel.vala:44
-msgid "Delete Trashed and Temporary Files After:"
+#: src/Views/HouseKeepingPanel.vala:69
+#, fuzzy
+#| msgid "Delete Trashed and Temporary Files After:"
+msgid "Delete Old Files After:"
 msgstr "Mazat dočasné soubory a soubory v koši po uplynutí:"
 
-#: src/Views/HouseKeepingPanel.vala:64
+#: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
 msgstr "Otevřít koš…"
 
-#: src/Views/HouseKeepingPanel.vala:95
+#: src/Views/HouseKeepingPanel.vala:124
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -237,7 +245,7 @@ msgstr[2] ""
 "Staré soubory je možné automaticky mazat po uplynutí %u dní aby se šetřilo "
 "prostorem na úložišti a chránilo vaše soukromí."
 
-#: src/Views/HouseKeepingPanel.vala:101
+#: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "Den"
@@ -252,7 +260,7 @@ msgstr "Uzamknout při uspání:"
 msgid "Lock after screen turns off:"
 msgstr "Uzamknout při vypnutí obrazovky:"
 
-#: src/Views/TrackPanel.vala:29
+#: src/Views/TrackPanel.vala:31
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -265,16 +273,16 @@ msgstr ""
 "na toto nastavení se data o použití nikdy nepřenáší mimo toto zařízení, ani "
 "nepředávají třetím stranám."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:43
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s již dále nebude sbírat data o použití."
 
-#: src/Views/TrackPanel.vala:38
+#: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Doplňkové funkce, které tato data umožňují, budou ovlivněny."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:45
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -282,15 +290,15 @@ msgstr ""
 "Toto nezabrání aplikacím v uchovávání jejich vlastních dat jako například "
 "historie prohlížeče."
 
-#: src/Views/TrackPanel.vala:42
+#: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
 msgstr "Historie je vypnutá"
 
-#: src/Views/TrackPanel.vala:51
+#: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
 msgstr "Vymazat historii…"
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:103
 msgid "Your system"
 msgstr "Váš systém"
 

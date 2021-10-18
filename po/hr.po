@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2017-08-16 11:44+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://weblate.elementary.io/projects/switchboard/"
@@ -29,64 +29,64 @@ msgstr "Sigurnost i privatnost"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Prilagodite vatrozid, zaključavanje zaslona i informacije aktivnosti"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "Neke postavke zahtijevaju administratorske ovlasti"
 
-#: src/Plug.vala:146
+#: src/Plug.vala:136
 msgid "Privacy"
 msgstr "Privatnost"
 
-#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
+#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Zaključavanje"
 
-#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Vatrozid"
 
-#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
-#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
+#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "Usluge lokacije"
 
-#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Povijest"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:179
 #, fuzzy
 msgid "Clear History"
 msgstr "Obriši povijest…"
 
-#: src/Plug.vala:191
+#: src/Plug.vala:181
 #, fuzzy
 msgid "Lock on sleep"
 msgstr "Zaključaj pri spavanju:"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:182
 #, fuzzy
 msgid "Lock after sceen turns off"
 msgstr "Zaključaj nakon isključivanja zaslona:"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:188
 msgid "Automatically delete old temporary files"
 msgstr ""
 
-#: src/Plug.vala:203
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr ""
 
-#: src/Plug.vala:208
+#: src/Plug.vala:198
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
@@ -95,12 +95,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Potrebna je ovjera za pokretanje postavki vatrozida"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Omogućeno"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Onemogućeno"
@@ -201,27 +201,31 @@ msgstr "%d ili %d-%d"
 msgid "Add Rule"
 msgstr "Dodaj pravilo"
 
-#: src/Views/HouseKeepingPanel.vala:35
+#: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:37
+#: src/Views/HouseKeepingPanel.vala:40
 msgid "Old temporary files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:50
+msgid "Downloaded files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:44
-msgid "Delete Trashed and Temporary Files After:"
+#: src/Views/HouseKeepingPanel.vala:69
+msgid "Delete Old Files After:"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:64
+#: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:95
+#: src/Views/HouseKeepingPanel.vala:124
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -233,7 +237,7 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
-#: src/Views/HouseKeepingPanel.vala:101
+#: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] ""
@@ -249,7 +253,7 @@ msgstr "Zaključaj pri spavanju:"
 msgid "Lock after screen turns off:"
 msgstr "Zaključaj nakon isključivanja zaslona:"
 
-#: src/Views/TrackPanel.vala:29
+#: src/Views/TrackPanel.vala:31
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -258,18 +262,18 @@ msgid ""
 "parties."
 msgstr ""
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:43
 #, fuzzy, c-format
 msgid "%s won't retain any further usage data."
 msgstr ""
 "%s neće zadržati sve buduće podatke ili statistiku o upotrebi datoteka i "
 "aplikacija."
 
-#: src/Views/TrackPanel.vala:38
+#: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Ovo će utjecati na dodatne funkcionalnosti koje pružaju ovi podaci."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:45
 #, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
@@ -278,15 +282,15 @@ msgstr ""
 "Ovo neće spriječiti aplikacije od vođenja vlastite povijesti korištenja kao "
 "što je povijest u internet pregledniku."
 
-#: src/Views/TrackPanel.vala:42
+#: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
 msgstr "Povijest je onemogućena"
 
-#: src/Views/TrackPanel.vala:51
+#: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
 msgstr "Obriši povijest…"
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:103
 msgid "Your system"
 msgstr "Vaš sustav"
 

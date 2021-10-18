@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2021-05-03 15:59+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,61 +29,61 @@ msgstr "Безпека і приватність"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Налаштування фаєрволу, блокування екрана та подробиць про діяльність"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "Для зміни деяких налаштувань необхідно мати права адміністратора"
 
-#: src/Plug.vala:146
+#: src/Plug.vala:136
 msgid "Privacy"
 msgstr "Приватність"
 
-#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
+#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Блокування"
 
-#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Фаєрвол"
 
-#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
-#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
+#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "Домоведення"
 
-#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "Служби розташування"
 
-#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Дієпис"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:179
 msgid "Clear History"
 msgstr "Очистити дієпис"
 
-#: src/Plug.vala:191
+#: src/Plug.vala:181
 msgid "Lock on sleep"
 msgstr "Блокувати у режимі сну"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:182
 msgid "Lock after sceen turns off"
 msgstr "Блокувати після вимкнення екрана"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:188
 msgid "Automatically delete old temporary files"
 msgstr "Автоматично видаляти старі тимчасові файли"
 
-#: src/Plug.vala:203
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr "Автоматично видаляти старі файли зі смітника"
 
-#: src/Plug.vala:208
+#: src/Plug.vala:198
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Кількість днів зберігання файлів у смітнику та тимчасових файлів"
 
@@ -92,12 +92,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Необхідна автентифікація для налаштування фаєрволу"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Увімкнено"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Вимкнено"
@@ -198,27 +198,35 @@ msgstr "%d чи %d-%d"
 msgid "Add Rule"
 msgstr "Додати правило"
 
-#: src/Views/HouseKeepingPanel.vala:35
+#: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
 msgstr "Автоматично видаляти:"
 
-#: src/Views/HouseKeepingPanel.vala:37
+#: src/Views/HouseKeepingPanel.vala:40
 msgid "Old temporary files"
 msgstr "Старі тимчасові файли"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:50
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Downloaded files"
+msgstr "Файли зі смітника"
+
+#: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr "Файли зі смітника"
 
-#: src/Views/HouseKeepingPanel.vala:44
-msgid "Delete Trashed and Temporary Files After:"
+#: src/Views/HouseKeepingPanel.vala:69
+#, fuzzy
+#| msgid "Delete Trashed and Temporary Files After:"
+msgid "Delete Old Files After:"
 msgstr "Видалити файли з кошика та тимчасові файли після:"
 
-#: src/Views/HouseKeepingPanel.vala:64
+#: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
 msgstr "Відкрити смітник…"
 
-#: src/Views/HouseKeepingPanel.vala:95
+#: src/Views/HouseKeepingPanel.vala:124
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -236,7 +244,7 @@ msgstr[2] ""
 "Старі файли можна автоматично видалити через %u днів, щоб заощадити простір "
 "та захистити вашу приватність."
 
-#: src/Views/HouseKeepingPanel.vala:101
+#: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "День"
@@ -251,7 +259,7 @@ msgstr "Блокувати коли призупинено:"
 msgid "Lock after screen turns off:"
 msgstr "Блокувати після вимкнення екрана:"
 
-#: src/Views/TrackPanel.vala:29
+#: src/Views/TrackPanel.vala:31
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -264,16 +272,16 @@ msgstr ""
 "пошук. Незалежно від цього налаштування, дані про використання ніколи не "
 "передаються з цього пристрою або стороннім."
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:43
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s не зберігатиме даних про подальше використання."
 
-#: src/Views/TrackPanel.vala:38
+#: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Постраждають додаткові можливості, яким сприяють ці дані."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:45
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -281,15 +289,15 @@ msgstr ""
 "Це не завадить застосункам записувати власні дані про використання як-от "
 "дієпис переглядача мережі."
 
-#: src/Views/TrackPanel.vala:42
+#: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
 msgstr "Дієпис вимкнено"
 
-#: src/Views/TrackPanel.vala:51
+#: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
 msgstr "Очистити дієпис…"
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:103
 msgid "Your system"
 msgstr "Ваша система"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2019-12-19 18:07+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,61 +29,61 @@ msgstr "Varnost in zasebnost"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Nastavitve požarnega zidu, zaklepanja zaslona in zbiranja podatkov"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
 msgstr "Za spreminjanje nekaterih nastavitev so potrebne skrbniške pravice"
 
-#: src/Plug.vala:146
+#: src/Plug.vala:136
 msgid "Privacy"
 msgstr "Zasebnost"
 
-#: src/Plug.vala:147 src/Plug.vala:190 src/Plug.vala:191 src/Plug.vala:192
+#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Zaklepanje"
 
-#: src/Plug.vala:148 src/Plug.vala:193 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Požarni zid"
 
-#: src/Plug.vala:149 src/Plug.vala:194 src/Plug.vala:197 src/Plug.vala:202
-#: src/Plug.vala:207 src/Views/HouseKeepingPanel.vala:30
+#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
+#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "Vzdrževanje"
 
-#: src/Plug.vala:153 src/Plug.vala:211 src/Views/LocationPanel.vala:45
+#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
 msgstr "Lokacijske storitve"
 
-#: src/Plug.vala:188 src/Plug.vala:189 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Zgodovina"
 
-#: src/Plug.vala:189
+#: src/Plug.vala:179
 msgid "Clear History"
 msgstr "Izbriši zgodovino"
 
-#: src/Plug.vala:191
+#: src/Plug.vala:181
 msgid "Lock on sleep"
 msgstr "Zakleni ob spanju"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:182
 msgid "Lock after sceen turns off"
 msgstr "Zakleni po izklopu zaslona"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:188
 msgid "Automatically delete old temporary files"
 msgstr "Samodejno pobriši začasne datoteke"
 
-#: src/Plug.vala:203
+#: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
 msgstr "Samodejno pobriši stare datoteke v košu"
 
-#: src/Plug.vala:208
+#: src/Plug.vala:198
 #, fuzzy
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Obdrži začasne datoteke in datoteke v košu:"
@@ -93,12 +93,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Za zagon nastavitev požarnega zidu je zahtevana overitev"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Omogočeno"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:118
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Onemogočeno"
@@ -199,29 +199,37 @@ msgstr "%d ali %d-%d"
 msgid "Add Rule"
 msgstr "Dodaj pravilo"
 
-#: src/Views/HouseKeepingPanel.vala:35
+#: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
 msgstr "Samodejno pobriši:"
 
-#: src/Views/HouseKeepingPanel.vala:37
+#: src/Views/HouseKeepingPanel.vala:40
 #, fuzzy
 #| msgid "Temporary files"
 msgid "Old temporary files"
 msgstr "Začasne datoteke"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:50
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Downloaded files"
+msgstr "Datoteke v košu"
+
+#: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr "Datoteke v košu"
 
-#: src/Views/HouseKeepingPanel.vala:44
-msgid "Delete Trashed and Temporary Files After:"
+#: src/Views/HouseKeepingPanel.vala:69
+#, fuzzy
+#| msgid "Delete Trashed and Temporary Files After:"
+msgid "Delete Old Files After:"
 msgstr "Izbriši začasne datoteke in datoteke v košu po:"
 
-#: src/Views/HouseKeepingPanel.vala:64
+#: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
 msgstr "Odpri koš…"
 
-#: src/Views/HouseKeepingPanel.vala:95
+#: src/Views/HouseKeepingPanel.vala:124
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -242,7 +250,7 @@ msgstr[3] ""
 "Stare datoteke so lahko samodejno izbrisane po %u dneh za ohranitev prostora "
 "in zaščite vaše zasebnosti."
 
-#: src/Views/HouseKeepingPanel.vala:101
+#: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "dnevu"
@@ -259,7 +267,7 @@ msgstr "Zakleni ob spanju:"
 msgid "Lock after screen turns off:"
 msgstr "Zakleni po izklopu zaslona:"
 
-#: src/Views/TrackPanel.vala:29
+#: src/Views/TrackPanel.vala:31
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -268,16 +276,16 @@ msgid ""
 "parties."
 msgstr ""
 
-#: src/Views/TrackPanel.vala:37
+#: src/Views/TrackPanel.vala:43
 #, fuzzy, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s ne bo več shranjeval podatkov o uporabi datotek in aplikacij."
 
-#: src/Views/TrackPanel.vala:38
+#: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Dodatne funkcije, ki se zanašajo na te podatke ne bodo delovale."
 
-#: src/Views/TrackPanel.vala:39
+#: src/Views/TrackPanel.vala:45
 #, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
@@ -286,15 +294,15 @@ msgstr ""
 "To ne bo preprečilo aplikacijam zbirati svoje podatke (npr. zgodovina strani "
 "v brskalniku)."
 
-#: src/Views/TrackPanel.vala:42
+#: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
 msgstr "Zgodovina je onemogočena"
 
-#: src/Views/TrackPanel.vala:51
+#: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
 msgstr "Izbriši zgodovino…"
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:103
 msgid "Your system"
 msgstr "Vaš sistem"
 
