@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2021-03-02 21:07+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -34,10 +34,11 @@ msgstr "Настройка фаервола, экрана блокировки �
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:35
 msgid "Translation updates"
 msgstr "Обновления перевода"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:34
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "Переработана страница \"Домоводства\""

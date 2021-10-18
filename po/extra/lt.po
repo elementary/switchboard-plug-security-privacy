@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-10 16:55+0000\n"
+"POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2019-05-15 17:14+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -38,10 +38,11 @@ msgstr "Konfigūruoti užkardą, ekrano užraktą ir veiklos informaciją"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:35
 msgid "Translation updates"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:34
 msgid "Redesigned \"Housekeeping\" page"
 msgstr ""
