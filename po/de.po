@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-18 22:51+0000\n"
-"PO-Revision-Date: 2021-07-06 11:38+0000\n"
+"PO-Revision-Date: 2021-10-20 00:05+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
@@ -207,23 +207,19 @@ msgstr "Automatisch löschen:"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Old temporary files"
-msgstr "Alte temporäre Dateien"
+msgstr "Ältere temporäre Dateien"
 
 #: src/Views/HouseKeepingPanel.vala:50
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Downloaded files"
-msgstr "Dateien im Papierkorb"
+msgstr "Heruntergeladene Dateien"
 
 #: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr "Dateien im Papierkorb"
 
 #: src/Views/HouseKeepingPanel.vala:69
-#, fuzzy
-#| msgid "Delete Trashed and Temporary Files After:"
 msgid "Delete Old Files After:"
-msgstr "Dateien im Papierkorb und temporäre Dateien löschen nach:"
+msgstr "Veraltete Dateien löschen nach:"
 
 #: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
@@ -238,10 +234,10 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
-"Alte Dateien können automatisch nach %u Tag gelöscht werden, um "
+"Veraltete Dateien können automatisch nach %u Tag gelöscht werden, um "
 "Speicherplatz freizugeben und Ihre Privatsphäre zu schützen."
 msgstr[1] ""
-"Alte Dateien können automatisch nach %u Tagen gelöscht werden, um "
+"Veraltete Dateien können automatisch nach %u Tagen gelöscht werden, um "
 "Speicherplatz freizugeben und Ihre Privatsphäre zu schützen."
 
 #: src/Views/HouseKeepingPanel.vala:130
