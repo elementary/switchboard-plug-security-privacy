@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-18 22:51+0000\n"
-"PO-Revision-Date: 2021-10-19 12:17+0000\n"
+"PO-Revision-Date: 2021-10-20 10:43+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/tr/>\n"
@@ -218,7 +218,7 @@ msgstr "Çöpteki dosyalar"
 
 #: src/Views/HouseKeepingPanel.vala:69
 msgid "Delete Old Files After:"
-msgstr "Çöpteki Eski Dosyaları Sil:"
+msgstr "Eski Dosyaları Sil:"
 
 #: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
