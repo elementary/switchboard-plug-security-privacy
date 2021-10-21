@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-18 22:51+0000\n"
-"PO-Revision-Date: 2021-08-12 17:07+0000\n"
+"PO-Revision-Date: 2021-10-21 16:25+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fr/>\n"
@@ -209,21 +209,16 @@ msgid "Old temporary files"
 msgstr "Anciens fichiers temporaires"
 
 #: src/Views/HouseKeepingPanel.vala:50
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Downloaded files"
-msgstr "Fichiers dans la corbeille"
+msgstr "Fichiers téléchargés"
 
 #: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr "Fichiers dans la corbeille"
 
 #: src/Views/HouseKeepingPanel.vala:69
-#, fuzzy
-#| msgid "Delete Trashed and Temporary Files After:"
 msgid "Delete Old Files After:"
-msgstr ""
-"Supprimer les fichiers dans la corbeille et les fichiers temporaires après :"
+msgstr "Supprimer les anciens fichiers après :"
 
 #: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
