@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-18 22:51+0000\n"
-"PO-Revision-Date: 2019-01-01 00:41+0000\n"
-"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2021-11-08 08:35+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
+"Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-04-20 06:36+0000\n"
 
 #: src/Plug.vala:50
@@ -213,16 +213,15 @@ msgstr "Usuwaj automatycznie stare pliki tymczasowe"
 
 #: src/Views/HouseKeepingPanel.vala:50
 msgid "Downloaded files"
-msgstr ""
+msgstr "Pobrane pliki"
 
 #: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr ""
 
 #: src/Views/HouseKeepingPanel.vala:69
-#, fuzzy
 msgid "Delete Old Files After:"
-msgstr "Ilość dni przechowywania plików tymczasowych i w koszu:"
+msgstr "Usuń stare pliki po:"
 
 #: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
