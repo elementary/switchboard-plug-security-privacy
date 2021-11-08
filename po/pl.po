@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-10-18 22:51+0000\n"
 "PO-Revision-Date: 2021-11-08 08:35+0000\n"
-"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pl/>\n"
 "Language: pl\n"
@@ -201,15 +201,12 @@ msgid "Add Rule"
 msgstr "Dodaj regułę"
 
 #: src/Views/HouseKeepingPanel.vala:36
-#, fuzzy
 msgid "Automatically Delete:"
-msgstr "Usuwaj automatycznie stare pliki z kosza:"
+msgstr "Usuń automatycznie:"
 
 #: src/Views/HouseKeepingPanel.vala:40
-#, fuzzy
-#| msgid "Automatically delete old temporary files"
 msgid "Old temporary files"
-msgstr "Usuwaj automatycznie stare pliki tymczasowe"
+msgstr "Stare pliki tymczasowe"
 
 #: src/Views/HouseKeepingPanel.vala:50
 msgid "Downloaded files"
@@ -217,7 +214,7 @@ msgstr "Pobrane pliki"
 
 #: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
-msgstr ""
+msgstr "Pliki w Koszu"
 
 #: src/Views/HouseKeepingPanel.vala:69
 msgid "Delete Old Files After:"
@@ -236,20 +233,25 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"Stare pliki mogą być automatycznie usunięte po %u dniu, aby zaoszczędzić "
+"miejsce i pomóc chronić twoją prywatność."
 msgstr[1] ""
+"Stare pliki mogą być automatycznie usunięte po %u dniach, aby zaoszczędzić "
+"miejsce i pomóc chronić twoją prywatność."
 msgstr[2] ""
+"Stare pliki mogą być automatycznie usunięte po %u dniach, aby zaoszczędzić "
+"miejsce i pomóc chronić twoją prywatność."
 
 #: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Dzień"
+msgstr[1] "Dni"
+msgstr[2] "Dni"
 
 #: src/Views/LockPanel.vala:31
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "Zablokuj w trybie uśpienia:"
+msgstr "Zablokuj przy wstrzymaniu:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
