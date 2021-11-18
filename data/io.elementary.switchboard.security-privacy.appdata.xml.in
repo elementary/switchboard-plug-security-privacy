@@ -7,7 +7,7 @@
   <icon type="stock">preferences-system-privacy</icon>
   <translation type="gettext">security-privacy-plug</translation>
   <releases>
-     <release version="2.3.0" date="2021-11-18" urgency="medium">
+     <release version="2.3.0" date="2021-11-30" urgency="medium">
       <description>
         <ul>
           <li>Add Downloads option to Housekeeping</li>
