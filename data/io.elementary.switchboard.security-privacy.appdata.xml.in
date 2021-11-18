@@ -7,6 +7,14 @@
   <icon type="stock">preferences-system-privacy</icon>
   <translation type="gettext">security-privacy-plug</translation>
   <releases>
+     <release version="2.3.0" date="2021-11-18" urgency="medium">
+      <description>
+        <ul>
+          <li>Add Downloads option to Housekeeping</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>   
      <release version="2.2.5" date="2021-07-14" urgency="medium">
       <description>
         <ul>
