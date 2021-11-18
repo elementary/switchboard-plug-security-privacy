@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-18 22:51+0000\n"
+"POT-Creation-Date: 2021-11-18 18:19+0000\n"
 "PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -33,12 +33,17 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "قم بتعديل جدار الحماية, قفل الشاشة و المعلومات حول نشاطك"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
+msgid "Add Downloads option to Housekeeping"
+msgstr ""
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:35
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:43
 msgid "Translation updates"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:34
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:42
 msgid "Redesigned \"Housekeeping\" page"
 msgstr ""
