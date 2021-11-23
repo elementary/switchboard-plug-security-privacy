@@ -1,3 +1,13 @@
+switchboard-plug-security-privacy (2.3.0) bionic; urgency=medium
+
+  * Release 2.3.0 (#132)
+  * Update translation files
+  * Update translation template
+  * Housekeeping: add Downloads (#126)
+  * l10n: Correctly setup the locales (#130)
+
+ -- elementary, Inc. <builds@elementary.io>  Tue, 23 Nov 2021 21:14:21 +0000
+
 switchboard-plug-security-privacy (2.2.5) bionic; urgency=medium
 
   * Release 2.2.5 (#129)
