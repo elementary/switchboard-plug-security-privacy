@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 18:19+0000\n"
+"POT-Creation-Date: 2021-11-23 21:14+0000\n"
 "PO-Revision-Date: 2021-07-22 01:39+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -31,18 +31,28 @@ msgstr "Turvallisuuden ja yksityisyyden asetukset"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Määritä palomuuri, näytönlukitus ja toiminteiden tiedot"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
-msgid "Add Downloads option to Housekeeping"
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
+msgid "New features:"
 msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:35
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:43
+msgid "Add Downloads option to Housekeeping"
+msgstr ""
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
+#, fuzzy
+#| msgid "Translation updates"
+msgid "Minor updates:"
+msgstr "Päivityksiä kielikäännöksiin"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:32
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:39
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:47
 msgid "Translation updates"
 msgstr "Päivityksiä kielikäännöksiin"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:42
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:46
 msgid "Redesigned \"Housekeeping\" page"
 msgstr ""
