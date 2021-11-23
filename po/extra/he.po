@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-23 21:14+0000\n"
-"PO-Revision-Date: 2021-11-18 20:03+0000\n"
+"PO-Revision-Date: 2021-11-23 22:06+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/he/>\n"
@@ -33,17 +33,15 @@ msgstr "הגדרת חומת אש, נעילת מסך ופירוט על פעילו
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "יכולות חדשות:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
 msgid "Add Downloads option to Housekeeping"
 msgstr "נוספה אפשרות הורדות לתחזוקה"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "תרגומים עודכנו"
+msgstr "עדכונים משניים:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
