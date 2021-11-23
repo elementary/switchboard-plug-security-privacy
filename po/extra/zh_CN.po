@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-18 22:51+0000\n"
+"POT-Creation-Date: 2021-11-18 18:19+0000\n"
 "PO-Revision-Date: 2021-11-01 10:01+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -32,12 +32,17 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "配置防火墙、屏幕锁和活动记录"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
+msgid "Add Downloads option to Housekeeping"
+msgstr ""
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:35
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:43
 msgid "Translation updates"
 msgstr "翻译更新"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:34
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:42
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "重新设计的“管家”页面"

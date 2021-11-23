@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-18 22:51+0000\n"
-"PO-Revision-Date: 2020-05-01 09:52+0000\n"
+"POT-Creation-Date: 2021-11-18 18:19+0000\n"
+"PO-Revision-Date: 2021-11-21 17:50+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -34,12 +34,17 @@ msgstr ""
 "d'activitat."
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:13
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:20
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
+msgid "Add Downloads option to Housekeeping"
+msgstr "Addició de l'opció de baixades al manteniment"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:35
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:43
 msgid "Translation updates"
 msgstr "Actualitzacions de la traducció"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:34
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:42
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "Pàgina de manteniment redissenyada"
