@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-23 21:14+0000\n"
-"PO-Revision-Date: 2021-11-20 04:48+0000\n"
+"PO-Revision-Date: 2021-11-24 22:55+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/hu/>\n"
@@ -33,17 +33,15 @@ msgstr "A tűzfal, a lezárási képernyő és az aktivitási információk beá
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Új funkciók:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
 msgid "Add Downloads option to Housekeeping"
 msgstr "Letöltések opció hozzáadva a Takarításhoz"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "Frissített fordítások"
+msgstr "Kisebb frissítések:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
