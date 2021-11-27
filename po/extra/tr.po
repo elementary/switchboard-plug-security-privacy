@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-23 21:14+0000\n"
-"PO-Revision-Date: 2021-11-23 21:14+0000\n"
+"PO-Revision-Date: 2021-11-27 11:28+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/tr/>\n"
@@ -35,17 +35,15 @@ msgstr "Güvenlik duvarı, ekran kilidi ve aktivite bilgisini yapılandırın"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Yeni özellikler:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
 msgid "Add Downloads option to Housekeeping"
 msgstr " "
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "Çeviriler güncellendi"
+msgstr "Küçük güncellemeler:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
