@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-23 21:14+0000\n"
-"PO-Revision-Date: 2021-08-25 17:20+0000\n"
+"PO-Revision-Date: 2021-11-30 16:52+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/sk/>\n"
@@ -33,17 +33,15 @@ msgstr "Nastavujte bránu Firewall, zámok obrazovky a informácie o aktivite"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkcie:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
 msgid "Add Downloads option to Housekeeping"
 msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "Aktualizácia prekladov"
+msgstr "Menšie aktualizácie:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
