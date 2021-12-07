@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-23 21:14+0000\n"
-"PO-Revision-Date: 2021-11-01 10:01+0000\n"
-"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
+"PO-Revision-Date: 2021-12-07 05:49+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -215,7 +215,7 @@ msgstr "回收站文件"
 
 #: src/Views/HouseKeepingPanel.vala:69
 msgid "Delete Old Files After:"
-msgstr "删除旧文件后："
+msgstr "清理周期："
 
 #: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
