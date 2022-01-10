@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-23 21:14+0000\n"
-"PO-Revision-Date: 2020-05-11 20:10+0000\n"
+"PO-Revision-Date: 2022-01-10 12:16+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -33,17 +33,15 @@ msgstr "Nastavení brány firewall, zámku obrazovky a informace o aktivitě"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkce:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
 msgid "Add Downloads option to Housekeeping"
 msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "Aktualizace překladů"
+msgstr "Drobné aktualizace:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
