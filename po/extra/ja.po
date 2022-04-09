@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-23 21:14+0000\n"
-"PO-Revision-Date: 2021-11-23 23:59+0000\n"
+"PO-Revision-Date: 2022-04-09 01:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ja/>\n"
@@ -41,7 +41,7 @@ msgstr "自動削除の対象に“ダウンロード”フォルダーを選択
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
 msgid "Minor updates:"
-msgstr "軽微なアップデート:"
+msgstr "そのほかのアップデート:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
