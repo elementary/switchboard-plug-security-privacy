@@ -49,6 +49,21 @@ public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
 
         var gnome_screensaver_settings = new GLib.Settings ("org.gnome.desktop.screensaver");
         var screensaver_settings = new GLib.Settings ("io.elementary.desktop.screensaver");
+
+        var schema = GLib.SettingsSchemaSource.get_default ().lookup ("org.gnome.desktop.privacy", true);
+        if (schema.has_key ("usb-protection")) {
+            var usb_lock_label = new Gtk.Label (_("Forbid new USB devices when locked:"));
+            usb_lock_label.halign = Gtk.Align.END;
+
+            var usb_lock_switch = new Gtk.Switch ();
+            usb_lock_switch.halign = Gtk.Align.START;
+
+            content_area.attach (usb_lock_label, 0, 2);
+            content_area.attach (usb_lock_switch, 1, 2);
+            var gnome_privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
+            gnome_privacy_settings.bind ("usb-protection", usb_lock_switch, "active", GLib.SettingsBindFlags.DEFAULT);
+        }
+
         gnome_screensaver_settings.bind ("lock-enabled", lock_sleep_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         screensaver_settings.bind ("lock-on-suspend", lock_suspend_switch, "active", GLib.SettingsBindFlags.DEFAULT);
     }
