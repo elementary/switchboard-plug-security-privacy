@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-30 17:42+0000\n"
-"PO-Revision-Date: 2021-10-19 03:03+0000\n"
+"PO-Revision-Date: 2022-04-30 21:31+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/uk/>\n"
@@ -257,7 +257,7 @@ msgstr "Блокувати після вимкнення екрана:"
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Заборонити нові USB-пристрої, коли заблоковано:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
