@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-23 21:14+0000\n"
+"POT-Creation-Date: 2022-04-30 17:42+0000\n"
 "PO-Revision-Date: 2020-10-21 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -253,6 +253,10 @@ msgstr "निलंबनावर लॉक करा:"
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
 msgstr "स्क्रीन बंद केल्यानंतर लॉक करा:"
+
+#: src/Views/LockPanel.vala:55
+msgid "Forbid new USB devices when locked:"
+msgstr ""
 
 #: src/Views/TrackPanel.vala:31
 #, c-format

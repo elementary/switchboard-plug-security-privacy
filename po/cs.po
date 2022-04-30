@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-23 21:14+0000\n"
+"POT-Creation-Date: 2022-04-30 17:42+0000\n"
 "PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -253,6 +253,10 @@ msgstr "Uzamknout při uspání:"
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
 msgstr "Uzamknout při vypnutí obrazovky:"
+
+#: src/Views/LockPanel.vala:55
+msgid "Forbid new USB devices when locked:"
+msgstr ""
 
 #: src/Views/TrackPanel.vala:31
 #, c-format

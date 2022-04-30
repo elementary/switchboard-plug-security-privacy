@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-23 21:14+0000\n"
+"POT-Creation-Date: 2022-04-30 17:42+0000\n"
 "PO-Revision-Date: 2020-03-19 19:09+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -272,6 +272,10 @@ msgstr "قفل عند السكون:"
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
 msgstr "القفل بعد إيقاف تشغيل الشاشة:"
+
+#: src/Views/LockPanel.vala:55
+msgid "Forbid new USB devices when locked:"
+msgstr ""
 
 #: src/Views/TrackPanel.vala:31
 #, c-format

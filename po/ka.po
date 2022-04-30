@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-23 21:14+0000\n"
+"POT-Creation-Date: 2022-04-30 17:42+0000\n"
 "PO-Revision-Date: 2018-02-11 00:09+0000\n"
 "Last-Translator: Lasha-Giorgi Esebua <lashagiorgiesebua@gmail.com>\n"
 "Language-Team: Georgian <https://weblate.elementary.io/projects/switchboard/"
@@ -248,6 +248,10 @@ msgstr "ჩაკეტვა დაძინებისას:"
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
 msgstr "ჩაკეტვა ეკრანის გამორთვის შემდეგ:"
+
+#: src/Views/LockPanel.vala:55
+msgid "Forbid new USB devices when locked:"
+msgstr ""
 
 #: src/Views/TrackPanel.vala:31
 #, c-format

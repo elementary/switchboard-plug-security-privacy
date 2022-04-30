@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-23 21:14+0000\n"
+"POT-Creation-Date: 2022-04-30 17:42+0000\n"
 "PO-Revision-Date: 2021-10-20 00:05+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -254,6 +254,10 @@ msgstr "Блокировать при остановке:"
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
 msgstr "Заблокировать систему при выключении экрана:"
+
+#: src/Views/LockPanel.vala:55
+msgid "Forbid new USB devices when locked:"
+msgstr ""
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
