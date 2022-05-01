@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-30 17:42+0000\n"
-"PO-Revision-Date: 2021-10-26 23:46+0000\n"
+"PO-Revision-Date: 2022-05-01 15:37+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/hu/>\n"
@@ -253,7 +253,7 @@ msgstr "Zárolás mikor a képernyő kikapcsol:"
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Új USB-eszközök letiltása lezárt állapotban:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
