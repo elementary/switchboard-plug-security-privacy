@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-30 17:42+0000\n"
-"PO-Revision-Date: 2021-10-20 10:43+0000\n"
+"PO-Revision-Date: 2022-05-01 15:37+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/tr/>\n"
@@ -255,7 +255,7 @@ msgstr "Ekran kapandıktan sonra kilitle:"
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Kilitliyken yeni USB cihazlarını yasakla:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
