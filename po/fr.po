@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-30 17:42+0000\n"
-"PO-Revision-Date: 2021-10-21 16:25+0000\n"
+"PO-Revision-Date: 2022-05-02 15:37+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fr/>\n"
@@ -255,7 +255,7 @@ msgstr "Verrouiller après l'extinction de l'écran :"
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Interdire l'ajout de nouveaux périphériques USB si verrouillé :"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
