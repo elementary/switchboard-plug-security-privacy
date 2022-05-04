@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-04-30 17:42+0000\n"
-"PO-Revision-Date: 2021-11-30 18:29+0000\n"
+"PO-Revision-Date: 2022-05-04 22:44+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/sk/>\n"
@@ -257,7 +257,7 @@ msgstr "Uzamknúť po vypnutí obrazovky:"
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Zabrániť pripojeniu nových USB zariadení, keď je zariadenie zamknuté:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
