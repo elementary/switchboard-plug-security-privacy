@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-30 17:42+0000\n"
+"POT-Creation-Date: 2022-05-13 17:02+0000\n"
 "PO-Revision-Date: 2021-11-24 10:25+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -34,25 +34,32 @@ msgstr ""
 "d'activitat."
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
 msgid "New features:"
 msgstr "Característiques noves:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Add Downloads option to Housekeeping"
-msgstr "Addició de l'opció de baixades al manteniment"
+msgid "Option to forbid new USB devices while locked"
+msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Minor updates:"
 msgstr "Actualitzacions menors:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:32
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:39
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:47
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
 msgid "Translation updates"
 msgstr "Actualitzacions de la traducció"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:46
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
+msgid "Add Downloads option to Housekeeping"
+msgstr "Addició de l'opció de baixades al manteniment"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "Pàgina de manteniment redissenyada"

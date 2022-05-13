@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-30 17:42+0000\n"
+"POT-Creation-Date: 2022-05-13 17:02+0000\n"
 "PO-Revision-Date: 2022-04-09 01:40+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -32,25 +32,32 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "ファイアウォール、スクリーンロックとアクティビティ情報を設定します"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
 msgid "New features:"
 msgstr "新機能:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Add Downloads option to Housekeeping"
-msgstr "自動削除の対象に“ダウンロード”フォルダーを選択できるように修正"
+msgid "Option to forbid new USB devices while locked"
+msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Minor updates:"
 msgstr "そのほかのアップデート:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:32
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:39
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:47
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
 msgid "Translation updates"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:46
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
+msgid "Add Downloads option to Housekeeping"
+msgstr "自動削除の対象に“ダウンロード”フォルダーを選択できるように修正"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "\"自動削除\"ペインのデザインを変更"
