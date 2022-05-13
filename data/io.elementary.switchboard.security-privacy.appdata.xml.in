@@ -7,6 +7,18 @@
   <icon type="stock">preferences-system-privacy</icon>
   <translation type="gettext">security-privacy-plug</translation>
   <releases>
+     <release version="2.4.0" date="2021-05-12" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Option to forbid new USB devices while locked</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release> 
      <release version="2.3.0" date="2021-11-23" urgency="medium">
       <description>
         <p>New features:</p>
