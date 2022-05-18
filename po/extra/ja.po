@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2022-04-09 01:40+0000\n"
+"PO-Revision-Date: 2022-05-18 16:23+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ja/>\n"
@@ -38,7 +38,7 @@ msgstr "新機能:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
 msgid "Option to forbid new USB devices while locked"
-msgstr ""
+msgstr "ロック時新たに接続された USB デバイスを使用不可にするオプションを追加"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
