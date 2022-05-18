@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-30 17:42+0000\n"
-"PO-Revision-Date: 2021-11-23 22:06+0000\n"
+"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"PO-Revision-Date: 2022-05-14 14:52+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/he/>\n"
@@ -32,25 +32,32 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "הגדרת חומת אש, נעילת מסך ופירוט על פעילות"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
 msgid "New features:"
 msgstr "יכולות חדשות:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Add Downloads option to Housekeeping"
-msgstr "נוספה אפשרות הורדות לתחזוקה"
+msgid "Option to forbid new USB devices while locked"
+msgstr "אפשרות לאיסור על התקני USB חדשים בזמן נעילה"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:32
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:39
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:47
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
 msgid "Translation updates"
 msgstr "תרגומים עודכנו"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:46
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
+msgid "Add Downloads option to Housekeeping"
+msgstr "נוספה אפשרות הורדות לתחזוקה"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "עמוד ה„תחזוקה” עוצב מחדש"

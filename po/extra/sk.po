@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-30 17:42+0000\n"
+"POT-Creation-Date: 2022-05-13 17:02+0000\n"
 "PO-Revision-Date: 2021-11-30 18:29+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -32,25 +32,32 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "Nastavujte bránu Firewall, zámok obrazovky a informácie o aktivite"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
 msgid "New features:"
 msgstr "Nové funkcie:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Add Downloads option to Housekeeping"
-msgstr "Pridaná možnosť Stiahnuté súbory do Upratovania"
+msgid "Option to forbid new USB devices while locked"
+msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
 msgid "Minor updates:"
 msgstr "Menšie aktualizácie:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:32
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:39
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:47
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
 msgid "Translation updates"
 msgstr "Aktualizácia prekladov"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:46
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
+msgid "Add Downloads option to Housekeeping"
+msgstr "Pridaná možnosť Stiahnuté súbory do Upratovania"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "Prerobená stránka „Upratovanie“"

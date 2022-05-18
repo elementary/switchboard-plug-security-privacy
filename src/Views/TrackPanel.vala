@@ -100,18 +100,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     }
 
     private static string get_operating_system_name () {
-        string system = _("Your system");
-        try {
-            string contents = null;
-            if (FileUtils.get_contents ("/etc/os-release", out contents)) {
-                int start = contents.index_of ("NAME=") + "NAME=".length;
-                int end = contents.index_of_char ('\n');
-                system = contents.substring (start, end - start).replace ("\"", "");
-            }
-        } catch (FileError e) {
-            debug ("Could not get OS name");
-        }
-        return system;
+        return Environment.get_os_info (GLib.OsInfoKey.NAME) ?? _("Your system");
     }
 
     private void update_status_switch () {
