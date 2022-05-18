@@ -7,7 +7,7 @@
   <icon type="stock">preferences-system-privacy</icon>
   <translation type="gettext">security-privacy-plug</translation>
   <releases>
-     <release version="2.4.0" date="2021-05-13" urgency="medium">
+     <release version="2.4.0" date="2021-05-18" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
