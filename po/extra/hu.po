@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2021-11-24 22:55+0000\n"
+"PO-Revision-Date: 2022-05-19 13:32+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/hu/>\n"
@@ -38,7 +38,7 @@ msgstr "Új funkciók:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
 msgid "Option to forbid new USB devices while locked"
-msgstr ""
+msgstr "Lehetőség új USB-eszközök letiltására lezárt állapotban"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
