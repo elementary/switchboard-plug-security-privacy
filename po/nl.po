@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2022-01-15 22:24+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/nl/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: src/Plug.vala:50
 msgid "Security & Privacy"
-msgstr "Beveiliging & privacy"
+msgstr "Beveiliging en privacy"
 
 #: src/Plug.vala:51
 msgid "Configure firewall, screen lock, and activity information"
@@ -50,7 +50,7 @@ msgstr "Firewall"
 #: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
-msgstr "Schoonmaken"
+msgstr "Opschonen"
 
 #: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
@@ -206,20 +206,16 @@ msgid "Old temporary files"
 msgstr "Oude tijdelijke bestanden"
 
 #: src/Views/HouseKeepingPanel.vala:50
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Downloaded files"
-msgstr "Bestanden in de prullenbak"
+msgstr "Gedownloade bestanden"
 
 #: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
 msgstr "Bestanden in de prullenbak"
 
 #: src/Views/HouseKeepingPanel.vala:69
-#, fuzzy
-#| msgid "Delete Trashed and Temporary Files After:"
 msgid "Delete Old Files After:"
-msgstr "Verwijder tijdelijke bestanden en bestanden in de prullenbak na:"
+msgstr "Verwijder oude bestanden na:"
 
 #: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
@@ -256,7 +252,7 @@ msgstr "Vergrendelen nadat het scherm zich uitgeschakeld heeft:"
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Verbied nieuwe USB apparaten wanneer vergrendeld:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
