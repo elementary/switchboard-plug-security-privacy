@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2021-12-07 05:49+0000\n"
+"PO-Revision-Date: 2022-06-13 08:01+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/zh_Hans/>\n"
@@ -246,7 +246,7 @@ msgstr "熄屏后锁定："
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "锁定时阻止新的 USB 设备："
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
