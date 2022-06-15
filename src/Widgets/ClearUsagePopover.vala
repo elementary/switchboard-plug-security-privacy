@@ -20,20 +20,16 @@
  */
 
 public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
-    private Granite.Widgets.DatePicker to_datepicker;
-    private Granite.Widgets.DatePicker from_datepicker;
-    private Gtk.RadioButton all_time_radio;
-    private Gtk.RadioButton from_radio;
-    private Gtk.RadioButton past_hour_radio;
-    private Gtk.RadioButton past_day_radio;
-    private Gtk.RadioButton past_week_radio;
+    private Granite.DatePicker to_datepicker;
+    private Granite.DatePicker from_datepicker;
+    private Gtk.CheckButton all_time_radio;
+    private Gtk.CheckButton from_radio;
+    private Gtk.CheckButton past_hour_radio;
+    private Gtk.CheckButton past_day_radio;
+    private Gtk.CheckButton past_week_radio;
     private Gtk.RecentManager recent;
 
     private List<Gtk.RecentInfo> items;
-
-    public ClearUsagePopover (Gtk.Widget? relative_to) {
-        Object (relative_to: relative_to);
-    }
 
     construct {
         recent = new Gtk.RecentManager ();
@@ -41,22 +37,38 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
         var clear_label = new Gtk.Label (_("Remove system-collected file and application usage data from:"));
         clear_label.halign = Gtk.Align.START;
 
-        past_hour_radio = new Gtk.RadioButton.with_label (null, _("The past hour"));
-        past_day_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("The past day"));
-        past_week_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("The past week"));
-        from_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("From:"));
-        all_time_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("All time"));
+        past_hour_radio = new Gtk.CheckButton.with_label (_("The past hour"));
 
-        from_datepicker = new Granite.Widgets.DatePicker ();
+        past_day_radio = new Gtk.CheckButton.with_label (_("The past day")) {
+            group = past_hour_radio
+        };
+
+        past_week_radio = new Gtk.CheckButton.with_label (_("The past week")) {
+            group = past_hour_radio
+        };
+
+        from_radio = new Gtk.CheckButton.with_label (_("From:")) {
+            group = past_hour_radio
+        };
+
+        all_time_radio = new Gtk.CheckButton.with_label (_("All time")) {
+            group = past_hour_radio
+        };
+
+        from_datepicker = new Granite.DatePicker ();
         var to_label = new Gtk.Label (_("To:"));
-        to_datepicker = new Granite.Widgets.DatePicker ();
+        to_datepicker = new Granite.DatePicker ();
 
         var clear_button = new Gtk.Button.with_label (_("Clear Data"));
-        clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
         clear_button.halign = Gtk.Align.END;
 
-        var grid = new Gtk.Grid ();
-        grid.margin = 12;
+        var grid = new Gtk.Grid () {
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
+        };
         grid.column_spacing = 12;
         grid.row_spacing = 6;
         grid.attach (clear_label, 0, 0, 4, 1);
@@ -70,7 +82,7 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
         grid.attach (all_time_radio, 0, 5, 4, 1);
         grid.attach (clear_button, 0, 6, 4, 1);
 
-        add (grid);
+        child = grid;
 
         clear_button.clicked.connect (() => {
             on_clear_data ();
@@ -107,9 +119,9 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
 
                 try {
                     foreach (var item in items) {
-                        if (item.get_added () >= start / 1000) {
-                            recent.remove_item (item.get_uri ());
-                        }
+                        // if (item.get_added () >= start / 1000) {
+                        //     recent.remove_item (item.get_uri ());
+                        // }
                     }
                 } catch (Error err) {
                     critical (err.message);
@@ -169,9 +181,9 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
 
                 try {
                     foreach (var item in items) {
-                        if (item.get_added () >= start / 1000 && item.get_added () <= end / 1000) {
-                            recent.remove_item (item.get_uri ());
-                        }
+                        // if (item.get_added () >= start / 1000 && item.get_added () <= end / 1000) {
+                        //     recent.remove_item (item.get_uri ());
+                        // }
                     }
                 } catch (Error err) {
                     critical (err.message);

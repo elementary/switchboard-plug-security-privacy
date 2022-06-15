@@ -45,28 +45,22 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
             _("This may not prevent apps from recording their own usage data, such as browser history.")
         ));
 
-        var alert = new Granite.Widgets.AlertView (_("History Is Disabled"), description, "");
-        alert.show_all ();
+        var alert = new Granite.Placeholder (_("History Is Disabled")) {
+            description = description
+        };
 
-        var description_frame = new Gtk.Frame (null);
-        description_frame.no_show_all = true;
-        description_frame.add (alert);
+        var description_frame = new Gtk.Frame (null) {
+            child = alert
+        };
 
         status_switch.active = true;
 
-        var clear_data = new Gtk.ToggleButton.with_label (_("Clear History…"));
-        clear_data.notify["active"].connect (() => {
-            if (clear_data.active == false) {
-                remove_popover.hide ();
-            } else {
-                remove_popover.show_all ();
-            }
-        });
+        remove_popover = new Widgets.ClearUsagePopover ();
 
-        remove_popover = new Widgets.ClearUsagePopover (clear_data);
-        remove_popover.closed.connect (() => {
-            clear_data.active = false;
-        });
+        var clear_data = new Gtk.MenuButton () {
+            label = _("Clear History…"),
+            popover = remove_popover
+        };
 
         var include_treeview = new IncludeTreeView ();
         var exclude_treeview = new ExcludeTreeView ();
@@ -75,7 +69,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         content_area.attach (include_treeview, 0, 1, 1, 1);
         content_area.attach (exclude_treeview, 1, 1, 1, 1);
 
-        action_area.add (clear_data);
+        action_area.append (clear_data);
 
         status_switch.notify["active"].connect (() => {
             bool privacy_mode = !status_switch.active;

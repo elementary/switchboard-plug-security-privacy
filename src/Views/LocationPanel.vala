@@ -49,12 +49,9 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     construct {
         location_settings = new GLib.Settings (LOCATION_AGENT_ID);
 
-        var placeholder = new Granite.Widgets.AlertView (
-            _("No Apps Are Using Location Services"),
-            _("When apps are installed that use location services they will automatically appear here."),
-            ""
-        );
-        placeholder.show_all ();
+        var placeholder = new Granite.Placeholder (_("No Apps Are Using Location Services")) {
+            description = _("When apps are installed that use location services they will automatically appear here.")
+        };
 
         listbox = new Gtk.ListBox ();
         listbox.activate_on_single_click = true;
@@ -62,30 +59,29 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         populate_app_listbox ();
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.visible = true;
-        scrolled.add (listbox);
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = listbox,
+            hexpand = true,
+            vexpand = true
+        };
 
-        var alert = new Granite.Widgets.AlertView (
-            _("Location Services Are Disabled"),
-            "%s\n%s\n%s".printf (
+        var alert = new Granite.Placeholder (_("Location Services Are Disabled")) {
+            description = "%s\n%s\n%s".printf (
                 _("While location services are disabled, location requests from apps will be automatically rejected."),
                 _("The additional functionality that location access provides in those apps will be affected."),
                 _("This will not prevent apps from trying to determine your location based on IP address.")
-            ),
-            ""
-        );
-        alert.visible = true;
+            )
+        };
 
         disabled_stack = new Gtk.Stack ();
         disabled_stack.add_named (alert, "disabled");
         disabled_stack.add_named (scrolled, "enabled");
 
-        var frame = new Gtk.Frame (null);
-        frame.add (disabled_stack);
+        var frame = new Gtk.Frame (null) {
+            child = disabled_stack
+        };
 
-        content_area.add (frame);
+        content_area.attach (frame, 0, 0);
 
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
 
@@ -121,8 +117,10 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     private void populate_app_listbox () {
         load_remembered_apps ();
 
-        foreach (var row in listbox.get_children ()) {
+        unowned var row = listbox.get_first_child ();
+        while (row != null) {
             listbox.remove (row);
+            row = row.get_next_sibling ();
         }
 
         foreach (var app in remembered_apps) {
@@ -137,7 +135,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
                 save_app_settings (app_id, active, level);
             });
 
-            listbox.add (app_row);
+            listbox.append (app_row);
         }
     }
 
@@ -188,9 +186,11 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             active_switch.valign = Gtk.Align.CENTER;
             active_switch.active = authed;
 
-            main_grid.margin = 6;
+            main_grid.margin_top = 6;
+            main_grid.margin_end = 6;
+            main_grid.margin_bottom = 6;
+            main_grid.margin_start = 6;
             main_grid.attach (active_switch, 2, 0, 1, 2);
-            show_all ();
 
             activate.connect (() => {
                 active_switch.active = false;

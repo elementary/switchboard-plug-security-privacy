@@ -41,8 +41,7 @@ public class ServiceItem: Gtk.ListBoxRow {
                     status_label.label = _("Partially Enabled");
                     break;
             }
-            status_label.no_show_all = false;
-            status_label.show ();
+            status_label.visible = true;
             status_label.label = "<span font_size='small'>" + status_label.label + "</span>";
         }
     }
@@ -61,7 +60,9 @@ public class ServiceItem: Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DND);
+        var icon = new Gtk.Image.from_icon_name (icon_name) {
+            pixel_size = 32
+        };
 
         var title_label = new Gtk.Label (label);
         title_label.get_style_context ().add_class ("h3");
@@ -72,24 +73,30 @@ public class ServiceItem: Gtk.ListBoxRow {
         status_icon.halign = Gtk.Align.END;
         status_icon.valign = Gtk.Align.END;
 
-        status_label = new Gtk.Label (null);
-        status_label.no_show_all = true;
+        status_label = new Gtk.Label (null) {
+            visible = false
+        };
         status_label.use_markup = true;
         status_label.ellipsize = Pango.EllipsizeMode.END;
         status_label.xalign = 0;
 
-        var overlay = new Gtk.Overlay ();
+        var overlay = new Gtk.Overlay () {
+            child = icon
+        };
         overlay.width_request = 38;
-        overlay.add (icon);
         overlay.add_overlay (status_icon);
 
-        var grid = new Gtk.Grid ();
-        grid.margin = 6;
+        var grid = new Gtk.Grid () {
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_end = 6,
+            margin_start = 6
+        };
         grid.column_spacing = 6;
         grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0, 1, 1);
         grid.attach (status_label, 1, 1, 1, 1);
 
-        add (grid);
+        child = grid;
     }
 }

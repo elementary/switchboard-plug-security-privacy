@@ -28,26 +28,24 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
     private Gtk.ListBox list;
     private Gtk.SearchEntry search_entry;
 
-    public AppChooser (Gtk.Widget widget) {
-        Object (relative_to: widget);
-    }
-
     construct {
         search_entry = new Gtk.SearchEntry ();
         search_entry.margin_end = 12;
         search_entry.margin_start = 12;
         search_entry.placeholder_text = _("Search Application");
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.height_request = 200;
-        scrolled.width_request = 500;
-        scrolled.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
-
-        list = new Gtk.ListBox ();
-        list.expand = true;
+        list = new Gtk.ListBox () {
+            hexpand = true,
+            vexpand = true
+        };
         list.set_sort_func (sort_function);
         list.set_filter_func (filter_function);
-        scrolled.add (list);
+
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = list,
+            height_request = 200,
+            width_request = 500
+        };
 
         var grid = new Gtk.Grid ();
         grid.margin_top = 12;
@@ -55,7 +53,7 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
         grid.attach (search_entry, 0, 0, 1, 1);
         grid.attach (scrolled, 0, 1, 1, 1);
 
-        add (grid);
+        child = grid;
 
         search_entry.grab_focus ();
         list.row_activated.connect (on_app_selected);

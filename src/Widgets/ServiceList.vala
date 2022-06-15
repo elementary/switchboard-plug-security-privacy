@@ -88,7 +88,7 @@ public class ServiceList : Gtk.ListBox {
     }
 
     public void add_service (ServiceItem service) {
-        add (service);
+        append (service);
         services.set (service.title, service);
     }
 

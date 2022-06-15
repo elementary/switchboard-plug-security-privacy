@@ -28,7 +28,7 @@ namespace SecurityPrivacy {
     public static TrackPanel tracking;
 
     public class Plug : Switchboard.Plug {
-        Gtk.Grid main_grid;
+        private Gtk.Box main_box;
         Gtk.Stack stack;
 
         ServiceList service_list;
@@ -73,15 +73,15 @@ namespace SecurityPrivacy {
         }
 
         public override Gtk.Widget get_widget () {
-            if (main_grid == null) {
-                main_grid = new Gtk.Grid ();
+            if (main_box == null) {
+                main_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
             }
 
-            return main_grid;
+            return main_box;
         }
 
         public override void shown () {
-            if (main_grid.get_children ().length () > 0) {
+            if (main_box.get_first_child != null) {
                 return;
             }
 
@@ -92,7 +92,7 @@ namespace SecurityPrivacy {
             var infobar = new Gtk.InfoBar () {
                 message_type = Gtk.MessageType.INFO
             };
-            infobar.get_content_area ().add (label);
+            infobar.add_child (label);
 
             var grid = new Gtk.Grid ();
             grid.attach (infobar, 0, 0);
@@ -107,7 +107,7 @@ namespace SecurityPrivacy {
                 lock_button = new Gtk.LockButton (permission);
 
                 infobar.revealed = false;
-                infobar.get_action_area ().add (lock_button);
+                infobar.add_child (lock_button);
 
                 stack.notify["visible-child-name"].connect (() => {
                     if (permission.allowed == false && stack.visible_child_name == "firewall") {
@@ -145,13 +145,15 @@ namespace SecurityPrivacy {
 
             service_list = new ServiceList ();
 
-            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
-            paned.position = 200;
-            paned.add1 (service_list);
-            paned.add2 (grid);
+            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
+                position = 200,
+                start_child = service_list,
+                shrink_start_child = false,
+                resize_start_child = false,
+                end_child = grid
+            };
 
-            main_grid.add (paned);
-            main_grid.show_all ();
+            main_box.append (paned);
 
             service_list.row_selected.connect ((row) => {
                 var title = ((ServiceItem)row).title;
@@ -164,7 +166,7 @@ namespace SecurityPrivacy {
         }
 
         public override void search_callback (string location) {
-            if (main_grid.get_children ().length () == 0) {
+            if (main_box.get_first_child != null) {
                 shown ();
             }
 

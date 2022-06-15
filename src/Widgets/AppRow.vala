@@ -29,11 +29,12 @@ public class AppRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name (get_icon_name (), Gtk.IconSize.DND);
-        image.pixel_size = 32;
+        var image = new Gtk.Image.from_icon_name (get_icon_name ()) {
+            pixel_size = 32
+        };
 
         var app_name = new Gtk.Label (get_app_name ());
-        app_name.get_style_context ().add_class ("h3");
+        app_name.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
         app_name.xalign = 0;
         app_name.ellipsize = Pango.EllipsizeMode.END;
 
@@ -42,17 +43,18 @@ public class AppRow : Gtk.ListBoxRow {
         app_comment.use_markup = true;
         app_comment.ellipsize = Pango.EllipsizeMode.END;
 
-        main_grid = new Gtk.Grid ();
-        main_grid.margin = 6;
-        main_grid.margin_end = 12;
-        main_grid.margin_start = 10; // Account for icon position on the canvas
+        main_grid = new Gtk.Grid () {
+            margin_top = 6,
+            margin_end = 12,
+            margin_bottom = 6,
+            margin_start = 10 // Account for icon position on the canvas
+        };
         main_grid.column_spacing = 12;
         main_grid.attach (image, 0, 0, 1, 2);
         main_grid.attach (app_name, 1, 0, 1, 1);
         main_grid.attach (app_comment, 1, 1, 1, 1);
 
-        add (main_grid);
-        show_all ();
+        child = main_grid;
     }
 
     private string get_app_comment () {
@@ -76,7 +78,7 @@ public class AppRow : Gtk.ListBoxRow {
     }
 
     private string get_icon_name () {
-        var icon_theme = Gtk.IconTheme.get_default ();
+        var icon_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
 
         if (icon_theme.has_icon (app_info.get_icon ().to_string ())) {
             return app_info.get_icon ().to_string ();

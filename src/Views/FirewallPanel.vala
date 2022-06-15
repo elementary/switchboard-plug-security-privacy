@@ -316,21 +316,11 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         });
 
         actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
 
-        var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON);
+        var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic");
 
         add_button.clicked.connect (() => {
-            var popover_grid = new Gtk.Grid ();
-            popover_grid.margin = 6;
-            popover_grid.margin_top = 12;
-            popover_grid.margin_start = 12;
-            popover_grid.margin_bottom = 9;
-            popover_grid.column_spacing = 12;
-            popover_grid.row_spacing = 6;
-            add_popover = new Gtk.Popover (add_button);
-            add_popover.add (popover_grid);
-
             var policy_label = new Gtk.Label (_("Action:"));
             policy_label.xalign = 1;
             var policy_combobox = new Gtk.ComboBoxText ();
@@ -368,8 +358,12 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             ports_entry.input_purpose = Gtk.InputPurpose.NUMBER;
             ports_entry.placeholder_text = _("%d or %d-%d").printf (80, 80, 85);
 
-            var do_add_button = new Gtk.Button.with_label (_("Add Rule"));
-            do_add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            var do_add_button = new Gtk.Button.with_label (_("Add Rule")) {
+                halign = Gtk.Align.END,
+                hexpand = true
+            };
+            do_add_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+
             do_add_button.clicked.connect (() => {
                 var rule = new UFWHelpers.Rule ();
                 if (direction_combobox.active == 0)
@@ -404,10 +398,13 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
                 show_rules ();
             });
 
-            var add_button_grid = new Gtk.Grid ();
-            add_button_grid.add (do_add_button);
-            add_button_grid.halign = Gtk.Align.END;
-
+            var popover_grid = new Gtk.Grid ();
+            popover_grid.margin_top = 12;
+            popover_grid.margin_end = 6;
+            popover_grid.margin_start = 12;
+            popover_grid.margin_bottom = 9;
+            popover_grid.column_spacing = 12;
+            popover_grid.row_spacing = 6;
             popover_grid.attach (policy_label, 0, 0, 1, 1);
             popover_grid.attach (policy_combobox, 1, 0, 1, 1);
             popover_grid.attach (protocol_label, 0, 1, 1, 1);
@@ -418,13 +415,15 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             popover_grid.attach (direction_combobox, 1, 3, 1, 1);
             popover_grid.attach (ports_label, 0, 4, 1, 1);
             popover_grid.attach (ports_entry, 1, 4, 1, 1);
-            popover_grid.attach (add_button_grid, 0, 5, 2, 1);
+            popover_grid.attach (do_add_button, 0, 5, 2, 1);
 
-            add_popover.show_all ();
+            add_popover = new Gtk.Popover () {
+                child = popover_grid
+            };
+            add_popover.popup ();
         });
 
-        actionbar.add (add_button);
-        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
+        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic");
         remove_button.sensitive = false;
         remove_button.clicked.connect (() => {
             Gtk.TreePath path;
@@ -445,23 +444,27 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             }
             show_rules ();
         });
-        actionbar.add (remove_button);
+
+        actionbar.pack_start (add_button);
+        actionbar.pack_start (remove_button);
 
         view.cursor_changed.connect (() => {
             remove_button.sensitive = true;
         });
 
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = view,
+            hexpand = true,
+            vexpand = true
+        };
+
         var view_grid = new Gtk.Grid ();
-
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.add (view);
-
         view_grid.attach (scrolled, 0, 0, 1, 1);
         view_grid.attach (actionbar, 0, 1, 1, 1);
 
-        var frame = new Gtk.Frame (null);
-        frame.add (view_grid);
+        var frame = new Gtk.Frame (null) {
+            child = view_grid
+        };
 
         content_area.attach (frame, 0, 1, 3, 1);
     }
