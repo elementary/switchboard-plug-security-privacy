@@ -155,7 +155,7 @@ namespace SecurityPrivacy {
 
             main_box.append (paned);
 
-            service_list.row_selected.connect ((row) => {
+            service_list.list_box.row_selected.connect ((row) => {
                 var title = ((ServiceItem)row).title;
                 stack.visible_child_name = title;
             });

@@ -18,14 +18,11 @@
  * Boston, MA 02110-1301 USA
  */
 
-public class ServiceList : Gtk.ListBox {
+public class ServiceList : Gtk.Box {
+    public Gtk.ListBox list_box { get; private set; }
+
     private ServiceItem housekeeping_item;
     Gee.HashMap<string, ServiceItem> services = new Gee.HashMap<string, ServiceItem> ();
-
-    public ServiceList () {
-        Object (activate_on_single_click: true,
-                selection_mode: Gtk.SelectionMode.SINGLE);
-    }
 
     construct {
         var privacy_item = new ServiceItem ("document-open-recent", "tracking", _("History"));
@@ -41,6 +38,13 @@ public class ServiceList : Gtk.ListBox {
         add_service (lock_item);
         add_service (firewall_item);
         add_service (housekeeping_item);
+
+        list_box = new Gtk.ListBox () {
+            activate_on_single_click = true,
+            selection_mode = Gtk.SelectionMode.SINGLE
+        };
+
+        append (list_box);
 
         SecurityPrivacy.firewall.status_switch.notify["active"].connect (() => {
             update_service_status (firewall_item, SecurityPrivacy.firewall.status_switch.active);
@@ -88,11 +92,11 @@ public class ServiceList : Gtk.ListBox {
     }
 
     public void add_service (ServiceItem service) {
-        append (service);
+        list_box.append (service);
         services.set (service.title, service);
     }
 
     public void select_service_name (string name) {
-        select_row (services[name]);
+        list_box.select_row (services[name]);
     }
 }
