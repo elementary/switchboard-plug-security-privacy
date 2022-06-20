@@ -20,7 +20,6 @@
 */
 
 public class ExcludeTreeView : Gtk.Grid {
-    private SecurityPrivacy.Dialogs.AppChooser app_chooser;
     private SecurityPrivacy.ApplicationBlacklist app_blacklist;
     private SecurityPrivacy.PathBlacklist path_blacklist;
 
@@ -58,20 +57,13 @@ public class ExcludeTreeView : Gtk.Grid {
         scrolled.expand = true;
         scrolled.add (view);
 
-        var add_app_button = new Gtk.Button.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON);
-        add_app_button.tooltip_text = _("Add Application…");
-        add_app_button.clicked.connect (() => {
-            if (app_chooser.visible == false) {
-                app_chooser.show_all ();
-            }
-        });
+        var app_chooser = new SecurityPrivacy.Dialogs.AppChooser ();
 
-        app_chooser = new SecurityPrivacy.Dialogs.AppChooser (add_app_button);
-        app_chooser.modal = true;
-        app_chooser.app_chosen.connect ((info) => {
-            var file = File.new_for_path (info.filename);
-            app_blacklist.block (file.get_basename ());
-        });
+        var add_app_button = new Gtk.MenuButton () {
+            image = new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON),
+            popover = app_chooser,
+            tooltip_text = _("Add Application…")
+        };
 
         var add_folder_button = new Gtk.Button.from_icon_name ("folder-new-symbolic", Gtk.IconSize.BUTTON);
         add_folder_button.tooltip_text = _("Add Folder…");
@@ -174,6 +166,11 @@ public class ExcludeTreeView : Gtk.Grid {
                     NotColumns.ICON, new ThemedIcon ("folder"), NotColumns.PATH, folder,
                     NotColumns.IS_APP, false);
         }
+
+        app_chooser.app_chosen.connect ((info) => {
+            var file = File.new_for_path (info.filename);
+            app_blacklist.block (file.get_basename ());
+        });
 
         app_blacklist.application_added.connect ((name, ev) => {
             Gtk.TreeIter it;
