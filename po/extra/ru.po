@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2021-11-30 13:42+0000\n"
-"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
+"PO-Revision-Date: 2022-08-01 20:11+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ru/>\n"
 "Language: ru\n"
@@ -39,7 +39,7 @@ msgstr "Новые возможности:"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
 msgid "Option to forbid new USB devices while locked"
-msgstr ""
+msgstr "Возможность запретить новые USB-устройства во время блокировки"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
