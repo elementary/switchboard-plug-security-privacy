@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2022-08-06 15:44+0000\n"
+"PO-Revision-Date: 2022-08-07 19:33+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ko/>\n"
@@ -64,7 +64,7 @@ msgstr "사용 기록"
 
 #: src/Plug.vala:179
 msgid "Clear History"
-msgstr "사용 기록 청소"
+msgstr "기록 지우기"
 
 #: src/Plug.vala:181
 msgid "Lock on sleep"
@@ -283,7 +283,7 @@ msgstr "사용 기록을 사용하지 않습니다"
 
 #: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
-msgstr "사용 기록 청소…"
+msgstr "기록 지우기…"
 
 #: src/Views/TrackPanel.vala:103
 msgid "Your system"
