@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2022-09-21 02:54+0000\n"
+"PO-Revision-Date: 2022-09-21 12:46+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/ckb/>\n"
@@ -167,7 +167,7 @@ msgstr ""
 
 #: src/Views/FirewallPanel.vala:350
 msgid "Version:"
-msgstr ""
+msgstr "وەشان:"
 
 #: src/Views/FirewallPanel.vala:355
 msgid "Both"
