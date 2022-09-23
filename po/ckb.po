@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2022-09-21 15:36+0000\n"
+"PO-Revision-Date: 2022-09-23 23:35+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/ckb/>\n"
@@ -92,7 +92,7 @@ msgstr ""
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr ""
+msgstr "وەستێنراو"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
 #: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
@@ -342,7 +342,7 @@ msgstr ""
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
-msgstr ""
+msgstr "لە:"
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
@@ -350,7 +350,7 @@ msgstr ""
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr ""
+msgstr "بۆ:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
