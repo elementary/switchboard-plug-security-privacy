@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2022-09-23 23:35+0000\n"
+"PO-Revision-Date: 2022-09-25 06:58+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/ckb/>\n"
@@ -370,7 +370,7 @@ msgstr ""
 
 #: src/Widgets/ExcludeTreeView.vala:83
 msgid "Add"
-msgstr ""
+msgstr "زیادکردن"
 
 #: src/Widgets/ExcludeTreeView.vala:84
 msgid "Cancel"
@@ -398,7 +398,7 @@ msgstr ""
 
 #: src/Widgets/IncludeTreeView.vala:90
 msgid "Music"
-msgstr ""
+msgstr "مۆسیقا"
 
 #: src/Widgets/IncludeTreeView.vala:91
 msgid "Pictures"
