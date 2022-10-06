@@ -8,17 +8,20 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2018-06-11 13:07-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2022-10-07 17:33+0000\n"
+"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"switchboard/security-privacy-plug-extra/ckb/>\n"
 "Language: ckb\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "پێویستە تێپەڕەوشە داخڵ بکەیت بۆ بەڕێوەبردنی دوای ئاگرین"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
 msgid "Security &amp; Privacy Settings"
@@ -26,7 +29,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "زانیاری چالاکییەکان و قوفڵی شاشە و دیواری ئاگرین ڕێک بخە"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
