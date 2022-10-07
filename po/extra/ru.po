@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2022-08-01 20:11+0000\n"
+"PO-Revision-Date: 2022-10-07 17:33+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ru/>\n"
@@ -57,8 +57,8 @@ msgstr "Обновления перевода"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
 msgid "Add Downloads option to Housekeeping"
-msgstr "Добавлена опция \"Загрузки\" в разделе Домоводства"
+msgstr "Добавлена опция «Загрузки» в разделе Домоводства"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
 msgid "Redesigned \"Housekeeping\" page"
-msgstr "Переработана страница \"Домоводства\""
+msgstr "Переработана страница «Домоводства»"
