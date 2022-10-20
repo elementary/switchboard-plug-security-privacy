@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2022-10-20 18:31+0000\n"
 "PO-Revision-Date: 2022-05-01 15:37+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -94,12 +94,12 @@ msgstr ""
 "gerekiyor"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Etkin"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Devre dışı bırakıldı"
@@ -347,7 +347,7 @@ msgstr ""
 msgid "Allow %s to use location services"
 msgstr "%s uygulamasının konum hizmetlerini kullanmasına izin ver"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "Uygulama Ara"
 
@@ -384,31 +384,31 @@ msgstr "Bitiş:"
 msgid "Clear Data"
 msgstr "Veriyi Temizle"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
 msgstr "Uygulama Ekle…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
 msgstr "Klasör Ekle…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
 msgstr "Kara liste için bir klasör seçin"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
 msgstr "Ekle"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
 msgstr "İptal"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
 msgstr "Sil"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
 msgstr "Aşağıdakilerden veri toplama:"
 

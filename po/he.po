@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2022-10-20 18:31+0000\n"
 "PO-Revision-Date: 2022-05-02 08:31+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -91,12 +91,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "נדרש אימות כדי להפעיל את תצורת חומת האש"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "פעיל"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "מושבתת"
@@ -336,7 +336,7 @@ msgstr "מצב זה לא ימנע מהיישומים לנסות לאתר את מ
 msgid "Allow %s to use location services"
 msgstr "לאפשר ליישום %s להשתמש בשירותי המיקום"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "חיפוש יישומים"
 
@@ -372,31 +372,31 @@ msgstr "סיום:"
 msgid "Clear Data"
 msgstr "פינוי נתונים"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
 msgstr "הוספת יישום…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
 msgstr "הוספת תיקייה…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
 msgstr "בחירת תיקייה לחסימה"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
 msgstr "הוספה"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
 msgstr "מחיקה"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
 msgstr "לא לאסוף מידע מאלה:"
 
