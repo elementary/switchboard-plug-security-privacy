@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2022-10-20 18:31+0000\n"
 "PO-Revision-Date: 2022-08-08 09:55+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -32,32 +32,34 @@ msgid "Configure firewall, screen lock, and activity information"
 msgstr "방화벽, 화면 잠금, 활동 정보 등을 설정합니다"
 
 #: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
-msgid "New features:"
-msgstr "새로운 기능:"
-
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Option to forbid new USB devices while locked"
-msgstr "잠겨 있는 동안 새 USB 장치를 금지하는 옵션"
-
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:25
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
 msgid "Minor updates:"
 msgstr "소소한 업데이트:"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:27
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:39
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:46
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:53
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:60
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:68
 msgid "Translation updates"
 msgstr "번역 업데이트"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:21
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:33
+msgid "New features:"
+msgstr "새로운 기능:"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:23
+msgid "Option to forbid new USB devices while locked"
+msgstr "잠겨 있는 동안 새 USB 장치를 금지하는 옵션"
+
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:35
 msgid "Add Downloads option to Housekeeping"
 msgstr "하우스키핑에 다운로드 옵션 추가"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
+#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:67
 msgid "Redesigned \"Housekeeping\" page"
 msgstr "\"하우스키핑\" 페이지 다시 디자인"
