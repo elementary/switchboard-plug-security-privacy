@@ -1,3 +1,12 @@
+switchboard-plug-security-privacy (2.4.1) bionic; urgency=medium
+
+  * Release 2.4.1 (#140)
+  * Update translation files
+  * Update translation template
+  * AppChooser: cleanup (#139)
+
+ -- elementary, Inc. <builds@elementary.io>  Wed, 26 Oct 2022 04:42:59 +0000
+
 switchboard-plug-security-privacy (2.4.0) bionic; urgency=medium
 
   * Release 2.4.0 (#135)
