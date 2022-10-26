@@ -7,7 +7,7 @@
   <icon type="stock">preferences-system-privacy</icon>
   <translation type="gettext">security-privacy-plug</translation>
   <releases>
-    <release version="2.4.1" date="2022-10-19" urgency="medium">
+    <release version="2.4.1" date="2022-10-20" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
