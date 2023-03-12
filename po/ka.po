@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 18:31+0000\n"
 "PO-Revision-Date: 2023-03-12 03:45+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ka/>\n"
 "Language: ka\n"
@@ -25,9 +25,8 @@ msgid "Security & Privacy"
 msgstr "უსაფრთხოება & კონფიდენციალობა"
 
 #: src/Plug.vala:51
-#, fuzzy
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "ფაიარვოლის, ეკრანის საკეტის და აქტივობაზე ინფორმაციის კონფიგურაცია"
+msgstr "ბრანდმაუერის, ეკრანის ჩაკეტვის და აქტივობის ინფორმაციის მორგება"
 
 #: src/Plug.vala:90
 msgid "Some settings require administrator rights to be changed"
@@ -51,44 +50,41 @@ msgstr "ფაიერვოლი"
 #: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
-msgstr ""
+msgstr "მეოჯახეობა"
 
 #: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
 #: src/Widgets/ServiceList.vala:62
 msgid "Location Services"
-msgstr ""
+msgstr "მდებარეობის სერვისები"
 
 #: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
-msgstr ""
+msgstr "ისტორია"
 
 #: src/Plug.vala:179
-#, fuzzy
 msgid "Clear History"
-msgstr "მონაცემების გასუფთავება"
+msgstr "ისტორიის გასუფთავება"
 
 #: src/Plug.vala:181
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "ჩაკეტვა დაძინებისას:"
+msgstr "ჩაკეტვა დაძინებისას"
 
 #: src/Plug.vala:182
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "ჩაკეტვა ეკრანის გამორთვის შემდეგ:"
+msgstr "ჩაკეტვა ეკრანის გამორთვის შემდეგ"
 
 #: src/Plug.vala:188
 msgid "Automatically delete old temporary files"
-msgstr ""
+msgstr "ძველი დროებითი ფაილების ავტომატური წაშლა"
 
 #: src/Plug.vala:193
 msgid "Automatically delete old trashed files"
-msgstr ""
+msgstr "ძველი ნაგავში გადაყრილი ფაილების ავტომატური წაშლა"
 
 #: src/Plug.vala:198
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
+msgstr "ნაგავში და დროებითი ფაილების შენარჩუნების დრო დღეებში"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
@@ -203,27 +199,27 @@ msgstr "წესის დამატება"
 
 #: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
-msgstr ""
+msgstr "ავტომატური წაშლა:"
 
 #: src/Views/HouseKeepingPanel.vala:40
 msgid "Old temporary files"
-msgstr ""
+msgstr "ძველი დროებითი ფაილები"
 
 #: src/Views/HouseKeepingPanel.vala:50
 msgid "Downloaded files"
-msgstr ""
+msgstr "გადმოწერილი ფაილები"
 
 #: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
-msgstr ""
+msgstr "ნაგავში გადაყრილი ფაილები"
 
 #: src/Views/HouseKeepingPanel.vala:69
 msgid "Delete Old Files After:"
-msgstr ""
+msgstr "ძველები წაიშლება:"
 
 #: src/Views/HouseKeepingPanel.vala:90
 msgid "Open Trash…"
-msgstr ""
+msgstr "ნაგვის გახსნა…"
 
 #: src/Views/HouseKeepingPanel.vala:124
 #, c-format
@@ -238,10 +234,9 @@ msgstr[0] ""
 #: src/Views/HouseKeepingPanel.vala:130
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
+msgstr[0] "დღე"
 
 #: src/Views/LockPanel.vala:31
-#, fuzzy
 msgid "Lock on suspend:"
 msgstr "ჩაკეტვა დაძინებისას:"
 
@@ -251,7 +246,7 @@ msgstr "ჩაკეტვა ეკრანის გამორთვის 
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "ახალი USB მოწყობილობების აკრძალვა, როცა ჩაკეტილია:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
@@ -265,7 +260,7 @@ msgstr ""
 #: src/Views/TrackPanel.vala:43
 #, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
+msgstr "%s გამოყენების მონაცემებს არ შეინახავს."
 
 #: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
@@ -274,21 +269,20 @@ msgstr ""
 "უზრუნველყოფს."
 
 #: src/Views/TrackPanel.vala:45
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
 "ეს არ აღკვეთს პროგრამების მიერ საკუთარი გამოყენებული მონაცემების ჩაწერას, "
-"მაგალითად ბრაუზინგის ისტორიის."
+"მაგალითად ბრაუზერის ისტორიის."
 
 #: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
-msgstr ""
+msgstr "ისტორია გამორთულია"
 
 #: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
-msgstr ""
+msgstr "ისტორიის გასუფთავება…"
 
 #: src/Views/TrackPanel.vala:103
 msgid "Your system"
@@ -300,23 +294,27 @@ msgstr "უფლება მიეცი წინამდებარე ა
 
 #: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr ""
+msgstr "მდებარეობის სერვისს აპები არ იყენებენ"
 
 #: src/Views/LocationPanel.vala:54
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"როცა აპებს, რომლებიც მდებარეობის სერვისს იყენებენ, დააყენებთ, ისინი აქ "
+"გამოჩნდება."
 
 #: src/Views/LocationPanel.vala:71
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "მდებარეობის სერვისები გამორთულია"
 
 #: src/Views/LocationPanel.vala:73
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"როცა მდებარეობის სერვისები გამორთულია, აპების მოთხოვნები ავტომატურად "
+"უარყოფილია."
 
 #: src/Views/LocationPanel.vala:74
 msgid ""
@@ -329,13 +327,13 @@ msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
-"ეს ვერ შეაჩრებს აპლიკაციას დაადგინოს თქვენი მდებარეობ იპ მისამართის "
-"გამოყენებით"
+"ეს ვერ შეაჩერებს აპლიკაციას დაადგინოს თქვენი მდებარეობა IP მისამართის "
+"გამოყენებით."
 
 #: src/Views/LocationPanel.vala:187
 #, c-format
 msgid "Allow %s to use location services"
-msgstr ""
+msgstr "%s-სთვის მდებარეობის სერვისების გამოყენების უფლების მიცემა"
 
 #: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
@@ -344,8 +342,7 @@ msgstr "პრორამის ძებნა"
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
-"წაშალე სისტემი-მიერ შეგროვებული ფაილების და აპლიკაციების გამოყენების შესახებ "
-"მონაცემები"
+"სისტემის მიერ მოგროვილი ფაილისა და აპლიკაციის გამოყენების მონაცემების წაშლა:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
@@ -437,7 +434,7 @@ msgstr "ვიდეოები"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "ნაწილობრივ ჩართულია"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "
