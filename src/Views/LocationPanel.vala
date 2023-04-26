@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2017-2018 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2017-2023 elementary, Inc. (https://elementary.io)
  * Copyright (C) 2017 David Hewitt <davidmhewitt@gmail.com>   
  *
  * This program is free software; you can redistribute it and/or modify
@@ -23,19 +22,11 @@
 public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
 
-    private GLib.Settings location_settings;
+    private GLib.Settings agent_settings;
     private Variant remembered_apps;
     private VariantDict remembered_apps_dict;
     private Gtk.ListBox listbox;
     private Gtk.Stack disabled_stack;
-
-    private enum Columns {
-        AUTHORIZED,
-        NAME,
-        ICON,
-        APP_ID,
-        N_COLUMNS
-    }
 
     public LocationPanel () {
         Object (
@@ -47,8 +38,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     }
 
     construct {
-        location_settings = new GLib.Settings (LOCATION_AGENT_ID);
-
         var placeholder = new Granite.Widgets.AlertView (
             _("No Apps Are Using Location Services"),
             _("When apps are installed that use location services they will automatically appear here."),
@@ -56,15 +45,15 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         );
         placeholder.show_all ();
 
-        listbox = new Gtk.ListBox ();
-        listbox.activate_on_single_click = true;
+        listbox = new Gtk.ListBox () {
+            activate_on_single_click = true
+        };
         listbox.set_placeholder (placeholder);
 
-        populate_app_listbox ();
-
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.visible = true;
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            hexpand = true,
+            vexpand = true
+        };
         scrolled.add (listbox);
 
         var alert = new Granite.Widgets.AlertView (
@@ -87,20 +76,25 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         content_area.add (frame);
 
-        location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
-
-        update_status ();
-
-        status_switch.notify["active"].connect (() => {
-            update_status ();
-        });
-
         listbox.row_activated.connect ((row) => {
             ((LocationRow) row).on_active_changed ();
         });
 
-        location_settings.changed.connect ((key) => {
+        agent_settings = new GLib.Settings (LOCATION_AGENT_ID);
+
+        populate_app_listbox ();
+
+        agent_settings.changed.connect (() => {
             populate_app_listbox ();
+        });
+
+        var location_settings = new Settings ("org.gnome.system.location");
+        location_settings.bind ("enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
+
+        update_status ();
+
+        location_settings.changed["enabled"].connect (() => {
+            update_status ();
         });
     }
 
@@ -142,8 +136,8 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     }
 
     private void load_remembered_apps () {
-        remembered_apps = location_settings.get_value ("remembered-apps");
-        remembered_apps_dict = new VariantDict (location_settings.get_value ("remembered-apps"));
+        remembered_apps = agent_settings.get_value ("remembered-apps");
+        remembered_apps_dict = new VariantDict (agent_settings.get_value ("remembered-apps"));
     }
 
     private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
@@ -151,7 +145,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         tuple_vals[0] = new Variant.boolean (authorized);
         tuple_vals[1] = new Variant.uint32 (accuracy_level);
         remembered_apps_dict.insert_value (desktop_id, new Variant.tuple (tuple_vals));
-        location_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
+        agent_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
         load_remembered_apps ();
     }
 
