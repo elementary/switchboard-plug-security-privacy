@@ -38,7 +38,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
     construct {
         liststore = new ListStore (typeof (AppPermission));
-        location_settings = new GLib.Settings (LOCATION_AGENT_ID);
 
         var placeholder = new Granite.Widgets.AlertView (
             _("No Apps Are Using Location Services"),
@@ -81,6 +80,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         content_area.add (frame);
 
+        location_settings = new GLib.Settings (LOCATION_AGENT_ID);
         location_settings.bind ("location-enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
 
         update_status ();
