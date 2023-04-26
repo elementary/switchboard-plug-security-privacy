@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2022-10-20 18:31+0000\n"
 "PO-Revision-Date: 2020-03-19 19:09+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -92,12 +92,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "مطلوب المصادقة لتشغيل اعداد جدار الحماية"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "مفعل"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "غير مفعل"
@@ -360,7 +360,7 @@ msgstr "لن يمنع هذا التطبيقات من محاولة تحديد م�
 msgid "Allow %s to use location services"
 msgstr "اسمح لـ%s بإستخدام خدمات الموقع"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "تطبيق البحث"
 
@@ -396,31 +396,31 @@ msgstr "إلى:"
 msgid "Clear Data"
 msgstr "مسح البيانات"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
 msgstr "أضف تطبيق…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
 msgstr "أضف مجلد…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
 msgstr "اختر مجلدا لاضافته في القائمة السوداء"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
 msgstr "أضف"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
 msgstr "الغاء"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
 msgstr "حذف"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
 msgstr "لا تجمع بيانات من التالي:"
 

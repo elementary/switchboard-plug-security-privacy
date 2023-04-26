@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2021-10-20 00:05+0000\n"
-"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
+"POT-Creation-Date: 2022-10-20 18:31+0000\n"
+"PO-Revision-Date: 2022-10-07 17:33+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ru/>\n"
 "Language: ru\n"
@@ -92,12 +92,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Для изменения настроек брандмауэра требуется аутентификация"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Включено"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Отключено"
@@ -208,7 +208,7 @@ msgstr "Старые временные файлы"
 
 #: src/Views/HouseKeepingPanel.vala:50
 msgid "Downloaded files"
-msgstr "Загруженные файлы"
+msgstr "Загрузки"
 
 #: src/Views/HouseKeepingPanel.vala:60
 msgid "Trashed files"
@@ -257,7 +257,7 @@ msgstr "Заблокировать систему при выключении э
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Запрет новых USB-устройств при блокировке:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
@@ -352,7 +352,7 @@ msgstr ""
 msgid "Allow %s to use location services"
 msgstr "Разрешить %s использовать сервисы местоположения"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "Поиск приложений"
 
@@ -388,31 +388,31 @@ msgstr "До:"
 msgid "Clear Data"
 msgstr "Очистить данные"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
 msgstr "Добавить приложение…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
 msgstr "Добавить папку…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
 msgstr "Добавить папку в чёрный список"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
 msgstr "Добавить"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
 msgstr "Удалить"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
 msgstr "Не собирать данные следующих приложений:"
 

@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2021-10-25 20:25+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"POT-Creation-Date: 2022-10-20 18:31+0000\n"
+"PO-Revision-Date: 2023-02-18 10:25+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:50
@@ -91,12 +91,12 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Authentication is required to run the Firewall Configuration"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:112
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Enabled"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
 #: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Disabled"
@@ -252,7 +252,7 @@ msgstr "Lock after screen turns off:"
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Forbid new USB devices when locked:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
@@ -345,7 +345,7 @@ msgstr ""
 msgid "Allow %s to use location services"
 msgstr "Allow %s to use location services"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "Search Application"
 
@@ -381,31 +381,31 @@ msgstr "To:"
 msgid "Clear Data"
 msgstr "Clear Data"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
 msgstr "Add Application…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
 msgstr "Add Folder…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
 msgstr "Select a folder to blacklist"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
 msgstr "Add"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
 msgstr "Cancel"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
 msgstr "Delete"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
 msgstr "Do not collect data from the following:"
 
