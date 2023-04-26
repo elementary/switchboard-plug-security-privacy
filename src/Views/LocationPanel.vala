@@ -27,14 +27,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     private Gtk.Stack disabled_stack;
     private ListStore liststore;
 
-    private enum Columns {
-        AUTHORIZED,
-        NAME,
-        ICON,
-        APP_ID,
-        N_COLUMNS
-    }
-
     public LocationPanel () {
         Object (
             activatable: true,
