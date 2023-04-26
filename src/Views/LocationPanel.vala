@@ -150,7 +150,12 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
                 app.get_child_value (1).get_variant ().get_child_value (0).get_boolean (),
                 app.get_child_value (1).get_variant ().get_child_value (1).get_uint32 ()
             );
-            liststore.append (app_permission);
+
+            // Don't add uninstalled apps
+            var app_info = new GLib.DesktopAppInfo (app_permission.id + ".desktop");
+            if (app_info != null) {
+                liststore.append (app_permission);
+            }
         }
     }
 
