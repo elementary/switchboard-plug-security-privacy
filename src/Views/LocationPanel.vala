@@ -24,7 +24,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
 
     private GLib.Settings location_settings;
-    private VariantDict remembered_apps_dict;
     private Gtk.Stack disabled_stack;
     private ListStore liststore;
 
@@ -128,20 +127,24 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         var app_row = new LocationRow (app_permission);
 
-        app_row.active_changed.connect ((active) => {
-            save_app_settings (app_permission.id, active, app_permission.level);
+        app_row.notify["authed"].connect (() => {
+            var tuple_vals = new Variant[2];
+            tuple_vals[0] = new Variant.boolean (app_row.authed);
+            tuple_vals[1] = new Variant.uint32 (app_permission.level);
+
+            var remembered_apps_dict = new VariantDict (location_settings.get_value ("remembered-apps"));
+            remembered_apps_dict.insert_value (app_permission.id, new Variant.tuple (tuple_vals));
+
+            location_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
         });
 
         return app_row;
     }
 
     private void load_remembered_apps () {
-        var remembered_apps = location_settings.get_value ("remembered-apps");
-        remembered_apps_dict = new VariantDict (remembered_apps);
-
         liststore.remove_all ();
 
-        foreach (var app in remembered_apps) {
+        foreach (var app in location_settings.get_value ("remembered-apps")) {
             var app_permission = new AppPermission (
                 app.get_child_value (0).get_string (),
                 app.get_child_value (1).get_variant ().get_child_value (0).get_boolean (),
@@ -149,15 +152,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             );
             liststore.append (app_permission);
         }
-    }
-
-    private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
-        Variant[] tuple_vals = new Variant[2];
-        tuple_vals[0] = new Variant.boolean (authorized);
-        tuple_vals[1] = new Variant.uint32 (accuracy_level);
-        remembered_apps_dict.insert_value (desktop_id, new Variant.tuple (tuple_vals));
-        location_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
-        load_remembered_apps ();
     }
 
     public static bool location_agent_installed () {
@@ -184,9 +178,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     }
 
     private class LocationRow : AppRow {
-        public signal void active_changed (bool active);
-        public bool authed { get; construct; }
-        private Gtk.Switch active_switch;
+        public bool authed { get; construct set; }
 
         public LocationRow (AppPermission permission) {
             Object (
@@ -196,7 +188,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
 
         construct {
-            active_switch = new Gtk.Switch () {
+            var active_switch = new Gtk.Switch () {
                 active = authed,
                 halign = Gtk.Align.END,
                 hexpand = true,
@@ -204,21 +196,18 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
                 valign = Gtk.Align.CENTER
             };
 
-            main_grid.margin = 6;
+            main_grid.margin_top = 6;
+            main_grid.margin_end = 6;
+            main_grid.margin_bottom = 6;
+            main_grid.margin_start = 6;
             main_grid.attach (active_switch, 2, 0, 1, 2);
             show_all ();
 
-            activate.connect (() => {
-                active_switch.active = false;
-            });
-
-            active_switch.notify ["active"].connect (() => {
-                active_changed (active_switch.active);
-            });
+            bind_property ("authed", active_switch, "active", BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
         }
 
         public void on_active_changed () {
-            active_switch.activate ();
+            authed = !authed;
         }
     }
 }
