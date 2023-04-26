@@ -23,9 +23,9 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     private const string PERMISSIONS_TABLE = "location";
     private const string PERMISSIONS_ID = "location";
 
-    private Gtk.Stack disabled_stack;
     private Granite.Widgets.AlertView alert;
     private Gtk.ScrolledWindow scrolled;
+    private Gtk.Stack disabled_stack;
     private PermissionStore permission_store;
 
     public LocationPanel () {
@@ -55,9 +55,10 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         scrolled = new Gtk.ScrolledWindow (null, null) {
             hexpand = true,
-            vexpand = true
+            vexpand = true,
+            child = listbox,
+            visible = true
         };
-        scrolled.add (listbox);
 
         alert = new Granite.Widgets.AlertView (
             _("Location Services Are Disabled"),
@@ -79,9 +80,9 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         content_area.add (frame);
 
-        // listbox.row_activated.connect ((row) => {
-        //     ((LocationRow) row).on_active_changed ();
-        // });
+        listbox.row_activated.connect ((row) => {
+            ((LocationRow) row).on_active_changed ();
+        });
 
         var location_settings = new Settings ("org.gnome.system.location");
         location_settings.bind ("enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
@@ -98,11 +99,15 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             HashTable<string, Variant> results;
             Variant data;
 
-            permission_store.lookup (PERMISSIONS_TABLE, PERMISSIONS_ID, out results, out data);
+            try {
+                permission_store.lookup (PERMISSIONS_TABLE, PERMISSIONS_ID, out results, out data);
+            } catch (Error e) {
+                critical (e.message);
+            }
 
             // foreach (var app in permissions) {
             //     string app_id = app.get_child_value (0).get_string ();
-            //     // bool authed = app.get_child_value (1).get_variant ().get_child_value (0).get_boolean ();
+            //     bool authed = app.get_child_value (1).get_variant ().get_child_value (0).get_boolean ();
             //     var app_info = new DesktopAppInfo (app_id + ".desktop");
 
             //     var app_row = new LocationRow (app_info, false);
@@ -140,7 +145,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     }
 
     // private Gtk.Widget create_widget_func (Object object) {
-    //     var appinfo = new GLib.DesktopAppInfo (installed_ref.get_name () + ".desktop");
+    //     var appinfo = new GLib.DesktopAppInfo (id + ".desktop");
 
     //     var image = new Gtk.Image.from_gicon (appinfo.get_icon (), Gtk.IconSize.DND) {
     //         pixel_size = 32
@@ -199,12 +204,13 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
 
         construct {
-            active_switch = new Gtk.Switch ();
-            active_switch.halign = Gtk.Align.END;
-            active_switch.hexpand = true;
-            active_switch.tooltip_text = _("Allow %s to use location services".printf (app_info.get_display_name ()));
-            active_switch.valign = Gtk.Align.CENTER;
-            active_switch.active = authed;
+            active_switch = new Gtk.Switch () {
+                active = authed,
+                halign = Gtk.Align.END,
+                hexpand = true,
+                tooltip_text = _("Allow %s to use location services".printf (app_info.get_display_name ())),
+                valign = Gtk.Align.CENTER
+            };
 
             main_grid.margin = 6;
             main_grid.attach (active_switch, 2, 0, 1, 2);
