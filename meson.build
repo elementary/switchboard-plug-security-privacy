@@ -24,13 +24,6 @@ add_project_arguments(
     language:'c'
 )
 
-vapi_dir = join_paths(meson.current_source_dir(), 'vapi')
-add_project_arguments(
-    ['--vapidir', vapi_dir],
-    language: 'vala'
-)
-
-
 configuration_data = configuration_data()
 configuration_data.set('PKGDATADIR', pkgdatadir)
 configuration_data.set('GETTEXT_PACKAGE', gettext_name)

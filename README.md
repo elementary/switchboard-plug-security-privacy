@@ -6,7 +6,6 @@
 ## Building, Testing, and Installation
 
 You'll need the following dependencies:
-* libflatpak-dev >=1.1.2
 * libgranite-dev
 * libpolkit-gobject-1-dev
 * libswitchboard-2.0-dev
