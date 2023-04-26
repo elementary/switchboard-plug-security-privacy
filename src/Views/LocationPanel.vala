@@ -24,10 +24,9 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
 
     private GLib.Settings location_settings;
-    private Variant remembered_apps;
     private VariantDict remembered_apps_dict;
-    private Gtk.ListBox listbox;
     private Gtk.Stack disabled_stack;
+    private ListStore liststore;
 
     private enum Columns {
         AUTHORIZED,
@@ -47,6 +46,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     }
 
     construct {
+        liststore = new ListStore (typeof (AppPermission));
         location_settings = new GLib.Settings (LOCATION_AGENT_ID);
 
         var placeholder = new Granite.Widgets.AlertView (
@@ -56,16 +56,18 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         );
         placeholder.show_all ();
 
-        listbox = new Gtk.ListBox ();
-        listbox.activate_on_single_click = true;
+        var listbox = new Gtk.ListBox () {
+            activate_on_single_click = true
+        };
+        listbox.bind_model (liststore, create_widget_func);
         listbox.set_placeholder (placeholder);
 
-        populate_app_listbox ();
-
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.visible = true;
-        scrolled.add (listbox);
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = listbox,
+            hexpand = true,
+            vexpand = true,
+            visible = true
+        };
 
         var alert = new Granite.Widgets.AlertView (
             _("Location Services Are Disabled"),
@@ -82,8 +84,9 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         disabled_stack.add_named (alert, "disabled");
         disabled_stack.add_named (scrolled, "enabled");
 
-        var frame = new Gtk.Frame (null);
-        frame.add (disabled_stack);
+        var frame = new Gtk.Frame (null) {
+            child = disabled_stack
+        };
 
         content_area.add (frame);
 
@@ -99,8 +102,10 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             ((LocationRow) row).on_active_changed ();
         });
 
-        location_settings.changed.connect ((key) => {
-            populate_app_listbox ();
+        load_remembered_apps ();
+
+        location_settings.changed["remembered-apps"].connect (() => {
+            load_remembered_apps ();
         });
     }
 
@@ -118,32 +123,32 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
     }
 
-    private void populate_app_listbox () {
-        load_remembered_apps ();
+    private Gtk.Widget create_widget_func (Object object) {
+        var app_permission = (AppPermission) object;
 
-        foreach (var row in listbox.get_children ()) {
-            listbox.remove (row);
-        }
+        var app_row = new LocationRow (app_permission);
 
-        foreach (var app in remembered_apps) {
-            string app_id = app.get_child_value (0).get_string ();
-            bool authed = app.get_child_value (1).get_variant ().get_child_value (0).get_boolean ();
-            var app_info = new DesktopAppInfo (app_id + ".desktop");
+        app_row.active_changed.connect ((active) => {
+            save_app_settings (app_permission.id, active, app_permission.level);
+        });
 
-            var app_row = new LocationRow (app_info, authed);
-
-            app_row.active_changed.connect ((active) => {
-                uint32 level = get_app_level (app_id);
-                save_app_settings (app_id, active, level);
-            });
-
-            listbox.add (app_row);
-        }
+        return app_row;
     }
 
     private void load_remembered_apps () {
-        remembered_apps = location_settings.get_value ("remembered-apps");
-        remembered_apps_dict = new VariantDict (location_settings.get_value ("remembered-apps"));
+        var remembered_apps = location_settings.get_value ("remembered-apps");
+        remembered_apps_dict = new VariantDict (remembered_apps);
+
+        liststore.remove_all ();
+
+        foreach (var app in remembered_apps) {
+            var app_permission = new AppPermission (
+                app.get_child_value (0).get_string (),
+                app.get_child_value (1).get_variant ().get_child_value (0).get_boolean (),
+                app.get_child_value (1).get_variant ().get_child_value (1).get_uint32 ()
+            );
+            liststore.append (app_permission);
+        }
     }
 
     private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
@@ -155,10 +160,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         load_remembered_apps ();
     }
 
-    private uint32 get_app_level (string desktop_id) {
-        return remembered_apps.lookup_value (desktop_id, GLib.VariantType.TUPLE).get_child_value (1).get_uint32 ();
-    }
-
     public static bool location_agent_installed () {
         var schemas = GLib.SettingsSchemaSource.get_default ();
         if (schemas.lookup (LOCATION_AGENT_ID, true) != null) {
@@ -168,25 +169,40 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         return false;
     }
 
+    private class AppPermission : Object {
+        public string id { get; construct; }
+        public bool authed { get; construct; }
+        public uint32 level { get; construct;}
+
+        public AppPermission (string id, bool authed, uint32 level) {
+            Object (
+                id: id,
+                authed: authed,
+                level: level
+            );
+        }
+    }
+
     private class LocationRow : AppRow {
         public signal void active_changed (bool active);
         public bool authed { get; construct; }
         private Gtk.Switch active_switch;
 
-        public LocationRow (DesktopAppInfo app_info, bool authed) {
+        public LocationRow (AppPermission permission) {
             Object (
-                app_info: app_info,
-                authed: authed
+                app_info: new GLib.DesktopAppInfo (permission.id + ".desktop"),
+                authed: permission.authed
             );
         }
 
         construct {
-            active_switch = new Gtk.Switch ();
-            active_switch.halign = Gtk.Align.END;
-            active_switch.hexpand = true;
-            active_switch.tooltip_text = _("Allow %s to use location services".printf (app_info.get_display_name ()));
-            active_switch.valign = Gtk.Align.CENTER;
-            active_switch.active = authed;
+            active_switch = new Gtk.Switch () {
+                active = authed,
+                halign = Gtk.Align.END,
+                hexpand = true,
+                tooltip_text = _("Allow %s to use location services".printf (app_info.get_display_name ())),
+                valign = Gtk.Align.CENTER
+            };
 
             main_grid.margin = 6;
             main_grid.attach (active_switch, 2, 0, 1, 2);
