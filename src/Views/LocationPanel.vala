@@ -20,13 +20,13 @@
  */
 
 public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
-    private const string LOCATION_AGENT_ID = "io.elementary.desktop.agent-geoclue2";
+    private const string PERMISSIONS_TABLE = "location";
+    private const string PERMISSIONS_ID = "location";
 
-    private GLib.Settings agent_settings;
-    private Variant remembered_apps;
-    private VariantDict remembered_apps_dict;
-    private Gtk.ListBox listbox;
     private Gtk.Stack disabled_stack;
+    private Granite.Widgets.AlertView alert;
+    private Gtk.ScrolledWindow scrolled;
+    private PermissionStore permission_store;
 
     public LocationPanel () {
         Object (
@@ -45,18 +45,21 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         );
         placeholder.show_all ();
 
-        listbox = new Gtk.ListBox () {
+        // var liststore = new ListStore (typeof (Flatpak.InstalledRef));
+
+        var listbox = new Gtk.ListBox () {
             activate_on_single_click = true
         };
+        // listbox.bind_model (liststore, create_widget_func);
         listbox.set_placeholder (placeholder);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        scrolled = new Gtk.ScrolledWindow (null, null) {
             hexpand = true,
             vexpand = true
         };
         scrolled.add (listbox);
 
-        var alert = new Granite.Widgets.AlertView (
+        alert = new Granite.Widgets.AlertView (
             _("Location Services Are Disabled"),
             "%s\n%s\n%s".printf (
                 _("While location services are disabled, location requests from apps will be automatically rejected."),
@@ -68,25 +71,17 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         alert.visible = true;
 
         disabled_stack = new Gtk.Stack ();
-        disabled_stack.add_named (alert, "disabled");
-        disabled_stack.add_named (scrolled, "enabled");
+        disabled_stack.add (alert);
+        disabled_stack.add (scrolled);
 
         var frame = new Gtk.Frame (null);
         frame.add (disabled_stack);
 
         content_area.add (frame);
 
-        listbox.row_activated.connect ((row) => {
-            ((LocationRow) row).on_active_changed ();
-        });
-
-        agent_settings = new GLib.Settings (LOCATION_AGENT_ID);
-
-        populate_app_listbox ();
-
-        agent_settings.changed.connect (() => {
-            populate_app_listbox ();
-        });
+        // listbox.row_activated.connect ((row) => {
+        //     ((LocationRow) row).on_active_changed ();
+        // });
 
         var location_settings = new Settings ("org.gnome.system.location");
         location_settings.bind ("enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
@@ -96,71 +91,100 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         location_settings.changed["enabled"].connect (() => {
             update_status ();
         });
+
+        init_interfaces.begin ((obj, res) => {
+            init_interfaces.end (res);
+
+            HashTable<string, Variant> results;
+            Variant data;
+
+            permission_store.lookup (PERMISSIONS_TABLE, PERMISSIONS_ID, out results, out data);
+
+            // foreach (var app in permissions) {
+            //     string app_id = app.get_child_value (0).get_string ();
+            //     // bool authed = app.get_child_value (1).get_variant ().get_child_value (0).get_boolean ();
+            //     var app_info = new DesktopAppInfo (app_id + ".desktop");
+
+            //     var app_row = new LocationRow (app_info, false);
+
+            //     // app_row.active_changed.connect ((active) => {
+            //     //     uint32 level = get_app_level (app_id);
+            //     //     save_app_settings (app_id, active, level);
+            //     // });
+
+            //     listbox.add (app_row);
+            // }
+        });
+    }
+
+    private async void init_interfaces () {
+        try {
+            permission_store = yield Bus.get_proxy (BusType.SESSION, "org.freedesktop.impl.portal.PermissionStore", "/org/freedesktop/impl/portal/PermissionStore");
+        } catch (IOError e) {
+            critical ("Unable to connect to GNOME session interface: %s", e.message);
+        }
     }
 
     private void update_status () {
         if (status_switch.active) {
-            disabled_stack.visible_child_name = "enabled";
+            disabled_stack.visible_child = scrolled;
 
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
             status = _("Enabled");
         } else {
-            disabled_stack.visible_child_name = "disabled";
+            disabled_stack.visible_child = alert;
 
             status_type = Granite.SettingsPage.StatusType.OFFLINE;
             status = _("Disabled");
         }
     }
 
-    private void populate_app_listbox () {
-        load_remembered_apps ();
+    // private Gtk.Widget create_widget_func (Object object) {
+    //     var appinfo = new GLib.DesktopAppInfo (installed_ref.get_name () + ".desktop");
 
-        foreach (var row in listbox.get_children ()) {
-            listbox.remove (row);
-        }
+    //     var image = new Gtk.Image.from_gicon (appinfo.get_icon (), Gtk.IconSize.DND) {
+    //         pixel_size = 32
+    //     };
 
-        foreach (var app in remembered_apps) {
-            string app_id = app.get_child_value (0).get_string ();
-            bool authed = app.get_child_value (1).get_variant ().get_child_value (0).get_boolean ();
-            var app_info = new DesktopAppInfo (app_id + ".desktop");
+    //     var app_name = new Gtk.Label (appinfo.get_display_name ()) {
+    //         ellipsize = Pango.EllipsizeMode.END,
+    //         xalign = 0
+    //     };
+    //     app_name.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var app_row = new LocationRow (app_info, authed);
+    //     var app_comment = new Gtk.Label (appinfo.get_description ()) {
+    //         ellipsize = Pango.EllipsizeMode.END,
+    //         xalign = 0
+    //     };
+    //     app_comment.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
-            app_row.active_changed.connect ((active) => {
-                uint32 level = get_app_level (app_id);
-                save_app_settings (app_id, active, level);
-            });
+    //     var grid = new Gtk.Grid () {
+    //         column_spacing = 12,
+    //         margin_top = 6,
+    //         margin_end = 12,
+    //         margin_bottom = 6,
+    //         margin_start = 10 // Account for icon position on the canvas
+    //     };
+    //     grid.attach (image, 0, 0, 1, 2);
+    //     grid.attach (app_name, 1, 0);
+    //     grid.attach (app_comment, 1, 1);
+    //     grid.show_all ();
 
-            listbox.add (app_row);
-        }
-    }
+    //     return grid;
+    // }
 
-    private void load_remembered_apps () {
-        remembered_apps = agent_settings.get_value ("remembered-apps");
-        remembered_apps_dict = new VariantDict (agent_settings.get_value ("remembered-apps"));
-    }
+    // private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
+    //     Variant[] tuple_vals = new Variant[2];
+    //     tuple_vals[0] = new Variant.boolean (authorized);
+    //     tuple_vals[1] = new Variant.uint32 (accuracy_level);
+    //     remembered_apps_dict.insert_value (desktop_id, new Variant.tuple (tuple_vals));
+    //     agent_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
+    //     load_remembered_apps ();
+    // }
 
-    private void save_app_settings (string desktop_id, bool authorized, uint32 accuracy_level) {
-        Variant[] tuple_vals = new Variant[2];
-        tuple_vals[0] = new Variant.boolean (authorized);
-        tuple_vals[1] = new Variant.uint32 (accuracy_level);
-        remembered_apps_dict.insert_value (desktop_id, new Variant.tuple (tuple_vals));
-        agent_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
-        load_remembered_apps ();
-    }
-
-    private uint32 get_app_level (string desktop_id) {
-        return remembered_apps.lookup_value (desktop_id, GLib.VariantType.TUPLE).get_child_value (1).get_uint32 ();
-    }
-
-    public static bool location_agent_installed () {
-        var schemas = GLib.SettingsSchemaSource.get_default ();
-        if (schemas.lookup (LOCATION_AGENT_ID, true) != null) {
-            return true;
-        }
-
-        return false;
-    }
+    // private uint32 get_app_level (string desktop_id) {
+    //     return remembered_apps.lookup_value (desktop_id, GLib.VariantType.TUPLE).get_child_value (1).get_uint32 ();
+    // }
 
     private class LocationRow : AppRow {
         public signal void active_changed (bool active);
