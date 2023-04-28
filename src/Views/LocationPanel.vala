@@ -46,9 +46,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         );
         placeholder.show_all ();
 
-        var listbox = new Gtk.ListBox () {
-            activate_on_single_click = true
-        };
+        var listbox = new Gtk.ListBox ();
         listbox.bind_model (liststore, create_widget_func);
         listbox.set_placeholder (placeholder);
 
@@ -87,10 +85,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
         status_switch.notify["active"].connect (() => {
             update_status ();
-        });
-
-        listbox.row_activated.connect ((row) => {
-            ((LocationRow) row).on_active_changed ();
         });
 
         init_interfaces.begin ((obj, res) => {
@@ -148,7 +142,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             string app_id = "";
             string[] app_permissions = {""};
             var iter = permissions.iterator ();
-            while (iter.next ("{sas}", ref app_id, ref app_permissions)) {
+            while (iter.next ("{s^as}", ref app_id, ref app_permissions)) {
                 var app_permission = new AppPermission (
                     app_id,
                     app_permissions[0],
@@ -177,7 +171,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     }
 
     private class LocationRow : AppRow {
-        public string level { get; construct; }
+        public string level { get; construct set; }
         public string timestamp { get; construct;}
 
         public LocationRow (AppPermission permission) {
@@ -189,25 +183,33 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         }
 
         construct {
-            var active_switch = new Gtk.Switch () {
+            var level_combo = new Gtk.ComboBoxText () {
                 halign = Gtk.Align.END,
                 hexpand = true,
-                tooltip_text = _("Allow %s to use location services".printf (app_info.get_display_name ())),
                 valign = Gtk.Align.CENTER
             };
+            level_combo.append ("NONE", _("None"));
+            level_combo.append ("COUNTRY", _("Country"));
+            level_combo.append ("CITY", _("City"));
+            level_combo.append ("NEIGHBORHOOD", _("Neighborhood"));
+            level_combo.append ("STREET", _("Street"));
+            level_combo.append ("EXACT", _("Exact"));
+
+            var timestamp_label = new Gtk.Label (
+                Granite.DateTime.get_relative_datetime (new DateTime.from_unix_utc (int64.parse (timestamp)))
+            );
+            timestamp_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
             main_grid.margin_top = 6;
             main_grid.margin_end = 6;
             main_grid.margin_bottom = 6;
             main_grid.margin_start = 6;
-            main_grid.attach (active_switch, 2, 0, 1, 2);
+            main_grid.remove (app_comment);
+            main_grid.attach (timestamp_label, 1, 1);
+            main_grid.attach (level_combo, 2, 0, 1, 2);
             show_all ();
 
-            // bind_property ("authed", active_switch, "active", BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
-        }
-
-        public void on_active_changed () {
-            // authed = !authed;
+            bind_property ("level", level_combo, "active-id", BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
         }
     }
 }
