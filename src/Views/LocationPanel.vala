@@ -102,7 +102,14 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     private async void init_interfaces () {
         try {
             permission_store = yield Bus.get_proxy (BusType.SESSION, "org.freedesktop.impl.portal.PermissionStore", "/org/freedesktop/impl/portal/PermissionStore");
-            permission_store.changed.connect (load_permissions);
+
+            permission_store.changed.connect ((table, id, deleted, data, permissions) => {
+                if (table != PERMISSIONS_TABLE || id != PERMISSIONS_ID) {
+                    return;
+                }
+
+                load_permissions ();
+            });
         } catch (IOError e) {
             critical ("Unable to connect to GNOME session interface: %s", e.message);
         }
