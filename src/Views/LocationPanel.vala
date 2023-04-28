@@ -120,12 +120,10 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         var app_row = new LocationRow (app_permission);
 
         app_row.notify["authed"].connect (() => {
-            var tuple_vals = new Variant[2];
-            tuple_vals[0] = new Variant.boolean (app_row.authed);
-            tuple_vals[1] = new Variant.uint32 (app_permission.level);
+            var tuple = new Variant ("(bu)", app_row.authed, (uint32) app_permission.level);
 
             var remembered_apps_dict = new VariantDict (location_settings.get_value ("remembered-apps"));
-            remembered_apps_dict.insert_value (app_permission.id, new Variant.tuple (tuple_vals));
+            remembered_apps_dict.insert_value (app_permission.id, tuple);
 
             location_settings.set_value ("remembered-apps", remembered_apps_dict.end ());
         });
