@@ -124,11 +124,15 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
 
     private Gtk.Widget create_widget_func (Object object) {
         var app_permission = (AppPermission) object;
-
         var app_row = new LocationRow (app_permission);
-
         app_row.notify["level"].connect (() => {
-            // TODO
+            string[] permissions = {app_row.level, app_row.timestamp};
+            try {
+                permission_store.set_permission (PERMISSIONS_TABLE, true, PERMISSIONS_ID, app_permission.id, permissions);
+            } catch (Error e) {
+                critical (e.message);
+            }
+
         });
 
         return app_row;
@@ -145,7 +149,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             string[] app_permissions = {""};
             var iter = permissions.iterator ();
             while (iter.next ("{sas}", ref app_id, ref app_permissions)) {
-                // FIXME: junk data
                 var app_permission = new AppPermission (
                     app_id,
                     app_permissions[0],
