@@ -96,11 +96,11 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         init_interfaces.begin ((obj, res) => {
             init_interfaces.end (res);
 
-            HashTable<string, Variant> results;
+            GLib.HashTable<string, string[]> permissions;
             Variant data;
 
             try {
-                permission_store.lookup (PERMISSIONS_TABLE, PERMISSIONS_ID, out results, out data);
+                permission_store.lookup (PERMISSIONS_TABLE, PERMISSIONS_ID, out permissions, out data);
             } catch (Error e) {
                 critical (e.message);
             }
