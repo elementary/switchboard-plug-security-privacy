@@ -23,7 +23,6 @@
 public class AppRow : Gtk.ListBoxRow {
     public DesktopAppInfo app_info { get; construct; }
     protected Gtk.Grid main_grid;
-    protected Gtk.Label app_comment;
 
     public AppRow (DesktopAppInfo app_info) {
         Object (app_info: app_info);
@@ -38,7 +37,7 @@ public class AppRow : Gtk.ListBoxRow {
         app_name.xalign = 0;
         app_name.ellipsize = Pango.EllipsizeMode.END;
 
-        app_comment = new Gtk.Label ("<span font_size='small'>" + get_app_comment () + "</span>");
+        var app_comment = new Gtk.Label ("<span font_size='small'>" + get_app_comment () + "</span>");
         app_comment.xalign = 0;
         app_comment.use_markup = true;
         app_comment.ellipsize = Pango.EllipsizeMode.END;
