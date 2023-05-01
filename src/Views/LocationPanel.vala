@@ -152,10 +152,10 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             Variant permissions, data;
             permission_store.lookup (PERMISSIONS_TABLE, PERMISSIONS_ID, out permissions, out data);
 
-            string app_id = "";
-            string[] app_permissions = {""};
+            unowned string app_id;
+            unowned string[] app_permissions;
             var iter = permissions.iterator ();
-            while (iter.next ("{s^as}", ref app_id, ref app_permissions)) {
+            while (iter.next ("{&s^a&s}", out app_id, out app_permissions)) {
                 var app_permission = new AppPermission (
                     app_id,
                     app_permissions[0],
