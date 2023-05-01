@@ -59,7 +59,7 @@ public class ServiceList : Gtk.ListBox {
         });
 
         if (SecurityPrivacy.LocationPanel.location_agent_installed ()) {
-            var location_item = new ServiceItem ("find-location", "location", _("Location Services"));
+            var location_item = new ServiceItem ("preferences-system-privacy-location", "location", _("Location Services"));
             add_service (location_item);
             update_service_status (location_item, SecurityPrivacy.location.status_switch.active);
 
