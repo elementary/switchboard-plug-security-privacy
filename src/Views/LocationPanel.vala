@@ -31,7 +31,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         Object (
             activatable: true,
             description: _("Allow the apps below to determine your location"),
-            icon_name: "find-location",
+            icon_name: "preferences-system-privacy-location",
             title: _("Location Services")
         );
     }
