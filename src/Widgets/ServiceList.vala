@@ -58,15 +58,13 @@ public class ServiceList : Gtk.ListBox {
             update_service_status (privacy_item, SecurityPrivacy.tracking.status_switch.active);
         });
 
-        if (SecurityPrivacy.LocationPanel.location_agent_installed ()) {
-            var location_item = new ServiceItem ("preferences-system-privacy-location", "location", _("Location Services"));
-            add_service (location_item);
-            update_service_status (location_item, SecurityPrivacy.location.status_switch.active);
+        var location_item = new ServiceItem ("preferences-system-privacy-location", "location", _("Location Services"));
+        add_service (location_item);
+        update_service_status (location_item, SecurityPrivacy.location.status_switch.active);
 
-            SecurityPrivacy.location.status_switch.notify["active"].connect (() => {
-                update_service_status (location_item, SecurityPrivacy.location.status_switch.active);
-            });
-        }
+        SecurityPrivacy.location.status_switch.notify["active"].connect (() => {
+            update_service_status (location_item, SecurityPrivacy.location.status_switch.active);
+        });
     }
 
     private void update_service_status (ServiceItem service_item, bool service_status) {
