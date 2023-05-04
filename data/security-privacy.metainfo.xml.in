@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>io.elementary.switchboard.security-privacy</id>
+  <extends>io.elementary.switchboard</extends>
+  <translation type="gettext">security-privacy-plug</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+
+  <icon type="stock">preferences-system-privacy</icon>
+  <name>Security &amp; Privacy Settings</name>
+  <summary>Configure firewall, screen lock, and activity information</summary>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-security-privacy/master/data/screenshot-history.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-security-privacy/master/data/screenshot-location.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <url type="homepage">https://elementary.io/</url>
+  <url type="bugtracker">https://github.com/elementary/switchboard-plug-security-privacy/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/switchboard-plug-security-privacy/discussions</url>
+  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
+  <releases>
+    <release version="7.0.0" date="2023-05-04" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Use the location portal</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>New location icon</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.4.1" date="2022-10-20" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.4.0" date="2021-05-18" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Option to forbid new USB devices while locked</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.3.0" date="2021-11-23" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Add Downloads option to Housekeeping</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.2.5" date="2021-07-14" urgency="medium">
+      <description>
+        <ul>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
+
+    <release version="2.2.4" date="2020-05-25" urgency="medium" />
+    <release version="2.2.3" date="2020-04-08" urgency="medium" />
+    <release version="2.2.2" date="2019-10-29" urgency="medium" />
+  </releases>
+</component>
