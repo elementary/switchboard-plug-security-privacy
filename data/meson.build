@@ -13,11 +13,12 @@ i18n.merge_file(
 )
 
 i18n.merge_file(
-    input: 'io.elementary.switchboard.security-privacy.appdata.xml.in',
-    output: 'io.elementary.switchboard.security-privacy.appdata.xml',
-    po_dir: join_paths(meson.source_root (), 'po', 'extra'),
-    install_dir: join_paths(datadir, 'metainfo'),
-    install: true
+    input: 'security-privacy.metainfo.xml.in',
+    output: 'io.elementary.switchboard.security-privacy.metainfo.xml',
+    po_dir: meson.source_root() / 'po' / 'extra',
+    type: 'xml',
+    install: true,
+    install_dir: datadir / 'metainfo'
 )
 
 install_data(
