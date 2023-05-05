@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:31+0000\n"
+"POT-Creation-Date: 2023-05-05 08:24+0000\n"
 "PO-Revision-Date: 2020-10-21 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -20,69 +20,69 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "सुरक्षा आणि गोपनीयता"
 
-#: src/Plug.vala:51
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "फायरवॉल, स्क्रीन लॉक आणि क्रियाकलाप माहिती कॉन्फिगर करा"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:82
 msgid "Some settings require administrator rights to be changed"
 msgstr "काही सेटिंग्जसाठी प्रशासकीय अधिकार बदलण्याची आवश्यकता आहे"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:129
 msgid "Privacy"
 msgstr "गोपनीयता"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
+#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "लॉकिंग"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "फ़ायरवॉल"
 
-#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
-#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
+#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "हाऊसकीपिंग"
 
-#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:62
+#: src/Plug.vala:133 src/Plug.vala:189 src/Views/LocationPanel.vala:35
+#: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "स्थान सेवा"
 
-#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "इतिहास"
 
-#: src/Plug.vala:179
+#: src/Plug.vala:168
 msgid "Clear History"
 msgstr "इतिहास मिटवा"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:170
 msgid "Lock on sleep"
 msgstr "निष्क्रिय असताना लॉक करा"
 
-#: src/Plug.vala:182
+#: src/Plug.vala:171
 msgid "Lock after sceen turns off"
 msgstr "स्क्रीन बंद केल्यानंतर लॉक"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:177
 msgid "Automatically delete old temporary files"
 msgstr "जुन्या तात्पुरत्या फायली स्वयंचलितपणे हटवा"
 
-#: src/Plug.vala:193
+#: src/Plug.vala:182
 msgid "Automatically delete old trashed files"
 msgstr "जुन्या ट्रॅश केलेल्या फायली स्वयंचलितपणे हटवा"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:187
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ट्रॅश केलेल्या आणि तात्पुरत्या फायली ठेवण्यासाठी दिवसाची संख्या"
 
@@ -91,13 +91,13 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "फायरवॉल कॉन्फिगरेशन चालविण्यासाठी प्रमाणीकरण आवश्यक आहे"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "सक्षम"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
+#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "अक्षम"
 
@@ -300,37 +300,37 @@ msgstr "इतिहास साफ करा…"
 msgid "Your system"
 msgstr "तुमची यंत्रणा"
 
-#: src/Views/LocationPanel.vala:43
+#: src/Views/LocationPanel.vala:33
 msgid "Allow the apps below to determine your location"
 msgstr "आपले स्थान निर्धारित करण्यासाठी खालील अॅप्सना अनुमती द्या"
 
-#: src/Views/LocationPanel.vala:53
+#: src/Views/LocationPanel.vala:43
 msgid "No Apps Are Using Location Services"
 msgstr "कोणतीही अॅप्स स्थान सेवा वापरत नाहीत"
 
-#: src/Views/LocationPanel.vala:54
+#: src/Views/LocationPanel.vala:44
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr "जेव्हा स्थान सेवा वापरणारे अॅप्स स्थापित केले जातात तेव्हा ते आपोआप येथे दिसतील."
 
-#: src/Views/LocationPanel.vala:71
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
 msgstr "स्थान सेवा अक्षम आहेत"
 
-#: src/Views/LocationPanel.vala:73
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr "स्थान सेवा अक्षम असताना, अॅप्सवरील स्थान विनंत्या स्वयंचलितपणे नाकारल्या जातील."
 
-#: src/Views/LocationPanel.vala:74
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr "त्या अॅप्समध्ये स्थान प्रवेश प्रदान करणारी अतिरिक्त कार्यक्षमता प्रभावित होईल."
 
-#: src/Views/LocationPanel.vala:75
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -338,7 +338,7 @@ msgstr ""
 "हे अॅप्सना IP पत्त्यावर आधारित आपले स्थान निर्धारित करण्याचा प्रयत्न करण्यापासून प्रतिबंधित "
 "करणार नाही."
 
-#: src/Views/LocationPanel.vala:187
+#: src/Views/LocationPanel.vala:202
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "स्थान सेवा वापरण्यासाठी %sला परवानगी द्या"

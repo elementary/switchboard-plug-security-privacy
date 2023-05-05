@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:31+0000\n"
+"POT-Creation-Date: 2023-05-05 08:24+0000\n"
 "PO-Revision-Date: 2022-05-01 15:37+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -20,70 +20,70 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "Güvenlik ve Gizlilik"
 
-#: src/Plug.vala:51
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Güvenlik duvarı, ekran kilidi ve aktivite bilgisini yapılandırın"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:82
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "Bazı ayarları değiştirebilmek için yönetici haklarına sahip olmanız gerekiyor"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:129
 msgid "Privacy"
 msgstr "Gizlilik"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
+#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Ekran Kilidi"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Güvenlik Duvarı"
 
-#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
-#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
+#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "Bakım ve Temizlik"
 
-#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:62
+#: src/Plug.vala:133 src/Plug.vala:189 src/Views/LocationPanel.vala:35
+#: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "Konum Hizmetleri"
 
-#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Geçmiş"
 
-#: src/Plug.vala:179
+#: src/Plug.vala:168
 msgid "Clear History"
 msgstr "Geçmişi Temizle"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:170
 msgid "Lock on sleep"
 msgstr "Uykuda kilitle"
 
-#: src/Plug.vala:182
+#: src/Plug.vala:171
 msgid "Lock after sceen turns off"
 msgstr "Ekran kapandıktan sonra kilitle"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:177
 msgid "Automatically delete old temporary files"
 msgstr "Eski geçici dosyaları otomatik olarak sil"
 
-#: src/Plug.vala:193
+#: src/Plug.vala:182
 msgid "Automatically delete old trashed files"
 msgstr "Çöp kutusundaki eski dosyaları otomatik olarak sil"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:187
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Çöpe gönderilen ve geçici dosyaların saklanacağı gün sayısı"
 
@@ -94,13 +94,13 @@ msgstr ""
 "gerekiyor"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Etkin"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
+#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Devre dışı bırakıldı"
 
@@ -299,15 +299,15 @@ msgstr "Geçmişi Temizle…"
 msgid "Your system"
 msgstr "Sisteminiz"
 
-#: src/Views/LocationPanel.vala:43
+#: src/Views/LocationPanel.vala:33
 msgid "Allow the apps below to determine your location"
 msgstr "Aşağıdaki uygulamaların konumunuzu belirlemesine izin verin"
 
-#: src/Views/LocationPanel.vala:53
+#: src/Views/LocationPanel.vala:43
 msgid "No Apps Are Using Location Services"
 msgstr "Hiçbir Uygulama Konum Hizmetlerini Kullanmıyor"
 
-#: src/Views/LocationPanel.vala:54
+#: src/Views/LocationPanel.vala:44
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
@@ -315,11 +315,11 @@ msgstr ""
 "Konum hizmetlerini kullanan uygulamalar yüklendiğinde, otomatik olarak "
 "burada görünürler."
 
-#: src/Views/LocationPanel.vala:71
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
 msgstr "Konum Hizmetleri Devre Dışı Bırakıldı"
 
-#: src/Views/LocationPanel.vala:73
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -327,14 +327,14 @@ msgstr ""
 "Konum hizmetleri devre dışıyken, uygulamalardan gelen konum istekleri "
 "otomatik olarak reddedilir."
 
-#: src/Views/LocationPanel.vala:74
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
 "Bu uygulamalarda konum erişiminin sağladığı ek işlevler bundan etkilenir."
 
-#: src/Views/LocationPanel.vala:75
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -342,7 +342,7 @@ msgstr ""
 "Bu, uygulamaların konumunuzu IP adresini temel alarak belirlemesini "
 "engellemez."
 
-#: src/Views/LocationPanel.vala:187
+#: src/Views/LocationPanel.vala:202
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "%s uygulamasının konum hizmetlerini kullanmasına izin ver"

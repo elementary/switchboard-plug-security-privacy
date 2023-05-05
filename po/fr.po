@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 18:31+0000\n"
+"POT-Creation-Date: 2023-05-05 08:24+0000\n"
 "PO-Revision-Date: 2022-05-02 15:37+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -20,72 +20,72 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "Sécurité et Confidentialité"
 
-#: src/Plug.vala:51
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 "Configurer le pare-feu, le verrouillage de l'écran et les informations de "
 "l'activité de l'utilisateur"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:82
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "La modification de certains paramètres nécessite les droits d'administrateur"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:129
 msgid "Privacy"
 msgstr "Confidentialité"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
+#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Verrouillage"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Pare-feu"
 
-#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
-#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
+#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:31
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "Nettoyage"
 
-#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:62
+#: src/Plug.vala:133 src/Plug.vala:189 src/Views/LocationPanel.vala:35
+#: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "Services de localisation"
 
-#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historique"
 
-#: src/Plug.vala:179
+#: src/Plug.vala:168
 msgid "Clear History"
 msgstr "Effacer l'historique"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:170
 msgid "Lock on sleep"
 msgstr "Verrouiller en veille"
 
-#: src/Plug.vala:182
+#: src/Plug.vala:171
 msgid "Lock after sceen turns off"
 msgstr "Verrouiller après l'extinction de l'écran"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:177
 msgid "Automatically delete old temporary files"
 msgstr "Supprimer les anciens fichiers temporaires automatiquement"
 
-#: src/Plug.vala:193
+#: src/Plug.vala:182
 msgid "Automatically delete old trashed files"
 msgstr "Supprimer automatiquement les anciens fichiers déplacés à la corbeille"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:187
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Nombre de jours pour considérer un fichier comme ancien"
 
@@ -94,13 +94,13 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Il est nécessaire de s'authentifier pour configurer le pare-feu"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Activé"
 
 #: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
+#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Désactivé"
 
@@ -301,15 +301,15 @@ msgstr "Effacer l'historique…"
 msgid "Your system"
 msgstr "Votre système"
 
-#: src/Views/LocationPanel.vala:43
+#: src/Views/LocationPanel.vala:33
 msgid "Allow the apps below to determine your location"
 msgstr "Autoriser les applications suivantes à déterminer votre localisation"
 
-#: src/Views/LocationPanel.vala:53
+#: src/Views/LocationPanel.vala:43
 msgid "No Apps Are Using Location Services"
 msgstr "Aucune application n'utilise le service de localisation"
 
-#: src/Views/LocationPanel.vala:54
+#: src/Views/LocationPanel.vala:44
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
@@ -317,11 +317,11 @@ msgstr ""
 "Lorsque des applications utilisant des services de localisation sont "
 "installées, elles apparaissent automatiquement ici."
 
-#: src/Views/LocationPanel.vala:71
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
 msgstr "Les services de localisation sont désactivés"
 
-#: src/Views/LocationPanel.vala:73
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -329,7 +329,7 @@ msgstr ""
 "Lorsque les services de localisation sont désactivés, les requêtes de "
 "localisation émanant des applications sont rejetés automatiquement."
 
-#: src/Views/LocationPanel.vala:74
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
@@ -337,7 +337,7 @@ msgstr ""
 "Les fonctionnalités supplémentaires permises par l'accès à la localisation "
 "seront affectés."
 
-#: src/Views/LocationPanel.vala:75
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -345,7 +345,7 @@ msgstr ""
 "Ceci n'empêchera pas les applications d'essayer de déterminer votre "
 "localisation grâce à votre adresse IP."
 
-#: src/Views/LocationPanel.vala:187
+#: src/Views/LocationPanel.vala:202
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Autoriser %s à utiliser le service de localisation"
