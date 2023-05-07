@@ -10,7 +10,7 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program; if not, write to the Free Software Foundation,
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
@@ -21,6 +21,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     private Gtk.Label file_age_label;
     private Gtk.SpinButton file_age_spinbutton;
     private Gtk.CheckButton download_files_check;
+    private Gtk.CheckButton screenshot_files_check;
     private Gtk.CheckButton temp_files_switch;
     private Gtk.CheckButton trash_files_switch;
 
@@ -55,6 +56,19 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         };
         download_files_check.add (download_files_grid);
 
+        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+        default_theme.add_resource_path ("/io/elementary/switchboard/plug/security-privacy");
+
+        var screenshot_files_grid = new Gtk.Grid ();
+        screenshot_files_grid.add (new Gtk.Image.from_icon_name ("folder-screenshots-icon", Gtk.IconSize.LARGE_TOOLBAR));
+        screenshot_files_grid.add (new Gtk.Label (_("Screenshot files")));
+
+        screenshot_files_check = new Gtk.CheckButton () {
+            halign = Gtk.Align.START,
+            margin_start = 12
+        };
+        screenshot_files_check.add (screenshot_files_grid);
+
         var trash_files_grid = new Gtk.Grid ();
         trash_files_grid.add (new Gtk.Image.from_icon_name ("user-trash-full", Gtk.IconSize.LARGE_TOOLBAR));
         trash_files_grid.add (new Gtk.Label (_("Trashed files")));
@@ -82,10 +96,11 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         content_area.attach (switch_header_label, 0, 0, 2);
         content_area.attach (download_files_check, 0, 1, 2);
         content_area.attach (temp_files_switch, 0, 2, 2);
-        content_area.attach (trash_files_switch, 0, 3, 2);
-        content_area.attach (spin_header_label, 0, 4, 2);
-        content_area.attach (file_age_spinbutton, 0, 5);
-        content_area.attach (file_age_label, 1, 5);
+        content_area.attach (screenshot_files_check, 0, 3, 2);
+        content_area.attach (trash_files_switch, 0, 4, 2);
+        content_area.attach (spin_header_label, 0, 5, 2);
+        content_area.attach (file_age_spinbutton, 0, 6);
+        content_area.attach (file_age_label, 1, 6);
 
         var view_trash_button = new Gtk.Button.with_label (_("Open Trash…"));
 
@@ -98,6 +113,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
         var housekeeping_settings = new Settings ("io.elementary.settings-daemon.housekeeping");
         housekeeping_settings.bind ("cleanup-downloads-folder", download_files_check, "active", GLib.SettingsBindFlags.DEFAULT);
+        housekeeping_settings.bind ("cleanup-screenshots-folder", screenshot_files_check, "active", GLib.SettingsBindFlags.DEFAULT);
         housekeeping_settings.bind ("old-files-age", file_age_spinbutton, "value", GLib.SettingsBindFlags.DEFAULT);
         housekeeping_settings.changed.connect (update_status);
 
@@ -134,8 +150,8 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     }
 
     private void update_status () {
-        var all_active = temp_files_switch.active && trash_files_switch.active && download_files_check.active;
-        var any_active = temp_files_switch.active || trash_files_switch.active || download_files_check.active;
+        var all_active = temp_files_switch.active && trash_files_switch.active && download_files_check.active && screenshot_files_check.active;
+        var any_active = temp_files_switch.active || trash_files_switch.active || download_files_check.active || screenshot_files_check.active;
 
         if (all_active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;

@@ -4,6 +4,9 @@ project(
     meson_version: '>= 0.46.1',
     version: '2.4.1'
 )
+
+gnome = import('gnome')
+
 i18n = import('i18n')
 
 gettext_name = meson.project_name() + '-plug'
@@ -28,6 +31,12 @@ configuration_data = configuration_data()
 configuration_data.set('PKGDATADIR', pkgdatadir)
 configuration_data.set('GETTEXT_PACKAGE', gettext_name)
 configuration_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+
+plug_resources = gnome.compile_resources(
+    'plug_resources',
+    'data/icons.gresource.xml',
+    source_dir: 'data'
+)
 
 subdir('data')
 subdir('src')
