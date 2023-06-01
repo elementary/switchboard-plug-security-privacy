@@ -24,7 +24,6 @@ Depends: ${misc:Depends},
          gala,
          gnome-settings-daemon-common,
          io.elementary.settings-daemon,
-         pantheon-agent-geoclue2,
          ufw,
          zeitgeist
 Enhances: switchboard
