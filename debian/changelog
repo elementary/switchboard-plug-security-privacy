@@ -1,3 +1,9 @@
+switchboard-plug-security-privacy (7.0.0) jammy; urgency=medium
+
+  * Release 7.0.0
+
+ -- Danielle Foré <danielle@elementary.io>  Thu, 01 Jun 2023 07:52:00 -0700
+
 switchboard-plug-security-privacy (2.4.1) bionic; urgency=medium
 
   * Release 2.4.1 (#140)
