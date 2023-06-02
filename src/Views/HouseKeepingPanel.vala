@@ -56,8 +56,6 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         };
         download_files_check.add (download_files_grid);
 
-        weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
-        default_theme.add_resource_path ("/io/elementary/switchboard/plug/security-privacy");
 
         var screenshot_files_grid = new Gtk.Grid ();
         screenshot_files_grid.add (new Gtk.Image.from_icon_name ("folder-screenshots-icon", Gtk.IconSize.LARGE_TOOLBAR));
