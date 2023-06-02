@@ -2,7 +2,7 @@ project(
     'security-privacy',
     'vala', 'c',
     meson_version: '>= 0.46.1',
-    version: '2.4.1'
+    version: '7.0.0'
 )
 
 gnome = import('gnome')
