@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 08:24+0000\n"
+"POT-Creation-Date: 2023-06-06 17:41+0000\n"
 "PO-Revision-Date: 2017-06-16 17:00+0000\n"
 "Last-Translator: Rajeev Kumar <irajeevankumar@gmail.com>\n"
 "Language-Team: Tamil <https://l10n.elementary.io/projects/switchboard/"
@@ -47,12 +47,12 @@ msgid "Firewall"
 msgstr ""
 
 #: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
-#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:133 src/Plug.vala:189 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
 #: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr ""
@@ -79,10 +79,14 @@ msgid "Automatically delete old temporary files"
 msgstr ""
 
 #: src/Plug.vala:182
-msgid "Automatically delete old trashed files"
+msgid "Automatically delete old screenshot files"
 msgstr ""
 
 #: src/Plug.vala:187
+msgid "Automatically delete old trashed files"
+msgstr ""
+
+#: src/Plug.vala:192
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
@@ -199,31 +203,35 @@ msgstr ""
 msgid "Add Rule"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:36
+#: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:41
 msgid "Old temporary files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:50
+#: src/Views/HouseKeepingPanel.vala:51
 msgid "Downloaded files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:60
+#: src/Views/HouseKeepingPanel.vala:62
+msgid "Screenshot files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:69
+#: src/Views/HouseKeepingPanel.vala:81
 msgid "Delete Old Files After:"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:90
+#: src/Views/HouseKeepingPanel.vala:103
 msgid "Open Trash…"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:124
+#: src/Views/HouseKeepingPanel.vala:138
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -234,7 +242,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/Views/HouseKeepingPanel.vala:130
+#: src/Views/HouseKeepingPanel.vala:144
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] ""

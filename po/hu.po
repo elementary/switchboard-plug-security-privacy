@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 08:24+0000\n"
+"POT-Creation-Date: 2023-06-06 17:41+0000\n"
 "PO-Revision-Date: 2022-11-29 15:25+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -48,12 +48,12 @@ msgid "Firewall"
 msgstr "Tűzfal"
 
 #: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
-#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "Takarítás"
 
-#: src/Plug.vala:133 src/Plug.vala:189 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
 #: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "Helymeghatározó szolgáltatások"
@@ -80,10 +80,16 @@ msgid "Automatically delete old temporary files"
 msgstr "Régi ideiglenes fájlok automatikus törlése"
 
 #: src/Plug.vala:182
-msgid "Automatically delete old trashed files"
+#, fuzzy
+#| msgid "Automatically delete old trashed files"
+msgid "Automatically delete old screenshot files"
 msgstr "Korábban kukába helyezett fájlok automatikus törlése"
 
 #: src/Plug.vala:187
+msgid "Automatically delete old trashed files"
+msgstr "Korábban kukába helyezett fájlok automatikus törlése"
+
+#: src/Plug.vala:192
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Ideiglenes és kukába helyezett fájlok megőrzésének időtartama"
 
@@ -198,31 +204,37 @@ msgstr "%d vagy %d-%d"
 msgid "Add Rule"
 msgstr "Szabály hozzáadása"
 
-#: src/Views/HouseKeepingPanel.vala:36
+#: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
 msgstr "Automatikus törlés:"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:41
 msgid "Old temporary files"
 msgstr "Régi ideiglenes fájlok"
 
-#: src/Views/HouseKeepingPanel.vala:50
+#: src/Views/HouseKeepingPanel.vala:51
 msgid "Downloaded files"
 msgstr "Letöltött fájlok"
 
-#: src/Views/HouseKeepingPanel.vala:60
+#: src/Views/HouseKeepingPanel.vala:62
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Screenshot files"
+msgstr "Kukába helyezett fájlok"
+
+#: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
 msgstr "Kukába helyezett fájlok"
 
-#: src/Views/HouseKeepingPanel.vala:69
+#: src/Views/HouseKeepingPanel.vala:81
 msgid "Delete Old Files After:"
 msgstr "A régi fájlok törlése ennyi idő után:"
 
-#: src/Views/HouseKeepingPanel.vala:90
+#: src/Views/HouseKeepingPanel.vala:103
 msgid "Open Trash…"
 msgstr "Kuka megnyitása…"
 
-#: src/Views/HouseKeepingPanel.vala:124
+#: src/Views/HouseKeepingPanel.vala:138
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -237,7 +249,7 @@ msgstr[1] ""
 "A régi fájlok automatikusan törölve lehetnek %u nap után tárhely "
 "felszabadítása és adatvédelmi célból."
 
-#: src/Views/HouseKeepingPanel.vala:130
+#: src/Views/HouseKeepingPanel.vala:144
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "Nap"

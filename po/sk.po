@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 08:24+0000\n"
+"POT-Creation-Date: 2023-06-06 17:41+0000\n"
 "PO-Revision-Date: 2022-05-04 22:44+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -48,12 +48,12 @@ msgid "Firewall"
 msgstr "Firewall"
 
 #: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
-#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "Upratovanie"
 
-#: src/Plug.vala:133 src/Plug.vala:189 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
 #: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "Služby určovania polohy"
@@ -80,10 +80,16 @@ msgid "Automatically delete old temporary files"
 msgstr "Automaticky vymazávať staré dočasné súbory"
 
 #: src/Plug.vala:182
-msgid "Automatically delete old trashed files"
+#, fuzzy
+#| msgid "Automatically delete old trashed files"
+msgid "Automatically delete old screenshot files"
 msgstr "Automaticky vymazávať staré súbory v koši"
 
 #: src/Plug.vala:187
+msgid "Automatically delete old trashed files"
+msgstr "Automaticky vymazávať staré súbory v koši"
+
+#: src/Plug.vala:192
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Počet dní pre zachovanie dočasných súborov a súborov v koši"
 
@@ -198,31 +204,37 @@ msgstr "%d alebo %d-%d"
 msgid "Add Rule"
 msgstr "Pridať pravidlo"
 
-#: src/Views/HouseKeepingPanel.vala:36
+#: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
 msgstr "Automaticky vymazávať:"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:41
 msgid "Old temporary files"
 msgstr "Staré dočasné súbory"
 
-#: src/Views/HouseKeepingPanel.vala:50
+#: src/Views/HouseKeepingPanel.vala:51
 msgid "Downloaded files"
 msgstr "Stiahnuté súbory"
 
-#: src/Views/HouseKeepingPanel.vala:60
+#: src/Views/HouseKeepingPanel.vala:62
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Screenshot files"
+msgstr "Súbory v koši"
+
+#: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
 msgstr "Súbory v koši"
 
-#: src/Views/HouseKeepingPanel.vala:69
+#: src/Views/HouseKeepingPanel.vala:81
 msgid "Delete Old Files After:"
 msgstr "Vymazať staré súbory po uplynutí:"
 
-#: src/Views/HouseKeepingPanel.vala:90
+#: src/Views/HouseKeepingPanel.vala:103
 msgid "Open Trash…"
 msgstr "Otvoriť kôš…"
 
-#: src/Views/HouseKeepingPanel.vala:124
+#: src/Views/HouseKeepingPanel.vala:138
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -240,7 +252,7 @@ msgstr[2] ""
 "Staré súbory je možné automaticky vymazávať po uplynutí %u dní aby sa "
 "šetrilo priestorom na úložisku a chránilo vaše súkromie."
 
-#: src/Views/HouseKeepingPanel.vala:130
+#: src/Views/HouseKeepingPanel.vala:144
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "Dňa"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-05 08:24+0000\n"
+"POT-Creation-Date: 2023-06-06 17:41+0000\n"
 "PO-Revision-Date: 2022-05-02 13:26+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -47,12 +47,12 @@ msgid "Firewall"
 msgstr "ファイアウォール"
 
 #: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
-#: src/Plug.vala:186 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "自動削除"
 
-#: src/Plug.vala:133 src/Plug.vala:189 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
 #: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "位置情報サービス"
@@ -79,10 +79,16 @@ msgid "Automatically delete old temporary files"
 msgstr "古い一時ファイルを自動的に削除"
 
 #: src/Plug.vala:182
-msgid "Automatically delete old trashed files"
+#, fuzzy
+#| msgid "Automatically delete old trashed files"
+msgid "Automatically delete old screenshot files"
 msgstr "ゴミ箱に移動した古いファイルを自動的に削除"
 
 #: src/Plug.vala:187
+msgid "Automatically delete old trashed files"
+msgstr "ゴミ箱に移動した古いファイルを自動的に削除"
+
+#: src/Plug.vala:192
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する日数"
 
@@ -197,31 +203,37 @@ msgstr "%d または %d-%d"
 msgid "Add Rule"
 msgstr "ルールを追加"
 
-#: src/Views/HouseKeepingPanel.vala:36
+#: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
 msgstr "以下のファイルを自動的に削除:"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:41
 msgid "Old temporary files"
 msgstr "不要な一時ファイル"
 
-#: src/Views/HouseKeepingPanel.vala:50
+#: src/Views/HouseKeepingPanel.vala:51
 msgid "Downloaded files"
 msgstr "ダウンロードしたファイル"
 
-#: src/Views/HouseKeepingPanel.vala:60
+#: src/Views/HouseKeepingPanel.vala:62
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Screenshot files"
+msgstr "ゴミ箱の中のファイル"
+
+#: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
 msgstr "ゴミ箱の中のファイル"
 
-#: src/Views/HouseKeepingPanel.vala:69
+#: src/Views/HouseKeepingPanel.vala:81
 msgid "Delete Old Files After:"
 msgstr "以下の期間が過ぎたファイルを削除:"
 
-#: src/Views/HouseKeepingPanel.vala:90
+#: src/Views/HouseKeepingPanel.vala:103
 msgid "Open Trash…"
 msgstr "ゴミ箱を開く…"
 
-#: src/Views/HouseKeepingPanel.vala:124
+#: src/Views/HouseKeepingPanel.vala:138
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -233,7 +245,7 @@ msgstr[0] ""
 "古いファイルは%u日後に自動的に削除されます。これにより、空き領域を確保でき、"
 "プライバシーの保護に役立ちます。"
 
-#: src/Views/HouseKeepingPanel.vala:130
+#: src/Views/HouseKeepingPanel.vala:144
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "日"
