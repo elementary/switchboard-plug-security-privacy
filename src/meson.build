@@ -40,6 +40,7 @@ shared_module(
     meson.project_name(),
     pkgdatadir_declaration,
     plug_files,
+    plug_resources,
     dependencies: plug_dependencies,
     install: true,
     install_dir : pkgdatadir

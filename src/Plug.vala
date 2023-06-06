@@ -179,6 +179,11 @@ namespace SecurityPrivacy {
             map.set ("%s → %s → %s".printf (
                 display_name,
                 _("Housekeeping"),
+                _("Automatically delete old screenshot files")
+            ), HOUSEKEEPING);
+            map.set ("%s → %s → %s".printf (
+                display_name,
+                _("Housekeeping"),
                 _("Automatically delete old trashed files")
             ), HOUSEKEEPING);
             map.set ("%s → %s → %s".printf (
