@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-06 17:41+0000\n"
-"PO-Revision-Date: 2022-05-01 07:51+0000\n"
+"PO-Revision-Date: 2023-06-12 10:07+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:48
@@ -81,10 +81,8 @@ msgid "Automatically delete old temporary files"
 msgstr "Ältere temporäre Dateien automatisch entfernen"
 
 #: src/Plug.vala:182
-#, fuzzy
-#| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
-msgstr "Ältere Dateien automatisch aus dem Papierkorb entfernen"
+msgstr "Ältere Bildschirmfotos automatisch löschen"
 
 #: src/Plug.vala:187
 msgid "Automatically delete old trashed files"
@@ -220,10 +218,8 @@ msgid "Downloaded files"
 msgstr "Heruntergeladene Dateien"
 
 #: src/Views/HouseKeepingPanel.vala:62
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Screenshot files"
-msgstr "Dateien im Papierkorb"
+msgstr "Bildschirmfotos"
 
 #: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
