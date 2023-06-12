@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-06 17:41+0000\n"
-"PO-Revision-Date: 2022-06-02 19:08+0000\n"
+"PO-Revision-Date: 2023-06-13 12:07+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
 #: src/Plug.vala:48
@@ -79,10 +79,8 @@ msgid "Automatically delete old temporary files"
 msgstr "Poista automaattisesti vanhat väliaikaistiedostot"
 
 #: src/Plug.vala:182
-#, fuzzy
-#| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
-msgstr "Poista automaattisesti vanhat roskakorissa olevat tiedostot"
+msgstr "Poista automaattisesti vanhat kuvakaappaustiedostot"
 
 #: src/Plug.vala:187
 msgid "Automatically delete old trashed files"
@@ -217,10 +215,8 @@ msgid "Downloaded files"
 msgstr "Ladatut tiedostot"
 
 #: src/Views/HouseKeepingPanel.vala:62
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Screenshot files"
-msgstr "Roskakoriin siirretyt tiedostot"
+msgstr "Kuvakaappaustiedostot"
 
 #: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
