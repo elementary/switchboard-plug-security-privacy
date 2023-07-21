@@ -23,7 +23,7 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          gala,
          gnome-settings-daemon-common,
-         io.elementary.settings-daemon,
+         io.elementary.settings-daemon (>=1.3.0),
          ufw,
          zeitgeist
 Enhances: switchboard
