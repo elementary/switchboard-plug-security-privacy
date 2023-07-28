@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-28 15:36+0000\n"
-"PO-Revision-Date: 2023-05-08 13:06+0000\n"
+"PO-Revision-Date: 2023-07-29 16:08+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/he/>\n"
@@ -44,7 +44,7 @@ msgstr "יכולות חדשות:"
 
 #: data/security-privacy.metainfo.xml.in:48
 msgid "Automatically clean up screenshots with Housekeeping"
-msgstr ""
+msgstr "לנקות צילומי מסך אוטומטית עם תחזוקה"
 
 #: data/security-privacy.metainfo.xml.in:50
 #: data/security-privacy.metainfo.xml.in:64
@@ -56,7 +56,7 @@ msgstr "עדכונים משניים:"
 
 #: data/security-privacy.metainfo.xml.in:52
 msgid "Only list installed apps in the Location panel"
-msgstr ""
+msgstr "להציג רק יישומים מותקנים בלוח המיקום"
 
 #: data/security-privacy.metainfo.xml.in:53
 #: data/security-privacy.metainfo.xml.in:67
