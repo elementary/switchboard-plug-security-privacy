@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-06 17:41+0000\n"
+"POT-Creation-Date: 2023-07-28 15:24+0000\n"
 "PO-Revision-Date: 2023-05-23 09:06+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -33,46 +33,52 @@ msgstr ""
 "Configurer le pare-feu, le verrouillage de l'écran et les informations de "
 "l'activité de l'utilisateur"
 
-#: data/security-privacy.metainfo.xml.in:30
+#: data/security-privacy.metainfo.xml.in:39
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/security-privacy.metainfo.xml.in:37
-#: data/security-privacy.metainfo.xml.in:60
-#: data/security-privacy.metainfo.xml.in:73
+#: data/security-privacy.metainfo.xml.in:46
+#: data/security-privacy.metainfo.xml.in:59
+#: data/security-privacy.metainfo.xml.in:82
+#: data/security-privacy.metainfo.xml.in:95
 msgid "New features:"
 msgstr "Nouvelles fonctionnalités :"
 
-#: data/security-privacy.metainfo.xml.in:39
-msgid "Use the location portal"
-msgstr "Utilisation du portail local"
+#: data/security-privacy.metainfo.xml.in:48
+msgid "Automatically clean up screenshots with Housekeeping"
+msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:41
-#: data/security-privacy.metainfo.xml.in:51
-#: data/security-privacy.metainfo.xml.in:64
-#: data/security-privacy.metainfo.xml.in:77
+#: data/security-privacy.metainfo.xml.in:50
+#: data/security-privacy.metainfo.xml.in:63
+#: data/security-privacy.metainfo.xml.in:73
+#: data/security-privacy.metainfo.xml.in:86
+#: data/security-privacy.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
-#: data/security-privacy.metainfo.xml.in:43
-msgid "New location icon"
-msgstr "Nouvelle icône de position"
-
-#: data/security-privacy.metainfo.xml.in:44
-#: data/security-privacy.metainfo.xml.in:53
+#: data/security-privacy.metainfo.xml.in:52
 #: data/security-privacy.metainfo.xml.in:66
-#: data/security-privacy.metainfo.xml.in:79
-#: data/security-privacy.metainfo.xml.in:87
+#: data/security-privacy.metainfo.xml.in:75
+#: data/security-privacy.metainfo.xml.in:88
+#: data/security-privacy.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Mise à jour des traductions"
 
-#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:61
+msgid "Use the location portal"
+msgstr "Utilisation du portail local"
+
+#: data/security-privacy.metainfo.xml.in:65
+msgid "New location icon"
+msgstr "Nouvelle icône de position"
+
+#: data/security-privacy.metainfo.xml.in:84
 msgid "Option to forbid new USB devices while locked"
 msgstr ""
 "Option permettant d'interdire les nouveaux périphériques USB lorsque "
 "l'appareil est verrouillé"
 
-#: data/security-privacy.metainfo.xml.in:75
+#: data/security-privacy.metainfo.xml.in:97
 msgid "Add Downloads option to Housekeeping"
 msgstr "Ajout d'une option Téléchargements au nettoyage automatique"
 
