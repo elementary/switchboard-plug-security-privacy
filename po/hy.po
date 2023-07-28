@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 15:24+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2014-08-28 08:20+0000\n"
 "Last-Translator: Arsen Khachatryan <arsench2000@gmail.com>\n"
 "Language-Team: Armenian <hy@li.org>\n"
@@ -330,7 +330,7 @@ msgid ""
 "IP address."
 msgstr ""
 
-#: src/Views/LocationPanel.vala:202
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
 msgstr ""
