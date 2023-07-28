@@ -162,7 +162,10 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
                     app_permissions[1]
                 );
 
-                liststore.append (app_permission);
+                // Check that app is still installed
+                if (new DesktopAppInfo (app_permission.id + ".desktop") != null) {
+                    liststore.append (app_permission);
+                }
             }
         } catch (Error e) {
             critical (e.message);
