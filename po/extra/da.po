@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 15:24+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2020-05-27 22:10+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -36,9 +36,9 @@ msgid "elementary, Inc."
 msgstr ""
 
 #: data/security-privacy.metainfo.xml.in:46
-#: data/security-privacy.metainfo.xml.in:59
-#: data/security-privacy.metainfo.xml.in:82
-#: data/security-privacy.metainfo.xml.in:95
+#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:83
+#: data/security-privacy.metainfo.xml.in:96
 msgid "New features:"
 msgstr ""
 
@@ -47,36 +47,40 @@ msgid "Automatically clean up screenshots with Housekeeping"
 msgstr ""
 
 #: data/security-privacy.metainfo.xml.in:50
-#: data/security-privacy.metainfo.xml.in:63
-#: data/security-privacy.metainfo.xml.in:73
-#: data/security-privacy.metainfo.xml.in:86
-#: data/security-privacy.metainfo.xml.in:99
+#: data/security-privacy.metainfo.xml.in:64
+#: data/security-privacy.metainfo.xml.in:74
+#: data/security-privacy.metainfo.xml.in:87
+#: data/security-privacy.metainfo.xml.in:100
 #, fuzzy
 #| msgid "Translation updates"
 msgid "Minor updates:"
 msgstr "Opdaterede oversættelser"
 
 #: data/security-privacy.metainfo.xml.in:52
-#: data/security-privacy.metainfo.xml.in:66
-#: data/security-privacy.metainfo.xml.in:75
-#: data/security-privacy.metainfo.xml.in:88
-#: data/security-privacy.metainfo.xml.in:101
+msgid "Only list installed apps in the Location panel"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:53
+#: data/security-privacy.metainfo.xml.in:67
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:89
+#: data/security-privacy.metainfo.xml.in:102
 msgid "Translation updates"
 msgstr "Opdaterede oversættelser"
 
-#: data/security-privacy.metainfo.xml.in:61
+#: data/security-privacy.metainfo.xml.in:62
 msgid "Use the location portal"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:65
+#: data/security-privacy.metainfo.xml.in:66
 msgid "New location icon"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:84
+#: data/security-privacy.metainfo.xml.in:85
 msgid "Option to forbid new USB devices while locked"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:97
+#: data/security-privacy.metainfo.xml.in:98
 msgid "Add Downloads option to Housekeeping"
 msgstr ""
 

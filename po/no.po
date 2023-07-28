@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: security-privacy-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 15:24+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2018-06-04 09:37-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -327,7 +327,7 @@ msgid ""
 "IP address."
 msgstr ""
 
-#: src/Views/LocationPanel.vala:202
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
 msgstr ""
