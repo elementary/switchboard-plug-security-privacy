@@ -7,7 +7,7 @@ gettext_declaration = configure_file(
 i18n.merge_file(
     input: gettext_declaration,
     output: '@BASENAME@',
-    po_dir: join_paths(meson.source_root(), 'po', 'extra'),
+    po_dir: join_paths(meson.project_source_root(), 'po', 'extra'),
     install: true,
     install_dir: polkit_actiondir
 )
@@ -15,7 +15,7 @@ i18n.merge_file(
 i18n.merge_file(
     input: 'security-privacy.metainfo.xml.in',
     output: 'io.elementary.switchboard.security-privacy.metainfo.xml',
-    po_dir: meson.source_root() / 'po' / 'extra',
+    po_dir: meson.project_source_root() / 'po' / 'extra',
     type: 'xml',
     install: true,
     install_dir: datadir / 'metainfo'
