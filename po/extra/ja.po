@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-28 15:36+0000\n"
-"PO-Revision-Date: 2023-07-23 14:07+0000\n"
+"PO-Revision-Date: 2023-07-29 16:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ja/>\n"
@@ -44,7 +44,7 @@ msgstr "新機能:"
 
 #: data/security-privacy.metainfo.xml.in:48
 msgid "Automatically clean up screenshots with Housekeeping"
-msgstr ""
+msgstr "“自動削除”でスクリーンショットを自動的に削除する機能を追加"
 
 #: data/security-privacy.metainfo.xml.in:50
 #: data/security-privacy.metainfo.xml.in:64
@@ -56,7 +56,7 @@ msgstr "そのほかのアップデート:"
 
 #: data/security-privacy.metainfo.xml.in:52
 msgid "Only list installed apps in the Location panel"
-msgstr ""
+msgstr "“位置情報“ペインにインストール済みのアプリのみを一覧表示するように修正"
 
 #: data/security-privacy.metainfo.xml.in:53
 #: data/security-privacy.metainfo.xml.in:67
