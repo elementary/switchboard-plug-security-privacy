@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-06 17:41+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2022-08-07 19:33+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -343,7 +343,7 @@ msgstr ""
 "위치 서비스를 실행하지 않아도 앱에서 IP 주소를 기반으로 여러분의 위치를 확인"
 "하려는 시도를 막지는 않습니다."
 
-#: src/Views/LocationPanel.vala:202
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "%s의 위치 서비스 사용을 승인합니다"

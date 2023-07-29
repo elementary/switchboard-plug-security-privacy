@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-06 17:41+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -355,7 +355,7 @@ msgid ""
 msgstr ""
 "Toto nezabrání aplikacím v pokusech zjistit vaši polohu na základě IP adresy."
 
-#: src/Views/LocationPanel.vala:202
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Povolit %s používat služby určení polohy"

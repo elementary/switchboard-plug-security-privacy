@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-06 17:41+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2022-10-07 17:33+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -348,7 +348,7 @@ msgstr ""
 "وەستاندنی ئەم خزمەتگوزارییە ڕێگری ناکات لەو بەرنامانەی کە هەوڵدەدەن شوێنەکەت "
 "لە ڕێگەی ئایپی ئادرێسەوە دیاریبکەن."
 
-#: src/Views/LocationPanel.vala:202
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "ڕێگە بە %s بدە کە خزمەتگوزاری شوێن بەکار بهێنێت"

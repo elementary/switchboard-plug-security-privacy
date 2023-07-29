@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-06 17:41+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2023-06-25 02:07+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -351,7 +351,7 @@ msgstr ""
 "Dit zal apps er niet van weerhouden om uw locatie te bepalen op basis van "
 "het IP-adres."
 
-#: src/Views/LocationPanel.vala:202
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Sta %s toe om de locatieservices te gebruiken"

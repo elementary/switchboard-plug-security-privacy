@@ -49,6 +49,7 @@
         </ul>
         <p>Minor updates:</p>
         <ul>
+          <li>Only list installed apps in the Location panel</li>
           <li>Translation updates</li>
         </ul>
       </description>
