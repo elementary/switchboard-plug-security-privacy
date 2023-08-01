@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-28 15:36+0000\n"
-"PO-Revision-Date: 2023-05-23 09:06+0000\n"
+"PO-Revision-Date: 2023-08-03 08:08+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/fr/>\n"
@@ -46,7 +46,7 @@ msgstr "Nouvelles fonctionnalités :"
 
 #: data/security-privacy.metainfo.xml.in:48
 msgid "Automatically clean up screenshots with Housekeeping"
-msgstr ""
+msgstr "Nettoyer automatiquement les captures d'écran avec le nettoyage"
 
 #: data/security-privacy.metainfo.xml.in:50
 #: data/security-privacy.metainfo.xml.in:64
@@ -59,6 +59,7 @@ msgstr "Mises à jour mineures :"
 #: data/security-privacy.metainfo.xml.in:52
 msgid "Only list installed apps in the Location panel"
 msgstr ""
+"Afficher uniquement les applications installées dans le panneau d'Emplacement"
 
 #: data/security-privacy.metainfo.xml.in:53
 #: data/security-privacy.metainfo.xml.in:67
