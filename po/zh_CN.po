@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-28 15:36+0000\n"
-"PO-Revision-Date: 2022-06-13 08:01+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2023-08-08 11:08+0000\n"
+"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:25+0000\n"
 
 #: src/Plug.vala:48
@@ -79,10 +79,8 @@ msgid "Automatically delete old temporary files"
 msgstr "自动删除旧的临时文件"
 
 #: src/Plug.vala:182
-#, fuzzy
-#| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
-msgstr "自动清理回收站"
+msgstr "自动清理旧屏幕截图文件"
 
 #: src/Plug.vala:187
 msgid "Automatically delete old trashed files"
@@ -216,10 +214,8 @@ msgid "Downloaded files"
 msgstr "下载的文件"
 
 #: src/Views/HouseKeepingPanel.vala:62
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Screenshot files"
-msgstr "回收站文件"
+msgstr "屏幕截图文件"
 
 #: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
