@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-28 15:36+0000\n"
-"PO-Revision-Date: 2022-05-04 22:44+0000\n"
+"PO-Revision-Date: 2023-10-27 11:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/sk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:48
@@ -80,10 +80,8 @@ msgid "Automatically delete old temporary files"
 msgstr "Automaticky vymazávať staré dočasné súbory"
 
 #: src/Plug.vala:182
-#, fuzzy
-#| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
-msgstr "Automaticky vymazávať staré súbory v koši"
+msgstr "Automaticky vymazávať staré snímky obrazovky"
 
 #: src/Plug.vala:187
 msgid "Automatically delete old trashed files"
@@ -217,10 +215,8 @@ msgid "Downloaded files"
 msgstr "Stiahnuté súbory"
 
 #: src/Views/HouseKeepingPanel.vala:62
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Screenshot files"
-msgstr "Súbory v koši"
+msgstr "Snímky obrazovky"
 
 #: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
