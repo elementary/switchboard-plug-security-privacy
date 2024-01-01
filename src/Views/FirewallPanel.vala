@@ -452,12 +452,12 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         if (loading == false) {
             view.sensitive = status_switch.active;
             UFWHelpers.set_status (status_switch.active);
-            show_rules ();
         }
 
         if (status_switch.active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
             status = _("Enabled");
+            show_rules ();
         } else {
             status_type = Granite.SettingsPage.StatusType.OFFLINE;
             status = _("Disabled");
