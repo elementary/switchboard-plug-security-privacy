@@ -33,8 +33,6 @@ namespace SecurityPrivacy {
 
         ServiceList service_list;
 
-        bool location_agent_installed = false;
-
         private const string FIREWALL = "firewall";
         private const string HOUSEKEEPING = "housekeeping";
         private const string HISTORY = "tracking";
@@ -52,24 +50,18 @@ namespace SecurityPrivacy {
                     icon: "preferences-system-privacy",
                     supported_settings: new Gee.TreeMap<string, string?> (null, null));
 
-            location_agent_installed = SecurityPrivacy.LocationPanel.location_agent_installed ();
-            supported_settings.set ("security", null);
+            supported_settings.set ("privacy", HISTORY);
+            supported_settings.set ("privacy/location", LOCATION);
+            supported_settings.set ("privacy/trash", HOUSEKEEPING);
             supported_settings.set ("security/firewall", FIREWALL);
             supported_settings.set ("security/locking", LOCKING);
-            supported_settings.set ("privacy", HISTORY);
-            supported_settings.set ("privacy/trash", HOUSEKEEPING);
+            supported_settings.set ("security", null);
 
             // DEPRECATED
-            supported_settings.set ("security/privacy", HISTORY);
             supported_settings.set ("security/housekeeping", HOUSEKEEPING);
+            supported_settings.set ("security/privacy", HISTORY);
+            supported_settings.set ("security/privacy/location", LOCATION);
             supported_settings.set ("security/screensaver", LOCKING);
-
-            if (location_agent_installed) {
-                supported_settings.set ("privacy/location", LOCATION);
-
-                // DEPRECATED
-                supported_settings.set ("security/privacy/location", LOCATION);
-            }
         }
 
         public override Gtk.Widget get_widget () {
@@ -132,16 +124,13 @@ namespace SecurityPrivacy {
             var locking = new LockPanel ();
             firewall = new FirewallPanel ();
             housekeeping = new HouseKeepingPanel ();
+            location = new LocationPanel ();
 
             stack.add_titled (tracking, HISTORY, _("Privacy"));
             stack.add_titled (locking, LOCKING, _("Locking"));
             stack.add_titled (firewall, FIREWALL, _("Firewall"));
             stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
-
-            if (location_agent_installed) {
-                location = new LocationPanel ();
-                stack.add_titled (location, LOCATION, _("Location Services"));
-            }
+            stack.add_titled (location, LOCATION, _("Location Services"));
 
             service_list = new ServiceList ();
 
@@ -192,6 +181,11 @@ namespace SecurityPrivacy {
             map.set ("%s → %s → %s".printf (
                 display_name,
                 _("Housekeeping"),
+                _("Automatically delete old screenshot files")
+            ), HOUSEKEEPING);
+            map.set ("%s → %s → %s".printf (
+                display_name,
+                _("Housekeeping"),
                 _("Automatically delete old trashed files")
             ), HOUSEKEEPING);
             map.set ("%s → %s → %s".printf (
@@ -199,9 +193,7 @@ namespace SecurityPrivacy {
                 _("Housekeeping"),
                 _("Number of days to keep trashed and temporary files")
             ), HOUSEKEEPING);
-            if (location_agent_installed) {
-                map.set ("%s → %s".printf (display_name, _("Location Services")), LOCATION);
-            }
+            map.set ("%s → %s".printf (display_name, _("Location Services")), LOCATION);
             return map;
         }
     }

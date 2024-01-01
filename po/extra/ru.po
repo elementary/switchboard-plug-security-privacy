@@ -7,58 +7,81 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2021-11-30 13:42+0000\n"
-"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
+"PO-Revision-Date: 2023-07-29 16:08+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Для изменения настроек брандмауэра требуется аутентификация"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
+#: data/security-privacy.metainfo.xml.in:10
 msgid "Security &amp; Privacy Settings"
 msgstr "Настройки защиты и приватности"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
+#: data/security-privacy.metainfo.xml.in:11
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "Настройка фаервола, экрана блокировки и информации об активности"
+msgstr "Настройка фаервола, блокировки экрана и информации об активности"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
+#: data/security-privacy.metainfo.xml.in:39
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/security-privacy.metainfo.xml.in:46
+#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:83
+#: data/security-privacy.metainfo.xml.in:96
 msgid "New features:"
 msgstr "Новые возможности:"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Option to forbid new USB devices while locked"
-msgstr ""
+#: data/security-privacy.metainfo.xml.in:48
+msgid "Automatically clean up screenshots with Housekeeping"
+msgstr "Автоматическая очистка снимков экрана в Домоводстве"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
+#: data/security-privacy.metainfo.xml.in:50
+#: data/security-privacy.metainfo.xml.in:64
+#: data/security-privacy.metainfo.xml.in:74
+#: data/security-privacy.metainfo.xml.in:87
+#: data/security-privacy.metainfo.xml.in:100
 msgid "Minor updates:"
 msgstr "Незначительные обновления:"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
+#: data/security-privacy.metainfo.xml.in:52
+msgid "Only list installed apps in the Location panel"
+msgstr "Только установленные приложения отображаются в панели Местоположения"
+
+#: data/security-privacy.metainfo.xml.in:53
+#: data/security-privacy.metainfo.xml.in:67
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:89
+#: data/security-privacy.metainfo.xml.in:102
 msgid "Translation updates"
 msgstr "Обновления перевода"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
-msgid "Add Downloads option to Housekeeping"
-msgstr "Добавлена опция \"Загрузки\" в разделе Домоводства"
+#: data/security-privacy.metainfo.xml.in:62
+msgid "Use the location portal"
+msgstr "Использование портала местоположения"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
-msgid "Redesigned \"Housekeeping\" page"
-msgstr "Переработана страница \"Домоводства\""
+#: data/security-privacy.metainfo.xml.in:66
+msgid "New location icon"
+msgstr "Новая иконка местоположения"
+
+#: data/security-privacy.metainfo.xml.in:85
+msgid "Option to forbid new USB devices while locked"
+msgstr "Возможность запретить новые USB-устройства во время блокировки"
+
+#: data/security-privacy.metainfo.xml.in:98
+msgid "Add Downloads option to Housekeeping"
+msgstr "Добавлена опция «Загрузки» в разделе Домоводства"
+
+#~ msgid "Redesigned \"Housekeeping\" page"
+#~ msgstr "Переработана страница «Домоводства»"

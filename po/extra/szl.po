@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2019-06-26 18:53+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -16,41 +16,61 @@ msgstr ""
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
+#: data/security-privacy.metainfo.xml.in:10
 msgid "Security &amp; Privacy Settings"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
+#: data/security-privacy.metainfo.xml.in:11
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
+#: data/security-privacy.metainfo.xml.in:39
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:46
+#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:83
+#: data/security-privacy.metainfo.xml.in:96
 msgid "New features:"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Option to forbid new USB devices while locked"
+#: data/security-privacy.metainfo.xml.in:48
+msgid "Automatically clean up screenshots with Housekeeping"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
+#: data/security-privacy.metainfo.xml.in:50
+#: data/security-privacy.metainfo.xml.in:64
+#: data/security-privacy.metainfo.xml.in:74
+#: data/security-privacy.metainfo.xml.in:87
+#: data/security-privacy.metainfo.xml.in:100
 msgid "Minor updates:"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
+#: data/security-privacy.metainfo.xml.in:52
+msgid "Only list installed apps in the Location panel"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:53
+#: data/security-privacy.metainfo.xml.in:67
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:89
+#: data/security-privacy.metainfo.xml.in:102
 msgid "Translation updates"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
-msgid "Add Downloads option to Housekeeping"
+#: data/security-privacy.metainfo.xml.in:62
+msgid "Use the location portal"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
-msgid "Redesigned \"Housekeeping\" page"
+#: data/security-privacy.metainfo.xml.in:66
+msgid "New location icon"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:85
+msgid "Option to forbid new USB devices while locked"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:98
+msgid "Add Downloads option to Housekeeping"
 msgstr ""

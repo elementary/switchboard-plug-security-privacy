@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
-* Copyright (c) 2014-2017 elementary LLC. (http://launchpad.net/switchboard-plug-security-privacy)
+* Copyright (c) 2014-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU Lesser General Public
@@ -22,19 +21,18 @@
 */
 
 public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
-
     public signal void app_chosen (DesktopAppInfo app_info);
 
-    private Gtk.ListBox list;
     private Gtk.SearchEntry search_entry;
 
     construct {
-        search_entry = new Gtk.SearchEntry ();
-        search_entry.margin_end = 12;
-        search_entry.margin_start = 12;
-        search_entry.placeholder_text = _("Search Application");
+        search_entry = new Gtk.SearchEntry () {
+            margin_end = 12,
+            margin_start = 12,
+            placeholder_text = _("Search Application")
+        };
 
-        list = new Gtk.ListBox () {
+        var list = new Gtk.ListBox () {
             hexpand = true,
             vexpand = true
         };
@@ -47,32 +45,30 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
             width_request = 500
         };
 
-        var grid = new Gtk.Grid ();
-        grid.margin_top = 12;
-        grid.row_spacing = 6;
-        grid.attach (search_entry, 0, 0, 1, 1);
-        grid.attach (scrolled, 0, 1, 1, 1);
+        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6) {
+            margin_top = 12,
+            margin_bottom = 6
+        };
+        box.append (search_entry);
+        box.append (scrolled);
 
-        child = grid;
+        child = box;
 
-        search_entry.grab_focus ();
-        list.row_activated.connect (on_app_selected);
-        search_entry.search_changed.connect (apply_filter);
-
-        init_list ();
-    }
-
-    public void init_list () {
-        foreach (var app_info in AppInfo.get_all ()) {
+        foreach (unowned var app_info in AppInfo.get_all ()) {
             if (app_info is DesktopAppInfo && app_info.should_show ()) {
                 var app_row = new AppRow ((DesktopAppInfo)app_info);
                 list.prepend (app_row);
             }
         }
+
+        search_entry.grab_focus ();
+        list.row_activated.connect (on_app_selected);
+        search_entry.search_changed.connect (() => {
+            list.invalidate_filter ();
+        });
     }
 
-    int sort_function (Gtk.ListBoxRow list_box_row_1,
-                       Gtk.ListBoxRow list_box_row_2) {
+    private int sort_function (Gtk.ListBoxRow list_box_row_1, Gtk.ListBoxRow list_box_row_2) {
         var row_1 = list_box_row_1 as AppRow;
         var row_2 = list_box_row_2 as AppRow;
 
@@ -82,26 +78,26 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
         return name_1.collate (name_2);
     }
 
-    bool filter_function (Gtk.ListBoxRow list_box_row) {
+    private bool filter_function (Gtk.ListBoxRow list_box_row) {
         var app_row = list_box_row as AppRow;
-        string name = app_row.app_info.get_display_name ();
-        if (name == null)
+
+        var name = app_row.app_info.get_display_name ();
+        if (name == null) {
             name = app_row.app_info.get_name ();
-        string description = app_row.app_info.get_description ();
-        if (description == null)
+        }
+
+        var description = app_row.app_info.get_description ();
+        if (description == null) {
             description = "";
-        string search = search_entry.text.down ();
-        return search in name.down ()
-            || search in description.down ();
+        }
+
+        var search = search_entry.text.down ();
+        return search in name.down () || search in description.down ();
     }
 
-    void on_app_selected (Gtk.ListBoxRow list_box_row) {
+    private void on_app_selected (Gtk.ListBoxRow list_box_row) {
         var app_row = list_box_row as AppRow;
         app_chosen (app_row.app_info);
-        hide ();
-    }
-
-    void apply_filter () {
-        list.set_filter_func (filter_function);
+        popdown ();
     }
 }

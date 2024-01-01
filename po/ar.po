@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2020-03-19 19:09+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -21,69 +21,75 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "الأمن و الخصوصية"
 
-#: src/Plug.vala:51
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "قم بتعديل جدار الحماية, قفل الشاشة و المعلومات حول نشاطك"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:82
 msgid "Some settings require administrator rights to be changed"
 msgstr "تتطلب بعض الإعدادات تغيير الصلاحيات للمسؤول"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:129
 msgid "Privacy"
 msgstr "الخصوصية"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
+#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "قفل"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "جدار الحماية"
 
-#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
-#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
+#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "تنظيف النظام"
 
-#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:62
+#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
+#: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "خدمات الموقع"
 
-#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "التاريخ"
 
-#: src/Plug.vala:179
+#: src/Plug.vala:168
 msgid "Clear History"
 msgstr "مسح التاريخ"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:170
 msgid "Lock on sleep"
 msgstr "اقفل عند السكون"
 
-#: src/Plug.vala:182
+#: src/Plug.vala:171
 msgid "Lock after sceen turns off"
 msgstr "قفل بعد إيقاف تشغيل الشاشة"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:177
 msgid "Automatically delete old temporary files"
 msgstr "حذف الملفات المؤقتة القديمة تلقائيًا"
 
-#: src/Plug.vala:193
+#: src/Plug.vala:182
+#, fuzzy
+#| msgid "Automatically delete old trashed files"
+msgid "Automatically delete old screenshot files"
+msgstr "حذف الملفات القديمة في المهملات تلقائيًا"
+
+#: src/Plug.vala:187
 msgid "Automatically delete old trashed files"
 msgstr "حذف الملفات القديمة في المهملات تلقائيًا"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:192
 msgid "Number of days to keep trashed and temporary files"
 msgstr "عدد الأيام للاحتفاظ بالملفات المحذوفة والمؤقتة"
 
@@ -92,13 +98,13 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "مطلوب المصادقة لتشغيل اعداد جدار الحماية"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "مفعل"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
+#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "غير مفعل"
 
@@ -198,37 +204,43 @@ msgstr "%d أو %d-%d"
 msgid "Add Rule"
 msgstr "إضافة قاعدة"
 
-#: src/Views/HouseKeepingPanel.vala:36
+#: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
 msgstr "الحذف تلقائيًا:"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:41
 #, fuzzy
 #| msgid "Temporary files"
 msgid "Old temporary files"
 msgstr "الملفات المؤقتة"
 
-#: src/Views/HouseKeepingPanel.vala:50
+#: src/Views/HouseKeepingPanel.vala:51
 #, fuzzy
 #| msgid "Trashed files"
 msgid "Downloaded files"
 msgstr "الملفات المحذوفة"
 
-#: src/Views/HouseKeepingPanel.vala:60
+#: src/Views/HouseKeepingPanel.vala:62
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Screenshot files"
+msgstr "الملفات المحذوفة"
+
+#: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
 msgstr "الملفات المحذوفة"
 
-#: src/Views/HouseKeepingPanel.vala:69
+#: src/Views/HouseKeepingPanel.vala:81
 #, fuzzy
 #| msgid "Delete Trashed and Temporary Files After:"
 msgid "Delete Old Files After:"
 msgstr "احذف الملفات المحذوفة و المؤقتة بعد:"
 
-#: src/Views/HouseKeepingPanel.vala:90
+#: src/Views/HouseKeepingPanel.vala:103
 msgid "Open Trash…"
 msgstr "افتح سلة المهملات…"
 
-#: src/Views/HouseKeepingPanel.vala:124
+#: src/Views/HouseKeepingPanel.vala:138
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -255,7 +267,7 @@ msgstr[5] ""
 "يمكن حذف الملفات القديمة تلقائيًا بعد%u يوم لتوفير مساحة والمساعدة في حماية "
 "خصوصيتك."
 
-#: src/Views/HouseKeepingPanel.vala:130
+#: src/Views/HouseKeepingPanel.vala:144
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "يوم"
@@ -318,49 +330,49 @@ msgstr "امسح التاريخ…"
 msgid "Your system"
 msgstr "نظامك"
 
-#: src/Views/LocationPanel.vala:43
+#: src/Views/LocationPanel.vala:33
 msgid "Allow the apps below to determine your location"
 msgstr "اسمح للتطبيقات أدناه بتحديد موقعك"
 
-#: src/Views/LocationPanel.vala:53
+#: src/Views/LocationPanel.vala:43
 msgid "No Apps Are Using Location Services"
 msgstr "لا توجد تطبيقات تستخدم خدمات الموقع"
 
-#: src/Views/LocationPanel.vala:54
+#: src/Views/LocationPanel.vala:44
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr "عند تثبيت التطبيقات التي تستخدم خدمات الموقع ، ستظهر تلقائيًا هنا."
 
-#: src/Views/LocationPanel.vala:71
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
 msgstr "تم تعطيل خدمات الموقع"
 
-#: src/Views/LocationPanel.vala:73
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr "أثناء تعطيل خدمات الموقع ، سيتم رفض طلبات الموقع من التطبيقات تلقائيًا."
 
-#: src/Views/LocationPanel.vala:74
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
 "ستتأثر الوظائف الإضافية التي يوفرها الوصول إلى الموقع في هذه التطبيقات."
 
-#: src/Views/LocationPanel.vala:75
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr "لن يمنع هذا التطبيقات من محاولة تحديد موقعك بناءً على عنوان IP."
 
-#: src/Views/LocationPanel.vala:187
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "اسمح لـ%s بإستخدام خدمات الموقع"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "تطبيق البحث"
 
@@ -396,31 +408,31 @@ msgstr "إلى:"
 msgid "Clear Data"
 msgstr "مسح البيانات"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
 msgstr "أضف تطبيق…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
 msgstr "أضف مجلد…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
 msgstr "اختر مجلدا لاضافته في القائمة السوداء"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
 msgstr "أضف"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
 msgstr "الغاء"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
 msgstr "حذف"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
 msgstr "لا تجمع بيانات من التالي:"
 

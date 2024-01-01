@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2021-11-30 10:04+0000\n"
-"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
+"PO-Revision-Date: 2023-08-03 08:08+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/security-privacy-plug-extra/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,47 +17,70 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Authentication is required to run the Firewall Configuration"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
+#: data/security-privacy.metainfo.xml.in:10
 msgid "Security &amp; Privacy Settings"
 msgstr "Security &amp; Privacy Settings"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
+#: data/security-privacy.metainfo.xml.in:11
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Configure firewall, screen lock, and activity information"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
+#: data/security-privacy.metainfo.xml.in:39
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/security-privacy.metainfo.xml.in:46
+#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:83
+#: data/security-privacy.metainfo.xml.in:96
 msgid "New features:"
 msgstr "New features:"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Option to forbid new USB devices while locked"
-msgstr ""
+#: data/security-privacy.metainfo.xml.in:48
+msgid "Automatically clean up screenshots with Housekeeping"
+msgstr "Automatically clean up screenshots with Housekeeping"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
+#: data/security-privacy.metainfo.xml.in:50
+#: data/security-privacy.metainfo.xml.in:64
+#: data/security-privacy.metainfo.xml.in:74
+#: data/security-privacy.metainfo.xml.in:87
+#: data/security-privacy.metainfo.xml.in:100
 msgid "Minor updates:"
 msgstr "Minor updates:"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
+#: data/security-privacy.metainfo.xml.in:52
+msgid "Only list installed apps in the Location panel"
+msgstr "Only list installed apps in the Location panel"
+
+#: data/security-privacy.metainfo.xml.in:53
+#: data/security-privacy.metainfo.xml.in:67
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:89
+#: data/security-privacy.metainfo.xml.in:102
 msgid "Translation updates"
 msgstr "Translation updates"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
+#: data/security-privacy.metainfo.xml.in:62
+msgid "Use the location portal"
+msgstr "Use the location portal"
+
+#: data/security-privacy.metainfo.xml.in:66
+msgid "New location icon"
+msgstr "New location icon"
+
+#: data/security-privacy.metainfo.xml.in:85
+msgid "Option to forbid new USB devices while locked"
+msgstr "Option to forbid new USB devices while locked"
+
+#: data/security-privacy.metainfo.xml.in:98
 msgid "Add Downloads option to Housekeeping"
 msgstr "Add Downloads option to Housekeeping"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
-msgid "Redesigned \"Housekeeping\" page"
-msgstr "Redesigned \"Housekeeping\" page"
+#~ msgid "Redesigned \"Housekeeping\" page"
+#~ msgstr "Redesigned \"Housekeeping\" page"

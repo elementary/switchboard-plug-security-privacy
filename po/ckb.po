@@ -1,212 +1,234 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
+"PO-Revision-Date: 2022-10-07 17:33+0000\n"
+"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"switchboard/switchboard-plug-security-privacy/ckb/>\n"
+"Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:48
 msgid "Security & Privacy"
-msgstr ""
+msgstr "ئاسایش & تایبەتیەتی"
 
-#: src/Plug.vala:51
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "زانیاری چالاکییەکان و قوفڵی شاشە و دیواری ئاگرین ڕێک بخە"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:82
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
+"بەشێک لە ڕێکخستنەکان پێویستیان بە دەسەڵاتی بەڕێوەبەرە بۆ ئەوەی گۆڕانکاریان "
+"بەسەردا بێت"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:129
 msgid "Privacy"
-msgstr ""
+msgstr "تایبەتی"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
+#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
-msgstr ""
+msgstr "قوفڵکردن"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
-msgstr ""
+msgstr "دیواری ئاگرین"
 
-#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
-#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
+#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
-msgstr ""
+msgstr "خاوێنکردنەوە"
 
-#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:62
+#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
+#: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
-msgstr ""
+msgstr "خزمەتگوزاری شوێن"
 
-#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
-msgstr ""
+msgstr "مێژوو"
 
-#: src/Plug.vala:179
+#: src/Plug.vala:168
 msgid "Clear History"
-msgstr ""
+msgstr "سڕینەوەی مێژوو"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:170
 msgid "Lock on sleep"
-msgstr ""
+msgstr "لەکاتی خەوتن قوفڵی بکە"
+
+#: src/Plug.vala:171
+msgid "Lock after sceen turns off"
+msgstr "دوای کوژاندنەوەی شاشە قوفڵی بکە"
+
+#: src/Plug.vala:177
+msgid "Automatically delete old temporary files"
+msgstr "خۆکارانە پەڕگە کۆنە کاتییەکان بسڕەوە"
 
 #: src/Plug.vala:182
-msgid "Lock after sceen turns off"
-msgstr ""
+#, fuzzy
+#| msgid "Automatically delete old trashed files"
+msgid "Automatically delete old screenshot files"
+msgstr "خۆکارانە پەڕگە کۆنەکانی ناو تەنەکە بسڕەوە"
 
-#: src/Plug.vala:188
-msgid "Automatically delete old temporary files"
-msgstr ""
-
-#: src/Plug.vala:193
+#: src/Plug.vala:187
 msgid "Automatically delete old trashed files"
-msgstr ""
+msgstr "خۆکارانە پەڕگە کۆنەکانی ناو تەنەکە بسڕەوە"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:192
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
+msgstr "ژمارەی ڕۆژەکان بۆ هێشتنەوەی پەڕگە کۆن و سڕاوەکان"
 
 #: src/UFWHelpers.vala:24
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "پێویستە تێپەڕەوشە داخڵ بکەیت بۆ بەڕێوەبردنی دوای ئاگرین"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
-msgstr ""
+msgstr "کاراکراو"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
+#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
-msgstr ""
+msgstr "وەستێنراو"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
 #: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
 msgid "Unknown"
-msgstr ""
+msgstr "نەزانراو"
 
 #: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
 msgid "Allow"
-msgstr ""
+msgstr "ڕێگەدان"
 
 #: src/Views/FirewallPanel.vala:217 src/Views/FirewallPanel.vala:338
 msgid "Deny"
-msgstr ""
+msgstr "ڕێگریکردن"
 
 #: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:339
 msgid "Reject"
-msgstr ""
+msgstr "ڕەفزکردن"
 
 #: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:340
 msgid "Limit"
-msgstr ""
+msgstr "سنوور"
 
 #: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:361
 msgid "In"
-msgstr ""
+msgstr "هاتنەناو"
 
 #: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:362
 msgid "Out"
-msgstr ""
+msgstr "دەرچوون"
 
 #: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
 #, c-format
 msgid "%s Ports %s"
-msgstr ""
+msgstr "%s دەرچەکان %s"
 
 #: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
 #, c-format
 msgid "%s Port %s"
-msgstr ""
+msgstr "%s دەرچە %s"
 
 #: src/Views/FirewallPanel.vala:290
 msgid "Version"
-msgstr ""
+msgstr "وەشان"
 
 #: src/Views/FirewallPanel.vala:291
 msgid "Action"
-msgstr ""
+msgstr "فەرمان"
 
 #: src/Views/FirewallPanel.vala:292
 msgid "Protocol"
-msgstr ""
+msgstr "پرۆتۆکۆل"
 
 #: src/Views/FirewallPanel.vala:293
 msgid "Direction"
-msgstr ""
+msgstr "ئاڕاستە"
 
 #: src/Views/FirewallPanel.vala:294
 msgid "To"
-msgstr ""
+msgstr "بۆ"
 
 #: src/Views/FirewallPanel.vala:295
 msgid "From"
-msgstr ""
+msgstr "لە"
 
 #: src/Views/FirewallPanel.vala:334
 msgid "Action:"
-msgstr ""
+msgstr "فەرمان:"
 
 #: src/Views/FirewallPanel.vala:343
 msgid "Protocol:"
-msgstr ""
+msgstr "پرۆتۆکۆل:"
 
 #: src/Views/FirewallPanel.vala:350
 msgid "Version:"
-msgstr ""
+msgstr "وەشان:"
 
 #: src/Views/FirewallPanel.vala:355
 msgid "Both"
-msgstr ""
+msgstr "هەردووکیان"
 
 #: src/Views/FirewallPanel.vala:358
 msgid "Direction:"
-msgstr ""
+msgstr "ئاڕاستە:"
 
 #: src/Views/FirewallPanel.vala:365
 msgid "Ports:"
-msgstr ""
+msgstr "دەرچەکان:"
 
 #: src/Views/FirewallPanel.vala:369
 #, c-format
 msgid "%d or %d-%d"
-msgstr ""
+msgstr "%d یان %d-%d"
 
 #: src/Views/FirewallPanel.vala:371
 msgid "Add Rule"
-msgstr ""
+msgstr "زیادکردنی یاسا"
 
-#: src/Views/HouseKeepingPanel.vala:36
+#: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
-msgstr ""
+msgstr "سڕینەوەی خۆکار:"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:41
 msgid "Old temporary files"
-msgstr ""
+msgstr "پەڕگە کۆنە کاتییەکان"
 
-#: src/Views/HouseKeepingPanel.vala:50
+#: src/Views/HouseKeepingPanel.vala:51
 msgid "Downloaded files"
-msgstr ""
+msgstr "پەڕگە داگیراوەکان"
 
-#: src/Views/HouseKeepingPanel.vala:60
+#: src/Views/HouseKeepingPanel.vala:62
+#, fuzzy
+#| msgid "Trashed files"
+msgid "Screenshot files"
+msgstr "پەڕگە سڕاوەکان"
+
+#: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
-msgstr ""
+msgstr "پەڕگە سڕاوەکان"
 
-#: src/Views/HouseKeepingPanel.vala:69
+#: src/Views/HouseKeepingPanel.vala:81
 msgid "Delete Old Files After:"
-msgstr ""
+msgstr "پەڕگە کۆنەکان بسڕەوە دوای:"
 
-#: src/Views/HouseKeepingPanel.vala:90
+#: src/Views/HouseKeepingPanel.vala:103
 msgid "Open Trash…"
-msgstr ""
+msgstr "کردنەوەی تەنەکەی خۆڵ…"
 
-#: src/Views/HouseKeepingPanel.vala:124
+#: src/Views/HouseKeepingPanel.vala:138
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -215,25 +237,28 @@ msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
 msgstr[0] ""
+"دەکرێت پەڕگە کۆنەکان دوای تەنها %u ڕۆژ بسڕدرێنەوە بۆ پاراستنی بۆشایی و "
+"تایبەتی تۆ."
 msgstr[1] ""
+"دەکرێت پەڕگە کۆنەکان دوای %u ڕۆژ بسڕدرێنەوە بۆ پاراستنی بۆشایی و تایبەتی تۆ."
 
-#: src/Views/HouseKeepingPanel.vala:130
+#: src/Views/HouseKeepingPanel.vala:144
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ڕۆژ"
+msgstr[1] "ڕۆژان"
 
 #: src/Views/LockPanel.vala:31
 msgid "Lock on suspend:"
-msgstr ""
+msgstr "لەگەڵ وەستان قوفڵی بکە:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr ""
+msgstr "قوفڵکردن دوای کوژانەوەی ڕوونما:"
 
 #: src/Views/LockPanel.vala:55
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "ڕێگریکردن لە USBی تازە کاتێک کۆمپیتەرەکەت قوفڵ کردووە:"
 
 #: src/Views/TrackPanel.vala:31
 #, c-format
@@ -243,171 +268,188 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s دەتوانێت داتای بەکارهێنانی ناوخۆیی هەڵبگرێت بۆ دابینکردنی کارایی زیاتر "
+"وەک پێشکەشکردنی پەڕگە بەکارهێنراوەکانی ئەم دواییە و، گەڕانی ناوخۆیی باشتر. "
+"بەبێ کارانەکردنی ئەم ڕێکخستنەش، هەرگیز زانیارییەکانی بەکارهێنان لەم ئامێرەوە "
+"ناگوازرێتەوە جێگەیەکی تر یان بۆ لایەنی سێیەم نانێردرێت."
 
 #: src/Views/TrackPanel.vala:43
 #, c-format
 msgid "%s won't retain any further usage data."
-msgstr ""
+msgstr "%s هیچ داتایەکی بەکارهێنانی زیاتر ناهێڵێتەوە."
 
 #: src/Views/TrackPanel.vala:44
 msgid "The additional functionality that this data provides will be affected."
 msgstr ""
+"ئەو کارانەی بەهۆی ئەم خزمەتگوزارییەوە دابین دەکرێن کاریگەر دەبن و دەکرێت "
+"بوەستن."
 
 #: src/Views/TrackPanel.vala:45
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
+"ئەمە لەوانەیە ڕێگری نەگرێت لە خودی بەرنامەکان کە تۆماری چالاکییەکانی خۆیان "
+"نەکەن وەکو مێژووی گەڕانەکانی وێبگەڕ."
 
 #: src/Views/TrackPanel.vala:48
 msgid "History Is Disabled"
-msgstr ""
+msgstr "مێژوو ناچالاکە"
 
 #: src/Views/TrackPanel.vala:57
 msgid "Clear History…"
-msgstr ""
+msgstr "سڕینەوەی مێژوو…"
 
 #: src/Views/TrackPanel.vala:103
 msgid "Your system"
-msgstr ""
+msgstr "سیستەمەکەت"
+
+#: src/Views/LocationPanel.vala:33
+msgid "Allow the apps below to determine your location"
+msgstr "لە خوارەوە ڕێگە بەو بەرنامانە بدە کە شوێنت بزانن"
 
 #: src/Views/LocationPanel.vala:43
-msgid "Allow the apps below to determine your location"
-msgstr ""
-
-#: src/Views/LocationPanel.vala:53
 msgid "No Apps Are Using Location Services"
-msgstr ""
+msgstr "هیچ بەرنامەیەک خزمەتگوزاری شوێن بەکار ناهێنێت"
 
-#: src/Views/LocationPanel.vala:54
+#: src/Views/LocationPanel.vala:44
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
+"هەر کاتێک بەرنامەیەک دامەزرا کە خزمەتگوزاری شوێن بەکاربهێنێت، ڕاستەوخۆ لێرە "
+"دەردەکەوێت."
 
-#: src/Views/LocationPanel.vala:71
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
-msgstr ""
+msgstr "خزمەتگوزای شوێن ناچالاکە"
 
-#: src/Views/LocationPanel.vala:73
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr ""
+"کاتێک ئەم خزمەتگوزارییە ناچالاکە، هەر داواکارییەکی بەرنامەکان سەبارەت بە "
+"زانینی شوێن ڕاستەوخۆ ڕەفز دەکرێن."
 
-#: src/Views/LocationPanel.vala:74
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr ""
+"ئەم کارانەی بەهۆی خزمەتگوزاری شوێنەوە دابین دەکرێن کاریگەر دەبن و دەکرێت "
+"بوەستن."
 
-#: src/Views/LocationPanel.vala:75
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr ""
+"وەستاندنی ئەم خزمەتگوزارییە ڕێگری ناکات لەو بەرنامانەی کە هەوڵدەدەن شوێنەکەت "
+"لە ڕێگەی ئایپی ئادرێسەوە دیاریبکەن."
 
-#: src/Views/LocationPanel.vala:187
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
-msgstr ""
+msgstr "ڕێگە بە %s بدە کە خزمەتگوزاری شوێن بەکار بهێنێت"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
-msgstr ""
+msgstr "گەڕان"
 
 #: src/Widgets/ClearUsagePopover.vala:41
 msgid "Remove system-collected file and application usage data from:"
 msgstr ""
+"سڕینەوەی داتای بەکارهێنانی بەرنامە و پەڕگەکان کە سیستەم کۆیکردۆتەوە لە:"
 
 #: src/Widgets/ClearUsagePopover.vala:44
 msgid "The past hour"
-msgstr ""
+msgstr "کاتژمێری ڕابردوو"
 
 #: src/Widgets/ClearUsagePopover.vala:45
 msgid "The past day"
-msgstr ""
+msgstr "ڕۆژی ڕابردوو"
 
 #: src/Widgets/ClearUsagePopover.vala:46
 msgid "The past week"
-msgstr ""
+msgstr "هەفتەی ڕابردوو"
 
 #: src/Widgets/ClearUsagePopover.vala:47
 msgid "From:"
-msgstr ""
+msgstr "لە:"
 
 #: src/Widgets/ClearUsagePopover.vala:48
 msgid "All time"
-msgstr ""
+msgstr "هەموو کات"
 
 #: src/Widgets/ClearUsagePopover.vala:51
 msgid "To:"
-msgstr ""
+msgstr "بۆ:"
 
 #: src/Widgets/ClearUsagePopover.vala:54
 msgid "Clear Data"
-msgstr ""
+msgstr "سڕینەوەی داتا"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
-msgstr ""
+msgstr "زیادکردنی بەرنامە…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
-msgstr ""
+msgstr "زیادکردنی بوخچە…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
-msgstr ""
+msgstr "بوخچەیەک دیاریبکە بۆ ئەوەی بیخەیتە لیستی ڕەشەوە"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
-msgstr ""
+msgstr "زیادکردن"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
-msgstr ""
+msgstr "هەڵوەشاندنەوە"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
-msgstr ""
+msgstr "سڕینەوە"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
-msgstr ""
+msgstr "داتا لەمانەی خوارەوە کۆمەکەوە:"
 
 #: src/Widgets/IncludeTreeView.vala:82
 msgid "Data Sources:"
-msgstr ""
+msgstr "سەرچاوەی داتاکان:"
 
 #: src/Widgets/IncludeTreeView.vala:88
 msgid "Chat Logs"
-msgstr ""
+msgstr "تۆمارەکانی چات"
 
 #: src/Widgets/IncludeTreeView.vala:89
 msgid "Documents"
-msgstr ""
+msgstr "بەڵگەنامەکان"
 
 #: src/Widgets/IncludeTreeView.vala:90
 msgid "Music"
-msgstr ""
+msgstr "مۆسیقا"
 
 #: src/Widgets/IncludeTreeView.vala:91
 msgid "Pictures"
-msgstr ""
+msgstr "وێنەکان"
 
 #: src/Widgets/IncludeTreeView.vala:94
 msgid "Presentations"
-msgstr ""
+msgstr "سیمینارەکان"
 
 #: src/Widgets/IncludeTreeView.vala:100
 msgid "Spreadsheets"
-msgstr ""
+msgstr "سپرێدشیتەکان"
 
 #: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
-msgstr ""
+msgstr "ڤیدیۆکان"
 
 #: src/Widgets/ServiceItem.vala:41
 msgid "Partially Enabled"
-msgstr ""
+msgstr "بەشێکی کاراکراوە"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2018-10-25 13:10+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -20,69 +20,75 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "Säkerhet och integritet"
 
-#: src/Plug.vala:51
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Ställ in brandvägg, låsskärm och aktivitetsdata"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:82
 msgid "Some settings require administrator rights to be changed"
 msgstr "Vissa inställningar kräver administratörsrättigheter för att ändras"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:129
 msgid "Privacy"
 msgstr "Integritet"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
+#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "Låsning"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "Brandvägg"
 
-#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
-#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
+#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr "Hushållning"
 
-#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:62
+#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
+#: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "Platstjänster"
 
-#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "Historik"
 
-#: src/Plug.vala:179
+#: src/Plug.vala:168
 msgid "Clear History"
 msgstr "Rensa historik"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:170
 msgid "Lock on sleep"
 msgstr "Lås i viloläge"
 
-#: src/Plug.vala:182
+#: src/Plug.vala:171
 msgid "Lock after sceen turns off"
 msgstr "Lås när skärmen stängs av"
 
-#: src/Plug.vala:188
+#: src/Plug.vala:177
 msgid "Automatically delete old temporary files"
 msgstr "Radera automatiskt gamla temporära filer"
 
-#: src/Plug.vala:193
+#: src/Plug.vala:182
+#, fuzzy
+#| msgid "Automatically delete old trashed files"
+msgid "Automatically delete old screenshot files"
+msgstr "Radera automatiskt gamla filer från papperskorgen"
+
+#: src/Plug.vala:187
 msgid "Automatically delete old trashed files"
 msgstr "Radera automatiskt gamla filer från papperskorgen"
 
-#: src/Plug.vala:198
+#: src/Plug.vala:192
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Antal dagar som temporära filer och filer i papperskorgen ska behållas"
 
@@ -91,13 +97,13 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Autentisering krävs för att konfigurera brandväggen"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "Aktiverad"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
+#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "Inaktiverad"
 
@@ -197,36 +203,40 @@ msgstr "%d eller %d-%d"
 msgid "Add Rule"
 msgstr "Lägg till regel"
 
-#: src/Views/HouseKeepingPanel.vala:36
+#: src/Views/HouseKeepingPanel.vala:37
 #, fuzzy
 msgid "Automatically Delete:"
 msgstr "Radera automatiskt gamla filer från papperskorgen:"
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:41
 #, fuzzy
 #| msgid "Automatically delete old temporary files"
 msgid "Old temporary files"
 msgstr "Radera automatiskt gamla temporära filer"
 
-#: src/Views/HouseKeepingPanel.vala:50
+#: src/Views/HouseKeepingPanel.vala:51
 msgid "Downloaded files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:60
+#: src/Views/HouseKeepingPanel.vala:62
+msgid "Screenshot files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:69
+#: src/Views/HouseKeepingPanel.vala:81
 #, fuzzy
 msgid "Delete Old Files After:"
 msgstr ""
 "Antal dagar som temporära filer och filer i papperskorgen ska behållas:"
 
-#: src/Views/HouseKeepingPanel.vala:90
+#: src/Views/HouseKeepingPanel.vala:103
 msgid "Open Trash…"
 msgstr "Öppna papperskorgen…"
 
-#: src/Views/HouseKeepingPanel.vala:124
+#: src/Views/HouseKeepingPanel.vala:138
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -237,7 +247,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/Views/HouseKeepingPanel.vala:130
+#: src/Views/HouseKeepingPanel.vala:144
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] ""
@@ -299,15 +309,15 @@ msgstr "Rensa historik…"
 msgid "Your system"
 msgstr "Ditt system"
 
-#: src/Views/LocationPanel.vala:43
+#: src/Views/LocationPanel.vala:33
 msgid "Allow the apps below to determine your location"
 msgstr "Tillåt programmen nedan att bestämma din position"
 
-#: src/Views/LocationPanel.vala:53
+#: src/Views/LocationPanel.vala:43
 msgid "No Apps Are Using Location Services"
 msgstr "Inga program använder platstjänster"
 
-#: src/Views/LocationPanel.vala:54
+#: src/Views/LocationPanel.vala:44
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
@@ -315,11 +325,11 @@ msgstr ""
 "När program som använder platstjänster installeras kommer de automatiskt "
 "visas här."
 
-#: src/Views/LocationPanel.vala:71
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
 msgstr "Platstjänster är inaktiverat"
 
-#: src/Views/LocationPanel.vala:73
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -327,7 +337,7 @@ msgstr ""
 "När platstjänster är inaktiverat kommer positionsförfrågningar från program "
 "nekas automatiskt."
 
-#: src/Views/LocationPanel.vala:74
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
@@ -335,7 +345,7 @@ msgstr ""
 "Den ytterligare funktionalitet som positioneringstillgång ger dessa program "
 "kommer påverkas."
 
-#: src/Views/LocationPanel.vala:75
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -343,12 +353,12 @@ msgstr ""
 "Detta kommer inte förhindra program från att försöka bestämma din position "
 "med hjälp av din IP-adress."
 
-#: src/Views/LocationPanel.vala:187
+#: src/Views/LocationPanel.vala:205
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Tillåt %s att använda positioneringstjänster"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "Sök efter program"
 
@@ -386,31 +396,31 @@ msgstr "Till:"
 msgid "Clear Data"
 msgstr "Rensa data"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
 msgstr "Lägg till program…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
 msgstr "Lägg till mapp…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
 msgstr "Välj mapp att svartlista"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
 msgstr "Lägg till"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
 msgstr "Radera"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
 msgstr "Samla inte in data från följande:"
 

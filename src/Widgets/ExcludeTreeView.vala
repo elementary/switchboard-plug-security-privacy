@@ -20,7 +20,6 @@
 */
 
 public class ExcludeTreeView : Gtk.Box {
-    private SecurityPrivacy.Dialogs.AppChooser app_chooser;
     private SecurityPrivacy.ApplicationBlacklist app_blacklist;
     private SecurityPrivacy.PathBlacklist path_blacklist;
 
@@ -61,12 +60,7 @@ public class ExcludeTreeView : Gtk.Box {
             vexpand = true
         };
 
-        app_chooser = new SecurityPrivacy.Dialogs.AppChooser ();
-
-        app_chooser.app_chosen.connect ((info) => {
-            var file = File.new_for_path (info.filename);
-            app_blacklist.block (file.get_basename ());
-        });
+        var app_chooser = new SecurityPrivacy.Dialogs.AppChooser ();
 
         var add_app_button = new Gtk.MenuButton () {
             icon_name = "application-add-symbolic",
@@ -178,6 +172,11 @@ public class ExcludeTreeView : Gtk.Box {
                     NotColumns.ICON, new ThemedIcon ("folder"), NotColumns.PATH, folder,
                     NotColumns.IS_APP, false);
         }
+
+        app_chooser.app_chosen.connect ((info) => {
+            var file = File.new_for_path (info.filename);
+            app_blacklist.block (file.get_basename ());
+        });
 
         app_blacklist.application_added.connect ((name, ev) => {
             Gtk.TreeIter it;

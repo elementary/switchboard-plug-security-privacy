@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
 "PO-Revision-Date: 2018-02-13 09:49+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -20,72 +20,76 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:50
+#: src/Plug.vala:48
 msgid "Security & Privacy"
 msgstr "安全與隱私"
 
-#: src/Plug.vala:51
+#: src/Plug.vala:49
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "調整防火牆、螢幕鎖定、和活動資訊"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:82
 msgid "Some settings require administrator rights to be changed"
 msgstr "有些設定值需要管理員權利才能修改"
 
-#: src/Plug.vala:136
+#: src/Plug.vala:129
 msgid "Privacy"
 msgstr "隱私"
 
-#: src/Plug.vala:137 src/Plug.vala:180 src/Plug.vala:181 src/Plug.vala:182
+#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
 #: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
 msgid "Locking"
 msgstr "鎖定"
 
-#: src/Plug.vala:138 src/Plug.vala:183 src/Views/FirewallPanel.vala:48
+#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
 #: src/Widgets/ServiceList.vala:33
 msgid "Firewall"
 msgstr "防火牆"
 
-#: src/Plug.vala:139 src/Plug.vala:184 src/Plug.vala:187 src/Plug.vala:192
-#: src/Plug.vala:197 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
+#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
 #: src/Widgets/ServiceList.vala:37
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:143 src/Plug.vala:201 src/Views/LocationPanel.vala:45
-#: src/Widgets/ServiceList.vala:62
+#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
+#: src/Widgets/ServiceList.vala:61
 msgid "Location Services"
 msgstr "位置服務"
 
-#: src/Plug.vala:178 src/Plug.vala:179 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
 #: src/Widgets/ServiceList.vala:31
 msgid "History"
 msgstr "歷史"
 
-#: src/Plug.vala:179
+#: src/Plug.vala:168
 #, fuzzy
 msgid "Clear History"
 msgstr "清除歷史…"
 
-#: src/Plug.vala:181
+#: src/Plug.vala:170
 #, fuzzy
 msgid "Lock on sleep"
 msgstr "睡眠時鎖定："
 
-#: src/Plug.vala:182
+#: src/Plug.vala:171
 #, fuzzy
 msgid "Lock after sceen turns off"
 msgstr "螢幕關閉時鎖定："
 
-#: src/Plug.vala:188
+#: src/Plug.vala:177
 msgid "Automatically delete old temporary files"
 msgstr ""
 
-#: src/Plug.vala:193
+#: src/Plug.vala:182
+msgid "Automatically delete old screenshot files"
+msgstr ""
+
+#: src/Plug.vala:187
 msgid "Automatically delete old trashed files"
 msgstr ""
 
-#: src/Plug.vala:198
+#: src/Plug.vala:192
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
@@ -94,13 +98,13 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr "若要執行防火牆組態設定需要先核對身份"
 
 #: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:120 src/Views/LocationPanel.vala:112
+#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
 #: src/Widgets/ServiceItem.vala:33
 msgid "Enabled"
 msgstr "已啟用"
 
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:124
-#: src/Views/LocationPanel.vala:117 src/Widgets/ServiceItem.vala:37
+#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
+#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
 msgid "Disabled"
 msgstr "已停用"
 
@@ -200,31 +204,35 @@ msgstr "%d 或 %d-%d"
 msgid "Add Rule"
 msgstr "加入規則"
 
-#: src/Views/HouseKeepingPanel.vala:36
+#: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:40
+#: src/Views/HouseKeepingPanel.vala:41
 msgid "Old temporary files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:50
+#: src/Views/HouseKeepingPanel.vala:51
 msgid "Downloaded files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:60
+#: src/Views/HouseKeepingPanel.vala:62
+msgid "Screenshot files"
+msgstr ""
+
+#: src/Views/HouseKeepingPanel.vala:72
 msgid "Trashed files"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:69
+#: src/Views/HouseKeepingPanel.vala:81
 msgid "Delete Old Files After:"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:90
+#: src/Views/HouseKeepingPanel.vala:103
 msgid "Open Trash…"
 msgstr ""
 
-#: src/Views/HouseKeepingPanel.vala:124
+#: src/Views/HouseKeepingPanel.vala:138
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -234,7 +242,7 @@ msgid_plural ""
 "protect your privacy."
 msgstr[0] ""
 
-#: src/Views/HouseKeepingPanel.vala:130
+#: src/Views/HouseKeepingPanel.vala:144
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] ""
@@ -289,49 +297,49 @@ msgstr "清除歷史…"
 msgid "Your system"
 msgstr "您的系統"
 
-#: src/Views/LocationPanel.vala:43
+#: src/Views/LocationPanel.vala:33
 msgid "Allow the apps below to determine your location"
 msgstr "允許下列程式判定您的位置"
 
-#: src/Views/LocationPanel.vala:53
+#: src/Views/LocationPanel.vala:43
 #, fuzzy
 msgid "No Apps Are Using Location Services"
 msgstr "位置服務"
 
-#: src/Views/LocationPanel.vala:54
+#: src/Views/LocationPanel.vala:44
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
 msgstr ""
 
-#: src/Views/LocationPanel.vala:71
+#: src/Views/LocationPanel.vala:63
 msgid "Location Services Are Disabled"
 msgstr "位置服務已停用"
 
-#: src/Views/LocationPanel.vala:73
+#: src/Views/LocationPanel.vala:65
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
 msgstr "當位置服務停用時，會自動拒絕程式的位置請求。"
 
-#: src/Views/LocationPanel.vala:74
+#: src/Views/LocationPanel.vala:66
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
 msgstr "這些程式由位置存取提供的額外功能將受到影響。"
 
-#: src/Views/LocationPanel.vala:75
+#: src/Views/LocationPanel.vala:67
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
 msgstr "這無法防止程式試圖根據 IP 位址判斷您的可能位置。"
 
-#: src/Views/LocationPanel.vala:187
+#: src/Views/LocationPanel.vala:205
 #, fuzzy, c-format
 msgid "Allow %s to use location services"
 msgstr "位置服務"
 
-#: src/Widgets/AppChooser.vala:39
+#: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "搜尋應用程式"
 
@@ -367,31 +375,31 @@ msgstr "到："
 msgid "Clear Data"
 msgstr "清除資料"
 
-#: src/Widgets/ExcludeTreeView.vala:62
+#: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
 msgstr "加入應用程式…"
 
-#: src/Widgets/ExcludeTreeView.vala:77
+#: src/Widgets/ExcludeTreeView.vala:69
 msgid "Add Folder…"
 msgstr "加入資料夾…"
 
-#: src/Widgets/ExcludeTreeView.vala:80
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Select a folder to blacklist"
 msgstr "選取資料夾加入黑名單中"
 
-#: src/Widgets/ExcludeTreeView.vala:83
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Add"
 msgstr "加入"
 
-#: src/Widgets/ExcludeTreeView.vala:84
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Cancel"
 msgstr "取消"
 
-#: src/Widgets/ExcludeTreeView.vala:98
+#: src/Widgets/ExcludeTreeView.vala:90
 msgid "Delete"
 msgstr "刪除"
 
-#: src/Widgets/ExcludeTreeView.vala:142
+#: src/Widgets/ExcludeTreeView.vala:134
 msgid "Do not collect data from the following:"
 msgstr "不要從下列項目中收集資料："
 

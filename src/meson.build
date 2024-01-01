@@ -9,6 +9,7 @@ plug_files = files(
     'Plug.vala',
     'UFWHelpers.vala',
     'ZGUtilities.vala',
+    'DBus/PermissionStore.vala',
     'Views/FirewallPanel.vala',
     'Views/HouseKeepingPanel.vala',
     'Views/LockPanel.vala',
@@ -39,6 +40,7 @@ shared_module(
     meson.project_name(),
     pkgdatadir_declaration,
     plug_files,
+    plug_resources,
     dependencies: plug_dependencies,
     install: true,
     install_dir : pkgdatadir

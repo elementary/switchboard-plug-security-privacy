@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-13 17:02+0000\n"
-"PO-Revision-Date: 2021-07-21 14:31+0000\n"
-"Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
+"POT-Creation-Date: 2023-07-28 15:36+0000\n"
+"PO-Revision-Date: 2023-10-16 18:10+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/de/>\n"
 "Language: de\n"
@@ -17,50 +17,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/io.elementary.switchboard.security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 "Zum Ausführen von »Firewall-Einrichtung« ist eine Authentifizierung nötig"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:5
+#: data/security-privacy.metainfo.xml.in:10
 msgid "Security &amp; Privacy Settings"
 msgstr "Sicherheit- &amp; Datenschutzeinstellungen"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:6
+#: data/security-privacy.metainfo.xml.in:11
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Firewall, Bildschirmsperre und Aktivitätsinformationen einrichten"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:12
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:24
+#: data/security-privacy.metainfo.xml.in:39
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/security-privacy.metainfo.xml.in:46
+#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:83
+#: data/security-privacy.metainfo.xml.in:96
 msgid "New features:"
+msgstr "Neue Funktionen:"
+
+#: data/security-privacy.metainfo.xml.in:48
+msgid "Automatically clean up screenshots with Housekeeping"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:14
-msgid "Option to forbid new USB devices while locked"
-msgstr ""
-
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:16
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:28
-#, fuzzy
-#| msgid "Translation updates"
+#: data/security-privacy.metainfo.xml.in:50
+#: data/security-privacy.metainfo.xml.in:64
+#: data/security-privacy.metainfo.xml.in:74
+#: data/security-privacy.metainfo.xml.in:87
+#: data/security-privacy.metainfo.xml.in:100
 msgid "Minor updates:"
-msgstr "Übersetzungsaktualisierungen"
+msgstr "Kleinere Aktualisierungen:"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:18
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:30
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:37
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:44
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:51
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:59
+#: data/security-privacy.metainfo.xml.in:52
+msgid "Only list installed apps in the Location panel"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:53
+#: data/security-privacy.metainfo.xml.in:67
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:89
+#: data/security-privacy.metainfo.xml.in:102
 msgid "Translation updates"
 msgstr "Übersetzungsaktualisierungen"
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:26
+#: data/security-privacy.metainfo.xml.in:62
+msgid "Use the location portal"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:66
+msgid "New location icon"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:85
+msgid "Option to forbid new USB devices while locked"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:98
 msgid "Add Downloads option to Housekeeping"
 msgstr ""
 
-#: data/io.elementary.switchboard.security-privacy.appdata.xml.in:58
-msgid "Redesigned \"Housekeeping\" page"
-msgstr "\"Houskeeping\" Seite neu gestaltet"
+#~ msgid "Redesigned \"Housekeeping\" page"
+#~ msgstr "\"Houskeeping\" Seite neu gestaltet"
