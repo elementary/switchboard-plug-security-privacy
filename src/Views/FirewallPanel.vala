@@ -54,6 +54,9 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         load_disabled_rules ();
 
         status_switch.notify["active"].connect (() => {
+            if (loading == false) {
+                UFWHelpers.set_status (status_switch.active);
+            }
             update_status ();
         });
 
@@ -449,10 +452,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     }
 
     private void update_status () {
-        if (loading == false) {
-            view.sensitive = status_switch.active;
-            UFWHelpers.set_status (status_switch.active);
-        }
+        view.sensitive = status_switch.active;
 
         if (status_switch.active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
