@@ -66,99 +66,90 @@ namespace SecurityPrivacy {
 
         public override Gtk.Widget get_widget () {
             if (main_box == null) {
+                stack = new Gtk.Stack ();
+
+                var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
+
+                var infobar = new Gtk.InfoBar () {
+                    message_type = Gtk.MessageType.INFO
+                };
+                infobar.add_child (label);
+
+                var grid = new Gtk.Grid ();
+                grid.attach (infobar, 0, 0);
+                grid.attach (stack, 0, 1);
+
+                try {
+                    var permission = new Polkit.Permission.sync (
+                        "io.elementary.switchboard.security-privacy",
+                        new Polkit.UnixProcess (Posix.getpid ())
+                    );
+
+                    lock_button = new Gtk.LockButton (permission);
+
+                    infobar.revealed = false;
+                    infobar.add_child (lock_button);
+
+                    stack.notify["visible-child-name"].connect (() => {
+                        if (permission.allowed == false && stack.visible_child_name == "firewall") {
+                            infobar.revealed = true;
+                        } else {
+                            infobar.revealed = false;
+                        }
+                    });
+
+                    permission.notify["allowed"].connect (() => {
+                        if (permission.allowed == false && stack.visible_child_name == "firewall") {
+                            infobar.revealed = true;
+                        } else {
+                            infobar.revealed = false;
+                        }
+                    });
+                } catch (Error e) {
+                    critical (e.message);
+                }
+
+                tracking = new TrackPanel ();
+                var locking = new LockPanel ();
+                firewall = new FirewallPanel ();
+                housekeeping = new HouseKeepingPanel ();
+                location = new LocationPanel ();
+
+                stack.add_titled (tracking, HISTORY, _("Privacy"));
+                stack.add_titled (locking, LOCKING, _("Locking"));
+                stack.add_titled (firewall, FIREWALL, _("Firewall"));
+                stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
+                stack.add_titled (location, LOCATION, _("Location Services"));
+
+                service_list = new ServiceList ();
+
+                var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
+                    position = 200,
+                    start_child = service_list,
+                    shrink_start_child = false,
+                    resize_start_child = false,
+                    end_child = grid
+                };
+
                 main_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+                main_box.append (paned);
+
+                service_list.list_box.row_selected.connect ((row) => {
+                    var title = ((ServiceItem)row).title;
+                    stack.visible_child_name = title;
+                });
             }
 
             return main_box;
         }
 
         public override void shown () {
-            if (main_box.get_first_child != null) {
-                return;
-            }
-
-            stack = new Gtk.Stack ();
-
-            var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
-
-            var infobar = new Gtk.InfoBar () {
-                message_type = Gtk.MessageType.INFO
-            };
-            infobar.add_child (label);
-
-            var grid = new Gtk.Grid ();
-            grid.attach (infobar, 0, 0);
-            grid.attach (stack, 0, 1);
-
-            try {
-                var permission = new Polkit.Permission.sync (
-                    "io.elementary.switchboard.security-privacy",
-                    new Polkit.UnixProcess (Posix.getpid ())
-                );
-
-                lock_button = new Gtk.LockButton (permission);
-
-                infobar.revealed = false;
-                infobar.add_child (lock_button);
-
-                stack.notify["visible-child-name"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
-                        infobar.revealed = true;
-                    } else {
-                        infobar.revealed = false;
-                    }
-                });
-
-                permission.notify["allowed"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == "firewall") {
-                        infobar.revealed = true;
-                    } else {
-                        infobar.revealed = false;
-                    }
-                });
-            } catch (Error e) {
-                critical (e.message);
-            }
-
-            tracking = new TrackPanel ();
-            var locking = new LockPanel ();
-            firewall = new FirewallPanel ();
-            housekeeping = new HouseKeepingPanel ();
-            location = new LocationPanel ();
-
-            stack.add_titled (tracking, HISTORY, _("Privacy"));
-            stack.add_titled (locking, LOCKING, _("Locking"));
-            stack.add_titled (firewall, FIREWALL, _("Firewall"));
-            stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
-            stack.add_titled (location, LOCATION, _("Location Services"));
-
-            service_list = new ServiceList ();
-
-            var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
-                position = 200,
-                start_child = service_list,
-                shrink_start_child = false,
-                resize_start_child = false,
-                end_child = grid
-            };
-
-            main_box.append (paned);
-
-            service_list.list_box.row_selected.connect ((row) => {
-                var title = ((ServiceItem)row).title;
-                stack.visible_child_name = title;
-            });
         }
 
         public override void hidden () {
-
         }
 
         public override void search_callback (string location) {
-            if (main_box.get_first_child != null) {
-                shown ();
-            }
-
             stack.set_visible_child_name (location);
             service_list.select_service_name (location);
         }
