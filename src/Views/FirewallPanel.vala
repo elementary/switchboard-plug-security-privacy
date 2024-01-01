@@ -64,9 +64,9 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
         sensitive = false;
 
-        lock_button.get_permission ().notify["allowed"].connect (() => {
+        Plug.lock_button.get_permission ().notify["allowed"].connect (() => {
             loading = true;
-            sensitive = lock_button.get_permission ().allowed;
+            sensitive = Plug.lock_button.get_permission ().allowed;
             status_switch.active = UFWHelpers.get_status ();
             list_store.clear ();
             remove_button.sensitive = false;
