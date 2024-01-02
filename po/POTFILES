@@ -9,7 +9,7 @@ src/Views/TrackPanel.vala
 src/Views/LocationPanel.vala
 src/Widgets/AppChooser.vala
 src/Widgets/AppRow.vala
-src/Widgets/ClearUsagePopover.vala
+src/Widgets/ClearUsageDialog.vala
 src/Widgets/ExcludeTreeView.vala
 src/Widgets/IncludeTreeView.vala
 src/Widgets/ServiceItem.vala
