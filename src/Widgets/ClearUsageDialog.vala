@@ -29,7 +29,9 @@ public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
     construct {
         recent = new Gtk.RecentManager ();
 
-        past_hour_radio = new Gtk.CheckButton.with_label (_("The past hour"));
+        past_hour_radio = new Gtk.CheckButton.with_label (_("The past hour")) {
+            active = true
+        };
 
         past_day_radio = new Gtk.CheckButton.with_label (_("The past day")) {
             group = past_hour_radio

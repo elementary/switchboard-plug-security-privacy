@@ -43,6 +43,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
         var temp_files_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
         temp_files_grid.append (new Gtk.Image.from_icon_name ("folder") {
+            margin_end = 6,
             pixel_size = 24
         });
         temp_files_grid.append (new Gtk.Label (_("Old temporary files")));
@@ -53,8 +54,17 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
             margin_start = 12
         };
 
+        var download_files_box = new Gtk.Box (HORIZONTAL, 0);
+        download_files_box.append (new Gtk.Image.from_icon_name ("folder-download") {
+            margin_end = 6,
+            pixel_size = 24
+        });
+        download_files_box.append (new Gtk.Label (_("Downloaded files")));
+        download_files_box.set_parent (download_files_check);
+
         var screenshot_files_grid = new Gtk.Box (HORIZONTAL, 0);
         screenshot_files_grid.append (new Gtk.Image.from_icon_name ("folder-screenshots-icon") {
+            margin_end = 6,
             pixel_size = 24
         });
         screenshot_files_grid.append (new Gtk.Label (_("Screenshot files")));
@@ -73,6 +83,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
         var trash_files_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
         trash_files_grid.append (new Gtk.Image.from_icon_name ("user-trash-full") {
+            margin_end = 6,
             pixel_size = 24
         });
         trash_files_grid.append (new Gtk.Label (_("Trashed files")));
