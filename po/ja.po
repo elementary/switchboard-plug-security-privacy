@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-03 22:11+0000\n"
-"PO-Revision-Date: 2023-06-10 08:07+0000\n"
+"PO-Revision-Date: 2024-01-04 01:39+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 
 #: src/Plug.vala:24
@@ -60,7 +60,7 @@ msgstr "履歴"
 
 #: src/Plug.vala:113 src/Widgets/ClearUsageDialog.vala:58
 msgid "Clear History"
-msgstr "履歴を削除"
+msgstr "履歴を消去"
 
 #: src/Plug.vala:115
 msgid "Lock on sleep"
@@ -294,7 +294,7 @@ msgstr "履歴は無効になっています"
 
 #: src/Views/TrackPanel.vala:55
 msgid "Clear History…"
-msgstr "履歴を削除…"
+msgstr "履歴を消去…"
 
 #: src/Views/TrackPanel.vala:97
 msgid "Your system"
@@ -352,16 +352,14 @@ msgid "Search Application"
 msgstr "アプリケーションを検索"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
-msgstr "システム収集ファイルとアプリケーションの使用状況データを削除:"
+msgstr "システム収集ファイルとアプリ利用履歴を消去"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
-msgstr ""
+msgstr "選択した期間のデータは完全に削除され、復元できません"
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
