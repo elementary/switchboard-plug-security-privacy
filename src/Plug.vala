@@ -42,7 +42,7 @@ namespace SecurityPrivacy {
             GLib.Intl.bind_textdomain_codeset (Build.GETTEXT_PACKAGE, "UTF-8");
 
             Object (category: Category.PERSONAL,
-                    code_name: "io.elementary.switchboard.security-privacy",
+                    code_name: "io.elementary.settings.security-privacy",
                     display_name: _("Security & Privacy"),
                     description: _("Configure firewall, screen lock, and activity information"),
                     icon: "preferences-system-privacy",
@@ -79,7 +79,7 @@ namespace SecurityPrivacy {
 
                 try {
                     var permission = new Polkit.Permission.sync (
-                        "io.elementary.switchboard.security-privacy",
+                        "io.elementary.settings.security-privacy",
                         new Polkit.UnixProcess (Posix.getpid ())
                     );
 

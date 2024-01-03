@@ -49,7 +49,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     }
 
     construct {
-        settings = new Settings ("io.elementary.switchboard.security-privacy");
+        settings = new Settings ("io.elementary.settings.security-privacy");
         disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
         load_disabled_rules ();
 

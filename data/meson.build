@@ -1,12 +1,12 @@
 gettext_declaration = configure_file(
     configuration: configuration_data,
-    input: 'io.elementary.switchboard.security-privacy.policy.in.in',
+    input: 'security-privacy.policy.in.in',
     output: '@BASENAME@'
 )
 
 i18n.merge_file(
     input: gettext_declaration,
-    output: '@BASENAME@',
+    output: gettext_name + '.policy',
     po_dir: meson.project_source_root() / 'po' / 'extra',
     install: true,
     install_dir: polkit_actiondir
@@ -14,7 +14,7 @@ i18n.merge_file(
 
 i18n.merge_file(
     input: 'security-privacy.metainfo.xml.in',
-    output: 'io.elementary.switchboard.security-privacy.metainfo.xml',
+    output: gettext_name + '.metainfo.xml',
     po_dir: meson.project_source_root() / 'po' / 'extra',
     type: 'xml',
     install: true,
@@ -28,6 +28,7 @@ install_data(
 )
 
 install_data(
-    'io.elementary.switchboard.security-privacy.gschema.xml',
+    'security-privacy.gschema.xml',
+    rename: gettext_name + '.gschema.xml',
     install_dir: datadir / 'glib-2.0' / 'schemas'
 )
