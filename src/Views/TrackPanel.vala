@@ -23,8 +23,6 @@
 public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     public static SecurityPrivacy.Blacklist blacklist { get; private set; }
 
-    private Widgets.ClearUsagePopover remove_popover;
-
     public TrackPanel () {
         Object (
             activatable: true,
@@ -54,19 +52,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
 
         status_switch.active = true;
 
-        var clear_data = new Gtk.ToggleButton.with_label (_("Clear History…"));
-        clear_data.notify["active"].connect (() => {
-            if (clear_data.active == false) {
-                remove_popover.hide ();
-            } else {
-                remove_popover.show_all ();
-            }
-        });
-
-        remove_popover = new Widgets.ClearUsagePopover (clear_data);
-        remove_popover.closed.connect (() => {
-            clear_data.active = false;
-        });
+        var clear_button = new Gtk.Button.with_label (_("Clear History…"));
 
         var include_treeview = new IncludeTreeView ();
         var exclude_treeview = new ExcludeTreeView ();
@@ -75,7 +61,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         content_area.attach (include_treeview, 0, 1, 1, 1);
         content_area.attach (exclude_treeview, 1, 1, 1, 1);
 
-        action_area.add (clear_data);
+        action_area.add (clear_button);
 
         status_switch.notify["active"].connect (() => {
             bool privacy_mode = !status_switch.active;
@@ -97,6 +83,14 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         status_switch.active = !blacklist.get_incognito ();
 
         update_status_switch ();
+
+        clear_button.clicked.connect (() => {
+            var clear_dialog = new Widgets.ClearUsageDialog () {
+                modal = true,
+                transient_for = (Gtk.Window) get_toplevel ()
+            };
+            clear_dialog.present ();
+        });
     }
 
     private static string get_operating_system_name () {
