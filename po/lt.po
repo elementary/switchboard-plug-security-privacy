@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 18:12+0000\n"
+"POT-Creation-Date: 2024-01-03 18:23+0000\n"
 "PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -55,11 +55,11 @@ msgstr "Namų ūkis"
 msgid "Location Services"
 msgstr "Buvimo vietos tarnybos"
 
-#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Istorija"
 
-#: src/Plug.vala:160
+#: src/Plug.vala:160 src/Widgets/ClearUsageDialog.vala:58
 msgid "Clear History"
 msgstr "Išvalyti istoriją"
 
@@ -134,7 +134,7 @@ msgid "%s Port %s"
 msgstr "%s prievadas %s"
 
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:459
-#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:109
+#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:103
 #: src/Views/LocationPanel.vala:123
 msgid "Enabled"
 msgstr "Įjungta"
@@ -197,7 +197,7 @@ msgid "Add Rule"
 msgstr "Pridėti taisyklę"
 
 #: src/Views/FirewallPanel.vala:463 src/Views/HouseKeepingPanel.vala:162
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:128
+#: src/Views/TrackPanel.vala:107 src/Views/LocationPanel.vala:128
 msgid "Disabled"
 msgstr "Išjungta"
 
@@ -282,7 +282,7 @@ msgstr "Užrakinti po to, kai ekranas išsijungia:"
 msgid "Forbid new USB devices when locked:"
 msgstr ""
 
-#: src/Views/TrackPanel.vala:31
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -295,16 +295,16 @@ msgstr ""
 "naudojimo duomenis. Nepriklausomai nuo šio nustatymo, naudojimo duomenys "
 "niekada nėra persiunčiami iš šio įrenginio ar trečiosioms šalims."
 
-#: src/Views/TrackPanel.vala:43
+#: src/Views/TrackPanel.vala:41
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s nesaugos jokių tolimesnių naudojimo duomenų."
 
-#: src/Views/TrackPanel.vala:44
+#: src/Views/TrackPanel.vala:42
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Bus paveiktas šių duomenų teikiamas papildomas funkcionalumas."
 
-#: src/Views/TrackPanel.vala:45
+#: src/Views/TrackPanel.vala:43
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -312,15 +312,15 @@ msgstr ""
 "Tai nesutrukdys programoms pačioms įrašinėti savo naudojimo duomenų, kaip "
 "pavyzdžiui, naršyklės naršymo žurnalą."
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:46
 msgid "History Is Disabled"
 msgstr "Istorija yra išjungta"
 
-#: src/Views/TrackPanel.vala:57
+#: src/Views/TrackPanel.vala:55
 msgid "Clear History…"
 msgstr "Išvalyti istoriją…"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "Jūsų sistema"
 
@@ -377,37 +377,41 @@ msgstr "Leisti %s naudoti buvimo vietos tarnybas"
 msgid "Search Application"
 msgstr "Ieškoti programos"
 
-#: src/Widgets/ClearUsagePopover.vala:41
-msgid "Remove system-collected file and application usage data from:"
+#: src/Widgets/ClearUsageDialog.vala:24
+#, fuzzy
+#| msgid "Remove system-collected file and application usage data from:"
+msgid "Clear system-collected file and app usage history"
 msgstr "Šalinti sistemos surinktus failų ir programų naudojimo duomenis nuo:"
 
-#: src/Widgets/ClearUsagePopover.vala:44
+#: src/Widgets/ClearUsageDialog.vala:25
+msgid ""
+"The data from the selected time frame will be permanently deleted and cannot "
+"be restored"
+msgstr ""
+
+#: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
 msgstr "Praėjusios valandos"
 
-#: src/Widgets/ClearUsagePopover.vala:45
+#: src/Widgets/ClearUsageDialog.vala:33
 msgid "The past day"
 msgstr "Praėjusios dienos"
 
-#: src/Widgets/ClearUsagePopover.vala:46
+#: src/Widgets/ClearUsageDialog.vala:34
 msgid "The past week"
 msgstr "Praėjusios savaitės"
 
-#: src/Widgets/ClearUsagePopover.vala:47
+#: src/Widgets/ClearUsageDialog.vala:35
 msgid "From:"
 msgstr "Nuo:"
 
-#: src/Widgets/ClearUsagePopover.vala:48
+#: src/Widgets/ClearUsageDialog.vala:36
 msgid "All time"
 msgstr "Viso laiko"
 
-#: src/Widgets/ClearUsagePopover.vala:51
+#: src/Widgets/ClearUsageDialog.vala:39
 msgid "To:"
 msgstr "Iki:"
-
-#: src/Widgets/ClearUsagePopover.vala:54
-msgid "Clear Data"
-msgstr "Išvalyti duomenis"
 
 #: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
@@ -468,6 +472,9 @@ msgstr "Skaičiuoklės"
 #: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Vaizdo įrašai"
+
+#~ msgid "Clear Data"
+#~ msgstr "Išvalyti duomenis"
 
 #~ msgid ""
 #~ "Old files can be automatically deleted after %u days to save space and "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 18:12+0000\n"
+"POT-Creation-Date: 2024-01-03 18:23+0000\n"
 "PO-Revision-Date: 2023-06-12 10:07+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -56,11 +56,11 @@ msgstr "Reinigungsdienst"
 msgid "Location Services"
 msgstr "Ortsdienste"
 
-#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Verlauf"
 
-#: src/Plug.vala:160
+#: src/Plug.vala:160 src/Widgets/ClearUsageDialog.vala:58
 msgid "Clear History"
 msgstr "Verlauf löschen"
 
@@ -134,7 +134,7 @@ msgid "%s Port %s"
 msgstr "%s Port %s"
 
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:459
-#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:109
+#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:103
 #: src/Views/LocationPanel.vala:123
 msgid "Enabled"
 msgstr "Aktiviert"
@@ -197,7 +197,7 @@ msgid "Add Rule"
 msgstr "Regel hinzufügen"
 
 #: src/Views/FirewallPanel.vala:463 src/Views/HouseKeepingPanel.vala:162
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:128
+#: src/Views/TrackPanel.vala:107 src/Views/LocationPanel.vala:128
 msgid "Disabled"
 msgstr "Deaktiviert"
 
@@ -266,7 +266,7 @@ msgstr "Nach dem Ausschalten des Bildschirms sperren:"
 msgid "Forbid new USB devices when locked:"
 msgstr "Weitere USB-Geräte blockieren, wenn gesperrt:"
 
-#: src/Views/TrackPanel.vala:31
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -280,18 +280,18 @@ msgstr ""
 "nirgends anders als auf diesem Gerät gespeichert und niemals an Dritte "
 "weitergegeben."
 
-#: src/Views/TrackPanel.vala:43
+#: src/Views/TrackPanel.vala:41
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s speichert keine weiteren Nutzungsdaten."
 
-#: src/Views/TrackPanel.vala:44
+#: src/Views/TrackPanel.vala:42
 msgid "The additional functionality that this data provides will be affected."
 msgstr ""
 "Die zusätzlichen Funktionen, die aus diesen Daten erwachsen, werden "
 "beeinträchtigt."
 
-#: src/Views/TrackPanel.vala:45
+#: src/Views/TrackPanel.vala:43
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -299,15 +299,15 @@ msgstr ""
 "Dies kann jedoch nicht verhindern, dass Anwendungen ihre eigenen "
 "Nutzungsdaten, wie z.B. den Browser-Verlauf, erfassen."
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:46
 msgid "History Is Disabled"
 msgstr "Verlaufsspeicherung ist deaktiviert"
 
-#: src/Views/TrackPanel.vala:57
+#: src/Views/TrackPanel.vala:55
 msgid "Clear History…"
 msgstr "Verlauf löschen …"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "Ihr System"
 
@@ -363,38 +363,42 @@ msgstr "%s erlauben, Ortungsdienste zu nutzen"
 msgid "Search Application"
 msgstr "Anwendung suchen"
 
-#: src/Widgets/ClearUsagePopover.vala:41
-msgid "Remove system-collected file and application usage data from:"
+#: src/Widgets/ClearUsageDialog.vala:24
+#, fuzzy
+#| msgid "Remove system-collected file and application usage data from:"
+msgid "Clear system-collected file and app usage history"
 msgstr ""
 "Vom System gesammelte Daten zur Datei- und Anwendungsbenutzung löschen von:"
 
-#: src/Widgets/ClearUsagePopover.vala:44
+#: src/Widgets/ClearUsageDialog.vala:25
+msgid ""
+"The data from the selected time frame will be permanently deleted and cannot "
+"be restored"
+msgstr ""
+
+#: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
 msgstr "Letzte Stunde"
 
-#: src/Widgets/ClearUsagePopover.vala:45
+#: src/Widgets/ClearUsageDialog.vala:33
 msgid "The past day"
 msgstr "Letzter Tag"
 
-#: src/Widgets/ClearUsagePopover.vala:46
+#: src/Widgets/ClearUsageDialog.vala:34
 msgid "The past week"
 msgstr "Letzte Woche"
 
-#: src/Widgets/ClearUsagePopover.vala:47
+#: src/Widgets/ClearUsageDialog.vala:35
 msgid "From:"
 msgstr "Von:"
 
-#: src/Widgets/ClearUsagePopover.vala:48
+#: src/Widgets/ClearUsageDialog.vala:36
 msgid "All time"
 msgstr "Immer"
 
-#: src/Widgets/ClearUsagePopover.vala:51
+#: src/Widgets/ClearUsageDialog.vala:39
 msgid "To:"
 msgstr "Bis:"
-
-#: src/Widgets/ClearUsagePopover.vala:54
-msgid "Clear Data"
-msgstr "Daten löschen"
 
 #: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
@@ -455,6 +459,9 @@ msgstr "Tabellendokumente"
 #: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Videos"
+
+#~ msgid "Clear Data"
+#~ msgstr "Daten löschen"
 
 #~ msgid "Automatically delete old temporary files:"
 #~ msgstr "Ältere temporäre Dateien automatisch löschen:"

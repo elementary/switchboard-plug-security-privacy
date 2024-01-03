@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 18:12+0000\n"
+"POT-Creation-Date: 2024-01-03 18:23+0000\n"
 "PO-Revision-Date: 2023-10-27 11:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -55,11 +55,11 @@ msgstr "Upratovanie"
 msgid "Location Services"
 msgstr "Služby určovania polohy"
 
-#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "História"
 
-#: src/Plug.vala:160
+#: src/Plug.vala:160 src/Widgets/ClearUsageDialog.vala:58
 msgid "Clear History"
 msgstr "Vymazať históriu"
 
@@ -131,7 +131,7 @@ msgid "%s Port %s"
 msgstr "%s port %s"
 
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:459
-#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:109
+#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:103
 #: src/Views/LocationPanel.vala:123
 msgid "Enabled"
 msgstr "Zapnuté"
@@ -194,7 +194,7 @@ msgid "Add Rule"
 msgstr "Pridať pravidlo"
 
 #: src/Views/FirewallPanel.vala:463 src/Views/HouseKeepingPanel.vala:162
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:128
+#: src/Views/TrackPanel.vala:107 src/Views/LocationPanel.vala:128
 msgid "Disabled"
 msgstr "Vypnuté"
 
@@ -267,7 +267,7 @@ msgstr "Uzamknúť po vypnutí obrazovky:"
 msgid "Forbid new USB devices when locked:"
 msgstr "Zabrániť pripojeniu nových USB zariadení, keď je zariadenie zamknuté:"
 
-#: src/Views/TrackPanel.vala:31
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -280,17 +280,17 @@ msgstr ""
 "miestne vyhľadávanie. Bez ohľadu na toto nastavenie sa údaje o používaní "
 "nikdy neprenášajú mimo toto zariadenie, ani nepredávajú tretím stranám."
 
-#: src/Views/TrackPanel.vala:43
+#: src/Views/TrackPanel.vala:41
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s už naďalej nebude zbierať údaje o používaní."
 
-#: src/Views/TrackPanel.vala:44
+#: src/Views/TrackPanel.vala:42
 msgid "The additional functionality that this data provides will be affected."
 msgstr ""
 "Doplnkové funkcie, ktoré tieto údaje umožňujú, budú nastavením ovplyvnené."
 
-#: src/Views/TrackPanel.vala:45
+#: src/Views/TrackPanel.vala:43
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -298,15 +298,15 @@ msgstr ""
 "Toto nemusí zabrániť aplikáciám v uchovávaní svojich vlastných údajov, ako "
 "napríklad históriu prehliadača."
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:46
 msgid "History Is Disabled"
 msgstr "História je vypnutá"
 
-#: src/Views/TrackPanel.vala:57
+#: src/Views/TrackPanel.vala:55
 msgid "Clear History…"
 msgstr "Vymazať históriu…"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "Váš systém"
 
@@ -362,37 +362,41 @@ msgstr "Povoliť %s používať služby určovania polohy"
 msgid "Search Application"
 msgstr "Vyhľadať aplikáciu"
 
-#: src/Widgets/ClearUsagePopover.vala:41
-msgid "Remove system-collected file and application usage data from:"
+#: src/Widgets/ClearUsageDialog.vala:24
+#, fuzzy
+#| msgid "Remove system-collected file and application usage data from:"
+msgid "Clear system-collected file and app usage history"
 msgstr "Odstrániť systémom nazbierané súbory a údaje o používaní aplikácií z:"
 
-#: src/Widgets/ClearUsagePopover.vala:44
+#: src/Widgets/ClearUsageDialog.vala:25
+msgid ""
+"The data from the selected time frame will be permanently deleted and cannot "
+"be restored"
+msgstr ""
+
+#: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
 msgstr "Za poslednú hodinu"
 
-#: src/Widgets/ClearUsagePopover.vala:45
+#: src/Widgets/ClearUsageDialog.vala:33
 msgid "The past day"
 msgstr "Za posledný deň"
 
-#: src/Widgets/ClearUsagePopover.vala:46
+#: src/Widgets/ClearUsageDialog.vala:34
 msgid "The past week"
 msgstr "Za posledný týždeň"
 
-#: src/Widgets/ClearUsagePopover.vala:47
+#: src/Widgets/ClearUsageDialog.vala:35
 msgid "From:"
 msgstr "Od:"
 
-#: src/Widgets/ClearUsagePopover.vala:48
+#: src/Widgets/ClearUsageDialog.vala:36
 msgid "All time"
 msgstr "Za celý čas"
 
-#: src/Widgets/ClearUsagePopover.vala:51
+#: src/Widgets/ClearUsageDialog.vala:39
 msgid "To:"
 msgstr "Do:"
-
-#: src/Widgets/ClearUsagePopover.vala:54
-msgid "Clear Data"
-msgstr "Vymazať údaje"
 
 #: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
@@ -453,6 +457,9 @@ msgstr "Tabuľky"
 #: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Videá"
+
+#~ msgid "Clear Data"
+#~ msgstr "Vymazať údaje"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "
