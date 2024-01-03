@@ -5,8 +5,7 @@
  */
 
 public class SecurityPrivacy.Plug : Switchboard.Plug {
-    public static Gtk.LockButton lock_button;
-
+    private Polkit.Permission permission;
     private Gtk.Paned paned;
     private Gtk.Stack stack;
 
@@ -43,17 +42,29 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (paned == null) {
+            try {
+                permission = new Polkit.Permission.sync (
+                    "io.elementary.switchboard.security-privacy",
+                    new Polkit.UnixProcess (Posix.getpid ())
+                );
+            } catch (Error e) {
+                critical (e.message);
+            }
+
             var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
+
+            var lock_button = new Gtk.LockButton (permission);
 
             var infobar = new Gtk.InfoBar () {
                 message_type = INFO,
                 revealed = false
             };
             infobar.get_content_area ().add (label);
+            infobar.get_action_area ().add (lock_button);
 
             var tracking = new TrackPanel ();
             var locking = new LockPanel ();
-            var firewall = new FirewallPanel ();
+            var firewall = new FirewallPanel (permission);
             var housekeeping = new HouseKeepingPanel ();
             var location = new LocationPanel ();
 
@@ -75,34 +86,13 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
             paned.add2 (box);
             paned.show_all ();
 
-            try {
-                var permission = new Polkit.Permission.sync (
-                    "io.elementary.switchboard.security-privacy",
-                    new Polkit.UnixProcess (Posix.getpid ())
-                );
+            stack.notify["visible-child"].connect (() => {
+                infobar.revealed = !permission.allowed && stack.visible_child == firewall;
+            });
 
-                lock_button = new Gtk.LockButton (permission);
-
-                infobar.get_action_area ().add (lock_button);
-
-                stack.notify["visible-child-name"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == FIREWALL) {
-                        infobar.revealed = true;
-                    } else {
-                        infobar.revealed = false;
-                    }
-                });
-
-                permission.notify["allowed"].connect (() => {
-                    if (permission.allowed == false && stack.visible_child_name == FIREWALL) {
-                        infobar.revealed = true;
-                    } else {
-                        infobar.revealed = false;
-                    }
-                });
-            } catch (Error e) {
-                critical (e.message);
-            }
+            permission.notify["allowed"].connect (() => {
+                infobar.revealed = !permission.allowed && stack.visible_child == firewall;
+            });
         }
 
         return paned;
