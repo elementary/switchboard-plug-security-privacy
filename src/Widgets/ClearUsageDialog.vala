@@ -1,25 +1,10 @@
-/*-
- * Copyright (c) 2014-2017 elementary LLC. (http://launchpad.net/switchboard-plug-security-privacy)
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public
- * License along with this program; if not, write to the
- * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
- * Boston, MA 02110-1301 USA
- *
+/*
+ * SPDX-License-Identifier: LGPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2014-2023 elementary, Inc. (https://elementary.io)
  * Authored by: Corentin Noël <corentin@elementaryos.org>
  */
 
-public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
+public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
     private Granite.Widgets.DatePicker to_datepicker;
     private Granite.Widgets.DatePicker from_datepicker;
     private Gtk.RadioButton all_time_radio;
@@ -31,15 +16,18 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
 
     private List<Gtk.RecentInfo> items;
 
-    public ClearUsagePopover (Gtk.Widget? relative_to) {
-        Object (relative_to: relative_to);
+    public ClearUsageDialog () {
+        Object (
+            buttons: Gtk.ButtonsType.CANCEL,
+            image_icon: new ThemedIcon ("document-open-recent"),
+            badge_icon: new ThemedIcon ("edit-delete"),
+            primary_text: _("Clear system-collected file and app usage history"),
+            secondary_text: _("The data from the selected time frame will be permanently deleted and cannot be restored")
+        );
     }
 
     construct {
         recent = new Gtk.RecentManager ();
-
-        var clear_label = new Gtk.Label (_("Remove system-collected file and application usage data from:"));
-        clear_label.halign = Gtk.Align.START;
 
         past_hour_radio = new Gtk.RadioButton.with_label (null, _("The past hour"));
         past_day_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("The past day"));
@@ -51,29 +39,31 @@ public class SecurityPrivacy.Widgets.ClearUsagePopover : Gtk.Popover {
         var to_label = new Gtk.Label (_("To:"));
         to_datepicker = new Granite.Widgets.DatePicker ();
 
-        var clear_button = new Gtk.Button.with_label (_("Clear Data"));
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 6
+        };
+        grid.attach (past_hour_radio, 0, 1, 4);
+        grid.attach (past_day_radio, 0, 2, 4);
+        grid.attach (past_week_radio, 0, 3, 4);
+        grid.attach (from_radio, 0, 4);
+        grid.attach (from_datepicker, 1, 4);
+        grid.attach (to_label, 2, 4);
+        grid.attach (to_datepicker, 3, 4);
+        grid.attach (all_time_radio, 0, 5, 4);
+        grid.show_all ();
+
+        custom_bin.add (grid);
+
+        var clear_button = add_button (_("Clear History"), Gtk.ResponseType.APPLY);
         clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-        clear_button.halign = Gtk.Align.END;
 
-        var grid = new Gtk.Grid ();
-        grid.margin = 12;
-        grid.column_spacing = 12;
-        grid.row_spacing = 6;
-        grid.attach (clear_label, 0, 0, 4, 1);
-        grid.attach (past_hour_radio, 0, 1, 4, 1);
-        grid.attach (past_day_radio, 0, 2, 4, 1);
-        grid.attach (past_week_radio, 0, 3, 4, 1);
-        grid.attach (from_radio, 0, 4, 1, 1);
-        grid.attach (from_datepicker, 1, 4, 1, 1);
-        grid.attach (to_label, 2, 4, 1, 1);
-        grid.attach (to_datepicker, 3, 4, 1, 1);
-        grid.attach (all_time_radio, 0, 5, 4, 1);
-        grid.attach (clear_button, 0, 6, 4, 1);
+        response.connect ((response) => {
+            if (response == Gtk.ResponseType.APPLY) {
+                on_clear_data ();
+            }
 
-        add (grid);
-
-        clear_button.clicked.connect (() => {
-            on_clear_data ();
+            close ();
         });
     }
 
