@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 15:36+0000\n"
+"POT-Creation-Date: 2024-01-03 18:12+0000\n"
 "PO-Revision-Date: 2023-06-13 12:07+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -20,73 +20,69 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-03-05 06:24+0000\n"
 
-#: src/Plug.vala:48
+#: src/Plug.vala:46
 msgid "Security & Privacy"
 msgstr "Turvallisuus ja yksityisyys"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:47
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Määritä palomuuri, näytönlukitus ja toiminteiden tiedot"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:80
 msgid "Some settings require administrator rights to be changed"
 msgstr "Jotkin asetukset vaativat muutoksia varten ylläpitäjän oikeuksia"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:127
 msgid "Privacy"
 msgstr "Yksityisyys"
 
-#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
-#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:128 src/Plug.vala:161 src/Plug.vala:162 src/Plug.vala:163
+#: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Lukitus"
 
-#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
-#: src/Widgets/ServiceList.vala:33
+#: src/Plug.vala:129 src/Plug.vala:164 src/Views/FirewallPanel.vala:48
 msgid "Firewall"
 msgstr "Palomuuri"
 
-#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
-#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
-#: src/Widgets/ServiceList.vala:37
+#: src/Plug.vala:130 src/Plug.vala:165 src/Plug.vala:168 src/Plug.vala:173
+#: src/Plug.vala:178 src/Plug.vala:183 src/Views/HouseKeepingPanel.vala:32
 msgid "Housekeeping"
 msgstr "Puhtaanapito"
 
-#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
-#: src/Widgets/ServiceList.vala:61
+#: src/Plug.vala:131 src/Plug.vala:186 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Sijaintipalvelut"
 
-#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
-#: src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:33
 msgid "History"
 msgstr "Historia"
 
-#: src/Plug.vala:168
+#: src/Plug.vala:160
 msgid "Clear History"
 msgstr "Tyhjennä historia"
 
-#: src/Plug.vala:170
+#: src/Plug.vala:162
 msgid "Lock on sleep"
 msgstr "Lukitse lepotilassa"
 
-#: src/Plug.vala:171
+#: src/Plug.vala:163
 msgid "Lock after sceen turns off"
 msgstr "Lukitse näytön sammumisen jälkeen"
 
-#: src/Plug.vala:177
+#: src/Plug.vala:169
 msgid "Automatically delete old temporary files"
 msgstr "Poista automaattisesti vanhat väliaikaistiedostot"
 
-#: src/Plug.vala:182
+#: src/Plug.vala:174
 msgid "Automatically delete old screenshot files"
 msgstr "Poista automaattisesti vanhat kuvakaappaustiedostot"
 
-#: src/Plug.vala:187
+#: src/Plug.vala:179
 msgid "Automatically delete old trashed files"
 msgstr "Poista automaattisesti vanhat roskakorissa olevat tiedostot"
 
-#: src/Plug.vala:192
+#: src/Plug.vala:184
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 "Kuinka monta päivää väliaikaistiedostoja ja roskakorin tiedostoja säilytetään"
@@ -95,112 +91,112 @@ msgstr ""
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Palomuurin asetusten suorittaminen vaatii tunnistautumisen"
 
-#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
-#: src/Widgets/ServiceItem.vala:33
-msgid "Enabled"
-msgstr "Käytössä"
-
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
-#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
-msgid "Disabled"
-msgstr "Pois käytöstä"
-
-#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
-#: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
+#: src/Views/FirewallPanel.vala:198 src/Views/FirewallPanel.vala:208
+#: src/Views/FirewallPanel.vala:216 src/Views/FirewallPanel.vala:222
 msgid "Unknown"
 msgstr "Tuntematon"
 
-#: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
+#: src/Views/FirewallPanel.vala:200 src/Views/FirewallPanel.vala:322
 msgid "Allow"
 msgstr "Salli"
 
-#: src/Views/FirewallPanel.vala:217 src/Views/FirewallPanel.vala:338
+#: src/Views/FirewallPanel.vala:202 src/Views/FirewallPanel.vala:323
 msgid "Deny"
 msgstr "Estä"
 
-#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:204 src/Views/FirewallPanel.vala:324
 msgid "Reject"
 msgstr "Hylkää"
 
-#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:340
+#: src/Views/FirewallPanel.vala:206 src/Views/FirewallPanel.vala:325
 msgid "Limit"
 msgstr "Rajoita"
 
-#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:361
+#: src/Views/FirewallPanel.vala:218 src/Views/FirewallPanel.vala:346
 msgid "In"
 msgstr "Sisään"
 
-#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:362
+#: src/Views/FirewallPanel.vala:220 src/Views/FirewallPanel.vala:347
 msgid "Out"
 msgstr "Ulos"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:243
 #, c-format
 msgid "%s Ports %s"
 msgstr "%s Portit %s"
 
-#: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
+#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:245
 #, c-format
 msgid "%s Port %s"
 msgstr "%s Portti %s"
 
-#: src/Views/FirewallPanel.vala:290
+#: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:459
+#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:109
+#: src/Views/LocationPanel.vala:123
+msgid "Enabled"
+msgstr "Käytössä"
+
+#: src/Views/FirewallPanel.vala:275
 msgid "Version"
 msgstr "Versio"
 
-#: src/Views/FirewallPanel.vala:291
+#: src/Views/FirewallPanel.vala:276
 msgid "Action"
 msgstr "Toiminto"
 
-#: src/Views/FirewallPanel.vala:292
+#: src/Views/FirewallPanel.vala:277
 msgid "Protocol"
 msgstr "Protokolla"
 
-#: src/Views/FirewallPanel.vala:293
+#: src/Views/FirewallPanel.vala:278
 msgid "Direction"
 msgstr "Suunta"
 
-#: src/Views/FirewallPanel.vala:294
+#: src/Views/FirewallPanel.vala:279
 msgid "To"
 msgstr "Kohde"
 
-#: src/Views/FirewallPanel.vala:295
+#: src/Views/FirewallPanel.vala:280
 msgid "From"
 msgstr "Lähde"
 
-#: src/Views/FirewallPanel.vala:334
+#: src/Views/FirewallPanel.vala:319
 msgid "Action:"
 msgstr "Toiminto:"
 
-#: src/Views/FirewallPanel.vala:343
+#: src/Views/FirewallPanel.vala:328
 msgid "Protocol:"
 msgstr "Protokolla:"
 
-#: src/Views/FirewallPanel.vala:350
+#: src/Views/FirewallPanel.vala:335
 msgid "Version:"
 msgstr "Versio:"
 
-#: src/Views/FirewallPanel.vala:355
+#: src/Views/FirewallPanel.vala:340
 msgid "Both"
 msgstr "Molemmat"
 
-#: src/Views/FirewallPanel.vala:358
+#: src/Views/FirewallPanel.vala:343
 msgid "Direction:"
 msgstr "Suunta:"
 
-#: src/Views/FirewallPanel.vala:365
+#: src/Views/FirewallPanel.vala:350
 msgid "Ports:"
 msgstr "Portit:"
 
-#: src/Views/FirewallPanel.vala:369
+#: src/Views/FirewallPanel.vala:354
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d tai %d-%d"
 
-#: src/Views/FirewallPanel.vala:371
+#: src/Views/FirewallPanel.vala:356
 msgid "Add Rule"
 msgstr "Lisää sääntö"
+
+#: src/Views/FirewallPanel.vala:463 src/Views/HouseKeepingPanel.vala:162
+#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:128
+msgid "Disabled"
+msgstr "Pois käytöstä"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
@@ -250,6 +246,10 @@ msgid "Day"
 msgid_plural "Days"
 msgstr[0] "päivä"
 msgstr[1] "päivää"
+
+#: src/Views/HouseKeepingPanel.vala:159
+msgid "Partially Enabled"
+msgstr "Osittain käytössä"
 
 #: src/Views/LockPanel.vala:31
 msgid "Lock on suspend:"
@@ -450,10 +450,6 @@ msgstr "Laskentataulukot"
 #: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Videot"
-
-#: src/Widgets/ServiceItem.vala:41
-msgid "Partially Enabled"
-msgstr "Osittain käytössä"
 
 #~ msgid ""
 #~ "Old files can be automatically deleted after %u days to save space and "
