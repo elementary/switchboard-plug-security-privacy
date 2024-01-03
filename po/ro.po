@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-28 15:36+0000\n"
+"POT-Creation-Date: 2024-01-03 18:12+0000\n"
 "PO-Revision-Date: 2017-05-23 12:10+0000\n"
 "Last-Translator: Sergiu Pruteanu <sergiup26@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,78 +21,74 @@ msgstr ""
 "X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:48
+#: src/Plug.vala:46
 msgid "Security & Privacy"
 msgstr "Securitate și confidențialitate"
 
-#: src/Plug.vala:49
+#: src/Plug.vala:47
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 "Configurează firewall, ecran de blocare și informațiile privind activitatea"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:80
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "Anumite setări necesită drepturi de administrator pentru a fi schimbate"
 
-#: src/Plug.vala:129
+#: src/Plug.vala:127
 msgid "Privacy"
 msgstr "Confidenţialitate"
 
-#: src/Plug.vala:130 src/Plug.vala:169 src/Plug.vala:170 src/Plug.vala:171
-#: src/Views/LockPanel.vala:26 src/Widgets/ServiceList.vala:32
+#: src/Plug.vala:128 src/Plug.vala:161 src/Plug.vala:162 src/Plug.vala:163
+#: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Blocare"
 
-#: src/Plug.vala:131 src/Plug.vala:172 src/Views/FirewallPanel.vala:48
-#: src/Widgets/ServiceList.vala:33
+#: src/Plug.vala:129 src/Plug.vala:164 src/Views/FirewallPanel.vala:48
 msgid "Firewall"
 msgstr "Scut de protecție (Firewall)"
 
-#: src/Plug.vala:132 src/Plug.vala:173 src/Plug.vala:176 src/Plug.vala:181
-#: src/Plug.vala:186 src/Plug.vala:191 src/Views/HouseKeepingPanel.vala:32
-#: src/Widgets/ServiceList.vala:37
+#: src/Plug.vala:130 src/Plug.vala:165 src/Plug.vala:168 src/Plug.vala:173
+#: src/Plug.vala:178 src/Plug.vala:183 src/Views/HouseKeepingPanel.vala:32
 msgid "Housekeeping"
 msgstr ""
 
-#: src/Plug.vala:133 src/Plug.vala:194 src/Views/LocationPanel.vala:35
-#: src/Widgets/ServiceList.vala:61
+#: src/Plug.vala:131 src/Plug.vala:186 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr ""
 
-#: src/Plug.vala:167 src/Plug.vala:168 src/Views/TrackPanel.vala:33
-#: src/Widgets/ServiceList.vala:31
+#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:33
 msgid "History"
 msgstr ""
 
-#: src/Plug.vala:168
+#: src/Plug.vala:160
 #, fuzzy
 msgid "Clear History"
 msgstr "Golește datele"
 
-#: src/Plug.vala:170
+#: src/Plug.vala:162
 #, fuzzy
 msgid "Lock on sleep"
 msgstr "Blochează când se trece in modul somn:"
 
-#: src/Plug.vala:171
+#: src/Plug.vala:163
 #, fuzzy
 msgid "Lock after sceen turns off"
 msgstr "Blochează după ce ecranul se oprește:"
 
-#: src/Plug.vala:177
+#: src/Plug.vala:169
 msgid "Automatically delete old temporary files"
 msgstr ""
 
-#: src/Plug.vala:182
+#: src/Plug.vala:174
 msgid "Automatically delete old screenshot files"
 msgstr ""
 
-#: src/Plug.vala:187
+#: src/Plug.vala:179
 msgid "Automatically delete old trashed files"
 msgstr ""
 
-#: src/Plug.vala:192
+#: src/Plug.vala:184
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 
@@ -101,114 +97,114 @@ msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 "Este necesară introducerea parolei pentru a putea configura firewall-ul"
 
-#: src/Views/FirewallPanel.vala:64 src/Views/FirewallPanel.vala:289
-#: src/Views/TrackPanel.vala:109 src/Views/LocationPanel.vala:123
-#: src/Widgets/ServiceItem.vala:33
-msgid "Enabled"
-msgstr ""
-
-#: src/Views/FirewallPanel.vala:68 src/Views/TrackPanel.vala:113
-#: src/Views/LocationPanel.vala:128 src/Widgets/ServiceItem.vala:37
-msgid "Disabled"
-msgstr "Dezactivat"
-
-#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:223
-#: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:237
+#: src/Views/FirewallPanel.vala:198 src/Views/FirewallPanel.vala:208
+#: src/Views/FirewallPanel.vala:216 src/Views/FirewallPanel.vala:222
 msgid "Unknown"
 msgstr "Nescunoscut"
 
-#: src/Views/FirewallPanel.vala:215 src/Views/FirewallPanel.vala:337
+#: src/Views/FirewallPanel.vala:200 src/Views/FirewallPanel.vala:322
 msgid "Allow"
 msgstr "Permite"
 
-#: src/Views/FirewallPanel.vala:217 src/Views/FirewallPanel.vala:338
+#: src/Views/FirewallPanel.vala:202 src/Views/FirewallPanel.vala:323
 msgid "Deny"
 msgstr "Refuză"
 
-#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:204 src/Views/FirewallPanel.vala:324
 msgid "Reject"
 msgstr "Respinge"
 
-#: src/Views/FirewallPanel.vala:221 src/Views/FirewallPanel.vala:340
+#: src/Views/FirewallPanel.vala:206 src/Views/FirewallPanel.vala:325
 msgid "Limit"
 msgstr "Limitează"
 
-#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:361
+#: src/Views/FirewallPanel.vala:218 src/Views/FirewallPanel.vala:346
 msgid "In"
 msgstr "Intrare"
 
-#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:362
+#: src/Views/FirewallPanel.vala:220 src/Views/FirewallPanel.vala:347
 msgid "Out"
 msgstr "Ieșire"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:258
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:243
 #, fuzzy, c-format
 msgid "%s Ports %s"
 msgstr "Porturi"
 
-#: src/Views/FirewallPanel.vala:250 src/Views/FirewallPanel.vala:260
+#: src/Views/FirewallPanel.vala:235 src/Views/FirewallPanel.vala:245
 #, fuzzy, c-format
 msgid "%s Port %s"
 msgstr "Porturi"
 
-#: src/Views/FirewallPanel.vala:290
+#: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:459
+#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:109
+#: src/Views/LocationPanel.vala:123
+msgid "Enabled"
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:275
 msgid "Version"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:291
+#: src/Views/FirewallPanel.vala:276
 msgid "Action"
 msgstr "Acţiune"
 
-#: src/Views/FirewallPanel.vala:292
+#: src/Views/FirewallPanel.vala:277
 msgid "Protocol"
 msgstr "Protocol"
 
-#: src/Views/FirewallPanel.vala:293
+#: src/Views/FirewallPanel.vala:278
 msgid "Direction"
 msgstr "Direcţie"
 
-#: src/Views/FirewallPanel.vala:294
+#: src/Views/FirewallPanel.vala:279
 #, fuzzy
 msgid "To"
 msgstr "Pâna la:"
 
-#: src/Views/FirewallPanel.vala:295
+#: src/Views/FirewallPanel.vala:280
 #, fuzzy
 msgid "From"
 msgstr "De la:"
 
-#: src/Views/FirewallPanel.vala:334
+#: src/Views/FirewallPanel.vala:319
 msgid "Action:"
 msgstr "Acţiune:"
 
-#: src/Views/FirewallPanel.vala:343
+#: src/Views/FirewallPanel.vala:328
 msgid "Protocol:"
 msgstr "Protocol:"
 
-#: src/Views/FirewallPanel.vala:350
+#: src/Views/FirewallPanel.vala:335
 msgid "Version:"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:355
+#: src/Views/FirewallPanel.vala:340
 msgid "Both"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:358
+#: src/Views/FirewallPanel.vala:343
 msgid "Direction:"
 msgstr "Direcție:"
 
-#: src/Views/FirewallPanel.vala:365
+#: src/Views/FirewallPanel.vala:350
 msgid "Ports:"
 msgstr "Porturi:"
 
-#: src/Views/FirewallPanel.vala:369
+#: src/Views/FirewallPanel.vala:354
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d sau %d-%d"
 
-#: src/Views/FirewallPanel.vala:371
+#: src/Views/FirewallPanel.vala:356
 msgid "Add Rule"
 msgstr "Adaugă regulă"
+
+#: src/Views/FirewallPanel.vala:463 src/Views/HouseKeepingPanel.vala:162
+#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:128
+msgid "Disabled"
+msgstr "Dezactivat"
 
 #: src/Views/HouseKeepingPanel.vala:37
 msgid "Automatically Delete:"
@@ -256,6 +252,10 @@ msgid_plural "Days"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
+
+#: src/Views/HouseKeepingPanel.vala:159
+msgid "Partially Enabled"
+msgstr ""
 
 #: src/Views/LockPanel.vala:31
 #, fuzzy
@@ -447,10 +447,6 @@ msgstr "Foi de calcul"
 #: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Fișiere video"
-
-#: src/Widgets/ServiceItem.vala:41
-msgid "Partially Enabled"
-msgstr ""
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "
