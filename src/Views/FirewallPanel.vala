@@ -21,6 +21,8 @@
  */
 
 public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
+    public Polkit.Permission permission { get; construct; }
+
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private Gtk.ActionBar actionbar;
@@ -42,10 +44,13 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         N_COLUMNS
     }
 
-    public FirewallPanel () {
-        Object (activatable: true,
-                icon_name: "network-firewall",
-                title: _("Firewall"));
+    public FirewallPanel (Polkit.Permission permission) {
+        Object (
+            activatable: true,
+            icon_name: "network-firewall",
+            title: _("Firewall"),
+            permission: permission
+        );
     }
 
     construct {
@@ -64,9 +69,9 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
         sensitive = false;
 
-        lock_button.get_permission ().notify["allowed"].connect (() => {
+        permission.notify["allowed"].connect (() => {
             loading = true;
-            sensitive = lock_button.get_permission ().allowed;
+            sensitive = permission.allowed;
             status_switch.active = UFWHelpers.get_status ();
             list_store.clear ();
             remove_button.sensitive = false;
