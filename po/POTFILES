@@ -12,5 +12,3 @@ src/Widgets/AppRow.vala
 src/Widgets/ClearUsagePopover.vala
 src/Widgets/ExcludeTreeView.vala
 src/Widgets/IncludeTreeView.vala
-src/Widgets/ServiceItem.vala
-src/Widgets/ServiceList.vala
