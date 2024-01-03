@@ -87,11 +87,11 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
             paned.show_all ();
 
             stack.notify["visible-child"].connect (() => {
-                infobar.revealed = !permission.allowed && stack.visible_child == firewall;
+                infobar.revealed = stack.visible_child == firewall && !permission.allowed;
             });
 
             permission.notify["allowed"].connect (() => {
-                infobar.revealed = !permission.allowed && stack.visible_child == firewall;
+                infobar.revealed = stack.visible_child == firewall && !permission.allowed;
             });
         }
 
