@@ -25,9 +25,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
-    private Gtk.ActionBar actionbar;
     private bool loading = false;
-    private Gtk.Popover add_popover;
     private Gtk.Button remove_button;
     private Settings settings;
     private Gee.HashMap<string, UFWHelpers.Rule> disabled_rules;
@@ -199,35 +197,46 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     }
 
     public void add_rule (UFWHelpers.Rule rule, bool enabled = true, string hash = "") {
-        Gtk.TreeIter iter;
         string action = _("Unknown");
-        if (rule.action == UFWHelpers.Rule.Action.ALLOW) {
-            action = _("Allow");
-        } else if (rule.action == UFWHelpers.Rule.Action.DENY) {
-            action = _("Deny");
-        } else if (rule.action == UFWHelpers.Rule.Action.REJECT) {
-            action = _("Reject");
-        } else if (rule.action == UFWHelpers.Rule.Action.LIMIT) {
-            action = _("Limit");
+        switch (rule.action) {
+            case ALLOW:
+                action = _("Allow");
+                break;
+            case DENY:
+                action = _("Deny");
+                break;
+            case REJECT:
+                action = _("Reject");
+                break;
+            case LIMIT:
+                action = _("Limit");
+                break;
         }
+
         string protocol = _("Unknown");
-        if (rule.protocol == UFWHelpers.Rule.Protocol.UDP) {
-            protocol = "UDP";
-        } else if (rule.protocol == UFWHelpers.Rule.Protocol.TCP) {
-            protocol = "TCP";
-        } else if (rule.protocol == UFWHelpers.Rule.Protocol.BOTH) {
-            protocol = "TCP/UDP";
+        switch (rule.protocol) {
+            case UDP:
+                protocol = "UDP";
+                break;
+            case TCP:
+                protocol = "TCP";
+                break;
+            case BOTH:
+                protocol = "TCP/UDP";
+                break;
         }
+
         string direction = _("Unknown");
-        if (rule.direction == UFWHelpers.Rule.Direction.IN) {
+        if (rule.direction == IN) {
             direction = _("In");
-        } else if (rule.direction == UFWHelpers.Rule.Direction.OUT) {
+        } else if (rule.direction == OUT) {
             direction = _("Out");
         }
+
         string version = _("Unknown");
-        if (rule.version == UFWHelpers.Rule.Version.IPV6) {
+        if (rule.version == IPV6) {
             version = "IPv6";
-        } else if (rule.version == UFWHelpers.Rule.Version.IPV4) {
+        } else if (rule.version == IPV4) {
             version = "IPv4";
         }
 
@@ -253,6 +262,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             to = rule.to;
         }
 
+        Gtk.TreeIter iter;
         list_store.append (out iter);
         list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
                 Columns.DIRECTION, direction, Columns.V6, version, Columns.ENABLED, enabled,
@@ -270,9 +280,11 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
                                                            typeof (UFWHelpers.Rule));
 
         // The View:
-        view = new Gtk.TreeView.with_model (list_store);
-        view.vexpand = true;
-        view.activate_on_single_click = true;
+        view = new Gtk.TreeView.with_model (list_store) {
+            activate_on_single_click = true,
+            hexpand = true,
+            vexpand = true
+        };
 
         var celltoggle = new Gtk.CellRendererToggle ();
         var cell = new Gtk.CellRendererText ();
@@ -305,14 +317,36 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             reload_rule_numbers ();
         });
 
-        actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
-
         var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic");
 
+        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
+            sensitive = false
+        };
+
+        var actionbar = new Gtk.ActionBar ();
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+        actionbar.pack_start (add_button);
+        actionbar.pack_start (remove_button);
+
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = view
+        };
+
+        var view_box = new Gtk.Box (VERTICAL, 0);
+        view_box.append (scrolled);
+        view_box.append (actionbar);
+
+        var frame = new Gtk.Frame (null) {
+            child = view_box
+        };
+
+        content_area.attach (frame, 0, 0);
+
+        view.cursor_changed.connect (() => {
+            remove_button.sensitive = true;
+        });
+
         add_button.clicked.connect (() => {
-            var policy_label = new Gtk.Label (_("Action:"));
-            policy_label.xalign = 1;
             var policy_combobox = new Gtk.ComboBoxText ();
             policy_combobox.append_text (_("Allow"));
             policy_combobox.append_text (_("Deny"));
@@ -320,101 +354,134 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             policy_combobox.append_text (_("Limit"));
             policy_combobox.active = 0;
 
-            var protocol_label = new Gtk.Label (_("Protocol:"));
-            protocol_label.xalign = 1;
+            var policy_label = new Gtk.Label (_("Action:")) {
+                mnemonic_widget = policy_combobox,
+                xalign = 1
+            };
+
             var protocol_combobox = new Gtk.ComboBoxText ();
             protocol_combobox.append_text ("TCP");
             protocol_combobox.append_text ("UDP");
             protocol_combobox.active = 0;
 
-            var version_label = new Gtk.Label (_("Version:"));
-            version_label.xalign = 1;
+            var protocol_label = new Gtk.Label (_("Protocol:")) {
+                mnemonic_widget = protocol_combobox,
+                xalign = 1
+            };
+
             var version_combobox = new Gtk.ComboBoxText ();
             version_combobox.append_text ("IPv4");
             version_combobox.append_text ("IPv6");
             version_combobox.append_text (_("Both"));
             version_combobox.active = 0;
 
-            var direction_label = new Gtk.Label (_("Direction:"));
-            direction_label.xalign = 1;
+            var version_label = new Gtk.Label (_("Version:")) {
+                mnemonic_widget = version_combobox,
+                xalign = 1
+            };
+
             var direction_combobox = new Gtk.ComboBoxText ();
             direction_combobox.append_text (_("In"));
             direction_combobox.append_text (_("Out"));
             direction_combobox.active = 0;
 
-            var ports_label = new Gtk.Label (_("Ports:"));
-            ports_label.xalign = 1;
-            var ports_entry = new Gtk.Entry ();
-            ports_entry.input_purpose = Gtk.InputPurpose.NUMBER;
-            ports_entry.placeholder_text = _("%d or %d-%d").printf (80, 80, 85);
+            var direction_label = new Gtk.Label (_("Direction:")) {
+                mnemonic_widget = direction_combobox,
+                xalign = 1
+            };
+
+            var ports_entry = new Gtk.Entry () {
+                input_purpose = NUMBER,
+                placeholder_text = _("%d or %d-%d").printf (80, 80, 85)
+            };
+
+            var ports_label = new Gtk.Label (_("Ports:")) {
+                mnemonic_widget = ports_entry,
+                xalign = 1
+            };
 
             var do_add_button = new Gtk.Button.with_label (_("Add Rule")) {
-                halign = Gtk.Align.END,
-                hexpand = true
+                halign = END,
+                hexpand = true,
+                margin_top = 6
             };
-            do_add_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+            do_add_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+
+            var popover_grid = new Gtk.Grid () {
+                margin_top = 12,
+                margin_end = 12,
+                margin_start = 12,
+                margin_bottom = 12,
+                column_spacing = 12,
+                row_spacing = 6
+            };
+            popover_grid.attach (policy_label, 0, 0);
+            popover_grid.attach (policy_combobox, 1, 0);
+            popover_grid.attach (protocol_label, 0, 1);
+            popover_grid.attach (protocol_combobox, 1, 1);
+            popover_grid.attach (version_label, 0, 2);
+            popover_grid.attach (version_combobox, 1, 2);
+            popover_grid.attach (direction_label, 0, 3);
+            popover_grid.attach (direction_combobox, 1, 3);
+            popover_grid.attach (ports_label, 0, 4);
+            popover_grid.attach (ports_entry, 1, 4);
+            popover_grid.attach (do_add_button, 0, 5, 2);
+
+            var add_popover = new Gtk.Popover () {
+                child = popover_grid
+            };
+            add_popover.set_parent (add_button);
+            add_popover.popup ();
 
             do_add_button.clicked.connect (() => {
                 var rule = new UFWHelpers.Rule ();
-                if (direction_combobox.active == 0)
-                    rule.direction = UFWHelpers.Rule.Direction.IN;
-                else
-                    rule.direction = UFWHelpers.Rule.Direction.OUT;
 
-                if (protocol_combobox.active == 0)
-                    rule.protocol = UFWHelpers.Rule.Protocol.TCP;
-                else
-                    rule.protocol = UFWHelpers.Rule.Protocol.UDP;
+                if (direction_combobox.active == 0) {
+                    rule.direction = IN;
+                } else {
+                    rule.direction = OUT;
+                }
 
-                if (policy_combobox.active == 0)
-                    rule.action = UFWHelpers.Rule.Action.ALLOW;
-                else if (policy_combobox.active == 1)
-                    rule.action = UFWHelpers.Rule.Action.DENY;
-                else if (policy_combobox.active == 2)
-                    rule.action = UFWHelpers.Rule.Action.REJECT;
-                else
-                    rule.action = UFWHelpers.Rule.Action.LIMIT;
+                if (protocol_combobox.active == 0) {
+                    rule.protocol = TCP;
+                } else {
+                    rule.protocol = UDP;
+                }
 
-                if (version_combobox.active == 0)
-                    rule.version = UFWHelpers.Rule.Version.IPV4;
-                else if (version_combobox.active == 1)
-                    rule.version = UFWHelpers.Rule.Version.IPV6;
-                else
-                    rule.version = UFWHelpers.Rule.Version.BOTH;
+                switch (policy_combobox.active) {
+                    case 0:
+                        rule.action = ALLOW;
+                        break;
+                    case 1:
+                        rule.action = DENY;
+                        break;
+                    case 2:
+                        rule.action = REJECT;
+                        break;
+                    case 3:
+                        rule.action = LIMIT;
+                        break;
+                }
+
+                switch (version_combobox.active) {
+                    case 0:
+                        rule.version = IPV4;
+                        break;
+                    case 1:
+                        rule.version = IPV6;
+                        break;
+                    case 2:
+                        rule.version = BOTH;
+                        break;
+                }
 
                 rule.to_ports = ports_entry.text.replace ("-", ":");
                 UFWHelpers.add_rule (rule);
-                add_popover.hide ();
+                add_popover.popdown ();
                 show_rules ();
             });
-
-            var popover_grid = new Gtk.Grid ();
-            popover_grid.margin_top = 12;
-            popover_grid.margin_end = 6;
-            popover_grid.margin_start = 12;
-            popover_grid.margin_bottom = 9;
-            popover_grid.column_spacing = 12;
-            popover_grid.row_spacing = 6;
-            popover_grid.attach (policy_label, 0, 0, 1, 1);
-            popover_grid.attach (policy_combobox, 1, 0, 1, 1);
-            popover_grid.attach (protocol_label, 0, 1, 1, 1);
-            popover_grid.attach (protocol_combobox, 1, 1, 1, 1);
-            popover_grid.attach (version_label, 0, 2, 1, 1);
-            popover_grid.attach (version_combobox, 1, 2, 1, 1);
-            popover_grid.attach (direction_label, 0, 3, 1, 1);
-            popover_grid.attach (direction_combobox, 1, 3, 1, 1);
-            popover_grid.attach (ports_label, 0, 4, 1, 1);
-            popover_grid.attach (ports_entry, 1, 4, 1, 1);
-            popover_grid.attach (do_add_button, 0, 5, 2, 1);
-
-            add_popover = new Gtk.Popover () {
-                child = popover_grid
-            };
-            add_popover.popup ();
         });
 
-        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic");
-        remove_button.sensitive = false;
         remove_button.clicked.connect (() => {
             Gtk.TreePath path;
             Gtk.TreeViewColumn column;
@@ -434,29 +501,6 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             }
             show_rules ();
         });
-
-        actionbar.pack_start (add_button);
-        actionbar.pack_start (remove_button);
-
-        view.cursor_changed.connect (() => {
-            remove_button.sensitive = true;
-        });
-
-        var scrolled = new Gtk.ScrolledWindow () {
-            child = view,
-            hexpand = true,
-            vexpand = true
-        };
-
-        var view_grid = new Gtk.Grid ();
-        view_grid.attach (scrolled, 0, 0, 1, 1);
-        view_grid.attach (actionbar, 0, 1, 1, 1);
-
-        var frame = new Gtk.Frame (null) {
-            child = view_grid
-        };
-
-        content_area.attach (frame, 0, 1, 3, 1);
     }
 
     private void update_status () {
