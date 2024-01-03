@@ -153,10 +153,13 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
         if (all_active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
         } else if (any_active) {
             status_type = Granite.SettingsPage.StatusType.WARNING;
+            status = _("Partially Enabled");
         } else {
             status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
         }
 
         file_age_label.sensitive = any_active;

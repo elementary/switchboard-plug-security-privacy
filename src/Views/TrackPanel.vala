@@ -23,8 +23,6 @@
 public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
     public static SecurityPrivacy.Blacklist blacklist { get; private set; }
 
-    private Widgets.ClearUsagePopover remove_popover;
-
     public TrackPanel () {
         Object (
             activatable: true,
@@ -55,12 +53,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
 
         status_switch.active = true;
 
-        remove_popover = new Widgets.ClearUsagePopover ();
-
-        var clear_data = new Gtk.MenuButton () {
-            label = _("Clear History…"),
-            popover = remove_popover
-        };
+        var clear_button = new Gtk.Button.with_label (_("Clear History…"));
 
         var include_treeview = new IncludeTreeView ();
         var exclude_treeview = new ExcludeTreeView ();
@@ -69,7 +62,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         content_area.attach (include_treeview, 0, 1, 1, 1);
         content_area.attach (exclude_treeview, 1, 1, 1, 1);
 
-        action_area.append (clear_data);
+        action_area.append (clear_button);
 
         status_switch.notify["active"].connect (() => {
             bool privacy_mode = !status_switch.active;
@@ -91,6 +84,14 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         status_switch.active = !blacklist.get_incognito ();
 
         update_status_switch ();
+
+        clear_button.clicked.connect (() => {
+            var clear_dialog = new Widgets.ClearUsageDialog () {
+                modal = true,
+                transient_for = (Gtk.Window) get_root ()
+            };
+            clear_dialog.present ();
+        });
     }
 
     private static string get_operating_system_name () {

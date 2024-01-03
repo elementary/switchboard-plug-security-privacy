@@ -31,8 +31,6 @@ namespace SecurityPrivacy {
         private Gtk.Box main_box;
         Gtk.Stack stack;
 
-        ServiceList service_list;
-
         private const string FIREWALL = "firewall";
         private const string HOUSEKEEPING = "housekeeping";
         private const string HISTORY = "tracking";
@@ -121,23 +119,19 @@ namespace SecurityPrivacy {
                 stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
                 stack.add_titled (location, LOCATION, _("Location Services"));
 
-                service_list = new ServiceList ();
+                var settings_sidebar = new Granite.SettingsSidebar (stack);
 
-                var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL) {
+                var paned = new Gtk.Paned (HORIZONTAL) {
                     position = 200,
-                    start_child = service_list,
+                    start_child = settings_sidebar,
+                    end_child = grid,
                     shrink_start_child = false,
                     resize_start_child = false,
-                    end_child = grid
+                    resize_end_child = false
                 };
 
-                main_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+                main_box = new Gtk.Box (HORIZONTAL, 0);
                 main_box.append (paned);
-
-                service_list.list_box.row_selected.connect ((row) => {
-                    var title = ((ServiceItem)row).title;
-                    stack.visible_child_name = title;
-                });
             }
 
             return main_box;
@@ -151,7 +145,6 @@ namespace SecurityPrivacy {
 
         public override void search_callback (string location) {
             stack.set_visible_child_name (location);
-            service_list.select_service_name (location);
         }
 
         // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")

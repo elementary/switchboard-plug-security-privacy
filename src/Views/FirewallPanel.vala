@@ -55,20 +55,9 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
         status_switch.notify["active"].connect (() => {
             if (loading == false) {
-                view.sensitive = status_switch.active;
                 UFWHelpers.set_status (status_switch.active);
             }
-
-            if (status_switch.active) {
-                status_type = Granite.SettingsPage.StatusType.SUCCESS;
-                status = _("Enabled");
-            } else {
-                warning ("Trying to set offline");
-                status_type = Granite.SettingsPage.StatusType.OFFLINE;
-                status = _("Disabled");
-            }
-
-            show_rules ();
+            update_status ();
         });
 
         create_treeview ();
@@ -81,13 +70,9 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             status_switch.active = UFWHelpers.get_status ();
             list_store.clear ();
             remove_button.sensitive = false;
-            if (status_switch.active == true) {
-                view.sensitive = true;
-                show_rules ();
-            } else {
-                view.sensitive = false;
-            }
+
             loading = false;
+            update_status ();
         });
     }
 
@@ -467,5 +452,18 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         };
 
         content_area.attach (frame, 0, 1, 3, 1);
+    }
+
+    private void update_status () {
+        view.sensitive = status_switch.active;
+
+        if (status_switch.active) {
+            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status = _("Enabled");
+            show_rules ();
+        } else {
+            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status = _("Disabled");
+        }
     }
 }

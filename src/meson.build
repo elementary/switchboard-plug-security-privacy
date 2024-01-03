@@ -17,11 +17,9 @@ plug_files = files(
     'Views/LocationPanel.vala',
     'Widgets/AppChooser.vala',
     'Widgets/AppRow.vala',
-    'Widgets/ClearUsagePopover.vala',
+    'Widgets/ClearUsageDialog.vala',
     'Widgets/ExcludeTreeView.vala',
-    'Widgets/IncludeTreeView.vala',
-    'Widgets/ServiceItem.vala',
-    'Widgets/ServiceList.vala'
+    'Widgets/IncludeTreeView.vala'
 )
 
 plug_dependencies = [
