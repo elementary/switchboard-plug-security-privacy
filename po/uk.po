@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 18:12+0000\n"
+"POT-Creation-Date: 2024-01-03 18:23+0000\n"
 "PO-Revision-Date: 2023-11-01 23:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -55,11 +55,11 @@ msgstr "Домоведення"
 msgid "Location Services"
 msgstr "Служби розташування"
 
-#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:33
+#: src/Plug.vala:159 src/Plug.vala:160 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Дієпис"
 
-#: src/Plug.vala:160
+#: src/Plug.vala:160 src/Widgets/ClearUsageDialog.vala:58
 msgid "Clear History"
 msgstr "Очистити дієпис"
 
@@ -131,7 +131,7 @@ msgid "%s Port %s"
 msgstr "%s Порт %s"
 
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:459
-#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:109
+#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:103
 #: src/Views/LocationPanel.vala:123
 msgid "Enabled"
 msgstr "Увімкнено"
@@ -194,7 +194,7 @@ msgid "Add Rule"
 msgstr "Додати правило"
 
 #: src/Views/FirewallPanel.vala:463 src/Views/HouseKeepingPanel.vala:162
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:128
+#: src/Views/TrackPanel.vala:107 src/Views/LocationPanel.vala:128
 msgid "Disabled"
 msgstr "Вимкнено"
 
@@ -267,7 +267,7 @@ msgstr "Блокувати після вимкнення екрана:"
 msgid "Forbid new USB devices when locked:"
 msgstr "Заборонити нові USB-пристрої, коли заблоковано:"
 
-#: src/Views/TrackPanel.vala:31
+#: src/Views/TrackPanel.vala:29
 #, c-format
 msgid ""
 "%s can store local usage data to provide extra functionality like offering "
@@ -280,16 +280,16 @@ msgstr ""
 "пошук. Незалежно від цього налаштування, дані про використання ніколи не "
 "передаються з цього пристрою або стороннім."
 
-#: src/Views/TrackPanel.vala:43
+#: src/Views/TrackPanel.vala:41
 #, c-format
 msgid "%s won't retain any further usage data."
 msgstr "%s не зберігатиме даних про подальше використання."
 
-#: src/Views/TrackPanel.vala:44
+#: src/Views/TrackPanel.vala:42
 msgid "The additional functionality that this data provides will be affected."
 msgstr "Постраждають додаткові можливості, яким сприяють ці дані."
 
-#: src/Views/TrackPanel.vala:45
+#: src/Views/TrackPanel.vala:43
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
@@ -297,15 +297,15 @@ msgstr ""
 "Це не завадить застосункам записувати власні дані про використання як-от "
 "дієпис переглядача мережі."
 
-#: src/Views/TrackPanel.vala:48
+#: src/Views/TrackPanel.vala:46
 msgid "History Is Disabled"
 msgstr "Дієпис вимкнено"
 
-#: src/Views/TrackPanel.vala:57
+#: src/Views/TrackPanel.vala:55
 msgid "Clear History…"
 msgstr "Очистити дієпис…"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:97
 msgid "Your system"
 msgstr "Ваша система"
 
@@ -362,38 +362,42 @@ msgstr "Дозволити %s використовувати служби виз
 msgid "Search Application"
 msgstr "Застосунок для пошуку"
 
-#: src/Widgets/ClearUsagePopover.vala:41
-msgid "Remove system-collected file and application usage data from:"
+#: src/Widgets/ClearUsageDialog.vala:24
+#, fuzzy
+#| msgid "Remove system-collected file and application usage data from:"
+msgid "Clear system-collected file and app usage history"
 msgstr ""
 "Вилучити зібрані системою дані про використання файлів та застосунків за:"
 
-#: src/Widgets/ClearUsagePopover.vala:44
+#: src/Widgets/ClearUsageDialog.vala:25
+msgid ""
+"The data from the selected time frame will be permanently deleted and cannot "
+"be restored"
+msgstr ""
+
+#: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
 msgstr "Попередню годину"
 
-#: src/Widgets/ClearUsagePopover.vala:45
+#: src/Widgets/ClearUsageDialog.vala:33
 msgid "The past day"
 msgstr "Попередній день"
 
-#: src/Widgets/ClearUsagePopover.vala:46
+#: src/Widgets/ClearUsageDialog.vala:34
 msgid "The past week"
 msgstr "Попередній тиждень"
 
-#: src/Widgets/ClearUsagePopover.vala:47
+#: src/Widgets/ClearUsageDialog.vala:35
 msgid "From:"
 msgstr "З:"
 
-#: src/Widgets/ClearUsagePopover.vala:48
+#: src/Widgets/ClearUsageDialog.vala:36
 msgid "All time"
 msgstr "За весь час"
 
-#: src/Widgets/ClearUsagePopover.vala:51
+#: src/Widgets/ClearUsageDialog.vala:39
 msgid "To:"
 msgstr "До:"
-
-#: src/Widgets/ClearUsagePopover.vala:54
-msgid "Clear Data"
-msgstr "Очистити Дані"
 
 #: src/Widgets/ExcludeTreeView.vala:65
 msgid "Add Application…"
@@ -454,6 +458,9 @@ msgstr "Електронні таблиці"
 #: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Відео"
+
+#~ msgid "Clear Data"
+#~ msgstr "Очистити Дані"
 
 #~ msgid ""
 #~ "This operating system can gather useful statistics about file and app "
