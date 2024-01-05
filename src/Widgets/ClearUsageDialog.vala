@@ -106,16 +106,16 @@ public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
 
             //  Deletes files added in the last hour
             if (recent.size > 0) {
-                items = recent.get_items ();
+                var past_hour = new DateTime.now_local ().add_hours (-1);
 
-                try {
-                    foreach (var item in items) {
-                        // if (item.get_added () >= start / 1000) {
-                        //     recent.remove_item (item.get_uri ());
-                        // }
+                foreach (unowned var recent_info in recent.get_items ()) {
+                    if (recent_info.get_added ().compare (past_hour) >= 0) {
+                        try {
+                            recent.remove_item (recent_info.get_uri ());
+                        } catch (Error err) {
+                            critical (err.message);
+                        }
                     }
-                } catch (Error err) {
-                    critical (err.message);
                 }
             }
         } else if (past_day_radio.active == true) {
@@ -168,16 +168,18 @@ public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
 
             //  Deletes files added during the given period
             if (recent.size > 0) {
-                items = recent.get_items ();
-
-                try {
-                    foreach (var item in items) {
-                        // if (item.get_added () >= start / 1000 && item.get_added () <= end / 1000) {
-                        //     recent.remove_item (item.get_uri ());
-                        // }
+                foreach (unowned var recent_info in recent.get_items ()) {
+                    var info_added = recent_info.get_added ();
+                    if (
+                        info_added.compare (from_datepicker.date) >= 0 &&
+                        info_added.compare (to_datepicker.date) <= 0
+                    ) {
+                        try {
+                            recent.remove_item (recent_info.get_uri ());
+                        } catch (Error err) {
+                            critical (err.message);
+                        }
                     }
-                } catch (Error err) {
-                    critical (err.message);
                 }
             }
         } else if (all_time_radio.active == true) {
