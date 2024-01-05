@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-03 22:11+0000\n"
-"PO-Revision-Date: 2023-11-01 23:10+0000\n"
+"PO-Revision-Date: 2024-01-06 19:51+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
@@ -363,17 +363,16 @@ msgid "Search Application"
 msgstr "Застосунок для пошуку"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
-msgstr ""
-"Вилучити зібрані системою дані про використання файлів та застосунків за:"
+msgstr "Очистити історію використання файлів і застосунків, зібрану системою"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
 msgstr ""
+"Дані за вибраний період часу будуть видалені безповоротно і не підлягають "
+"відновленню"
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
