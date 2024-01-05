@@ -21,14 +21,14 @@
  */
 
 public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
-    public Polkit.Permission permission { get; construct; }
-
+    private Gtk.Frame frame;
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private bool loading = false;
     private Gtk.Button remove_button;
     private Settings settings;
     private Gee.HashMap<string, UFWHelpers.Rule> disabled_rules;
+    private Polkit.Permission permission;
 
     private enum Columns {
         ACTION,
@@ -42,12 +42,11 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         N_COLUMNS
     }
 
-    public FirewallPanel (Polkit.Permission permission) {
+    public FirewallPanel () {
         Object (
             activatable: true,
             icon_name: "network-firewall",
-            title: _("Firewall"),
-            permission: permission
+            title: _("Firewall")
         );
     }
 
@@ -65,18 +64,32 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
         create_treeview ();
 
-        sensitive = false;
+        try {
+            permission = new Polkit.Permission.sync (
+                "io.elementary.switchboard.security-privacy",
+                new Polkit.UnixProcess (Posix.getpid ())
+            );
 
-        permission.notify["allowed"].connect (() => {
-            loading = true;
-            sensitive = permission.allowed;
-            status_switch.active = UFWHelpers.get_status ();
-            list_store.clear ();
-            remove_button.sensitive = false;
+            var lock_button = new Gtk.LockButton (permission);
 
-            loading = false;
-            update_status ();
-        });
+            action_area.add (lock_button);
+
+            status_switch.sensitive = permission.allowed;
+
+            permission.notify["allowed"].connect (() => {
+                if (permission.allowed) {
+                    loading = true;
+                    status_switch.active = UFWHelpers.get_status ();
+                    remove_button.sensitive = false;
+                    loading = false;
+                }
+
+                status_switch.sensitive = permission.allowed;
+                frame.sensitive = status_switch.active && permission.allowed;
+            });
+        } catch (Error e) {
+            critical (e.message);
+        }
     }
 
     private void load_disabled_rules () {
@@ -336,8 +349,9 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         view_box.add (scrolled);
         view_box.add (actionbar);
 
-        var frame = new Gtk.Frame (null) {
-            child = view_box
+        frame = new Gtk.Frame (null) {
+            child = view_box,
+            sensitive = status_switch.active && permission.allowed
         };
 
         content_area.attach (frame, 0, 0);
@@ -503,7 +517,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     }
 
     private void update_status () {
-        view.sensitive = status_switch.active;
+        frame.sensitive = status_switch.active && permission.allowed;
 
         if (status_switch.active) {
             status_type = Granite.SettingsPage.StatusType.SUCCESS;
