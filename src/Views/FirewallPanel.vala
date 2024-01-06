@@ -66,7 +66,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
         try {
             permission = new Polkit.Permission.sync (
-                "io.elementary.switchboard.security-privacy",
+                "io.elementary.settings.security-privacy",
                 new Polkit.UnixProcess (Posix.getpid ())
             );
 
