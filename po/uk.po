@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-03 22:11+0000\n"
+"POT-Creation-Date: 2024-01-06 19:51+0000\n"
 "PO-Revision-Date: 2024-01-06 19:51+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,74 +16,70 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
-#: src/Plug.vala:24
+#: src/Plug.vala:23
 msgid "Security & Privacy"
 msgstr "Безпека і приватність"
 
-#: src/Plug.vala:25
+#: src/Plug.vala:24
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Налаштування фаєрволу, блокування екрана та подробиць про діяльність"
 
-#: src/Plug.vala:54
-msgid "Some settings require administrator rights to be changed"
-msgstr "Для зміни деяких налаштувань необхідно мати права адміністратора"
-
-#: src/Plug.vala:72
+#: src/Plug.vala:51
 msgid "Privacy"
 msgstr "Приватність"
 
-#: src/Plug.vala:73 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:52 src/Plug.vala:81 src/Plug.vala:82 src/Plug.vala:83
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Блокування"
 
-#: src/Plug.vala:74 src/Plug.vala:117 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:84 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "Фаєрвол"
 
-#: src/Plug.vala:75 src/Plug.vala:118 src/Plug.vala:121 src/Plug.vala:126
-#: src/Plug.vala:131 src/Plug.vala:136 src/Views/HouseKeepingPanel.vala:32
+#: src/Plug.vala:54 src/Plug.vala:85 src/Plug.vala:88 src/Plug.vala:93
+#: src/Plug.vala:98 src/Plug.vala:103 src/Views/HouseKeepingPanel.vala:32
 msgid "Housekeeping"
 msgstr "Домоведення"
 
-#: src/Plug.vala:76 src/Plug.vala:139 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:106 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Служби розташування"
 
-#: src/Plug.vala:112 src/Plug.vala:113 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:79 src/Plug.vala:80 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Дієпис"
 
-#: src/Plug.vala:113 src/Widgets/ClearUsageDialog.vala:58
+#: src/Plug.vala:80 src/Widgets/ClearUsageDialog.vala:58
 msgid "Clear History"
 msgstr "Очистити дієпис"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:82
 msgid "Lock on sleep"
 msgstr "Блокувати у режимі сну"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:83
 msgid "Lock after sceen turns off"
 msgstr "Блокувати після вимкнення екрана"
 
-#: src/Plug.vala:122
+#: src/Plug.vala:89
 msgid "Automatically delete old temporary files"
 msgstr "Автоматично видаляти старі тимчасові файли"
 
-#: src/Plug.vala:127
+#: src/Plug.vala:94
 msgid "Automatically delete old screenshot files"
 msgstr "Автоматично видаляти старі файли знімків екрана"
 
-#: src/Plug.vala:132
+#: src/Plug.vala:99
 msgid "Automatically delete old trashed files"
 msgstr "Автоматично видаляти старі файли зі смітника"
 
-#: src/Plug.vala:137
+#: src/Plug.vala:104
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Кількість днів зберігання файлів у смітнику та тимчасових файлів"
 
@@ -91,109 +87,109 @@ msgstr "Кількість днів зберігання файлів у смі�
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr "Необхідна автентифікація для налаштування фаєрволу"
 
-#: src/Views/FirewallPanel.vala:200 src/Views/FirewallPanel.vala:216
-#: src/Views/FirewallPanel.vala:229 src/Views/FirewallPanel.vala:236
+#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
+#: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
 msgid "Unknown"
 msgstr "Невідомо"
 
-#: src/Views/FirewallPanel.vala:203 src/Views/FirewallPanel.vala:351
+#: src/Views/FirewallPanel.vala:216 src/Views/FirewallPanel.vala:365
 msgid "Allow"
 msgstr "Дозволити"
 
-#: src/Views/FirewallPanel.vala:206 src/Views/FirewallPanel.vala:352
+#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:366
 msgid "Deny"
 msgstr "Заборонити"
 
-#: src/Views/FirewallPanel.vala:209 src/Views/FirewallPanel.vala:353
+#: src/Views/FirewallPanel.vala:222 src/Views/FirewallPanel.vala:367
 msgid "Reject"
 msgstr "Відхилити"
 
-#: src/Views/FirewallPanel.vala:212 src/Views/FirewallPanel.vala:354
+#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:368
 msgid "Limit"
 msgstr "Обмеження"
 
-#: src/Views/FirewallPanel.vala:231 src/Views/FirewallPanel.vala:384
+#: src/Views/FirewallPanel.vala:244 src/Views/FirewallPanel.vala:398
 msgid "In"
 msgstr "В"
 
-#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:385
+#: src/Views/FirewallPanel.vala:246 src/Views/FirewallPanel.vala:399
 msgid "Out"
 msgstr "З"
 
-#: src/Views/FirewallPanel.vala:247 src/Views/FirewallPanel.vala:257
+#: src/Views/FirewallPanel.vala:260 src/Views/FirewallPanel.vala:270
 #, c-format
 msgid "%s Ports %s"
 msgstr "%s Порти %s"
 
-#: src/Views/FirewallPanel.vala:249 src/Views/FirewallPanel.vala:259
+#: src/Views/FirewallPanel.vala:262 src/Views/FirewallPanel.vala:272
 #, c-format
 msgid "%s Port %s"
 msgstr "%s Порт %s"
 
-#: src/Views/FirewallPanel.vala:291 src/Views/FirewallPanel.vala:510
+#: src/Views/FirewallPanel.vala:304 src/Views/FirewallPanel.vala:524
 #: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:103
 #: src/Views/LocationPanel.vala:123
 msgid "Enabled"
 msgstr "Увімкнено"
 
-#: src/Views/FirewallPanel.vala:292
+#: src/Views/FirewallPanel.vala:305
 msgid "Version"
 msgstr "Версія"
 
-#: src/Views/FirewallPanel.vala:293
+#: src/Views/FirewallPanel.vala:306
 msgid "Action"
 msgstr "Дія"
 
-#: src/Views/FirewallPanel.vala:294
+#: src/Views/FirewallPanel.vala:307
 msgid "Protocol"
 msgstr "Протокол"
 
-#: src/Views/FirewallPanel.vala:295
+#: src/Views/FirewallPanel.vala:308
 msgid "Direction"
 msgstr "Напрямок"
 
-#: src/Views/FirewallPanel.vala:296
+#: src/Views/FirewallPanel.vala:309
 msgid "To"
 msgstr "До"
 
-#: src/Views/FirewallPanel.vala:297
+#: src/Views/FirewallPanel.vala:310
 msgid "From"
 msgstr "З"
 
-#: src/Views/FirewallPanel.vala:357
+#: src/Views/FirewallPanel.vala:371
 msgid "Action:"
 msgstr "Дія:"
 
-#: src/Views/FirewallPanel.vala:367
+#: src/Views/FirewallPanel.vala:381
 msgid "Protocol:"
 msgstr "Протокол:"
 
-#: src/Views/FirewallPanel.vala:375
+#: src/Views/FirewallPanel.vala:389
 msgid "Both"
 msgstr "Обидва"
 
-#: src/Views/FirewallPanel.vala:378
+#: src/Views/FirewallPanel.vala:392
 msgid "Version:"
 msgstr "Версія:"
 
-#: src/Views/FirewallPanel.vala:388
+#: src/Views/FirewallPanel.vala:402
 msgid "Direction:"
 msgstr "Напрямок:"
 
-#: src/Views/FirewallPanel.vala:395
+#: src/Views/FirewallPanel.vala:409
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d чи %d-%d"
 
-#: src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:412
 msgid "Ports:"
 msgstr "Порти:"
 
-#: src/Views/FirewallPanel.vala:403
+#: src/Views/FirewallPanel.vala:417
 msgid "Add Rule"
 msgstr "Додати правило"
 
-#: src/Views/FirewallPanel.vala:514 src/Views/HouseKeepingPanel.vala:162
+#: src/Views/FirewallPanel.vala:528 src/Views/HouseKeepingPanel.vala:162
 #: src/Views/TrackPanel.vala:107 src/Views/LocationPanel.vala:128
 msgid "Disabled"
 msgstr "Вимкнено"
@@ -457,6 +453,9 @@ msgstr "Електронні таблиці"
 #: src/Widgets/IncludeTreeView.vala:104
 msgid "Videos"
 msgstr "Відео"
+
+#~ msgid "Some settings require administrator rights to be changed"
+#~ msgstr "Для зміни деяких налаштувань необхідно мати права адміністратора"
 
 #~ msgid "Clear Data"
 #~ msgstr "Очистити Дані"
