@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-03 22:11+0000\n"
-"PO-Revision-Date: 2023-05-20 04:06+0000\n"
+"PO-Revision-Date: 2024-01-06 19:51+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ka/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:24
@@ -354,11 +354,9 @@ msgid "Search Application"
 msgstr "პრორამის ძებნა"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
 msgstr ""
-"სისტემის მიერ მოგროვილი ფაილისა და აპლიკაციის გამოყენების მონაცემების წაშლა:"
+"სისტემის მიერ მოგროვილი ფაილისა და აპლიკაციის გამოყენების ისტორიის წაშლა"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
