@@ -5,7 +5,6 @@
  */
 
 public class SecurityPrivacy.Plug : Switchboard.Plug {
-    private Polkit.Permission permission;
     private Gtk.Paned paned;
     private Gtk.Stack stack;
 
@@ -42,29 +41,9 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (paned == null) {
-            try {
-                permission = new Polkit.Permission.sync (
-                    "io.elementary.switchboard.security-privacy",
-                    new Polkit.UnixProcess (Posix.getpid ())
-                );
-            } catch (Error e) {
-                critical (e.message);
-            }
-
-            var label = new Gtk.Label (_("Some settings require administrator rights to be changed"));
-
-            var lock_button = new Gtk.LockButton (permission);
-
-            var infobar = new Gtk.InfoBar () {
-                message_type = INFO,
-                revealed = false
-            };
-            infobar.add_child (label);
-            infobar.add_action_widget (lock_button, 1);
-
             var tracking = new TrackPanel ();
             var locking = new LockPanel ();
-            var firewall = new FirewallPanel (permission);
+            var firewall = new FirewallPanel ();
             var housekeeping = new HouseKeepingPanel ();
             var location = new LocationPanel ();
 
@@ -75,28 +54,16 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
             stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
             stack.add_titled (location, LOCATION, _("Location Services"));
 
-            var box = new Gtk.Box (VERTICAL, 0);
-            box.append (infobar);
-            box.append (stack);
-
             var settings_sidebar = new Granite.SettingsSidebar (stack);
 
             paned = new Gtk.Paned (HORIZONTAL) {
                 position = 200,
                 start_child = settings_sidebar,
-                end_child = box,
+                end_child = stack,
                 shrink_start_child = false,
                 resize_start_child = false,
                 resize_end_child = false
             };
-
-            stack.notify["visible-child"].connect (() => {
-                infobar.revealed = stack.visible_child == firewall && !permission.allowed;
-            });
-
-            permission.notify["allowed"].connect (() => {
-                infobar.revealed = stack.visible_child == firewall && !permission.allowed;
-            });
         }
 
         return paned;
