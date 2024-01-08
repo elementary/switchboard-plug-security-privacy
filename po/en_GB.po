@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-06 19:51+0000\n"
-"PO-Revision-Date: 2023-06-10 08:07+0000\n"
+"PO-Revision-Date: 2024-01-10 11:11+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:23
@@ -354,16 +354,16 @@ msgid "Search Application"
 msgstr "Search Application"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
-msgstr "Remove system-collected file and application usage data from:"
+msgstr "Clear system-collected file and app usage history"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
 msgstr ""
+"The data from the selected time frame will be permanently deleted and cannot "
+"be restored"
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
