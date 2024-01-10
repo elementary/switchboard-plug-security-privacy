@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-06 19:51+0000\n"
+"POT-Creation-Date: 2024-01-10 20:28+0000\n"
 "PO-Revision-Date: 2023-10-16 18:10+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.0.2\n"
 
-#: data/io.elementary.switchboard.security-privacy.policy.in.in:10
+#: data/security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 "Zum Ausführen von »Firewall-Einrichtung« ist eine Authentifizierung nötig"
