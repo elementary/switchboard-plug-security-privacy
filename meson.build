@@ -9,13 +9,13 @@ gnome = import('gnome')
 
 i18n = import('i18n')
 
-gettext_name = meson.project_name() + '-plug'
+gettext_name = 'io.elementary.settings.' + meson.project_name()
 
 prefix = get_option('prefix')
 datadir = prefix / get_option('datadir')
 libdir = prefix / get_option('libdir')
 
-switchboard_dep = dependency('switchboard-2.0')
+switchboard_dep = dependency('switchboard-3')
 switchboard_plugsdir = switchboard_dep.get_variable('plugsdir', pkgconfig_define: ['libdir', libdir])
 pkgdatadir = switchboard_plugsdir / 'personal'
 

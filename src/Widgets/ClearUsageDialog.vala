@@ -5,13 +5,13 @@
  */
 
 public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
-    private Granite.Widgets.DatePicker to_datepicker;
-    private Granite.Widgets.DatePicker from_datepicker;
-    private Gtk.RadioButton all_time_radio;
-    private Gtk.RadioButton from_radio;
-    private Gtk.RadioButton past_hour_radio;
-    private Gtk.RadioButton past_day_radio;
-    private Gtk.RadioButton past_week_radio;
+    private Granite.DatePicker to_datepicker;
+    private Granite.DatePicker from_datepicker;
+    private Gtk.CheckButton all_time_radio;
+    private Gtk.CheckButton from_radio;
+    private Gtk.CheckButton past_hour_radio;
+    private Gtk.CheckButton past_day_radio;
+    private Gtk.CheckButton past_week_radio;
     private Gtk.RecentManager recent;
 
     private List<Gtk.RecentInfo> items;
@@ -29,15 +29,29 @@ public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
     construct {
         recent = new Gtk.RecentManager ();
 
-        past_hour_radio = new Gtk.RadioButton.with_label (null, _("The past hour"));
-        past_day_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("The past day"));
-        past_week_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("The past week"));
-        from_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("From:"));
-        all_time_radio = new Gtk.RadioButton.with_label_from_widget (past_hour_radio, _("All time"));
+        past_hour_radio = new Gtk.CheckButton.with_label (_("The past hour")) {
+            active = true
+        };
 
-        from_datepicker = new Granite.Widgets.DatePicker ();
+        past_day_radio = new Gtk.CheckButton.with_label (_("The past day")) {
+            group = past_hour_radio
+        };
+
+        past_week_radio = new Gtk.CheckButton.with_label (_("The past week")) {
+            group = past_hour_radio
+        };
+
+        from_radio = new Gtk.CheckButton.with_label (_("From:")) {
+            group = past_hour_radio
+        };
+
+        all_time_radio = new Gtk.CheckButton.with_label (_("All time")) {
+            group = past_hour_radio
+        };
+
+        from_datepicker = new Granite.DatePicker ();
         var to_label = new Gtk.Label (_("To:"));
-        to_datepicker = new Granite.Widgets.DatePicker ();
+        to_datepicker = new Granite.DatePicker ();
 
         var grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -51,12 +65,11 @@ public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
         grid.attach (to_label, 2, 4);
         grid.attach (to_datepicker, 3, 4);
         grid.attach (all_time_radio, 0, 5, 4);
-        grid.show_all ();
 
-        custom_bin.add (grid);
+        custom_bin.append (grid);
 
         var clear_button = add_button (_("Clear History"), Gtk.ResponseType.APPLY);
-        clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
         response.connect ((response) => {
             if (response == Gtk.ResponseType.APPLY) {
@@ -93,16 +106,16 @@ public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
 
             //  Deletes files added in the last hour
             if (recent.size > 0) {
-                items = recent.get_items ();
+                var past_hour = new DateTime.now_local ().add_hours (-1);
 
-                try {
-                    foreach (var item in items) {
-                        if (item.get_added () >= start / 1000) {
-                            recent.remove_item (item.get_uri ());
+                foreach (unowned var recent_info in recent.get_items ()) {
+                    if (recent_info.get_added ().compare (past_hour) >= 0) {
+                        try {
+                            recent.remove_item (recent_info.get_uri ());
+                        } catch (Error err) {
+                            critical (err.message);
                         }
                     }
-                } catch (Error err) {
-                    critical (err.message);
                 }
             }
         } else if (past_day_radio.active == true) {
@@ -155,16 +168,18 @@ public class SecurityPrivacy.Widgets.ClearUsageDialog : Granite.MessageDialog {
 
             //  Deletes files added during the given period
             if (recent.size > 0) {
-                items = recent.get_items ();
-
-                try {
-                    foreach (var item in items) {
-                        if (item.get_added () >= start / 1000 && item.get_added () <= end / 1000) {
-                            recent.remove_item (item.get_uri ());
+                foreach (unowned var recent_info in recent.get_items ()) {
+                    var info_added = recent_info.get_added ();
+                    if (
+                        info_added.compare (from_datepicker.date) >= 0 &&
+                        info_added.compare (to_datepicker.date) <= 0
+                    ) {
+                        try {
+                            recent.remove_item (recent_info.get_uri ());
+                        } catch (Error err) {
+                            critical (err.message);
                         }
                     }
-                } catch (Error err) {
-                    critical (err.message);
                 }
             }
         } else if (all_time_radio.active == true) {

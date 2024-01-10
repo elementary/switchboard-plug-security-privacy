@@ -68,16 +68,19 @@ public class IncludeTreeView : Gtk.Grid {
         });
 
         var cell = new Gtk.CellRendererText ();
-        var cellpixbuf = new Gtk.CellRendererPixbuf ();
-        cellpixbuf.stock_size = Gtk.IconSize.DND;
+        var cellpixbuf = new Gtk.CellRendererPixbuf () {
+            icon_size = Gtk.IconSize.LARGE
+        };
         view.insert_column_with_attributes (-1, "", celltoggle, "active", Columns.ACTIVE);
         view.insert_column_with_attributes (-1, "", cellpixbuf, "icon-name", Columns.ICON);
         view.insert_column_with_attributes (-1, "", cell, "markup", Columns.NAME);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.shadow_type = Gtk.ShadowType.IN;
-        scrolled.expand = true;
-        scrolled.add (view);
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = view,
+            hexpand = true,
+            vexpand = true,
+            has_frame = true
+        };
 
         var record_label = new Gtk.Label (_("Data Sources:"));
         record_label.xalign = 0;

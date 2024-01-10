@@ -39,12 +39,9 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
     construct {
         liststore = new ListStore (typeof (AppPermission));
 
-        var placeholder = new Granite.Widgets.AlertView (
-            _("No Apps Are Using Location Services"),
-            _("When apps are installed that use location services they will automatically appear here."),
-            ""
-        );
-        placeholder.show_all ();
+        var placeholder = new Granite.Placeholder (_("No Apps Are Using Location Services")) {
+            description = _("When apps are installed that use location services they will automatically appear here.")
+        };
 
         var listbox = new Gtk.ListBox () {
             activate_on_single_click = true
@@ -52,23 +49,20 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         listbox.bind_model (liststore, create_widget_func);
         listbox.set_placeholder (placeholder);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = listbox,
             hexpand = true,
             vexpand = true,
             visible = true
         };
 
-        var alert = new Granite.Widgets.AlertView (
-            _("Location Services Are Disabled"),
-            "%s\n%s\n%s".printf (
+        var alert = new Granite.Placeholder (_("Location Services Are Disabled")) {
+            description = "%s\n%s\n%s".printf (
                 _("While location services are disabled, location requests from apps will be automatically rejected."),
                 _("The additional functionality that location access provides in those apps will be affected."),
                 _("This will not prevent apps from trying to determine your location based on IP address.")
-            ),
-            ""
-        );
-        alert.visible = true;
+            )
+        };
 
         disabled_stack = new Gtk.Stack ();
         disabled_stack.add_named (alert, "disabled");
@@ -78,7 +72,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             child = disabled_stack
         };
 
-        content_area.add (frame);
+        content_area.attach (frame, 0, 0);
 
         var location_settings = new Settings ("org.gnome.system.location");
         location_settings.bind ("enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
@@ -211,7 +205,6 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             main_grid.margin_bottom = 6;
             main_grid.margin_start = 6;
             main_grid.attach (active_switch, 2, 0, 1, 2);
-            show_all ();
 
             bind_property ("authed", active_switch, "active", BindingFlags.BIDIRECTIONAL | BindingFlags.SYNC_CREATE);
         }

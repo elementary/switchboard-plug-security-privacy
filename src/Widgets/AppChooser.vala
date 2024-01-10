@@ -39,21 +39,20 @@ public class SecurityPrivacy.Dialogs.AppChooser : Gtk.Popover {
         list.set_sort_func (sort_function);
         list.set_filter_func (filter_function);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = list,
             height_request = 200,
             width_request = 500
         };
-        scrolled.add (list);
 
         var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 6) {
             margin_top = 12,
             margin_bottom = 6
         };
-        box.add (search_entry);
-        box.add (scrolled);
-        box.show_all ();
+        box.append (search_entry);
+        box.append (scrolled);
 
-        add (box);
+        child = box;
 
         foreach (unowned var app_info in AppInfo.get_all ()) {
             if (app_info is DesktopAppInfo && app_info.should_show ()) {

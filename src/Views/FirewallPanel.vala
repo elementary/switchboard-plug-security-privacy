@@ -51,7 +51,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     }
 
     construct {
-        settings = new Settings ("io.elementary.switchboard.security-privacy");
+        settings = new Settings ("io.elementary.settings.security-privacy");
         disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
         load_disabled_rules ();
 
@@ -66,13 +66,13 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
 
         try {
             permission = new Polkit.Permission.sync (
-                "io.elementary.switchboard.security-privacy",
+                "io.elementary.settings.security-privacy",
                 new Polkit.UnixProcess (Posix.getpid ())
             );
 
             var lock_button = new Gtk.LockButton (permission);
 
-            action_area.add (lock_button);
+            action_area.append (lock_button);
 
             status_switch.sensitive = permission.allowed;
 
@@ -337,17 +337,17 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
         actionbar.pack_start (add_button);
         actionbar.pack_start (remove_button);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = view
         };
 
         var view_box = new Gtk.Box (VERTICAL, 0);
-        view_box.add (scrolled);
-        view_box.add (actionbar);
+        view_box.append (scrolled);
+        view_box.append (actionbar);
 
         frame = new Gtk.Frame (null) {
             child = view_box,
@@ -419,7 +419,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
                 hexpand = true,
                 margin_top = 6
             };
-            do_add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+            do_add_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
             var popover_grid = new Gtk.Grid () {
                 margin_top = 12,
@@ -441,10 +441,11 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             popover_grid.attach (ports_entry, 1, 4);
             popover_grid.attach (do_add_button, 0, 5, 2);
 
-            var add_popover = new Gtk.Popover (add_button) {
+            var add_popover = new Gtk.Popover () {
                 child = popover_grid
             };
-            add_popover.show_all ();
+            add_popover.set_parent (add_button);
+            add_popover.popup ();
 
             do_add_button.clicked.connect (() => {
                 var rule = new UFWHelpers.Rule ();

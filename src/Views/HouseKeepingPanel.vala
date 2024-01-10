@@ -36,53 +36,64 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
     construct {
         var switch_header_label = new Granite.HeaderLabel (_("Automatically Delete:"));
 
-        var temp_files_grid = new Gtk.Grid ();
-        temp_files_grid.add (new Gtk.Image.from_icon_name ("folder", Gtk.IconSize.LARGE_TOOLBAR));
-        temp_files_grid.add (new Gtk.Label (_("Old temporary files")));
-
         temp_files_switch = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
             margin_start = 12
         };
-        temp_files_switch.add (temp_files_grid);
 
-        var download_files_grid = new Gtk.Grid ();
-        download_files_grid.add (new Gtk.Image.from_icon_name ("folder-download", Gtk.IconSize.LARGE_TOOLBAR));
-        download_files_grid.add (new Gtk.Label (_("Downloaded files")));
+        var temp_files_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        temp_files_grid.append (new Gtk.Image.from_icon_name ("folder") {
+            margin_end = 6,
+            pixel_size = 24
+        });
+        temp_files_grid.append (new Gtk.Label (_("Old temporary files")));
+        temp_files_grid.set_parent (temp_files_switch);
 
         download_files_check = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
             margin_start = 12
         };
-        download_files_check.add (download_files_grid);
 
+        var download_files_box = new Gtk.Box (HORIZONTAL, 0);
+        download_files_box.append (new Gtk.Image.from_icon_name ("folder-download") {
+            margin_end = 6,
+            pixel_size = 24
+        });
+        download_files_box.append (new Gtk.Label (_("Downloaded files")));
+        download_files_box.set_parent (download_files_check);
 
-        var screenshot_files_grid = new Gtk.Grid ();
-        screenshot_files_grid.add (new Gtk.Image.from_icon_name ("folder-screenshots-icon", Gtk.IconSize.LARGE_TOOLBAR));
-        screenshot_files_grid.add (new Gtk.Label (_("Screenshot files")));
+        var screenshot_files_grid = new Gtk.Box (HORIZONTAL, 0);
+        screenshot_files_grid.append (new Gtk.Image.from_icon_name ("folder-screenshots-icon") {
+            margin_end = 6,
+            pixel_size = 24
+        });
+        screenshot_files_grid.append (new Gtk.Label (_("Screenshot files")));
 
         screenshot_files_check = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
             margin_start = 12
         };
-        screenshot_files_check.add (screenshot_files_grid);
-
-        var trash_files_grid = new Gtk.Grid ();
-        trash_files_grid.add (new Gtk.Image.from_icon_name ("user-trash-full", Gtk.IconSize.LARGE_TOOLBAR));
-        trash_files_grid.add (new Gtk.Label (_("Trashed files")));
+        screenshot_files_grid.set_parent (screenshot_files_check);
 
         trash_files_switch = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
             margin_start = 12,
             margin_bottom = 18
         };
-        trash_files_switch.add (trash_files_grid);
+
+        var trash_files_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        trash_files_grid.append (new Gtk.Image.from_icon_name ("user-trash-full") {
+            margin_end = 6,
+            pixel_size = 24
+        });
+        trash_files_grid.append (new Gtk.Label (_("Trashed files")));
+        trash_files_grid.set_parent (trash_files_switch);
 
         spin_header_label = new Granite.HeaderLabel (_("Delete Old Files After:"));
 
         file_age_spinbutton = new Gtk.SpinButton.with_range (0, 90, 5);
         file_age_spinbutton.margin_start = 12;
-        file_age_spinbutton.max_length = 2;
+        file_age_spinbutton.max_width_chars = 2;
         file_age_spinbutton.xalign = 1;
 
         file_age_label = new Gtk.Label (null);
@@ -102,7 +113,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
         var view_trash_button = new Gtk.Button.with_label (_("Open Trash…"));
 
-        action_area.add (view_trash_button);
+        action_area.append (view_trash_button);
 
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
         privacy_settings.bind ("remove-old-temp-files", temp_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);

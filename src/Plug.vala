@@ -19,7 +19,7 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
         GLib.Intl.bind_textdomain_codeset (Build.GETTEXT_PACKAGE, "UTF-8");
 
         Object (category: Category.PERSONAL,
-                code_name: "io.elementary.switchboard.security-privacy",
+                code_name: "io.elementary.settings.security-privacy",
                 display_name: _("Security & Privacy"),
                 description: _("Configure firewall, screen lock, and activity information"),
                 icon: "preferences-system-privacy",
@@ -56,10 +56,14 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
 
             var settings_sidebar = new Granite.SettingsSidebar (stack);
 
-            paned = new Gtk.Paned (HORIZONTAL);
-            paned.add1 (settings_sidebar);
-            paned.add2 (stack);
-            paned.show_all ();
+            paned = new Gtk.Paned (HORIZONTAL) {
+                position = 200,
+                start_child = settings_sidebar,
+                end_child = stack,
+                shrink_start_child = false,
+                resize_start_child = false,
+                resize_end_child = false
+            };
         }
 
         return paned;

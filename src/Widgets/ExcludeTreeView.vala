@@ -19,7 +19,7 @@
 * Authored by: Corentin Noël <corentin@elementaryos.org>
 */
 
-public class ExcludeTreeView : Gtk.Grid {
+public class ExcludeTreeView : Gtk.Box {
     private SecurityPrivacy.ApplicationBlacklist app_blacklist;
     private SecurityPrivacy.PathBlacklist path_blacklist;
 
@@ -48,24 +48,27 @@ public class ExcludeTreeView : Gtk.Grid {
         view.headers_visible = false;
 
         var cell = new Gtk.CellRendererText ();
-        var cellpixbuf = new Gtk.CellRendererPixbuf ();
-        cellpixbuf.stock_size = Gtk.IconSize.DND;
+        var cellpixbuf = new Gtk.CellRendererPixbuf () {
+            icon_size = Gtk.IconSize.LARGE
+        };
         view.insert_column_with_attributes (-1, "", cellpixbuf, "gicon", NotColumns.ICON);
         view.insert_column_with_attributes (-1, "", cell, "markup", NotColumns.NAME);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.expand = true;
-        scrolled.add (view);
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = view,
+            hexpand = true,
+            vexpand = true
+        };
 
         var app_chooser = new SecurityPrivacy.Dialogs.AppChooser ();
 
         var add_app_button = new Gtk.MenuButton () {
-            image = new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON),
+            icon_name = "application-add-symbolic",
             popover = app_chooser,
             tooltip_text = _("Add Application…")
         };
 
-        var add_folder_button = new Gtk.Button.from_icon_name ("folder-new-symbolic", Gtk.IconSize.BUTTON);
+        var add_folder_button = new Gtk.Button.from_icon_name ("folder-new-symbolic");
         add_folder_button.tooltip_text = _("Add Folder…");
         add_folder_button.clicked.connect (() => {
             var chooser = new Gtk.FileChooserNative (
@@ -75,18 +78,21 @@ public class ExcludeTreeView : Gtk.Grid {
                 _("Add"),
                 _("Cancel")
             );
+            chooser.show ();
 
-            if (chooser.run () == Gtk.ResponseType.ACCEPT) {
-                string folder = chooser.get_filename ();
-                if (this.path_blacklist.is_duplicate (folder) == false) {
-                    path_blacklist.block (folder);
+            chooser.response.connect ((response_id) => {
+                if (response_id == Gtk.ResponseType.ACCEPT) {
+                    string folder = chooser.get_file ().get_path ();
+                    if (this.path_blacklist.is_duplicate (folder) == false) {
+                        path_blacklist.block (folder);
+                    }
                 }
-            }
 
-            chooser.destroy ();
+                chooser.destroy ();
+            });
         });
 
-        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
+        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic");
         remove_button.tooltip_text = _("Delete");
         remove_button.sensitive = false;
         remove_button.clicked.connect (() => {
@@ -118,26 +124,26 @@ public class ExcludeTreeView : Gtk.Grid {
         });
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        actionbar.add (add_app_button);
-        actionbar.add (add_folder_button);
-        actionbar.add (remove_button);
+        actionbar.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
+        actionbar.pack_start (add_app_button);
+        actionbar.pack_start (add_folder_button);
+        actionbar.pack_start (remove_button);
 
-        var frame_grid = new Gtk.Grid ();
-        frame_grid.orientation = Gtk.Orientation.VERTICAL;
-        frame_grid.add (scrolled);
-        frame_grid.add (actionbar);
+        var frame_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        frame_box.append (scrolled);
+        frame_box.append (actionbar);
 
-        var frame = new Gtk.Frame (null);
-        frame.add (frame_grid);
+        var frame = new Gtk.Frame (null) {
+            child = frame_box
+        };
 
         var record_label = new Gtk.Label (_("Do not collect data from the following:"));
         record_label.xalign = 0;
 
-        row_spacing = 6;
+        spacing = 6;
         orientation = Gtk.Orientation.VERTICAL;
-        add (record_label);
-        add (frame);
+        append (record_label);
+        append (frame);
 
         view.cursor_changed.connect (() => {
             Gtk.TreePath path;

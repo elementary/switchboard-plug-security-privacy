@@ -43,12 +43,9 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
             _("This may not prevent apps from recording their own usage data, such as browser history.")
         ));
 
-        var alert = new Granite.Widgets.AlertView (_("History Is Disabled"), description, "");
-        alert.show_all ();
-
-        var description_frame = new Gtk.Frame (null);
-        description_frame.no_show_all = true;
-        description_frame.add (alert);
+        var alert = new Granite.Placeholder (_("History Is Disabled")) {
+            description = description
+        };
 
         status_switch.active = true;
 
@@ -57,17 +54,28 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         var include_treeview = new IncludeTreeView ();
         var exclude_treeview = new ExcludeTreeView ();
 
-        content_area.attach (description_frame, 0, 1, 2, 1);
-        content_area.attach (include_treeview, 0, 1, 1, 1);
-        content_area.attach (exclude_treeview, 1, 1, 1, 1);
+        var content_box = new Gtk.Box (HORIZONTAL, 12);
+        content_box.append (include_treeview);
+        content_box.append (exclude_treeview);
 
-        action_area.add (clear_button);
+        var stack = new Gtk.Stack ();
+        stack.add_child (content_box);
+        stack.add_child (alert);
+
+        content_area.attach (stack, 0, 0);
+
+        action_area.append (clear_button);
 
         status_switch.notify["active"].connect (() => {
             bool privacy_mode = !status_switch.active;
             include_treeview.visible = !privacy_mode;
             exclude_treeview.visible = !privacy_mode;
-            description_frame.visible = privacy_mode;
+
+            if (privacy_mode) {
+                stack.visible_child = alert;
+            } else {
+                stack.visible_child = content_box;
+            }
 
             if (privacy_mode != blacklist.get_incognito ()) {
                 blacklist.set_incognito (privacy_mode);
@@ -87,7 +95,7 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         clear_button.clicked.connect (() => {
             var clear_dialog = new Widgets.ClearUsageDialog () {
                 modal = true,
-                transient_for = (Gtk.Window) get_toplevel ()
+                transient_for = (Gtk.Window) get_root ()
             };
             clear_dialog.present ();
         });
