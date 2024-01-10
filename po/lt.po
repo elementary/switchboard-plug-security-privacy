@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-06 19:51+0000\n"
+"POT-Creation-Date: 2024-01-10 20:28+0000\n"
 "PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -33,55 +33,55 @@ msgstr "Konfigūruoti užkardą, ekrano užraktą ir veiklos informaciją"
 msgid "Privacy"
 msgstr "Privatumas"
 
-#: src/Plug.vala:52 src/Plug.vala:81 src/Plug.vala:82 src/Plug.vala:83
+#: src/Plug.vala:52 src/Plug.vala:85 src/Plug.vala:86 src/Plug.vala:87
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Užrakinimas"
 
-#: src/Plug.vala:53 src/Plug.vala:84 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:88 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "Užkarda"
 
-#: src/Plug.vala:54 src/Plug.vala:85 src/Plug.vala:88 src/Plug.vala:93
-#: src/Plug.vala:98 src/Plug.vala:103 src/Views/HouseKeepingPanel.vala:32
+#: src/Plug.vala:54 src/Plug.vala:89 src/Plug.vala:92 src/Plug.vala:97
+#: src/Plug.vala:102 src/Plug.vala:107 src/Views/HouseKeepingPanel.vala:32
 msgid "Housekeeping"
 msgstr "Namų ūkis"
 
-#: src/Plug.vala:55 src/Plug.vala:106 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:110 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Buvimo vietos tarnybos"
 
-#: src/Plug.vala:79 src/Plug.vala:80 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:83 src/Plug.vala:84 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Istorija"
 
-#: src/Plug.vala:80 src/Widgets/ClearUsageDialog.vala:58
+#: src/Plug.vala:84 src/Widgets/ClearUsageDialog.vala:71
 msgid "Clear History"
 msgstr "Išvalyti istoriją"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:86
 msgid "Lock on sleep"
 msgstr "Užrakinti, pristabdant kompiuterį"
 
-#: src/Plug.vala:83
+#: src/Plug.vala:87
 msgid "Lock after sceen turns off"
 msgstr "Užrakinti po to, kai ekranas išsijungia"
 
-#: src/Plug.vala:89
+#: src/Plug.vala:93
 msgid "Automatically delete old temporary files"
 msgstr "Automatiškai ištrinti senus laikinuosius failus"
 
-#: src/Plug.vala:94
+#: src/Plug.vala:98
 #, fuzzy
 #| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
 msgstr "Automatiškai ištrinti senus failus šiukšlinėje"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:103
 msgid "Automatically delete old trashed files"
 msgstr "Automatiškai ištrinti senus failus šiukšlinėje"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Kiek dienų laikyti failus šiukšlinėje ir laikinuosius failus"
 
@@ -129,9 +129,9 @@ msgstr "%s prievadai %s"
 msgid "%s Port %s"
 msgstr "%s prievadas %s"
 
-#: src/Views/FirewallPanel.vala:304 src/Views/FirewallPanel.vala:524
-#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:103
-#: src/Views/LocationPanel.vala:123
+#: src/Views/FirewallPanel.vala:304 src/Views/FirewallPanel.vala:525
+#: src/Views/HouseKeepingPanel.vala:167 src/Views/TrackPanel.vala:111
+#: src/Views/LocationPanel.vala:117
 msgid "Enabled"
 msgstr "Įjungta"
 
@@ -192,8 +192,8 @@ msgstr "Prievadai:"
 msgid "Add Rule"
 msgstr "Pridėti taisyklę"
 
-#: src/Views/FirewallPanel.vala:528 src/Views/HouseKeepingPanel.vala:162
-#: src/Views/TrackPanel.vala:107 src/Views/LocationPanel.vala:128
+#: src/Views/FirewallPanel.vala:529 src/Views/HouseKeepingPanel.vala:173
+#: src/Views/TrackPanel.vala:115 src/Views/LocationPanel.vala:122
 msgid "Disabled"
 msgstr "Išjungta"
 
@@ -201,39 +201,39 @@ msgstr "Išjungta"
 msgid "Automatically Delete:"
 msgstr "Automatiškai ištrinti:"
 
-#: src/Views/HouseKeepingPanel.vala:41
+#: src/Views/HouseKeepingPanel.vala:49
 #, fuzzy
 #| msgid "Temporary files"
 msgid "Old temporary files"
 msgstr "Laikinuosius failus"
 
-#: src/Views/HouseKeepingPanel.vala:51
+#: src/Views/HouseKeepingPanel.vala:62
 #, fuzzy
 #| msgid "Trashed files"
 msgid "Downloaded files"
 msgstr "Failus šiukšlinėje"
 
-#: src/Views/HouseKeepingPanel.vala:62
+#: src/Views/HouseKeepingPanel.vala:70
 #, fuzzy
 #| msgid "Trashed files"
 msgid "Screenshot files"
 msgstr "Failus šiukšlinėje"
 
-#: src/Views/HouseKeepingPanel.vala:72
+#: src/Views/HouseKeepingPanel.vala:89
 msgid "Trashed files"
 msgstr "Failus šiukšlinėje"
 
-#: src/Views/HouseKeepingPanel.vala:81
+#: src/Views/HouseKeepingPanel.vala:92
 #, fuzzy
 #| msgid "Delete Trashed and Temporary Files After:"
 msgid "Delete Old Files After:"
 msgstr "Ištrinti failus šiukšlinėje ir laikinuosius failus po:"
 
-#: src/Views/HouseKeepingPanel.vala:103
+#: src/Views/HouseKeepingPanel.vala:114
 msgid "Open Trash…"
 msgstr "Atverti šiukšlinę…"
 
-#: src/Views/HouseKeepingPanel.vala:138
+#: src/Views/HouseKeepingPanel.vala:149
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -254,7 +254,7 @@ msgstr[3] ""
 "Seni failai gali būti automatiškai ištrinti po %u dienos, kad būtų sutaupyta "
 "vietos ir būtų apsaugotas jūsų privatumas."
 
-#: src/Views/HouseKeepingPanel.vala:144
+#: src/Views/HouseKeepingPanel.vala:155
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "d."
@@ -262,7 +262,7 @@ msgstr[1] "d."
 msgstr[2] "d."
 msgstr[3] "d."
 
-#: src/Views/HouseKeepingPanel.vala:159
+#: src/Views/HouseKeepingPanel.vala:170
 msgid "Partially Enabled"
 msgstr "Iš dalies įjungta"
 
@@ -312,11 +312,11 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "Istorija yra išjungta"
 
-#: src/Views/TrackPanel.vala:55
+#: src/Views/TrackPanel.vala:52
 msgid "Clear History…"
 msgstr "Išvalyti istoriją…"
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:105
 msgid "Your system"
 msgstr "Jūsų sistema"
 
@@ -324,11 +324,11 @@ msgstr "Jūsų sistema"
 msgid "Allow the apps below to determine your location"
 msgstr "Leisti žemiau esančioms programoms nustatyti jūsų buvimo vietą"
 
-#: src/Views/LocationPanel.vala:43
+#: src/Views/LocationPanel.vala:42
 msgid "No Apps Are Using Location Services"
 msgstr "Jokios programos nenaudoja buvimo vietos tarnybų"
 
-#: src/Views/LocationPanel.vala:44
+#: src/Views/LocationPanel.vala:43
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
@@ -336,11 +336,11 @@ msgstr ""
 "Įdiegus programas, kurios naudoja buvimo vietos tarnybas, jos automatiškai "
 "atsiras čia."
 
-#: src/Views/LocationPanel.vala:63
+#: src/Views/LocationPanel.vala:59
 msgid "Location Services Are Disabled"
 msgstr "Buvimo vietos tarnybos yra išjungtos"
 
-#: src/Views/LocationPanel.vala:65
+#: src/Views/LocationPanel.vala:61
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -348,7 +348,7 @@ msgstr ""
 "Tol, kol buvimo vietos tarnybos yra išjungtos, buvimo vietos užklausos iš "
 "programų bus automatiškai atmetamos."
 
-#: src/Views/LocationPanel.vala:66
+#: src/Views/LocationPanel.vala:62
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
@@ -356,7 +356,7 @@ msgstr ""
 "Bus paveiktas papildomas tose programose pateikiamas buvimo vietos "
 "funkcionalumas."
 
-#: src/Views/LocationPanel.vala:67
+#: src/Views/LocationPanel.vala:63
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -364,7 +364,7 @@ msgstr ""
 "Tai nesutrukdys programoms bandyti nustatyti jūsų buvimo vietą pagal jūsų IP "
 "adresą."
 
-#: src/Views/LocationPanel.vala:205
+#: src/Views/LocationPanel.vala:199
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Leisti %s naudoti buvimo vietos tarnybas"
@@ -389,83 +389,83 @@ msgstr ""
 msgid "The past hour"
 msgstr "Praėjusios valandos"
 
-#: src/Widgets/ClearUsageDialog.vala:33
+#: src/Widgets/ClearUsageDialog.vala:36
 msgid "The past day"
 msgstr "Praėjusios dienos"
 
-#: src/Widgets/ClearUsageDialog.vala:34
+#: src/Widgets/ClearUsageDialog.vala:40
 msgid "The past week"
 msgstr "Praėjusios savaitės"
 
-#: src/Widgets/ClearUsageDialog.vala:35
+#: src/Widgets/ClearUsageDialog.vala:44
 msgid "From:"
 msgstr "Nuo:"
 
-#: src/Widgets/ClearUsageDialog.vala:36
+#: src/Widgets/ClearUsageDialog.vala:48
 msgid "All time"
 msgstr "Viso laiko"
 
-#: src/Widgets/ClearUsageDialog.vala:39
+#: src/Widgets/ClearUsageDialog.vala:53
 msgid "To:"
 msgstr "Iki:"
 
-#: src/Widgets/ExcludeTreeView.vala:65
+#: src/Widgets/ExcludeTreeView.vala:68
 msgid "Add Application…"
 msgstr "Pridėti programą…"
 
-#: src/Widgets/ExcludeTreeView.vala:69
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Add Folder…"
 msgstr "Pridėti aplanką…"
 
-#: src/Widgets/ExcludeTreeView.vala:72
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Select a folder to blacklist"
 msgstr "Pasirinkite aplanką, kurį įtraukti į juodąjį sąrašą"
 
-#: src/Widgets/ExcludeTreeView.vala:75
+#: src/Widgets/ExcludeTreeView.vala:78
 msgid "Add"
 msgstr "Pridėti"
 
-#: src/Widgets/ExcludeTreeView.vala:76
+#: src/Widgets/ExcludeTreeView.vala:79
 msgid "Cancel"
 msgstr "Atsisakyti"
 
-#: src/Widgets/ExcludeTreeView.vala:90
+#: src/Widgets/ExcludeTreeView.vala:96
 msgid "Delete"
 msgstr "Ištrinti"
 
-#: src/Widgets/ExcludeTreeView.vala:134
+#: src/Widgets/ExcludeTreeView.vala:140
 msgid "Do not collect data from the following:"
 msgstr "Nerinkti duomenų iš šių vietų:"
 
-#: src/Widgets/IncludeTreeView.vala:82
+#: src/Widgets/IncludeTreeView.vala:85
 msgid "Data Sources:"
 msgstr "Duomenų šaltiniai:"
 
-#: src/Widgets/IncludeTreeView.vala:88
+#: src/Widgets/IncludeTreeView.vala:91
 msgid "Chat Logs"
 msgstr "Pokalbių žurnalai"
 
-#: src/Widgets/IncludeTreeView.vala:89
+#: src/Widgets/IncludeTreeView.vala:92
 msgid "Documents"
 msgstr "Dokumentai"
 
-#: src/Widgets/IncludeTreeView.vala:90
+#: src/Widgets/IncludeTreeView.vala:93
 msgid "Music"
 msgstr "Muzika"
 
-#: src/Widgets/IncludeTreeView.vala:91
+#: src/Widgets/IncludeTreeView.vala:94
 msgid "Pictures"
 msgstr "Paveikslai"
 
-#: src/Widgets/IncludeTreeView.vala:94
+#: src/Widgets/IncludeTreeView.vala:97
 msgid "Presentations"
 msgstr "Pateiktys"
 
-#: src/Widgets/IncludeTreeView.vala:100
+#: src/Widgets/IncludeTreeView.vala:103
 msgid "Spreadsheets"
 msgstr "Skaičiuoklės"
 
-#: src/Widgets/IncludeTreeView.vala:104
+#: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Vaizdo įrašai"
 

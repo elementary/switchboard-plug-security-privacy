@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-06 19:51+0000\n"
+"POT-Creation-Date: 2024-01-10 20:28+0000\n"
 "PO-Revision-Date: 2020-09-16 15:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -34,55 +34,55 @@ msgstr ""
 msgid "Privacy"
 msgstr "Privacidad"
 
-#: src/Plug.vala:52 src/Plug.vala:81 src/Plug.vala:82 src/Plug.vala:83
+#: src/Plug.vala:52 src/Plug.vala:85 src/Plug.vala:86 src/Plug.vala:87
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Bloqueo"
 
-#: src/Plug.vala:53 src/Plug.vala:84 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:88 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "Cortafuegos"
 
-#: src/Plug.vala:54 src/Plug.vala:85 src/Plug.vala:88 src/Plug.vala:93
-#: src/Plug.vala:98 src/Plug.vala:103 src/Views/HouseKeepingPanel.vala:32
+#: src/Plug.vala:54 src/Plug.vala:89 src/Plug.vala:92 src/Plug.vala:97
+#: src/Plug.vala:102 src/Plug.vala:107 src/Views/HouseKeepingPanel.vala:32
 msgid "Housekeeping"
 msgstr "Mantenimiento"
 
-#: src/Plug.vala:55 src/Plug.vala:106 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:110 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Servicio de ubicación"
 
-#: src/Plug.vala:79 src/Plug.vala:80 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:83 src/Plug.vala:84 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Historial"
 
-#: src/Plug.vala:80 src/Widgets/ClearUsageDialog.vala:58
+#: src/Plug.vala:84 src/Widgets/ClearUsageDialog.vala:71
 msgid "Clear History"
 msgstr "Limpiar historial"
 
-#: src/Plug.vala:82
+#: src/Plug.vala:86
 msgid "Lock on sleep"
 msgstr "Bloquear en reposo"
 
-#: src/Plug.vala:83
+#: src/Plug.vala:87
 msgid "Lock after sceen turns off"
 msgstr "Bloquear tras apagado de pantalla"
 
-#: src/Plug.vala:89
+#: src/Plug.vala:93
 msgid "Automatically delete old temporary files"
 msgstr "Eliminar archivos temporales antiguos automáticamente"
 
-#: src/Plug.vala:94
+#: src/Plug.vala:98
 #, fuzzy
 #| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
 msgstr "Eliminar archivos antiguos en papelera automáticamente"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:103
 msgid "Automatically delete old trashed files"
 msgstr "Eliminar archivos antiguos en papelera automáticamente"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Días que conservar archivos temporales y de la papelera"
 
@@ -129,9 +129,9 @@ msgstr "%s Puertos %s"
 msgid "%s Port %s"
 msgstr "%s Puerto %s"
 
-#: src/Views/FirewallPanel.vala:304 src/Views/FirewallPanel.vala:524
-#: src/Views/HouseKeepingPanel.vala:156 src/Views/TrackPanel.vala:103
-#: src/Views/LocationPanel.vala:123
+#: src/Views/FirewallPanel.vala:304 src/Views/FirewallPanel.vala:525
+#: src/Views/HouseKeepingPanel.vala:167 src/Views/TrackPanel.vala:111
+#: src/Views/LocationPanel.vala:117
 msgid "Enabled"
 msgstr "Activado"
 
@@ -192,8 +192,8 @@ msgstr "Puertos:"
 msgid "Add Rule"
 msgstr "Añadir regla"
 
-#: src/Views/FirewallPanel.vala:528 src/Views/HouseKeepingPanel.vala:162
-#: src/Views/TrackPanel.vala:107 src/Views/LocationPanel.vala:128
+#: src/Views/FirewallPanel.vala:529 src/Views/HouseKeepingPanel.vala:173
+#: src/Views/TrackPanel.vala:115 src/Views/LocationPanel.vala:122
 msgid "Disabled"
 msgstr "Desactivado"
 
@@ -201,37 +201,37 @@ msgstr "Desactivado"
 msgid "Automatically Delete:"
 msgstr "Eliminar automáticamente:"
 
-#: src/Views/HouseKeepingPanel.vala:41
+#: src/Views/HouseKeepingPanel.vala:49
 msgid "Old temporary files"
 msgstr "Archivos temporales antiguos"
 
-#: src/Views/HouseKeepingPanel.vala:51
+#: src/Views/HouseKeepingPanel.vala:62
 #, fuzzy
 #| msgid "Trashed files"
 msgid "Downloaded files"
 msgstr "Archivos eliminados"
 
-#: src/Views/HouseKeepingPanel.vala:62
+#: src/Views/HouseKeepingPanel.vala:70
 #, fuzzy
 #| msgid "Trashed files"
 msgid "Screenshot files"
 msgstr "Archivos eliminados"
 
-#: src/Views/HouseKeepingPanel.vala:72
+#: src/Views/HouseKeepingPanel.vala:89
 msgid "Trashed files"
 msgstr "Archivos eliminados"
 
-#: src/Views/HouseKeepingPanel.vala:81
+#: src/Views/HouseKeepingPanel.vala:92
 #, fuzzy
 #| msgid "Delete Trashed and Temporary Files After:"
 msgid "Delete Old Files After:"
 msgstr "Eliminar archivos temporales y vaciar papelera después de:"
 
-#: src/Views/HouseKeepingPanel.vala:103
+#: src/Views/HouseKeepingPanel.vala:114
 msgid "Open Trash…"
 msgstr "Abrir papelera…"
 
-#: src/Views/HouseKeepingPanel.vala:138
+#: src/Views/HouseKeepingPanel.vala:149
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -246,13 +246,13 @@ msgstr[1] ""
 "Los archivos antiguos pueden eliminarse automáticamente después de %u días "
 "para ahorrar espacio y proteger su privacidad."
 
-#: src/Views/HouseKeepingPanel.vala:144
+#: src/Views/HouseKeepingPanel.vala:155
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "Día"
 msgstr[1] "Días"
 
-#: src/Views/HouseKeepingPanel.vala:159
+#: src/Views/HouseKeepingPanel.vala:170
 msgid "Partially Enabled"
 msgstr "Activado parcialmente"
 
@@ -304,11 +304,11 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "El historial está desactivado"
 
-#: src/Views/TrackPanel.vala:55
+#: src/Views/TrackPanel.vala:52
 msgid "Clear History…"
 msgstr "Limpiar historial…"
 
-#: src/Views/TrackPanel.vala:97
+#: src/Views/TrackPanel.vala:105
 msgid "Your system"
 msgstr "Sistema"
 
@@ -316,11 +316,11 @@ msgstr "Sistema"
 msgid "Allow the apps below to determine your location"
 msgstr "Permitir a estas aplicaciones determinar su ubicación"
 
-#: src/Views/LocationPanel.vala:43
+#: src/Views/LocationPanel.vala:42
 msgid "No Apps Are Using Location Services"
 msgstr "Ninguna aplicación utiliza los servicios de ubicación"
 
-#: src/Views/LocationPanel.vala:44
+#: src/Views/LocationPanel.vala:43
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
@@ -328,11 +328,11 @@ msgstr ""
 "Cuando se instalan aplicaciones que usan servicios de ubicación, aparecerán "
 "automáticamente aquí."
 
-#: src/Views/LocationPanel.vala:63
+#: src/Views/LocationPanel.vala:59
 msgid "Location Services Are Disabled"
 msgstr "Los servicios de ubicación están desactivados"
 
-#: src/Views/LocationPanel.vala:65
+#: src/Views/LocationPanel.vala:61
 msgid ""
 "While location services are disabled, location requests from apps will be "
 "automatically rejected."
@@ -340,7 +340,7 @@ msgstr ""
 "Mientras los servicios de ubicación estén desactivados, las solicitudes de "
 "acceso a la ubicación de las aplicaciones se rechazarán automáticamente."
 
-#: src/Views/LocationPanel.vala:66
+#: src/Views/LocationPanel.vala:62
 msgid ""
 "The additional functionality that location access provides in those apps "
 "will be affected."
@@ -348,7 +348,7 @@ msgstr ""
 "Se verá afectada la funcionalidad adicional que provee el acceso a la "
 "ubicación en esas aplicaciones."
 
-#: src/Views/LocationPanel.vala:67
+#: src/Views/LocationPanel.vala:63
 msgid ""
 "This will not prevent apps from trying to determine your location based on "
 "IP address."
@@ -356,7 +356,7 @@ msgstr ""
 "Esto no evitará que las aplicaciones traten de calcular su ubicación "
 "basándose en la dirección IP."
 
-#: src/Views/LocationPanel.vala:205
+#: src/Views/LocationPanel.vala:199
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Permitir que %s use servicios de ubicación"
@@ -383,83 +383,83 @@ msgstr ""
 msgid "The past hour"
 msgstr "La última hora"
 
-#: src/Widgets/ClearUsageDialog.vala:33
+#: src/Widgets/ClearUsageDialog.vala:36
 msgid "The past day"
 msgstr "Ayer"
 
-#: src/Widgets/ClearUsageDialog.vala:34
+#: src/Widgets/ClearUsageDialog.vala:40
 msgid "The past week"
 msgstr "La semana pasada"
 
-#: src/Widgets/ClearUsageDialog.vala:35
+#: src/Widgets/ClearUsageDialog.vala:44
 msgid "From:"
 msgstr "Desde:"
 
-#: src/Widgets/ClearUsageDialog.vala:36
+#: src/Widgets/ClearUsageDialog.vala:48
 msgid "All time"
 msgstr "Siempre"
 
-#: src/Widgets/ClearUsageDialog.vala:39
+#: src/Widgets/ClearUsageDialog.vala:53
 msgid "To:"
 msgstr "Hasta:"
 
-#: src/Widgets/ExcludeTreeView.vala:65
+#: src/Widgets/ExcludeTreeView.vala:68
 msgid "Add Application…"
 msgstr "Añadir aplicación…"
 
-#: src/Widgets/ExcludeTreeView.vala:69
+#: src/Widgets/ExcludeTreeView.vala:72
 msgid "Add Folder…"
 msgstr "Añadir carpeta…"
 
-#: src/Widgets/ExcludeTreeView.vala:72
+#: src/Widgets/ExcludeTreeView.vala:75
 msgid "Select a folder to blacklist"
 msgstr "Seleccione una carpeta que añadir a la lista negra"
 
-#: src/Widgets/ExcludeTreeView.vala:75
+#: src/Widgets/ExcludeTreeView.vala:78
 msgid "Add"
 msgstr "Añadir"
 
-#: src/Widgets/ExcludeTreeView.vala:76
+#: src/Widgets/ExcludeTreeView.vala:79
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/Widgets/ExcludeTreeView.vala:90
+#: src/Widgets/ExcludeTreeView.vala:96
 msgid "Delete"
 msgstr "Eliminar"
 
-#: src/Widgets/ExcludeTreeView.vala:134
+#: src/Widgets/ExcludeTreeView.vala:140
 msgid "Do not collect data from the following:"
 msgstr "No recopilar datos de lo siguiente:"
 
-#: src/Widgets/IncludeTreeView.vala:82
+#: src/Widgets/IncludeTreeView.vala:85
 msgid "Data Sources:"
 msgstr "Orígenes de datos:"
 
-#: src/Widgets/IncludeTreeView.vala:88
+#: src/Widgets/IncludeTreeView.vala:91
 msgid "Chat Logs"
 msgstr "Registros de chat"
 
-#: src/Widgets/IncludeTreeView.vala:89
+#: src/Widgets/IncludeTreeView.vala:92
 msgid "Documents"
 msgstr "Documentos"
 
-#: src/Widgets/IncludeTreeView.vala:90
+#: src/Widgets/IncludeTreeView.vala:93
 msgid "Music"
 msgstr "Música"
 
-#: src/Widgets/IncludeTreeView.vala:91
+#: src/Widgets/IncludeTreeView.vala:94
 msgid "Pictures"
 msgstr "Imágenes"
 
-#: src/Widgets/IncludeTreeView.vala:94
+#: src/Widgets/IncludeTreeView.vala:97
 msgid "Presentations"
 msgstr "Presentaciones"
 
-#: src/Widgets/IncludeTreeView.vala:100
+#: src/Widgets/IncludeTreeView.vala:103
 msgid "Spreadsheets"
 msgstr "Hojas de cálculo"
 
-#: src/Widgets/IncludeTreeView.vala:104
+#: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Vídeos"
 
