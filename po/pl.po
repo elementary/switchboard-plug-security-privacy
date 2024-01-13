@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2023-11-04 23:10+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -83,11 +83,6 @@ msgstr "Usuwaj automatycznie stare pliki z kosza"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Ilość dni przechowywania plików tymczasowych i plików w koszu"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
-"Aby uruchomić konfigurację zapory sieciowej konieczne jest uwierzytelnienie"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -456,6 +451,11 @@ msgstr "Arkusze kalkulacyjne"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Filmy"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr ""
+#~ "Aby uruchomić konfigurację zapory sieciowej konieczne jest "
+#~ "uwierzytelnienie"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Zmiana niektórych ustawień wymaga uprawnień administratora"

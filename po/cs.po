@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -83,10 +83,6 @@ msgstr "Automaticky mazat staré soubory v koši"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Počet dnů pro uchování dočasných souborů a souborů v koši"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Pro spuštění nastavení brány firewall je zapotřebí se ověřit"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -456,6 +452,9 @@ msgstr "Tabulky"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videa"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Pro spuštění nastavení brány firewall je zapotřebí se ověřit"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Některá nastavení vyžadují oprávnění na úrovni správce systému"

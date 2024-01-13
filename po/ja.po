@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2024-01-04 01:39+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -81,10 +81,6 @@ msgstr "ゴミ箱に移動した古いファイルを自動的に削除"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する日数"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "ファイアウォールの設定を実行するには認証が必要です"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -440,6 +436,9 @@ msgstr "スプレッドシート"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "動画"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "ファイアウォールの設定を実行するには認証が必要です"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "一部の設定変更には管理者権限が必要です"

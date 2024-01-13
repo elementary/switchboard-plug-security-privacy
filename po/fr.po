@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2024-01-10 11:11+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -83,10 +83,6 @@ msgstr "Supprimer automatiquement les anciens fichiers déplacés à la corbeill
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Nombre de jours pour considérer un fichier comme ancien"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Il est nécessaire de s'authentifier pour configurer le pare-feu"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -453,6 +449,9 @@ msgstr "Feuilles de calcul"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Vidéos"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Il est nécessaire de s'authentifier pour configurer le pare-feu"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr ""

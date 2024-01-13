@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2023-02-14 13:25+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -83,10 +83,6 @@ msgstr "Slett gamle filer fra papirkurven automatisk"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Antall dager å beholde filer i papirkurv og midlertidige filer"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Identitetsbekreftelse kreves for å kjøre brannmursoppsett"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -458,6 +454,9 @@ msgstr "Regneark"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videoer"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Identitetsbekreftelse kreves for å kjøre brannmursoppsett"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Noen innstillinger krever administrasjonsrettigheter for å endres"

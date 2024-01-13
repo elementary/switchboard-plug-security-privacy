@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2023-06-01 14:07+0000\n"
 "Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
 "io>\n"
@@ -84,10 +84,6 @@ msgstr "Hapus berkas lama yang telah dibuang secara otomatis"
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 "Jumlah hari untuk menyimpan berkas yang telah dibuang dan yang sementara"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Otentikasi diperlukan untuk menjalankan Konfigurasi Firewall"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -451,6 +447,9 @@ msgstr "Spreadsheet"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Video"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Otentikasi diperlukan untuk menjalankan Konfigurasi Firewall"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Beberapa pengaturan memerlukan hak administrator untuk diubah"

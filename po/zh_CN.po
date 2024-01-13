@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2023-08-08 11:08+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -81,10 +81,6 @@ msgstr "自动清理回收站"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "临时文件及回收站内容保留周期"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "运行防火墙配置需要管理员认证"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -430,6 +426,9 @@ msgstr "表格"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "视频"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "运行防火墙配置需要管理员认证"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "某些设置需要管理员权限才能更改"

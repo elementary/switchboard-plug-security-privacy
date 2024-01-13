@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2019-12-19 18:07+0000\n"
 "Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -85,10 +85,6 @@ msgstr "Samodejno pobriši stare datoteke v košu"
 #, fuzzy
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Obdrži začasne datoteke in datoteke v košu:"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Za zagon nastavitev požarnega zidu je zahtevana overitev"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -462,6 +458,9 @@ msgstr "Preglednice"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videoposnetki"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Za zagon nastavitev požarnega zidu je zahtevana overitev"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Za spreminjanje nekaterih nastavitev so potrebne skrbniške pravice"

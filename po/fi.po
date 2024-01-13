@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2023-06-13 12:07+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -82,10 +82,6 @@ msgstr "Poista automaattisesti vanhat roskakorissa olevat tiedostot"
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 "Kuinka monta päivää väliaikaistiedostoja ja roskakorin tiedostoja säilytetään"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Palomuurin asetusten suorittaminen vaatii tunnistautumisen"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -450,6 +446,9 @@ msgstr "Laskentataulukot"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videot"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Palomuurin asetusten suorittaminen vaatii tunnistautumisen"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Jotkin asetukset vaativat muutoksia varten ylläpitäjän oikeuksia"

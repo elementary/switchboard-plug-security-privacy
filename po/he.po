@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2024-01-06 19:51+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -81,10 +81,6 @@ msgstr "מחיקה אוטומטית של קבצים ישנים שהושלכו ל
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "מספר הימים לשמירת קבצים זמניים וכאלו שבאשפה"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "נדרש אימות כדי להפעיל את תצורת חומת האש"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -437,6 +433,9 @@ msgstr "גיליונות נתונים"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "סרטונים"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "נדרש אימות כדי להפעיל את תצורת חומת האש"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "לצורך שינוי של חלק מההגדרות נדרשות הרשאות ניהול"

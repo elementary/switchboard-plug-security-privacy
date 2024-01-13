@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -83,10 +83,6 @@ msgstr "Aŭtomate forigi malnovajn rubujajn dosierojn"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Nombro de tagoj dum kiuj konservi rubujajn kaj portempajn dosierojn"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Aŭtentigo necesas por lanĉi la fajroŝirmilan agordadon"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -455,6 +451,9 @@ msgstr "Kalkultabeloj"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videoj"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Aŭtentigo necesas por lanĉi la fajroŝirmilan agordadon"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Kelkaj agordoj postulas administrajn permesojn por esti ŝanĝitaj"

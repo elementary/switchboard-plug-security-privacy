@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2020-09-16 15:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -85,10 +85,6 @@ msgstr "Eliminar archivos antiguos en papelera automáticamente"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Días que conservar archivos temporales y de la papelera"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Para configurar el cortafuegos necesita autenticarse"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -462,6 +458,9 @@ msgstr "Hojas de cálculo"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Vídeos"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Para configurar el cortafuegos necesita autenticarse"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr ""

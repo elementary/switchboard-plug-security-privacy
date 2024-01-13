@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2018-10-25 13:10+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -83,10 +83,6 @@ msgstr "Radera automatiskt gamla filer från papperskorgen"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Antal dagar som temporära filer och filer i papperskorgen ska behållas"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Autentisering krävs för att konfigurera brandväggen"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -455,6 +451,9 @@ msgstr "Kalkylark"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videor"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Autentisering krävs för att konfigurera brandväggen"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Vissa inställningar kräver administratörsrättigheter för att ändras"

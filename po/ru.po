@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2024-01-10 11:11+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -82,10 +82,6 @@ msgstr "Автоматически удалять старые файлы из �
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Количество дней до удаления файлов из корзины и временных файлов"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Для изменения настроек брандмауэра требуется аутентификация"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -455,6 +451,9 @@ msgstr "Электронные таблицы"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Видео"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Для изменения настроек брандмауэра требуется аутентификация"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Для изменения некоторых настроек требуются права администратора"

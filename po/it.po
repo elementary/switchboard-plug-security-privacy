@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -86,10 +86,6 @@ msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 "Numero di giorni durante i quali conservare i file temporanei e quelli nel "
 "cestino"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "È necessario autenticarsi per eseguire la configurazione del firewall"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -460,6 +456,10 @@ msgstr "Fogli di calcolo"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Video"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr ""
+#~ "È necessario autenticarsi per eseguire la configurazione del firewall"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr ""

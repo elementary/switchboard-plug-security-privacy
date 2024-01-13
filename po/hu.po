@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2024-01-12 00:11+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -81,10 +81,6 @@ msgstr "Korábban kukába helyezett fájlok automatikus törlése"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Ideiglenes és kukába helyezett fájlok megőrzésének időtartama"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Hitelesítés szükséges a tűzfal beállításához"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -448,6 +444,9 @@ msgstr "Táblázatok"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videók"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Hitelesítés szükséges a tűzfal beállításához"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr ""

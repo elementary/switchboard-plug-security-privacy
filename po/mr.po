@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2020-10-21 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -83,10 +83,6 @@ msgstr "जुन्या ट्रॅश केलेल्या फायल
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ट्रॅश केलेल्या आणि तात्पुरत्या फायली ठेवण्यासाठी दिवसाची संख्या"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "फायरवॉल कॉन्फिगरेशन चालविण्यासाठी प्रमाणीकरण आवश्यक आहे"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -450,6 +446,9 @@ msgstr "स्प्रेडशीट्स"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "व्हिडिओ"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "फायरवॉल कॉन्फिगरेशन चालविण्यासाठी प्रमाणीकरण आवश्यक आहे"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "काही सेटिंग्जसाठी प्रशासकीय अधिकार बदलण्याची आवश्यकता आहे"

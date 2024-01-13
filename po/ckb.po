@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2022-10-07 17:33+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -76,10 +76,6 @@ msgstr "خۆکارانە پەڕگە کۆنەکانی ناو تەنەکە بسڕ�
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ژمارەی ڕۆژەکان بۆ هێشتنەوەی پەڕگە کۆن و سڕاوەکان"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "پێویستە تێپەڕەوشە داخڵ بکەیت بۆ بەڕێوەبردنی دوای ئاگرین"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -447,6 +443,9 @@ msgstr "سپرێدشیتەکان"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "ڤیدیۆکان"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "پێویستە تێپەڕەوشە داخڵ بکەیت بۆ بەڕێوەبردنی دوای ئاگرین"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr ""

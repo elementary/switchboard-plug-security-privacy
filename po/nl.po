@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2023-06-25 02:07+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -81,10 +81,6 @@ msgstr "Verwijder automatisch oude bestanden in de prullenbak"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Aantal dagen dat verwijderde en tijdelijke bestanden worden bewaard"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Authenticatie is vereist om de firewall configuratie te starten"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -453,6 +449,9 @@ msgstr "Spreadsheets"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Video's"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Authenticatie is vereist om de firewall configuratie te starten"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr ""

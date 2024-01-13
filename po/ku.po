@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2018-02-11 00:09+0000\n"
 "Last-Translator: Rokar <mail@rokar.de>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard/"
@@ -80,10 +80,6 @@ msgstr ""
 
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
 msgstr ""
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229

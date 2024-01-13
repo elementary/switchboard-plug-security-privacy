@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2014-08-02 05:18+0000\n"
 "Last-Translator: harshi abeyratne <harshidbv@gmail.com>\n"
 "Language-Team: Sinhalese <si@li.org>\n"
@@ -80,10 +80,6 @@ msgstr ""
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr ""
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "සත්‍යබව තහවුරු කිරීම සඳහා ගිනිවැට වින්‍යාසය ක්‍රියාත්මක විය යුතුය"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -429,6 +425,9 @@ msgstr "පැතුරුම් පත"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "වීඩියෝව"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "සත්‍යබව තහවුරු කිරීම සඳහා ගිනිවැට වින්‍යාසය ක්‍රියාත්මක විය යුතුය"
 
 #~ msgid "Clear Data"
 #~ msgstr "දත්ත ඉවත් කරන්න"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 20:28+0000\n"
+"POT-Creation-Date: 2024-01-13 02:16+0000\n"
 "PO-Revision-Date: 2024-01-10 11:11+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -81,10 +81,6 @@ msgstr "Automatically delete old trashed files"
 #: src/Plug.vala:108
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Number of days to keep trashed and temporary files"
-
-#: src/UFWHelpers.vala:24
-msgid "Authentication is required to run the Firewall Configuration"
-msgstr "Authentication is required to run the Firewall Configuration"
 
 #: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
 #: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
@@ -448,6 +444,9 @@ msgstr "Spreadsheets"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videos"
+
+#~ msgid "Authentication is required to run the Firewall Configuration"
+#~ msgstr "Authentication is required to run the Firewall Configuration"
 
 #~ msgid "Some settings require administrator rights to be changed"
 #~ msgstr "Some settings require administrator rights to be changed"
