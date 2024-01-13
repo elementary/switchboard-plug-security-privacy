@@ -7,7 +7,7 @@
   <vendor_url>https://elementary.io/</vendor_url>
 
   <action id="io.elementary.settings.security-privacy">
-    <message>Authentication is required to run the Firewall Configuration</message>
+    <message gettext-domain="@GETTEXT_PACKAGE@">Authentication is required to run the Firewall Configuration</message>
     <icon_name>preferences-system-privacy</icon_name>
     <defaults>
       <allow_any>no</allow_any>

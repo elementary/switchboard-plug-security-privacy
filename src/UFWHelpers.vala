@@ -20,6 +20,10 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
+#if TRANSLATION
+    _("Authentication is required to run the Firewall Configuration")
+#endif
+
 namespace SecurityPrivacy.UFWHelpers {
 
     private string get_helper_path () {
