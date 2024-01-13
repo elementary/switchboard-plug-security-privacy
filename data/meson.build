@@ -1,11 +1,5 @@
-gettext_declaration = configure_file(
-    configuration: configuration_data,
-    input: 'security-privacy.policy.in.in',
-    output: '@BASENAME@'
-)
-
 i18n.merge_file(
-    input: gettext_declaration,
+    input: 'security-privacy.policy.in',
     output: gettext_name + '.policy',
     po_dir: meson.project_source_root() / 'po' / 'extra',
     install: true,
