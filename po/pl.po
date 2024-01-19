@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-13 02:16+0000\n"
-"PO-Revision-Date: 2023-11-04 23:10+0000\n"
+"PO-Revision-Date: 2024-01-19 16:35+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pl/>\n"
@@ -357,16 +357,16 @@ msgid "Search Application"
 msgstr "Wyszukaj program"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
-msgstr "Usuń pliki utworzone przez system i dane użycia programów od:"
+msgstr "Wyczyść historię użycia plików i aplikacji zebraną przez system"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
 msgstr ""
+"Dane z wybranego przedziału czasowego zostaną na stałe usunięte i nie będzie "
+"można ich przywrócić"
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
