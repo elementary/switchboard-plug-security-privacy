@@ -19,7 +19,7 @@
  * Authored by: David Hewitt <davidmhewitt@gmail.com>
  */
 
-public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
+public class SecurityPrivacy.LocationPanel : Switchboard.SettingsPage {
     private const string PERMISSIONS_TABLE = "location";
     private const string PERMISSIONS_ID = "location";
 
@@ -31,7 +31,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         Object (
             activatable: true,
             description: _("Allow the apps below to determine your location"),
-            icon_name: "preferences-system-privacy-location",
+            icon: new ThemedIcon ("preferences-system-privacy-location"),
             title: _("Location Services")
         );
     }
@@ -72,7 +72,7 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
             child = disabled_stack
         };
 
-        content_area.attach (frame, 0, 0);
+        child = frame;
 
         var location_settings = new Settings ("org.gnome.system.location");
         location_settings.bind ("enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
@@ -113,12 +113,12 @@ public class SecurityPrivacy.LocationPanel : Granite.SimpleSettingsPage {
         if (status_switch.active) {
             disabled_stack.visible_child_name = "enabled";
 
-            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status_type = SUCCESS;
             status = _("Enabled");
         } else {
             disabled_stack.visible_child_name = "disabled";
 
-            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status_type = OFFLINE;
             status = _("Disabled");
         }
     }

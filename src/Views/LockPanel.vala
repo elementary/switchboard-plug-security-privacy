@@ -19,10 +19,10 @@
  * Authored by: Corentin Noël <corentin@elementary.io>
  */
 
-public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
+public class SecurityPrivacy.LockPanel : Switchboard.SettingsPage {
     public LockPanel () {
         Object (
-            icon_name: "system-lock-screen",
+            icon: new ThemedIcon ("system-lock-screen"),
             title: _("Locking")
         );
     }
@@ -40,12 +40,16 @@ public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
         var lock_sleep_switch = new Gtk.Switch ();
         lock_sleep_switch.halign = Gtk.Align.START;
 
-        content_area.hexpand = true;
-        content_area.halign = Gtk.Align.CENTER;
-        content_area.attach (lock_suspend_label, 0, 0);
-        content_area.attach (lock_suspend_switch, 1, 0);
-        content_area.attach (lock_sleep_label, 0, 1);
-        content_area.attach (lock_sleep_switch, 1, 1);
+        var grid = new Gtk.Grid () {
+            column_spacing = 6,
+            row_spacing = 6
+        };
+        grid.attach (lock_suspend_label, 0, 0);
+        grid.attach (lock_suspend_switch, 1, 0);
+        grid.attach (lock_sleep_label, 0, 1);
+        grid.attach (lock_sleep_switch, 1, 1);
+
+        child = grid;
 
         var gnome_screensaver_settings = new GLib.Settings ("org.gnome.desktop.screensaver");
         var screensaver_settings = new GLib.Settings ("io.elementary.desktop.screensaver");
@@ -58,8 +62,9 @@ public class SecurityPrivacy.LockPanel : Granite.SimpleSettingsPage {
             var usb_lock_switch = new Gtk.Switch ();
             usb_lock_switch.halign = Gtk.Align.START;
 
-            content_area.attach (usb_lock_label, 0, 2);
-            content_area.attach (usb_lock_switch, 1, 2);
+            grid.attach (usb_lock_label, 0, 2);
+            grid.attach (usb_lock_switch, 1, 2);
+
             var gnome_privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
             gnome_privacy_settings.bind ("usb-protection", usb_lock_switch, "active", GLib.SettingsBindFlags.DEFAULT);
         }

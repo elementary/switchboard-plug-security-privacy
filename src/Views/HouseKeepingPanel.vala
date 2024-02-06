@@ -16,7 +16,7 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
  */
 
-public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
+public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
     private Granite.HeaderLabel spin_header_label;
     private Gtk.Label file_age_label;
     private Gtk.SpinButton file_age_spinbutton;
@@ -27,8 +27,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
 
     public HouseKeepingPanel () {
         Object (
-            description: "",
-            icon_name: "preferences-system-privacy-housekeeping",
+            icon: new ThemedIcon ("preferences-system-privacy-housekeeping"),
             title: _("Housekeeping")
         );
     }
@@ -100,20 +99,22 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         file_age_label.halign = Gtk.Align.START;
         file_age_label.hexpand = true;
 
-        content_area.column_spacing = content_area.row_spacing = 6;
-        content_area.margin_start = 60;
-        content_area.attach (switch_header_label, 0, 0, 2);
-        content_area.attach (download_files_check, 0, 1, 2);
-        content_area.attach (temp_files_switch, 0, 2, 2);
-        content_area.attach (screenshot_files_check, 0, 3, 2);
-        content_area.attach (trash_files_switch, 0, 4, 2);
-        content_area.attach (spin_header_label, 0, 5, 2);
-        content_area.attach (file_age_spinbutton, 0, 6);
-        content_area.attach (file_age_label, 1, 6);
+        var grid = new Gtk.Grid () {
+            column_spacing = 6,
+            row_spacing = 6
+        };
+        grid.attach (switch_header_label, 0, 0, 2);
+        grid.attach (download_files_check, 0, 1, 2);
+        grid.attach (temp_files_switch, 0, 2, 2);
+        grid.attach (screenshot_files_check, 0, 3, 2);
+        grid.attach (trash_files_switch, 0, 4, 2);
+        grid.attach (spin_header_label, 0, 5, 2);
+        grid.attach (file_age_spinbutton, 0, 6);
+        grid.attach (file_age_label, 1, 6);
 
-        var view_trash_button = new Gtk.Button.with_label (_("Open Trash…"));
+        child = grid;
 
-        action_area.append (view_trash_button);
+        var view_trash_button = add_button (_("Open Trash…"));
 
         var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
         privacy_settings.bind ("remove-old-temp-files", temp_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -163,13 +164,13 @@ public class SecurityPrivacy.HouseKeepingPanel : Granite.SimpleSettingsPage {
         var any_active = temp_files_switch.active || trash_files_switch.active || download_files_check.active || screenshot_files_check.active;
 
         if (all_active) {
-            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status_type = SUCCESS;
             status = _("Enabled");
         } else if (any_active) {
-            status_type = Granite.SettingsPage.StatusType.WARNING;
+            status_type = WARNING;
             status = _("Partially Enabled");
         } else {
-            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status_type = OFFLINE;
             status = _("Disabled");
         }
 

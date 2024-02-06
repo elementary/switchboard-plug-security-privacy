@@ -54,15 +54,14 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
             stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
             stack.add_titled (location, LOCATION, _("Location Services"));
 
-            var settings_sidebar = new Granite.SettingsSidebar (stack);
+            var settings_sidebar = new Switchboard.SettingsSidebar (stack);
 
             paned = new Gtk.Paned (HORIZONTAL) {
-                position = 200,
                 start_child = settings_sidebar,
                 end_child = stack,
                 shrink_start_child = false,
-                resize_start_child = false,
-                resize_end_child = false
+                shrink_end_child = false,
+                resize_start_child = false
             };
         }
 
