@@ -20,7 +20,7 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
+public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     private Gtk.Frame frame;
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
@@ -45,7 +45,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
     public FirewallPanel () {
         Object (
             activatable: true,
-            icon_name: "network-firewall",
+            icon: new ThemedIcon ("network-firewall"),
             title: _("Firewall")
         );
     }
@@ -70,9 +70,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
                 new Polkit.UnixProcess (Posix.getpid ())
             );
 
-            var lock_button = new Gtk.LockButton (permission);
-
-            action_area.append (lock_button);
+            var lock_button = add_button (_("Unlock"));
 
             status_switch.sensitive = permission.allowed;
 
@@ -82,10 +80,44 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
                     status_switch.active = UFWHelpers.get_status ();
                     remove_button.sensitive = false;
                     loading = false;
+                    lock_button.label = _("Lock");
+                } else {
+                    lock_button.label = _("Unlock");
                 }
 
                 status_switch.sensitive = permission.allowed;
                 frame.sensitive = status_switch.active && permission.allowed;
+            });
+
+            lock_button.clicked.connect (() => {
+                if (permission.allowed) {
+                    try {
+                        permission.release ();
+                    } catch (Error e) {
+                        critical ("Unable to release permission: %s", e.message);
+                    }
+                } else {
+                    try {
+                        permission.acquire ();
+                    } catch (Error e) {
+                        if (!e.matches (GLib.IOError.quark (), GLib.IOError.CANCELLED)) {
+                            var message_dialog = new Granite.MessageDialog (
+                                _("Unable to acquire permission"),
+                                _("Firewall rules can't be changed without the required system permission."),
+                                new ThemedIcon ("dialog-password"),
+                                Gtk.ButtonsType.CLOSE
+                            ) {
+                                badge_icon = new ThemedIcon ("dialog-error"),
+                                modal = true,
+                                transient_for = (Gtk.Window) get_root ()
+                            };
+                            message_dialog.show_error_details (e.message);
+                            message_dialog.response.connect (message_dialog.destroy);
+                            message_dialog.present ();
+                        }
+                    }
+
+                }
             });
         } catch (Error e) {
             critical (e.message);
@@ -354,7 +386,7 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
             sensitive = status_switch.active && permission.allowed
         };
 
-        content_area.attach (frame, 0, 0);
+        child = frame;
 
         view.cursor_changed.connect (() => {
             remove_button.sensitive = true;
@@ -521,11 +553,11 @@ public class SecurityPrivacy.FirewallPanel : Granite.SimpleSettingsPage {
         frame.sensitive = status_switch.active && permission.allowed;
 
         if (status_switch.active) {
-            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status_type = SUCCESS;
             status = _("Enabled");
             show_rules ();
         } else {
-            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status_type = OFFLINE;
             status = _("Disabled");
         }
     }

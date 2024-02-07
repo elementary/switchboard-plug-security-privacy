@@ -20,14 +20,14 @@
  * Authored by: Corentin Noël <tintou@mailoo.org>
  */
 
-public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
+public class SecurityPrivacy.TrackPanel : Switchboard.SettingsPage {
     public static SecurityPrivacy.Blacklist blacklist { get; private set; }
 
     public TrackPanel () {
         Object (
             activatable: true,
             description: _("%s can store local usage data to provide extra functionality like offering recently-used files and more relevant local search. Regardless of this setting, usage data is never transmitted off of this device or to third parties.").printf (get_operating_system_name ()),
-            icon_name: "document-open-recent",
+            icon: new ThemedIcon ("document-open-recent"),
             title: _("History")
         );
     }
@@ -49,8 +49,6 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
 
         status_switch.active = true;
 
-        var clear_button = new Gtk.Button.with_label (_("Clear History…"));
-
         var include_treeview = new IncludeTreeView ();
         var exclude_treeview = new ExcludeTreeView ();
 
@@ -62,9 +60,9 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
         stack.add_child (content_box);
         stack.add_child (alert);
 
-        content_area.attach (stack, 0, 0);
+        child = stack;
 
-        action_area.append (clear_button);
+        var clear_button = add_button (_("Clear History…"));
 
         status_switch.notify["active"].connect (() => {
             bool privacy_mode = !status_switch.active;
@@ -107,11 +105,11 @@ public class SecurityPrivacy.TrackPanel : Granite.SimpleSettingsPage {
 
     private void update_status_switch () {
         if (status_switch.active) {
-            status_type = Granite.SettingsPage.StatusType.SUCCESS;
+            status_type = SUCCESS;
             status = _("Enabled");
         } else {
             warning ("Trying to set offline");
-            status_type = Granite.SettingsPage.StatusType.OFFLINE;
+            status_type = OFFLINE;
             status = _("Disabled");
         }
     }
