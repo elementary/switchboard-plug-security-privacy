@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-13 02:16+0000\n"
+"POT-Creation-Date: 2024-02-07 12:07+0000\n"
 "PO-Revision-Date: 2023-06-25 02:07+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -32,192 +32,210 @@ msgstr "Configureer firewall-, schermvergrendeling- en activiteitsinformatie"
 msgid "Privacy"
 msgstr "Privacy"
 
-#: src/Plug.vala:52 src/Plug.vala:85 src/Plug.vala:86 src/Plug.vala:87
+#: src/Plug.vala:52 src/Plug.vala:84 src/Plug.vala:85 src/Plug.vala:86
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Vergrendelen"
 
-#: src/Plug.vala:53 src/Plug.vala:88 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:87 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "Firewall"
 
-#: src/Plug.vala:54 src/Plug.vala:89 src/Plug.vala:92 src/Plug.vala:97
-#: src/Plug.vala:102 src/Plug.vala:107 src/Views/HouseKeepingPanel.vala:32
+#: src/Plug.vala:54 src/Plug.vala:88 src/Plug.vala:91 src/Plug.vala:96
+#: src/Plug.vala:101 src/Plug.vala:106 src/Views/HouseKeepingPanel.vala:31
 msgid "Housekeeping"
 msgstr "Opschonen"
 
-#: src/Plug.vala:55 src/Plug.vala:110 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:109 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Locatieservices"
 
-#: src/Plug.vala:83 src/Plug.vala:84 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:82 src/Plug.vala:83 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Geschiedenis"
 
-#: src/Plug.vala:84 src/Widgets/ClearUsageDialog.vala:71
+#: src/Plug.vala:83 src/Widgets/ClearUsageDialog.vala:71
 msgid "Clear History"
 msgstr "Verwijder geschiedenis"
 
-#: src/Plug.vala:86
+#: src/Plug.vala:85
 msgid "Lock on sleep"
 msgstr "Vergrendelen in slaapstand"
 
-#: src/Plug.vala:87
+#: src/Plug.vala:86
 msgid "Lock after sceen turns off"
 msgstr "Vergrendelen nadat het scherm zich uitgeschakeld heeft"
 
-#: src/Plug.vala:93
+#: src/Plug.vala:92
 msgid "Automatically delete old temporary files"
 msgstr "Verwijder automatisch oude tijdelijke bestanden"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:97
 msgid "Automatically delete old screenshot files"
 msgstr "Oude schermafbeeldingen automatisch verwijderen"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:102
 msgid "Automatically delete old trashed files"
 msgstr "Verwijder automatisch oude bestanden in de prullenbak"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:107
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Aantal dagen dat verwijderde en tijdelijke bestanden worden bewaard"
 
-#: src/Views/FirewallPanel.vala:213 src/Views/FirewallPanel.vala:229
-#: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:249
+#: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
+msgid "Unlock"
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:83
+#, fuzzy
+#| msgid "Locking"
+msgid "Lock"
+msgstr "Vergrendelen"
+
+#: src/Views/FirewallPanel.vala:105
+msgid "Unable to acquire permission"
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:106
+msgid "Firewall rules can't be changed without the required system permission."
+msgstr ""
+
+#: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
+#: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
 msgid "Unknown"
 msgstr "Onbekend"
 
-#: src/Views/FirewallPanel.vala:216 src/Views/FirewallPanel.vala:365
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:397
 msgid "Allow"
 msgstr "Toestaan"
 
-#: src/Views/FirewallPanel.vala:219 src/Views/FirewallPanel.vala:366
+#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:398
 msgid "Deny"
 msgstr "Weigeren"
 
-#: src/Views/FirewallPanel.vala:222 src/Views/FirewallPanel.vala:367
+#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:399
 msgid "Reject"
 msgstr "Afwijzen"
 
-#: src/Views/FirewallPanel.vala:225 src/Views/FirewallPanel.vala:368
+#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:400
 msgid "Limit"
 msgstr "Limiet"
 
-#: src/Views/FirewallPanel.vala:244 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:430
 msgid "In"
 msgstr "Inkomend"
 
-#: src/Views/FirewallPanel.vala:246 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:431
 msgid "Out"
 msgstr "Uitgaand"
 
-#: src/Views/FirewallPanel.vala:260 src/Views/FirewallPanel.vala:270
+#: src/Views/FirewallPanel.vala:292 src/Views/FirewallPanel.vala:302
 #, c-format
 msgid "%s Ports %s"
 msgstr "%s Poorten %s"
 
-#: src/Views/FirewallPanel.vala:262 src/Views/FirewallPanel.vala:272
+#: src/Views/FirewallPanel.vala:294 src/Views/FirewallPanel.vala:304
 #, c-format
 msgid "%s Port %s"
 msgstr "%s Poort %s"
 
-#: src/Views/FirewallPanel.vala:304 src/Views/FirewallPanel.vala:525
-#: src/Views/HouseKeepingPanel.vala:167 src/Views/TrackPanel.vala:111
+#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:557
+#: src/Views/HouseKeepingPanel.vala:168 src/Views/TrackPanel.vala:109
 #: src/Views/LocationPanel.vala:117
 msgid "Enabled"
 msgstr "Ingeschakeld"
 
-#: src/Views/FirewallPanel.vala:305
+#: src/Views/FirewallPanel.vala:337
 msgid "Version"
 msgstr "Versie"
 
-#: src/Views/FirewallPanel.vala:306
+#: src/Views/FirewallPanel.vala:338
 msgid "Action"
 msgstr "Actie"
 
-#: src/Views/FirewallPanel.vala:307
+#: src/Views/FirewallPanel.vala:339
 msgid "Protocol"
 msgstr "Protocol"
 
-#: src/Views/FirewallPanel.vala:308
+#: src/Views/FirewallPanel.vala:340
 msgid "Direction"
 msgstr "Richting"
 
-#: src/Views/FirewallPanel.vala:309
+#: src/Views/FirewallPanel.vala:341
 msgid "To"
 msgstr "Tot"
 
-#: src/Views/FirewallPanel.vala:310
+#: src/Views/FirewallPanel.vala:342
 msgid "From"
 msgstr "Van"
 
-#: src/Views/FirewallPanel.vala:371
+#: src/Views/FirewallPanel.vala:403
 msgid "Action:"
 msgstr "Actie:"
 
-#: src/Views/FirewallPanel.vala:381
+#: src/Views/FirewallPanel.vala:413
 msgid "Protocol:"
 msgstr "Protocol:"
 
-#: src/Views/FirewallPanel.vala:389
+#: src/Views/FirewallPanel.vala:421
 msgid "Both"
 msgstr "Beide"
 
-#: src/Views/FirewallPanel.vala:392
+#: src/Views/FirewallPanel.vala:424
 msgid "Version:"
 msgstr "Versie:"
 
-#: src/Views/FirewallPanel.vala:402
+#: src/Views/FirewallPanel.vala:434
 msgid "Direction:"
 msgstr "Richting:"
 
-#: src/Views/FirewallPanel.vala:409
+#: src/Views/FirewallPanel.vala:441
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d of %d-%d"
 
-#: src/Views/FirewallPanel.vala:412
+#: src/Views/FirewallPanel.vala:444
 msgid "Ports:"
 msgstr "Poorten:"
 
-#: src/Views/FirewallPanel.vala:417
+#: src/Views/FirewallPanel.vala:449
 msgid "Add Rule"
 msgstr "Regel toevoegen"
 
-#: src/Views/FirewallPanel.vala:529 src/Views/HouseKeepingPanel.vala:173
-#: src/Views/TrackPanel.vala:115 src/Views/LocationPanel.vala:122
+#: src/Views/FirewallPanel.vala:561 src/Views/HouseKeepingPanel.vala:174
+#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:122
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
-#: src/Views/HouseKeepingPanel.vala:37
+#: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
 msgstr "Automatisch verwijderen:"
 
-#: src/Views/HouseKeepingPanel.vala:49
+#: src/Views/HouseKeepingPanel.vala:48
 msgid "Old temporary files"
 msgstr "Oude tijdelijke bestanden"
 
-#: src/Views/HouseKeepingPanel.vala:62
+#: src/Views/HouseKeepingPanel.vala:61
 msgid "Downloaded files"
 msgstr "Gedownloade bestanden"
 
-#: src/Views/HouseKeepingPanel.vala:70
+#: src/Views/HouseKeepingPanel.vala:69
 msgid "Screenshot files"
 msgstr "Schermafbeeldingen"
 
-#: src/Views/HouseKeepingPanel.vala:89
+#: src/Views/HouseKeepingPanel.vala:88
 msgid "Trashed files"
 msgstr "Bestanden in de prullenbak"
 
-#: src/Views/HouseKeepingPanel.vala:92
+#: src/Views/HouseKeepingPanel.vala:91
 msgid "Delete Old Files After:"
 msgstr "Verwijder oude bestanden na:"
 
-#: src/Views/HouseKeepingPanel.vala:114
+#: src/Views/HouseKeepingPanel.vala:117
 msgid "Open Trash…"
 msgstr "Prullenbak openen…"
 
-#: src/Views/HouseKeepingPanel.vala:149
+#: src/Views/HouseKeepingPanel.vala:150
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -232,13 +250,13 @@ msgstr[1] ""
 "Oude bestanden kunnen automatisch verwijderd worden na %u dagen om "
 "opslagruimte te besparen en uw privacy te beschermen."
 
-#: src/Views/HouseKeepingPanel.vala:155
+#: src/Views/HouseKeepingPanel.vala:156
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "dag"
 msgstr[1] "dagen"
 
-#: src/Views/HouseKeepingPanel.vala:170
+#: src/Views/HouseKeepingPanel.vala:171
 msgid "Partially Enabled"
 msgstr "Deels ingeschakeld"
 
@@ -250,7 +268,7 @@ msgstr "Vergrendelen in slaapstand:"
 msgid "Lock after screen turns off:"
 msgstr "Vergrendelen nadat het scherm zich uitgeschakeld heeft:"
 
-#: src/Views/LockPanel.vala:55
+#: src/Views/LockPanel.vala:59
 msgid "Forbid new USB devices when locked:"
 msgstr "Verbied nieuwe USB apparaten wanneer vergrendeld:"
 
@@ -291,11 +309,11 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "Geschiedenis is uitgeschakeld"
 
-#: src/Views/TrackPanel.vala:52
+#: src/Views/TrackPanel.vala:65
 msgid "Clear History…"
 msgstr "Verwijder geschiedenis…"
 
-#: src/Views/TrackPanel.vala:105
+#: src/Views/TrackPanel.vala:103
 msgid "Your system"
 msgstr "Uw systeem"
 
