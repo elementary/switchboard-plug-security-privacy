@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-01-06 19:51+0000\n"
+"PO-Revision-Date: 2024-02-08 22:11+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/he/>\n"
@@ -84,21 +84,19 @@ msgstr "מספר הימים לשמירת קבצים זמניים וכאלו שב
 
 #: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
 msgid "Unlock"
-msgstr ""
+msgstr "שחרור"
 
 #: src/Views/FirewallPanel.vala:83
-#, fuzzy
-#| msgid "Locking"
 msgid "Lock"
 msgstr "נעילה"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
-msgstr ""
+msgstr "לא ניתן להשיג הרשאה"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
-msgstr ""
+msgstr "אי אפשר לשנות את כללי חומת האש ללא הרשאת המערכת הנחוצה."
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
