@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-01-04 01:39+0000\n"
+"PO-Revision-Date: 2024-02-08 22:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -84,21 +84,19 @@ msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する
 
 #: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
 msgid "Unlock"
-msgstr ""
+msgstr "ロック解除"
 
 #: src/Views/FirewallPanel.vala:83
-#, fuzzy
-#| msgid "Locking"
 msgid "Lock"
 msgstr "ロック"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
-msgstr ""
+msgstr "権限を取得できません"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
-msgstr ""
+msgstr "必要なシステム権限がないと、ファイアーウォールのルールを変更できません。"
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
