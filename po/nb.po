@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2023-02-14 13:25+0000\n"
+"PO-Revision-Date: 2024-02-09 15:13+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:39+0000\n"
 
 #: src/Plug.vala:23
@@ -86,7 +86,7 @@ msgstr "Antall dager å beholde filer i papirkurv og midlertidige filer"
 
 #: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
 msgid "Unlock"
-msgstr ""
+msgstr "Lås opp"
 
 #: src/Views/FirewallPanel.vala:83
 #, fuzzy
@@ -95,12 +95,13 @@ msgid "Lock"
 msgstr "Låsing"
 
 #: src/Views/FirewallPanel.vala:105
+#, fuzzy
 msgid "Unable to acquire permission"
-msgstr ""
+msgstr "Fikk ikke tilgang"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
-msgstr ""
+msgstr "Brannmursregler kan endres uten påkrevd systemtilgang."
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
@@ -384,10 +385,13 @@ msgid "Clear system-collected file and app usage history"
 msgstr "Fjern fil- og applikasjonsbruksdata samlet inn av systemetfra:"
 
 #: src/Widgets/ClearUsageDialog.vala:25
+#, fuzzy
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
 msgstr ""
+"Dataen fra valgt tidsrom vil kun slettes permanent, og kan ikke "
+"gjenopprettes."
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
