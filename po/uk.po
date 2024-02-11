@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
 "PO-Revision-Date: 2024-02-11 21:05+0000\n"
-"Last-Translator: pandreyko <andrii.pavloshchuk@gmail.com>\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/uk/>\n"
 "Language: uk\n"
@@ -89,7 +89,7 @@ msgstr "Розблокувати"
 
 #: src/Views/FirewallPanel.vala:83
 msgid "Lock"
-msgstr "Блокувати"
+msgstr "Заблокувати"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
