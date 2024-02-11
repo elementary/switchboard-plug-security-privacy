@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-02-11 20:57+0000\n"
+"PO-Revision-Date: 2024-02-11 21:05+0000\n"
 "Last-Translator: pandreyko <andrii.pavloshchuk@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/uk/>\n"
@@ -93,11 +93,12 @@ msgstr "Блокувати"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
-msgstr ""
+msgstr "Не вдалось отримати доступ"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
 msgstr ""
+"Правила фаєрволу не можуть бути змінені без необхідного доступу до системи."
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
