@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-01-10 11:11+0000\n"
+"PO-Revision-Date: 2024-02-12 16:57+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/de/>\n"
@@ -85,21 +85,21 @@ msgstr ""
 
 #: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
 msgid "Unlock"
-msgstr ""
+msgstr "Entsperren"
 
 #: src/Views/FirewallPanel.vala:83
-#, fuzzy
-#| msgid "Locking"
 msgid "Lock"
 msgstr "Sperren"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
-msgstr ""
+msgstr "Zugriffsrecht nicht erhalten"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
 msgstr ""
+"Firewall-Regeln können nur mit den entsprechenden Berechtigungen geändert "
+"werden."
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
