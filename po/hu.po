@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-01-12 00:11+0000\n"
+"PO-Revision-Date: 2024-02-15 02:35+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/hu/>\n"
@@ -84,21 +84,21 @@ msgstr "Ideiglenes és kukába helyezett fájlok megőrzésének időtartama"
 
 #: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
 msgid "Unlock"
-msgstr ""
+msgstr "Feloldás"
 
 #: src/Views/FirewallPanel.vala:83
-#, fuzzy
-#| msgid "Locking"
 msgid "Lock"
 msgstr "Zárolás"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
-msgstr ""
+msgstr "Az engedély megszerzése sikertelen"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
 msgstr ""
+"A tűzfal szabályai nem változtathatók meg a szükséges rendszergazdai "
+"engedély nélkül."
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
