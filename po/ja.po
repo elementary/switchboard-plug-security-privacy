@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-02-09 15:13+0000\n"
+"PO-Revision-Date: 2024-02-19 12:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -314,7 +314,7 @@ msgstr "以下のアプリに現在地の特定を許可します"
 
 #: src/Views/LocationPanel.vala:42
 msgid "No Apps Are Using Location Services"
-msgstr "位置情報サービスを使用しているアプリはありません"
+msgstr "位置情報サービス利用中のアプリなし"
 
 #: src/Views/LocationPanel.vala:43
 msgid ""
