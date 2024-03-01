@@ -61,6 +61,7 @@ public class SecurityPrivacy.TrackPanel : Switchboard.SettingsPage {
         stack.add_child (alert);
 
         child = stack;
+        show_end_title_buttons = true;
 
         var clear_button = add_button (_("Clear History…"));
 

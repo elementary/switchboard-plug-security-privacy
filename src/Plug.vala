@@ -54,7 +54,9 @@ public class SecurityPrivacy.Plug : Switchboard.Plug {
             stack.add_titled (housekeeping, HOUSEKEEPING, _("Housekeeping"));
             stack.add_titled (location, LOCATION, _("Location Services"));
 
-            var settings_sidebar = new Switchboard.SettingsSidebar (stack);
+            var settings_sidebar = new Switchboard.SettingsSidebar (stack) {
+                show_title_buttons = true
+            };
 
             paned = new Gtk.Paned (HORIZONTAL) {
                 start_child = settings_sidebar,

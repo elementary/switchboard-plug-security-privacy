@@ -113,6 +113,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
         grid.attach (file_age_label, 1, 6);
 
         child = grid;
+        show_end_title_buttons = true;
 
         var view_trash_button = add_button (_("Open Trash…"));
 

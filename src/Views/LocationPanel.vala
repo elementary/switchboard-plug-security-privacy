@@ -73,6 +73,7 @@ public class SecurityPrivacy.LocationPanel : Switchboard.SettingsPage {
         };
 
         child = frame;
+        show_end_title_buttons = true;
 
         var location_settings = new Settings ("org.gnome.system.location");
         location_settings.bind ("enabled", status_switch, "active", SettingsBindFlags.DEFAULT);
