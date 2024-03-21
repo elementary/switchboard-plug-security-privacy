@@ -387,6 +387,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
         };
 
         child = frame;
+        show_end_title_buttons = true;
 
         view.cursor_changed.connect (() => {
             remove_button.sensitive = true;

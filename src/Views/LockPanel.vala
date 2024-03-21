@@ -50,6 +50,7 @@ public class SecurityPrivacy.LockPanel : Switchboard.SettingsPage {
         grid.attach (lock_sleep_switch, 1, 1);
 
         child = grid;
+        show_end_title_buttons = true;
 
         var gnome_screensaver_settings = new GLib.Settings ("org.gnome.desktop.screensaver");
         var screensaver_settings = new GLib.Settings ("io.elementary.desktop.screensaver");
