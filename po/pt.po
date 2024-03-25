@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-02-08 22:11+0000\n"
-"Last-Translator: Nuno Alexandre MS Ribeiro <nuno.anarresti@gmail.com>\n"
+"PO-Revision-Date: 2024-03-26 21:13+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/pt/>\n"
 "Language: pt\n"
@@ -104,7 +104,7 @@ msgstr ""
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
 msgid "Unknown"
-msgstr "Desconhecido"
+msgstr "Desconhecida"
 
 #: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:397
 msgid "Allow"
