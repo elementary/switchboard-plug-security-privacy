@@ -22,8 +22,8 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
     private Gtk.SpinButton file_age_spinbutton;
     private Gtk.CheckButton download_files_check;
     private Gtk.CheckButton screenshot_files_check;
-    private Gtk.CheckButton temp_files_switch;
-    private Gtk.CheckButton trash_files_switch;
+    private Gtk.CheckButton temp_files_check;
+    private Gtk.CheckButton trash_files_check;
 
     public HouseKeepingPanel () {
         Object (
@@ -35,7 +35,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
     construct {
         var switch_header_label = new Granite.HeaderLabel (_("Automatically Delete:"));
 
-        temp_files_switch = new Gtk.CheckButton () {
+        temp_files_check = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
             margin_start = 12
         };
@@ -46,7 +46,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
             pixel_size = 24
         });
         temp_files_grid.append (new Gtk.Label (_("Old temporary files")));
-        temp_files_grid.set_parent (temp_files_switch);
+        temp_files_grid.set_parent (temp_files_check);
 
         download_files_check = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
@@ -74,7 +74,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
         };
         screenshot_files_grid.set_parent (screenshot_files_check);
 
-        trash_files_switch = new Gtk.CheckButton () {
+        trash_files_check = new Gtk.CheckButton () {
             halign = Gtk.Align.START,
             margin_start = 12,
             margin_bottom = 18
@@ -86,7 +86,7 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
             pixel_size = 24
         });
         trash_files_grid.append (new Gtk.Label (_("Trashed files")));
-        trash_files_grid.set_parent (trash_files_switch);
+        trash_files_grid.set_parent (trash_files_check);
 
         spin_header_label = new Granite.HeaderLabel (_("Delete Old Files After:"));
 
@@ -105,9 +105,9 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
         };
         grid.attach (switch_header_label, 0, 0, 2);
         grid.attach (download_files_check, 0, 1, 2);
-        grid.attach (temp_files_switch, 0, 2, 2);
+        grid.attach (temp_files_check, 0, 2, 2);
         grid.attach (screenshot_files_check, 0, 3, 2);
-        grid.attach (trash_files_switch, 0, 4, 2);
+        grid.attach (trash_files_check, 0, 4, 2);
         grid.attach (spin_header_label, 0, 5, 2);
         grid.attach (file_age_spinbutton, 0, 6);
         grid.attach (file_age_label, 1, 6);
@@ -117,22 +117,18 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
 
         var view_trash_button = add_button (_("Open Trash…"));
 
-        var privacy_settings = new GLib.Settings ("org.gnome.desktop.privacy");
-        privacy_settings.bind ("remove-old-temp-files", temp_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
-        privacy_settings.bind ("remove-old-trash-files", trash_files_switch, "active", GLib.SettingsBindFlags.DEFAULT);
-        privacy_settings.changed.connect (update_status);
-
         var housekeeping_settings = new Settings ("io.elementary.settings-daemon.housekeeping");
-        housekeeping_settings.bind ("cleanup-downloads-folder", download_files_check, "active", GLib.SettingsBindFlags.DEFAULT);
-        housekeeping_settings.bind ("cleanup-screenshots-folder", screenshot_files_check, "active", GLib.SettingsBindFlags.DEFAULT);
-        housekeeping_settings.bind ("old-files-age", file_age_spinbutton, "value", GLib.SettingsBindFlags.DEFAULT);
+        housekeeping_settings.bind ("cleanup-downloads-folder", download_files_check, "active", DEFAULT);
+        housekeeping_settings.bind ("cleanup-screenshots-folder", screenshot_files_check, "active", DEFAULT);
+        housekeeping_settings.bind ("cleanup-temp-folder", temp_files_check, "active", DEFAULT);
+        housekeeping_settings.bind ("cleanup-trash-folder", trash_files_check, "active", DEFAULT);
+        housekeeping_settings.bind ("old-files-age", file_age_spinbutton, "value", DEFAULT);
         housekeeping_settings.changed.connect (update_status);
 
         update_days ((uint) file_age_spinbutton.value);
 
         file_age_spinbutton.value_changed.connect (() => {
             update_days ((uint) file_age_spinbutton.value);
-            privacy_settings.set_uint ("old-files-age", (uint) file_age_spinbutton.value);
         });
 
         view_trash_button.clicked.connect (() => {
@@ -161,8 +157,8 @@ public class SecurityPrivacy.HouseKeepingPanel : Switchboard.SettingsPage {
     }
 
     private void update_status () {
-        var all_active = temp_files_switch.active && trash_files_switch.active && download_files_check.active && screenshot_files_check.active;
-        var any_active = temp_files_switch.active || trash_files_switch.active || download_files_check.active || screenshot_files_check.active;
+        var all_active = temp_files_check.active && trash_files_check.active && download_files_check.active && screenshot_files_check.active;
+        var any_active = temp_files_check.active || trash_files_check.active || download_files_check.active || screenshot_files_check.active;
 
         if (all_active) {
             status_type = SUCCESS;
