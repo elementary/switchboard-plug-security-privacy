@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-05-07 05:13+0000\n"
+"PO-Revision-Date: 2024-05-27 08:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ja/>\n"
@@ -96,7 +96,7 @@ msgstr "権限を取得できません"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
-msgstr "必要なシステム権限がないと、ファイアーウォールのルールを変更できません。"
+msgstr "必要なシステム権限がないと、ファイアウォールのルールを変更できません。"
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
@@ -370,15 +370,15 @@ msgstr "選択した期間のデータは完全に削除され、復元できま
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
-msgstr "過去1時間"
+msgstr "過去 1 時間"
 
 #: src/Widgets/ClearUsageDialog.vala:36
 msgid "The past day"
-msgstr "過去1日"
+msgstr "過去 1 日"
 
 #: src/Widgets/ClearUsageDialog.vala:40
 msgid "The past week"
-msgstr "過去1週間"
+msgstr "過去 1 週間"
 
 #: src/Widgets/ClearUsageDialog.vala:44
 msgid "From:"
