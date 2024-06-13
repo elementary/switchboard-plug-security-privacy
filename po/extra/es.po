@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-06-13 15:50+0000\n"
+"PO-Revision-Date: 2024-06-13 17:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/es/>\n"
@@ -53,10 +53,8 @@ msgstr ""
 #: data/security-privacy.metainfo.xml.in:74
 #: data/security-privacy.metainfo.xml.in:87
 #: data/security-privacy.metainfo.xml.in:100
-#, fuzzy
-#| msgid "Translation updates"
 msgid "Minor updates:"
-msgstr "Actualizaciones de traducción"
+msgstr "Actualizaciones menores:"
 
 #: data/security-privacy.metainfo.xml.in:52
 msgid "Only list installed apps in the Location panel"
