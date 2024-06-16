@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-06-15 16:16+0000\n"
+"PO-Revision-Date: 2024-06-17 00:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/es/>\n"
@@ -28,7 +28,7 @@ msgstr "Seguridad y privacidad"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr ""
 "Configure el cortafuegos, el bloqueo de pantalla y la información de "
-"actividad"
+"actividades"
 
 #: src/Plug.vala:51
 msgid "Privacy"
@@ -66,35 +66,31 @@ msgstr "Bloquear en reposo"
 
 #: src/Plug.vala:86
 msgid "Lock after sceen turns off"
-msgstr "Bloquear tras apagado de pantalla"
+msgstr "Bloquear al apagarse la pantalla"
 
 #: src/Plug.vala:92
 msgid "Automatically delete old temporary files"
 msgstr "Eliminar archivos temporales antiguos automáticamente"
 
 #: src/Plug.vala:97
-#, fuzzy
-#| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
-msgstr "Eliminar archivos antiguos en papelera automáticamente"
+msgstr "Eliminar capturas de pantalla antiguas automáticamente"
 
 #: src/Plug.vala:102
 msgid "Automatically delete old trashed files"
-msgstr "Eliminar archivos antiguos en papelera automáticamente"
+msgstr "Eliminar archivos antiguos en la papelera automáticamente"
 
 #: src/Plug.vala:107
 msgid "Number of days to keep trashed and temporary files"
-msgstr "Días que conservar archivos temporales y de la papelera"
+msgstr "Número de días para conservar archivos temporales y de la papelera"
 
 #: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
 msgid "Unlock"
-msgstr ""
+msgstr "Desbloquear"
 
 #: src/Views/FirewallPanel.vala:83
-#, fuzzy
-#| msgid "Locking"
 msgid "Lock"
-msgstr "Bloqueo"
+msgstr "Bloquear"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
@@ -103,6 +99,7 @@ msgstr "No se pudo obtener permiso"
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
 msgstr ""
+"Las reglas del cortafuegos no se pueden cambiar sin los permisos necesarios."
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
@@ -220,26 +217,20 @@ msgid "Old temporary files"
 msgstr "Archivos temporales antiguos"
 
 #: src/Views/HouseKeepingPanel.vala:61
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Downloaded files"
-msgstr "Archivos eliminados"
+msgstr "Archivos descargados"
 
 #: src/Views/HouseKeepingPanel.vala:69
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Screenshot files"
-msgstr "Archivos eliminados"
+msgstr "Archivos de capturas de pantalla"
 
 #: src/Views/HouseKeepingPanel.vala:88
 msgid "Trashed files"
 msgstr "Archivos eliminados"
 
 #: src/Views/HouseKeepingPanel.vala:91
-#, fuzzy
-#| msgid "Delete Trashed and Temporary Files After:"
 msgid "Delete Old Files After:"
-msgstr "Eliminar archivos temporales y vaciar papelera después de:"
+msgstr "Eliminar archivos temporales después de:"
 
 #: src/Views/HouseKeepingPanel.vala:117
 msgid "Open Trash…"
@@ -272,15 +263,15 @@ msgstr "Activado parcialmente"
 
 #: src/Views/LockPanel.vala:31
 msgid "Lock on suspend:"
-msgstr "Bloquear en suspensión:"
+msgstr "Bloquear al suspender:"
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
-msgstr "Bloquear tras apagado de pantalla:"
+msgstr "Bloquear después del apagado de la pantalla:"
 
 #: src/Views/LockPanel.vala:59
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Prohibir nuevos dispositivos USB cuando esté bloqueado:"
 
 #: src/Views/TrackPanel.vala:29
 #, c-format
@@ -293,7 +284,7 @@ msgstr ""
 "%s puede almacenar datos de uso local para proporcionar funcionalidades "
 "adicionales, como mostrar archivos usados recientemente y búsquedas locales "
 "más relevantes. Independientemente de esta configuración, los datos de uso "
-"nunca se transmiten fuera de este dispositivo ni a terceros."
+"nunca se transmiten fuera de este dispositivo o a terceros."
 
 #: src/Views/TrackPanel.vala:41
 #, c-format
@@ -311,8 +302,8 @@ msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
 msgstr ""
-"Esto no evitará que las aplicaciones recaben sus propios datos de uso, como "
-"el historial del navegador web."
+"Esto no evitará que las aplicaciones registren sus propios datos de uso, "
+"como el historial del navegador web."
 
 #: src/Views/TrackPanel.vala:46
 msgid "History Is Disabled"
@@ -340,7 +331,7 @@ msgid ""
 "appear here."
 msgstr ""
 "Cuando se instalan aplicaciones que usan servicios de ubicación, aparecerán "
-"automáticamente aquí."
+"de forma automática aquí."
 
 #: src/Views/LocationPanel.vala:59
 msgid "Location Services Are Disabled"
@@ -377,21 +368,19 @@ msgstr "Permitir que %s use servicios de ubicación"
 
 #: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
-msgstr "Buscar una aplicación"
+msgstr "Buscar aplicaciones"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
-msgstr ""
-"Eliminar datos de uso de archivos y aplicaciones recopilados por el sistema "
-"de:"
+msgstr "Eliminar datos de uso del sistema sobre archivos y aplicaciones usadas"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
 msgstr ""
+"Los datos del intervalo de tiempo seleccionado se borrarán de forma "
+"permanente y no se podrán recuperar"
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
