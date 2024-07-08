@@ -43,6 +43,16 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.0" date="2024-07-08" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Improved screen reader accessibility</li>
+          <li>Translation updates</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="7.1.0" date="2023-07-28" urgency="medium">
       <description>
         <p>New features:</p>
@@ -93,19 +103,7 @@
       </description>
     </release>
 
-    <release version="2.3.0" date="2021-11-23" urgency="medium">
-      <description>
-        <p>New features:</p>
-        <ul>
-          <li>Add Downloads option to Housekeeping</li>
-        </ul>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Translation updates</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="2.3.0" date="2021-11-23" urgency="medium" />
     <release version="2.2.5" date="2021-07-14" urgency="medium" />
     <release version="2.2.4" date="2020-05-25" urgency="medium" />
     <release version="2.2.3" date="2020-04-08" urgency="medium" />
