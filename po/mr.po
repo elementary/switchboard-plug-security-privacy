@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
 "PO-Revision-Date: 2020-10-21 18:15+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -32,55 +32,55 @@ msgstr "फायरवॉल, स्क्रीन लॉक आणि क्�
 msgid "Privacy"
 msgstr "गोपनीयता"
 
-#: src/Plug.vala:52 src/Plug.vala:84 src/Plug.vala:85 src/Plug.vala:86
+#: src/Plug.vala:52 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "लॉकिंग"
 
-#: src/Plug.vala:53 src/Plug.vala:87 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:89 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "फ़ायरवॉल"
 
-#: src/Plug.vala:54 src/Plug.vala:88 src/Plug.vala:91 src/Plug.vala:96
-#: src/Plug.vala:101 src/Plug.vala:106 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:54 src/Plug.vala:90 src/Plug.vala:93 src/Plug.vala:98
+#: src/Plug.vala:103 src/Plug.vala:108 src/Views/HouseKeepingPanel.vala:31
 msgid "Housekeeping"
 msgstr "हाऊसकीपिंग"
 
-#: src/Plug.vala:55 src/Plug.vala:109 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:111 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "स्थान सेवा"
 
-#: src/Plug.vala:82 src/Plug.vala:83 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:84 src/Plug.vala:85 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "इतिहास"
 
-#: src/Plug.vala:83 src/Widgets/ClearUsageDialog.vala:71
+#: src/Plug.vala:85 src/Widgets/ClearUsageDialog.vala:71
 msgid "Clear History"
 msgstr "इतिहास मिटवा"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:87
 msgid "Lock on sleep"
 msgstr "निष्क्रिय असताना लॉक करा"
 
-#: src/Plug.vala:86
+#: src/Plug.vala:88
 msgid "Lock after sceen turns off"
 msgstr "स्क्रीन बंद केल्यानंतर लॉक"
 
-#: src/Plug.vala:92
+#: src/Plug.vala:94
 msgid "Automatically delete old temporary files"
 msgstr "जुन्या तात्पुरत्या फायली स्वयंचलितपणे हटवा"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:99
 #, fuzzy
 #| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
 msgstr "जुन्या ट्रॅश केलेल्या फायली स्वयंचलितपणे हटवा"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:104
 msgid "Automatically delete old trashed files"
 msgstr "जुन्या ट्रॅश केलेल्या फायली स्वयंचलितपणे हटवा"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ट्रॅश केलेल्या आणि तात्पुरत्या फायली ठेवण्यासाठी दिवसाची संख्या"
 
@@ -107,27 +107,27 @@ msgstr ""
 msgid "Unknown"
 msgstr "अज्ञात"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:397
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:398
 msgid "Allow"
 msgstr "परवानगी द्या"
 
-#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:399
 msgid "Deny"
 msgstr "नाकारा"
 
-#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:400
 msgid "Reject"
 msgstr "नाकारा"
 
-#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:400
+#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:401
 msgid "Limit"
 msgstr "मर्यादित करा"
 
-#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:430
+#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:431
 msgid "In"
 msgstr "मध्ये"
 
-#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:431
+#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:432
 msgid "Out"
 msgstr "बाहेर"
 
@@ -141,9 +141,9 @@ msgstr "%s पोर्ट %s"
 msgid "%s Port %s"
 msgstr "%s पोर्ट %s"
 
-#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:557
-#: src/Views/HouseKeepingPanel.vala:168 src/Views/TrackPanel.vala:109
-#: src/Views/LocationPanel.vala:117
+#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:558
+#: src/Views/HouseKeepingPanel.vala:165 src/Views/TrackPanel.vala:110
+#: src/Views/LocationPanel.vala:118
 msgid "Enabled"
 msgstr "सक्षम"
 
@@ -171,41 +171,41 @@ msgstr "च्याकडे"
 msgid "From"
 msgstr "पासून"
 
-#: src/Views/FirewallPanel.vala:403
+#: src/Views/FirewallPanel.vala:404
 msgid "Action:"
 msgstr "क्रिया:"
 
-#: src/Views/FirewallPanel.vala:413
+#: src/Views/FirewallPanel.vala:414
 msgid "Protocol:"
 msgstr "प्रोटोकॉल:"
 
-#: src/Views/FirewallPanel.vala:421
+#: src/Views/FirewallPanel.vala:422
 msgid "Both"
 msgstr "दोन्ही"
 
-#: src/Views/FirewallPanel.vala:424
+#: src/Views/FirewallPanel.vala:425
 msgid "Version:"
 msgstr "आवृत्ती:"
 
-#: src/Views/FirewallPanel.vala:434
+#: src/Views/FirewallPanel.vala:435
 msgid "Direction:"
 msgstr "दिशा:"
 
-#: src/Views/FirewallPanel.vala:441
+#: src/Views/FirewallPanel.vala:442
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d किंवा %d-%d"
 
-#: src/Views/FirewallPanel.vala:444
+#: src/Views/FirewallPanel.vala:445
 msgid "Ports:"
 msgstr "पोर्ट:"
 
-#: src/Views/FirewallPanel.vala:449
+#: src/Views/FirewallPanel.vala:450
 msgid "Add Rule"
 msgstr "नियम जोडा"
 
-#: src/Views/FirewallPanel.vala:561 src/Views/HouseKeepingPanel.vala:174
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:122
+#: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
 msgstr "अक्षम"
 
@@ -239,11 +239,11 @@ msgstr "कचर्‍याच्या फायली"
 msgid "Delete Old Files After:"
 msgstr "यानंतर कचर्‍यात आणि तात्पुरत्या फायली हटवा:"
 
-#: src/Views/HouseKeepingPanel.vala:117
+#: src/Views/HouseKeepingPanel.vala:118
 msgid "Open Trash…"
 msgstr "कचरापेटी उघडा…"
 
-#: src/Views/HouseKeepingPanel.vala:150
+#: src/Views/HouseKeepingPanel.vala:147
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -258,13 +258,13 @@ msgstr[1] ""
 "जागा वाचविण्यासाठी आणि आपल्या गोपनीयतेस मदत करण्यासाठी जुन्या फायली %u दिवसांनंतर "
 "स्वयंचलितपणे हटविल्या जाऊ शकतात."
 
-#: src/Views/HouseKeepingPanel.vala:156
+#: src/Views/HouseKeepingPanel.vala:153
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "दिवस"
 msgstr[1] "दिवस"
 
-#: src/Views/HouseKeepingPanel.vala:171
+#: src/Views/HouseKeepingPanel.vala:168
 msgid "Partially Enabled"
 msgstr "अंशतः सक्षम"
 
@@ -276,7 +276,7 @@ msgstr "निलंबनावर लॉक करा:"
 msgid "Lock after screen turns off:"
 msgstr "स्क्रीन बंद केल्यानंतर लॉक करा:"
 
-#: src/Views/LockPanel.vala:59
+#: src/Views/LockPanel.vala:60
 msgid "Forbid new USB devices when locked:"
 msgstr ""
 
@@ -314,11 +314,11 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "इतिहास अक्षम आहे"
 
-#: src/Views/TrackPanel.vala:65
+#: src/Views/TrackPanel.vala:66
 msgid "Clear History…"
 msgstr "इतिहास साफ करा…"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:104
 msgid "Your system"
 msgstr "तुमची यंत्रणा"
 
@@ -360,7 +360,7 @@ msgstr ""
 "हे अॅप्सना IP पत्त्यावर आधारित आपले स्थान निर्धारित करण्याचा प्रयत्न करण्यापासून प्रतिबंधित "
 "करणार नाही."
 
-#: src/Views/LocationPanel.vala:199
+#: src/Views/LocationPanel.vala:200
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "स्थान सेवा वापरण्यासाठी %sला परवानगी द्या"

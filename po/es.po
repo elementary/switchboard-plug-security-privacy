@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
 "PO-Revision-Date: 2024-06-17 00:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -34,53 +34,53 @@ msgstr ""
 msgid "Privacy"
 msgstr "Privacidad"
 
-#: src/Plug.vala:52 src/Plug.vala:84 src/Plug.vala:85 src/Plug.vala:86
+#: src/Plug.vala:52 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Bloqueo"
 
-#: src/Plug.vala:53 src/Plug.vala:87 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:89 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "Cortafuegos"
 
-#: src/Plug.vala:54 src/Plug.vala:88 src/Plug.vala:91 src/Plug.vala:96
-#: src/Plug.vala:101 src/Plug.vala:106 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:54 src/Plug.vala:90 src/Plug.vala:93 src/Plug.vala:98
+#: src/Plug.vala:103 src/Plug.vala:108 src/Views/HouseKeepingPanel.vala:31
 msgid "Housekeeping"
 msgstr "Mantenimiento"
 
-#: src/Plug.vala:55 src/Plug.vala:109 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:111 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Servicio de ubicación"
 
-#: src/Plug.vala:82 src/Plug.vala:83 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:84 src/Plug.vala:85 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Historial"
 
-#: src/Plug.vala:83 src/Widgets/ClearUsageDialog.vala:71
+#: src/Plug.vala:85 src/Widgets/ClearUsageDialog.vala:71
 msgid "Clear History"
 msgstr "Limpiar historial"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:87
 msgid "Lock on sleep"
 msgstr "Bloquear en reposo"
 
-#: src/Plug.vala:86
+#: src/Plug.vala:88
 msgid "Lock after sceen turns off"
 msgstr "Bloquear al apagarse la pantalla"
 
-#: src/Plug.vala:92
+#: src/Plug.vala:94
 msgid "Automatically delete old temporary files"
 msgstr "Eliminar archivos temporales antiguos automáticamente"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:99
 msgid "Automatically delete old screenshot files"
 msgstr "Eliminar capturas de pantalla antiguas automáticamente"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:104
 msgid "Automatically delete old trashed files"
 msgstr "Eliminar archivos antiguos en la papelera automáticamente"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Número de días para conservar archivos temporales y de la papelera"
 
@@ -106,27 +106,27 @@ msgstr ""
 msgid "Unknown"
 msgstr "Desconocido"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:397
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:398
 msgid "Allow"
 msgstr "Permitir"
 
-#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:399
 msgid "Deny"
 msgstr "Denegar"
 
-#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:400
 msgid "Reject"
 msgstr "Rechazar"
 
-#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:400
+#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:401
 msgid "Limit"
 msgstr "Limitar"
 
-#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:430
+#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:431
 msgid "In"
 msgstr "Entrada"
 
-#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:431
+#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:432
 msgid "Out"
 msgstr "Salida"
 
@@ -140,9 +140,9 @@ msgstr "%s Puertos %s"
 msgid "%s Port %s"
 msgstr "%s Puerto %s"
 
-#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:557
-#: src/Views/HouseKeepingPanel.vala:168 src/Views/TrackPanel.vala:109
-#: src/Views/LocationPanel.vala:117
+#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:558
+#: src/Views/HouseKeepingPanel.vala:165 src/Views/TrackPanel.vala:110
+#: src/Views/LocationPanel.vala:118
 msgid "Enabled"
 msgstr "Activado"
 
@@ -170,41 +170,41 @@ msgstr "Hasta"
 msgid "From"
 msgstr "Desde"
 
-#: src/Views/FirewallPanel.vala:403
+#: src/Views/FirewallPanel.vala:404
 msgid "Action:"
 msgstr "Acción:"
 
-#: src/Views/FirewallPanel.vala:413
+#: src/Views/FirewallPanel.vala:414
 msgid "Protocol:"
 msgstr "Protocolo:"
 
-#: src/Views/FirewallPanel.vala:421
+#: src/Views/FirewallPanel.vala:422
 msgid "Both"
 msgstr "Ambas"
 
-#: src/Views/FirewallPanel.vala:424
+#: src/Views/FirewallPanel.vala:425
 msgid "Version:"
 msgstr "Versión:"
 
-#: src/Views/FirewallPanel.vala:434
+#: src/Views/FirewallPanel.vala:435
 msgid "Direction:"
 msgstr "Dirección:"
 
-#: src/Views/FirewallPanel.vala:441
+#: src/Views/FirewallPanel.vala:442
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d o %d-%d"
 
-#: src/Views/FirewallPanel.vala:444
+#: src/Views/FirewallPanel.vala:445
 msgid "Ports:"
 msgstr "Puertos:"
 
-#: src/Views/FirewallPanel.vala:449
+#: src/Views/FirewallPanel.vala:450
 msgid "Add Rule"
 msgstr "Añadir regla"
 
-#: src/Views/FirewallPanel.vala:561 src/Views/HouseKeepingPanel.vala:174
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:122
+#: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
 msgstr "Desactivado"
 
@@ -232,11 +232,11 @@ msgstr "Archivos eliminados"
 msgid "Delete Old Files After:"
 msgstr "Eliminar archivos temporales después de:"
 
-#: src/Views/HouseKeepingPanel.vala:117
+#: src/Views/HouseKeepingPanel.vala:118
 msgid "Open Trash…"
 msgstr "Abrir papelera…"
 
-#: src/Views/HouseKeepingPanel.vala:150
+#: src/Views/HouseKeepingPanel.vala:147
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -251,13 +251,13 @@ msgstr[1] ""
 "Los archivos antiguos pueden eliminarse automáticamente después de %u días "
 "para ahorrar espacio y proteger su privacidad."
 
-#: src/Views/HouseKeepingPanel.vala:156
+#: src/Views/HouseKeepingPanel.vala:153
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "Día"
 msgstr[1] "Días"
 
-#: src/Views/HouseKeepingPanel.vala:171
+#: src/Views/HouseKeepingPanel.vala:168
 msgid "Partially Enabled"
 msgstr "Activado parcialmente"
 
@@ -269,7 +269,7 @@ msgstr "Bloquear al suspender:"
 msgid "Lock after screen turns off:"
 msgstr "Bloquear después del apagado de la pantalla:"
 
-#: src/Views/LockPanel.vala:59
+#: src/Views/LockPanel.vala:60
 msgid "Forbid new USB devices when locked:"
 msgstr "Prohibir nuevos dispositivos USB cuando esté bloqueado:"
 
@@ -309,11 +309,11 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "El historial está desactivado"
 
-#: src/Views/TrackPanel.vala:65
+#: src/Views/TrackPanel.vala:66
 msgid "Clear History…"
 msgstr "Limpiar historial…"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:104
 msgid "Your system"
 msgstr "Sistema"
 
@@ -361,7 +361,7 @@ msgstr ""
 "Esto no evitará que las aplicaciones traten de calcular su ubicación "
 "basándose en la dirección IP."
 
-#: src/Views/LocationPanel.vala:199
+#: src/Views/LocationPanel.vala:200
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Permitir que %s use servicios de ubicación"
