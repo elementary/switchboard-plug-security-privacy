@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
 "PO-Revision-Date: 2023-08-03 08:08+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -31,56 +31,58 @@ msgstr "Security &amp; Privacy Settings"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Configure firewall, screen lock, and activity information"
 
-#: data/security-privacy.metainfo.xml.in:39
+#: data/security-privacy.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/security-privacy.metainfo.xml.in:46
-#: data/security-privacy.metainfo.xml.in:60
-#: data/security-privacy.metainfo.xml.in:83
-#: data/security-privacy.metainfo.xml.in:96
-msgid "New features:"
-msgstr "New features:"
-
 #: data/security-privacy.metainfo.xml.in:48
-msgid "Automatically clean up screenshots with Housekeeping"
-msgstr "Automatically clean up screenshots with Housekeeping"
-
-#: data/security-privacy.metainfo.xml.in:50
-#: data/security-privacy.metainfo.xml.in:64
-#: data/security-privacy.metainfo.xml.in:74
-#: data/security-privacy.metainfo.xml.in:87
-#: data/security-privacy.metainfo.xml.in:100
+#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:86
+#: data/security-privacy.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "Minor updates:"
 
-#: data/security-privacy.metainfo.xml.in:52
-msgid "Only list installed apps in the Location panel"
-msgstr "Only list installed apps in the Location panel"
+#: data/security-privacy.metainfo.xml.in:50
+msgid "Improved screen reader accessibility"
+msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:53
-#: data/security-privacy.metainfo.xml.in:67
-#: data/security-privacy.metainfo.xml.in:76
-#: data/security-privacy.metainfo.xml.in:89
-#: data/security-privacy.metainfo.xml.in:102
+#: data/security-privacy.metainfo.xml.in:51
+#: data/security-privacy.metainfo.xml.in:65
+#: data/security-privacy.metainfo.xml.in:79
+#: data/security-privacy.metainfo.xml.in:88
+#: data/security-privacy.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Translation updates"
 
-#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:58
+#: data/security-privacy.metainfo.xml.in:72
+#: data/security-privacy.metainfo.xml.in:95
+msgid "New features:"
+msgstr "New features:"
+
+#: data/security-privacy.metainfo.xml.in:60
+msgid "Automatically clean up screenshots with Housekeeping"
+msgstr "Automatically clean up screenshots with Housekeeping"
+
+#: data/security-privacy.metainfo.xml.in:64
+msgid "Only list installed apps in the Location panel"
+msgstr "Only list installed apps in the Location panel"
+
+#: data/security-privacy.metainfo.xml.in:74
 msgid "Use the location portal"
 msgstr "Use the location portal"
 
-#: data/security-privacy.metainfo.xml.in:66
+#: data/security-privacy.metainfo.xml.in:78
 msgid "New location icon"
 msgstr "New location icon"
 
-#: data/security-privacy.metainfo.xml.in:85
+#: data/security-privacy.metainfo.xml.in:97
 msgid "Option to forbid new USB devices while locked"
 msgstr "Option to forbid new USB devices while locked"
 
-#: data/security-privacy.metainfo.xml.in:98
-msgid "Add Downloads option to Housekeeping"
-msgstr "Add Downloads option to Housekeeping"
+#~ msgid "Add Downloads option to Housekeeping"
+#~ msgstr "Add Downloads option to Housekeeping"
 
 #~ msgid "Redesigned \"Housekeeping\" page"
 #~ msgstr "Redesigned \"Housekeeping\" page"

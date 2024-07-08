@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
 "PO-Revision-Date: 2023-08-16 12:08+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -33,56 +33,58 @@ msgstr ""
 "Configureu el tallafoc, el bloqueig de la pantalla i la informació "
 "d'activitat."
 
-#: data/security-privacy.metainfo.xml.in:39
+#: data/security-privacy.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/security-privacy.metainfo.xml.in:46
-#: data/security-privacy.metainfo.xml.in:60
-#: data/security-privacy.metainfo.xml.in:83
-#: data/security-privacy.metainfo.xml.in:96
-msgid "New features:"
-msgstr "Característiques noves:"
-
 #: data/security-privacy.metainfo.xml.in:48
-msgid "Automatically clean up screenshots with Housekeeping"
-msgstr "Netegeu automàticament les captures de pantalla amb Housekeeping"
-
-#: data/security-privacy.metainfo.xml.in:50
-#: data/security-privacy.metainfo.xml.in:64
-#: data/security-privacy.metainfo.xml.in:74
-#: data/security-privacy.metainfo.xml.in:87
-#: data/security-privacy.metainfo.xml.in:100
+#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:86
+#: data/security-privacy.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "Actualitzacions menors:"
 
-#: data/security-privacy.metainfo.xml.in:52
-msgid "Only list installed apps in the Location panel"
-msgstr "Llista només les aplicacions instal·lades al tauler Ubicació"
+#: data/security-privacy.metainfo.xml.in:50
+msgid "Improved screen reader accessibility"
+msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:53
-#: data/security-privacy.metainfo.xml.in:67
-#: data/security-privacy.metainfo.xml.in:76
-#: data/security-privacy.metainfo.xml.in:89
-#: data/security-privacy.metainfo.xml.in:102
+#: data/security-privacy.metainfo.xml.in:51
+#: data/security-privacy.metainfo.xml.in:65
+#: data/security-privacy.metainfo.xml.in:79
+#: data/security-privacy.metainfo.xml.in:88
+#: data/security-privacy.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Actualitzacions de la traducció"
 
-#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:58
+#: data/security-privacy.metainfo.xml.in:72
+#: data/security-privacy.metainfo.xml.in:95
+msgid "New features:"
+msgstr "Característiques noves:"
+
+#: data/security-privacy.metainfo.xml.in:60
+msgid "Automatically clean up screenshots with Housekeeping"
+msgstr "Netegeu automàticament les captures de pantalla amb Housekeeping"
+
+#: data/security-privacy.metainfo.xml.in:64
+msgid "Only list installed apps in the Location panel"
+msgstr "Llista només les aplicacions instal·lades al tauler Ubicació"
+
+#: data/security-privacy.metainfo.xml.in:74
 msgid "Use the location portal"
 msgstr "Usa el portal d'ubicació"
 
-#: data/security-privacy.metainfo.xml.in:66
+#: data/security-privacy.metainfo.xml.in:78
 msgid "New location icon"
 msgstr "Icona d'ubicació nova"
 
-#: data/security-privacy.metainfo.xml.in:85
+#: data/security-privacy.metainfo.xml.in:97
 msgid "Option to forbid new USB devices while locked"
 msgstr "Opció per prohibir els dispositius USB nous mentre estiguin blocats"
 
-#: data/security-privacy.metainfo.xml.in:98
-msgid "Add Downloads option to Housekeeping"
-msgstr "Addició de l'opció de baixades al manteniment"
+#~ msgid "Add Downloads option to Housekeeping"
+#~ msgstr "Addició de l'opció de baixades al manteniment"
 
 #~ msgid "Redesigned \"Housekeeping\" page"
 #~ msgstr "Pàgina de manteniment redissenyada"
