@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2024-07-04 16:16+0000\n"
+"PO-Revision-Date: 2024-07-10 01:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/he/>\n"
@@ -45,7 +45,7 @@ msgstr "עדכונים משניים:"
 
 #: data/security-privacy.metainfo.xml.in:50
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "נגישות מקריא המסך השתפרה"
 
 #: data/security-privacy.metainfo.xml.in:51
 #: data/security-privacy.metainfo.xml.in:65
