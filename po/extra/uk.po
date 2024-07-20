@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2024-07-10 01:16+0000\n"
+"PO-Revision-Date: 2024-07-21 09:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/uk/>\n"
@@ -46,7 +46,7 @@ msgstr "Незначні оновлення:"
 
 #: data/security-privacy.metainfo.xml.in:50
 msgid "Improved screen reader accessibility"
-msgstr "Поліпшення доступності для зчитування з екрана"
+msgstr "Поліпшення доступності для зчитувачів з екрана"
 
 #: data/security-privacy.metainfo.xml.in:51
 #: data/security-privacy.metainfo.xml.in:65
