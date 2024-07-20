@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2023-08-01 08:08+0000\n"
+"PO-Revision-Date: 2024-07-21 09:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -48,7 +48,7 @@ msgstr "Mniejsze aktualizacje:"
 
 #: data/security-privacy.metainfo.xml.in:50
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Poprawiono dostępność czytnika ekranu"
 
 #: data/security-privacy.metainfo.xml.in:51
 #: data/security-privacy.metainfo.xml.in:65
