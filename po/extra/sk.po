@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2022-09-30 22:36+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
+"PO-Revision-Date: 2024-07-11 08:16+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -31,57 +31,59 @@ msgstr "Nastavenia súkromia a zabezpečenia"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Nastavujte bránu Firewall, zámok obrazovky a informácie o aktivite"
 
-#: data/security-privacy.metainfo.xml.in:39
+#: data/security-privacy.metainfo.xml.in:40
 msgid "elementary, Inc."
-msgstr ""
-
-#: data/security-privacy.metainfo.xml.in:46
-#: data/security-privacy.metainfo.xml.in:60
-#: data/security-privacy.metainfo.xml.in:83
-#: data/security-privacy.metainfo.xml.in:96
-msgid "New features:"
-msgstr "Nové funkcie:"
+msgstr "elementary, Inc."
 
 #: data/security-privacy.metainfo.xml.in:48
-msgid "Automatically clean up screenshots with Housekeeping"
-msgstr ""
-
-#: data/security-privacy.metainfo.xml.in:50
-#: data/security-privacy.metainfo.xml.in:64
-#: data/security-privacy.metainfo.xml.in:74
-#: data/security-privacy.metainfo.xml.in:87
-#: data/security-privacy.metainfo.xml.in:100
+#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:86
+#: data/security-privacy.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "Menšie aktualizácie:"
 
-#: data/security-privacy.metainfo.xml.in:52
-msgid "Only list installed apps in the Location panel"
-msgstr ""
+#: data/security-privacy.metainfo.xml.in:50
+msgid "Improved screen reader accessibility"
+msgstr "Zlepšená prístupnosť čítačky obrazovky"
 
-#: data/security-privacy.metainfo.xml.in:53
-#: data/security-privacy.metainfo.xml.in:67
-#: data/security-privacy.metainfo.xml.in:76
-#: data/security-privacy.metainfo.xml.in:89
-#: data/security-privacy.metainfo.xml.in:102
+#: data/security-privacy.metainfo.xml.in:51
+#: data/security-privacy.metainfo.xml.in:65
+#: data/security-privacy.metainfo.xml.in:79
+#: data/security-privacy.metainfo.xml.in:88
+#: data/security-privacy.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Aktualizácia prekladov"
 
-#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:58
+#: data/security-privacy.metainfo.xml.in:72
+#: data/security-privacy.metainfo.xml.in:95
+msgid "New features:"
+msgstr "Nové funkcie:"
+
+#: data/security-privacy.metainfo.xml.in:60
+msgid "Automatically clean up screenshots with Housekeeping"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:64
+msgid "Only list installed apps in the Location panel"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:74
 msgid "Use the location portal"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:66
+#: data/security-privacy.metainfo.xml.in:78
 msgid "New location icon"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:85
+#: data/security-privacy.metainfo.xml.in:97
 msgid "Option to forbid new USB devices while locked"
 msgstr ""
 "Možnosť zabrániť pripojeniu nových USB zariadení pri zamknutom počítači"
 
-#: data/security-privacy.metainfo.xml.in:98
-msgid "Add Downloads option to Housekeeping"
-msgstr "Pridaná možnosť Stiahnuté súbory do Upratovania"
+#~ msgid "Add Downloads option to Housekeeping"
+#~ msgstr "Pridaná možnosť Stiahnuté súbory do Upratovania"
 
 #~ msgid "Redesigned \"Housekeeping\" page"
 #~ msgstr "Prerobená stránka „Upratovanie“"

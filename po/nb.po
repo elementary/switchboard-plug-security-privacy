@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
 "PO-Revision-Date: 2024-02-09 15:13+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -32,55 +32,55 @@ msgstr "Sett opp brannmur, skjermlås og aktivitetsinfo"
 msgid "Privacy"
 msgstr "Personvern"
 
-#: src/Plug.vala:52 src/Plug.vala:84 src/Plug.vala:85 src/Plug.vala:86
+#: src/Plug.vala:52 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Låsing"
 
-#: src/Plug.vala:53 src/Plug.vala:87 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:89 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "Brannmur"
 
-#: src/Plug.vala:54 src/Plug.vala:88 src/Plug.vala:91 src/Plug.vala:96
-#: src/Plug.vala:101 src/Plug.vala:106 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:54 src/Plug.vala:90 src/Plug.vala:93 src/Plug.vala:98
+#: src/Plug.vala:103 src/Plug.vala:108 src/Views/HouseKeepingPanel.vala:31
 msgid "Housekeeping"
 msgstr "Husarbeid"
 
-#: src/Plug.vala:55 src/Plug.vala:109 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:111 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Posisjonstjenester"
 
-#: src/Plug.vala:82 src/Plug.vala:83 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:84 src/Plug.vala:85 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Historikk"
 
-#: src/Plug.vala:83 src/Widgets/ClearUsageDialog.vala:71
+#: src/Plug.vala:85 src/Widgets/ClearUsageDialog.vala:71
 msgid "Clear History"
 msgstr "Glem historikk"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:87
 msgid "Lock on sleep"
 msgstr "Lås ved hvile"
 
-#: src/Plug.vala:86
+#: src/Plug.vala:88
 msgid "Lock after sceen turns off"
 msgstr "Lås etter at skjerm slåes av"
 
-#: src/Plug.vala:92
+#: src/Plug.vala:94
 msgid "Automatically delete old temporary files"
 msgstr "Slett gamle filer automatisk"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:99
 #, fuzzy
 #| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
 msgstr "Slett gamle filer fra papirkurven automatisk"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:104
 msgid "Automatically delete old trashed files"
 msgstr "Slett gamle filer fra papirkurven automatisk"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Antall dager å beholde filer i papirkurv og midlertidige filer"
 
@@ -108,27 +108,27 @@ msgstr "Brannmursregler kan endres uten påkrevd systemtilgang."
 msgid "Unknown"
 msgstr "Ukjent"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:397
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:398
 msgid "Allow"
 msgstr "Tillat"
 
-#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:399
 msgid "Deny"
 msgstr "Nekt"
 
-#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:400
 msgid "Reject"
 msgstr "Avslå"
 
-#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:400
+#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:401
 msgid "Limit"
 msgstr "Grense"
 
-#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:430
+#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:431
 msgid "In"
 msgstr "I"
 
-#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:431
+#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:432
 msgid "Out"
 msgstr "Ute"
 
@@ -142,9 +142,9 @@ msgstr "%s Porter %s"
 msgid "%s Port %s"
 msgstr "%s Port %s"
 
-#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:557
-#: src/Views/HouseKeepingPanel.vala:168 src/Views/TrackPanel.vala:109
-#: src/Views/LocationPanel.vala:117
+#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:558
+#: src/Views/HouseKeepingPanel.vala:165 src/Views/TrackPanel.vala:110
+#: src/Views/LocationPanel.vala:118
 msgid "Enabled"
 msgstr "Påslått"
 
@@ -172,41 +172,41 @@ msgstr "Til"
 msgid "From"
 msgstr "Fra"
 
-#: src/Views/FirewallPanel.vala:403
+#: src/Views/FirewallPanel.vala:404
 msgid "Action:"
 msgstr "Tiltak:"
 
-#: src/Views/FirewallPanel.vala:413
+#: src/Views/FirewallPanel.vala:414
 msgid "Protocol:"
 msgstr "Protokoll:"
 
-#: src/Views/FirewallPanel.vala:421
+#: src/Views/FirewallPanel.vala:422
 msgid "Both"
 msgstr "Begge"
 
-#: src/Views/FirewallPanel.vala:424
+#: src/Views/FirewallPanel.vala:425
 msgid "Version:"
 msgstr "Versjon:"
 
-#: src/Views/FirewallPanel.vala:434
+#: src/Views/FirewallPanel.vala:435
 msgid "Direction:"
 msgstr "Retningsanvisning:"
 
-#: src/Views/FirewallPanel.vala:441
+#: src/Views/FirewallPanel.vala:442
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d eller %d-%d"
 
-#: src/Views/FirewallPanel.vala:444
+#: src/Views/FirewallPanel.vala:445
 msgid "Ports:"
 msgstr "Porter:"
 
-#: src/Views/FirewallPanel.vala:449
+#: src/Views/FirewallPanel.vala:450
 msgid "Add Rule"
 msgstr "Legg til regel"
 
-#: src/Views/FirewallPanel.vala:561 src/Views/HouseKeepingPanel.vala:174
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:122
+#: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
 msgstr "Slått av"
 
@@ -240,11 +240,11 @@ msgstr "Filer i papirkurven"
 msgid "Delete Old Files After:"
 msgstr "Antall dager å beholde filer i papirkurv og midlertidige filer:"
 
-#: src/Views/HouseKeepingPanel.vala:117
+#: src/Views/HouseKeepingPanel.vala:118
 msgid "Open Trash…"
 msgstr "Åpne papirkurv…"
 
-#: src/Views/HouseKeepingPanel.vala:150
+#: src/Views/HouseKeepingPanel.vala:147
 #, fuzzy, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -259,13 +259,13 @@ msgstr[1] ""
 "Gamle filer kan slettes etter %u dag for å spare plass og hjelpe deg å hegne "
 "om personvernet."
 
-#: src/Views/HouseKeepingPanel.vala:156
+#: src/Views/HouseKeepingPanel.vala:153
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "Dag"
 msgstr[1] "Dager"
 
-#: src/Views/HouseKeepingPanel.vala:171
+#: src/Views/HouseKeepingPanel.vala:168
 msgid "Partially Enabled"
 msgstr "Delvis påslått"
 
@@ -278,7 +278,7 @@ msgstr "Lås ved hvile:"
 msgid "Lock after screen turns off:"
 msgstr "Lås etter at skjerm slåes av:"
 
-#: src/Views/LockPanel.vala:59
+#: src/Views/LockPanel.vala:60
 msgid "Forbid new USB devices when locked:"
 msgstr "Forby nye USB-enheter når låst:"
 
@@ -317,11 +317,11 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "Historikk er avskrudd"
 
-#: src/Views/TrackPanel.vala:65
+#: src/Views/TrackPanel.vala:66
 msgid "Clear History…"
 msgstr "Glem historikk…"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:104
 msgid "Your system"
 msgstr "Ditt system"
 
@@ -369,7 +369,7 @@ msgstr ""
 "Dette vil ikke forhindre programmer fra å prøve å bestemme posisjonen din "
 "fra din IP-adresse."
 
-#: src/Views/LocationPanel.vala:199
+#: src/Views/LocationPanel.vala:200
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Gi %s tillatelse til å bruke posisjonstjenester"

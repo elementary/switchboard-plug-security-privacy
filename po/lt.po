@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
 "PO-Revision-Date: 2019-08-29 04:22+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 
@@ -33,55 +33,55 @@ msgstr "Konfigūruoti užkardą, ekrano užraktą ir veiklos informaciją"
 msgid "Privacy"
 msgstr "Privatumas"
 
-#: src/Plug.vala:52 src/Plug.vala:84 src/Plug.vala:85 src/Plug.vala:86
+#: src/Plug.vala:52 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Užrakinimas"
 
-#: src/Plug.vala:53 src/Plug.vala:87 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:89 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "Užkarda"
 
-#: src/Plug.vala:54 src/Plug.vala:88 src/Plug.vala:91 src/Plug.vala:96
-#: src/Plug.vala:101 src/Plug.vala:106 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:54 src/Plug.vala:90 src/Plug.vala:93 src/Plug.vala:98
+#: src/Plug.vala:103 src/Plug.vala:108 src/Views/HouseKeepingPanel.vala:31
 msgid "Housekeeping"
 msgstr "Namų ūkis"
 
-#: src/Plug.vala:55 src/Plug.vala:109 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:111 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Buvimo vietos tarnybos"
 
-#: src/Plug.vala:82 src/Plug.vala:83 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:84 src/Plug.vala:85 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "Istorija"
 
-#: src/Plug.vala:83 src/Widgets/ClearUsageDialog.vala:71
+#: src/Plug.vala:85 src/Widgets/ClearUsageDialog.vala:71
 msgid "Clear History"
 msgstr "Išvalyti istoriją"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:87
 msgid "Lock on sleep"
 msgstr "Užrakinti, pristabdant kompiuterį"
 
-#: src/Plug.vala:86
+#: src/Plug.vala:88
 msgid "Lock after sceen turns off"
 msgstr "Užrakinti po to, kai ekranas išsijungia"
 
-#: src/Plug.vala:92
+#: src/Plug.vala:94
 msgid "Automatically delete old temporary files"
 msgstr "Automatiškai ištrinti senus laikinuosius failus"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:99
 #, fuzzy
 #| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
 msgstr "Automatiškai ištrinti senus failus šiukšlinėje"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:104
 msgid "Automatically delete old trashed files"
 msgstr "Automatiškai ištrinti senus failus šiukšlinėje"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Kiek dienų laikyti failus šiukšlinėje ir laikinuosius failus"
 
@@ -108,27 +108,27 @@ msgstr ""
 msgid "Unknown"
 msgstr "Nežinoma"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:397
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:398
 msgid "Allow"
 msgstr "Leisti"
 
-#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:399
 msgid "Deny"
 msgstr "Drausti"
 
-#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:400
 msgid "Reject"
 msgstr "Atmesti"
 
-#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:400
+#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:401
 msgid "Limit"
 msgstr "Apriboti"
 
-#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:430
+#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:431
 msgid "In"
 msgstr "Į"
 
-#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:431
+#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:432
 msgid "Out"
 msgstr "Iš"
 
@@ -142,9 +142,9 @@ msgstr "%s prievadai %s"
 msgid "%s Port %s"
 msgstr "%s prievadas %s"
 
-#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:557
-#: src/Views/HouseKeepingPanel.vala:168 src/Views/TrackPanel.vala:109
-#: src/Views/LocationPanel.vala:117
+#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:558
+#: src/Views/HouseKeepingPanel.vala:165 src/Views/TrackPanel.vala:110
+#: src/Views/LocationPanel.vala:118
 msgid "Enabled"
 msgstr "Įjungta"
 
@@ -172,41 +172,41 @@ msgstr "Į"
 msgid "From"
 msgstr "Iš"
 
-#: src/Views/FirewallPanel.vala:403
+#: src/Views/FirewallPanel.vala:404
 msgid "Action:"
 msgstr "Veiksmas:"
 
-#: src/Views/FirewallPanel.vala:413
+#: src/Views/FirewallPanel.vala:414
 msgid "Protocol:"
 msgstr "Protokolas:"
 
-#: src/Views/FirewallPanel.vala:421
+#: src/Views/FirewallPanel.vala:422
 msgid "Both"
 msgstr "Abidvi"
 
-#: src/Views/FirewallPanel.vala:424
+#: src/Views/FirewallPanel.vala:425
 msgid "Version:"
 msgstr "Versija:"
 
-#: src/Views/FirewallPanel.vala:434
+#: src/Views/FirewallPanel.vala:435
 msgid "Direction:"
 msgstr "Kryptis:"
 
-#: src/Views/FirewallPanel.vala:441
+#: src/Views/FirewallPanel.vala:442
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d arba %d-%d"
 
-#: src/Views/FirewallPanel.vala:444
+#: src/Views/FirewallPanel.vala:445
 msgid "Ports:"
 msgstr "Prievadai:"
 
-#: src/Views/FirewallPanel.vala:449
+#: src/Views/FirewallPanel.vala:450
 msgid "Add Rule"
 msgstr "Pridėti taisyklę"
 
-#: src/Views/FirewallPanel.vala:561 src/Views/HouseKeepingPanel.vala:174
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:122
+#: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
 msgstr "Išjungta"
 
@@ -242,11 +242,11 @@ msgstr "Failus šiukšlinėje"
 msgid "Delete Old Files After:"
 msgstr "Ištrinti failus šiukšlinėje ir laikinuosius failus po:"
 
-#: src/Views/HouseKeepingPanel.vala:117
+#: src/Views/HouseKeepingPanel.vala:118
 msgid "Open Trash…"
 msgstr "Atverti šiukšlinę…"
 
-#: src/Views/HouseKeepingPanel.vala:150
+#: src/Views/HouseKeepingPanel.vala:147
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -267,7 +267,7 @@ msgstr[3] ""
 "Seni failai gali būti automatiškai ištrinti po %u dienos, kad būtų sutaupyta "
 "vietos ir būtų apsaugotas jūsų privatumas."
 
-#: src/Views/HouseKeepingPanel.vala:156
+#: src/Views/HouseKeepingPanel.vala:153
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "d."
@@ -275,7 +275,7 @@ msgstr[1] "d."
 msgstr[2] "d."
 msgstr[3] "d."
 
-#: src/Views/HouseKeepingPanel.vala:171
+#: src/Views/HouseKeepingPanel.vala:168
 msgid "Partially Enabled"
 msgstr "Iš dalies įjungta"
 
@@ -287,7 +287,7 @@ msgstr "Užrakinti, pristabdant kompiuterį:"
 msgid "Lock after screen turns off:"
 msgstr "Užrakinti po to, kai ekranas išsijungia:"
 
-#: src/Views/LockPanel.vala:59
+#: src/Views/LockPanel.vala:60
 msgid "Forbid new USB devices when locked:"
 msgstr ""
 
@@ -325,11 +325,11 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "Istorija yra išjungta"
 
-#: src/Views/TrackPanel.vala:65
+#: src/Views/TrackPanel.vala:66
 msgid "Clear History…"
 msgstr "Išvalyti istoriją…"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:104
 msgid "Your system"
 msgstr "Jūsų sistema"
 
@@ -377,7 +377,7 @@ msgstr ""
 "Tai nesutrukdys programoms bandyti nustatyti jūsų buvimo vietą pagal jūsų IP "
 "adresą."
 
-#: src/Views/LocationPanel.vala:199
+#: src/Views/LocationPanel.vala:200
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Leisti %s naudoti buvimo vietos tarnybas"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-06-17 00:16+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
+"PO-Revision-Date: 2024-07-10 01:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -33,60 +33,62 @@ msgstr ""
 "Configure el cortafuegos, el bloqueo de pantalla y la información de "
 "actividades"
 
-#: data/security-privacy.metainfo.xml.in:39
+#: data/security-privacy.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/security-privacy.metainfo.xml.in:46
-#: data/security-privacy.metainfo.xml.in:60
-#: data/security-privacy.metainfo.xml.in:83
-#: data/security-privacy.metainfo.xml.in:96
+#: data/security-privacy.metainfo.xml.in:48
+#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:86
+#: data/security-privacy.metainfo.xml.in:99
+msgid "Minor updates:"
+msgstr "Actualizaciones menores:"
+
+#: data/security-privacy.metainfo.xml.in:50
+msgid "Improved screen reader accessibility"
+msgstr "Se mejoró la accesibilidad para los lectores de pantalla"
+
+#: data/security-privacy.metainfo.xml.in:51
+#: data/security-privacy.metainfo.xml.in:65
+#: data/security-privacy.metainfo.xml.in:79
+#: data/security-privacy.metainfo.xml.in:88
+#: data/security-privacy.metainfo.xml.in:101
+msgid "Translation updates"
+msgstr "Traducciones actualizadas"
+
+#: data/security-privacy.metainfo.xml.in:58
+#: data/security-privacy.metainfo.xml.in:72
+#: data/security-privacy.metainfo.xml.in:95
 msgid "New features:"
 msgstr "Nuevas características:"
 
-#: data/security-privacy.metainfo.xml.in:48
+#: data/security-privacy.metainfo.xml.in:60
 msgid "Automatically clean up screenshots with Housekeeping"
 msgstr ""
 "Se pueden limpiar capturas de pantalla automáticamente con Mantenimiento"
 
-#: data/security-privacy.metainfo.xml.in:50
 #: data/security-privacy.metainfo.xml.in:64
-#: data/security-privacy.metainfo.xml.in:74
-#: data/security-privacy.metainfo.xml.in:87
-#: data/security-privacy.metainfo.xml.in:100
-msgid "Minor updates:"
-msgstr "Actualizaciones menores:"
-
-#: data/security-privacy.metainfo.xml.in:52
 msgid "Only list installed apps in the Location panel"
 msgstr ""
 "Ahora solo se listan las aplicaciones instaladas en el panel de ubicación"
 
-#: data/security-privacy.metainfo.xml.in:53
-#: data/security-privacy.metainfo.xml.in:67
-#: data/security-privacy.metainfo.xml.in:76
-#: data/security-privacy.metainfo.xml.in:89
-#: data/security-privacy.metainfo.xml.in:102
-msgid "Translation updates"
-msgstr "Traducciones actualizadas"
-
-#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:74
 msgid "Use the location portal"
 msgstr "Ahora se usa el portal de ubicación"
 
-#: data/security-privacy.metainfo.xml.in:66
+#: data/security-privacy.metainfo.xml.in:78
 msgid "New location icon"
 msgstr "Se agregó un nuevo icono de ubicación"
 
-#: data/security-privacy.metainfo.xml.in:85
+#: data/security-privacy.metainfo.xml.in:97
 msgid "Option to forbid new USB devices while locked"
 msgstr ""
 "Se agregó una opción para prohibir nuevos dispositivos USB cuando el equipo "
 "está bloqueado"
 
-#: data/security-privacy.metainfo.xml.in:98
-msgid "Add Downloads option to Housekeeping"
-msgstr "Se trasladó todas las opciones de descargas a Mantenimiento"
+#~ msgid "Add Downloads option to Housekeeping"
+#~ msgstr "Se trasladó todas las opciones de descargas a Mantenimiento"
 
 #~ msgid "Redesigned \"Housekeeping\" page"
 #~ msgstr "Página «Mantenimiento» rediseñada"

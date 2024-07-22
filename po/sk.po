@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
 "PO-Revision-Date: 2023-10-27 11:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -33,53 +33,53 @@ msgstr "Nastavujte bránu Firewall, zámok obrazovky a informácie o aktivite"
 msgid "Privacy"
 msgstr "Súkromie"
 
-#: src/Plug.vala:52 src/Plug.vala:84 src/Plug.vala:85 src/Plug.vala:86
+#: src/Plug.vala:52 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
 #: src/Views/LockPanel.vala:26
 msgid "Locking"
 msgstr "Zamykanie"
 
-#: src/Plug.vala:53 src/Plug.vala:87 src/Views/FirewallPanel.vala:49
+#: src/Plug.vala:53 src/Plug.vala:89 src/Views/FirewallPanel.vala:49
 msgid "Firewall"
 msgstr "Firewall"
 
-#: src/Plug.vala:54 src/Plug.vala:88 src/Plug.vala:91 src/Plug.vala:96
-#: src/Plug.vala:101 src/Plug.vala:106 src/Views/HouseKeepingPanel.vala:31
+#: src/Plug.vala:54 src/Plug.vala:90 src/Plug.vala:93 src/Plug.vala:98
+#: src/Plug.vala:103 src/Plug.vala:108 src/Views/HouseKeepingPanel.vala:31
 msgid "Housekeeping"
 msgstr "Upratovanie"
 
-#: src/Plug.vala:55 src/Plug.vala:109 src/Views/LocationPanel.vala:35
+#: src/Plug.vala:55 src/Plug.vala:111 src/Views/LocationPanel.vala:35
 msgid "Location Services"
 msgstr "Služby určovania polohy"
 
-#: src/Plug.vala:82 src/Plug.vala:83 src/Views/TrackPanel.vala:31
+#: src/Plug.vala:84 src/Plug.vala:85 src/Views/TrackPanel.vala:31
 msgid "History"
 msgstr "História"
 
-#: src/Plug.vala:83 src/Widgets/ClearUsageDialog.vala:71
+#: src/Plug.vala:85 src/Widgets/ClearUsageDialog.vala:71
 msgid "Clear History"
 msgstr "Vymazať históriu"
 
-#: src/Plug.vala:85
+#: src/Plug.vala:87
 msgid "Lock on sleep"
 msgstr "Uzamknúť pri spánku"
 
-#: src/Plug.vala:86
+#: src/Plug.vala:88
 msgid "Lock after sceen turns off"
 msgstr "Uzamknúť po vypnutí obrazovky"
 
-#: src/Plug.vala:92
+#: src/Plug.vala:94
 msgid "Automatically delete old temporary files"
 msgstr "Automaticky vymazávať staré dočasné súbory"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:99
 msgid "Automatically delete old screenshot files"
 msgstr "Automaticky vymazávať staré snímky obrazovky"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:104
 msgid "Automatically delete old trashed files"
 msgstr "Automaticky vymazávať staré súbory v koši"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
 msgid "Number of days to keep trashed and temporary files"
 msgstr "Počet dní pre zachovanie dočasných súborov a súborov v koši"
 
@@ -106,27 +106,27 @@ msgstr ""
 msgid "Unknown"
 msgstr "Neznáme"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:397
+#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:398
 msgid "Allow"
 msgstr "Povoliť"
 
-#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:399
 msgid "Deny"
 msgstr "Zakázať"
 
-#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:400
 msgid "Reject"
 msgstr "Zamietnuť"
 
-#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:400
+#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:401
 msgid "Limit"
 msgstr "Obmedzenie"
 
-#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:430
+#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:431
 msgid "In"
 msgstr "Vstup"
 
-#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:431
+#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:432
 msgid "Out"
 msgstr "Výstup"
 
@@ -140,9 +140,9 @@ msgstr "%s porty %s"
 msgid "%s Port %s"
 msgstr "%s port %s"
 
-#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:557
-#: src/Views/HouseKeepingPanel.vala:168 src/Views/TrackPanel.vala:109
-#: src/Views/LocationPanel.vala:117
+#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:558
+#: src/Views/HouseKeepingPanel.vala:165 src/Views/TrackPanel.vala:110
+#: src/Views/LocationPanel.vala:118
 msgid "Enabled"
 msgstr "Zapnuté"
 
@@ -170,41 +170,41 @@ msgstr "Do"
 msgid "From"
 msgstr "Od"
 
-#: src/Views/FirewallPanel.vala:403
+#: src/Views/FirewallPanel.vala:404
 msgid "Action:"
 msgstr "Akcia:"
 
-#: src/Views/FirewallPanel.vala:413
+#: src/Views/FirewallPanel.vala:414
 msgid "Protocol:"
 msgstr "Protokol:"
 
-#: src/Views/FirewallPanel.vala:421
+#: src/Views/FirewallPanel.vala:422
 msgid "Both"
 msgstr "Oboje"
 
-#: src/Views/FirewallPanel.vala:424
+#: src/Views/FirewallPanel.vala:425
 msgid "Version:"
 msgstr "Verzia:"
 
-#: src/Views/FirewallPanel.vala:434
+#: src/Views/FirewallPanel.vala:435
 msgid "Direction:"
 msgstr "Smer:"
 
-#: src/Views/FirewallPanel.vala:441
+#: src/Views/FirewallPanel.vala:442
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d alebo %d-%d"
 
-#: src/Views/FirewallPanel.vala:444
+#: src/Views/FirewallPanel.vala:445
 msgid "Ports:"
 msgstr "Porty:"
 
-#: src/Views/FirewallPanel.vala:449
+#: src/Views/FirewallPanel.vala:450
 msgid "Add Rule"
 msgstr "Pridať pravidlo"
 
-#: src/Views/FirewallPanel.vala:561 src/Views/HouseKeepingPanel.vala:174
-#: src/Views/TrackPanel.vala:113 src/Views/LocationPanel.vala:122
+#: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
+#: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
 msgstr "Vypnuté"
 
@@ -232,11 +232,11 @@ msgstr "Súbory v koši"
 msgid "Delete Old Files After:"
 msgstr "Vymazať staré súbory po uplynutí:"
 
-#: src/Views/HouseKeepingPanel.vala:117
+#: src/Views/HouseKeepingPanel.vala:118
 msgid "Open Trash…"
 msgstr "Otvoriť kôš…"
 
-#: src/Views/HouseKeepingPanel.vala:150
+#: src/Views/HouseKeepingPanel.vala:147
 #, c-format
 msgid ""
 "Old files can be automatically deleted after %u day to save space and help "
@@ -254,14 +254,14 @@ msgstr[2] ""
 "Staré súbory je možné automaticky vymazávať po uplynutí %u dní aby sa "
 "šetrilo priestorom na úložisku a chránilo vaše súkromie."
 
-#: src/Views/HouseKeepingPanel.vala:156
+#: src/Views/HouseKeepingPanel.vala:153
 msgid "Day"
 msgid_plural "Days"
 msgstr[0] "Dňa"
 msgstr[1] "Dní"
 msgstr[2] "Dní"
 
-#: src/Views/HouseKeepingPanel.vala:171
+#: src/Views/HouseKeepingPanel.vala:168
 msgid "Partially Enabled"
 msgstr "Čiastočne povolené"
 
@@ -273,7 +273,7 @@ msgstr "Uzamknúť pri uspaní:"
 msgid "Lock after screen turns off:"
 msgstr "Uzamknúť po vypnutí obrazovky:"
 
-#: src/Views/LockPanel.vala:59
+#: src/Views/LockPanel.vala:60
 msgid "Forbid new USB devices when locked:"
 msgstr "Zabrániť pripojeniu nových USB zariadení, keď je zariadenie zamknuté:"
 
@@ -312,11 +312,11 @@ msgstr ""
 msgid "History Is Disabled"
 msgstr "História je vypnutá"
 
-#: src/Views/TrackPanel.vala:65
+#: src/Views/TrackPanel.vala:66
 msgid "Clear History…"
 msgstr "Vymazať históriu…"
 
-#: src/Views/TrackPanel.vala:103
+#: src/Views/TrackPanel.vala:104
 msgid "Your system"
 msgstr "Váš systém"
 
@@ -363,7 +363,7 @@ msgid ""
 msgstr ""
 "Toto nezabráni aplikáciám v pokusoch zistiť vašu polohu na základe IP adresy."
 
-#: src/Views/LocationPanel.vala:199
+#: src/Views/LocationPanel.vala:200
 #, c-format
 msgid "Allow %s to use location services"
 msgstr "Povoliť %s používať služby určovania polohy"

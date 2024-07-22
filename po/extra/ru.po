@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 12:07+0000\n"
-"PO-Revision-Date: 2024-06-20 18:16+0000\n"
+"POT-Creation-Date: 2024-07-08 21:27+0000\n"
+"PO-Revision-Date: 2024-07-10 01:16+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ru/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -32,56 +32,58 @@ msgstr "Настройки защиты и приватности"
 msgid "Configure firewall, screen lock, and activity information"
 msgstr "Настройка фаервола, блокировки экрана и информации об активности"
 
-#: data/security-privacy.metainfo.xml.in:39
+#: data/security-privacy.metainfo.xml.in:40
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/security-privacy.metainfo.xml.in:46
-#: data/security-privacy.metainfo.xml.in:60
-#: data/security-privacy.metainfo.xml.in:83
-#: data/security-privacy.metainfo.xml.in:96
-msgid "New features:"
-msgstr "Новые возможности:"
-
 #: data/security-privacy.metainfo.xml.in:48
-msgid "Automatically clean up screenshots with Housekeeping"
-msgstr "Автоматическая очистка снимков экрана в Домоводстве"
-
-#: data/security-privacy.metainfo.xml.in:50
-#: data/security-privacy.metainfo.xml.in:64
-#: data/security-privacy.metainfo.xml.in:74
-#: data/security-privacy.metainfo.xml.in:87
-#: data/security-privacy.metainfo.xml.in:100
+#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:76
+#: data/security-privacy.metainfo.xml.in:86
+#: data/security-privacy.metainfo.xml.in:99
 msgid "Minor updates:"
 msgstr "Незначительные обновления:"
 
-#: data/security-privacy.metainfo.xml.in:52
-msgid "Only list installed apps in the Location panel"
-msgstr "Только установленные приложения отображаются в панели Местоположения"
+#: data/security-privacy.metainfo.xml.in:50
+msgid "Improved screen reader accessibility"
+msgstr "Улучшена доступность для экранного диктора"
 
-#: data/security-privacy.metainfo.xml.in:53
-#: data/security-privacy.metainfo.xml.in:67
-#: data/security-privacy.metainfo.xml.in:76
-#: data/security-privacy.metainfo.xml.in:89
-#: data/security-privacy.metainfo.xml.in:102
+#: data/security-privacy.metainfo.xml.in:51
+#: data/security-privacy.metainfo.xml.in:65
+#: data/security-privacy.metainfo.xml.in:79
+#: data/security-privacy.metainfo.xml.in:88
+#: data/security-privacy.metainfo.xml.in:101
 msgid "Translation updates"
 msgstr "Обновления перевода"
 
-#: data/security-privacy.metainfo.xml.in:62
+#: data/security-privacy.metainfo.xml.in:58
+#: data/security-privacy.metainfo.xml.in:72
+#: data/security-privacy.metainfo.xml.in:95
+msgid "New features:"
+msgstr "Новые возможности:"
+
+#: data/security-privacy.metainfo.xml.in:60
+msgid "Automatically clean up screenshots with Housekeeping"
+msgstr "Автоматическая очистка снимков экрана в Домоводстве"
+
+#: data/security-privacy.metainfo.xml.in:64
+msgid "Only list installed apps in the Location panel"
+msgstr "Только установленные приложения отображаются в панели Местоположения"
+
+#: data/security-privacy.metainfo.xml.in:74
 msgid "Use the location portal"
 msgstr "Использование портала местоположения"
 
-#: data/security-privacy.metainfo.xml.in:66
+#: data/security-privacy.metainfo.xml.in:78
 msgid "New location icon"
 msgstr "Новая иконка местоположения"
 
-#: data/security-privacy.metainfo.xml.in:85
+#: data/security-privacy.metainfo.xml.in:97
 msgid "Option to forbid new USB devices while locked"
 msgstr "Возможность запретить новые USB-устройства во время блокировки"
 
-#: data/security-privacy.metainfo.xml.in:98
-msgid "Add Downloads option to Housekeeping"
-msgstr "Добавлена опция «Загрузки» в разделе Домоводства"
+#~ msgid "Add Downloads option to Housekeeping"
+#~ msgstr "Добавлена опция «Загрузки» в разделе Домоводства"
 
 #~ msgid "Redesigned \"Housekeeping\" page"
 #~ msgstr "Переработана страница «Домоводства»"
