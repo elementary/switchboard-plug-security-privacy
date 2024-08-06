@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2018-06-11 13:07-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
+"switchboard/security-privacy-plug-extra/zh_Hant/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -26,11 +29,11 @@ msgstr ""
 
 #: data/security-privacy.metainfo.xml.in:11
 msgid "Configure firewall, screen lock, and activity information"
-msgstr ""
+msgstr "調整防火牆、螢幕鎖定、和活動資訊"
 
 #: data/security-privacy.metainfo.xml.in:40
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/security-privacy.metainfo.xml.in:48
 #: data/security-privacy.metainfo.xml.in:62
