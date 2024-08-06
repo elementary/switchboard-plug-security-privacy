@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2014-08-02 05:20+0000\n"
-"Last-Translator: Jirayu Yingthawornsuk <me@jirayu.in.th>\n"
-"Language-Team: Thai <th@li.org>\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Thai <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-security-privacy/th/>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
-"X-Generator: Launchpad (build 18329)\n"
 
 #: src/Plug.vala:23
 msgid "Security & Privacy"
@@ -206,7 +208,7 @@ msgstr "เพิ่มกฎ"
 #: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
-msgstr ""
+msgstr "ปิดใช้งาน"
 
 #: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
