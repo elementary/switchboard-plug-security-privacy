@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2024-01-06 19:51+0000\n"
-"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
+"PO-Revision-Date: 2024-08-07 18:16+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/ka/>\n"
 "Language: ka\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:23
@@ -89,14 +89,12 @@ msgid "Unlock"
 msgstr ""
 
 #: src/Views/FirewallPanel.vala:83
-#, fuzzy
-#| msgid "Locking"
 msgid "Lock"
-msgstr "ჩაკეტვა"
+msgstr "დაბლოკვა"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
-msgstr ""
+msgstr "წვდომის მიღების შეცდომა"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
