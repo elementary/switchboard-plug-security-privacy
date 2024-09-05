@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-05 21:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/security-privacy-plug-extra/zh_Hant/>\n"
@@ -45,7 +45,7 @@ msgstr "小型更新："
 
 #: data/security-privacy.metainfo.xml.in:50
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "改善螢幕閱讀器輔助"
 
 #: data/security-privacy.metainfo.xml.in:51
 #: data/security-privacy.metainfo.xml.in:65
