@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-09-14 02:16+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-security-privacy/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -44,7 +44,7 @@ msgstr "防火牆"
 #: src/Plug.vala:54 src/Plug.vala:90 src/Plug.vala:93 src/Plug.vala:98
 #: src/Plug.vala:103 src/Plug.vala:108 src/Views/HouseKeepingPanel.vala:31
 msgid "Housekeeping"
-msgstr ""
+msgstr "自動清理"
 
 #: src/Plug.vala:55 src/Plug.vala:111 src/Views/LocationPanel.vala:35
 msgid "Location Services"
@@ -55,39 +55,36 @@ msgid "History"
 msgstr "歷史"
 
 #: src/Plug.vala:85 src/Widgets/ClearUsageDialog.vala:71
-#, fuzzy
 msgid "Clear History"
-msgstr "清除歷史…"
+msgstr "清除歷史"
 
 #: src/Plug.vala:87
-#, fuzzy
 msgid "Lock on sleep"
-msgstr "睡眠時鎖定："
+msgstr "睡眠時鎖定"
 
 #: src/Plug.vala:88
-#, fuzzy
 msgid "Lock after sceen turns off"
-msgstr "螢幕關閉時鎖定："
+msgstr "螢幕關閉時鎖定"
 
 #: src/Plug.vala:94
 msgid "Automatically delete old temporary files"
-msgstr ""
+msgstr "自動刪除舊的暫存檔"
 
 #: src/Plug.vala:99
 msgid "Automatically delete old screenshot files"
-msgstr ""
+msgstr "自動刪除舊的畫面快照"
 
 #: src/Plug.vala:104
 msgid "Automatically delete old trashed files"
-msgstr ""
+msgstr "自動刪除舊的垃圾桶項目"
 
 #: src/Plug.vala:109
 msgid "Number of days to keep trashed and temporary files"
-msgstr ""
+msgstr "垃圾桶項目和暫存檔要保留的天數"
 
 #: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
 msgid "Unlock"
-msgstr ""
+msgstr "解除鎖定"
 
 #: src/Views/FirewallPanel.vala:83
 msgid "Lock"
@@ -95,11 +92,11 @@ msgstr "鎖定"
 
 #: src/Views/FirewallPanel.vala:105
 msgid "Unable to acquire permission"
-msgstr "無法取得許可"
+msgstr "無法取得權限"
 
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
-msgstr ""
+msgstr "無法在未獲得系統許可的情況下變更防火牆規則。"
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
@@ -210,31 +207,31 @@ msgstr "已停用"
 
 #: src/Views/HouseKeepingPanel.vala:36
 msgid "Automatically Delete:"
-msgstr ""
+msgstr "自動刪除："
 
 #: src/Views/HouseKeepingPanel.vala:48
 msgid "Old temporary files"
-msgstr ""
+msgstr "舊的暫存檔"
 
 #: src/Views/HouseKeepingPanel.vala:61
 msgid "Downloaded files"
-msgstr ""
+msgstr "下載的檔案"
 
 #: src/Views/HouseKeepingPanel.vala:69
 msgid "Screenshot files"
-msgstr ""
+msgstr "畫面快照檔案"
 
 #: src/Views/HouseKeepingPanel.vala:88
 msgid "Trashed files"
-msgstr ""
+msgstr "垃圾桶內的檔案"
 
 #: src/Views/HouseKeepingPanel.vala:91
 msgid "Delete Old Files After:"
-msgstr ""
+msgstr "刪除超過這個期間的舊檔案："
 
 #: src/Views/HouseKeepingPanel.vala:118
 msgid "Open Trash…"
-msgstr ""
+msgstr "開啟垃圾桶…"
 
 #: src/Views/HouseKeepingPanel.vala:147
 #, c-format
@@ -244,21 +241,20 @@ msgid ""
 msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr[0] ""
+msgstr[0] "舊檔案能在過了 %u 天之後自動刪除，來節省空間並保護您的隱私。"
 
 #: src/Views/HouseKeepingPanel.vala:153
 msgid "Day"
 msgid_plural "Days"
-msgstr[0] ""
+msgstr[0] "天"
 
 #: src/Views/HouseKeepingPanel.vala:168
 msgid "Partially Enabled"
-msgstr ""
+msgstr "部分啟用"
 
 #: src/Views/LockPanel.vala:31
-#, fuzzy
 msgid "Lock on suspend:"
-msgstr "睡眠時鎖定："
+msgstr "暫停時鎖定："
 
 #: src/Views/LockPanel.vala:37
 msgid "Lock after screen turns off:"
@@ -266,7 +262,7 @@ msgstr "螢幕關閉時鎖定："
 
 #: src/Views/LockPanel.vala:60
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "鎖定時禁止連接新 USB 裝置："
 
 #: src/Views/TrackPanel.vala:29
 #, c-format
@@ -276,22 +272,24 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
+"%s 可以儲存本機使用狀況資料來提供最近使用的檔案與改善本機搜尋相關性等等額外功"
+"能。無論此選項是否啟用，使用狀況資料絕對不會送到此裝置以外的地方或是提供給第"
+"三方。"
 
 #: src/Views/TrackPanel.vala:41
-#, fuzzy, c-format
+#, c-format
 msgid "%s won't retain any further usage data."
-msgstr "%s 不會保留檔案相關和應用程式使用狀況的任何資料或統計數據。"
+msgstr "%s 不會保留更多使用狀況資料。"
 
 #: src/Views/TrackPanel.vala:42
 msgid "The additional functionality that this data provides will be affected."
 msgstr "由此資料提供的額外功能會受到影響。"
 
 #: src/Views/TrackPanel.vala:43
-#, fuzzy
 msgid ""
 "This may not prevent apps from recording their own usage data, such as "
 "browser history."
-msgstr "這不會讓程式停止紀錄其自身的使用資料，例如瀏覽器歷史等。"
+msgstr "這不會讓程式停止記錄其自身的使用資料，例如瀏覽器歷史等。"
 
 #: src/Views/TrackPanel.vala:46
 msgid "History Is Disabled"
@@ -310,15 +308,14 @@ msgid "Allow the apps below to determine your location"
 msgstr "允許下列程式判定您的位置"
 
 #: src/Views/LocationPanel.vala:42
-#, fuzzy
 msgid "No Apps Are Using Location Services"
-msgstr "位置服務"
+msgstr "沒有應用程式使用位置服務"
 
 #: src/Views/LocationPanel.vala:43
 msgid ""
 "When apps are installed that use location services they will automatically "
 "appear here."
-msgstr ""
+msgstr "使用位置服務的應用程式安裝後就會自動出現於此。"
 
 #: src/Views/LocationPanel.vala:59
 msgid "Location Services Are Disabled"
@@ -343,25 +340,23 @@ msgid ""
 msgstr "這無法防止程式試圖根據 IP 位址判斷您的可能位置。"
 
 #: src/Views/LocationPanel.vala:200
-#, fuzzy, c-format
+#, c-format
 msgid "Allow %s to use location services"
-msgstr "位置服務"
+msgstr "允許 %s 使用位置服務"
 
 #: src/Widgets/AppChooser.vala:32
 msgid "Search Application"
 msgstr "搜尋應用程式"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
-msgstr "移除系統蒐集來的檔案和應用程式使用資料："
+msgstr "清理系統所收集的檔案與應用程式使用狀況資料"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
-msgstr ""
+msgstr "所選期間內的資料將會永久刪除且無法復原"
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
