@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2024-09-05 21:13+0000\n"
+"PO-Revision-Date: 2024-09-19 10:09+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/security-privacy-plug-extra/zh_Hant/>\n"
@@ -21,15 +21,15 @@ msgstr ""
 
 #: data/security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
-msgstr ""
+msgstr "執行防火牆設定需要先通過身分核對"
 
 #: data/security-privacy.metainfo.xml.in:10
 msgid "Security &amp; Privacy Settings"
-msgstr ""
+msgstr "安全與隱私設定值"
 
 #: data/security-privacy.metainfo.xml.in:11
 msgid "Configure firewall, screen lock, and activity information"
-msgstr "調整防火牆、螢幕鎖定、和活動資訊"
+msgstr "調整防火牆、螢幕鎖定、和活動資訊設定值"
 
 #: data/security-privacy.metainfo.xml.in:40
 msgid "elementary, Inc."
@@ -53,7 +53,7 @@ msgstr "改善螢幕閱讀器輔助"
 #: data/security-privacy.metainfo.xml.in:88
 #: data/security-privacy.metainfo.xml.in:101
 msgid "Translation updates"
-msgstr ""
+msgstr "翻譯更新"
 
 #: data/security-privacy.metainfo.xml.in:58
 #: data/security-privacy.metainfo.xml.in:72
@@ -63,20 +63,20 @@ msgstr "新功能："
 
 #: data/security-privacy.metainfo.xml.in:60
 msgid "Automatically clean up screenshots with Housekeeping"
-msgstr ""
+msgstr "新增自動清理畫面快照的功能"
 
 #: data/security-privacy.metainfo.xml.in:64
 msgid "Only list installed apps in the Location panel"
-msgstr ""
+msgstr "在位置資訊面板只列出已安裝的應用程式"
 
 #: data/security-privacy.metainfo.xml.in:74
 msgid "Use the location portal"
-msgstr ""
+msgstr "使用位置資訊桌面入口"
 
 #: data/security-privacy.metainfo.xml.in:78
 msgid "New location icon"
-msgstr ""
+msgstr "新的位置資訊圖示"
 
 #: data/security-privacy.metainfo.xml.in:97
 msgid "Option to forbid new USB devices while locked"
-msgstr ""
+msgstr "新增鎖定時禁止連接新的 USB 裝置的選項"
