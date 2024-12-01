@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-12-02 13:16+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-security-privacy/fi/>\n"
 "Language: fi\n"
@@ -85,7 +85,7 @@ msgstr ""
 
 #: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
 msgid "Unlock"
-msgstr ""
+msgstr "Avaa lukitus"
 
 #: src/Views/FirewallPanel.vala:83
 msgid "Lock"
@@ -98,6 +98,8 @@ msgstr "Käyttöoikeuden saaminen ei onnistu"
 #: src/Views/FirewallPanel.vala:106
 msgid "Firewall rules can't be changed without the required system permission."
 msgstr ""
+"Palomuurin sääntöjä ei voi muuttaa ilman vaadittua järjestelmätason "
+"käyttöoikeutta."
 
 #: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
 #: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
@@ -367,17 +369,18 @@ msgid "Search Application"
 msgstr "Etsi sovellus"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
 msgstr ""
-"Poista järjestelmän keräämät tiedot tiedostojen ja sovellusten käytöstä:"
+"Tyhjennä järjestelmän keräämät historiatiedot tiedostojen ja sovellusten "
+"käytöstä"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
 msgstr ""
+"Tiedot valitulta aikajanalta poistetaan pysyvästi, eikä niitä ole "
+"mahdollista palauttaa"
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
