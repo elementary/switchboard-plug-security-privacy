@@ -1,3 +1,9 @@
+io.elementary.settings.security-privacy (8.0.1) noble; urgency=medium
+
+  * Release 8.0.1 (#182)
+
+ -- elementary, Inc. <builds@elementary.io>  Thu, 12 Dec 2024 20:08:56 +0000
+
 io.elementary.settings.security-privacy (8.0.0) noble; urgency=medium
 
   * Release 8.0.0
