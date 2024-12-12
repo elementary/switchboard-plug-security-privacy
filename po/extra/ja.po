@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-08 21:27+0000\n"
-"PO-Revision-Date: 2024-07-10 01:16+0000\n"
+"POT-Creation-Date: 2024-12-11 22:33+0000\n"
+"PO-Revision-Date: 2024-12-12 05:36+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "security-privacy-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/security-privacy.policy.in.in:10
 msgid "Authentication is required to run the Firewall Configuration"
@@ -36,48 +36,50 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/security-privacy.metainfo.xml.in:48
-#: data/security-privacy.metainfo.xml.in:62
-#: data/security-privacy.metainfo.xml.in:76
-#: data/security-privacy.metainfo.xml.in:86
-#: data/security-privacy.metainfo.xml.in:99
+#: data/security-privacy.metainfo.xml.in:57
+#: data/security-privacy.metainfo.xml.in:71
+#: data/security-privacy.metainfo.xml.in:85
+#: data/security-privacy.metainfo.xml.in:95
+#: data/security-privacy.metainfo.xml.in:108
 msgid "Minor updates:"
-msgstr "そのほかのアップデート:"
+msgstr "マイナーアップデート:"
 
 #: data/security-privacy.metainfo.xml.in:50
-msgid "Improved screen reader accessibility"
-msgstr "スクリーンリーダーのアクセシビリティを改善"
-
-#: data/security-privacy.metainfo.xml.in:51
-#: data/security-privacy.metainfo.xml.in:65
-#: data/security-privacy.metainfo.xml.in:79
+#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:74
 #: data/security-privacy.metainfo.xml.in:88
-#: data/security-privacy.metainfo.xml.in:101
+#: data/security-privacy.metainfo.xml.in:97
+#: data/security-privacy.metainfo.xml.in:110
 msgid "Translation updates"
 msgstr "翻訳の更新"
 
-#: data/security-privacy.metainfo.xml.in:58
-#: data/security-privacy.metainfo.xml.in:72
-#: data/security-privacy.metainfo.xml.in:95
+#: data/security-privacy.metainfo.xml.in:59
+msgid "Improved screen reader accessibility"
+msgstr "スクリーンリーダーのアクセシビリティを改善"
+
+#: data/security-privacy.metainfo.xml.in:67
+#: data/security-privacy.metainfo.xml.in:81
+#: data/security-privacy.metainfo.xml.in:104
 msgid "New features:"
 msgstr "新機能:"
 
-#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:69
 msgid "Automatically clean up screenshots with Housekeeping"
 msgstr "“自動削除”でスクリーンショットを自動的に削除する機能を追加"
 
-#: data/security-privacy.metainfo.xml.in:64
+#: data/security-privacy.metainfo.xml.in:73
 msgid "Only list installed apps in the Location panel"
 msgstr "“位置情報“ペインにインストール済みのアプリのみを一覧表示するように修正"
 
-#: data/security-privacy.metainfo.xml.in:74
+#: data/security-privacy.metainfo.xml.in:83
 msgid "Use the location portal"
 msgstr "位置情報ポータルを使用するように修正"
 
-#: data/security-privacy.metainfo.xml.in:78
+#: data/security-privacy.metainfo.xml.in:87
 msgid "New location icon"
 msgstr "新しい位置情報アイコン"
 
-#: data/security-privacy.metainfo.xml.in:97
+#: data/security-privacy.metainfo.xml.in:106
 msgid "Option to forbid new USB devices while locked"
 msgstr "ロック時新たに接続された USB デバイスを使用不可にするオプションを追加"
 

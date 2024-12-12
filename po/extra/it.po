@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-08 21:27+0000\n"
+"POT-Creation-Date: 2024-12-11 22:33+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -37,48 +37,50 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/security-privacy.metainfo.xml.in:48
-#: data/security-privacy.metainfo.xml.in:62
-#: data/security-privacy.metainfo.xml.in:76
-#: data/security-privacy.metainfo.xml.in:86
-#: data/security-privacy.metainfo.xml.in:99
+#: data/security-privacy.metainfo.xml.in:57
+#: data/security-privacy.metainfo.xml.in:71
+#: data/security-privacy.metainfo.xml.in:85
+#: data/security-privacy.metainfo.xml.in:95
+#: data/security-privacy.metainfo.xml.in:108
 msgid "Minor updates:"
 msgstr "Aggiornamenti minori:"
 
 #: data/security-privacy.metainfo.xml.in:50
-msgid "Improved screen reader accessibility"
-msgstr ""
-
-#: data/security-privacy.metainfo.xml.in:51
-#: data/security-privacy.metainfo.xml.in:65
-#: data/security-privacy.metainfo.xml.in:79
+#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:74
 #: data/security-privacy.metainfo.xml.in:88
-#: data/security-privacy.metainfo.xml.in:101
+#: data/security-privacy.metainfo.xml.in:97
+#: data/security-privacy.metainfo.xml.in:110
 msgid "Translation updates"
 msgstr "Traduzioni aggiornate"
 
-#: data/security-privacy.metainfo.xml.in:58
-#: data/security-privacy.metainfo.xml.in:72
-#: data/security-privacy.metainfo.xml.in:95
+#: data/security-privacy.metainfo.xml.in:59
+msgid "Improved screen reader accessibility"
+msgstr ""
+
+#: data/security-privacy.metainfo.xml.in:67
+#: data/security-privacy.metainfo.xml.in:81
+#: data/security-privacy.metainfo.xml.in:104
 msgid "New features:"
 msgstr "Nuove funzionalità:"
 
-#: data/security-privacy.metainfo.xml.in:60
+#: data/security-privacy.metainfo.xml.in:69
 msgid "Automatically clean up screenshots with Housekeeping"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:64
+#: data/security-privacy.metainfo.xml.in:73
 msgid "Only list installed apps in the Location panel"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:74
+#: data/security-privacy.metainfo.xml.in:83
 msgid "Use the location portal"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:78
+#: data/security-privacy.metainfo.xml.in:87
 msgid "New location icon"
 msgstr ""
 
-#: data/security-privacy.metainfo.xml.in:97
+#: data/security-privacy.metainfo.xml.in:106
 msgid "Option to forbid new USB devices while locked"
 msgstr ""
 
