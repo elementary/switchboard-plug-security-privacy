@@ -1,6 +1,5 @@
-// -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /*-
- * Copyright (c) 2014-2018 elementary LLC. (https://elementary.io)
+ * Copyright (c) 2014-2025 elementary, Inc. (https://elementary.io)
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -22,13 +21,14 @@
 
 public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     private Gtk.Frame frame;
+    private Gtk.Button unlock_button;
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private bool loading = false;
     private Gtk.Button remove_button;
     private Settings settings;
     private Gee.HashMap<string, UFWHelpers.Rule> disabled_rules;
-    private Polkit.Permission permission;
+    private Polkit.Permission? permission;
 
     private enum Columns {
         ACTION,
@@ -55,8 +55,9 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
         disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
         load_disabled_rules ();
 
+        status_switch.sensitive = false;
         status_switch.notify["active"].connect (() => {
-            if (loading == false) {
+            if (!loading) {
                 UFWHelpers.set_status (status_switch.active);
             }
             update_status ();
@@ -64,64 +65,48 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
 
         create_treeview ();
 
-        try {
-            permission = new Polkit.Permission.sync (
-                "io.elementary.settings.security-privacy",
-                new Polkit.UnixProcess (Posix.getpid ())
-            );
+        unlock_button = add_button (_("Unlock"));
+        unlock_button.clicked.connect (on_unlock_button_clicked);
+    }
 
-            var lock_button = add_button (_("Unlock"));
-
-            status_switch.sensitive = permission.allowed;
-
-            permission.notify["allowed"].connect (() => {
-                if (permission.allowed) {
-                    loading = true;
-                    status_switch.active = UFWHelpers.get_status ();
-                    remove_button.sensitive = false;
-                    loading = false;
-                    lock_button.label = _("Lock");
-                } else {
-                    lock_button.label = _("Unlock");
-                }
-
-                status_switch.sensitive = permission.allowed;
-                frame.sensitive = status_switch.active && permission.allowed;
-            });
-
-            lock_button.clicked.connect (() => {
-                if (permission.allowed) {
-                    try {
-                        permission.release ();
-                    } catch (Error e) {
-                        critical ("Unable to release permission: %s", e.message);
-                    }
-                } else {
-                    try {
-                        permission.acquire ();
-                    } catch (Error e) {
-                        if (!e.matches (GLib.IOError.quark (), GLib.IOError.CANCELLED)) {
-                            var message_dialog = new Granite.MessageDialog (
-                                _("Unable to acquire permission"),
-                                _("Firewall rules can't be changed without the required system permission."),
-                                new ThemedIcon ("dialog-password"),
-                                Gtk.ButtonsType.CLOSE
-                            ) {
-                                badge_icon = new ThemedIcon ("dialog-error"),
-                                modal = true,
-                                transient_for = (Gtk.Window) get_root ()
-                            };
-                            message_dialog.show_error_details (e.message);
-                            message_dialog.response.connect (message_dialog.destroy);
-                            message_dialog.present ();
-                        }
-                    }
-
-                }
-            });
-        } catch (Error e) {
-            critical (e.message);
+    private async void on_unlock_button_clicked () {
+        var has_permission = yield get_permission ();
+        if (!has_permission) {
+            critical ("Couldn't unlock firewall panel: no permission");
+            return;
         }
+
+        unlock_button.sensitive = false;
+        loading = true;
+        status_switch.active = UFWHelpers.get_status ();
+        remove_button.sensitive = false;
+        loading = false;
+        status_switch.sensitive = true;
+    }
+
+    private async bool get_permission () {
+        if (permission == null) {
+            try {
+                permission = yield new Polkit.Permission (
+                    "io.elementary.settings.security-privacy",
+                    new Polkit.UnixProcess (Posix.getpid ())
+                );
+            } catch (Error e) {
+                critical (e.message);
+                return false;
+            }
+        }
+
+        if (!permission.allowed) {
+            try {
+                yield permission.acquire_async ();
+            } catch (Error e) {
+                critical (e.message);
+                return false;
+            }
+        }
+
+        return true;
     }
 
     private void load_disabled_rules () {
@@ -383,7 +368,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
 
         frame = new Gtk.Frame (null) {
             child = view_box,
-            sensitive = status_switch.active && permission.allowed
+            sensitive = false
         };
 
         child = frame;
@@ -551,7 +536,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     }
 
     private void update_status () {
-        frame.sensitive = status_switch.active && permission.allowed;
+        frame.sensitive = status_switch.active;
 
         if (status_switch.active) {
             status_type = SUCCESS;
