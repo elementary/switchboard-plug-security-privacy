@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:33+0000\n"
+"POT-Creation-Date: 2025-03-31 21:20+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -87,125 +87,113 @@ msgstr ""
 "Numero di giorni durante i quali conservare i file temporanei e quelli nel "
 "cestino"
 
-#: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
+#: src/Views/FirewallPanel.vala:68
 msgid "Unlock"
 msgstr ""
 
-#: src/Views/FirewallPanel.vala:83
-msgid "Lock"
-msgstr "Blocca"
-
-#: src/Views/FirewallPanel.vala:105
-msgid "Unable to acquire permission"
-msgstr "Impossibile acquisire l'autorizzazione"
-
-#: src/Views/FirewallPanel.vala:106
-msgid "Firewall rules can't be changed without the required system permission."
-msgstr ""
-
-#: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
-#: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
+#: src/Views/FirewallPanel.vala:230 src/Views/FirewallPanel.vala:246
+#: src/Views/FirewallPanel.vala:259 src/Views/FirewallPanel.vala:266
 msgid "Unknown"
 msgstr "Sconosciuto"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:383
 msgid "Allow"
 msgstr "Acconsenti"
 
-#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:236 src/Views/FirewallPanel.vala:384
 msgid "Deny"
 msgstr "Nega"
 
-#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:400
+#: src/Views/FirewallPanel.vala:239 src/Views/FirewallPanel.vala:385
 msgid "Reject"
 msgstr "Rifiuta"
 
-#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:401
+#: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:386
 msgid "Limit"
 msgstr "Limita"
 
-#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:431
+#: src/Views/FirewallPanel.vala:261 src/Views/FirewallPanel.vala:416
 msgid "In"
 msgstr "Entrata"
 
-#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:432
+#: src/Views/FirewallPanel.vala:263 src/Views/FirewallPanel.vala:417
 msgid "Out"
 msgstr "Uscita"
 
-#: src/Views/FirewallPanel.vala:292 src/Views/FirewallPanel.vala:302
+#: src/Views/FirewallPanel.vala:277 src/Views/FirewallPanel.vala:287
 #, c-format
 msgid "%s Ports %s"
 msgstr "Porte %s %s"
 
-#: src/Views/FirewallPanel.vala:294 src/Views/FirewallPanel.vala:304
+#: src/Views/FirewallPanel.vala:279 src/Views/FirewallPanel.vala:289
 #, c-format
 msgid "%s Port %s"
 msgstr "Porta %s %s"
 
-#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:558
+#: src/Views/FirewallPanel.vala:321 src/Views/FirewallPanel.vala:543
 #: src/Views/HouseKeepingPanel.vala:165 src/Views/TrackPanel.vala:110
 #: src/Views/LocationPanel.vala:118
 msgid "Enabled"
 msgstr "Abilitato"
 
-#: src/Views/FirewallPanel.vala:337
+#: src/Views/FirewallPanel.vala:322
 msgid "Version"
 msgstr "Versione"
 
-#: src/Views/FirewallPanel.vala:338
+#: src/Views/FirewallPanel.vala:323
 msgid "Action"
 msgstr "Azione"
 
-#: src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:324
 msgid "Protocol"
 msgstr "Protocollo"
 
-#: src/Views/FirewallPanel.vala:340
+#: src/Views/FirewallPanel.vala:325
 msgid "Direction"
 msgstr "Direzione"
 
-#: src/Views/FirewallPanel.vala:341
+#: src/Views/FirewallPanel.vala:326
 msgid "To"
 msgstr "Verso"
 
-#: src/Views/FirewallPanel.vala:342
+#: src/Views/FirewallPanel.vala:327
 msgid "From"
 msgstr "Da"
 
-#: src/Views/FirewallPanel.vala:404
+#: src/Views/FirewallPanel.vala:389
 msgid "Action:"
 msgstr "Azione:"
 
-#: src/Views/FirewallPanel.vala:414
+#: src/Views/FirewallPanel.vala:399
 msgid "Protocol:"
 msgstr "Protocollo:"
 
-#: src/Views/FirewallPanel.vala:422
+#: src/Views/FirewallPanel.vala:407
 msgid "Both"
 msgstr "Entrambi"
 
-#: src/Views/FirewallPanel.vala:425
+#: src/Views/FirewallPanel.vala:410
 msgid "Version:"
 msgstr "Versione:"
 
-#: src/Views/FirewallPanel.vala:435
+#: src/Views/FirewallPanel.vala:420
 msgid "Direction:"
 msgstr "Direzione:"
 
-#: src/Views/FirewallPanel.vala:442
+#: src/Views/FirewallPanel.vala:427
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d o %d-%d"
 
-#: src/Views/FirewallPanel.vala:445
+#: src/Views/FirewallPanel.vala:430
 msgid "Ports:"
 msgstr "Porte:"
 
-#: src/Views/FirewallPanel.vala:450
+#: src/Views/FirewallPanel.vala:435
 msgid "Add Rule"
 msgstr "Aggiungi regola"
 
-#: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
+#: src/Views/FirewallPanel.vala:547 src/Views/HouseKeepingPanel.vala:171
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
 msgstr "Disabilitato"
@@ -472,6 +460,12 @@ msgstr "Fogli di calcolo"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Video"
+
+#~ msgid "Lock"
+#~ msgstr "Blocca"
+
+#~ msgid "Unable to acquire permission"
+#~ msgstr "Impossibile acquisire l'autorizzazione"
 
 #~ msgid "Authentication is required to run the Firewall Configuration"
 #~ msgstr ""

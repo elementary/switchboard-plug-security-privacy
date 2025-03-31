@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:33+0000\n"
+"POT-Creation-Date: 2025-03-31 21:20+0000\n"
 "PO-Revision-Date: 2024-12-02 13:16+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -83,127 +83,113 @@ msgid "Number of days to keep trashed and temporary files"
 msgstr ""
 "Kuinka monta päivää väliaikaistiedostoja ja roskakorin tiedostoja säilytetään"
 
-#: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
+#: src/Views/FirewallPanel.vala:68
 msgid "Unlock"
 msgstr "Avaa lukitus"
 
-#: src/Views/FirewallPanel.vala:83
-msgid "Lock"
-msgstr "Lukitse"
-
-#: src/Views/FirewallPanel.vala:105
-msgid "Unable to acquire permission"
-msgstr "Käyttöoikeuden saaminen ei onnistu"
-
-#: src/Views/FirewallPanel.vala:106
-msgid "Firewall rules can't be changed without the required system permission."
-msgstr ""
-"Palomuurin sääntöjä ei voi muuttaa ilman vaadittua järjestelmätason "
-"käyttöoikeutta."
-
-#: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
-#: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
+#: src/Views/FirewallPanel.vala:230 src/Views/FirewallPanel.vala:246
+#: src/Views/FirewallPanel.vala:259 src/Views/FirewallPanel.vala:266
 msgid "Unknown"
 msgstr "Tuntematon"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:383
 msgid "Allow"
 msgstr "Salli"
 
-#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:236 src/Views/FirewallPanel.vala:384
 msgid "Deny"
 msgstr "Estä"
 
-#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:400
+#: src/Views/FirewallPanel.vala:239 src/Views/FirewallPanel.vala:385
 msgid "Reject"
 msgstr "Hylkää"
 
-#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:401
+#: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:386
 msgid "Limit"
 msgstr "Rajoita"
 
-#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:431
+#: src/Views/FirewallPanel.vala:261 src/Views/FirewallPanel.vala:416
 msgid "In"
 msgstr "Sisään"
 
-#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:432
+#: src/Views/FirewallPanel.vala:263 src/Views/FirewallPanel.vala:417
 msgid "Out"
 msgstr "Ulos"
 
-#: src/Views/FirewallPanel.vala:292 src/Views/FirewallPanel.vala:302
+#: src/Views/FirewallPanel.vala:277 src/Views/FirewallPanel.vala:287
 #, c-format
 msgid "%s Ports %s"
 msgstr "%s Portit %s"
 
-#: src/Views/FirewallPanel.vala:294 src/Views/FirewallPanel.vala:304
+#: src/Views/FirewallPanel.vala:279 src/Views/FirewallPanel.vala:289
 #, c-format
 msgid "%s Port %s"
 msgstr "%s Portti %s"
 
-#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:558
+#: src/Views/FirewallPanel.vala:321 src/Views/FirewallPanel.vala:543
 #: src/Views/HouseKeepingPanel.vala:165 src/Views/TrackPanel.vala:110
 #: src/Views/LocationPanel.vala:118
 msgid "Enabled"
 msgstr "Käytössä"
 
-#: src/Views/FirewallPanel.vala:337
+#: src/Views/FirewallPanel.vala:322
 msgid "Version"
 msgstr "Versio"
 
-#: src/Views/FirewallPanel.vala:338
+#: src/Views/FirewallPanel.vala:323
 msgid "Action"
 msgstr "Toiminto"
 
-#: src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:324
 msgid "Protocol"
 msgstr "Protokolla"
 
-#: src/Views/FirewallPanel.vala:340
+#: src/Views/FirewallPanel.vala:325
 msgid "Direction"
 msgstr "Suunta"
 
-#: src/Views/FirewallPanel.vala:341
+#: src/Views/FirewallPanel.vala:326
 msgid "To"
 msgstr "Kohde"
 
-#: src/Views/FirewallPanel.vala:342
+#: src/Views/FirewallPanel.vala:327
 msgid "From"
 msgstr "Lähde"
 
-#: src/Views/FirewallPanel.vala:404
+#: src/Views/FirewallPanel.vala:389
 msgid "Action:"
 msgstr "Toiminto:"
 
-#: src/Views/FirewallPanel.vala:414
+#: src/Views/FirewallPanel.vala:399
 msgid "Protocol:"
 msgstr "Protokolla:"
 
-#: src/Views/FirewallPanel.vala:422
+#: src/Views/FirewallPanel.vala:407
 msgid "Both"
 msgstr "Molemmat"
 
-#: src/Views/FirewallPanel.vala:425
+#: src/Views/FirewallPanel.vala:410
 msgid "Version:"
 msgstr "Versio:"
 
-#: src/Views/FirewallPanel.vala:435
+#: src/Views/FirewallPanel.vala:420
 msgid "Direction:"
 msgstr "Suunta:"
 
-#: src/Views/FirewallPanel.vala:442
+#: src/Views/FirewallPanel.vala:427
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d tai %d-%d"
 
-#: src/Views/FirewallPanel.vala:445
+#: src/Views/FirewallPanel.vala:430
 msgid "Ports:"
 msgstr "Portit:"
 
-#: src/Views/FirewallPanel.vala:450
+#: src/Views/FirewallPanel.vala:435
 msgid "Add Rule"
 msgstr "Lisää sääntö"
 
-#: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
+#: src/Views/FirewallPanel.vala:547 src/Views/HouseKeepingPanel.vala:171
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
 msgstr "Pois käytöstä"
@@ -465,6 +451,18 @@ msgstr "Laskentataulukot"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videot"
+
+#~ msgid "Lock"
+#~ msgstr "Lukitse"
+
+#~ msgid "Unable to acquire permission"
+#~ msgstr "Käyttöoikeuden saaminen ei onnistu"
+
+#~ msgid ""
+#~ "Firewall rules can't be changed without the required system permission."
+#~ msgstr ""
+#~ "Palomuurin sääntöjä ei voi muuttaa ilman vaadittua järjestelmätason "
+#~ "käyttöoikeutta."
 
 #~ msgid "Authentication is required to run the Firewall Configuration"
 #~ msgstr "Palomuurin asetusten suorittaminen vaatii tunnistautumisen"

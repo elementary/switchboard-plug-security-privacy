@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-11 22:33+0000\n"
+"POT-Creation-Date: 2025-03-31 21:20+0000\n"
 "PO-Revision-Date: 2025-03-01 14:57+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/settings/"
@@ -82,125 +82,113 @@ msgstr "ゴミ箱に移動した古いファイルを自動的に削除"
 msgid "Number of days to keep trashed and temporary files"
 msgstr "ゴミ箱に移動したファイルと一時ファイルを維持する日数"
 
-#: src/Views/FirewallPanel.vala:73 src/Views/FirewallPanel.vala:85
+#: src/Views/FirewallPanel.vala:68
 msgid "Unlock"
 msgstr "ロック解除"
 
-#: src/Views/FirewallPanel.vala:83
-msgid "Lock"
-msgstr "ロック"
-
-#: src/Views/FirewallPanel.vala:105
-msgid "Unable to acquire permission"
-msgstr "権限を取得できません"
-
-#: src/Views/FirewallPanel.vala:106
-msgid "Firewall rules can't be changed without the required system permission."
-msgstr "必要なシステム権限がないと、ファイアウォールのルールを変更できません。"
-
-#: src/Views/FirewallPanel.vala:245 src/Views/FirewallPanel.vala:261
-#: src/Views/FirewallPanel.vala:274 src/Views/FirewallPanel.vala:281
+#: src/Views/FirewallPanel.vala:230 src/Views/FirewallPanel.vala:246
+#: src/Views/FirewallPanel.vala:259 src/Views/FirewallPanel.vala:266
 msgid "Unknown"
 msgstr "不明"
 
-#: src/Views/FirewallPanel.vala:248 src/Views/FirewallPanel.vala:398
+#: src/Views/FirewallPanel.vala:233 src/Views/FirewallPanel.vala:383
 msgid "Allow"
 msgstr "許可"
 
-#: src/Views/FirewallPanel.vala:251 src/Views/FirewallPanel.vala:399
+#: src/Views/FirewallPanel.vala:236 src/Views/FirewallPanel.vala:384
 msgid "Deny"
 msgstr "拒否"
 
-#: src/Views/FirewallPanel.vala:254 src/Views/FirewallPanel.vala:400
+#: src/Views/FirewallPanel.vala:239 src/Views/FirewallPanel.vala:385
 msgid "Reject"
 msgstr "却下"
 
-#: src/Views/FirewallPanel.vala:257 src/Views/FirewallPanel.vala:401
+#: src/Views/FirewallPanel.vala:242 src/Views/FirewallPanel.vala:386
 msgid "Limit"
 msgstr "制限"
 
-#: src/Views/FirewallPanel.vala:276 src/Views/FirewallPanel.vala:431
+#: src/Views/FirewallPanel.vala:261 src/Views/FirewallPanel.vala:416
 msgid "In"
 msgstr "入力"
 
-#: src/Views/FirewallPanel.vala:278 src/Views/FirewallPanel.vala:432
+#: src/Views/FirewallPanel.vala:263 src/Views/FirewallPanel.vala:417
 msgid "Out"
 msgstr "出力"
 
-#: src/Views/FirewallPanel.vala:292 src/Views/FirewallPanel.vala:302
+#: src/Views/FirewallPanel.vala:277 src/Views/FirewallPanel.vala:287
 #, c-format
 msgid "%s Ports %s"
 msgstr "%s ポート %s"
 
-#: src/Views/FirewallPanel.vala:294 src/Views/FirewallPanel.vala:304
+#: src/Views/FirewallPanel.vala:279 src/Views/FirewallPanel.vala:289
 #, c-format
 msgid "%s Port %s"
 msgstr "%s ポート %s"
 
-#: src/Views/FirewallPanel.vala:336 src/Views/FirewallPanel.vala:558
+#: src/Views/FirewallPanel.vala:321 src/Views/FirewallPanel.vala:543
 #: src/Views/HouseKeepingPanel.vala:165 src/Views/TrackPanel.vala:110
 #: src/Views/LocationPanel.vala:118
 msgid "Enabled"
 msgstr "有効"
 
-#: src/Views/FirewallPanel.vala:337
+#: src/Views/FirewallPanel.vala:322
 msgid "Version"
 msgstr "バージョン"
 
-#: src/Views/FirewallPanel.vala:338
+#: src/Views/FirewallPanel.vala:323
 msgid "Action"
 msgstr "動作"
 
-#: src/Views/FirewallPanel.vala:339
+#: src/Views/FirewallPanel.vala:324
 msgid "Protocol"
 msgstr "プロトコル"
 
-#: src/Views/FirewallPanel.vala:340
+#: src/Views/FirewallPanel.vala:325
 msgid "Direction"
 msgstr "方向"
 
-#: src/Views/FirewallPanel.vala:341
+#: src/Views/FirewallPanel.vala:326
 msgid "To"
 msgstr "宛先"
 
-#: src/Views/FirewallPanel.vala:342
+#: src/Views/FirewallPanel.vala:327
 msgid "From"
 msgstr "送信元"
 
-#: src/Views/FirewallPanel.vala:404
+#: src/Views/FirewallPanel.vala:389
 msgid "Action:"
 msgstr "操作:"
 
-#: src/Views/FirewallPanel.vala:414
+#: src/Views/FirewallPanel.vala:399
 msgid "Protocol:"
 msgstr "プロトコル:"
 
-#: src/Views/FirewallPanel.vala:422
+#: src/Views/FirewallPanel.vala:407
 msgid "Both"
 msgstr "両方"
 
-#: src/Views/FirewallPanel.vala:425
+#: src/Views/FirewallPanel.vala:410
 msgid "Version:"
 msgstr "バージョン:"
 
-#: src/Views/FirewallPanel.vala:435
+#: src/Views/FirewallPanel.vala:420
 msgid "Direction:"
 msgstr "方向:"
 
-#: src/Views/FirewallPanel.vala:442
+#: src/Views/FirewallPanel.vala:427
 #, c-format
 msgid "%d or %d-%d"
 msgstr "%d または %d-%d"
 
-#: src/Views/FirewallPanel.vala:445
+#: src/Views/FirewallPanel.vala:430
 msgid "Ports:"
 msgstr "ポート:"
 
-#: src/Views/FirewallPanel.vala:450
+#: src/Views/FirewallPanel.vala:435
 msgid "Add Rule"
 msgstr "ルールを追加"
 
-#: src/Views/FirewallPanel.vala:562 src/Views/HouseKeepingPanel.vala:171
+#: src/Views/FirewallPanel.vala:547 src/Views/HouseKeepingPanel.vala:171
 #: src/Views/TrackPanel.vala:114 src/Views/LocationPanel.vala:123
 msgid "Disabled"
 msgstr "無効"
@@ -241,9 +229,9 @@ msgid ""
 msgid_plural ""
 "Old files can be automatically deleted after %u days to save space and help "
 "protect your privacy."
-msgstr[0] "古いファイルは %u "
-"日後に自動的に削除されます。これにより、空き領域を確保できるほか、プライバシ"
-"ーの保護に役立ちます。"
+msgstr[0] ""
+"古いファイルは %u 日後に自動的に削除されます。これにより、空き領域を確保でき"
+"るほか、プライバシーの保護に役立ちます。"
 
 #: src/Views/HouseKeepingPanel.vala:153
 msgid "Day"
@@ -274,11 +262,10 @@ msgid ""
 "setting, usage data is never transmitted off of this device or to third "
 "parties."
 msgstr ""
-"%s "
-"は、最近使用したファイルやその他の関連するローカル検索の提案といった追加機能"
-"を提供するために、ローカルの使用状況データを保存できます。この設定が有効であ"
-"っても、使用状況データがこのデバイスから転送されたり、サードパーティに転送さ"
-"れたりすることはありません。"
+"%s は、最近使用したファイルやその他の関連するローカル検索の提案といった追加機"
+"能を提供するために、ローカルの使用状況データを保存できます。この設定が有効で"
+"あっても、使用状況データがこのデバイスから転送されたり、サードパーティに転送"
+"されたりすることはありません。"
 
 #: src/Views/TrackPanel.vala:41
 #, c-format
@@ -453,6 +440,17 @@ msgstr "スプレッドシート"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "動画"
+
+#~ msgid "Lock"
+#~ msgstr "ロック"
+
+#~ msgid "Unable to acquire permission"
+#~ msgstr "権限を取得できません"
+
+#~ msgid ""
+#~ "Firewall rules can't be changed without the required system permission."
+#~ msgstr ""
+#~ "必要なシステム権限がないと、ファイアウォールのルールを変更できません。"
 
 #~ msgid "Authentication is required to run the Firewall Configuration"
 #~ msgstr "ファイアウォールの設定を実行するには認証が必要です"
