@@ -23,6 +23,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     private Gtk.Frame frame;
     private Gtk.Button unlock_button;
     private Gtk.ListStore list_store;
+    private GLib.ListStore list_model;
     private Gtk.TreeView view;
     private bool loading = false;
     private Gtk.Button remove_button;
@@ -173,15 +174,17 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     }
 
     private void show_rules () {
+        list_model.remove_all ();
         list_store.clear ();
         remove_button.sensitive = false;
         foreach (var rule in UFWHelpers.get_rules ()) {
-            add_rule (rule);
+            list_model.append (rule);
         }
 
         load_disabled_rules ();
         foreach (var rule in disabled_rules.entries) {
-            add_rule (rule.value, false, rule.key);
+            rule.value.enabled = false;
+            list_model.append (rule.value);
         }
     }
 
@@ -191,7 +194,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     }
 
     private void enable_rule (string hash) {
-        UFWHelpers.add_rule (disabled_rules.get (hash));
+        list_model.append (disabled_rules.get (hash));
         delete_disabled_rule (hash);
     }
 
@@ -226,80 +229,51 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
         load_disabled_rules ();
     }
 
-    public void add_rule (UFWHelpers.Rule rule, bool enabled = true, string hash = "") {
-        string action = _("Unknown");
-        switch (rule.action) {
-            case ALLOW:
-                action = _("Allow");
-                break;
-            case DENY:
-                action = _("Deny");
-                break;
-            case REJECT:
-                action = _("Reject");
-                break;
-            case LIMIT:
-                action = _("Limit");
-                break;
-        }
-
-        string protocol = _("Unknown");
-        switch (rule.protocol) {
-            case UDP:
-                protocol = "UDP";
-                break;
-            case TCP:
-                protocol = "TCP";
-                break;
-            case BOTH:
-                protocol = "TCP/UDP";
-                break;
-        }
-
-        string direction = _("Unknown");
-        if (rule.direction == IN) {
-            direction = _("In");
-        } else if (rule.direction == OUT) {
-            direction = _("Out");
-        }
-
-        string version = _("Unknown");
-        if (rule.version == IPV6) {
-            version = "IPv6";
-        } else if (rule.version == IPV4) {
-            version = "IPv4";
-        }
-
-        string from = "";
-        string to = "";
-        if (rule.from_ports != "") {
-            if (rule.from_ports.contains (":") || rule.from_ports.contains (",")) {
-                from = _("%s Ports %s").printf (rule.from, rule.from_ports.replace (":", "-"));
-            } else {
-                from = _("%s Port %s").printf (rule.from, rule.from_ports.replace (":", "-"));
-            }
-        } else {
-            from = rule.from;
-        }
-
-        if (rule.to_ports != "") {
-            if (rule.to_ports.contains (":") || rule.to_ports.contains (",")) {
-                to = _("%s Ports %s").printf (rule.to, rule.to_ports.replace (":", "-"));
-            } else {
-                to = _("%s Port %s").printf (rule.to, rule.to_ports.replace (":", "-"));
-            }
-        } else {
-            to = rule.to;
-        }
-
-        Gtk.TreeIter iter;
-        list_store.append (out iter);
-        list_store.set (iter, Columns.ACTION, action, Columns.PROTOCOL, protocol,
-                Columns.DIRECTION, direction, Columns.V6, version, Columns.ENABLED, enabled,
-                Columns.RULE, rule, Columns.TO, to.strip (), Columns.FROM, from.strip ());
-    }
-
     private void create_treeview () {
+        list_model = new GLib.ListStore (typeof (UFWHelpers.Rule));
+
+        var no_selection = new Gtk.NoSelection (list_model);
+
+        var enabled_factory = new Gtk.SignalListItemFactory ();
+        enabled_factory.bind.connect (bind_enabled);
+        enabled_factory.setup.connect (setup_checkbox);
+
+        var version_factory = new Gtk.SignalListItemFactory ();
+        version_factory.bind.connect (bind_version);
+        version_factory.setup.connect (setup_label);
+
+        var action_factory = new Gtk.SignalListItemFactory ();
+        action_factory.bind.connect (bind_action);
+        action_factory.setup.connect (setup_label);
+
+        var protocol_factory = new Gtk.SignalListItemFactory ();
+        protocol_factory.bind.connect (bind_protocol);
+        protocol_factory.setup.connect (setup_label);
+
+        var direction_factory = new Gtk.SignalListItemFactory ();
+        direction_factory.bind.connect (bind_direction);
+        direction_factory.setup.connect (setup_label);
+
+        var to_factory = new Gtk.SignalListItemFactory ();
+        to_factory.bind.connect (bind_to);
+        to_factory.setup.connect (setup_label);
+
+        var from_factory = new Gtk.SignalListItemFactory ();
+        from_factory.bind.connect (bind_from);
+        from_factory.setup.connect (setup_label);
+
+        var column_view = new Gtk.ColumnView (no_selection) {
+            hexpand = true,
+            vexpand = true
+        };
+        column_view.append_column (new Gtk.ColumnViewColumn (_("Enabled"), enabled_factory));
+        column_view.append_column (new Gtk.ColumnViewColumn (_("Version"), version_factory));
+        column_view.append_column (new Gtk.ColumnViewColumn (_("Action"), action_factory));
+        column_view.append_column (new Gtk.ColumnViewColumn (_("Protocol"), protocol_factory));
+        column_view.append_column (new Gtk.ColumnViewColumn (_("Direction"), direction_factory));
+        column_view.append_column (new Gtk.ColumnViewColumn (_("To"), to_factory));
+        column_view.append_column (new Gtk.ColumnViewColumn (_("From"), from_factory));
+
         list_store = new Gtk.ListStore (Columns.N_COLUMNS, typeof (string),
                                                            typeof (string),
                                                            typeof (string),
@@ -358,12 +332,12 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
         actionbar.pack_start (add_button);
         actionbar.pack_start (remove_button);
 
-        var scrolled = new Gtk.ScrolledWindow () {
-            child = view
-        };
+        // var scrolled = new Gtk.ScrolledWindow () {
+        //     child = column_view
+        // };
 
         var view_box = new Gtk.Box (VERTICAL, 0);
-        view_box.append (scrolled);
+        view_box.append (column_view);
         view_box.append (actionbar);
 
         frame = new Gtk.Frame (null) {
@@ -533,6 +507,130 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
             }
             show_rules ();
         });
+    }
+
+    private void bind_action (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        var rule = (UFWHelpers.Rule) list_item.item;
+
+        string action = _("Unknown");
+        switch (rule.action) {
+            case ALLOW:
+                action = _("Allow");
+                break;
+            case DENY:
+                action = _("Deny");
+                break;
+            case REJECT:
+                action = _("Reject");
+                break;
+            case LIMIT:
+                action = _("Limit");
+                break;
+        }
+
+        ((Gtk.Label) list_item.child).label = action;
+    }
+
+    private void bind_direction (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        var rule = (UFWHelpers.Rule) list_item.item;
+
+        string direction = _("Unknown");
+        if (rule.direction == IN) {
+            direction = _("In");
+        } else if (rule.direction == OUT) {
+            direction = _("Out");
+        }
+
+        ((Gtk.Label) list_item.child).label = direction;
+    }
+
+    private void bind_enabled (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        var rule = (UFWHelpers.Rule) list_item.item;
+
+        ((Gtk.CheckButton) list_item.child).active = rule.enabled;
+    }
+
+    private void bind_from (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        var rule = (UFWHelpers.Rule) list_item.item;
+
+        string from = "";
+        if (rule.from_ports != "") {
+            if (rule.from_ports.contains (":") || rule.from_ports.contains (",")) {
+                from = _("%s Ports %s").printf (rule.from, rule.from_ports.replace (":", "-"));
+            } else {
+                from = _("%s Port %s").printf (rule.from, rule.from_ports.replace (":", "-"));
+            }
+        } else {
+            from = rule.from;
+        }
+
+        ((Gtk.Label) list_item.child).label = from.strip ();
+    }
+
+    private void bind_protocol (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        var rule = (UFWHelpers.Rule) list_item.item;
+
+        string protocol = _("Unknown");
+        switch (rule.protocol) {
+            case UDP:
+                protocol = "UDP";
+                break;
+            case TCP:
+                protocol = "TCP";
+                break;
+            case BOTH:
+                protocol = "TCP/UDP";
+                break;
+        }
+
+        ((Gtk.Label) list_item.child).label = protocol;
+    }
+
+    private void bind_to (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        var rule = (UFWHelpers.Rule) list_item.item;
+
+        string to = "";
+        if (rule.to_ports != "") {
+            if (rule.to_ports.contains (":") || rule.to_ports.contains (",")) {
+                to = _("%s Ports %s").printf (rule.to, rule.to_ports.replace (":", "-"));
+            } else {
+                to = _("%s Port %s").printf (rule.to, rule.to_ports.replace (":", "-"));
+            }
+        } else {
+            to = rule.to;
+        }
+
+        ((Gtk.Label) list_item.child).label = to.strip ();
+    }
+
+    private void bind_version (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        var rule = (UFWHelpers.Rule) list_item.item;
+
+        string version = _("Unknown");
+        if (rule.version == IPV6) {
+            version = "IPv6";
+        } else if (rule.version == IPV4) {
+            version = "IPv4";
+        }
+
+        ((Gtk.Label) list_item.child).label = version;
+    }
+
+    private void setup_label (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        list_item.child = new Gtk.Label (null);
+    }
+
+    private void setup_checkbox (Object obj) {
+        var list_item = (Gtk.ListItem) obj;
+        list_item.child = new Gtk.CheckButton ();
     }
 
     private void update_status () {

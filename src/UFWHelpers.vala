@@ -181,6 +181,7 @@ namespace SecurityPrivacy.UFWHelpers {
         public Action action;
         public Protocol protocol;
         public Direction direction;
+        public bool enabled = true;
         public string to_ports = "";
         public string from_ports = "";
         public string to = "";
