@@ -27,7 +27,7 @@ plug_dependencies = [
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('granite-7'),
-        dependency('gtk4'),
+        dependency('gtk4', version: '>= 4.10'),
         dependency('zeitgeist-2.0'),
         meson.get_compiler('vala').find_library('posix'),
         polkit_dep,

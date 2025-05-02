@@ -71,24 +71,21 @@ public class ExcludeTreeView : Gtk.Box {
         var add_folder_button = new Gtk.Button.from_icon_name ("folder-new-symbolic");
         add_folder_button.tooltip_text = _("Add Folder…");
         add_folder_button.clicked.connect (() => {
-            var chooser = new Gtk.FileChooserNative (
-                _("Select a folder to blacklist"),
-                null,
-                Gtk.FileChooserAction.SELECT_FOLDER,
-                _("Add"),
-                _("Cancel")
-            );
-            chooser.show ();
+            var chooser = new Gtk.FileDialog () {
+                title = _("Select a folder to blacklist"),
+                accept_label = _("Add")
+            };
 
-            chooser.response.connect ((response_id) => {
-                if (response_id == Gtk.ResponseType.ACCEPT) {
-                    string folder = chooser.get_file ().get_path ();
-                    if (this.path_blacklist.is_duplicate (folder) == false) {
-                        path_blacklist.block (folder);
+            chooser.select_folder.begin ((Gtk.Window) get_root (), null, (obj, res) => {
+                try {
+                    var folder = chooser.select_folder.end (res);
+                    string folder_path = folder.get_path ();
+                    if (this.path_blacklist.is_duplicate (folder_path) == false) {
+                        path_blacklist.block (folder_path);
                     }
+                } catch (Error err) {
+                    warning ("Failed to select excluded folder: %s", err.message);
                 }
-
-                chooser.destroy ();
             });
         });
 
