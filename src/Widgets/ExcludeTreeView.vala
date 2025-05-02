@@ -77,18 +77,14 @@ public class ExcludeTreeView : Gtk.Box {
             };
 
             chooser.select_folder.begin ((Gtk.Window) get_root (), null, (obj, res) => {
-                File folder;
-
                 try {
-                    folder = chooser.select_folder.end (res);
+                    var folder = chooser.select_folder.end (res);
+                    string folder_path = folder.get_path ();
+                    if (this.path_blacklist.is_duplicate (folder_path) == false) {
+                        path_blacklist.block (folder_path);
+                    }
                 } catch (Error err) {
-                    warning ("Failed to select folder: %s", err.message);
-                    return;
-                }
-
-                string folder_path = folder.get_path ();
-                if (this.path_blacklist.is_duplicate (folder_path) == false) {
-                    path_blacklist.block (folder_path);
+                    warning ("Failed to select excluded folder: %s", err.message);
                 }
             });
         });
