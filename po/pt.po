@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-03-26 21:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -404,19 +404,15 @@ msgstr "Adicionar pasta…"
 msgid "Select a folder to blacklist"
 msgstr "Selecionar uma pasta à lista negra"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Adicionar"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "Eliminar"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "Não recolher informações das seguintes:"
 
@@ -451,6 +447,9 @@ msgstr "Folhas de Cálculo"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Vídeos"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
 
 #~ msgid "Lock"
 #~ msgstr "Bloquear"

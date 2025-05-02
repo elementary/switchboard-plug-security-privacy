@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-03-05 16:12+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -406,19 +406,15 @@ msgstr "Ajouter un dossier…"
 msgid "Select a folder to blacklist"
 msgstr "Ajouter un dossier à la liste noire"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Ajouter"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Annuler"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "Supprimer"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "Ne pas collecter les données des sources suivantes :"
 
@@ -453,6 +449,9 @@ msgstr "Feuilles de calcul"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Vidéos"
+
+#~ msgid "Cancel"
+#~ msgstr "Annuler"
 
 #~ msgid "Lock"
 #~ msgstr "Verrouiller"

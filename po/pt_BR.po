@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -411,19 +411,15 @@ msgstr "Adicionar Pasta…"
 msgid "Select a folder to blacklist"
 msgstr "Selecionar uma pasta para ignorar"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Adicionar"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "Apagar"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "Não coletar dados dos seguintes:"
 
@@ -458,6 +454,9 @@ msgstr "Planilhas"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Vídeos"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
 
 #~ msgid "Lock"
 #~ msgstr "Bloquear"

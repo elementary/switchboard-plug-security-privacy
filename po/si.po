@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2014-08-02 05:18+0000\n"
 "Last-Translator: harshi abeyratne <harshidbv@gmail.com>\n"
 "Language-Team: Sinhalese <si@li.org>\n"
@@ -382,19 +382,15 @@ msgstr "ෆෝල්ඩරය එකතු කරන්න"
 msgid "Select a folder to blacklist"
 msgstr "අපලේඛනය කිරීමට ෆෝල්ඩරයක් තොරන්න"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "එක්කරන්න"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "අවලංගු කරන්න"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr ""
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr ""
 
@@ -429,6 +425,9 @@ msgstr "පැතුරුම් පත"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "වීඩියෝව"
+
+#~ msgid "Cancel"
+#~ msgstr "අවලංගු කරන්න"
 
 #, fuzzy
 #~| msgid "Locking"

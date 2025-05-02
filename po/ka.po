@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -396,19 +396,15 @@ msgstr "საქაღალდის დამატება…"
 msgid "Select a folder to blacklist"
 msgstr "აირჩიეთ საქაღალდე შავ სიაში დასამატებლად"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "დამატება"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "გაუქმება"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "წაშლა"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "არ შეგროვდეს მონაცემებები შემდეგი:"
 
@@ -443,6 +439,9 @@ msgstr "ელცხრილები"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "ვიდეოები"
+
+#~ msgid "Cancel"
+#~ msgstr "გაუქმება"
 
 #~ msgid "Lock"
 #~ msgstr "დაბლოკვა"

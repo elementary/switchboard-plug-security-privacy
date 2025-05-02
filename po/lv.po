@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Latvian <https://l10n.elementary.io/projects/switchboard/"
@@ -385,19 +385,15 @@ msgstr "Pievienot mapi..."
 msgid "Select a folder to blacklist"
 msgstr "Pievienot mapi melnajam sarakstam:"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Pievienot"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Atcelt"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr ""
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr ""
 
@@ -432,6 +428,9 @@ msgstr "Izklājlapas"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Video"
+
+#~ msgid "Cancel"
+#~ msgstr "Atcelt"
 
 #, fuzzy
 #~| msgid "Locking"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -403,19 +403,15 @@ msgstr "फोल्डर जोडा…"
 msgid "Select a folder to blacklist"
 msgstr "ब्लॅकलिस्टमध्ये टाकण्यासाठी एक फोल्डर निवडा"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "वाढवा"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "रद्द करा"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "हटवा"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "खालील डेटा गोळा करू नका:"
 
@@ -450,6 +446,9 @@ msgstr "स्प्रेडशीट्स"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "व्हिडिओ"
+
+#~ msgid "Cancel"
+#~ msgstr "रद्द करा"
 
 #~ msgid "Lock"
 #~ msgstr "लॉक"

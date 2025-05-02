@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2019-09-30 14:23+0000\n"
 "Last-Translator: Daniel R. <riesp@pm.me>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
@@ -384,19 +384,15 @@ msgstr "Engadir un cartafol..."
 msgid "Select a folder to blacklist"
 msgstr "Seleccione un cartafol para engadir á lista negra"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Engadir"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "Eliminar"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "Non recoller datos dos deguintes:"
 
@@ -431,6 +427,9 @@ msgstr "Follas de cálculo"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Vídeos"
+
+#~ msgid "Cancel"
+#~ msgstr "Cancelar"
 
 #, fuzzy
 #~| msgid "Locking"

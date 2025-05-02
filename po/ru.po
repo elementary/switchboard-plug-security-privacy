@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-02-08 22:11+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -408,19 +408,15 @@ msgstr "Добавить папку…"
 msgid "Select a folder to blacklist"
 msgstr "Добавить папку в чёрный список"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Добавить"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Отменить"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "Удалить"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "Не собирать данные следующих приложений:"
 
@@ -455,6 +451,9 @@ msgstr "Электронные таблицы"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Видео"
+
+#~ msgid "Cancel"
+#~ msgstr "Отменить"
 
 #~ msgid "Lock"
 #~ msgstr "Заблокировать"

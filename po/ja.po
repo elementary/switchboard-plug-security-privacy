@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2025-03-01 14:57+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/settings/"
@@ -393,19 +393,15 @@ msgstr "フォルダーを追加…"
 msgid "Select a folder to blacklist"
 msgstr "除外リストに追加するフォルダーを選択"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "追加"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "キャンセル"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "削除"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "以下からデータを収集しない:"
 
@@ -440,6 +436,9 @@ msgstr "スプレッドシート"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "動画"
+
+#~ msgid "Cancel"
+#~ msgstr "キャンセル"
 
 #~ msgid "Lock"
 #~ msgstr "ロック"

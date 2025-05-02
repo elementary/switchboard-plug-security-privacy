@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-security-privacy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Tagalog <https://l10n.elementary.io/projects/switchboard/"
@@ -385,19 +385,15 @@ msgstr "Magdagdag ng Polder..."
 msgid "Select a folder to blacklist"
 msgstr "Piliin ang polder na iba-blacklist"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Magdagdag"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Ikansela"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "Burahin"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr ""
 
@@ -432,6 +428,9 @@ msgstr "Mga Spreadsheet"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Mga Pelikula"
+
+#~ msgid "Cancel"
+#~ msgstr "Ikansela"
 
 #~ msgid "Clear Data"
 #~ msgstr "Tanggalin ang Datos"

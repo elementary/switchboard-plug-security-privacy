@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-02-23 20:12+0000\n"
 "Last-Translator: Sebastian Bernat <srakap330@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -408,19 +408,15 @@ msgstr "Dodaj katalog…"
 msgid "Select a folder to blacklist"
 msgstr "Wybierz katalog, który powinien zostać dodany do czarnej listy"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Dodaj"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Anuluj"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "Usuń"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "Nie zbieraj danych z następujacych źródeł:"
 
@@ -455,6 +451,9 @@ msgstr "Arkusze kalkulacyjne"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Filmy"
+
+#~ msgid "Cancel"
+#~ msgstr "Anuluj"
 
 #~ msgid "Lock"
 #~ msgstr "Zablokuj"

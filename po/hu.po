@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 21:20+0000\n"
+"POT-Creation-Date: 2025-05-02 18:50+0000\n"
 "PO-Revision-Date: 2024-02-15 02:35+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -401,19 +401,15 @@ msgstr "Mappa hozzáadása…"
 msgid "Select a folder to blacklist"
 msgstr "Mappa hozzáadása a tiltólistához"
 
-#: src/Widgets/ExcludeTreeView.vala:78
+#: src/Widgets/ExcludeTreeView.vala:76
 msgid "Add"
 msgstr "Hozzáadás"
 
-#: src/Widgets/ExcludeTreeView.vala:79
-msgid "Cancel"
-msgstr "Mégse"
-
-#: src/Widgets/ExcludeTreeView.vala:96
+#: src/Widgets/ExcludeTreeView.vala:93
 msgid "Delete"
 msgstr "Törlés"
 
-#: src/Widgets/ExcludeTreeView.vala:140
+#: src/Widgets/ExcludeTreeView.vala:137
 msgid "Do not collect data from the following:"
 msgstr "Ne gyűjtsön adatokat az alábbiaktól:"
 
@@ -448,6 +444,9 @@ msgstr "Táblázatok"
 #: src/Widgets/IncludeTreeView.vala:107
 msgid "Videos"
 msgstr "Videók"
+
+#~ msgid "Cancel"
+#~ msgstr "Mégse"
 
 #~ msgid "Lock"
 #~ msgstr "Zárolás"
