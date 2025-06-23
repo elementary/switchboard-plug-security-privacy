@@ -19,7 +19,10 @@ plug_files = files(
     'Widgets/AppRow.vala',
     'Widgets/ClearUsageDialog.vala',
     'Widgets/ExcludeTreeView.vala',
-    'Widgets/IncludeTreeView.vala'
+    'Widgets/IncludeTreeView.vala',
+    'Backends/AbstractFirewallBackend.vala',
+    'Backends/UFWBackend.vala',
+    'Objects/Rule.vala',
 )
 
 plug_dependencies = [

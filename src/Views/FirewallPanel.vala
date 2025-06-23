@@ -22,12 +22,11 @@
 public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     private Gtk.Frame frame;
     private Gtk.Button unlock_button;
+    private SecurityPrivacy.AbstractFirewallBackend backend;
     private Gtk.ListStore list_store;
     private Gtk.TreeView view;
     private bool loading = false;
     private Gtk.Button remove_button;
-    private Settings settings;
-    private Gee.HashMap<string, UFWHelpers.Rule> disabled_rules;
     private Polkit.Permission? permission;
 
     private enum Columns {
@@ -51,14 +50,16 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     }
 
     construct {
-        settings = new Settings ("io.elementary.settings.security-privacy");
-        disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
-        load_disabled_rules ();
+        backend = new SecurityPrivacy.UFWBackend ();
 
         status_switch.sensitive = false;
         status_switch.notify["active"].connect (() => {
             if (!loading) {
-                UFWHelpers.set_status (status_switch.active);
+                if (status_switch.active) {
+                    backend.enable_firewall ();
+                } else {
+                    backend.disable_firewall ();
+                }
             }
             update_status ();
         });
@@ -78,7 +79,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
 
         unlock_button.sensitive = false;
         loading = true;
-        status_switch.active = UFWHelpers.get_status ();
+        status_switch.active = backend.is_firewall_enabled ();
         remove_button.sensitive = false;
         loading = false;
         status_switch.sensitive = true;
@@ -109,59 +110,17 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
         return true;
     }
 
-    private void load_disabled_rules () {
-        disabled_rules = new Gee.HashMap<string, UFWHelpers.Rule> ();
-        string? to = "", to_ports = "", from = "", from_ports = "";
-        int action = 0, protocol = 0, direction = 0, version = 0;
-        var rules = settings.get_value ("disabled-firewall-rules");
-        VariantIter iter = rules.iterator ();
-        while (iter.next (
-            "(ssssiiii)",
-            ref to,
-            ref to_ports,
-            ref from,
-            ref from_ports,
-            ref action,
-            ref protocol,
-            ref direction,
-            ref version
-        )) {
-            UFWHelpers.Rule new_rule = new UFWHelpers.Rule ();
-            new_rule.to = to;
-            new_rule.to_ports = to_ports;
-            new_rule.from = from;
-            new_rule.from_ports = from_ports;
-            new_rule.action = (UFWHelpers.Rule.Action)action;
-            new_rule.protocol = (UFWHelpers.Rule.Protocol)protocol;
-            new_rule.direction = (UFWHelpers.Rule.Direction)direction;
-            new_rule.version = (UFWHelpers.Rule.Version)version;
-            string hash = generate_hash_for_rule (new_rule);
-            disabled_rules.set (hash, new_rule);
-        }
-    }
-
-    private string generate_hash_for_rule (UFWHelpers.Rule r) {
-        return r.to +
-               r.to_ports +
-               r.from +
-               r.from_ports +
-               r.action.to_string () +
-               r.protocol.to_string () +
-               r.direction.to_string () +
-               r.version.to_string ();
-    }
-
-    private void reload_rule_numbers () {
-        foreach (var rule in UFWHelpers.get_rules ()) {
-            string ufw_hash = generate_hash_for_rule (rule);
+    private void reload_rule_ids () {
+        foreach (unowned var rule in backend.list_rules ()) {
+            string key = rule.to_hash ();
             Gtk.TreeModelForeachFunc update_row = (model, path, iter) => {
                 Value val;
 
                 list_store.get_value (iter, Columns.RULE, out val);
-                var tree_rule = (UFWHelpers.Rule)val;
-                string tree_hash = generate_hash_for_rule (tree_rule);
-                if (ufw_hash == tree_hash) {
-                    tree_rule.number = rule.number;
+                var tree_rule = val as Rule;
+                string tree_hash = tree_rule.to_hash ();
+                if (key == tree_hash) {
+                    tree_rule.id = rule.id;
                     list_store.set_value (iter, Columns.RULE, tree_rule);
                     return true;
                 }
@@ -175,58 +134,23 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
     private void show_rules () {
         list_store.clear ();
         remove_button.sensitive = false;
-        foreach (var rule in UFWHelpers.get_rules ()) {
-            add_rule (rule);
+
+        var rules = backend.list_rules ();
+
+        foreach (var rule in rules) {
+            if (rule.enabled) {
+                add_rule (rule, true, rule.to_hash ());
+            } else {
+                add_rule (rule, false, rule.to_hash ());
+            }
         }
-
-        load_disabled_rules ();
-        foreach (var rule in disabled_rules.entries) {
-            add_rule (rule.value, false, rule.key);
-        }
     }
 
-    private void disable_rule (UFWHelpers.Rule rule) {
-        save_disabled_rules (rule);
-        UFWHelpers.remove_rule (rule);
-    }
-
-    private void enable_rule (string hash) {
-        UFWHelpers.add_rule (disabled_rules.get (hash));
-        delete_disabled_rule (hash);
-    }
-
-    private void delete_disabled_rule (string hash) {
-        disabled_rules.unset (hash);
-        save_disabled_rules ();
-    }
-
-    private void save_disabled_rules (UFWHelpers.Rule? additional_rule = null) {
-        VariantBuilder builder = new VariantBuilder (new VariantType ("a(ssssiiii)"));
-        foreach (var existing_rule in disabled_rules.values) {
-            builder.add ("(ssssiiii)", existing_rule.to,
-                                       existing_rule.to_ports,
-                                       existing_rule.from,
-                                       existing_rule.from_ports,
-                                       existing_rule.action,
-                                       existing_rule.protocol,
-                                       existing_rule.direction,
-                                       existing_rule.version);
-        }
-        if (additional_rule != null) {
-            builder.add ("(ssssiiii)", additional_rule.to,
-                                       additional_rule.to_ports,
-                                       additional_rule.from,
-                                       additional_rule.from_ports,
-                                       additional_rule.action,
-                                       additional_rule.protocol,
-                                       additional_rule.direction,
-                                       additional_rule.version);
-        }
-        settings.set_value ("disabled-firewall-rules", builder.end ());
-        load_disabled_rules ();
-    }
-
-    public void add_rule (UFWHelpers.Rule rule, bool enabled = true, string hash = "") {
+    public void add_rule (Rule rule, bool enabled = true, string hash = "") {
+        // prints all rule information to the console for debugging
+        debug ("Rule: %s, Action: %s, Protocol: %s, Direction: %s, From: %s, To: %s, Version: %s",
+               rule.id, rule.action.to_string (), rule.protocol.to_string (),
+               rule.direction.to_string (), rule.from, rule.to, rule.version.to_string ());
         string action = _("Unknown");
         switch (rule.action) {
             case ALLOW:
@@ -307,7 +231,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
                                                            typeof (string),
                                                            typeof (string),
                                                            typeof (bool),
-                                                           typeof (UFWHelpers.Rule));
+                                                           typeof (Rule));
 
         // The View:
         view = new Gtk.TreeView.with_model (list_store) {
@@ -331,20 +255,20 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
             Gtk.TreeIter iter;
             list_store.get_iter (out iter, new Gtk.TreePath.from_string (path));
             list_store.get_value (iter, Columns.ENABLED, out active);
-            var is_active = !active.get_boolean ();
-            list_store.set (iter, Columns.ENABLED, is_active);
+            var is_active = active.get_boolean ();
 
             Value rule_value;
             list_store.get_value (iter, Columns.RULE, out rule_value);
-            UFWHelpers.Rule rule = (UFWHelpers.Rule)rule_value.get_object ();
-            string gen_hash = generate_hash_for_rule (rule);
-            if (is_active == false) {
-                disable_rule (rule);
+            Rule rule = (Rule)rule_value.get_object ();
+            if (is_active) {
+                backend.disable_rule (rule);
+                list_store.set (iter, Columns.ENABLED, false);
             } else {
-                enable_rule (gen_hash);
+                backend.enable_rule (rule);
+                list_store.set (iter, Columns.ENABLED, true);
             }
 
-            reload_rule_numbers ();
+            reload_rule_ids ();
         });
 
         var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic");
@@ -466,7 +390,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
             add_popover.popup ();
 
             do_add_button.clicked.connect (() => {
-                var rule = new UFWHelpers.Rule ();
+                var rule = new Rule ();
 
                 if (direction_combobox.active == 0) {
                     rule.direction = IN;
@@ -508,7 +432,7 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
                 }
 
                 rule.to_ports = ports_entry.text.replace ("-", ":");
-                UFWHelpers.add_rule (rule);
+                backend.add_rule (rule);
                 add_popover.popdown ();
                 show_rules ();
             });
@@ -522,15 +446,8 @@ public class SecurityPrivacy.FirewallPanel : Switchboard.SettingsPage {
             list_store.get_iter (out iter, path);
             Value val;
             list_store.get_value (iter, Columns.RULE, out val);
-            var rule = (UFWHelpers.Rule) val.get_object ();
-            string gen_hash = generate_hash_for_rule (rule);
-            Value active;
-            list_store.get_value (iter, Columns.ENABLED, out active);
-            if (active.get_boolean ()) {
-                UFWHelpers.remove_rule (rule);
-            } else {
-                delete_disabled_rule (gen_hash);
-            }
+            var rule = val.get_object () as Rule;
+            backend.remove_rule (rule);
             show_rules ();
         });
     }
