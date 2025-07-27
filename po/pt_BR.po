@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: maya\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-02 18:50+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-security-privacy/pt_BR/>\n"
+"PO-Revision-Date: 2025-07-28 04:55+0000\n"
+"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://l10n.elementaryos.org/projects/"
+"settings/switchboard-plug-security-privacy/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-03-01 06:17+0000\n"
 
 #: src/Plug.vala:23
@@ -71,10 +71,8 @@ msgid "Automatically delete old temporary files"
 msgstr "Excluir automaticamente arquivos temporários antigos"
 
 #: src/Plug.vala:99
-#, fuzzy
-#| msgid "Automatically delete old trashed files"
 msgid "Automatically delete old screenshot files"
-msgstr "Excluir automaticamente arquivos antigos da lixeira"
+msgstr "Excluir automaticamente arquivos antigos de captura de tela"
 
 #: src/Plug.vala:104
 msgid "Automatically delete old trashed files"
@@ -86,7 +84,7 @@ msgstr "Número de dias para manter arquivos da lixeira e temporários"
 
 #: src/Views/FirewallPanel.vala:68
 msgid "Unlock"
-msgstr ""
+msgstr "Desbloquear"
 
 #: src/Views/FirewallPanel.vala:230 src/Views/FirewallPanel.vala:246
 #: src/Views/FirewallPanel.vala:259 src/Views/FirewallPanel.vala:266
@@ -200,32 +198,24 @@ msgid "Automatically Delete:"
 msgstr "Excluir automaticamente:"
 
 #: src/Views/HouseKeepingPanel.vala:48
-#, fuzzy
-#| msgid "Temporary files"
 msgid "Old temporary files"
-msgstr "Arquivos temporários"
+msgstr "Arquivos temporários antigos"
 
 #: src/Views/HouseKeepingPanel.vala:61
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Downloaded files"
-msgstr "Arquivos no Lixo"
+msgstr "Arquivos baixados"
 
 #: src/Views/HouseKeepingPanel.vala:69
-#, fuzzy
-#| msgid "Trashed files"
 msgid "Screenshot files"
-msgstr "Arquivos no Lixo"
+msgstr "Arquivos de captura de tela"
 
 #: src/Views/HouseKeepingPanel.vala:88
 msgid "Trashed files"
 msgstr "Arquivos no Lixo"
 
 #: src/Views/HouseKeepingPanel.vala:91
-#, fuzzy
-#| msgid "Delete Trashed and Temporary Files After:"
 msgid "Delete Old Files After:"
-msgstr "Excluir arquivos do Lixo e temporários depois:"
+msgstr "Excluir arquivos antigos após:"
 
 #: src/Views/HouseKeepingPanel.vala:118
 msgid "Open Trash…"
@@ -266,7 +256,7 @@ msgstr "Bloquear após desligar a tela:"
 
 #: src/Views/LockPanel.vala:60
 msgid "Forbid new USB devices when locked:"
-msgstr ""
+msgstr "Proibir novos dispositivos USB quando bloqueados:"
 
 #: src/Views/TrackPanel.vala:29
 #, c-format
@@ -364,16 +354,17 @@ msgid "Search Application"
 msgstr "Pesquisar aplicação"
 
 #: src/Widgets/ClearUsageDialog.vala:24
-#, fuzzy
-#| msgid "Remove system-collected file and application usage data from:"
 msgid "Clear system-collected file and app usage history"
-msgstr "Remover arquivo coletado pelo sistema e dados de uso do aplicativo de:"
+msgstr ""
+"Limpar o histórico de uso de aplicativos e arquivos coletados pelo sistema"
 
 #: src/Widgets/ClearUsageDialog.vala:25
 msgid ""
 "The data from the selected time frame will be permanently deleted and cannot "
 "be restored"
 msgstr ""
+"Os dados do período de tempo selecionado serão excluídos permanentemente e "
+"não poderão ser restaurados"
 
 #: src/Widgets/ClearUsageDialog.vala:32
 msgid "The past hour"
